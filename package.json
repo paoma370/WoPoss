@@ -1,0 +1,41 @@
+{
+  "name": "woposs",
+  "version": "1.0.0",
+  "description": "Application for the project A World of Possibilities",
+  "homepage": "https://github.com/helenasabel/woposs#readme",
+  "bugs": "https://github.com/helenasabel/woposs/issues",
+  "keywords": [
+    "exist",
+    "exist-db",
+    "xml",
+    "xql",
+    "xquery"
+  ],
+  "author": {
+    "name": "Helena Bermúdez Sabel",
+    "email": "helena.bermudez@unine.ch"
+  },
+  "license": "GPL-3.0",
+  "scripts": {
+    "test": "mocha test/mocha/ --recursive --exit && mocha test/xqs/*.js",
+    "cypress": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/helenasabel/woposs",
+    "license": "GPL-3.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "chai-xml": "^0.4.0",
+    "cypress": "^8.7.0",
+    "fs-extra": "^10.0.0",
+    "mocha": "^9.1.3",
+    "supertest": "^6.1.6",
+    "xmldoc": "^1.1.2",
+    "yeoman-assert": "^3.1.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
