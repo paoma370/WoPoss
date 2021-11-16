@@ -92,7 +92,7 @@ You can take a look at the [Contribution guidelines for this project](.github/CO
 
 ## License
 
-GPL-3.0 © [Helena Bermúdez Sabel](helenasabel.github.io)
+GPL-3.0 © [A World of Possibilities. Modal pathways over an extra-long period of time: the diachrony of modality in the Latin language](woposs.unine.ch/)
 
 [license-img]: https://img.shields.io/badge/license-GPL%20v3-blue.svg
 [license-url]: https://www.gnu.org/licenses/gpl-3.0
