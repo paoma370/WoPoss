@@ -1,7 +1,8 @@
 <meta xmlns="http://exist-db.org/xquery/repo">
   <description>Application for the project A World of Possibilities</description>
+  <author>WoPoss project</author>
   <author>Helena Bermúdez Sabel</author>
-  <website>helenasabel.github.io</website>
+  <website>https://woposs.unine.ch</website>
   <status>alpha</status>
   <license>GPL-3.0</license>
   <copyright>true</copyright>
@@ -9,4 +10,5 @@
   <target>woposs</target>
   <prepare>pre-install.xql</prepare>
   <finish>post-install.xql</finish>
-<deployed>2021-11-10T09:47:49.632+01:00</deployed></meta>
+<deployed>2021-11-10T09:47:49.632+01:00</deployed>
+</meta>

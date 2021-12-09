@@ -1,0 +1,35 @@
+.marker {
+    color:purple;
+    font-weight: bold;
+}
+
+.scope {
+    color:darkgreen;
+    font-weight: bold;
+}
+
+.participant {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.negation {
+    font-weight: bold;
+}
+
+.supplied {
+    font-style:italic;
+    font-size:smaller;
+}
+
+
+tr {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding:0.5em;
+}
+

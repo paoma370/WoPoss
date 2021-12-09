@@ -33,8 +33,36 @@ if ($exist:path eq '') then
     <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
       <redirect url="index.html"/>
     </dispatch>
+    
+     else if ($exist:resource eq "about.html") then 
+    <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
+    <view>
+        <forward url="{$exist:controller}/modules/corpus.xql"/>
+        <forward url="{$exist:controller}/modules/view.xql"/>
+    </view>
+    </dispatch>  
+    
+  else if ($exist:resource eq "marker_results.xql") then 
+    <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
+    <view>
+        <forward url="{$exist:controller}/modules/reading_view.xql"/>
+        <forward url="{$exist:controller}/modules/wrapper_form1.xql"/>
+        <forward url="{$exist:controller}/modules/view.xql"/>
+    </view>
+        <cache-control cache="no"/>
+    </dispatch>  
+  
+    else if ($exist:resource eq "relation_results.xql") then 
+    <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
+    <view>
+        <forward url="{$exist:controller}/modules/reading_view.xql"/>
+        <forward url="{$exist:controller}/modules/wrapper_form2.xql"/>
+        <forward url="{$exist:controller}/modules/view.xql"/>
+    </view>
+        <cache-control cache="no"/>
+    </dispatch>  
 
-  else if (ends-with($exist:resource, ".html")) then (
+ else if (ends-with($exist:resource, ".html")) then (
   (: the html page is run through view.xql to expand templates :)
     <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
         <view>
@@ -45,6 +73,7 @@ if ($exist:path eq '') then
       		<forward url="{$exist:controller}/modules/view.xql"/>
       	</error-handler>
     </dispatch>)
+    
     else
           (: everything else is passed through :)
           <dispatch xmlns="http://exist.sourceforge.net/NS/exist">

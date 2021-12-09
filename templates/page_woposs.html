@@ -1,0 +1,76 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title data-template="config:app-title">woposs</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta data-template="config:app-meta"/>
+        <link rel="shortcut icon" href="/exist/apps/woposs/resources/favicon.ico"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+        <link href="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css"/>
+        <link rel="stylesheet" type="text/css" href="/exist/apps/woposs/resources/css/exist-woposs.css"/>
+        <link rel="stylesheet" type="text/css" href="/exist/apps/woposs/resources/css/style.css"/>        
+        <link rel="stylesheet" type="text/css" href="/exist/apps/woposs/resources/css/main.css"/>
+        <link rel="stylesheet" type="text/css" href="/exist/apps/woposs/resources/css/results.css"/>
+        <link rel="stylesheet" type="text/css" href="/exist/apps/woposs/resources/css/form.css"/>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"/>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"/>
+         
+                <script type="text/javascript" src="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.js"/>
+         
+         
+         <script type="text/javascript" src="/exist/apps/woposs/resources/scripts/show.js"/>
+         
+    </head>
+    <body id="grey-top">
+        <div class="grey-bot">
+            <div class="container" id="main-container">
+                <div class="row">
+                    <div class="col-md-12" id="header">
+                        <a href="https://woposs.unine.ch/" id="logo">
+                            <img src="/exist/apps/woposs/resources/images/woposs.png"/>
+                        </a>
+                        <h1>A database to explore modality in Latin</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <nav class="navbar navbar-default" role="navigation">
+                        
+                        <div class="navbar-collapse" id="navbar-collapse-1">
+                            <ul class="nav">
+                                        <li>
+                                            <a href="/exist/apps/woposs/index.html">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="/exist/apps/woposs/about.html">About</a>
+                                        </li>
+                                        <li>
+                                            <a href="/exist/apps/woposs/form.html">Search</a>
+                                        </li>
+                            </ul>
+
+                                                    </div>
+                    </nav>
+                </div>
+                <div id="content" class="row"/>
+            </div>
+        </div>
+        <a id="poweredby" href="http://exist-db.org"/>
+        <div id="footer">
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="https://woposs.unine.ch">woposs.unine.ch</a>
+                    </li>
+                </ul>
+                <div id="copyright">
+                    <p>Copyright WoPoss Project 2021</p>
+                </div>
+            </div>
+        </div>
+
+        <div data-template="templates:if-parameter-unset" data-template-param="org.exist-db.mysec.user">
+            <div data-template="templates:include" data-template-path="templates/login-panel.html"/>
+        </div>
+            </body>
+</html>

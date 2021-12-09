@@ -1,0 +1,76 @@
+        .wrapper {
+            overflow: hidden;
+        }
+        
+
+        .title:before {
+            content: '';
+            display: inline-block;
+            position: relative;
+            left: 3px;
+            border: 6px solid transparent;
+            border-left-color: #000;
+        }
+
+        .title.active:before {
+            left: 0;
+            top: 3px;
+            border-color: #000 transparent transparent;
+        }
+
+        .title:hover {
+            cursor: pointer;
+        }
+
+        .content {
+            transition: display .5s;
+            /*transform: translateY(-100%);*/
+            display: none;
+        }
+
+        .content.show {
+            /*transform: translateY(0);*/
+            display: inline-block;
+        }
+
+        label {
+            margin-right: 1em;
+        }
+
+        .content {
+            padding-left: 1em;
+        }
+
+        h5 {
+            font-size: 13pt;
+            margin-bottom: 0.5em;
+        }
+
+        input[type="submit"] {
+            background-color: #1A76BD;
+            border: none;
+            color: white;
+            padding: 0.5em 0.75em;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15pt;
+            cursor: pointer;
+            margin-top: 1%;
+        }
+
+        .indent {
+            margin-left: 3em;
+        }
+
+        .incomplete {
+            color: darkgrey;
+        }
+        
+        .modalMeaning {
+            margin-bottom:2em;
+        }
+        
+        form h4 {
+            margin-bottom:0;
+        }

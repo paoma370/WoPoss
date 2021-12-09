@@ -1,0 +1,432 @@
+<div xmlns="http://www.w3.org/1999/xhtml" data-template="templates:surround" data-template-with="templates/page_woposs.html" data-template-at="content">
+    <div onload="clearChk()">
+        <h2>Search options</h2>
+
+        <ul>
+            <li>
+                <a href="#search-marker">Search by modal marker</a>
+            </li>
+            <li>
+                <a href="#search-relation">Search by modal relation</a>
+            </li>
+        </ul>
+        <h2 id="search-marker">Search by modal marker</h2>
+        <form method="get" action="modules/marker_results.xql">
+            <fieldset>
+                <label for="marker">Choose a modal marker (required)</label>
+                <select name="marker" id="marker" required="required">
+                    <option disabled="" selected="" value=""> -- select an option --</option>
+                    <optgroup label="Verbs">
+                        <option value="debeo">debeo</option>
+                        <option value="decet">decet</option>
+                        <option value="licet">licet</option>
+                        <option value="nequeo">nequeo</option>
+                        <option value="nolo">nolo</option>
+                        <option value="malo">malo</option>
+                        <option value="oportet">oportet</option>
+                        <option value="possum">possum</option>
+                        <option value="queo">queo</option>
+                        <option value="valet">valet</option>
+                        <option value="volo">volo</option>
+                    </optgroup>
+                    <optgroup label="Phrases">
+                        <option value="aequum_est">aequuum est</option>
+                        <option value="est_inf">est + infinitive</option>
+                        <option value="habeo_inf">habeo + infinitive</option>
+                        <option value="ius_est">ius est</option>
+                        <option value="meum_est">meum est</option>
+                        <option value="necesse_est">necesse est</option>
+                        <option value="necesse_habeo">necesse habeo</option>
+                        <option value="opus_est">opus est</option>
+                        <option value="usus_est">usus est</option>
+                    </optgroup>
+                    <optgroup label="Verbal adjectives">
+                        <option value="-bilis">-bilis</option>
+                        <option value="-bilis_est">-bilis est</option>
+                        <option value="-ndus">-ndus</option>
+                        <option value="-ndus_est">-ndus est</option>
+                        <option value="-turus">-turus</option>
+                        <option value="-turus_est">-turus est</option>
+                    </optgroup>
+                    <optgroup label="Adjectives">
+                        <option value="aequus">aequus</option>
+                        <option value="aptus">aptus</option>
+                        <option value="certus">certus</option>
+                        <option value="dubius">dubius</option>
+                        <option value="illicitus">illicitus</option>
+                        <option value="impossibilis">impossibilis</option>
+                        <option value="impossibilis_est">impossibilis est</option>
+                        <option value="incertus">incertus</option>
+                        <option value="ineptus">ineptus</option>
+                        <option value="licitus">licitus</option>
+                        <option value="necessarius">necessarius</option>
+                        <option value="possibilis">possibilis</option>
+                        <option value="possibilis_est">possibilis est</option>
+                    </optgroup>
+                    <optgroup label="Nouns">
+                        <option value="dubium">dubium</option>
+                        <option value="facultas">facultas</option>
+                        <option value="possibilitas">possibilitas</option>
+                        <option value="potestas">potestas</option>
+                        <option value="illicitus">illicitus</option>
+                        <option value="necessitas">necessitas</option>
+                        <option value="necessitudo">necessitudo</option>
+                        <option value="probabilitas">probabilitas</option>
+                        <option value="voluntas">voluntas</option>
+                    </optgroup>
+                    <optgroup label="Adverbs">
+                        <option value="certe">certe</option>
+                        <option value="dubius">dubie</option>
+                        <option value="forsitan">fors(it)an</option>
+                        <option value="fortasse">fortasse</option>
+                        <option value="indubitate">indubitate/indubitanter</option>
+                        <option value="necessarie">necessarie</option>
+                        <option value="possibiliter">possibiliter</option>
+                        <option value="probabiliter">probabiliter</option>
+                    </optgroup>
+                </select>
+                <br/>
+            </fieldset>
+            <input type="submit" value="Submit"/>
+        </form>
+
+        <h2 id="search-relation">Search by modal relation</h2>
+        <h3>Selection of the modal meaning (required)</h3>
+
+        <form method="get" action="modules/relation_results.xql">
+            <fieldset class="modalMeaning">
+                <h4>
+                    <input value="dynamic" id="dynamic" type="checkbox" name="modality" class="poss-inev poss-pros poss-sit poss-imp poss-inh nec-inh nec-imp nec-sit nec-inev nec-pros"/>
+                    <label for="dynamic">Modal meaning: dynamic</label>
+                </h4>
+                <span class="title">See filters</span>
+                <div class="wrapper">
+                    <div class="content">
+                        <div class="indent"> Possibility <div class="indent">
+                                <input type="checkbox" value="participant-inherent" id="poss-inh" name="pos_participant_control" class="dynamic"/>
+                                <label for="poss-inh">participant-inherent</label>
+                                <br/>
+                                <input type="checkbox" value="participant-imposed" id="poss-imp" name="pos_participant_control" class="dynamic"/>
+                                <label for="poss-imp">participant-imposed</label>
+                                <br/>situational <div class="indent includsRadio">
+                                    <input type="radio" id="poss-sit" name="poss_participant_control" class="dynamic poss-inev poss-pros poss-no sit" value="situational"/>
+                                    <label for="poss-sit">all</label>
+                                    <input type="radio" id="poss-no" name="pos_situational_subtype" class="poss-inev poss-pros poss-sit" value="none"/>
+                                    <label for="poss-no">no subtype</label>
+                                    <input type="checkbox" value="inevitability" id="poss-inev" name="pos_situational_subtype" class="poss-sit poss-no"/>
+                                    <label for="poss-inev">inevitability</label>
+                                    <input type="checkbox" value="prospective" id="poss-pros" name="pos_situational_subtype" class="poss-sit poss-no"/>
+                                    <label for="poss-pros">prospective</label>
+
+                                </div>
+                            </div> Necessity <div class="indent">
+                                <input type="checkbox" value="participant-inherent" id="nec-inh" name="nec_participant_control" class="dynamic"/>
+                                <label for="nec-inh">participant-inherent</label>
+                                <br/>
+                                <input type="checkbox" value="participant-impose" id="nec-imp" name="nec_participant_control" class="dynamic"/>
+                                <label for="nec-imp">participant-imposed</label>
+                                <br/>situational <div class="indent includsRadio">
+                                    <input type="radio" id="nec-sit" name="nec_participant_control" class="dynamic nec-inev nec-pros sit" value="situational"/>
+                                    <label for="nec-sit">all</label>
+                                    <input type="radio" id="nec-no" name="nec_situational_subtype" class="nec-inev nec-pros nec-sit" value="none"/>
+                                    <label for="nec-no">no subtype</label>
+                                    <input type="checkbox" value="inevitability" id="nec-inev" name="nec_situational_subtype" class="nec-sit nec-no"/>
+                                    <label for="nec-inev">inevitability</label>
+                                    <input type="checkbox" value="prospective" id="nec-pros" name="nec_situational_subtype" class="nec-sit nec-no"/>
+                                    <label for="nec-pros">prospective</label>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="modalMeaning">
+                <h4>
+                    <input type="checkbox" value="deontic" id="deontic" name="modality" class="acceptability intention volition abs-nec desirable acceptable undesirable unacceptable ob-off ob-nonoff obligation ob-moral ob-rel ob-uns authority permission per-moral per-rel per-uns per-off per-nonoff recommendation rec-moral rec-rel rec-uns rec-off rec-nonoff"/>
+                    <label for="deontic">Modal meaning: deontic</label>
+                </h4>
+                <span class="title">See filters</span>
+                <div class="wrapper">
+                    <div class="content">
+                        <div class="indent">
+                            <input type="checkbox" value="acceptability" id="acceptability" name="deontic_type" class="deontic abs-nec desirable acceptable undesirable unacceptable"/>
+                            <label for="acceptability">Acceptability</label>
+                            <div class="indent">
+                                <input type="checkbox" value="absolutely_necessary" id="abs-nec" name="deontic_degree" class="deontic"/>
+                                <label for="abs-nec">Absolutely necessary</label>
+                                <input type="checkbox" value="desirable" id="desirable" name="deontic_degree" class="deontic"/>
+                                <label for="desirable">Desirable</label>
+                                <input type="checkbox" value="acceptable" id="acceptable" name="deontic_degree" class="deontic"/>
+                                <label for="acceptable">Acceptable</label>
+                                <input type="checkbox" value="undesirable" id="undesirable" name="deontic_degree" class="deontic"/>
+                                <label for="undesirable">Not very desirable</label>
+                                <input type="checkbox" value="unacceptable" id="unacceptable" name="deontic_degree" class="deontic"/>
+                                <label for="unacceptable">Unacceptable</label>
+                            </div>
+
+
+                            <input type="checkbox" value="authority" id="authority" name="deontic_type" class="deontic obligation deontic ob-moral ob-rel ob-uns ob-off ob-nonoff                                 permission per-moral per-rel per-uns per-off per-nonoff recommendation rec-moral rec-rel rec-uns rec-off rec-nonoff"/>
+                            <label for="authority">Authority</label>
+                            <div class="indent">
+                                <input type="checkbox" value="obligation" id="obligation" name="authority_subtype" class="deontic ob-moral ob-rel ob-uns ob-off ob-nonoff"/>
+                                <label for="obligation">Obligation</label>
+                                <div class="indent">
+                                    <div class="indent">Context <div class="indent">
+                                            <input type="checkbox" value="official" id="ob-off" name="ob_context" class="deontic"/>
+                                            <label for="ob-off">official context</label>
+
+                                            <input type="checkbox" value="non-official" id="ob-nonoff" name="ob_context" class="deontic"/>
+                                            <label for="ob-nonoff">non-official context</label>
+
+                                        </div>
+                                    </div>
+                                    <div class="indent">Source <div class="indent">
+                                            <input type="checkbox" value="ob-moral" id="ob-moral" name="ob_source"/>
+                                            <label for="ob-moral">moral/ethic norms</label>
+
+                                            <input type="checkbox" value="ob-rel" id="ob-rel" name="ob_source"/>
+                                            <label for="ob-rel">religious norms</label>
+
+                                            <input type="checkbox" value="ob-uns" id="ob-uns" name="ob_source"/>
+                                            <label for="ob-uns">unspecified norms</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <input type="checkbox" value="permission" id="permission" name="authority_subtype" class="deontic per-moral per-rel per-uns per-off per-nonoff"/>
+                                <label for="permission">Permission</label>
+                                <div class="indent">
+                                    <div class="indent">Context <div class="indent">
+                                            <input type="checkbox" value="official" id="per-off" name="per_context" class="deontic"/>
+                                            <label for="per-off">official context</label>
+
+                                            <input type="checkbox" value="non-official" id="per-nonoff" name="per_context" class="deontic"/>
+                                            <label for="per-nonoff">non-official context</label>
+
+                                        </div>
+                                    </div>
+                                    <div class="indent">Source <div class="indent">
+                                            <input type="checkbox" value="per-moral" id="per-moral" name="per_source"/>
+                                            <label for="per-moral">moral/ethic norms</label>
+
+                                            <input type="checkbox" value="per-rel" id="per-rel" name="per_source"/>
+                                            <label for="per-rel">religious norms</label>
+
+                                            <input type="checkbox" value="per-uns" id="per-uns" name="per_source"/>
+                                            <label for="per-uns">unspecified norms</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <input type="checkbox" value="recommendation" id="recommendation" name="authority_subtype" class="deontic rec-moral rec-rel rec-uns rec-off rec-nonoff"/>
+                                <label for="recommendation">Recommendation</label>
+                                <div class="indent">
+                                    <div class="indent">Context <div class="indent">
+                                            <input type="checkbox" value="official" id="rec-off" name="rec_context" class="deontic"/>
+                                            <label for="rec-off">official context</label>
+
+                                            <input type="checkbox" value="non-official" id="rec-nonoff" name="rec_context" class="deontic"/>
+                                            <label for="rec-nonoff">non-official context</label>
+
+                                        </div>
+                                    </div>
+                                    <div class="indent">Source <div class="indent">
+                                            <input type="checkbox" value="rec-moral" id="rec-moral" name="rec_source"/>
+                                            <label for="rec-moral">moral/ethic norms</label>
+
+                                            <input type="checkbox" value="rec-rel" id="rec-rel" name="rec_source"/>
+                                            <label for="rec-rel">religious norms</label>
+
+                                            <input type="checkbox" value="rec-uns" id="rec-uns" name="rec_source"/>
+                                            <label for="rec-uns">unspecified norms</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <input type="checkbox" value="intention" id="intention" name="deontic_type" class="deontic"/>
+                            <label for="intention">Intention</label>
+                            <br/>
+                            <input type="checkbox" value="volition" id="volition" name="deontic_type" class="deontic"/>
+                            <label for="volition">Volition</label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="modalMeaning">
+                <h4>
+                    <input type="checkbox" id="epistemic" value="epistemic" name="modality" class="impossible improbable probable certain possible"/>
+                    <label for="epistemic">Epistemic</label>
+                </h4>
+                <span class="title">See filters</span>
+                <div class="wrapper">
+                    <div class="content">
+                        <div class="indent">
+                            <input type="checkbox" value="absolutely_certain" id="certain" name="epistemic_degree" class="epistemic"/>
+                            <label for="certain">Absolutely certain</label>
+                            <input type="checkbox" value="probable" id="probable" name="epistemic_degree" class="epistemic"/>
+                            <label for="probable">Probable</label>
+                            <input type="checkbox" value="possible" id="possible" name="epistemic_degree" class="epistemic"/>
+                            <label for="possible">Possible</label>
+                            <input type="checkbox" value="improbable" id="improbable" name="epistemic_degree" class="epistemic"/>
+                            <label for="improbable">Improbable</label>
+                            <input type="checkbox" value="impossible" id="impossible" name="epistemic_degree" class="epistemic"/>
+                            <label for="impossible">Impossible</label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <h3>Optional filters</h3>
+            <h4>Lemma of the modal marker</h4>
+            <fieldset>
+                <span class="title">See filters</span>
+                <div class="wrapper">
+                    <div class="content">
+                        <div>
+                            <h5>Verbs</h5>
+                            <input type="checkbox" value="debeo" id="debeo" name="lemma"/>
+                            <label for="debeo">debeo</label>
+                            <input type="checkbox" value="decet" id="decet" name="lemma"/>
+                            <label for="decet">decet</label>
+                            <input type="checkbox" value="licet" id="licet" name="lemma"/>
+                            <label for="licet">licet</label>
+                            <input type="checkbox" value="nequeo" id="nequeo" name="lemma"/>
+                            <label for="nequeo">nequeo</label>
+                            <input type="checkbox" value="nolo" id="nolo" name="lemma"/>
+                            <label for="nolo">nolo</label>
+                            <input type="checkbox" value="malo" id="malo" name="lemma"/>
+                            <label for="malo">malo</label>
+                            <input type="checkbox" value="oportet" id="oportet" name="lemma"/>
+                            <label for="oportet">oportet</label>
+                            <input type="checkbox" value="possum" id="possum" name="lemma"/>
+                            <label for="possum">possum</label>
+                            <input type="checkbox" value="queo" id="queo" name="lemma"/>
+                            <label for="queo">queo</label>
+                            <input type="checkbox" value="valet" id="valet" name="lemma"/>
+                            <label for="valet">valet</label>
+                            <input type="checkbox" value="volo" id="volo" name="lemma"/>
+                            <label for="volo">volo</label>
+                        </div>
+                        <div>
+                            <h5>Phrases</h5>
+                            <input type="checkbox" value="aequum_est" id="aequum_est" name="lemma"/>
+                            <label for="aequum_est">aequuum est</label>
+                            <input type="checkbox" value="est_inf" id="est_inf" name="lemma"/>
+                            <label for="est_inf">est + infinitive</label>
+                            <input type="checkbox" value="habeo_inf" id="habeo_inf" name="lemma"/>
+                            <label for="habeo_inf">habeo + infinitive</label>
+                            <input type="checkbox" value="ius_est" id="ius_est" name="lemma"/>
+                            <label for="ius_est">ius est</label>
+                            <input type="checkbox" value="meum_est" id="meum_est" name="lemma"/>
+                            <label for="meum_est">meum est</label>
+                            <input type="checkbox" value="necesse_est" id="necesse_est" name="lemma"/>
+                            <label for="necesse_est">necesse est</label>
+                            <input type="checkbox" value="necesse_habeo" id="necesse_habeo" name="lemma"/>
+                            <label for="necesse_habeo">necesse habeo</label>
+                            <input type="checkbox" value="opus_est" id="opus_est" name="lemma"/>
+                            <label for="opus_est">opus est</label>
+                            <input type="checkbox" value="usus_est" id="usus_est" name="lemma"/>
+                            <label for="usus_est">usus est</label>
+                        </div>
+                        <div>
+                            <h5>Verbal adjectives</h5>
+                            <input type="checkbox" value="-bilis" id="bilis" name="lemma"/>
+                            <label for="bilis">-bilis</label>
+                            <input type="checkbox" value="-bilis_est" id="bilis_est" name="lemma"/>
+                            <label for="bilis_est">-bilis est</label>
+                            <input type="checkbox" value="-ndus" id="-ndus" name="lemma"/>
+                            <label for="-ndus">-ndus</label>
+                            <input type="checkbox" value="-ndus_est" id="ndus_est" name="lemma"/>
+                            <label for="ndus_est">-ndus est</label>
+                            <input type="checkbox" value="-turus" id="turus" name="lemma"/>
+                            <label for="turus">-turus</label>
+                            <input type="checkbox" value="-turus_est" id="turus_est" name="lemma"/>
+                            <label for="turus_est">-turus est</label>
+                        </div>
+                        <div>
+                            <h5>Adjectives</h5>
+                            <input type="checkbox" value="aequus" id="aequus" name="lemma"/>
+                            <label for="aequus">aequus</label>
+                            <input type="checkbox" value="aptus" id="aptus" name="lemma"/>
+                            <label for="aptus">aptus</label>
+                            <input type="checkbox" value="certus" id="certus" name="lemma"/>
+                            <label for="certus">certus</label>
+                            <input type="checkbox" value="dubius" id="dubius" name="lemma"/>
+                            <label for="dubius">dubius</label>
+                            <input type="checkbox" value="illicitus" id="illicitus" name="lemma"/>
+                            <label for="illicitus">illicitus</label>
+                            <input type="checkbox" value="impossibilis" id="impossibilis" name="lemma"/>
+                            <label for="impossibilis">impossibilis</label>
+                            <input type="checkbox" value="impossibilis_est" id="impossibilis_est" name="lemma"/>
+                            <label for="impossibilis_est">impossibilis est</label>
+                            <input type="checkbox" value="incertus" id="incertus" name="lemma"/>
+                            <label for="incertus">incertus</label>
+                            <input type="checkbox" value="ineptus" id="ineptus" name="lemma"/>
+                            <label for="ineptus">ineptus</label>
+                            <input type="checkbox" value="licitus" id="licitus" name="lemma"/>
+                            <label for="licitus">licitus</label>
+                            <input type="checkbox" value="necessarius" id="necessarius" name="lemma"/>
+                            <label for="necessarius">necessarius</label>
+                            <input type="checkbox" value="possibilis" id="possibilis" name="lemma"/>
+                            <label for="possibilis">possibilis</label>
+                            <input type="checkbox" value="possibilis_est" id="possibilis_est" name="lemma"/>
+                            <label for="possibilis_est">possibilis est</label>
+                        </div>
+                        <div>
+                            <h5>Nouns</h5>
+                            <input type="checkbox" value="dubium" id="dubium" name="lemma"/>
+                            <label for="dubium">dubium</label>
+                            <input type="checkbox" value="facultas" id="facultas" name="lemma"/>
+                            <label for="facultas">facultas</label>
+                            <input type="checkbox" value="possibilitas" id="possibilitas" name="lemma"/>
+                            <label for="possibilitas">possibilitas</label>
+                            <input type="checkbox" value="potestas" id="potestas" name="lemma"/>
+                            <label for="potestas">potestas</label>
+                            <!-- <input type="checkbox" value="illicitus" id="illicitus" name="lemma"/><label for="illicitus">illicitus</label>-->
+                            <input type="checkbox" value="necessitas" id="necessitas" name="lemma"/>
+                            <label for="necessitas">necessitas</label>
+                            <input type="checkbox" value="necessitudo" id="necessitudo" name="lemma"/>
+                            <label for="necessitudo">necessitudo</label>
+                            <input type="checkbox" value="probabilitas" id="probabilitas" name="lemma"/>
+                            <label for="probabilitas">probabilitas</label>
+                            <input type="checkbox" value="voluntas" id="voluntas" name="lemma"/>
+                            <label for="voluntas">voluntas</label>
+                        </div>
+                        <div>
+                            <h5>Adverbs</h5>
+                            <input type="checkbox" value="certe" id="certe" name="lemma"/>
+                            <label for="certe">certe</label>
+                            <input type="checkbox" value="dubie" id="dubie" name="lemma"/>
+                            <label for="dubie">dubie</label>
+                            <input type="checkbox" value="forsitan" id="forsitan" name="lemma"/>
+                            <label for="forsitan">fors(it)an</label>
+                            <input type="checkbox" value="fortasse" id="fortasse" name="lemma"/>
+                            <label for="fortasse">fortasse</label>
+                            <input type="checkbox" value="indubitate" id="indubitate" name="lemma"/>
+                            <label for="indubitate">indubitate/indubitanter</label>
+                            <input type="checkbox" value="necessarie" id="necessarie" name="lemma"/>
+                            <label for="necessarie">necessarie</label>
+                            <input type="checkbox" value="possibiliter" id="possibiliter" name="lemma"/>
+                            <label for="possibiliter">possibiliter</label>
+                            <input type="checkbox" value="probabiliter" id="probabiliter" name="lemma"/>
+                            <label for="probabiliter">probabiliter</label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <input type="submit" value="Submit" id="checkBtn"/>
+        </form>
+    </div>
+    <script type="text/javascript"> $(document).ready(function () { $('#checkBtn').click(function()
+        { checked = $("input[name=modality]:checked").length; if(!checked)
+        { alert("At least one type of modality must be selected"); return false; } }); }); </script>
+    <script type="text/javascript" src="/exist/apps/woposs/resources/scripts/select.js"/>
+    <script type="text/javascript" src="/exist/apps/woposs/resources/scripts/select-subtypes.js"/>
+    <script type="text/javascript" src="/exist/apps/woposs/resources/scripts/select-situational.js"/>
+
+</div>
