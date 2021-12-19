@@ -61,6 +61,15 @@ if ($exist:path eq '') then
     </view>
         <cache-control cache="no"/>
     </dispatch>  
+    
+    else if ($exist:resource eq "passage.xql") then 
+    <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
+    <view>
+        <forward url="{$exist:controller}/modules/wrapper.xql"/>
+        <forward url="{$exist:controller}/modules/view.xql"/>
+    </view>
+        <cache-control cache="no"/>
+    </dispatch>  
 
  else if (ends-with($exist:resource, ".html")) then (
   (: the html page is run through view.xql to expand templates :)

@@ -49,7 +49,7 @@ declare function local:modality($fs as item()*, $modality as xs:string) as item(
 declare function local:dynParticipants($fs as item()*, $filters as xs:string+) as item()* {
     let $query := woposs:prepareQuery("modalType", $filters)
     return
-         $fs[ft:query(., $query)]
+          $fs[ft:query(., $query)]
 };
 
 declare function local:dynSituational($fs as item()*, $filters as xs:string+) as item()* {
@@ -83,18 +83,8 @@ declare function local:dynamic($fs as item()*) as item()* {
         ()
     let $dyn_fs_filtered := if (count($pos_fs_filtered1) + count($pos_fs_filtered2) + count($nec_fs_filtered1) +  count($nec_fs_filtered2) gt 0) then $pos_fs_filtered1 | $nec_fs_filtered1 | $pos_fs_filtered2 | $nec_fs_filtered2
     else $dyn_fs
-    for $dyn in $dyn_fs_filtered
-    let $type := $dyn/tei:f[@name eq 'meaning']/tei:symbol/@value/string()
-    let $subtype := $dyn/tei:f[@name eq 'type']/tei:symbol/@value/string()
-    let $other := $dyn/tei:f[@name eq 'subtype']/tei:symbol/@value/string()
-    let $mk_id := $dyn/tei:f[@name eq 'marker']/@fVal
-    let $lemma := local:lemma($dyn, $mk_id)
-    let $marker := string-join($dyn/ancestor::tei:TEI/descendant::tei:seg[substring(@ana, 2) eq $mk_id], ' ')
-    let $s := $dyn/ancestor::tei:TEI/descendant::tei:s[descendant::tei:seg[substring(@ana, 2) eq $mk_id]]
-    let $locus := woposs:locus($s)
     return
-        <tr><td1 ref="{$mk_id}">{$s}</td1>
-            <td>{$marker}</td><td>{$lemma}</td><td>dynamic</td><td>{$type}</td><td>{$subtype}</td><td>{$other}</td><td>{$locus}</td></tr>
+       $dyn_fs_filtered
 
 };
 declare function local:deonticTypes($fs as item()+, $types as xs:string+) as item()+ {

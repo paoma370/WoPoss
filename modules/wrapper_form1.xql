@@ -1,6 +1,7 @@
 xquery version "3.1";
 <div xmlns="http://www.w3.org/1999/xhtml" data-template="templates:surround" data-template-with="templates/page_woposs.html" data-template-at="content">
 <div>
+<p><span style="color:red">Important</span>: Click in the fist cell (the passage) to read more context and get the full analysis of the passage.</p>
   <table id="resultsTable" data-toggle="table"    data-show-pagination-switch="true"
   data-search="true"
   data-show-columns="true" data-pagination="true" data-sortable="true"

@@ -1,21 +1,26 @@
 <collection xmlns="http://exist-db.org/collection-config/1.0">
   <index xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-   <!--   <fulltext default="none" attributes="false"/>-->
     <lucene>
-      <text qname="tei:fs[@type eq 'relation']">
-      <field name="id" expression="@xml:id"/>
-        <facet dimension="lemma" expression="parent::*/tei:fs[@xml:id = current()/tei:f[@name eq 'marker']/@fVal]/tei:f[@name eq 'lemma']/tei:symbol/@value"/>
-        <facet dimension="modality" expression="tei:f[@name eq 'modality']/tei:symbol/@value"/>
-      </text>
-       <text qname="tei:fs[@type eq 'marker']">
-        <facet dimension="marker" expression="tei:f[@name eq 'lemma']/tei:symbol/@value"/>
+        <analyzer class="org.apache.lucene.analysis.standard.StandardAnalyzer"/>
+      <text qname="tei:fs">
+        <field name="type" expression="@type"/>
+        <field name="lemma" expression="tei:f[@name eq 'lemma']/tei:symbol/@value"/>
+        <field name="markerId" expression="tei:f[@name eq 'marker']/@fVal"/>
+        <field name="scope" expression="tei:f[@name eq 'scope']/@fVal"/>
+        <field name="pertinence" expression="tei:f[@name eq 'pertinence']/tei:binary/@value"/>
+        <field name="id" expression="@xml:id"/>
+        <field name="modality" expression="tei:f[@name eq 'modality']/tei:symbol/@value"/>
+        <field name="modalType" expression="tei:f[@name eq 'type']/tei:symbol/@value"/>
+        <field name="modalSubtype" expression="tei:f[@name eq 'subtype']/tei:symbol/@value"/>
+        <field name="modalMeaning" expression="tei:f[@name eq 'meaning']/tei:symbol/@value"/>
+        <field name="degree" expression="tei:f[@name eq 'degree']/tei:symbol/@value"/>
       </text>
       <text qname="tei:seg">
-          <field name="lem" expression="tei:w/@lemma"/>
+        <field name="ana" expression="substring(@ana, 2)"/>
       </text>
     </lucene>
   </index>
- <!-- <triggers>
+ <triggers>
     <trigger class="org.exist.extensions.exquery.restxq.impl.RestXqTrigger"/>
-  </triggers>-->
+  </triggers>
 </collection>

@@ -1,10 +1,10 @@
 .marker {
-    color:purple;
+    color: purple;
     font-weight: bold;
 }
 
 .scope {
-    color:darkgreen;
+    color: darkgreen;
     font-weight: bold;
 }
 
@@ -18,10 +18,17 @@
 }
 
 .supplied {
-    font-style:italic;
-    font-size:smaller;
+    font-style: italic;
+    font-size: smaller;
 }
 
+.suppliedPlain::after {
+    content: "]"
+}
+
+.suppliedPlain::before {
+    content: "["
+}
 
 tr {
     border-bottom: 1px solid black;
@@ -29,7 +36,54 @@ tr {
     border-collapse: collapse;
 }
 
-th, td {
-    padding:0.5em;
+th,
+td {
+    padding: 0.5em;
 }
 
+.noLink {
+    color: inherit;
+    text-decoration: none;
+}
+
+.noLink:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.w {
+    display: inline-flex;
+}
+
+.containerResults {
+    display: flex;
+}
+
+.text {
+    margin-right: 2%
+}
+
+.analysis {
+    margin-left : 1%;
+    width:40%;
+    text-align:left;
+}
+.analysis ul li {
+    text-align:left;
+}
+
+.selected {
+    background-color:lightgrey;
+}
+
+.marker {
+    cursor:pointer;
+}
+
+.hide {
+    display:none
+}
+
+.hide.show {
+    display:block
+}

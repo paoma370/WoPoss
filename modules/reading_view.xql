@@ -6,6 +6,7 @@ declare function local:dispatch($node as node()) as item()* {
         case element(td1) return local:s($node)
         case element(tr) return local:tr($node)
         case element(td) return local:td($node)
+        case element(tei:w) return local:w($node)
         case element(tei:supplied) return local:supplied($node)
         case element(tei:seg) return local:seg($node)
         default return local:passthru($node)
@@ -26,11 +27,17 @@ declare function local:td($node as element(td)) as element(td) {
 declare function local:seg($node as element(tei:seg)) as element(span) {
     <span class="{$node/@function}">{local:passthru($node)}</span>};
     
+declare function local:w($node as element(tei:w)) as item() {
+    if ($node/tei:seg) then
+    <span class="w">{local:passthru($node)}</span>
+    else
+    local:passthru($node)
+};
 
 declare function local:supplied($node as element(tei:supplied)) as element(span) {
     <span class="supplied">[{local:passthru($node)}]</span>};
     
 declare function local:s($node as node()) as item()* {
-     for $s in $node return <td>{local:passthru($s)}</td>};
+     for $s in $node return <td><a href="passage.xql?marker={$node/@ref}" class="noLink">{local:passthru($s)}</a></td>};
 
 request:set-attribute('html', local:dispatch(request:get-data()))
