@@ -65,7 +65,7 @@ td {
 
 .analysis {
     margin-left : 1%;
-    width:40%;
+    width:50%;
     text-align:left;
 }
 .analysis ul li {
@@ -76,7 +76,7 @@ td {
     background-color:lightgrey;
 }
 
-.marker {
+.seg {
     cursor:pointer;
 }
 

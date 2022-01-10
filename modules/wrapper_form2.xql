@@ -7,13 +7,15 @@ xquery version "3.1";
     <div>
         <table
             id="resultsTable"
+            data-show-export="true"
             data-toggle="table"
             data-show-pagination-switch="true"
             data-search="true"
             data-show-columns="true"
             data-pagination="true"
             data-sortable="true"
-            data-show-export="true">
+            data-export-types="csv"
+            data-click-to-select="true">
             <thead>
                 <tr><th
                         data-sortable="true">Passage</th>

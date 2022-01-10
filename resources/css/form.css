@@ -68,9 +68,18 @@
         }
         
         .modalMeaning {
-            margin-bottom:2em;
+            margin-bottom:1em;
         }
         
         form h4 {
             margin-bottom:0;
+        }
+        
+        fieldset {
+            margin-left:2em;
+        }
+        
+        fieldset div:not([class]) {
+            margin-left:2em;
+            margin-bottom:1em;
         }
