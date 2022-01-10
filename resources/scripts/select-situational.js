@@ -10,7 +10,7 @@ function deselectCheck() {
     for (var i = 0; i < sitChecks.length; i++) {
         if (this.checked == true) {
             sitChecks[i].checked = false;
-            document.getElementById('dynamic').checked = true;
+            /*document.getElementById('dynamic').checked = true;*/
 
         }
     }

@@ -1,5 +1,5 @@
 function getMarker() {
-    var markers = document.getElementsByClassName('marker');
+    var markers = document.getElementsByClassName('seg');
     for (var i = 0; i < markers.length; i++) {
         markers[i].addEventListener('click', showAnalysis, false);
     }
@@ -7,9 +7,13 @@ function getMarker() {
 
 function showAnalysis() {
     hideAnalysis();
-    var idno = this.dataset.idno;
-    var divAna = document.getElementById(idno);
-    divAna.classList.add('show');
+    var idnoContents = this.dataset.idno;
+    var idno = idnoContents.split(" ");
+    for (var i = 0; i < idno.length; i++) {
+        var identifier = idno[i];
+        var divAna = document.getElementById(identifier);
+        divAna.classList.add('show');
+    }
 }
 
 function hideAnalysis() {
