@@ -98,6 +98,65 @@ declare variable $SoADesc := <fields>
     </field>
 </fields>;
 
+
+declare variable $morphologicalFeaturesScope := <fields>
+    <field
+        name="Gender">{
+            for $x in request:get-parameter("scope_Gender", ())
+            return
+                <value>{$x}</value>
+        }</field>
+    <field
+        name="Case">{
+            for $x in request:get-parameter("scope_Case", ())
+            return
+                <value>{$x}</value>
+        }</field>
+    <field
+        name="Number">{
+            for $x in request:get-parameter("scope_Number", ())
+            return
+                <value>{$x}</value>
+        }</field>
+    <field
+        name="Person">{
+            for $x in request:get-parameter("scope_Person", ())
+            return
+                <value>{$x}</value>
+        }</field>
+    <field
+        name="VerbForm">{
+            for $x in request:get-parameter("scope_VerbForm", ())
+            return
+                <value>{$x}</value>
+        }</field>
+    
+    <field
+        name="Aspect">{
+            for $x in request:get-parameter("scope_Aspect", ())
+            return
+                <value>{$x}</value>
+        }</field>
+    <field
+        name="Mood">{
+            for $x in request:get-parameter("scope_Mood", ())
+            return
+                <value>{$x}</value>
+        }</field>
+    <field
+        name="Tense">{
+            for $x in request:get-parameter("scope_Tense", ())
+            return
+                <value>{$x}</value>
+        }</field>
+    <field
+        name="Voice">{
+            for $x in request:get-parameter("scope_Voice", ())
+            return
+                <value>{$x}</value>
+        }</field>
+</fields>;
+
 declare variable $morphologicalFeatures := <fields>
     <field
         name="Gender">{
@@ -203,8 +262,8 @@ declare function local:pertinent($fs as node()) as item()+ {
     let $relation := $documents/descendant::tei:fs[ft:query(., $relation_query)]
     let $mods := distinct-values($relation/tei:f[@name eq 'type']/tei:symbol/@value)
     for $mod in $mods
-    let $modality := distinct-values($relation[tei:f[@name eq 'type']/tei:symbol[@value eq $mod]]/tei:f[@name eq 'modality']/tei:symbol/@value)
-    let $other := distinct-values($relation[tei:f[@name eq 'type']/tei:symbol[@value eq $mod]]/tei:f[@name eq 'meaning']/tei:symbol/@value)
+    let $modality := distinct-values($relation[ft:query(., woposs:prepareQuery("modalType", $mod))]/tei:f[@name eq 'modality']/tei:symbol/@value)
+    let $other := distinct-values($relation[ft:query(., woposs:prepareQuery("modalType", $mod))]/tei:f[@name eq 'meaning']/tei:symbol/@value)
     let $type := if (count($other) gt 0) then
         $other || ', ' || $mod
     else
@@ -246,23 +305,51 @@ declare function local:getMarker($scopes as node()*) as node()* {
         $markers[ft:query(., woposs:prepareQuery("id", $markerIds))]
 };
 
+declare function local:filterWords($ws as node()+, $params as item()) as node()* {
+    let $msdIds := $ws/substring(@msd, 2)
+    let $msdFeatures := $ws/ancestor::tei:TEI/descendant::tei:fs[ft:query(., "type:msd")][ft:query(., woposs:prepareQuery("id", $msdIds))]
+    let $query := woposs:filterParams($params)
+    let $filteredIds := $msdFeatures[ft:query(., $query)]/@xml:id
+    return
+        $ws[ft:query(., woposs:prepareQuery("msd", $filteredIds))]
+};
+
 declare function local:morph($fs as node()*) as node()* {
     let $segs := for $x in $fs
     return
         local:get-seg($x, $x/@xml:id)
     let $ws := $segs/ancestor::tei:w | $segs/descendant::tei:w
-    let $msd := $ws/substring(@msd, 2)
-    let $desc := $ws/ancestor::tei:TEI/descendant::tei:fs[ft:query(., "type:msd")][ft:query(., woposs:prepareQuery("id", $msd))]
-    let $query := woposs:filterParams($morphologicalFeatures)
-    let $ids := $desc[ft:query(., $query)]/@xml:id
-    let $ws_filtered := $ws[substring(@msd, 2) = $ids]
-    let $seg_filtered := $ws_filtered/ancestor::tei:seg[@function eq 'marker'] | $ws_filtered/descendant::tei:seg[@function eq 'marker']
+    let $ws_filtered := local:filterWords($ws, $morphologicalFeatures)
+    let $seg_filtered := $ws_filtered/ancestor::tei:seg[ft:query(., "function:marker")] | $ws_filtered/descendant::tei:seg[ft:query(., "function:marker")]
     let $anas := for $x in $seg_filtered/tokenize(@ana, '\s+')
     return
         substring($x, 2)
-    let $fs_filtered := $fs[@xml:id = $anas]
+    let $fs_filtered := $fs[ft:query(., woposs:prepareQuery("id", $anas))]
     return
         $fs_filtered
+};
+
+declare function local:morphScope($markers as node()*) as node()* {
+    let $scopes := if (exists($markers)) then
+        local:getScope($markers)
+    else
+        ()
+    let $segs := for $x in $scopes
+    return
+        local:get-seg($x, $x/@xml:id)
+    let $ws := $segs/ancestor::tei:w[ft:query(., "function:main")] | $segs/descendant::tei:w[ft:query(., "function:main")]
+    let $ws_filtered := local:filterWords($ws, $morphologicalFeaturesScope)
+    let $seg_filtered := $ws_filtered/ancestor::tei:seg[ft:query(., "function:scope")]  | $ws_filtered/descendant::tei:seg[ft:query(., "function:scope")] 
+    let $anas := for $x in $seg_filtered/tokenize(@ana, '\s+')
+    return
+        substring($x, 2)
+    let $filtered_scopes := $scopes[ft:query(., woposs:prepareQuery("id", $anas))]
+    let $filtered_markers := if (exists($filtered_scopes)) then
+        local:getMarker($filtered_scopes)
+    else
+        ()
+    return
+        $filtered_markers
 };
 declare function local:SoaDesc($markers as node()*) as node()* {
     let $query := woposs:filterParams($SoADesc)
@@ -299,7 +386,11 @@ declare function local:SoaDesc($markers as node()*) as node()* {
             local:SoaDesc($mk_filtered2)
         else
             $mk_filtered2
-        for $mk in $mk_filtered3
+        let $mk_filtered4 := if (exists($morphologicalFeaturesScope//value/node())) then
+            local:morphScope($mk_filtered3)
+        else
+            $mk_filtered3
+        for $mk in $mk_filtered4
         let $output := if ($mk[ft:query(., "pertinence:false")]) then
             local:not-pertinent($mk)
         else

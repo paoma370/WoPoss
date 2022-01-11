@@ -1,21 +1,14 @@
 <collection xmlns="http://exist-db.org/collection-config/1.0">
   <index xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <lucene>
-       
-            <analyzer class="org.apache.lucene.analysis.core.WhitespaceAnalyzer"/>
+      <analyzer class="org.apache.lucene.analysis.core.WhitespaceAnalyzer"/>
       <text qname="tei:fs">
+        <field name="id" expression="@xml:id"/>
         <field name="type" expression="@type"/>
-        <field name="lemma" expression="tei:f[@name eq 'lemma']/tei:symbol/@value"/>
+
+        <!-- modal relation -->
         <field name="markerId" expression="tei:f[@name eq 'marker']/@fVal"/>
         <field name="scopeId" expression="tei:f[@name eq 'scope']/@fVal"/>
-        <field name="pertinence" expression="tei:f[@name eq 'pertinence']/tei:binary/@value"/>
-        <field name="modalStatus" expression="tei:f[@name eq 'modal']/tei:binary/@value"/>
-        <field name="diachrony" expression="tei:f[@name eq 'diachrony']/tei:symbol/@value"/>
-        <field name="markerUtterance" expression="[@type eq 'marker']/tei:f[@name eq 'utterance']/tei:symbol/@value"/>
-        <field name="markerPolarity" expression="[@type eq 'marker']/tei:f[@name eq 'polarity']/tei:symbol/@value"/>
-        <field name="scopeUtterance" expression="tei:f[parent::tei:fs/@type eq 'scope'][@name eq 'utterance']/tei:symbol/@value"/>
-        <field name="scopePolarity" expression="tei:f[parent::tei:fs/@type eq 'scope'][@name eq 'polarity']/tei:symbol/@value"/>
-        <field name="id" expression="@xml:id"/>
         <field name="modality" expression="tei:f[@name eq 'modality']/tei:symbol/@value"/>
         <field name="modalType" expression="tei:f[@name eq 'type']/tei:symbol/@value"/>
         <field name="modalSubtype" expression="tei:f[@name eq 'subtype']/tei:symbol/@value"/>
@@ -23,30 +16,51 @@
         <field name="degree" expression="tei:f[@name eq 'degree']/tei:symbol/@value"/>
         <field name="source" expression="tei:f[@name eq 'source']/tei:symbol/@value"/>
         <field name="context" expression="tei:f[@name eq 'context']/tei:symbol/@value"/>
-         <field name="Case" expression="tei:f[@name eq 'Case']/tei:symbol/@value"/>
-         <field name="Gender" expression="tei:f[@name eq 'Gender']/tei:symbol/@value"/>
-         <field name="Number" expression="tei:f[@name eq 'Number']/tei:symbol/@value"/>
-         <field name="Person" expression="tei:f[@name eq 'Person']/tei:symbol/@value"/>
-         <field name="Degree" expression="tei:f[@name eq 'Degree']/tei:symbol/@value"/>
-          <field name="VerbForm" expression="tei:f[@name eq 'VerbForm']/tei:symbol/@value"/>
-         <field name="Aspect" expression="tei:f[@name eq 'Aspect']/tei:symbol/@value"/>
-         <field name="Mood" expression="tei:f[@name eq 'Mood']/tei:symbol/@value"/>
-           <field name="Tense" expression="tei:f[@name eq 'Tense']/tei:symbol/@value"/>
-             <field name="Voice" expression="tei:f[@name eq 'Voice']/tei:symbol/@value"/>
-            <field name="control" expression="tei:f[@name eq 'control']/tei:symbol/@value |  tei:f[@name eq 'control']/tei:binary/@value"/>
-            <field name="dynamicity" expression="tei:f[@name eq 'dynamicity']/tei:symbol/@value |  tei:f[@name eq 'dynamicity']/tei:binary/@value"/>
-            <field name="SoA" expression="tei:f[@name eq 'SoA']/tei:binary/@value"/>
-            <field name="participant" expression="tei:f[@name eq 'participant']/tei:symbol/@value"/>
-            <field name="participantType" expression="tei:f[@name eq 'participantType']/tei:symbol/@value"/>
+
+        <!-- marker -->
+        <field name="lemma" expression="tei:f[@name eq 'lemma']/tei:symbol/@value"/>
+        <field name="pertinence" expression="tei:f[@name eq 'pertinence']/tei:binary/@value"/>
+        <field name="modalStatus" expression="tei:f[@name eq 'modal']/tei:binary/@value"/>
+        <field name="diachrony" expression="tei:f[@name eq 'diachrony']/tei:symbol/@value"/>
+        <field name="markerUtterance" expression="[@type eq 'marker']/tei:f[@name eq 'utterance']/tei:symbol/@value"/>
+        <field name="markerPolarity" expression="[@type eq 'marker']/tei:f[@name eq 'polarity']/tei:symbol/@value"/>
+
+        <!-- scope -->
+        <field name="scopeUtterance" expression="tei:f[parent::tei:fs/@type eq 'scope'][@name eq 'utterance']/tei:symbol/@value"/>
+        <field name="scopePolarity" expression="tei:f[parent::tei:fs/@type eq 'scope'][@name eq 'polarity']/tei:symbol/@value"/>
+        <field name="control" expression="tei:f[@name eq 'control']/tei:symbol/@value |  tei:f[@name eq 'control']/tei:binary/@value"/>
+        <field name="dynamicity" expression="tei:f[@name eq 'dynamicity']/tei:symbol/@value |  tei:f[@name eq 'dynamicity']/tei:binary/@value"/>
+        <field name="SoA" expression="tei:f[@name eq 'SoA']/tei:binary/@value"/>
+        <field name="participant" expression="tei:f[@name eq 'participant']/tei:symbol/@value"/>
+        <field name="participantType" expression="tei:f[@name eq 'participantType']/tei:symbol/@value"/>
+
+        <!-- morphological features -->
+        <field name="Case" expression="tei:f[@name eq 'Case']/tei:symbol/@value"/>
+        <field name="Gender" expression="tei:f[@name eq 'Gender']/tei:symbol/@value"/>
+        <field name="Number" expression="tei:f[@name eq 'Number']/tei:symbol/@value"/>
+        <field name="Person" expression="tei:f[@name eq 'Person']/tei:symbol/@value"/>
+        <field name="Degree" expression="tei:f[@name eq 'Degree']/tei:symbol/@value"/>
+        <field name="VerbForm" expression="tei:f[@name eq 'VerbForm']/tei:symbol/@value"/>
+        <field name="Aspect" expression="tei:f[@name eq 'Aspect']/tei:symbol/@value"/>
+        <field name="Mood" expression="tei:f[@name eq 'Mood']/tei:symbol/@value"/>
+        <field name="Tense" expression="tei:f[@name eq 'Tense']/tei:symbol/@value"/>
+        <field name="Voice" expression="tei:f[@name eq 'Voice']/tei:symbol/@value"/>
       </text>
+
       <text qname="tei:seg">
         <field name="ana" expression="for $x in tokenize(@ana) return substring($x, 2)"/>
         <field name="function" expression="@function"/>
         <field name="participantType" expression="[@function eq 'participant']/@type"/>
       </text>
+
+      <text qname="tei:w">
+        <field name="msd" expression="substring(@msd, 2)"/>
+        <field name="function" expression="@function"/>
+      </text>
+
     </lucene>
   </index>
- <triggers>
+  <triggers>
     <trigger class="org.exist.extensions.exquery.restxq.impl.RestXqTrigger"/>
   </triggers>
 </collection>
