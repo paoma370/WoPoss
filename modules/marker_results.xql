@@ -4,7 +4,9 @@ import module namespace woposs = "http://woposs.unine.ch" at "functions.xql";
 
 declare variable $documents as document-node()+ :=
 collection('/db/apps/woposs/data');
-declare variable $marker := request:get-parameter("marker", ());
+declare variable $marker := request:get-parameter("lemma", ());
+
+
 declare variable $markerDesc := <fields>
     <field
         name="pertinence">
@@ -222,6 +224,8 @@ declare variable $morphologicalFeatures := <fields>
         }</field>
 </fields>;
 
+declare variable $modalFilter := request:get-parameter("modality", ());
+
 
 declare function local:get-seg($fs as item()?, $id as xs:string?) as item()* {
     let $query := "ana:" || $id
@@ -231,7 +235,7 @@ declare function local:get-seg($fs as item()?, $id as xs:string?) as item()* {
 };
 
 
-declare function local:not-pertinent($fs as node()) as item()+ {
+declare function local:not-pertinent($fs as node()?) as item()* {
     let $id := $fs/@xml:id
     let $segs := local:get-seg($fs, $id)
     let $marker := string-join($segs, ' ')
@@ -252,7 +256,7 @@ declare function local:not-pertinent($fs as node()) as item()+ {
             <td>{$marker}</td><td>{$modality}</td><td>{$type}</td><td>--</td><td>{$locus}</td></tr>
 };
 
-declare function local:pertinent($fs as node()) as item()+ {
+declare function local:pertinent($fs as node()?) as item()* {
     let $id := $fs/@xml:id
     let $segs := local:get-seg($fs, $id)
     let $marker := string-join($segs, ' ')
@@ -307,26 +311,34 @@ declare function local:getMarker($scopes as node()*) as node()* {
 
 declare function local:filterWords($ws as node()+, $params as item()) as node()* {
     let $msdIds := $ws/substring(@msd, 2)
-    let $msdFeatures := $ws/ancestor::tei:TEI/descendant::tei:fs[ft:query(., "type:msd")][ft:query(., woposs:prepareQuery("id", $msdIds))]
+    let $msdFeatures := $ws/ancestor::tei:TEI/descendant::tei:fs[ft:query(., woposs:prepareQuery("id", $msdIds))]
     let $query := woposs:filterParams($params)
     let $filteredIds := $msdFeatures[ft:query(., $query)]/@xml:id
+    let $filteredWords := if (exists($filteredIds)) then $ws[ft:query(., woposs:prepareQuery("msd", $filteredIds))] else ()
     return
-        $ws[ft:query(., woposs:prepareQuery("msd", $filteredIds))]
+        $filteredWords
 };
 
 declare function local:morph($fs as node()*) as node()* {
-    let $segs := for $x in $fs
-    return
-        local:get-seg($x, $x/@xml:id)
-    let $ws := $segs/ancestor::tei:w | $segs/descendant::tei:w
-    let $ws_filtered := local:filterWords($ws, $morphologicalFeatures)
-    let $seg_filtered := $ws_filtered/ancestor::tei:seg[ft:query(., "function:marker")] | $ws_filtered/descendant::tei:seg[ft:query(., "function:marker")]
-    let $anas := for $x in $seg_filtered/tokenize(@ana, '\s+')
-    return
-        substring($x, 2)
-    let $fs_filtered := $fs[ft:query(., woposs:prepareQuery("id", $anas))]
-    return
-        $fs_filtered
+    if ($fs) then
+        (
+        let $segs := for $x in $fs
+        return
+            local:get-seg($x, $x/@xml:id)
+        let $ws := $segs/ancestor::tei:w[@msd] | $segs/descendant::tei:w[@msd]
+        let $ws_filtered := local:filterWords($ws, $morphologicalFeatures)
+        let $seg_filtered := if (exists($ws_filtered)) then
+            $ws_filtered/ancestor::tei:seg[ft:query(., "function:marker")] | $ws_filtered/descendant::tei:seg[ft:query(., "function:marker")]
+        else
+            ()
+        let $anas := for $x in $seg_filtered/tokenize(@ana, '\s+')
+        return
+            substring($x, 2)
+        return
+            $fs[ft:query(., woposs:prepareQuery("id", $anas))]
+        )
+    else
+        ()
 };
 
 declare function local:morphScope($markers as node()*) as node()* {
@@ -337,13 +349,16 @@ declare function local:morphScope($markers as node()*) as node()* {
     let $segs := for $x in $scopes
     return
         local:get-seg($x, $x/@xml:id)
-    let $ws := $segs/ancestor::tei:w[ft:query(., "function:main")] | $segs/descendant::tei:w[ft:query(., "function:main")]
-    let $ws_filtered := local:filterWords($ws, $morphologicalFeaturesScope)
-    let $seg_filtered := $ws_filtered/ancestor::tei:seg[ft:query(., "function:scope")]  | $ws_filtered/descendant::tei:seg[ft:query(., "function:scope")] 
+    let $ws := $segs/ancestor::tei:w[@msd][ft:query(., "function:main")] | $segs/descendant::tei:w[@msd][ft:query(., "function:main")]
+    let $ws_filtered := if (exists($ws)) then
+        local:filterWords($ws, $morphologicalFeaturesScope)
+    else
+        ()
+    let $seg_filtered := $ws_filtered/ancestor::tei:seg[ft:query(., "function:scope")] | $ws_filtered/descendant::tei:seg[ft:query(., "function:scope")]
     let $anas := for $x in $seg_filtered/tokenize(@ana, '\s+')
     return
         substring($x, 2)
-    let $filtered_scopes := $scopes[ft:query(., woposs:prepareQuery("id", $anas))]
+    let $filtered_scopes := if ($anas) then  $scopes[ft:query(., woposs:prepareQuery("id", $anas))] else ()
     let $filtered_markers := if (exists($filtered_scopes)) then
         local:getMarker($filtered_scopes)
     else
@@ -370,8 +385,21 @@ declare function local:SoaDesc($markers as node()*) as node()* {
         $filtered_markers
 };
 
+declare function local:modality($fs as node()*) as node()* {
+    if ($fs) then
+        (
+        let $query1 := woposs:prepareQuery("markerId", $fs/@xml:id)
+        let $query2 := woposs:prepareQuery("modality", $modalFilter)
+        let $markerIds := $fs/ancestor::tei:TEI/descendant::tei:fs[ft:query(., $query1)][ft:query(., $query2)]/tei:f[@name eq 'marker']/@fVal
+        let $query3 := woposs:prepareQuery("id", $markerIds)
+        return
+            $fs[ft:query(., $query3)])
+    else
+        ()
+};
+
 <tbody>{
-        let $query := "lemma:" || $marker
+        let $query := woposs:prepareQuery("lemma", $marker)
         let $mk_fs := $documents//tei:fs[ft:query(., $query)]
         let $mk_filtered := if (exists($markerDesc//value/node())) then
             local:markerDesc($mk_fs)
@@ -390,7 +418,11 @@ declare function local:SoaDesc($markers as node()*) as node()* {
             local:morphScope($mk_filtered3)
         else
             $mk_filtered3
-        for $mk in $mk_filtered4
+        let $mk_filtered5 := if (exists($modalFilter)) then
+            local:modality($mk_filtered4)
+        else
+            $mk_filtered4
+        for $mk in $mk_filtered5
         let $output := if ($mk[ft:query(., "pertinence:false")]) then
             local:not-pertinent($mk)
         else

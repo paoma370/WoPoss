@@ -13,9 +13,9 @@
         <h2 id="search-marker">Search by modal marker</h2>
         <h3>Choose a modal marker (required)</h3>
         <form method="get" action="modules/marker_results.xql">
-            <fieldset>
+            <!--<fieldset>
                 <select name="marker" id="marker" required="required">
-                    <option disabled="" selected="" value=""> -- select an option --</option>
+                    <option disabled="" selected="" value=""> - - select an option - -</option>
                     <optgroup label="Verbs">
                         <option value="debeo">debeo</option>
                         <option value="decet">decet</option>
@@ -86,7 +86,140 @@
                     </optgroup>
                 </select>
                 <br/>
+            </fieldset>-->
+            
+            
+            <fieldset>
+                        <div>
+                            <h4>Verbs</h4>
+                            <input type="checkbox" value="debeo" id="mk_debeo" name="lemma"/>
+                            <label for="mk_debeo">debeo</label>
+                            <input type="checkbox" value="decet" id="mk_decet" name="lemma"/>
+                            <label for="mk_decet">decet</label>
+                            <input type="checkbox" value="licet" id="mk_licet" name="lemma"/>
+                            <label for="mk_licet">licet</label>
+                            <input type="checkbox" value="nequeo" id="mk_nequeo" name="lemma"/>
+                            <label for="mk_nequeo">nequeo</label>
+                            <input type="checkbox" value="nolo" id="mk_nolo" name="lemma"/>
+                            <label for="mk_nolo">nolo</label>
+                            <input type="checkbox" value="malo" id="mk_malo" name="lemma"/>
+                            <label for="mk_malo">malo</label>
+                            <input type="checkbox" value="oportet" id="mk_oportet" name="lemma"/>
+                            <label for="mk_oportet">oportet</label>
+                            <input type="checkbox" value="possum" id="mk_possum" name="lemma"/>
+                            <label for="mk_possum">possum</label>
+                            <input type="checkbox" value="queo" id="mk_queo" name="lemma"/>
+                            <label for="mk_queo">queo</label>
+                            <input type="checkbox" value="valet" id="mk_valet" name="lemma"/>
+                            <label for="mk_valet">valet</label>
+                            <input type="checkbox" value="volo" id="mk_volo" name="lemma"/>
+                            <label for="mk_volo">volo</label>
+                        </div>
+                        <div>
+                            <h4>Phrases</h4>
+                            <input type="checkbox" value="aequum_est" id="mk_aequum_est" name="lemma"/>
+                            <label for="mk_aequum_est">aequuum est</label>
+                            <input type="checkbox" value="est_inf" id="mk_est_inf" name="lemma"/>
+                            <label for="mk_est_inf">est + infinitive</label>
+                            <input type="checkbox" value="habeo_inf" id="mk_habeo_inf" name="lemma"/>
+                            <label for="mk_habeo_inf">habeo + infinitive</label>
+                            <input type="checkbox" value="ius_est" id="mk_ius_est" name="lemma"/>
+                            <label for="mk_ius_est">ius est</label>
+                            <input type="checkbox" value="meum_est" id="mk_meum_est" name="lemma"/>
+                            <label for="mk_meum_est">meum est</label>
+                            <input type="checkbox" value="necesse_est" id="mk_necesse_est" name="lemma"/>
+                            <label for="mk_necesse_est">necesse est</label>
+                            <input type="checkbox" value="necesse_habeo" id="mk_necesse_habeo" name="lemma"/>
+                            <label for="mk_necesse_habeo">necesse habeo</label>
+                            <input type="checkbox" value="opus_est" id="mk_opus_est" name="lemma"/>
+                            <label for="mk_opus_est">opus est</label>
+                            <input type="checkbox" value="usus_est" id="mk_usus_est" name="lemma"/>
+                            <label for="mk_usus_est">usus est</label>
+                        </div>
+                        <div>
+                            <h4>Verbal adjectives</h4>
+                            <input type="checkbox" value="bilis" id="mk_bilis" name="lemma"/>
+                            <label for="mk_bilis">-bilis</label>
+                            <input type="checkbox" value="bilis_est" id="mk_bilis_est" name="lemma"/>
+                            <label for="mk_bilis_est">-bilis est</label>
+                            <input type="checkbox" value="ndus" id="mk_ndus" name="lemma"/>
+                            <label for="mk_ndus">-ndus</label>
+                            <input type="checkbox" value="ndus_est" id="mk_ndus_est" name="lemma"/>
+                            <label for="mk_ndus_est">-ndus est</label>
+                            <input type="checkbox" value="turus" id="mk_turus" name="lemma"/>
+                            <label for="mk_turus">-turus</label>
+                            <input type="checkbox" value="turus_est" id="mk_turus_est" name="lemma"/>
+                            <label for="mk_turus_est">-turus est</label>
+                        </div>
+                        <div>
+                            <h4>Adjectives</h4>
+                            <input type="checkbox" value="aequus" id="mk_aequus" name="lemma"/>
+                            <label for="mk_aequus">aequus</label>
+                            <input type="checkbox" value="aptus" id="mk_aptus" name="lemma"/>
+                            <label for="mk_aptus">aptus</label>
+                            <input type="checkbox" value="certus" id="mk_certus" name="lemma"/>
+                            <label for="mk_certus">certus</label>
+                            <input type="checkbox" value="dubius" id="mk_dubius" name="lemma"/>
+                            <label for="mk_dubius">dubius</label>
+                            <input type="checkbox" value="illicitus" id="mk_illicitus" name="lemma"/>
+                            <label for="mk_illicitus">illicitus</label>
+                            <input type="checkbox" value="impossibilis" id="mk_impossibilis" name="lemma"/>
+                            <label for="mk_impossibilis">impossibilis</label>
+                            <input type="checkbox" value="impossibilis_est" id="mk_impossibilis_est" name="lemma"/>
+                            <label for="mk_impossibilis_est">impossibilis est</label>
+                            <input type="checkbox" value="incertus" id="mk_incertus" name="lemma"/>
+                            <label for="mk_incertus">incertus</label>
+                            <input type="checkbox" value="ineptus" id="mk_ineptus" name="lemma"/>
+                            <label for="mk_ineptus">ineptus</label>
+                            <input type="checkbox" value="licitus" id="mk_licitus" name="lemma"/>
+                            <label for="mk_licitus">licitus</label>
+                            <input type="checkbox" value="necessarius" id="mk_necessarius" name="lemma"/>
+                            <label for="mk_necessarius">necessarius</label>
+                            <input type="checkbox" value="possibilis" id="mk_possibilis" name="lemma"/>
+                            <label for="mk_possibilis">possibilis</label>
+                            <input type="checkbox" value="possibilis_est" id="mk_possibilis_est" name="lemma"/>
+                            <label for="mk_possibilis_est">possibilis est</label>
+                        </div>
+                        <div>
+                            <h4>Nouns</h4>
+                            <input type="checkbox" value="dubium" id="mk_dubium" name="lemma"/>
+                            <label for="mk_dubium">dubium</label>
+                            <input type="checkbox" value="facultas" id="mk_facultas" name="lemma"/>
+                            <label for="mk_facultas">facultas</label>
+                            <input type="checkbox" value="possibilitas" id="mk_possibilitas" name="lemma"/>
+                            <label for="mk_possibilitas">possibilitas</label>
+                            <input type="checkbox" value="potestas" id="mk_potestas" name="lemma"/>
+                            <label for="mk_potestas">potestas</label>
+                            <input type="checkbox" value="necessitas" id="mk_necessitas" name="lemma"/>
+                            <label for="mk_necessitas">necessitas</label>
+                            <input type="checkbox" value="necessitudo" id="mk_necessitudo" name="lemma"/>
+                            <label for="mk_necessitudo">necessitudo</label>
+                            <input type="checkbox" value="probabilitas" id="mk_probabilitas" name="lemma"/>
+                            <label for="mk_probabilitas">probabilitas</label>
+                            <input type="checkbox" value="voluntas" id="mk_voluntas" name="lemma"/>
+                            <label for="mk_voluntas">voluntas</label>
+                        </div>
+                        <div>
+                            <h4>Adverbs</h4>
+                            <input type="checkbox" value="certe" id="mk_certe" name="lemma"/>
+                            <label for="mk_certe">certe</label>
+                            <input type="checkbox" value="dubie" id="mk_dubie" name="lemma"/>
+                            <label for="mk_dubie">dubie</label>
+                            <input type="checkbox" value="forsitan" id="mk_forsitan" name="lemma"/>
+                            <label for="mk_forsitan">fors(it)an</label>
+                            <input type="checkbox" value="fortasse" id="mk_fortasse" name="lemma"/>
+                            <label for="mk_fortasse">fortasse</label>
+                            <input type="checkbox" value="indubitate" id="mk_indubitate" name="lemma"/>
+                            <label for="mk_indubitate">indubitate/indubitanter</label>
+                            <input type="checkbox" value="necessarie" id="mk_necessarie" name="lemma"/>
+                            <label for="mk_necessarie">necessarie</label>
+                            <input type="checkbox" value="possibiliter" id="mk_possibiliter" name="lemma"/>
+                            <label for="mk_possibiliter">possibiliter</label>
+                            <input type="checkbox" value="probabiliter" id="mk_probabiliter" name="lemma"/>
+                            <label for="mk_probabiliter">probabiliter</label>
+                        </div>
             </fieldset>
+            
             <h3>Optional filters</h3>
             <h4 class="title">Description of the marker</h4>
             <div class="wrapper">
@@ -446,6 +579,16 @@
                     </fieldset>
                 </div>
             </div>
+            <h4 class="title">Description of the modal relation</h4>
+            <div class="wrapper">
+                <div class="content">
+                    <input value="dynamic" id="mk_dynamic" type="checkbox" name="modality"/> <label for="mk_dynamic">dynamic</label>
+                    <input value="deontic" id="mk_deontic" type="checkbox" name="modality"/> <label for="mk_deontic">deontic</label>
+                    <input value="epistemic" id="mk_epistemic" type="checkbox" name="modality"/> <label for="mk_epistemic">epistemic</label>
+                    <p>Note: if this filter affects a passage that contains an anbiguous modal reading, all interpretations of the passage are shown regardless of the filter.</p>
+                </div>
+            </div>
+            
             <input type="submit" value="Submit"/>
         </form>
 
