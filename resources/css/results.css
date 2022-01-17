@@ -51,9 +51,25 @@ td {
     text-decoration: none;
 }
 
-.w {
-    display: inline-flex;
+.w {/*
+    display: inline-flex;*/
+    position:relative
 }
+
+.w:hover .msd {
+    display:block;
+}
+
+.msd {
+    display:none;
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    position: absolute;
+    z-index: 999;
+    width:11em;
+}
+
 
 .containerResults {
     display: flex;
@@ -87,3 +103,4 @@ td {
 .hide.show {
     display:block
 }
+

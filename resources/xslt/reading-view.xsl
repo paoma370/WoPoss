@@ -2,7 +2,7 @@
     <xsl:param name="id"/>
     <xsl:function name="woposs:capitalize-first" as="xs:string?">
         <xsl:param name="string" as="xs:string?"/>
-        <xsl:sequence select="                 concat(upper-case(substring($string, 1, 1)),                 substring($string, 2))                 "/>
+        <xsl:sequence select="concat(upper-case(substring($string, 1, 1)), substring($string, 2))"/>
 
     </xsl:function>
     <xsl:function name="woposs:getId" as="xs:string">
@@ -38,19 +38,20 @@
         <li>Polarity: <xsl:value-of select="$fs/tei:f[@name eq 'polarity']/tei:symbol/@value"/></li>
         <li>State of affairs: <ul>
                 <li><xsl:apply-templates select="$fs/tei:f[@name = ('SoA', 'dynamicity', 'control')]" mode="analysis"/></li>
-            <xsl:if test="not($fs/tei:f[@name = 'SoA'])"> <li>Participant: <xsl:choose>
-                        <xsl:when test="$fs/tei:f[@name eq 'participant']">
-                            <ul><xsl:apply-templates select="$fs/tei:f[@name eq 'participant']" mode="features"/></ul>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:variable name="participant" select="$fs/ancestor::tei:TEI/descendant::tei:seg[@function eq 'participant'][substring(@corresp, 2) eq $id]"/>
-                            <xsl:for-each select="$participant">
-                                <ul>
-                                    <xsl:apply-templates select="current()" mode="features"/>
-                                </ul>
-                            </xsl:for-each>
-                        </xsl:otherwise>
-                    </xsl:choose></li></xsl:if>
+                <xsl:if test="not($fs/tei:f[@name = 'SoA'])">
+                    <li>Participant: <xsl:choose>
+                            <xsl:when test="$fs/tei:f[@name eq 'participant']">
+                                <ul><xsl:apply-templates select="$fs/tei:f[@name eq 'participant']" mode="features"/></ul>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:variable name="participant" select="$fs/ancestor::tei:TEI/descendant::tei:seg[@function eq 'participant'][substring(@corresp, 2) eq $id]"/>
+                                <xsl:for-each select="$participant">
+                                    <ul>
+                                        <xsl:apply-templates select="current()" mode="features"/>
+                                    </ul>
+                                </xsl:for-each>
+                            </xsl:otherwise>
+                        </xsl:choose></li></xsl:if>
             </ul></li>
 
     </xsl:function>
@@ -76,11 +77,17 @@
         <xsl:param name="seg"/>
         <li>Type: <xsl:value-of select="$seg/@type =&gt; replace('_', ' ')"/></li>
     </xsl:function>
+
+
+    <!--    Main template -->
+
     <xsl:template match="tei:TEI">
         <xsl:variable name="s" select="descendant::tei:s[descendant::tei:seg[substring(@ana, 2) eq $id]]"/>
         <xsl:variable name="contextLeft" select="                 for $x in 1 to 3                 return                     $s/preceding-sibling::tei:s[$x]"/>
         <xsl:variable name="contextRight" select="                 for $x in 1 to 3                 return                     $s/following-sibling::tei:s[$x]"/>
-        <p><span style="color:red">Important</span>: Click on an element to read its analysis.</p>
+        <p><span style="color:red">Important</span>: Click on an element (coloured and bold words)
+            to read its analysis. Hover over the words of those elements to get the lemma and
+            morphological description.</p>
         <div class="containerResults">
             <div class="text">
                 <xsl:apply-templates select="$contextLeft">
@@ -116,9 +123,12 @@
             <xsl:apply-templates/>
         </span>
     </xsl:template>
-    <xsl:template match="tei:w[tei:seg]">
+    <xsl:template match="tei:w[parent::tei:seg or descendant::tei:seg]">
         <span class="w">
             <xsl:apply-templates/>
+            <span class="msd">
+                <xsl:apply-templates select="self::node()" mode="msd"/>
+            </span>
         </span>
     </xsl:template>
     <xsl:template match="tei:seg" mode="analysis">
@@ -155,7 +165,7 @@
                         <xsl:variable name="unit" select="$doc/descendant::tei:fs[@xml:id eq current()]"/>
                         <li>Negation of: <ul>
                                 <li><xsl:value-of select="woposs:capitalize-first($unit/@type)"/>:
-                                        <em><xsl:sequence select="woposs:unitContents($doc, current())"/></em>
+                                            <em><xsl:sequence select="woposs:unitContents($doc, current())"/></em>
                                 </li>
                             </ul></li>
                     </xsl:for-each>
@@ -169,7 +179,7 @@
                         <xsl:variable name="unit" select="$doc/descendant::tei:fs[@xml:id eq current()]"/>
                         <li>Participant of: <ul>
                                 <li><xsl:value-of select="woposs:capitalize-first($unit/@type)"/>:
-                                        <em><xsl:sequence select="woposs:unitContents($doc, current())"/></em></li>
+                                            <em><xsl:sequence select="woposs:unitContents($doc, current())"/></em></li>
                             </ul></li>
                     </xsl:for-each>
                 </ul>
@@ -182,7 +192,7 @@
         <xsl:variable name="function" select="@function"/>
         <xsl:variable name="doc" select="ancestor::tei:TEI"/>
         <xsl:for-each select="$idno">
-<!--            enhancement: if scope is the same, only one-->
+            <!--            enhancement: if scope is the same, only one-->
             <div id="{current()}" class="hide">
                 <xsl:if test="$function eq 'marker'">
                     <h3>Marker: <xsl:sequence select="woposs:unitContents($doc, current())"/></h3>
@@ -302,5 +312,29 @@
     <xsl:template match="tei:f[@name eq 'participant']" mode="features">
         <li>Implicit</li>
         <li>Type: <xsl:value-of select="tei:symbol/@value =&gt; replace('_', ' ')"/></li>
+    </xsl:template>
+    
+    
+<!--   <xsl:template match="tei:w" mode="msd">
+       <ul>
+           <li>Lemma: <xsl:value-of select="@lemma"/></li>
+           <li>PoS: <xsl:value-of select="@pos"/></li>
+           <xsl:if test="@msd">
+               <xsl:variable name="msd" select="ancestor::tei:TEI/descendant::tei:fs[@type eq 'msd'][@xml:id = substring(current()/@msd, 2)]"/>
+          <xsl:for-each select="$msd/tei:f">
+              <li><xsl:value-of select="current()/@name"/>: <xsl:value-of select="current()/tei:symbol/@value"/></li>
+          </xsl:for-each>
+           </xsl:if>
+       </ul>
+   </xsl:template>-->
+    <xsl:template match="tei:w" mode="msd"><strong>Lemma</strong>: <em><xsl:value-of select="@lemma"/></em><br/>
+        <strong>PoS</strong>: <xsl:value-of select="@pos"/><br/>
+            <xsl:if test="@msd">
+                <xsl:variable name="msd" select="ancestor::tei:TEI/descendant::tei:fs[@type eq 'msd'][@xml:id = substring(current()/@msd, 2)]"/>
+                <xsl:for-each select="$msd/tei:f">
+                    <strong><xsl:value-of select="current()/@name"/></strong>: <xsl:value-of select="current()/tei:symbol/@value"/><br/>
+                </xsl:for-each>
+            </xsl:if>
+       
     </xsl:template>
 </xsl:stylesheet>
