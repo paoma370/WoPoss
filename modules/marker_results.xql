@@ -5,7 +5,8 @@ import module namespace woposs = "http://woposs.unine.ch" at "functions.xql";
 declare variable $documents as document-node()+ :=
 collection('/db/apps/woposs/data');
 declare variable $marker := request:get-parameter("lemma", ());
-
+declare variable $filterByMarker := woposs:prepareQuery("lemma", $marker);
+declare variable $mk_fs := $documents//tei:fs[ft:query(., $filterByMarker)];
 
 declare variable $markerDesc := <fields>
     <field
@@ -358,7 +359,7 @@ declare function local:morphScope($markers as node()*) as node()* {
     let $anas := for $x in $seg_filtered/tokenize(@ana, '\s+')
     return
         substring($x, 2)
-    let $filtered_scopes := if ($anas) then  $scopes[ft:query(., woposs:prepareQuery("id", $anas))] else ()
+    let $filtered_scopes := if (exists($anas)) then  $scopes[ft:query(., woposs:prepareQuery("id", $anas))] else ()
     let $filtered_markers := if (exists($filtered_scopes)) then
         local:getMarker($filtered_scopes)
     else
@@ -398,9 +399,7 @@ declare function local:modality($fs as node()*) as node()* {
         ()
 };
 
-<tbody>{
-        let $query := woposs:prepareQuery("lemma", $marker)
-        let $mk_fs := $documents//tei:fs[ft:query(., $query)]
+<tbody>{        
         let $mk_filtered := if (exists($markerDesc//value/node())) then
             local:markerDesc($mk_fs)
         else
