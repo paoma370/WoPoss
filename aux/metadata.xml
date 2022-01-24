@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/WoPoss-project/annotation-schemes/master/schemas/out/tei_woposs_metadata.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/WoPoss-project/annotation-schemes/master/schemas/out/tei_woposs_metadata.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Metadata WoPoss Corpus</title>
+            <principal>WoPoss Project</principal>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Swiss National Science Foundation</authority>
+            <availability status="free">
+               <licence target="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons
+                  BY-NC</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born-digital</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="genre">
+               <category xml:id="legal">
+                  <catDesc>Legal text</catDesc>
+               </category>
+               <category xml:id="rhetoric">
+                  <catDesc>Technical texts: rhetoric</catDesc>
+               </category>
+               <category xml:id="poetry">
+                  <catDesc>Poetry</catDesc>
+               </category>
+               <category xml:id="christian">
+                  <catDesc>Christian theological text</catDesc>
+               </category>
+               <category xml:id="fiction">
+                  <catDesc>Fiction</catDesc>
+               </category>
+               <category xml:id="comedy">
+                  <catDesc>Comedy</catDesc>
+               </category>
+               <category xml:id="letter">
+                  <catDesc>Letter writing</catDesc>
+               </category>
+               <category xml:id="philosophy">
+                  <catDesc>Philosophy</catDesc>
+               </category>
+               <category xml:id="history">
+                  <catDesc>Historical writing</catDesc>
+               </category>
+               <category xml:id="travel">
+                  <catDesc>Travel literature</catDesc>
+               </category>
+            </taxonomy>
+            <taxonomy xml:id="textualFeature">
+               <category xml:id="prose">
+                  <catDesc>Prose</catDesc>
+               </category>
+               <category xml:id="verse">
+                  <catDesc>Verse</catDesc>
+               </category>
+               <category xml:id="translation">
+                  <catDesc>Translation</catDesc>
+               </category>
+               <category xml:id="dialogue">
+                  <catDesc>Dialogued</catDesc>
+               </category>
+               <category xml:id="non-dialogue">
+                  <catDesc>Non-dialogued</catDesc>
+               </category>
+            </taxonomy>
+            <taxonomy xml:id="transmission">
+               <category xml:id="codex">
+                  <catDesc>Codex</catDesc>
+               </category>
+               <category xml:id="scroll">
+                  <catDesc>Papyrus scroll</catDesc>
+               </category>
+               <category xml:id="mixed">
+                  <catDesc>Mixed</catDesc>
+               </category>
+               <category xml:id="inscription">
+                  <catDesc>Inscription</catDesc>
+               </category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listObject>
+            <object>
+               <objectIdentifier>
+                  <objectName>Senatus consultum de Bacchanalibus</objectName>
+               </objectIdentifier>
+               <bibl status="annotated">
+                  <bloc>Italia</bloc>
+                  <date type="century" when-custom="-2">II BCE</date>
+                  <date type="year" when-custom="-186">186 BCE</date>
+                  <index indexName="genre">
+                     <term cRef="#legal"/>
+                  </index>
+                  <index indexName="transmission">
+                     <term cRef="#inscription"/>
+                  </index>
+                  <index indexName="textualFeature">
+                     <term cRef="#prose"/>
+                  </index>
+               </bibl>
+            </object>
+         </listObject>
+         <listPerson>
+            <person>
+               <persName>Anonymous</persName>
+               <bibl status="annotated">
+                  <title>Rhetorica ad Herennium</title>
+                  <date type="century" when-custom="-1">I BCE</date>
+                  <index indexName="genre">
+                     <term cRef="#rhetoric"/>
+                  </index>
+                  <index indexName="transmission">
+                     <term cRef="#codex"/>
+                  </index>
+                  <index indexName="textualFeature">
+                     <term cRef="#prose"/>
+                  </index>
+               </bibl>
+            </person>
+            <person>
+               <persName>Juvenal</persName>
+               <sex value="M"/>
+               <bibl status="annotated">
+                  <title>Satires</title>
+                  <date type="century" when-custom="2">II</date>
+                  <index indexName="genre">
+                     <term cRef="#poetry"/>
+                  </index>
+                  <index indexName="transmission">
+                     <term cRef="#codex"/>
+                  </index>
+                  <index indexName="textualFeature">
+                     <term cRef="#verse"/>
+                  </index>
+               </bibl>
+            </person>
+            <person>
+               <persName>Benedict of Nursia</persName>
+               <sex value="M"/>
+               <birth>
+                  <placeName>Umbria</placeName>
+               </birth>
+               <listBibl>
+                  <bibl status="annotated">
+                     <title>Regula Benedicti</title>
+                     <date type="century" when-custom="6">VI</date>
+                     <index indexName="genre">
+                        <term cRef="#christian"/>
+                     </index>
+                     <index indexName="transmission">
+                        <term cRef="#codex"/>
+                     </index>
+                     <index indexName="textualFeature">
+                        <term cRef="#prose"/>
+                     </index>
+                  </bibl>
+               </listBibl>
+            </person>
+            <person>
+               <persName>Anonymous</persName>
+               <sex value="U"/>
+               <listBibl>
+                  <bibl status="annotated">
+                     <title>Historia Apolonii Regis Tyrii</title>
+                     <date type="century" when-custom="5" cert="low">V</date>
+                     <index indexName="genre">
+                        <term cRef="#fiction"/>
+                     </index>
+                     <index indexName="transmission">
+                        <term cRef="#codex"/>
+                     </index>
+                     <index indexName="textualFeature">
+                        <term cRef="#prose"/>
+                     </index>
+                  </bibl>
+               </listBibl>
+            </person>
+            <person>
+               <persName>Egeria</persName>
+               <sex value="F"/>
+               <bibl status="annotated">
+                  <title>Itinerarium Egeriae</title>
+                  <date type="century" when-custom="5">V</date>
+                  <index indexName="genre">
+                     <term cRef="#travel"/>
+                  </index>
+                  <index indexName="transmission">
+                     <term cRef="#codex"/>
+                  </index>
+                  <index indexName="textualFeature">
+                     <term cRef="#prose"/>
+                  </index>
+               </bibl>
+            </person>
+            <person>
+               <persName>Cicero</persName>
+               <sex value="M"/>
+               <bibl>
+                  <title>De Divinatione</title>
+                  <date type="century" when-custom="-1">I BCE</date>
+                  <index indexName="genre">
+                     <term cRef="#philosophy"/>
+                  </index>
+                  <index indexName="transmission">
+                     <term cRef="#codex"/>
+                  </index>
+                  <index indexName="textualFeature">
+                     <term cRef="#prose"/>
+                  </index>
+               </bibl>
+               <bibl>
+                  <title>De Inventione</title>
+                  <date type="century" when-custom="-1">I BCE</date>
+                  <index indexName="genre">
+                     <term cRef="#rhetoric"/>
+                  </index>
+                  <index indexName="transmission">
+                     <term cRef="#codex"/>
+                  </index>
+                  <index indexName="textualFeature">
+                     <term cRef="#prose"/>
+                  </index>
+               </bibl>
+               <bibl>
+                  <title>Letters to Atticus</title>
+                  <date type="century" when-custom="-1">I BCE</date>
+                  <index indexName="genre">
+                     <term cRef="#letter"/>
+                  </index>
+                  <index indexName="transmission">
+                     <term cRef="#codex"/>
+                  </index>
+                  <index indexName="textualFeature">
+                     <term cRef="#prose"/>
+                  </index>
+               </bibl>
+               <bibl>
+                  <title>Timaeus</title>
+                  <date type="century" when-custom="-1">-I</date>
+                  <index indexName="genre">
+                     <term cRef="#philosophy"/>
+                  </index>
+                  <index indexName="textualFeature">
+                     <term cRef="#translation"/>
+                  </index>
+                  <index indexName="transmission">
+                     <term cRef="#codex"/>
+                  </index>
+               </bibl>
+            </person>
+            <person xml:id="jerome">
+               <persName>Jerome of Stridon</persName>
+               <sex value="M"/>
+               <birth>
+                  <date>c. 342 – c. 347</date>
+                  <location>
+                     <placeName>Stridon</placeName>
+                     <bloc>Dalmatia</bloc>
+                  </location>
+               </birth>
+               <death>420</death>
+               <bibl>
+                  <title>Epistulae</title>
+                  <date type="century" when-custom="4">IV</date>
+                  <index indexName="genre">
+                     <term cRef="#letter"/>
+                  </index>
+                  <index indexName="textualFeature">
+                     <term cRef="#prose"/>
+                     <term cRef="#non-dialogue"/>
+                  </index>
+                  <index indexName="transmission">
+                     <term cRef="#codex"/>
+                  </index>
+               </bibl>
+               <bibl status="annotated" xml:id="john">
+                  <title>Gospel of John</title>
+                  <date type="century" when-custom="4">IV</date>
+                  <index indexName="genre">
+                     <term cRef="#christian"/>
+                  </index>
+                  <index indexName="textualFeature">
+                     <term cRef="#translation"/>
+                     <term cRef="#prose"/>
+                     <term cRef="#non-dialogue"/>
+                  </index>
+                  <index indexName="transmission">
+                     <term cRef="#codex"/>
+                  </index>
+               </bibl>
+               <bibl status="annotated" xml:id="mark">
+                  <title>Gospel of Mark</title>
+                  <date type="century" when-custom="4">IV</date>
+                  <index indexName="genre">
+                     <term cRef="#christian"/>
+                  </index>
+                  <index indexName="textualFeature">
+                     <term cRef="#translation"/>
+                     <term cRef="#non-dialogue"/>
+                     <term cRef="#prose"/>
+                  </index>
+                  <index indexName="transmission">
+                     <term cRef="#codex"/>
+                  </index>
+               </bibl>
+
+               <bibl status="annotated" xml:id="matthew">
+                  <title>Gospel of Matthew</title>
+                  <date type="century" when-custom="4">IV</date>
+                  <index indexName="genre">
+                     <term cRef="#christian"/>
+                  </index>
+                  <index indexName="textualFeature">
+                     <term cRef="#translation"/>
+                     <term cRef="#prose"/>
+                     <term cRef="#non-dialogue"/>
+                  </index>
+                  <index indexName="transmission">
+                     <term cRef="#codex"/>
+                  </index>
+               </bibl>
+               <bibl status="annotated" xml:id="luke">
+                  <title>Gospel of Luke</title>
+                  <date type="century" when-custom="4">IV</date>
+                  <index indexName="genre">
+                     <term cRef="#christian"/>
+                  </index>
+                  <index indexName="textualFeature">
+                     <term cRef="#translation"/>
+                     <term cRef="#non-dialogue"/>
+                     <term cRef="#prose"/>
+                  </index>
+                  <index indexName="transmission">
+                     <term cRef="#codex"/>
+                  </index>
+               </bibl>
+            </person>
+            <person>
+               <persName>Juvenal</persName>
+               <sex value="M"/>
+               <bibl>
+                  <title>Satires</title>
+                  <date type="century" when-custom="2">II</date>
+                  <index indexName="genre">
+                     <term cRef="#poetry"/>
+                  </index>
+                  <index indexName="transmission">
+                     <term cRef="#codex"/>
+                  </index>
+                  <index indexName="textualFeature">
+                     <term cRef="#verse"/>
+                  </index>
+               </bibl>
+            </person>
+            <person>
+               <persName>Lucretius</persName>
+               <sex value="M"/>
+               <bibl status="annotated">
+                  <title>De Rerum Natura</title>
+                  <date type="century" when-custom="-1">I BCE</date>
+                  <index indexName="genre">
+                     <term cRef="#philosophy"/>
+                  </index>
+                  <index indexName="transmission">
+                     <term cRef="#codex"/>
+                  </index>
+                  <index indexName="textualFeature">
+                     <term cRef="#verse"/>
+                  </index>
+               </bibl>
+            </person>
+            <person>
+               <persName>Minucius Felix, Marcus</persName>
+               <sex value="M"/>
+               <birth>
+                  <placeName>Africa</placeName>
+               </birth>
+               <bibl status="annotated">
+                  <title>Octavius</title>
+                  <date type="century" when-custom="3">III</date>
+                  <index indexName="genre">
+                     <term cRef="#philosophy"/>
+                  </index>
+                  <index indexName="transmission">
+                     <term cRef="#codex"/>
+                  </index>
+                  <index indexName="textualFeature">
+                     <term cRef="#prose"/>
+                     <term cRef="#dialogue"></term>
+                  </index>
+               </bibl>
+            </person>
+            <person>
+               <persName>Ovid</persName>
+               <sex value="M"/>
+               <bibl>
+                  <title>Epistulae</title>
+                  <date type="century" when-custom="-1">I BCE</date>
+                  <index indexName="genre">
+                     <term cRef="#letter"/>
+                  </index>
+                  <index indexName="transmission">
+                     <term cRef="#codex"/>
+                  </index>
+                  <index indexName="textualFeature">
+                     <term cRef="#verse"/>
+                  </index>
+               </bibl>
+               <bibl status="annotated">
+                  <title>Metamorphoses</title>
+                  <date type="century" when-custom="-1">I BCE</date>
+                  <index indexName="genre">
+                     <term cRef="#poetry"/>
+                  </index>
+                  <index indexName="transmission">
+                     <term cRef="#codex"/>
+                  </index>
+                  <index indexName="textualFeature">
+                     <term cRef="#verse"/>
+                  </index>
+               </bibl>
+            </person>
+            <person>
+               <persName>Petronius</persName>
+               <sex value="M"/>
+               <bibl status="annotated">
+                  <title>Satyricon</title>
+                  <date type="century" when-custom="1">I</date>
+                  <index indexName="genre">
+                     <term cRef="#fiction"/>
+                  </index>
+                  <index indexName="transmission">
+                     <term cRef="#codex"/>
+                  </index>
+                  <index indexName="textualFeature">
+                     <term cRef="#prose"/>
+                  </index>
+               </bibl>
+            </person>
+            <person>
+               <persName>Plautus</persName>
+               <sex value="M"/>
+               <bibl>
+                  <title>Mostellaria</title>
+                  <date type="century" when-custom="-2">III/II BCE</date>
+                  <index indexName="genre">
+                     <term cRef="#comedy"/>
+                  </index>
+                  <index indexName="transmission">
+                     <term cRef="#codex"/>
+                  </index>
+                  <index indexName="textualFeature">
+                     <term cRef="#verse"/>
+                  </index>
+               </bibl>
+               <bibl status="annotated">
+                  <title>Poenelus</title>
+                  <date type="century" when-custom="-2">II BCE</date>
+                  <index indexName="genre">
+                     <term cRef="#comedy"/>
+                  </index>
+                  <index indexName="transmission">
+                     <term cRef="#codex"/>
+                  </index>
+                  <index indexName="textualFeature">
+                     <term cRef="#verse"/>
+                  </index>
+               </bibl>
+               <bibl>
+                  <title>Trinummus</title>
+                  <date type="century" when-custom="-2">III/II BCE</date>
+                  <index indexName="genre">
+                     <term cRef="#comedy"/>
+                  </index>
+                  <index indexName="transmission">
+                     <term cRef="#codex"/>
+                  </index>
+                  <index indexName="textualFeature">
+                     <term cRef="#verse"/>
+                  </index>
+               </bibl>
+            </person>
+            <person>
+               <persName>Pliny the Younger</persName>
+               <sex value="M"/>
+               <bibl status="annotated">
+                  <title>Letters</title>
+                  <date type="century" when-custom="1">I</date>
+                  <index indexName="genre">
+                     <term cRef="#letter"/>
+                  </index>
+                  <index indexName="transmission">
+                     <term cRef="#codex"/>
+                  </index>
+                  <index indexName="textualFeature">
+                     <term cRef="#prose"/>
+                  </index>
+               </bibl>
+            </person>
+            <person>
+               <persName>Quintilian</persName>
+               <sex value="M"/>
+               <bibl status="annotated">
+                  <title>Institutio Oratoria</title>
+                  <date type="century" when-custom="1">I</date>
+                  <index indexName="genre">
+                     <term cRef="#rhetoric"/>
+                  </index>
+                  <index indexName="transmission">
+                     <term cRef="#codex"/>
+                  </index>
+                  <index indexName="textualFeature">
+                     <term cRef="#prose"/>
+                  </index>
+               </bibl>
+            </person>
+            <person>
+               <persName>Sallust</persName>
+               <sex value="M"/>
+               <bibl status="annotated">
+                  <title>Bellum Iugurthinum</title>
+                  <date type="century" when-custom="-1">I BCE</date>
+                  <index indexName="genre">
+                     <term cRef="#history"/>
+                  </index>
+                  <index indexName="transmission">
+                     <term cRef="#codex"/>
+                  </index>
+                  <index indexName="textualFeature">
+                     <term cRef="#prose"/>
+                  </index>
+               </bibl>
+            </person>
+            <person>
+               <persName>Tertullian</persName>
+               <sex value="M"/>
+               <bibl status="annotated">
+                  <title>De spectaculis</title>
+                  <date type="century" when-custom="2">II</date>
+                  <index indexName="genre">
+                     <term cRef="#philosophy"/>
+                  </index>
+                  <index indexName="transmission">
+                     <term cRef="#codex"/>
+                  </index>
+                  <index indexName="textualFeature">
+                     <term cRef="#prose"/>
+                  </index>
+               </bibl>
+            </person>
+         </listPerson>
+      </body>
+   </text>
+</TEI>
