@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/WoPoss-project/annotation-schemes/master/schemas/out/tei_woposs_metadata.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/WoPoss-project/annotation-schemes/master/schemas/out/tei_woposs_metadata.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="https://raw.githubusercontent.com/WoPoss-project/annotation-schemes/master/schemas/out/tei_woposs_metadata.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/WoPoss-project/annotation-schemes/master/schemas/out/tei_woposs_metadata.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -95,7 +92,10 @@
                   <objectName>Senatus consultum de Bacchanalibus</objectName>
                </objectIdentifier>
                <bibl status="annotated">
-                  <bloc>Italia</bloc>
+                  <location>
+                     <bloc>Italia</bloc>
+                     <bloc>Latium</bloc>
+                  </location>
                   <date type="century" when-custom="-2">II BCE</date>
                   <date type="year" when-custom="-186">186 BCE</date>
                   <index indexName="genre">
@@ -113,6 +113,7 @@
          <listPerson>
             <person>
                <persName>Anonymous</persName>
+               <sex value="U"/>
                <bibl status="annotated">
                   <title>Rhetorica ad Herennium</title>
                   <date type="century" when-custom="-1">I BCE</date>
@@ -130,6 +131,12 @@
             <person>
                <persName>Juvenal</persName>
                <sex value="M"/>
+               <birth>
+                  <location>
+                     <bloc>Italia</bloc>
+                     <bloc>Latium</bloc>
+                  </location>
+               </birth>
                <bibl status="annotated">
                   <title>Satires</title>
                   <date type="century" when-custom="2">II</date>
@@ -148,7 +155,10 @@
                <persName>Benedict of Nursia</persName>
                <sex value="M"/>
                <birth>
-                  <placeName>Umbria</placeName>
+                  <location>
+                     <bloc>Italia</bloc>
+                     <bloc>Umbria</bloc>
+                  </location>
                </birth>
                <listBibl>
                   <bibl status="annotated">
@@ -202,69 +212,12 @@
                   </index>
                </bibl>
             </person>
-            <person>
-               <persName>Cicero</persName>
-               <sex value="M"/>
-               <bibl>
-                  <title>De Divinatione</title>
-                  <date type="century" when-custom="-1">I BCE</date>
-                  <index indexName="genre">
-                     <term cRef="#philosophy"/>
-                  </index>
-                  <index indexName="transmission">
-                     <term cRef="#codex"/>
-                  </index>
-                  <index indexName="textualFeature">
-                     <term cRef="#prose"/>
-                  </index>
-               </bibl>
-               <bibl>
-                  <title>De Inventione</title>
-                  <date type="century" when-custom="-1">I BCE</date>
-                  <index indexName="genre">
-                     <term cRef="#rhetoric"/>
-                  </index>
-                  <index indexName="transmission">
-                     <term cRef="#codex"/>
-                  </index>
-                  <index indexName="textualFeature">
-                     <term cRef="#prose"/>
-                  </index>
-               </bibl>
-               <bibl>
-                  <title>Letters to Atticus</title>
-                  <date type="century" when-custom="-1">I BCE</date>
-                  <index indexName="genre">
-                     <term cRef="#letter"/>
-                  </index>
-                  <index indexName="transmission">
-                     <term cRef="#codex"/>
-                  </index>
-                  <index indexName="textualFeature">
-                     <term cRef="#prose"/>
-                  </index>
-               </bibl>
-               <bibl>
-                  <title>Timaeus</title>
-                  <date type="century" when-custom="-1">-I</date>
-                  <index indexName="genre">
-                     <term cRef="#philosophy"/>
-                  </index>
-                  <index indexName="textualFeature">
-                     <term cRef="#translation"/>
-                  </index>
-                  <index indexName="transmission">
-                     <term cRef="#codex"/>
-                  </index>
-               </bibl>
-            </person>
             <person xml:id="jerome">
                <persName>Jerome of Stridon</persName>
                <sex value="M"/>
                <birth>
                   <date>c. 342 – c. 347</date>
                   <location>
-                     <placeName>Stridon</placeName>
                      <bloc>Dalmatia</bloc>
                   </location>
                </birth>
@@ -345,26 +298,16 @@
                   </index>
                </bibl>
             </person>
-            <person>
-               <persName>Juvenal</persName>
-               <sex value="M"/>
-               <bibl>
-                  <title>Satires</title>
-                  <date type="century" when-custom="2">II</date>
-                  <index indexName="genre">
-                     <term cRef="#poetry"/>
-                  </index>
-                  <index indexName="transmission">
-                     <term cRef="#codex"/>
-                  </index>
-                  <index indexName="textualFeature">
-                     <term cRef="#verse"/>
-                  </index>
-               </bibl>
-            </person>
+
             <person>
                <persName>Lucretius</persName>
                <sex value="M"/>
+               <birth>
+                  <location>
+                     <bloc>Italia</bloc>
+                     <bloc>Campania</bloc>
+                  </location>
+               </birth>
                <bibl status="annotated">
                   <title>De Rerum Natura</title>
                   <date type="century" when-custom="-1">I BCE</date>
@@ -383,7 +326,9 @@
                <persName>Minucius Felix, Marcus</persName>
                <sex value="M"/>
                <birth>
-                  <placeName>Africa</placeName>
+                  <location>
+                     <bloc>Africa</bloc>
+                  </location>
                </birth>
                <bibl status="annotated">
                   <title>Octavius</title>
@@ -396,13 +341,19 @@
                   </index>
                   <index indexName="textualFeature">
                      <term cRef="#prose"/>
-                     <term cRef="#dialogue"></term>
+                     <term cRef="#dialogue"/>
                   </index>
                </bibl>
             </person>
             <person>
                <persName>Ovid</persName>
                <sex value="M"/>
+               <birth>
+                  <location>
+                     <bloc>Italia</bloc>
+                     <bloc>Samnium</bloc>
+                  </location>
+               </birth>
                <bibl>
                   <title>Epistulae</title>
                   <date type="century" when-custom="-1">I BCE</date>
@@ -432,7 +383,12 @@
             </person>
             <person>
                <persName>Petronius</persName>
-               <sex value="M"/>
+               <sex value="M"/>               
+               <birth>
+                  <location>
+                     <bloc>Gallia</bloc>
+                  </location>
+               </birth>
                <bibl status="annotated">
                   <title>Satyricon</title>
                   <date type="century" when-custom="1">I</date>
@@ -449,7 +405,13 @@
             </person>
             <person>
                <persName>Plautus</persName>
-               <sex value="M"/>
+               <sex value="M"/>               
+               <birth>
+                  <location>
+                     <bloc>Italia</bloc>
+                     <bloc>Aemilia</bloc>
+                  </location>
+               </birth>
                <bibl>
                   <title>Mostellaria</title>
                   <date type="century" when-custom="-2">III/II BCE</date>
@@ -493,6 +455,12 @@
             <person>
                <persName>Pliny the Younger</persName>
                <sex value="M"/>
+               <birth>
+                  <location>
+                     <bloc>Italia</bloc>
+                     <bloc>Transpadana</bloc>
+                  </location>
+               </birth>
                <bibl status="annotated">
                   <title>Letters</title>
                   <date type="century" when-custom="1">I</date>
@@ -509,6 +477,11 @@
             </person>
             <person>
                <persName>Quintilian</persName>
+               <birth>
+                  <location>
+                     <bloc>Hispania</bloc>
+                  </location>
+               </birth>
                <sex value="M"/>
                <bibl status="annotated">
                   <title>Institutio Oratoria</title>
@@ -527,6 +500,12 @@
             <person>
                <persName>Sallust</persName>
                <sex value="M"/>
+               <birth>
+                  <location>
+                     <bloc>Italia</bloc>
+                     <bloc>Samnium</bloc>
+                  </location>
+               </birth>
                <bibl status="annotated">
                   <title>Bellum Iugurthinum</title>
                   <date type="century" when-custom="-1">I BCE</date>
@@ -543,7 +522,13 @@
             </person>
             <person>
                <persName>Tertullian</persName>
-               <sex value="M"/>
+               <sex value="M"/>               
+               <birth>
+                  <location>
+                     <bloc>Africa</bloc>
+                     <bloc>Samnium</bloc>
+                  </location>
+               </birth>
                <bibl status="annotated">
                   <title>De spectaculis</title>
                   <date type="century" when-custom="2">II</date>
