@@ -1,7 +1,7 @@
 <collection xmlns="http://exist-db.org/collection-config/1.0">
   <index xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <lucene>
-      <module uri="http://woposs.unine.ch" at="modules/functions.xql" prefix="woposs"/>
+      <module uri="http://woposs.unine.ch" at="functions.xql" prefix="idx"/>
       <analyzer class="org.apache.lucene.analysis.core.WhitespaceAnalyzer"/>
       <text qname="tei:fs">
         <field name="id" expression="@xml:id"/>
@@ -49,8 +49,12 @@
         
         <!-- sociolinguistic features -->
          <field name="author" expression="ancestor::tei:TEI/descendant::tei:particDesc/tei:person/substring(@corresp, 2)"/>
-        <field name="authorGender" expression="woposs:getAuthorMetadata(ancestor::tei:TEI/descendant::tei:particDesc/descendant::tei:person/substring(@corresp, 2), 'tei:sex')"/>
-        <field name="authorPlace" expression="woposs:getAuthorMetadata(ancestor::tei:TEI/descendant::tei:particDesc/descendant::tei:person/substring(@corresp, 2), 'tei:bloc')"/>
+        <field name="authorGender" expression="idx:getAuthorMetadata(ancestor::tei:TEI/descendant::tei:particDesc/descendant::tei:person/substring(@corresp, 2), 'sex')"/>
+        <field name="authorPlace" expression="idx:getAuthorMetadata(ancestor::tei:TEI/descendant::tei:particDesc/descendant::tei:person/substring(@corresp, 2), 'bloc')"/>
+        
+         <!-- work features -->
+         <field name="work" expression="ancestor::tei:TEI/@xml:id"/>
+        
          <!--       <field name="date" expression="ancestor::tei:TEI/descendant::tei:creation/tei:date/@when-custom"/>
         <field name="location" expression="ancestor::tei:TEI/descendant::tei:particDesc/descendant::tei:bloc"/>
         <field name="genre" expression="ancestor::tei:TEI/descendant::tei:keywords/term[@type eq 'genre']"/>

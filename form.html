@@ -584,8 +584,8 @@
                     <label for="mk_deontic">deontic</label>
                     <input value="epistemic" id="mk_epistemic" type="checkbox" name="modality"/>
                     <label for="mk_epistemic">epistemic</label>
-                    <p>Note: if this filter affects a passage that contains an anbiguous modal
-                        reading, all interpretations of the passage are shown regardless of the
+                    <p>Note: if this filter affects a passage that contains an ambiguous modal
+                        reading, all interpretations of that passage are shown regardless of the
                         filter.</p>
                 </div>
             </div>
@@ -615,6 +615,13 @@
                         <option value="Samnium">Italia: Samnium</option>    
                         <option value="Transpadana">Italia: Transpadana</option>    
                         <option value="Umbria">Italia: Umbria</option>        
+                    </select><br/>
+                    Title of the work <select name="title" id="title">
+                        <option disabled="" selected="" value="">-- select an option --</option>
+                        <option value="john">Gospel of John</option>
+                        <option value="luke">Gospel of Luke</option>
+                        <option value="mark">Gospel of Mark</option>
+                        <option value="matthew">Gospel of Matthew</option>
                     </select><br/>
                     
                 </div>
@@ -954,8 +961,7 @@
         </form>
     </div>
     <script type="text/javascript">$(document).ready(function () { $('#checkBtn').click(function() {
-        checked = $("input[name=modality]:checked").length; if(!checked) { alert("At least one type
-        of modality must be selected"); return false; } }); });</script>
+        checked = $("input[name=modality]:checked").length; if(!checked) { alert("At least one type of modality must be selected"); return false; } }); });</script>
     <script type="text/javascript" src="/exist/apps/woposs/resources/scripts/select.js"/>
     <script type="text/javascript" src="/exist/apps/woposs/resources/scripts/select-subtypes.js"/>
     <script type="text/javascript" src="/exist/apps/woposs/resources/scripts/select-situational.js"/>

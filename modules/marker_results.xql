@@ -1,6 +1,6 @@
 xquery version "3.1";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
-import module namespace woposs = "http://woposs.unine.ch" at "functions.xql";
+import module namespace woposs = "http://woposs.unine.ch" at "../functions.xql";
 
 declare variable $documents as document-node()+ :=
 collection('/db/apps/woposs/data');
@@ -236,6 +236,9 @@ declare variable $authorFilters := <fields>
     <field
         name="authorPlace">
         <value>{request:get-parameter("place", ())}</value></field>
+    <field
+        name="work">
+        <value>{request:get-parameter("title", ())}</value></field>
 </fields>;
 
 declare function local:get-seg($fs as item()?, $id as xs:string?) as item()* {
@@ -297,7 +300,7 @@ declare function local:pertinent($fs as node()?) as item()* {
 declare function local:markerDesc($fs as node()*) as node()* {
     let $query := woposs:filterParams($markerDesc)
     return
-        $fs[ft:query(., $query)]
+        $fs[ft:query-field(., $query)]
 };
 
 declare function local:getScope($markers as node()*) as node()* {
@@ -452,7 +455,7 @@ declare function local:author($fs as node()*) as node()* {
             local:author($mk_filtered5)
         else
             $mk_filtered5
-        for $mk in $mk_filtered5
+        for $mk in $mk_filtered6
         let $output := if ($mk[ft:query(., "pertinence:false")]) then
             local:not-pertinent($mk)
         else

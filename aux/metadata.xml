@@ -151,7 +151,7 @@
                   </index>
                </bibl>
             </person>
-            <person>
+            <person xml:id="benedict">
                <persName>Benedict of Nursia</persName>
                <sex value="M"/>
                <birth>
