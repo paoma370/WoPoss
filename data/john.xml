@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/WoPoss-project/annotation-schemes/master/schemas/out/tei_woposs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/WoPoss-project/annotation-schemes/master/schemas/out/tei_woposs.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="john">
+<?xml-model href="https://raw.githubusercontent.com/WoPoss-project/annotation-schemes/master/schemas/out/tei_woposs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/WoPoss-project/annotation-schemes/master/schemas/out/tei_woposs.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="john">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -197,8 +194,7 @@
                   <w pos="PRON" lemma="qui">qui</w>
                   <w pos="ADP" lemma="post">post</w>
                   <w pos="PRON" lemma="ego">me</w>
-                  <w pos="VERB" lemma="venio" msd="#rd1e1382"> ven <seg function="marker"
-                        ana="#u_r11494" xml:id="jh01_15">turus</seg>
+                  <w pos="VERB" lemma="venio" msd="#rd1e1382"> ven <seg function="marker" ana="#u_r11494" xml:id="jh01_15">turus</seg>
                   </w>
                   <w pos="VERB" lemma="sum">est</w>
                   <w pos="ADP" lemma="ante">ante</w>
@@ -307,8 +303,7 @@
                   <w pos="PRON" lemma="qui">qui</w>
                   <w pos="ADP" lemma="post">post</w>
                   <w pos="PRON" lemma="ego">me</w>
-                  <w pos="VERB" lemma="venio" msd="#rd1e2419"> ven <seg function="marker"
-                        ana="#u_r20157" xml:id="jh01_27">turus</seg>
+                  <w pos="VERB" lemma="venio" msd="#rd1e2419"> ven <seg function="marker" ana="#u_r20157" xml:id="jh01_27">turus</seg>
                   </w>
                   <w pos="VERB" lemma="sum">est</w>
                   <w pos="PRON" lemma="qui">qui</w>
@@ -878,8 +873,7 @@
                      <seg function="marker" ana="#u_r62196" xml:id="jh03_04">potest</seg>
                   </w>
                   <w pos="NOUN" lemma="homo" msd="#rd1e7413">
-                     <seg function="participant" type="animate"
-                        corresp="#u_r62343 #u_r129035 #u_r129017">homo</seg>
+                     <seg function="participant" type="animate" corresp="#u_r62343 #u_r129035 #u_r129017">homo</seg>
                   </w>
                   <seg function="scope" ana="#u_r62343">
                      <w pos="VERB" lemma="nascor" msd="#rd1e7421" function="main">nasci</w>
@@ -1101,8 +1095,7 @@
                   </w>
                   <seg function="scope" part="Y" ana="#u_r70360">
                      <w pos="NOUN" lemma="filius" msd="#rd1e8377">
-                        <seg function="participant" type="animate_patient" corresp="#u_r70360"
-                           >Filium</seg>
+                        <seg function="participant" type="animate_patient" corresp="#u_r70360">Filium</seg>
                      </w>
                      <w pos="NOUN" lemma="homo" msd="#rd1e8384">hominis</w>
                   </seg>
@@ -2889,8 +2882,7 @@
                   <w pos="VERB" lemma="puto">putare</w>
                   <w pos="SCONJ" lemma="quia">quia</w>
                   <w pos="PRON" lemma="ego">ego</w>
-                  <w pos="VERB" lemma="accuso" msd="#od1e4114"> accusa <seg function="marker"
-                        ana="#u_o34812" xml:id="jh05_45b">turus</seg>
+                  <w pos="VERB" lemma="accuso" msd="#od1e4114"> accusa <seg function="marker" ana="#u_o34812" xml:id="jh05_45b">turus</seg>
                   </w>
                   <w pos="VERB" lemma="sum">sim</w>
                   <w pos="PRON" lemma="tu">vos</w>
@@ -3000,8 +2992,7 @@
                   <w pos="VERB" lemma="scio">sciebat</w>
                   <w pos="PRON" lemma="quis">quid</w>
                   <w pos="VERB" lemma="sum">esset</w>
-                  <w pos="VERB" lemma="facio" msd="#od1e4778"> fac <seg function="marker"
-                        ana="#u_o40355" xml:id="jh06_06">turus</seg>
+                  <w pos="VERB" lemma="facio" msd="#od1e4778"> fac <seg function="marker" ana="#u_o40355" xml:id="jh06_06">turus</seg>
                   </w>
                </s>
                <s n="7">
@@ -3162,8 +3153,7 @@
                   <w pos="SCONJ" lemma="cum">cum</w>
                   <w pos="VERB" lemma="cognosco">cognovisset</w>
                   <w pos="SCONJ" lemma="quia">quia</w>
-                  <w pos="VERB" lemma="venio" msd="#od1e5553"> ven <seg function="marker"
-                        ana="#u_o46891" xml:id="jh06_15">turi</seg>
+                  <w pos="VERB" lemma="venio" msd="#od1e5553"> ven <seg function="marker" ana="#u_o46891" xml:id="jh06_15">turi</seg>
                   </w>
                   <w pos="VERB" lemma="sum">essent</w>
                   <w pos="SCONJ" lemma="ut">ut</w>
@@ -3579,8 +3569,7 @@
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="sum">erunt</w>
                   <w pos="ADJ" lemma="omnis" msd="#od1e8479">
-                     <seg function="participant" type="animate_patient" corresp="#u_o177544"
-                        >omnes</seg>
+                     <seg function="participant" type="animate_patient" corresp="#u_o177544">omnes</seg>
                   </w>
                   <w pos="ADJ" lemma="docibilis" msd="#od1e8486">
                      <seg function="scope" ana="#u_o177544">doci</seg>
@@ -4614,8 +4603,7 @@
                   <w pos="PRON" lemma="ipse">ipsos</w>
                   <w pos="ADV" lemma="quo">quo</w>
                   <w pos="PRON" lemma="hic">hic</w>
-                  <w pos="VERB" lemma="eo" msd="#od1e13915"> i <seg function="marker"
-                        ana="#u_o117072" xml:id="jh07_35">turus</seg>
+                  <w pos="VERB" lemma="eo" msd="#od1e13915"> i <seg function="marker" ana="#u_o117072" xml:id="jh07_35">turus</seg>
                   </w>
                   <w pos="VERB" lemma="sum">est</w>
                   <w pos="SCONJ" lemma="quia">quia</w>
@@ -4626,13 +4614,11 @@
                   <w pos="ADP" lemma="in">in</w>
                   <w pos="NOUN" lemma="dispersio">dispersionem</w>
                   <w pos="NOUN" lemma="gens">gentium</w>
-                  <w pos="VERB" lemma="eo" msd="#od1e13975"> i <seg function="marker"
-                        ana="#u_o117571" xml:id="jh07_35b">turus</seg>
+                  <w pos="VERB" lemma="eo" msd="#od1e13975"> i <seg function="marker" ana="#u_o117571" xml:id="jh07_35b">turus</seg>
                   </w>
                   <w pos="VERB" lemma="sum">est</w>
                   <w pos="CCONJ" lemma="et">et</w>
-                  <w pos="VERB" lemma="doceo" msd="#od1e13994"> doc<seg function="marker"
-                        ana="#u_o117731" xml:id="jh07_35c">turus</seg>
+                  <w pos="VERB" lemma="doceo" msd="#od1e13994"> doc<seg function="marker" ana="#u_o117731" xml:id="jh07_35c">turus</seg>
                   </w>
                   <w pos="NOUN" lemma="gens">gentes</w>
                </s>
@@ -4797,8 +4783,7 @@
                      <seg function="marker" ana="#u_o124093" xml:id="jh07_44">volebant</seg>
                   </w>
                   <seg function="scope" ana="#u_o124166">
-                     <w pos="VERB" lemma="adprehendo" msd="#od1e14759" function="main"
-                        >adprehendere</w>
+                     <w pos="VERB" lemma="adprehendo" msd="#od1e14759" function="main">adprehendere</w>
                      <w pos="PRON" lemma="is" msd="#od1e14765">eum</w>
                   </seg>
                   <w pos="CCONJ" lemma="sed">sed</w>
@@ -5878,8 +5863,7 @@
                   <w pos="ADP" lemma="in">in</w>
                   <w pos="PRON" lemma="hic">hoc</w>
                   <w pos="SCONJ" lemma="enim">enim</w>
-                  <w pos="ADJ" lemma="mirabilis" msd="#nd1e2717"> mira<seg function="marker"
-                        ana="#u_n22972" xml:id="jh09_30">bile</seg>
+                  <w pos="ADJ" lemma="mirabilis" msd="#nd1e2717"> mira<seg function="marker" ana="#u_n22972" xml:id="jh09_30">bile</seg>
                   </w>
                   <w pos="VERB" lemma="sum">est</w>
                   <w pos="SCONJ" lemma="quia">quia</w>
@@ -6391,8 +6375,7 @@
                      <seg function="scope" ana="#u_n56863">solvi</seg>
                   </w>
                   <w pos="NOUN" lemma="scriptura" msd="#nd1e6744">
-                     <seg function="participant" type="inanimate_patient" corresp="#u_n56863"
-                        >scriptura</seg>
+                     <seg function="participant" type="inanimate_patient" corresp="#u_n56863">scriptura</seg>
                   </w>
                </s>
                <s n="36">
@@ -6836,8 +6819,7 @@
                   <w pos="PRON" lemma="qui">qui</w>
                   <w pos="VERB" lemma="sum">erat</w>
                   <w pos="PRON" lemma="is">eum</w>
-                  <w pos="VERB" lemma="trado" msd="#nd1e12629"> tradi <seg function="marker"
-                        ana="#u_n105584" xml:id="jh12_04">turus</seg>
+                  <w pos="VERB" lemma="trado" msd="#nd1e12629"> tradi <seg function="marker" ana="#u_n105584" xml:id="jh12_04">turus</seg>
                   </w>
                </s>
                <s n="5">
@@ -8886,8 +8868,7 @@
                   </w>
                   <seg function="scope" ana="#u_q91237">
                      <w pos="PRON" lemma="is" msd="#qd1e10946">eum</w>
-                     <w pos="VERB" lemma="interrogo" msd="#qd1e10952" function="main"
-                        >interrogare</w>
+                     <w pos="VERB" lemma="interrogo" msd="#qd1e10952" function="main">interrogare</w>
                   </seg>
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="dico">dixit</w>
@@ -9264,8 +9245,7 @@
                   <w pos="ADP" lemma="pro">pro</w>
                   <w pos="PRON" lemma="is">eis</w>
                   <w pos="PRON" lemma="qui">qui</w>
-                  <w pos="VERB" lemma="credo" msd="#pd1e1932"> credi <seg function="marker"
-                        ana="#u_p15964" xml:id="jh17_20">turi</seg>
+                  <w pos="VERB" lemma="credo" msd="#pd1e1932"> credi <seg function="marker" ana="#u_p15964" xml:id="jh17_20">turi</seg>
                   </w>
                   <w pos="VERB" lemma="sum">sunt</w>
                   <w pos="ADP" lemma="per">per</w>
@@ -9500,8 +9480,7 @@
                   <w pos="VERB" lemma="scio">sciens</w>
                   <w pos="ADJ" lemma="omnis">omnia</w>
                   <w pos="PRON" lemma="qui">quae</w>
-                  <w pos="VERB" lemma="venio" msd="#pd1e3122"> ven <seg function="marker"
-                        ana="#u_p25859" xml:id="jh18_04">tura</seg>
+                  <w pos="VERB" lemma="venio" msd="#pd1e3122"> ven <seg function="marker" ana="#u_p25859" xml:id="jh18_04">tura</seg>
                   </w>
                   <w pos="VERB" lemma="sum">erant</w>
                   <w pos="ADP" lemma="super">super</w>
@@ -9643,8 +9622,7 @@
                      <seg function="marker" ana="#u_p47691" xml:id="jh18_31">licet</seg>
                   </w>
                   <seg function="scope" ana="#u_p47764">
-                     <w pos="VERB" lemma="interficio" msd="#pd1e5753" function="main"
-                        >interficere</w>
+                     <w pos="VERB" lemma="interficio" msd="#pd1e5753" function="main">interficere</w>
                      <w pos="PRON" lemma="quisquam" msd="#pd1e5759">quemquam</w>
                   </seg>
                </s>
@@ -10968,8 +10946,7 @@
                   <w pos="VERB" lemma="significo">significans</w>
                   <w pos="PRON" lemma="qui">qua</w>
                   <w pos="NOUN" lemma="mors">morte</w>
-                  <w pos="VERB" lemma="clarifico" msd="#pd1e16130"> clarifica <seg function="marker"
-                        ana="#u_p134496" xml:id="jh21_19">turus</seg>
+                  <w pos="VERB" lemma="clarifico" msd="#pd1e16130"> clarifica <seg function="marker" ana="#u_p134496" xml:id="jh21_19">turus</seg>
                   </w>
                   <w pos="VERB" lemma="sum">esset</w>
                   <w pos="NOUN" lemma="deus">Deum</w>
@@ -11128,8 +11105,7 @@
                   <w pos="VERB" lemma="capio">capere</w>
                   <w pos="PRON" lemma="is">eos</w>
                   <w pos="PRON" lemma="qui" msd="#pd1e16899">
-                     <seg function="participant" type="inanimate_patient" corresp="#u_p142523"
-                        >qui</seg>
+                     <seg function="participant" type="inanimate_patient" corresp="#u_p142523">qui</seg>
                   </w>
                   <w pos="VERB" lemma="scribo" msd="#pd1e16906" function="main">
                      <seg function="scope" ana="#u_p142523">scribe</seg>
