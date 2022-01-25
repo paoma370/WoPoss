@@ -591,39 +591,39 @@
             </div>
             <h4 class="title">Description of the work</h4>
             <div class="wrapper">
-                <div class="content"> 
-                    Author <select name="author" id="author">
-                        <option disabled="" selected="" value="">-- select an option --</option>
-                        <option value="jerome">Jerome of Stridon</option>
-                    </select><br/>
-                    Author’s gender <select name="gender" id="gender">
-                        <option disabled="" selected="" value="">-- select an option --</option>
-                        <option value="M">Male</option>
-                        <option value="F">Female</option>
-                        <option value="U">Undefined</option>
-                    </select><br/>
-                    Author’s place of origin <select name="place" id="place">
-                        <option disabled="" selected="" value="">-- select an option --</option>
-                        <option value="Africa">Africa</option>
-                        <option value="Dalmatia">Dalmatia</option>
-                        <option value="Gallia">Gallia</option>
-                        <option value="Hispania">Hispania</option>  
-                        <option value="Italia">Italia</option>
-                        <option value="Aemilia">Italia: Aemilia</option>
-                        <option value="Campania">Italia: Campania</option>
-                        <option value="Latium">Italia: Latium</option>                        
-                        <option value="Samnium">Italia: Samnium</option>    
-                        <option value="Transpadana">Italia: Transpadana</option>    
-                        <option value="Umbria">Italia: Umbria</option>        
-                    </select><br/>
-                    Title of the work <select name="title" id="title">
-                        <option disabled="" selected="" value="">-- select an option --</option>
-                        <option value="john">Gospel of John</option>
-                        <option value="luke">Gospel of Luke</option>
-                        <option value="mark">Gospel of Mark</option>
-                        <option value="matthew">Gospel of Matthew</option>
-                    </select><br/>
-                    
+                <div class="content">
+                    <fieldset>Author <select name="author" id="author">
+                            <option disabled="" selected="" value="">-- select an option --</option>
+                            <option value="jerome">Jerome of Stridon</option>
+                        </select></fieldset>
+                    <fieldset> Author’s gender <select name="gender" id="gender">
+                            <option disabled="" selected="" value="">-- select an option --</option>
+                            <option value="M">Male</option>
+                            <option value="F">Female</option>
+                            <option value="U">Undefined</option>
+                        </select></fieldset>
+                    <fieldset>Author’s place of origin <select name="place" id="place">
+                            <option disabled="" selected="" value="">-- select an option --</option>
+                            <option value="Africa">Africa</option>
+                            <option value="Dalmatia">Dalmatia</option>
+                            <option value="Gallia">Gallia</option>
+                            <option value="Hispania">Hispania</option>
+                            <option value="Italia">Italia</option>
+                            <option value="Aemilia">Italia: Aemilia</option>
+                            <option value="Campania">Italia: Campania</option>
+                            <option value="Latium">Italia: Latium</option>
+                            <option value="Samnium">Italia: Samnium</option>
+                            <option value="Transpadana">Italia: Transpadana</option>
+                            <option value="Umbria">Italia: Umbria</option>
+                        </select></fieldset>
+                    <fieldset> Title of the work <select name="title" id="title">
+                            <option disabled="" selected="" value="">-- select an option --</option>
+                            <option value="john">Gospel of John</option>
+                            <option value="luke">Gospel of Luke</option>
+                            <option value="mark">Gospel of Mark</option>
+                            <option value="matthew">Gospel of Matthew</option>
+                        </select></fieldset> Timeframe of the works <br/>
+                    <fieldset>Not before century <input id="notBefore" type="number" min="-3" max="7" name="notBefore"/> Not after century <input id="notAfter" type="number" min="-3" max="7" name="notAfter"/></fieldset>
                 </div>
             </div>
             <input type="submit" value="Submit"/>

@@ -6,7 +6,7 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
 declare variable $woposs:metadataFile := doc('/db/apps/woposs/aux/metadata.xml');
 
-declare function woposs:getAuthorMetadata($id as xs:string+, $elementName as xs:string) as item()* {
+declare function woposs:getAuthorMetadata($id as xs:string, $elementName as xs:string) as item()* {
     let $node := $woposs:metadataFile//tei:person[@xml:id = $id] | $woposs:metadataFile//tei:object[@xml:id = $id]
     let $values := $node/descendant::*[name() = $elementName]/@value/string() | $node/descendant::*[name() = $elementName]/text()
     return
@@ -14,6 +14,21 @@ declare function woposs:getAuthorMetadata($id as xs:string+, $elementName as xs:
 
 };
 
+declare function woposs:getCentury($id as xs:string) as item() {
+    let $node := $woposs:metadataFile/descendant::tei:bibl[@xml:id = $id]
+    let $value := $node/descendant::tei:date[@type eq 'century']/@when-custom/string()
+    return
+        $value
+
+};
+
+declare function woposs:getWorkMetadata($id as xs:string, $elementName as xs:string) as item()* {
+    let $node := $woposs:metadataFile//tei:person[@xml:id = $id] | $woposs:metadataFile//tei:object[@xml:id = $id]
+    let $values := $node/descendant::*[name() = $elementName]/@value/string() | $node/descendant::*[name() = $elementName]/text()
+    return
+        $values
+
+};
 declare function woposs:getModalMeaning($doc as node(), $id as xs:string) as item()*  {
     let $fs := $doc/descendant::tei:fs[tei:f[@name eq 'marker']/@fVal eq $id]
     return

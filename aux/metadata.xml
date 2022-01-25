@@ -96,7 +96,7 @@
                      <bloc>Italia</bloc>
                      <bloc>Latium</bloc>
                   </location>
-                  <date type="century" when-custom="-2">II BCE</date>
+                  <date type="century" when-custom="BCE2">II BCE</date>
                   <date type="year" when-custom="-186">186 BCE</date>
                   <index indexName="genre">
                      <term cRef="#legal"/>
@@ -116,7 +116,7 @@
                <sex value="U"/>
                <bibl status="annotated">
                   <title>Rhetorica ad Herennium</title>
-                  <date type="century" when-custom="-1">I BCE</date>
+                  <date type="century" when-custom="BCE1">I BCE</date>
                   <index indexName="genre">
                      <term cRef="#rhetoric"/>
                   </index>
@@ -310,7 +310,7 @@
                </birth>
                <bibl status="annotated">
                   <title>De Rerum Natura</title>
-                  <date type="century" when-custom="-1">I BCE</date>
+                  <date type="century" when-custom="BCE1">I BCE</date>
                   <index indexName="genre">
                      <term cRef="#philosophy"/>
                   </index>
@@ -356,7 +356,7 @@
                </birth>
                <bibl>
                   <title>Epistulae</title>
-                  <date type="century" when-custom="-1">I BCE</date>
+                  <date type="century" when-custom="BCE1">I BCE</date>
                   <index indexName="genre">
                      <term cRef="#letter"/>
                   </index>
@@ -369,7 +369,7 @@
                </bibl>
                <bibl status="annotated">
                   <title>Metamorphoses</title>
-                  <date type="century" when-custom="-1">I BCE</date>
+                  <date type="century" when-custom="BCE1">I BCE</date>
                   <index indexName="genre">
                      <term cRef="#poetry"/>
                   </index>
@@ -414,7 +414,7 @@
                </birth>
                <bibl>
                   <title>Mostellaria</title>
-                  <date type="century" when-custom="-2">III/II BCE</date>
+                  <date type="century" when-custom="BCE2">III/II BCE</date>
                   <index indexName="genre">
                      <term cRef="#comedy"/>
                   </index>
@@ -427,7 +427,7 @@
                </bibl>
                <bibl status="annotated">
                   <title>Poenelus</title>
-                  <date type="century" when-custom="-2">II BCE</date>
+                  <date type="century" when-custom="BCE2">II BCE</date>
                   <index indexName="genre">
                      <term cRef="#comedy"/>
                   </index>
@@ -440,7 +440,7 @@
                </bibl>
                <bibl>
                   <title>Trinummus</title>
-                  <date type="century" when-custom="-2">III/II BCE</date>
+                  <date type="century" when-custom="BCE2">III/II BCE</date>
                   <index indexName="genre">
                      <term cRef="#comedy"/>
                   </index>
@@ -508,7 +508,7 @@
                </birth>
                <bibl status="annotated">
                   <title>Bellum Iugurthinum</title>
-                  <date type="century" when-custom="-1">I BCE</date>
+                  <date type="century" when-custom="BCE1">I BCE</date>
                   <index indexName="genre">
                      <term cRef="#history"/>
                   </index>

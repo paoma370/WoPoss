@@ -55,7 +55,7 @@
         
          <!-- work features -->
          <field name="work" expression="ancestor::tei:TEI/@xml:id"/>
-        
+         <field name="century" expression="idx:getCentury(ancestor::tei:TEI/@xml:id)"/>
          <!--       <field name="date" expression="ancestor::tei:TEI/descendant::tei:creation/tei:date/@when-custom"/>
         <field name="location" expression="ancestor::tei:TEI/descendant::tei:particDesc/descendant::tei:bloc"/>
         <field name="genre" expression="ancestor::tei:TEI/descendant::tei:keywords/term[@type eq 'genre']"/>

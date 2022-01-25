@@ -4,10 +4,22 @@ import module namespace woposs = "http://woposs.unine.ch" at "../functions.xql";
 
 declare variable $documents as document-node()+ :=
 collection('/db/apps/woposs/data');
-declare variable $marker := request:get-parameter("lemma", ());
-declare variable $filterByMarker := woposs:prepareQuery("lemma", $marker);
-declare variable $mk_fs := $documents//tei:fs[ft:query(., $filterByMarker)];
+declare variable $mk_fs := $documents//tei:fs[ft:query(., "type:marker")];
+declare variable $minCentury := xs:integer(-3);
+declare variable $maxCentury := xs:integer(7);
 declare variable $simpleFilters := <fields>
+    
+    <!-- filter by lemma  -->
+    
+    <field
+        name="lemma">
+        {
+            for $x in request:get-parameter("lemma", ())
+            return
+                <value>{$x}</value>
+        }
+    </field>
+    
     
     <!-- filters related to the author metadata -->
     
@@ -82,6 +94,12 @@ declare variable $simpleFilters := <fields>
     </field>
 
 </fields>;
+
+declare variable $centuryFilter := <fields>
+    <field
+        name="notBefore"><value>{request:get-parameter("notBefore", ())}</value></field>
+    <field
+        name="notAfter"><value>{request:get-parameter("notAfter", ())}</value></field></fields>;
 
 declare variable $SoADesc := <fields>
     <field
@@ -416,18 +434,27 @@ declare function local:SoaDesc($markers as node()*) as node()* {
         $filtered_markers
 };
 
-(:declare function local:modality($fs as node()*) as node()* {
+declare function local:filterByCentury($fs as node()*) as node()* {
     if ($fs) then
         (
-        let $query1 := woposs:prepareQuery("markerId", $fs/@xml:id)
-        let $query2 := woposs:prepareQuery("modality", $modalFilter)
-        let $markerIds := $fs/ancestor::tei:TEI/descendant::tei:fs[ft:query(., $query1)][ft:query(., $query2)]/tei:f[@name eq 'marker']/@fVal
-        let $query3 := woposs:prepareQuery("id", $markerIds)
+        let $selectionMin := if (exists($centuryFilter/field[@name eq 'notBefore']/value/node())) then
+            $centuryFilter/field[@name eq 'notBefore']/xs:integer(value)
+        else
+            $minCentury
+        let $selectionMax := if (exists($centuryFilter/field[@name eq 'notAfter']/value/node())) then
+            $centuryFilter/field[@name eq 'notAfter']/xs:integer(value)
+        else
+            $maxCentury
+        let $numbers := for $x in $selectionMin to $selectionMax
         return
-            $fs[ft:query(., $query3)])
+            replace(xs:string($x), '-', 'BCE')
+        let $filtered := $fs[ft:query(., woposs:prepareQuery("century", $numbers))]
+        return
+            $filtered
+        )
     else
         ()
-};:)
+};
 
 
 <tbody>{
@@ -435,11 +462,15 @@ declare function local:SoaDesc($markers as node()*) as node()* {
             woposs:simpleFilter($mk_fs, $simpleFilters)
         else
             $mk_fs
-        
-        let $mk_filtered2 := if (exists($morphologicalFeatures//value/node())) then
-            local:morph($mk_filtered)
+        let $mk_filtered1 := if (exists($centuryFilter//value/node())) then
+            local:filterByCentury($mk_filtered)
         else
             $mk_filtered
+        
+        let $mk_filtered2 := if (exists($morphologicalFeatures//value/node())) then
+            local:morph($mk_filtered1)
+        else
+            $mk_filtered1
         let $mk_filtered3 := if (exists($SoADesc//value/node())) then
             local:SoaDesc($mk_filtered2)
         else
