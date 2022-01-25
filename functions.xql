@@ -4,11 +4,20 @@ module namespace woposs = "http://woposs.unine.ch";
 
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
+declare variable $woposs:metadataFile := doc('/db/apps/woposs/aux/metadata.xml');
+
 declare function woposs:getAuthorMetadata($id as xs:string+, $elementName as xs:string) as item()* {
-let $node := doc('/db/apps/woposs/aux/metadata.xml')//tei:person[@xml:id = $id] | doc('/db/apps/woposs/aux/metadata.xml')//tei:object[@xml:id = $id]
-let $values := $node/descendant::*[name() = $elementName]/@value | $node/descendant::*[name() = $elementName]/text()
-return
-$values
+    let $node := $woposs:metadataFile//tei:person[@xml:id = $id] | $woposs:metadataFile//tei:object[@xml:id = $id]
+    let $values := $node/descendant::*[name() = $elementName]/@value/string() | $node/descendant::*[name() = $elementName]/text()
+    return
+        $values
+
+};
+
+declare function woposs:getModalMeaning($doc as node(), $id as xs:string) as item()*  {
+    let $fs := $doc/descendant::tei:fs[tei:f[@name eq 'marker']/@fVal eq $id]
+    return
+        $fs/tei:f[@name eq 'modality']/tei:symbol/@value/string()
 
 };
 
@@ -33,5 +42,11 @@ declare function woposs:filterParams($params as node()) as xs:string+ {
         woposs:prepareQuery($param/@name, $param/value[node()])
     return
         string-join($queries, ' AND ')
+};
+
+declare function woposs:simpleFilter($nodes as node()*, $params as node()) as node()* {
+    let $query := woposs:filterParams($params)
+    return
+        $nodes[ft:query(., $query)]
 };
 

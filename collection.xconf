@@ -23,12 +23,13 @@
         <field name="pertinence" expression="tei:f[@name eq 'pertinence']/tei:binary/@value"/>
         <field name="modalStatus" expression="tei:f[@name eq 'modal']/tei:binary/@value"/>
         <field name="diachrony" expression="tei:f[@name eq 'diachrony']/tei:symbol/@value"/>
-        <field name="markerUtterance" expression=".[@type eq 'marker']/tei:f[@name eq 'utterance']/tei:symbol/@value"/>
-        <field name="markerPolarity" expression=".[@type eq 'marker']/tei:f[@name eq 'polarity']/tei:symbol/@value"/>
+        <field name="markerUtterance" if="@type eq 'marker'" expression="tei:f[@name eq 'utterance']/tei:symbol/@value"/>
+        <field name="markerPolarity" if="@type eq 'marker'" expression="tei:f[@name eq 'polarity']/tei:symbol/@value"/>
+        <field name="modalRelation" if="@type eq 'marker'" expression="idx:getModalMeaning(ancestor::tei:TEI, @xml:id)"/>
 
         <!-- scope -->
-        <field name="scopeUtterance" expression=".[@type eq 'scope']/tei:f[@name eq 'utterance']/tei:symbol/@value"/>
-        <field name="scopePolarity" expression=".[@type eq 'scope']/tei:f[@name eq 'polarity']/tei:symbol/@value"/>
+        <field name="scopeUtterance" if="@type eq 'scope'" expression="tei:f[@name eq 'utterance']/tei:symbol/@value"/>
+        <field name="scopePolarity" if="@type eq 'scope'" expression="tei:f[@name eq 'polarity']/tei:symbol/@value"/>
         <field name="control" expression="tei:f[@name eq 'control']/tei:symbol/@value |  tei:f[@name eq 'control']/tei:binary/@value"/>
         <field name="dynamicity" expression="tei:f[@name eq 'dynamicity']/tei:symbol/@value |  tei:f[@name eq 'dynamicity']/tei:binary/@value"/>
         <field name="SoA" expression="tei:f[@name eq 'SoA']/tei:binary/@value"/>

@@ -7,7 +7,38 @@ collection('/db/apps/woposs/data');
 declare variable $marker := request:get-parameter("lemma", ());
 declare variable $filterByMarker := woposs:prepareQuery("lemma", $marker);
 declare variable $mk_fs := $documents//tei:fs[ft:query(., $filterByMarker)];
-declare variable $markerDesc := <fields>
+declare variable $simpleFilters := <fields>
+    
+    <!-- filters related to the author metadata -->
+    
+    <field
+        name="authorGender">
+        <value>{request:get-parameter("gender", ())}</value></field>
+    <field
+        name="author">
+        <value>{request:get-parameter("author", ())}</value></field>
+    <field
+        name="authorPlace">
+        <value>{request:get-parameter("place", ())}</value></field>
+    <field
+        name="work">
+        <value>{request:get-parameter("title", ())}</value></field>
+    
+    
+    <!-- filter concerning the modal meaning -->
+    
+    <field
+        name="modalRelation">
+        {
+            for $x in request:get-parameter("modality", ())
+            return
+                <value>{$x}</value>
+        }
+    </field>
+    
+    
+    <!-- filters related to the markers descriptions -->
+    
     <field
         name="pertinence">
         {
@@ -49,6 +80,7 @@ declare variable $markerDesc := <fields>
                 <value>{$x}</value>
         }
     </field>
+
 </fields>;
 
 declare variable $SoADesc := <fields>
@@ -224,22 +256,7 @@ declare variable $morphologicalFeatures := <fields>
         }</field>
 </fields>;
 
-declare variable $modalFilter := request:get-parameter("modality", ());
 
-declare variable $authorFilters := <fields>
-    <field
-        name="authorGender">
-        <value>{request:get-parameter("gender", ())}</value></field>
-    <field
-        name="author">
-        <value>{request:get-parameter("author", ())}</value></field>
-    <field
-        name="authorPlace">
-        <value>{request:get-parameter("place", ())}</value></field>
-    <field
-        name="work">
-        <value>{request:get-parameter("title", ())}</value></field>
-</fields>;
 
 declare function local:get-seg($fs as item()?, $id as xs:string?) as item()* {
     let $query := "ana:" || $id
@@ -295,12 +312,6 @@ declare function local:pertinent($fs as node()?) as item()* {
                 ref="{$id}">{$s}</td1>
             <td>{$marker}</td><td>{$modality}</td><td>{$type}</td><td>{$amb}</td><td>{$locus}</td></tr>
 
-};
-
-declare function local:markerDesc($fs as node()*) as node()* {
-    let $query := woposs:filterParams($markerDesc)
-    return
-        $fs[ft:query-field(., $query)]
 };
 
 declare function local:getScope($markers as node()*) as node()* {
@@ -405,7 +416,7 @@ declare function local:SoaDesc($markers as node()*) as node()* {
         $filtered_markers
 };
 
-declare function local:modality($fs as node()*) as node()* {
+(:declare function local:modality($fs as node()*) as node()* {
     if ($fs) then
         (
         let $query1 := woposs:prepareQuery("markerId", $fs/@xml:id)
@@ -416,22 +427,12 @@ declare function local:modality($fs as node()*) as node()* {
             $fs[ft:query(., $query3)])
     else
         ()
-};
+};:)
 
-declare function local:author($fs as node()*) as node()* {
-    if ($fs) then
-        (
-        let $query := woposs:filterParams($authorFilters)
-        return
-            $fs[ft:query(., $query)]
-        )
-    else
-        ()
-};
 
 <tbody>{
-        let $mk_filtered := if (exists($markerDesc//value/node())) then
-            local:markerDesc($mk_fs)
+        let $mk_filtered := if (exists($simpleFilters//value/node())) then
+            woposs:simpleFilter($mk_fs, $simpleFilters)
         else
             $mk_fs
         
@@ -447,15 +448,7 @@ declare function local:author($fs as node()*) as node()* {
             local:morphScope($mk_filtered3)
         else
             $mk_filtered3
-        let $mk_filtered5 := if (exists($modalFilter)) then
-            local:modality($mk_filtered4)
-        else
-            $mk_filtered4
-        let $mk_filtered6 := if (exists($authorFilters//value/node())) then
-            local:author($mk_filtered5)
-        else
-            $mk_filtered5
-        for $mk in $mk_filtered6
+        for $mk in $mk_filtered4
         let $output := if ($mk[ft:query(., "pertinence:false")]) then
             local:not-pertinent($mk)
         else
