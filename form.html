@@ -622,9 +622,59 @@
                             <option value="luke">Gospel of Luke</option>
                             <option value="mark">Gospel of Mark</option>
                             <option value="matthew">Gospel of Matthew</option>
-                        </select></fieldset> Timeframe of the works <br/>
-                    <fieldset>Not before century <input id="notBefore" type="number" min="-3" max="7" name="notBefore"/> Not after century <input id="notAfter" type="number" min="-3" max="7" name="notAfter"/></fieldset>
-                </div>
+                        </select></fieldset>
+                    <fieldset>Timeframe of the works <div class="indent"> Not before century <input id="notBefore" type="number" min="-3" max="7" name="notBefore" placeholder="e.g. -3"/> Not after century <input id="notAfter" type="number" min="-3" max="7" name="notAfter" placeholder="e.g. 7"/></div></fieldset>
+                    <fieldset><label>Genre</label>
+                    <div>                
+                        <input type="checkbox" name="genre" id="christian" value="christian"/>
+                        <label for="christian">Christian theological text</label> 
+                        <input type="checkbox" name="genre" id="comedy" value="comedy"/>
+                        <label for="comedy">Comedy</label>                        
+                        <input type="checkbox" name="genre" id="fiction" value="fiction"/>
+                        <label for="fiction">Fiction</label>                        
+                        <input type="checkbox" name="genre" id="history" value="history"/>
+                        <label for="history">Historical writing</label>
+                        <input type="checkbox" name="genre" id="legal" value="legal"/>
+                        <label for="legal">Legal text</label>
+                        <input type="checkbox" name="genre" id="letter" value="letter"/>
+                        <label for="letter">Letter writing</label>
+                        <input type="checkbox" name="genre" id="philosophy" value="philosophy"/>
+                        <label for="philosophy">Philosophy</label>
+                        <input type="checkbox" name="genre" id="poetry" value="poetry"/>
+                        <label for="poetry">Poetry</label>                        
+                        <input type="checkbox" name="genre" id="rhetoric" value="rhetoric"/>
+                        <label for="rhetoric">Technical text: rhetoric</label>
+                        <input type="checkbox" name="genre" id="medicine" value="medicine"/>
+                        <label for="medicine">Technical text: medicine</label>
+                        <input type="checkbox" name="genre" id="travel" value="travel"/>
+                        <label for="travel">Travel literature</label>
+                    </div></fieldset>
+            
+                <fieldset><label>Textual features</label>
+                    <div>                
+                        <input type="checkbox" name="textualFeature" id="prose" value="prose"/>
+                        <label for="prose">Prose</label> 
+                        <input type="checkbox" name="textualFeature" id="verse" value="verse"/>
+                        <label for="verse">Verse</label>                        
+                        <input type="checkbox" name="textualFeature" id="translation" value="translation"/>
+                        <label for="translation">Translation</label>                        
+                        <input type="checkbox" name="textualFeature" id="dialogue" value="dialogue"/>
+                        <label for="dialogue">Dialogued</label>
+                        <input type="checkbox" name="textualFeature" id="non-dialogue" value="non-dialogue"/>
+                        <label for="non-dialogue">Non-dialogue</label>
+                    </div></fieldset>
+                    <fieldset><label>Transmission</label>
+                        <div>                
+                            <input type="checkbox" name="transmission" id="codex" value="codex"/>
+                            <label for="codex">Codex</label>                      
+                            <input type="checkbox" name="transmission" id="scroll" value="scroll"/>
+                            <label for="scroll">Papyrus scroll</label>          
+                            <input type="checkbox" name="transmission" id="inscription" value="inscription"/>
+                            <label for="inscription">Inscription</label>
+                            <input type="checkbox" name="transmission" id="mixed" value="mixed"/>
+                            <label for="mixed">Mixed</label>
+                        </div></fieldset>
+            </div>
             </div>
             <input type="submit" value="Submit"/>
         </form>

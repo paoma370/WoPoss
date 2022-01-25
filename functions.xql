@@ -22,11 +22,12 @@ declare function woposs:getCentury($id as xs:string) as item() {
 
 };
 
-declare function woposs:getWorkMetadata($id as xs:string, $elementName as xs:string) as item()* {
-    let $node := $woposs:metadataFile//tei:person[@xml:id = $id] | $woposs:metadataFile//tei:object[@xml:id = $id]
-    let $values := $node/descendant::*[name() = $elementName]/@value/string() | $node/descendant::*[name() = $elementName]/text()
+declare function woposs:getWorkMetadata($id as xs:string, $indexName as xs:string) as item()* {
+    let $node := $woposs:metadataFile/descendant::tei:bibl[@xml:id = $id]
+    let $values := $node/descendant::tei:index[@indexName eq $indexName]/tei:term/@cRef
+    for $value in $values
     return
-        $values
+        substring($value, 2)
 
 };
 declare function woposs:getModalMeaning($doc as node(), $id as xs:string) as item()*  {

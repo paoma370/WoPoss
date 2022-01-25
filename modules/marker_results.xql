@@ -32,9 +32,40 @@ declare variable $simpleFilters := <fields>
     <field
         name="authorPlace">
         <value>{request:get-parameter("place", ())}</value></field>
+    
+    
+    
+    <!-- filters related to the work metadata -->
+    
     <field
         name="work">
         <value>{request:get-parameter("title", ())}</value></field>
+    
+    <field
+        name="genre">
+        {
+            for $x in request:get-parameter("genre", ())
+            return
+                <value>{$x}</value>
+        }
+    </field>
+    
+    <field
+        name="textualFeature">
+        {
+            for $x in request:get-parameter("textualFeature", ())
+            return
+                <value>{$x}</value>
+        }
+    </field>
+    <field
+        name="transmission">
+        {
+            for $x in request:get-parameter("transmission", ())
+            return
+                <value>{$x}</value>
+        }
+    </field>
     
     
     <!-- filter concerning the modal meaning -->

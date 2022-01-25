@@ -6,4 +6,4 @@ import module namespace woposs="http://woposs.unine.ch" at "../functions.xql";
 declare variable $documents as document-node()+ :=
 collection('/db/apps/woposs/data');
 declare variable $doc := $documents/descendant::tei:TEI[@xml:id eq 'luke'];
-woposs:getCentury('john')
+woposs:getWorkMetadata('john', 'transmission')

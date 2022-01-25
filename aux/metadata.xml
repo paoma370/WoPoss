@@ -23,7 +23,10 @@
                   <catDesc>Legal text</catDesc>
                </category>
                <category xml:id="rhetoric">
-                  <catDesc>Technical texts: rhetoric</catDesc>
+                  <catDesc>Technical text: rhetoric</catDesc>
+               </category>
+               <category xml:id="medicine">
+                  <catDesc>Technical text: medicine</catDesc>
                </category>
                <category xml:id="poetry">
                   <catDesc>Poetry</catDesc>
