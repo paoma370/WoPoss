@@ -7,7 +7,6 @@ collection('/db/apps/woposs/data');
 declare variable $marker := request:get-parameter("lemma", ());
 declare variable $filterByMarker := woposs:prepareQuery("lemma", $marker);
 declare variable $mk_fs := $documents//tei:fs[ft:query(., $filterByMarker)];
-
 declare variable $markerDesc := <fields>
     <field
         name="pertinence">
@@ -227,6 +226,17 @@ declare variable $morphologicalFeatures := <fields>
 
 declare variable $modalFilter := request:get-parameter("modality", ());
 
+declare variable $authorFilters := <fields>
+    <field
+        name="authorGender">
+        <value>{request:get-parameter("gender", ())}</value></field>
+    <field
+        name="author">
+        <value>{request:get-parameter("author", ())}</value></field>
+    <field
+        name="authorPlace">
+        <value>{request:get-parameter("place", ())}</value></field>
+</fields>;
 
 declare function local:get-seg($fs as item()?, $id as xs:string?) as item()* {
     let $query := "ana:" || $id
@@ -315,7 +325,10 @@ declare function local:filterWords($ws as node()+, $params as item()) as node()*
     let $msdFeatures := $ws/ancestor::tei:TEI/descendant::tei:fs[ft:query(., woposs:prepareQuery("id", $msdIds))]
     let $query := woposs:filterParams($params)
     let $filteredIds := $msdFeatures[ft:query(., $query)]/@xml:id
-    let $filteredWords := if (exists($filteredIds)) then $ws[ft:query(., woposs:prepareQuery("msd", $filteredIds))] else ()
+    let $filteredWords := if (exists($filteredIds)) then
+        $ws[ft:query(., woposs:prepareQuery("msd", $filteredIds))]
+    else
+        ()
     return
         $filteredWords
 };
@@ -359,7 +372,10 @@ declare function local:morphScope($markers as node()*) as node()* {
     let $anas := for $x in $seg_filtered/tokenize(@ana, '\s+')
     return
         substring($x, 2)
-    let $filtered_scopes := if (exists($anas)) then  $scopes[ft:query(., woposs:prepareQuery("id", $anas))] else ()
+    let $filtered_scopes := if (exists($anas)) then
+        $scopes[ft:query(., woposs:prepareQuery("id", $anas))]
+    else
+        ()
     let $filtered_markers := if (exists($filtered_scopes)) then
         local:getMarker($filtered_scopes)
     else
@@ -399,7 +415,18 @@ declare function local:modality($fs as node()*) as node()* {
         ()
 };
 
-<tbody>{        
+declare function local:author($fs as node()*) as node()* {
+    if ($fs) then
+        (
+        let $query := woposs:filterParams($authorFilters)
+        return
+            $fs[ft:query(., $query)]
+        )
+    else
+        ()
+};
+
+<tbody>{
         let $mk_filtered := if (exists($markerDesc//value/node())) then
             local:markerDesc($mk_fs)
         else
@@ -421,6 +448,10 @@ declare function local:modality($fs as node()*) as node()* {
             local:modality($mk_filtered4)
         else
             $mk_filtered4
+        let $mk_filtered6 := if (exists($authorFilters//value/node())) then
+            local:author($mk_filtered5)
+        else
+            $mk_filtered5
         for $mk in $mk_filtered5
         let $output := if ($mk[ft:query(., "pertinence:false")]) then
             local:not-pertinent($mk)

@@ -1,6 +1,7 @@
 <collection xmlns="http://exist-db.org/collection-config/1.0">
   <index xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <lucene>
+      <module uri="http://woposs.unine.ch" at="modules/functions.xql" prefix="woposs"/>
       <analyzer class="org.apache.lucene.analysis.core.WhitespaceAnalyzer"/>
       <text qname="tei:fs">
         <field name="id" expression="@xml:id"/>
@@ -45,7 +46,19 @@
         <field name="Mood" expression="tei:f[@name eq 'Mood']/tei:symbol/@value"/>
         <field name="Tense" expression="tei:f[@name eq 'Tense']/tei:symbol/@value"/>
         <field name="Voice" expression="tei:f[@name eq 'Voice']/tei:symbol/@value"/>
+        
+        <!-- sociolinguistic features -->
+         <field name="author" expression="ancestor::tei:TEI/descendant::tei:particDesc/tei:person/substring(@corresp, 2)"/>
+        <field name="authorGender" expression="woposs:getAuthorMetadata(ancestor::tei:TEI/descendant::tei:particDesc/descendant::tei:person/substring(@corresp, 2), 'tei:sex')"/>
+        <field name="authorPlace" expression="woposs:getAuthorMetadata(ancestor::tei:TEI/descendant::tei:particDesc/descendant::tei:person/substring(@corresp, 2), 'tei:bloc')"/>
+         <!--       <field name="date" expression="ancestor::tei:TEI/descendant::tei:creation/tei:date/@when-custom"/>
+        <field name="location" expression="ancestor::tei:TEI/descendant::tei:particDesc/descendant::tei:bloc"/>
+        <field name="genre" expression="ancestor::tei:TEI/descendant::tei:keywords/term[@type eq 'genre']"/>
+        <field name="textualFeature" expression="ancestor::tei:TEI/descendant::tei:keywords/term[@type eq 'textualFeature']"/>
+        <field name="transmission" expression="ancestor::tei:TEI/descendant::tei:keywords/term[@type eq 'transmission']"/>-->
+        
       </text>
+     
 
       <text qname="tei:seg">
         <field name="ana" expression="for $x in tokenize(@ana) return substring($x, 2)"/>
@@ -57,6 +70,12 @@
         <field name="msd" expression="substring(@msd, 2)"/>
         <field name="function" expression="@function"/>
       </text>
+      
+      <text qname="tei:w">
+        <field name="msd" expression="substring(@msd, 2)"/>
+        <field name="function" expression="@function"/>
+      </text>
+
 
     </lucene>
   </index>
