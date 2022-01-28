@@ -1,24 +1,24 @@
-<div xmlns="http://www.w3.org/1999/xhtml" data-template="templates:surround"
-    data-template-with="templates/page_woposs.html" data-template-at="content">
+<div xmlns="http://www.w3.org/1999/xhtml" data-template="templates:surround" data-template-with="templates/page_woposs.html" data-template-at="content">
     <div onload="clearChk()">
         <h2>Some notes for beta testers</h2>
         <ul>
             <li>Should I search by modal marker or by modal relation? Functionalities of both forms
-                are quite similar in the sense that in the search by modal marker you can filter by main
-                modal meaning (thus you can select <em>debeo</em> and then only get its deontic occurrences) and
-                in the search by modal marker you can first select the modal meaning (with all the
-                subcategories) and then filter by the lemma of the modal marker (thus you can select
-                “deontic” in the first fieldset and then only obtain all the occurrences of
-                    <em>debeo</em>). If you are looking for a specific modal category (e.g.
-                    <em>deontic > authority > official context</em>), go to the “Search by modal
-                meaning” form; if you want to focus on a specific marker (and for instance see the
-                cases in which it is not modal) use the “Search my modal marker” form. By having two different forms is easier
-            to develop a more intuitive form depending on the needs of the user and also to enhance performance.</li>
+                are quite similar in the sense that in the search by modal marker you can filter by
+                main modal meaning (thus you can select <em>debeo</em> and then only get its deontic
+                occurrences) and in the search by modal meaning you can first select the modal
+                meaning (with all the subcategories) and then filter by the lemma of the modal
+                marker (thus you can select “deontic” in the first fieldset and then only obtain all
+                the occurrences of <em>debeo</em>). If you are looking for a specific modal category
+                (e.g. <em>deontic &gt; authority &gt; official context</em>), go to the “Search by
+                modal meaning” form; if you want to focus on a specific marker (and for instance see
+                the cases in which it is not modal) use the “Search my modal marker” form. By having
+                two different forms is easier to develop a more intuitive form depending on the
+                needs of the user, and also to enhance performance.</li>
             <li>Never select all the options in a given fieldset: filters are for filtering the
                 results, thus if you want to see ALL the possibilities, just leave that fieldset
                 empty (e.g., if you want to examine both the negative and affirmative polarity of
                 the marker, do not check any of the options of the fieldset <em>Description of the
-                    marker > Polarity</em>). Selecting all the options will unnecessary slow the
+                    marker &gt; Polarity</em>). Selecting all the options will unnecessary slow the
                 performance</li>
             <li>If one of your queries contains an ambiguous reading, you will always received the
                 other possible reading(s). This means that if you carry out a query like <em>debeo -
@@ -113,8 +113,7 @@
                     <label for="mk_illicitus">illicitus</label>
                     <input type="checkbox" value="impossibilis" id="mk_impossibilis" name="lemma"/>
                     <label for="mk_impossibilis">impossibilis</label>
-                    <input type="checkbox" value="impossibilis_est" id="mk_impossibilis_est"
-                        name="lemma"/>
+                    <input type="checkbox" value="impossibilis_est" id="mk_impossibilis_est" name="lemma"/>
                     <label for="mk_impossibilis_est">impossibilis est</label>
                     <input type="checkbox" value="incertus" id="mk_incertus" name="lemma"/>
                     <label for="mk_incertus">incertus</label>
@@ -126,8 +125,7 @@
                     <label for="mk_necessarius">necessarius</label>
                     <input type="checkbox" value="possibilis" id="mk_possibilis" name="lemma"/>
                     <label for="mk_possibilis">possibilis</label>
-                    <input type="checkbox" value="possibilis_est" id="mk_possibilis_est"
-                        name="lemma"/>
+                    <input type="checkbox" value="possibilis_est" id="mk_possibilis_est" name="lemma"/>
                     <label for="mk_possibilis_est">possibilis est</label>
                 </div>
                 <div>
@@ -174,52 +172,39 @@
             <div class="wrapper">
                 <div class="content">
                     <fieldset>
-                        <label class="title">Pertinence of the potential modal marker</label>
-                        <div class="wrapper">
-                            <div id="pertinence" class="content">
-                                <input type="checkbox" name="pertinence" id="pertinent" value="true"/>
-                                <label for="pertinent">pertinent</label>
-                                <input type="checkbox" name="pertinence" id="not-pertinent"
-                                    value="false"/>
-                                <label for="not-pertinent">not pertinent (according to WoPoss
-                                    criteria)</label>
-                                <input type="checkbox" name="modal" id="modal" value="true"/>
-                                <label for="modal">modal</label>
-                                <input type="checkbox" name="modal" id="notmodal" value="false"/>
-                                <label for="notmodal">not modal</label>
-                                <input type="checkbox" name="diachrony" id="postmodal"
-                                    value="post-modal"/>
-                                <label for="postmodal">postmodal</label>
-                                <input type="checkbox" name="diachrony" id="premodal"
-                                    value="pre-modal"/>
-                                <label for="premodal">premodal</label>
-                            </div>
+                        <label>Pertinence of the potential modal marker</label>
+                        <div id="pertinence" class="indent">
+                            <input type="checkbox" name="pertinence" id="pertinent" value="true"/>
+                            <label for="pertinent">pertinent</label>
+                            <input type="checkbox" name="pertinence" id="not-pertinent" value="false"/>
+                            <label for="not-pertinent">not pertinent (according to WoPoss
+                                criteria)</label>
+                            <input type="checkbox" name="modal" id="modal" value="true"/>
+                            <label for="modal">modal</label>
+                            <input type="checkbox" name="modal" id="notmodal" value="false"/>
+                            <label for="notmodal">not modal</label>
+                            <input type="checkbox" name="diachrony" id="postmodal" value="post-modal"/>
+                            <label for="postmodal">postmodal</label>
+                            <input type="checkbox" name="diachrony" id="premodal" value="pre-modal"/>
+                            <label for="premodal">premodal</label>
                         </div>
                     </fieldset>
                     <fieldset>
-                        <label class="title">Type of utterance</label>
-                        <div class="wrapper">
-                            <div class="content">
-                                <input type="checkbox" value="interrogative" id="marker-int"
-                                    name="marker-utterance"/>
-                                <label for="marker-int">interrogative utterance</label>
-                                <input type="checkbox" value="non-interrogative" id="marker-noint"
-                                    name="marker-utterance"/>
-                                <label for="marker-noint">non-interrogative utterance</label>
-                            </div>
+                        <label>Type of utterance</label>
+                        <div class="indent">
+                            <input type="checkbox" value="interrogative" id="marker-int" name="marker-utterance"/>
+                            <label for="marker-int">interrogative utterance</label>
+                            <input type="checkbox" value="non-interrogative" id="marker-noint" name="marker-utterance"/>
+                            <label for="marker-noint">non-interrogative utterance</label>
                         </div>
                     </fieldset>
                     <fieldset>
-                        <label class="title">Polarity</label>
-                        <div class="wrapper">
-                            <div class="content">
-                                <input type="checkbox" value="affirmative" id="marker-aff"
-                                    name="marker-polarity"/>
-                                <label for="marker-aff">affirmative</label>
-                                <input type="checkbox" value="negative" id="marker-neg"
-                                    name="marker-polarity"/>
-                                <label for="marker-neg">negative</label>
-                            </div>
+                        <label>Polarity</label>
+                        <div class="indent">
+                            <input type="checkbox" value="affirmative" id="marker-aff" name="marker-polarity"/>
+                            <label for="marker-aff">affirmative</label>
+                            <input type="checkbox" value="negative" id="marker-neg" name="marker-polarity"/>
+                            <label for="marker-neg">negative</label>
                         </div>
                     </fieldset>
                     <fieldset>
@@ -234,7 +219,6 @@
                                         <label for="Masc">Masculine</label>
                                         <input type="checkbox" name="Gender" id="Neut" value="Neut"/>
                                         <label for="Neut">Neuter</label>
-
                                     </div></fieldset>
                                 <fieldset>
                                     <label>Number</label>
@@ -285,8 +269,7 @@
                                         <label for="Ger">Gerund</label>
                                         <input type="checkbox" name="VerbForm" id="Inf" value="Inf"/>
                                         <label for="Inf">Infinitive</label>
-                                        <input type="checkbox" name="VerbForm" id="Part"
-                                            value="Part"/>
+                                        <input type="checkbox" name="VerbForm" id="Part" value="Part"/>
                                         <label for="Part">Participle</label>
                                     </div>
                                 </fieldset>
@@ -351,29 +334,66 @@
             <div class="wrapper">
                 <div class="content">
                     <fieldset>
-                        <label class="title">Type of utterance</label>
-                        <div class="wrapper">
-                            <div class="content">
-                                <input type="checkbox" value="interrogative" id="scope-int"
-                                    name="scope-utterance"/>
-                                <label for="scope-int">interrogative utterance</label>
-                                <input type="checkbox" value="non-interrogative" id="scope-noint"
-                                    name="scope-utterance"/>
-                                <label for="scope-noint">non-interrogative utterance</label>
-                            </div>
+                        <label>Type of utterance</label>
+                        <div class="indent">
+                            <input type="checkbox" value="interrogative" id="scope-int" name="scope-utterance"/>
+                            <label for="scope-int">interrogative utterance</label>
+                            <input type="checkbox" value="non-interrogative" id="scope-noint" name="scope-utterance"/>
+                            <label for="scope-noint">non-interrogative utterance</label>
                         </div>
                     </fieldset>
                     <fieldset>
-                        <label class="title">Polarity</label>
-                        <div class="wrapper">
-                            <div class="content">
-                                <input type="checkbox" value="affirmative" id="scope-aff"
-                                    name="scope-polarity"/>
-                                <label for="scope-aff">affirmative</label>
-                                <input type="checkbox" value="negative" id="scope-neg"
-                                    name="scope-polarity"/>
-                                <label for="scope-neg">negative</label>
-                            </div>
+                        <label>Polarity</label>
+                        <div class="indent">
+                            <input type="checkbox" value="affirmative" id="scope-aff" name="scope-polarity"/>
+                            <label for="scope-aff">affirmative</label>
+                            <input type="checkbox" value="negative" id="scope-neg" name="scope-polarity"/>
+                            <label for="scope-neg">negative</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <label>Description of the state of affairs</label>
+                        <div class="indent includsRadio">
+                            <input type="radio" value="true" id="soa" name="SoA"/>
+                            <label for="soa">State of affairs</label>
+                            <input type="radio" value="false" id="no-soa" name="SoA" class="control controlmixed controlno dynamicn dynamicmixed dinamicno"/>
+                            <label for="no-soa">No state of affairs</label>
+                            <br/>
+                            <input type="checkbox" name="control" id="control" value="true" class="no-soa"/>
+                            <label for="control"> + control</label>
+                            <input type="checkbox" name="control" id="controlmixed" value="ambiguous" class="no-soa"/>
+                            <label for="controlmixed"> +/- control</label>
+                            <input type="checkbox" name="control" id="controlno" value="false" class="no-soa"/>
+                            <label for="controlno"> - control</label>
+                            <input type="checkbox" name="dynamic" id="dynamicn" value="true" class="no-soa"/>
+                            <label for="dynamicn"> + dynamic</label>
+                            <input type="checkbox" name="dynamic" id="dynamicmixed" value="ambiguous" class="no-soa"/>
+                            <label for="dynamicmixed"> +/- dynamic</label>
+                            <input type="checkbox" name="dynamic" id="dynamicno" value="false" class="no-soa"/>
+                            <label for="dynamicno"> - dynamic</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <label>Expression of the participant</label>
+                        <div class="indent">
+                            <input type="checkbox" value="explicit" id="explicit" name="participant"/>
+                            <label for="explicit">Explicit participant</label>
+                            <input type="checkbox" value="implicit" id="implicit" name="participant"/>
+                            <label for="implicit">Implicit participant</label>
+                            <input type="checkbox" value="none" id="no-part" name="participant"/>
+                            <label for="no-part">No participant</label>
+                        </div>
+                        <label>Type of participant</label>
+                        <div class="indent">
+                            <input type="checkbox" name="participantType" id="animate" value="animate"/>
+                            <label for="animate">Animate</label>
+                            <input type="checkbox" name="participantType" id="inanimate" value="inanimate"/>
+                            <label for="inanimate">Inanimate</label>
+                            <input type="checkbox" name="participantType" id="pass-animate" value="animate_patient"/>
+                            <label for="pass-animate">Animate (patient)</label>
+                            <input type="checkbox" name="participantType" id="pass-inanimate" value="inanimate_patient"/>
+                            <label for="pass-inanimate">Inanimate (patient)</label>
                         </div>
                     </fieldset>
                     <fieldset>
@@ -382,202 +402,108 @@
                             <div class="content">
                                 <fieldset><label>Gender</label>
                                     <div>
-                                        <input type="checkbox" name="scope_Gender" id="scope_Fem"
-                                            value="Fem"/>
+                                        <input type="checkbox" name="scope_Gender" id="scope_Fem" value="Fem"/>
                                         <label for="scope_Fem">Feminine</label>
 
-                                        <input type="checkbox" name="scope_Gender" id="scope_Masc"
-                                            value="Masc"/>
+                                        <input type="checkbox" name="scope_Gender" id="scope_Masc" value="Masc"/>
                                         <label for="scope_Masc">Masculine</label>
-                                        <input type="checkbox" name="scope_Gender" id="scope_Neut"
-                                            value="Neut"/>
+                                        <input type="checkbox" name="scope_Gender" id="scope_Neut" value="Neut"/>
                                         <label for="scope_Neut">Neuter</label>
 
                                     </div></fieldset>
                                 <fieldset>
                                     <label>Number</label>
                                     <div>
-                                        <input type="checkbox" name="scope_Number" id="scope_Sing"
-                                            value="Sing"/>
+                                        <input type="checkbox" name="scope_Number" id="scope_Sing" value="Sing"/>
                                         <label for="scope_Sing">Singular</label>
-                                        <input type="checkbox" name="scope_Number" id="scope_Plur"
-                                            value="Plur"/>
+                                        <input type="checkbox" name="scope_Number" id="scope_Plur" value="Plur"/>
                                         <label for="scope_Plur">Plural</label>
 
                                     </div></fieldset>
                                 <fieldset><label>Case</label>
                                     <div>
-                                        <input type="checkbox" name="scope_Case" id="scope_Abl"
-                                            value="Abl"/>
+                                        <input type="checkbox" name="scope_Case" id="scope_Abl" value="Abl"/>
                                         <label for="scope_Abl">Ablative</label>
-                                        <input type="checkbox" name="scope_Case" id="scope_Acc"
-                                            value="Acc"/>
+                                        <input type="checkbox" name="scope_Case" id="scope_Acc" value="Acc"/>
                                         <label for="scope_Acc">Accusative</label>
-                                        <input type="checkbox" name="scope_Case" id="scope_Dat"
-                                            value="Dat"/>
+                                        <input type="checkbox" name="scope_Case" id="scope_Dat" value="Dat"/>
                                         <label for="scope_Dat">Dative</label>
-                                        <input type="checkbox" name="scope_Case" id="scope_Gen"
-                                            value="Gen"/>
+                                        <input type="checkbox" name="scope_Case" id="scope_Gen" value="Gen"/>
                                         <label for="scope_Gen">Genitive</label>
-                                        <input type="checkbox" name="scope_Case" id="scope_Loc"
-                                            value="Loc"/>
+                                        <input type="checkbox" name="scope_Case" id="scope_Loc" value="Loc"/>
                                         <label for="scope_Loc">Locative</label>
-                                        <input type="checkbox" name="scope_Case" id="scope_Nom"
-                                            value="Nom"/>
+                                        <input type="checkbox" name="scope_Case" id="scope_Nom" value="Nom"/>
                                         <label for="scope_Nom">Nominative</label>
-                                        <input type="checkbox" name="scope_Case" id="scope_Voc"
-                                            value="Voc"/>
+                                        <input type="checkbox" name="scope_Case" id="scope_Voc" value="Voc"/>
                                         <label for="scope_Voc">Vocative</label>
                                     </div></fieldset>
                                 <fieldset>
                                     <label>(De)verbal forms</label>
                                     <div>
-                                        <input type="checkbox" name="scope_VerbForm" id="scope_Fin"
-                                            value="Fin"/>
+                                        <input type="checkbox" name="scope_VerbForm" id="scope_Fin" value="Fin"/>
                                         <label for="scope_Fin">Finite</label>
-                                        <input type="checkbox" name="scope_VerbForm" id="scope_Gdv"
-                                            value="Gdv"/>
+                                        <input type="checkbox" name="scope_VerbForm" id="scope_Gdv" value="Gdv"/>
                                         <label for="scope_Gdv">Gerundive</label>
-                                        <input type="checkbox" name="scope_VerbForm" id="scope_Ger"
-                                            value="Ger"/>
+                                        <input type="checkbox" name="scope_VerbForm" id="scope_Ger" value="Ger"/>
                                         <label for="scope_Ger">Gerund</label>
-                                        <input type="checkbox" name="scope_VerbForm" id="scope_Inf"
-                                            value="Inf"/>
+                                        <input type="checkbox" name="scope_VerbForm" id="scope_Inf" value="Inf"/>
                                         <label for="scope_Inf">Infinitive</label>
-                                        <input type="checkbox" name="scope_VerbForm" id="scope_Part"
-                                            value="Part"/>
+                                        <input type="checkbox" name="scope_VerbForm" id="scope_Part" value="Part"/>
                                         <label for="scope_Part">Participle</label>
                                     </div>
                                 </fieldset>
                                 <fieldset>
                                     <label>Person</label>
                                     <div>
-                                        <input type="checkbox" name="scope_Person" id="scope_p1"
-                                            value="1"/>
+                                        <input type="checkbox" name="scope_Person" id="scope_p1" value="1"/>
                                         <label for="scope_p1">1</label>
-                                        <input type="checkbox" name="scope_Person" id="scope_p2"
-                                            value="2"/>
+                                        <input type="checkbox" name="scope_Person" id="scope_p2" value="2"/>
                                         <label for="scope_p2">2</label>
-                                        <input type="checkbox" name="scope_Person" id="scope_p3"
-                                            value="3"/>
+                                        <input type="checkbox" name="scope_Person" id="scope_p3" value="3"/>
                                         <label for="scope_p3">3</label>
                                     </div>
                                 </fieldset>
                                 <fieldset><label>Aspect</label>
                                     <div>
-                                        <input type="checkbox" name="scope_Aspect" id="scope_Imp"
-                                            value="Imp"/>
+                                        <input type="checkbox" name="scope_Aspect" id="scope_Imp" value="Imp"/>
                                         <label for="scope_Imp">Imperfect</label>
-                                        <input type="checkbox" name="scope_Aspect" id="scope_Perf"
-                                            value="Perf"/>
+                                        <input type="checkbox" name="scope_Aspect" id="scope_Perf" value="Perf"/>
                                         <label for="scope_Perf">Perfect</label>
                                     </div></fieldset>
 
                                 <fieldset>
                                     <label>Mood</label>
                                     <div>
-                                        <input type="checkbox" name="scope_Mood" id="scope_Impt"
-                                            value="Impt"/>
+                                        <input type="checkbox" name="scope_Mood" id="scope_Impt" value="Impt"/>
                                         <label for="scope_Impt">Imperative</label>
-                                        <input type="checkbox" name="scope_Mood" id="scope_Ind"
-                                            value="Ind"/>
+                                        <input type="checkbox" name="scope_Mood" id="scope_Ind" value="Ind"/>
                                         <label for="scope_Ind">Indicative</label>
-                                        <input type="checkbox" name="scope_Mood" id="scope_Sub"
-                                            value="Sub"/>
+                                        <input type="checkbox" name="scope_Mood" id="scope_Sub" value="Sub"/>
                                         <label for="scope_Sub">Subjunctive</label>
                                     </div>
                                 </fieldset>
                                 <fieldset>
                                     <label>Tense</label>
                                     <div>
-                                        <input type="checkbox" name="scope_Tense" id="scope_Fut"
-                                            value="Fut"/>
+                                        <input type="checkbox" name="scope_Tense" id="scope_Fut" value="Fut"/>
                                         <label for="scope_Fut">Future</label>
-                                        <input type="checkbox" name="scope_Tense" id="scope_Past"
-                                            value="Past"/>
+                                        <input type="checkbox" name="scope_Tense" id="scope_Past" value="Past"/>
                                         <label for="scope_Past">Past tense / preterite</label>
-                                        <input type="checkbox" name="scope_Tense" id="scope_Pqp"
-                                            value="Pqp"/>
+                                        <input type="checkbox" name="scope_Tense" id="scope_Pqp" value="Pqp"/>
                                         <label for="scope_Pqp">Pluperfect</label>
-                                        <input type="checkbox" name="scope_Tense" id="scope_Pres"
-                                            value="Pres"/>
+                                        <input type="checkbox" name="scope_Tense" id="scope_Pres" value="Pres"/>
                                         <label for="scope_Pres">Present</label>
                                     </div></fieldset>
 
                                 <fieldset>
                                     <label>Voice</label>
                                     <div>
-                                        <input type="checkbox" name="scope_Voice" id="scope_Act"
-                                            value="Act"/>
+                                        <input type="checkbox" name="scope_Voice" id="scope_Act" value="Act"/>
                                         <label for="scope_Act">Active</label>
-                                        <input type="checkbox" name="scope_Voice" id="scope_Pass"
-                                            value="Pass"/>
+                                        <input type="checkbox" name="scope_Voice" id="scope_Pass" value="Pass"/>
                                         <label for="scope_Pass">Passive</label>
                                     </div>
                                 </fieldset>
-                            </div>
-                        </div>
-                    </fieldset>
-                    <fieldset>
-                        <label class="title">Description of the state of affairs</label>
-                        <div class="wrapper">
-                            <div class="content includsRadio">
-                                <input type="radio" value="true" id="soa" name="SoA"/>
-                                <label for="soa">State of affairs</label>
-                                <input type="radio" value="false" id="no-soa" name="SoA"
-                                    class="control controlmixed controlno dynamicn dynamicmixed dinamicno"/>
-                                <label for="no-soa">No state of affairs</label>
-                                <br/>
-                                <input type="checkbox" name="control" id="control" value="true"
-                                    class="no-soa"/>
-                                <label for="control"> + control</label>
-                                <input type="checkbox" name="control" id="controlmixed"
-                                    value="ambiguous" class="no-soa"/>
-                                <label for="controlmixed"> +/- control</label>
-                                <input type="checkbox" name="control" id="controlno" value="false"
-                                    class="no-soa"/>
-                                <label for="controlno"> - control</label>
-                                <input type="checkbox" name="dynamic" id="dynamicn" value="true"
-                                    class="no-soa"/>
-                                <label for="dynamicn"> + dynamic</label>
-                                <input type="checkbox" name="dynamic" id="dynamicmixed"
-                                    value="ambiguous" class="no-soa"/>
-                                <label for="dynamicmixed"> +/- dynamic</label>
-                                <input type="checkbox" name="dynamic" id="dynamicno" value="false"
-                                    class="no-soa"/>
-                                <label for="dynamicno"> - dynamic</label>
-                            </div>
-                        </div>
-                    </fieldset>
-                    <fieldset>
-                        <label class="title">Expression of the participant</label>
-                        <div class="wrapper">
-                            <div class="content">
-                                <input type="checkbox" value="explicit" id="explicit"
-                                    name="participant"/>
-                                <label for="explicit">Explicit participant</label>
-                                <input type="checkbox" value="implicit" id="implicit"
-                                    name="participant"/>
-                                <label for="implicit">Implicit participant</label>
-                                <input type="checkbox" value="none" id="no-part" name="participant"/>
-                                <label for="no-part">No participant</label>
-                            </div>
-                        </div>
-                        <label class="title">Type of participant</label>
-                        <div class="wrapper">
-                            <div class="content">
-                                <input type="checkbox" name="participantType" id="animate"
-                                    value="animate"/>
-                                <label for="animate">Animate</label>
-                                <input type="checkbox" name="participantType" id="inanimate"
-                                    value="inanimate"/>
-                                <label for="inanimate">Inanimate</label>
-                                <input type="checkbox" name="participantType" id="pass-animate"
-                                    value="animate_patient"/>
-                                <label for="pass-animate">Animate (patient)</label>
-                                <input type="checkbox" name="participantType" id="pass-inanimate"
-                                    value="inanimate_patient"/>
-                                <label for="pass-inanimate">Inanimate (patient)</label>
                             </div>
                         </div>
                     </fieldset>
@@ -586,15 +512,47 @@
             <h4 class="title">Description of the modal relation</h4>
             <div class="wrapper">
                 <div class="content">
-                    <input value="dynamic" id="mk_dynamic" type="checkbox" name="modality"/>
-                    <label for="mk_dynamic">dynamic</label>
-                    <input value="deontic" id="mk_deontic" type="checkbox" name="modality"/>
-                    <label for="mk_deontic">deontic</label>
-                    <input value="epistemic" id="mk_epistemic" type="checkbox" name="modality"/>
-                    <label for="mk_epistemic">epistemic</label>
-                    <p>Note: if this filter affects a passage that contains an ambiguous modal
-                        reading, all interpretations of that passage are shown regardless of the
-                        filter.</p>
+                    <fieldset>
+                        <label>Modal meaning</label><div class="indent">
+                            <input value="dynamic" id="mk_dynamic" type="checkbox" name="modality"/>
+                            <label for="mk_dynamic">dynamic</label>
+                            <input value="deontic" id="mk_deontic" type="checkbox" name="modality"/>
+                            <label for="mk_deontic">deontic</label>
+                            <input value="epistemic" id="mk_epistemic" type="checkbox" name="modality"/>
+                            <label for="mk_epistemic">epistemic</label>
+                            <p class="indent">Note: if this filter affects a passage that contains
+                                an ambiguous modal reading, all interpretations of that passage are
+                                shown regardless of the filter.</p>
+                        </div></fieldset>
+                    <fieldset><label>Ambiguity</label>
+                        <div class="indent">
+                            <input type="radio" name="ambiguity" id="exclude_amb" value="false"/>
+                            <label for="exclude_amb">Exclude ambiguous cases</label>
+                            <input type="radio" name="ambiguity" id="include_amb" value="true"/>
+                            <label for="include_amb">See only ambiguous cases</label>
+                            <p class="indent">Note: the default behaviour is to always include
+                                ambiguous cases</p>
+                        </div>
+                    </fieldset>
+                    <fieldset><label>Rhetoric use</label>
+                        <div class="indent">
+                            <input type="radio" name="rhetoric" id="exclude_rh" value="false"/>
+                            <label for="exclude_rh">Exclude rhetoric uses</label>
+                            <input type="radio" name="rhetoric" id="include_rh" value="true"/>
+                            <label for="include_rh">See only rhetoric uses</label>
+                            <p class="indent">Note: the default behaviour is to always include
+                                rhetoric uses</p>
+                        </div>
+                    </fieldset>
+                    <fieldset><label>Pragmatic use</label><div class="indent">
+                            <input type="radio" name="pragmatic" id="exclude_pr" value="false"/>
+                            <label for="exclude_pr">Exclude pragmatic uses</label>
+                            <input type="radio" name="pragmatic" id="include_pr" value="true"/>
+                            <label for="include_pr">See only pragmatic uses</label>
+                            <p class="indent">Note: the default behaviour is to always include
+                                pragmatic uses</p>
+                        </div>
+                    </fieldset>
                 </div>
             </div>
             <h4 class="title">Description of the work</h4>
@@ -635,10 +593,8 @@
                             <option value="matthew">Gospel of Matthew</option>
                         </select></fieldset>
                     <fieldset><label>Timeframe of the works</label>
-                        <div class="indent"> Not before century <input id="notBefore" type="number"
-                                min="-3" max="7" name="notBefore" placeholder="e.g. -3"/> Not after
-                            century <input id="notAfter" type="number" min="-3" max="7"
-                                name="notAfter" placeholder="e.g. 7"/></div></fieldset>
+                        <div class="indent"> Not before century <input id="notBefore" type="number" min="-3" max="7" name="notBefore" placeholder="-3"/> Not after
+                            century <input id="notAfter" type="number" min="-3" max="7" name="notAfter" placeholder="7"/></div></fieldset>
                     <fieldset><label>Genre</label>
                         <div>
                             <input type="checkbox" name="genre" id="christian" value="christian"/>
@@ -671,14 +627,11 @@
                             <label for="prose">Prose</label>
                             <input type="checkbox" name="textualFeature" id="verse" value="verse"/>
                             <label for="verse">Verse</label>
-                            <input type="checkbox" name="textualFeature" id="translation"
-                                value="translation"/>
+                            <input type="checkbox" name="textualFeature" id="translation" value="translation"/>
                             <label for="translation">Translation</label>
-                            <input type="checkbox" name="textualFeature" id="dialogue"
-                                value="dialogue"/>
+                            <input type="checkbox" name="textualFeature" id="dialogue" value="dialogue"/>
                             <label for="dialogue">Dialogued</label>
-                            <input type="checkbox" name="textualFeature" id="non-dialogue"
-                                value="non-dialogue"/>
+                            <input type="checkbox" name="textualFeature" id="non-dialogue" value="non-dialogue"/>
                             <label for="non-dialogue">Non-dialogue</label>
                         </div></fieldset>
                     <fieldset><label>Transmission</label>
@@ -687,8 +640,7 @@
                             <label for="codex">Codex</label>
                             <input type="checkbox" name="transmission" id="scroll" value="scroll"/>
                             <label for="scroll">Papyrus scroll</label>
-                            <input type="checkbox" name="transmission" id="inscription"
-                                value="inscription"/>
+                            <input type="checkbox" name="transmission" id="inscription" value="inscription"/>
                             <label for="inscription">Inscription</label>
                             <input type="checkbox" name="transmission" id="mixed" value="mixed"/>
                             <label for="mixed">Mixed</label>
@@ -700,61 +652,47 @@
 
         <h2 id="search-relation">Search by modal relation</h2>
         <h3>Selection of the modal meaning (required)</h3>
-
+        <p>Important: this form is very under-developed.</p>
         <form method="get" action="modules/relation_results.xql">
             <fieldset class="modalMeaning">
                 <h4>
-                    <input value="dynamic" id="dynamic" type="checkbox" name="modality"
-                        class="poss-inev poss-pros poss-sit poss-imp poss-inh nec-inh nec-imp nec-sit nec-inev nec-pros"/>
+                    <input value="dynamic" id="dynamic" type="checkbox" name="modality" class="poss-inev poss-pros poss-sit poss-imp poss-inh nec-inh nec-imp nec-sit nec-inev nec-pros"/>
                     <label for="dynamic">Modal meaning: dynamic</label>
                 </h4>
                 <span class="title">See filters</span>
                 <div class="wrapper">
                     <div class="content">
                         <div class="indent"> Possibility <div class="indent">
-                                <input type="checkbox" value="participant-inherent" id="poss-inh"
-                                    name="pos_participant_control"/>
+                                <input type="checkbox" value="participant-inherent" id="poss-inh" name="pos_participant_control"/>
                                 <label for="poss-inh">participant-inherent</label>
                                 <br/>
-                                <input type="checkbox" value="participant-imposed" id="poss-imp"
-                                    name="pos_participant_control"/>
+                                <input type="checkbox" value="participant-imposed" id="poss-imp" name="pos_participant_control"/>
                                 <label for="poss-imp">participant-imposed</label>
                                 <br/>situational <div class="indent includsRadio">
-                                    <input type="radio" id="poss-sit"
-                                        name="poss_participant_control"
-                                        class="poss-inev poss-pros poss-no sit" value="situational"/>
+                                    <input type="radio" id="poss-sit" name="poss_participant_control" class="poss-inev poss-pros poss-no sit" value="situational"/>
                                     <label for="poss-sit">all</label>
-                                    <input type="radio" id="poss-no" name="pos_situational_subtype"
-                                        class="poss-inev poss-pros poss-sit" value="none"/>
+                                    <input type="radio" id="poss-no" name="pos_situational_subtype" class="poss-inev poss-pros poss-sit" value="none"/>
                                     <label for="poss-no">no subtype</label>
-                                    <input type="checkbox" value="inevitability" id="poss-inev"
-                                        name="pos_situational_subtype" class="poss-sit poss-no"/>
+                                    <input type="checkbox" value="inevitability" id="poss-inev" name="pos_situational_subtype" class="poss-sit poss-no"/>
                                     <label for="poss-inev">inevitability</label>
-                                    <input type="checkbox" value="prospective" id="poss-pros"
-                                        name="pos_situational_subtype" class="poss-sit poss-no"/>
+                                    <input type="checkbox" value="prospective" id="poss-pros" name="pos_situational_subtype" class="poss-sit poss-no"/>
                                     <label for="poss-pros">prospective</label>
 
                                 </div>
                             </div> Necessity <div class="indent">
-                                <input type="checkbox" value="participant-inherent" id="nec-inh"
-                                    name="nec_participant_control"/>
+                                <input type="checkbox" value="participant-inherent" id="nec-inh" name="nec_participant_control"/>
                                 <label for="nec-inh">participant-inherent</label>
                                 <br/>
-                                <input type="checkbox" value="participant-impose" id="nec-imp"
-                                    name="nec_participant_control"/>
+                                <input type="checkbox" value="participant-impose" id="nec-imp" name="nec_participant_control"/>
                                 <label for="nec-imp">participant-imposed</label>
                                 <br/>situational <div class="indent includsRadio">
-                                    <input type="radio" id="nec-sit" name="nec_participant_control"
-                                        class="nec-inev nec-pros sit" value="situational"/>
+                                    <input type="radio" id="nec-sit" name="nec_participant_control" class="nec-inev nec-pros sit" value="situational"/>
                                     <label for="nec-sit">all</label>
-                                    <input type="radio" id="nec-no" name="nec_situational_subtype"
-                                        class="nec-inev nec-pros nec-sit" value="none"/>
+                                    <input type="radio" id="nec-no" name="nec_situational_subtype" class="nec-inev nec-pros nec-sit" value="none"/>
                                     <label for="nec-no">no subtype</label>
-                                    <input type="checkbox" value="inevitability" id="nec-inev"
-                                        name="nec_situational_subtype" class="nec-sit nec-no"/>
+                                    <input type="checkbox" value="inevitability" id="nec-inev" name="nec_situational_subtype" class="nec-sit nec-no"/>
                                     <label for="nec-inev">inevitability</label>
-                                    <input type="checkbox" value="prospective" id="nec-pros"
-                                        name="nec_situational_subtype" class="nec-sit nec-no"/>
+                                    <input type="checkbox" value="prospective" id="nec-pros" name="nec_situational_subtype" class="nec-sit nec-no"/>
                                     <label for="nec-pros">prospective</label>
 
                                 </div>
@@ -765,135 +703,104 @@
             </fieldset>
             <fieldset class="modalMeaning">
                 <h4>
-                    <input type="checkbox" value="deontic" id="deontic" name="modality"
-                        class="acceptability intention volition abs-nec desirable acceptable undesirable unacceptable ob-off ob-nonoff obligation ob-moral ob-rel ob-uns authority permission per-moral per-rel per-uns per-off per-nonoff recommendation rec-moral rec-rel rec-uns rec-off rec-nonoff"/>
+                    <input type="checkbox" value="deontic" id="deontic" name="modality" class="acceptability intention volition abs-nec desirable acceptable undesirable unacceptable ob-off ob-nonoff obligation ob-moral ob-rel ob-uns authority permission per-moral per-rel per-uns per-off per-nonoff recommendation rec-moral rec-rel rec-uns rec-off rec-nonoff"/>
                     <label for="deontic">Modal meaning: deontic</label>
                 </h4>
                 <span class="title">See filters</span>
                 <div class="wrapper">
                     <div class="content">
                         <div class="indent">
-                            <input type="checkbox" value="acceptability" id="acceptability"
-                                name="deontic_type"
-                                class="abs-nec desirable acceptable undesirable unacceptable"/>
+                            <input type="checkbox" value="acceptability" id="acceptability" name="deontic_type" class="abs-nec desirable acceptable undesirable unacceptable"/>
                             <label for="acceptability">Acceptability</label>
                             <div class="indent">
-                                <input type="checkbox" value="absolutely_necessary" id="abs-nec"
-                                    name="deontic_degree"/>
+                                <input type="checkbox" value="absolutely_necessary" id="abs-nec" name="deontic_degree"/>
                                 <label for="abs-nec">Absolutely necessary</label>
-                                <input type="checkbox" value="desirable" id="desirable"
-                                    name="deontic_degree"/>
+                                <input type="checkbox" value="desirable" id="desirable" name="deontic_degree"/>
                                 <label for="desirable">Desirable</label>
-                                <input type="checkbox" value="acceptable" id="acceptable"
-                                    name="deontic_degree"/>
+                                <input type="checkbox" value="acceptable" id="acceptable" name="deontic_degree"/>
                                 <label for="acceptable">Acceptable</label>
-                                <input type="checkbox" value="undesirable" id="undesirable"
-                                    name="deontic_degree"/>
+                                <input type="checkbox" value="undesirable" id="undesirable" name="deontic_degree"/>
                                 <label for="undesirable">Not very desirable</label>
-                                <input type="checkbox" value="unacceptable" id="unacceptable"
-                                    name="deontic_degree"/>
+                                <input type="checkbox" value="unacceptable" id="unacceptable" name="deontic_degree"/>
                                 <label for="unacceptable">Unacceptable</label>
                             </div>
 
 
-                            <input type="checkbox" value="authority" id="authority"
-                                name="deontic_type"
-                                class="obligation deontic ob-moral ob-rel ob-uns ob-off ob-nonoff                                 permission per-moral per-rel per-uns per-off per-nonoff recommendation rec-moral rec-rel rec-uns rec-off rec-nonoff"/>
+                            <input type="checkbox" value="authority" id="authority" name="deontic_type" class="obligation deontic ob-moral ob-rel ob-uns ob-off ob-nonoff                                 permission per-moral per-rel per-uns per-off per-nonoff recommendation rec-moral rec-rel rec-uns rec-off rec-nonoff"/>
                             <label for="authority">Authority</label>
                             <div class="indent">
-                                <input type="checkbox" value="obligation" id="obligation"
-                                    name="authority_subtype"
-                                    class="deontic ob-moral ob-rel ob-uns ob-off ob-nonoff"/>
+                                <input type="checkbox" value="obligation" id="obligation" name="authority_subtype" class="deontic ob-moral ob-rel ob-uns ob-off ob-nonoff"/>
                                 <label for="obligation">Obligation</label>
                                 <div class="indent">
                                     <div class="indent">Context <div class="indent">
-                                            <input type="checkbox" value="official" id="ob-off"
-                                                name="ob_context"/>
+                                            <input type="checkbox" value="official" id="ob-off" name="ob_context"/>
                                             <label for="ob-off">official context</label>
 
-                                            <input type="checkbox" value="non-official"
-                                                id="ob-nonoff" name="ob_context"/>
+                                            <input type="checkbox" value="non-official" id="ob-nonoff" name="ob_context"/>
                                             <label for="ob-nonoff">non-official context</label>
 
                                         </div>
                                     </div>
                                     <div class="indent">Source <div class="indent">
-                                            <input type="checkbox" value="moral/ethical_norms"
-                                                id="ob-moral" name="ob_source"/>
+                                            <input type="checkbox" value="moral/ethical_norms" id="ob-moral" name="ob_source"/>
                                             <label for="ob-moral">moral/ethic norms</label>
 
-                                            <input type="checkbox" value="religious_norms"
-                                                id="ob-rel" name="ob_source"/>
+                                            <input type="checkbox" value="religious_norms" id="ob-rel" name="ob_source"/>
                                             <label for="ob-rel">religious norms</label>
 
-                                            <input type="checkbox" value="unspecified_norms"
-                                                id="ob-uns" name="ob_source"/>
+                                            <input type="checkbox" value="unspecified_norms" id="ob-uns" name="ob_source"/>
                                             <label for="ob-uns">unspecified norms</label>
                                         </div>
                                     </div>
 
                                 </div>
 
-                                <input type="checkbox" value="permission" id="permission"
-                                    name="authority_subtype"
-                                    class="deontic per-moral per-rel per-uns per-off per-nonoff"/>
+                                <input type="checkbox" value="permission" id="permission" name="authority_subtype" class="deontic per-moral per-rel per-uns per-off per-nonoff"/>
                                 <label for="permission">Permission</label>
                                 <div class="indent">
                                     <div class="indent">Context <div class="indent">
-                                            <input type="checkbox" value="official" id="per-off"
-                                                name="per_context"/>
+                                            <input type="checkbox" value="official" id="per-off" name="per_context"/>
                                             <label for="per-off">official context</label>
 
-                                            <input type="checkbox" value="non-official"
-                                                id="per-nonoff" name="per_context"/>
+                                            <input type="checkbox" value="non-official" id="per-nonoff" name="per_context"/>
                                             <label for="per-nonoff">non-official context</label>
 
                                         </div>
                                     </div>
                                     <div class="indent">Source <div class="indent">
-                                            <input type="checkbox" value="moral/ethical_norms"
-                                                id="per-moral" name="per_source"/>
+                                            <input type="checkbox" value="moral/ethical_norms" id="per-moral" name="per_source"/>
                                             <label for="per-moral">moral/ethic norms</label>
 
-                                            <input type="checkbox" value="religious_norms"
-                                                id="per-rel" name="per_source"/>
+                                            <input type="checkbox" value="religious_norms" id="per-rel" name="per_source"/>
                                             <label for="per-rel">religious norms</label>
 
-                                            <input type="checkbox" value="unspecified_norms"
-                                                id="per-uns" name="per_source"/>
+                                            <input type="checkbox" value="unspecified_norms" id="per-uns" name="per_source"/>
                                             <label for="per-uns">unspecified norms</label>
                                         </div>
                                     </div>
                                 </div>
 
 
-                                <input type="checkbox" value="recommendation" id="recommendation"
-                                    name="authority_subtype"
-                                    class="deontic rec-moral rec-rel rec-uns rec-off rec-nonoff"/>
+                                <input type="checkbox" value="recommendation" id="recommendation" name="authority_subtype" class="deontic rec-moral rec-rel rec-uns rec-off rec-nonoff"/>
                                 <label for="recommendation">Recommendation</label>
                                 <div class="indent">
                                     <div class="indent">Context <div class="indent">
-                                            <input type="checkbox" value="official" id="rec-off"
-                                                name="rec_context"/>
+                                            <input type="checkbox" value="official" id="rec-off" name="rec_context"/>
                                             <label for="rec-off">official context</label>
 
-                                            <input type="checkbox" value="non-official"
-                                                id="rec-nonoff" name="rec_context" class="deontic"/>
+                                            <input type="checkbox" value="non-official" id="rec-nonoff" name="rec_context" class="deontic"/>
                                             <label for="rec-nonoff">non-official context</label>
 
                                         </div>
                                     </div>
                                     <div class="indent">Source <div class="indent">
-                                            <input type="checkbox" value="moral/ethical_norms"
-                                                id="rec-moral" name="rec_source"/>
+                                            <input type="checkbox" value="moral/ethical_norms" id="rec-moral" name="rec_source"/>
                                             <label for="rec-moral">moral/ethic norms</label>
 
-                                            <input type="checkbox" value="religious_norms"
-                                                id="rec-rel" name="rec_source"/>
+                                            <input type="checkbox" value="religious_norms" id="rec-rel" name="rec_source"/>
                                             <label for="rec-rel">religious norms</label>
 
-                                            <input type="checkbox" value="unspecified_norms"
-                                                id="rec-uns" name="rec_source"/>
+                                            <input type="checkbox" value="unspecified_norms" id="rec-uns" name="rec_source"/>
                                             <label for="rec-uns">unspecified norms</label>
                                         </div>
                                     </div>
@@ -902,12 +809,10 @@
 
                             </div>
 
-                            <input type="checkbox" value="intention" id="intention"
-                                name="deontic_type"/>
+                            <input type="checkbox" value="intention" id="intention" name="deontic_type"/>
                             <label for="intention">Intention</label>
                             <br/>
-                            <input type="checkbox" value="volition" id="volition"
-                                name="deontic_type"/>
+                            <input type="checkbox" value="volition" id="volition" name="deontic_type"/>
                             <label for="volition">Volition</label>
                         </div>
                     </div>
@@ -915,28 +820,22 @@
             </fieldset>
             <fieldset class="modalMeaning">
                 <h4>
-                    <input type="checkbox" id="epistemic" value="epistemic" name="modality"
-                        class="impossible improbable probable certain possible"/>
+                    <input type="checkbox" id="epistemic" value="epistemic" name="modality" class="impossible improbable probable certain possible"/>
                     <label for="epistemic">Epistemic</label>
                 </h4>
                 <span class="title">See filters</span>
                 <div class="wrapper">
                     <div class="content">
                         <div class="indent">
-                            <input type="checkbox" value="absolutely_certain" id="certain"
-                                name="epistemic_degree"/>
+                            <input type="checkbox" value="absolutely_certain" id="certain" name="epistemic_degree"/>
                             <label for="certain">Absolutely certain</label>
-                            <input type="checkbox" value="probable" id="probable"
-                                name="epistemic_degree"/>
+                            <input type="checkbox" value="probable" id="probable" name="epistemic_degree"/>
                             <label for="probable">Probable</label>
-                            <input type="checkbox" value="possible" id="possible"
-                                name="epistemic_degree"/>
+                            <input type="checkbox" value="possible" id="possible" name="epistemic_degree"/>
                             <label for="possible">Possible</label>
-                            <input type="checkbox" value="improbable" id="improbable"
-                                name="epistemic_degree"/>
+                            <input type="checkbox" value="improbable" id="improbable" name="epistemic_degree"/>
                             <label for="improbable">Improbable</label>
-                            <input type="checkbox" value="impossible" id="impossible"
-                                name="epistemic_degree"/>
+                            <input type="checkbox" value="impossible" id="impossible" name="epistemic_degree"/>
                             <label for="impossible">Impossible</label>
                         </div>
                     </div>
@@ -986,8 +885,7 @@
                             <label for="meum_est">meum est</label>
                             <input type="checkbox" value="necesse_est" id="necesse_est" name="lemma"/>
                             <label for="necesse_est">necesse est</label>
-                            <input type="checkbox" value="necesse_habeo" id="necesse_habeo"
-                                name="lemma"/>
+                            <input type="checkbox" value="necesse_habeo" id="necesse_habeo" name="lemma"/>
                             <label for="necesse_habeo">necesse habeo</label>
                             <input type="checkbox" value="opus_est" id="opus_est" name="lemma"/>
                             <label for="opus_est">opus est</label>
@@ -1021,11 +919,9 @@
                             <label for="dubius">dubius</label>
                             <input type="checkbox" value="illicitus" id="illicitus" name="lemma"/>
                             <label for="illicitus">illicitus</label>
-                            <input type="checkbox" value="impossibilis" id="impossibilis"
-                                name="lemma"/>
+                            <input type="checkbox" value="impossibilis" id="impossibilis" name="lemma"/>
                             <label for="impossibilis">impossibilis</label>
-                            <input type="checkbox" value="impossibilis_est" id="impossibilis_est"
-                                name="lemma"/>
+                            <input type="checkbox" value="impossibilis_est" id="impossibilis_est" name="lemma"/>
                             <label for="impossibilis_est">impossibilis est</label>
                             <input type="checkbox" value="incertus" id="incertus" name="lemma"/>
                             <label for="incertus">incertus</label>
@@ -1037,8 +933,7 @@
                             <label for="necessarius">necessarius</label>
                             <input type="checkbox" value="possibilis" id="possibilis" name="lemma"/>
                             <label for="possibilis">possibilis</label>
-                            <input type="checkbox" value="possibilis_est" id="possibilis_est"
-                                name="lemma"/>
+                            <input type="checkbox" value="possibilis_est" id="possibilis_est" name="lemma"/>
                             <label for="possibilis_est">possibilis est</label>
                         </div>
                         <div>
@@ -1047,8 +942,7 @@
                             <label for="dubium">dubium</label>
                             <input type="checkbox" value="facultas" id="facultas" name="lemma"/>
                             <label for="facultas">facultas</label>
-                            <input type="checkbox" value="possibilitas" id="possibilitas"
-                                name="lemma"/>
+                            <input type="checkbox" value="possibilitas" id="possibilitas" name="lemma"/>
                             <label for="possibilitas">possibilitas</label>
                             <input type="checkbox" value="potestas" id="potestas" name="lemma"/>
                             <label for="potestas">potestas</label>
@@ -1057,8 +951,7 @@
                             <label for="necessitas">necessitas</label>
                             <input type="checkbox" value="necessitudo" id="necessitudo" name="lemma"/>
                             <label for="necessitudo">necessitudo</label>
-                            <input type="checkbox" value="probabilitas" id="probabilitas"
-                                name="lemma"/>
+                            <input type="checkbox" value="probabilitas" id="probabilitas" name="lemma"/>
                             <label for="probabilitas">probabilitas</label>
                             <input type="checkbox" value="voluntas" id="voluntas" name="lemma"/>
                             <label for="voluntas">voluntas</label>
@@ -1077,11 +970,9 @@
                             <label for="indubitate">indubitate/indubitanter</label>
                             <input type="checkbox" value="necessarie" id="necessarie" name="lemma"/>
                             <label for="necessarie">necessarie</label>
-                            <input type="checkbox" value="possibiliter" id="possibiliter"
-                                name="lemma"/>
+                            <input type="checkbox" value="possibiliter" id="possibiliter" name="lemma"/>
                             <label for="possibiliter">possibiliter</label>
-                            <input type="checkbox" value="probabiliter" id="probabiliter"
-                                name="lemma"/>
+                            <input type="checkbox" value="probabiliter" id="probabiliter" name="lemma"/>
                             <label for="probabiliter">probabiliter</label>
                         </div>
                     </div>
@@ -1091,7 +982,8 @@
         </form>
     </div>
     <script type="text/javascript">$(document).ready(function () { $('#checkBtn').click(function() {
-        checked = $("input[name=modality]:checked").length; if(!checked) { alert("At least one type of modality must be selected"); return false; } }); });</script>
+        checked = $("input[name=modality]:checked").length; if(!checked) { alert("At least one type
+        of modality must be selected"); return false; } }); });</script>
     <script type="text/javascript" src="/exist/apps/woposs/resources/scripts/select.js"/>
     <script type="text/javascript" src="/exist/apps/woposs/resources/scripts/select-subtypes.js"/>
     <script type="text/javascript" src="/exist/apps/woposs/resources/scripts/select-situational.js"/>

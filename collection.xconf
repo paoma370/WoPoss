@@ -25,7 +25,9 @@
         <field name="diachrony" expression="tei:f[@name eq 'diachrony']/tei:symbol/@value"/>
         <field name="markerUtterance" if="@type eq 'marker'" expression="tei:f[@name eq 'utterance']/tei:symbol/@value"/>
         <field name="markerPolarity" if="@type eq 'marker'" expression="tei:f[@name eq 'polarity']/tei:symbol/@value"/>
-        <field name="modalRelation" if="@type eq 'marker'" expression="idx:getModalMeaning(ancestor::tei:TEI, @xml:id)"/>
+        <field name="modalRelation" if="@type eq 'marker'" expression="idx:getModalMeaning(ancestor::tei:TEI, @xml:id, 'modality')"/>
+        <field name="modalRelationFunction" if="@type eq 'marker'" expression="idx:getModalMeaning(ancestor::tei:TEI, @xml:id, 'function')"/>
+        <field name="modalRelationAmbiguity" if="@type eq 'marker'" expression="idx:isAmbiguous(ancestor::tei:TEI, @xml:id)"/>
 
         <!-- scope -->
         <field name="scopeUtterance" if="@type eq 'scope'" expression="tei:f[@name eq 'utterance']/tei:symbol/@value"/>

@@ -30,10 +30,31 @@ declare function woposs:getWorkMetadata($id as xs:string, $indexName as xs:strin
         substring($value, 2)
 
 };
-declare function woposs:getModalMeaning($doc as node(), $id as xs:string) as item()*  {
+declare function woposs:getModalMeaning($doc as node(), $id as xs:string, $f as xs:string) as item()+ {
     let $fs := $doc/descendant::tei:fs[tei:f[@name eq 'marker']/@fVal eq $id]
+    let $values := if ($fs/tei:f[@name eq $f]) then
+        $fs/tei:f[@name eq $f]/tei:symbol/@value/string()
+    else
+        $f || '-false'
     return
-        $fs/tei:f[@name eq 'modality']/tei:symbol/@value/string()
+        $values
+
+};
+
+declare function woposs:isAmbiguous($doc as node(), $id as xs:string) as item() {
+    if ($doc/descendant::tei:fs[tei:f[@name eq 'marker']/@fVal eq $id])
+    then
+        (let $relations := $doc/descendant::tei:fs[tei:f[@name eq 'marker']/@fVal eq $id]
+        let $scopes := $relations/tei:f[@name eq 'scope']/@fVal
+        let $value := if (count($relations) gt count(distinct-values($scopes))) then
+            'true'
+        else
+            'false'
+        return
+            $value
+        )
+    else
+        'not-relevant'
 
 };
 
@@ -63,6 +84,5 @@ declare function woposs:filterParams($params as node()) as xs:string+ {
 declare function woposs:simpleFilter($nodes as node()*, $params as node()) as node()* {
     let $query := woposs:filterParams($params)
     return
-        $nodes[ft:query(., $query)]
+        $nodes[ft:query-field(., $query)]
 };
-
