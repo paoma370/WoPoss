@@ -382,7 +382,7 @@ declare function local:not-pertinent($fs as node()?) as item()* {
     return
         <tr><td1
                 ref="{$id}">{$s}</td1>
-            <td>{$marker}</td><td>{$modality}</td><td>{$type}</td><td>--</td><td>{$locus}</td></tr>
+            <td>{$marker}</td><td>{$modality}</td><td>{$type}</td><td></td><td>--</td><td>{$locus}</td></tr>
 };
 
 declare function local:pertinent($fs as node()?) as item()* {
@@ -393,22 +393,24 @@ declare function local:pertinent($fs as node()?) as item()* {
     let $locus := woposs:locus($s)
     let $relation_query := "markerId:" || $id
     let $relation := $documents/descendant::tei:fs[ft:query-field(., $relation_query)]
-    let $mods := distinct-values($relation/tei:f[@name eq 'type']/tei:symbol/@value)
-    for $mod in $mods
-    let $modality := distinct-values($relation[ft:query-field(., woposs:prepareQuery("modalType", $mod))]/tei:f[@name eq 'modality']/tei:symbol/@value)
-    let $other := distinct-values($relation[ft:query-field(., woposs:prepareQuery("modalType", $mod))]/tei:f[@name eq 'meaning']/tei:symbol/@value)
-    let $type := if (count($other) gt 0) then
-        $other || ', ' || $mod
+    for $mod in $relation
+    let $modality := $mod/tei:f[@name eq 'modality']/tei:symbol/@value/string()
+    let $other := $mod/tei:f[@name eq 'meaning']/tei:symbol | $mod/tei:f[@name eq 'type']/tei:symbol | $mod/tei:f[@name eq 'subtype']/tei:symbol[@value ne 'none']
+    let $function := 'Function: ' || $mod/tei:f[@name eq 'function']/tei:symbol/@value
+    let $type := string-join($other/@value, ', ')
+    let $amb := if (count($relation) gt 1) then
+        'true'
     else
-        $mod
-    let $amb := if (count($mods) gt 1) then
-        'yes'
-    else
-        'no'
+        'false'
     return
         <tr><td1
                 ref="{$id}">{$s}</td1>
-            <td>{$marker}</td><td>{$modality}</td><td>{$type}</td><td>{$amb}</td><td>{$locus}</td></tr>
+            <td>{$marker}</td><td>{$modality}</td><td>{$type}</td><td>{
+                    if ($mod/tei:f[@name eq 'function']) then
+                        $function
+                    else
+                        ()
+                }</td><td>{$amb}</td><td>{$locus}</td></tr>
 
 };
 
