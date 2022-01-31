@@ -5,6 +5,12 @@ xquery version "3.1";
     data-template-with="templates/page_woposs.html"
     data-template-at="content">
     <div>
+    <p><span
+                style="color:red;font-weight:bold">Important</span>:</p>
+                <ul>
+                <li>Click in the fist cell (the passage) to read more context and get the full analysis of the passage.</li>
+                <li>In the table options (right upper corner) you can filter the rows by content (search field), you can toggle the columns (not all columns are visible by default) and you can export the results (CSV).</li></ul>
+
         <table
             id="resultsTable"
             data-show-export="true"
@@ -30,7 +36,10 @@ xquery version "3.1";
                     <th
                         data-sortable="true">Subtype /<br/>Degree</th>
                     <th
-                        data-sortable="true" data-visible="false">Additional <br/>analysis</th>
+                        data-sortable="true"
+                        data-visible="false">Additional <br/>analysis</th>
+                    <th
+                        data-sortable="true">Ambiguous <br/>reading</th>
                     <th
                         data-sortable="true">Work</th></tr></thead>
             <tbody>{request:get-attribute('html')}</tbody>

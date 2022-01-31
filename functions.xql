@@ -41,8 +41,16 @@ declare function woposs:getModalMeaning($doc as node(), $id as xs:string, $f as 
 
 };
 
-declare function woposs:isAmbiguous($doc as node(), $id as xs:string) as item() {
-    if ($doc/descendant::tei:fs[tei:f[@name eq 'marker']/@fVal eq $id])
+declare function woposs:getLemma($fs as node()) as xs:string+ {
+    let $doc := $fs/ancestor::tei:TEI
+    let $markerId := $fs/tei:f[@name eq 'marker']/@fVal
+    let $marker := $doc//tei:fs[@xml:id eq $markerId]
+    return
+        $marker/tei:f[@name eq 'lemma']/tei:symbol/@value
+};
+
+declare function woposs:isAmbiguous($doc as node(), $id as xs:string, $type as xs:string) as item() {
+   if ($type eq 'marker') then (if ($doc/descendant::tei:fs[tei:f[@name eq 'marker']/@fVal eq $id])
     then
         (let $relations := $doc/descendant::tei:fs[tei:f[@name eq 'marker']/@fVal eq $id]
         let $scopes := $relations/tei:f[@name eq 'scope']/@fVal
@@ -54,7 +62,14 @@ declare function woposs:isAmbiguous($doc as node(), $id as xs:string) as item() 
             $value
         )
     else
-        'not-relevant'
+        'not-relevant')
+        else 
+        let $relation := $doc/descendant::tei:fs[@xml:id eq $id]
+        let $marker := $relation/tei:f[@name eq 'marker']/@fVal
+        let $scope := $relation/tei:f[@name eq 'scope']/@fVal
+        let $evaluation := $doc/descendant::tei:fs[tei:f[@name eq 'marker']/@fVal eq $marker][tei:f[@name eq 'scope']/@fVal eq $scope]
+        let $value := if (count($evaluation) gt 1) then 'true' else 'false'
+        return $value
 
 };
 
@@ -85,4 +100,18 @@ declare function woposs:simpleFilter($nodes as node()*, $params as node()) as no
     let $query := woposs:filterParams($params)
     return
         $nodes[ft:query-field(., $query)]
+};
+
+
+
+
+declare function woposs:lemma($doc as node(), $id as xs:string) as xs:string {
+    let $query := "id:" || $id
+    let $lemma := $doc/descendant::tei:fs[ft:query(., $query)][ft:query(., 'type:marker')]/tei:f[@name eq 'lemma']/tei:symbol/@value/string()
+    let $correctedLemma := if (contains($lemma, '_inf')) then
+        replace($lemma, '_inf', '+ inf.')
+    else
+        replace($lemma, '_', ' ')
+    return
+        $correctedLemma
 };

@@ -17,6 +17,9 @@
         <field name="degree" expression="tei:f[@name eq 'degree']/tei:symbol/@value"/>
         <field name="source" expression="tei:f[@name eq 'source']/tei:symbol/@value"/>
         <field name="context" expression="tei:f[@name eq 'context']/tei:symbol/@value"/>
+        <field name="ambiguity" if="@type eq 'relation'" expression="idx:isAmbiguous(ancestor::tei:TEI, @xml:id, 'relation')"/>
+         <field name="function" expression="tei:f[@name eq 'function']/tei:symbol/@value"/>
+         <field name="markerLemma" if="@type eq 'relation'" expression="idx:getLemma(.)"/>
 
         <!-- marker -->
         <field name="lemma" expression="tei:f[@name eq 'lemma']/tei:symbol/@value"/>
@@ -27,7 +30,7 @@
         <field name="markerPolarity" if="@type eq 'marker'" expression="tei:f[@name eq 'polarity']/tei:symbol/@value"/>
         <field name="modalRelation" if="@type eq 'marker'" expression="idx:getModalMeaning(ancestor::tei:TEI, @xml:id, 'modality')"/>
         <field name="modalRelationFunction" if="@type eq 'marker'" expression="idx:getModalMeaning(ancestor::tei:TEI, @xml:id, 'function')"/>
-        <field name="modalRelationAmbiguity" if="@type eq 'marker'" expression="idx:isAmbiguous(ancestor::tei:TEI, @xml:id)"/>
+        <field name="modalRelationAmbiguity" if="@type eq 'marker'" expression="idx:isAmbiguous(ancestor::tei:TEI, @xml:id, 'marker')"/>
 
         <!-- scope -->
         <field name="scopeUtterance" if="@type eq 'scope'" expression="tei:f[@name eq 'utterance']/tei:symbol/@value"/>

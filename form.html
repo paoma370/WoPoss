@@ -152,11 +152,13 @@
                     <input type="checkbox" value="certe" id="mk_certe" name="lemma"/>
                     <label for="mk_certe">certe</label>
                     <input type="checkbox" value="dubie" id="mk_dubie" name="lemma"/>
-                    <label for="mk_dubie">dubie</label>
+                    <label for="mk_dubie">dubie</label>               
                     <input type="checkbox" value="forsitan" id="mk_forsitan" name="lemma"/>
                     <label for="mk_forsitan">fors(it)an</label>
                     <input type="checkbox" value="fortasse" id="mk_fortasse" name="lemma"/>
                     <label for="mk_fortasse">fortasse</label>
+                    <input type="checkbox" value="forte" id="mk_forte" name="lemma"/>
+                    <label for="mk_forte">forte</label>
                     <input type="checkbox" value="indubitate" id="mk_indubitate" name="lemma"/>
                     <label for="mk_indubitate">indubitate/indubitanter</label>
                     <input type="checkbox" value="necessarie" id="mk_necessarie" name="lemma"/>
@@ -593,8 +595,8 @@
                             <option value="matthew">Gospel of Matthew</option>
                         </select></fieldset>
                     <fieldset><label>Timeframe of the works</label>
-                        <div class="indent"> Not before century <input id="notBefore" type="number" min="-3" max="7" name="notBefore" placeholder="-3"/> Not after
-                            century <input id="notAfter" type="number" min="-3" max="7" name="notAfter" placeholder="7"/></div></fieldset>
+                        <div class="indent"> Not before century (e.g. -3) <input id="notBefore" type="number" min="-3" max="7" name="notBefore"/> Not after century
+                            (e.g. 7) <input id="notAfter" type="number" min="-3" max="7" name="notAfter"/></div></fieldset>
                     <fieldset><label>Genre</label>
                         <div>
                             <input type="checkbox" name="genre" id="christian" value="christian"/>
@@ -669,7 +671,7 @@
                                 <input type="checkbox" value="participant-imposed" id="poss-imp" name="pos_participant_control"/>
                                 <label for="poss-imp">participant-imposed</label>
                                 <br/>situational <div class="indent includsRadio">
-                                    <input type="radio" id="poss-sit" name="poss_participant_control" class="poss-inev poss-pros poss-no sit" value="situational"/>
+                                    <input type="radio" id="poss-sit" name="pos_participant_control" class="poss-inev poss-pros poss-no sit" value="situational"/>
                                     <label for="poss-sit">all</label>
                                     <input type="radio" id="poss-no" name="pos_situational_subtype" class="poss-inev poss-pros poss-sit" value="none"/>
                                     <label for="poss-no">no subtype</label>
@@ -842,11 +844,10 @@
                 </div>
             </fieldset>
             <h3>Optional filters</h3>
-            <fieldset>
-                <h4 class="title">Lemma of the modal marker</h4>
-                <div class="wrapper">
-                    <div class="content">
-                        <div>
+            <h4 class="title">Lemma of the modal marker</h4>
+            <div class="wrapper">
+                <div class="content">
+                    <fieldset><div>
                             <h5>Verbs</h5>
                             <input type="checkbox" value="debeo" id="debeo" name="lemma"/>
                             <label for="debeo">debeo</label>
@@ -966,6 +967,8 @@
                             <label for="forsitan">fors(it)an</label>
                             <input type="checkbox" value="fortasse" id="fortasse" name="lemma"/>
                             <label for="fortasse">fortasse</label>
+                            <input type="checkbox" value="forte" id="forte" name="lemma"/>
+                            <label for="forte">forte</label>
                             <input type="checkbox" value="indubitate" id="indubitate" name="lemma"/>
                             <label for="indubitate">indubitate/indubitanter</label>
                             <input type="checkbox" value="necessarie" id="necessarie" name="lemma"/>
@@ -975,15 +978,140 @@
                             <input type="checkbox" value="probabiliter" id="probabiliter" name="lemma"/>
                             <label for="probabiliter">probabiliter</label>
                         </div>
-                    </div>
+                    </fieldset>
                 </div>
-            </fieldset>
+            </div>
+            <h4 class="title">Description of the modal relation</h4>
+            <div class="wrapper">
+                <div class="content">
+                    <fieldset><label>Ambiguity</label>
+                        <div class="indent">
+                            <input type="radio" name="ambiguity" id="mod-exclude_amb" value="false"/>
+                            <label for="mod-exclude_amb">Exclude ambiguous cases</label>
+                            <input type="radio" name="ambiguity" id="mod-include_amb" value="true"/>
+                            <label for="mod-include_amb">See only ambiguous cases</label>
+                            <p class="indent">Note: the default behaviour is to always include
+                                ambiguous cases</p>
+                        </div>
+                    </fieldset>
+                    <fieldset><label>Rhetoric use</label>
+                        <div class="indent">
+                            <input type="radio" name="rhetoric" id="mod-exclude_rh" value="false"/>
+                            <label for="mod-exclude_rh">Exclude rhetoric uses</label>
+                            <input type="radio" name="rhetoric" id="mod-include_rh" value="true"/>
+                            <label for="mod-include_rh">See only rhetoric uses</label>
+                            <p class="indent">Note: the default behaviour is to always include
+                                rhetoric uses</p>
+                        </div>
+                    </fieldset>
+                    <fieldset><label>Pragmatic use</label><div class="indent">
+                            <input type="radio" name="pragmatic" id="mod-exclude_pr" value="false"/>
+                            <label for="mod-exclude_pr">Exclude pragmatic uses</label>
+                            <input type="radio" name="pragmatic" id="mod-include_pr" value="true"/>
+                            <label for="mod-include_pr">See only pragmatic uses</label>
+                            <p class="indent">Note: the default behaviour is to always include
+                                pragmatic uses</p>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <h4 class="title">Description of the work</h4>
+            <div class="wrapper">
+                <div class="content">
+                    <fieldset>Author <select name="author" id="mod-author">
+                            <option disabled="" selected="" value="">-- select an option --</option>
+                            <option value="jerome">Jerome of Stridon</option>
+                        </select></fieldset>
+                    <fieldset>
+                        <label>Author’s gender</label>
+                        <select name="gender" id="mod-gender">
+                            <option disabled="" selected="" value="">-- select an option --</option>
+                            <option value="M">Male</option>
+                            <option value="F">Female</option>
+                            <option value="U">Undefined</option>
+                        </select></fieldset>
+                    <fieldset><label>Author’s place of origin</label>
+                        <select name="place" id="mod-place">
+                            <option disabled="" selected="" value="">-- select an option --</option>
+                            <option value="Africa">Africa</option>
+                            <option value="Dalmatia">Dalmatia</option>
+                            <option value="Gallia">Gallia</option>
+                            <option value="Hispania">Hispania</option>
+                            <option value="Italia">Italia (all)</option>
+                            <option value="Aemilia">Italia: Aemilia</option>
+                            <option value="Campania">Italia: Campania</option>
+                            <option value="Latium">Italia: Latium</option>
+                            <option value="Samnium">Italia: Samnium</option>
+                            <option value="Transpadana">Italia: Transpadana</option>
+                            <option value="Umbria">Italia: Umbria</option>
+                        </select></fieldset>
+                    <fieldset> Title of the work <select name="title" id="mod-title">
+                            <option disabled="" selected="" value="">-- select an option --</option>
+                            <option value="john">Gospel of John</option>
+                            <option value="luke">Gospel of Luke</option>
+                            <option value="mark">Gospel of Mark</option>
+                            <option value="matthew">Gospel of Matthew</option>
+                        </select></fieldset>
+                    <fieldset><label>Timeframe of the works</label>
+                        <div class="indent"> Not before century (e.g. -3) <input id="mod-notBefore" type="number" min="-3" max="7" name="notBefore"/> Not after century
+                            (e.g. 7) <input id="mod-notAfter" type="number" min="-3" max="7" name="notAfter"/></div></fieldset>
+                    <fieldset><label>Genre</label>
+                        <div>
+                            <input type="checkbox" name="genre" id="mod-christian" value="christian"/>
+                            <label for="mod-christian">Christian theological text</label>
+                            <input type="checkbox" name="genre" id="mod-comedy" value="comedy"/>
+                            <label for="mod-comedy">Comedy</label>
+                            <input type="checkbox" name="genre" id="mod-fiction" value="fiction"/>
+                            <label for="mod-fiction">Fiction</label>
+                            <input type="checkbox" name="genre" id="mod-history" value="history"/>
+                            <label for="mod-history">Historical writing</label>
+                            <input type="checkbox" name="genre" id="mod-legal" value="legal"/>
+                            <label for="mod-legal">Legal text</label>
+                            <input type="checkbox" name="genre" id="mod-letter" value="letter"/>
+                            <label for="mod-letter">Letter writing</label>
+                            <input type="checkbox" name="genre" id="mod-philosophy" value="philosophy"/>
+                            <label for="mod-philosophy">Philosophy</label>
+                            <input type="checkbox" name="genre" id="mod-poetry" value="poetry"/>
+                            <label for="mod-poetry">Poetry</label>
+                            <input type="checkbox" name="genre" id="mod-rhetoric" value="rhetoric"/>
+                            <label for="mod-rhetoric">Technical text: rhetoric</label>
+                            <input type="checkbox" name="genre" id="mod-medicine" value="medicine"/>
+                            <label for="mod-medicine">Technical text: medicine</label>
+                            <input type="checkbox" name="genre" id="mod-travel" value="travel"/>
+                            <label for="mod-travel">Travel literature</label>
+                        </div></fieldset>
+
+                    <fieldset><label>Textual features</label>
+                        <div>
+                            <input type="checkbox" name="textualFeature" id="mod-prose" value="prose"/>
+                            <label for="mod-prose">Prose</label>
+                            <input type="checkbox" name="textualFeature" id="mod-verse" value="verse"/>
+                            <label for="mod-verse">Verse</label>
+                            <input type="checkbox" name="textualFeature" id="mod-translation" value="translation"/>
+                            <label for="mod-translation">Translation</label>
+                            <input type="checkbox" name="textualFeature" id="mod-dialogue" value="dialogue"/>
+                            <label for="mod-dialogue">Dialogued</label>
+                            <input type="checkbox" name="textualFeature" id="mod-non-dialogue" value="non-dialogue"/>
+                            <label for="mod-non-dialogue">Non-dialogue</label>
+                        </div></fieldset>
+                    <fieldset><label>Transmission</label>
+                        <div>
+                            <input type="checkbox" name="transmission" id="mod-codex" value="codex"/>
+                            <label for="mod-codex">Codex</label>
+                            <input type="checkbox" name="transmission" id="mod-scroll" value="scroll"/>
+                            <label for="mod-scroll">Papyrus scroll</label>
+                            <input type="checkbox" name="transmission" id="mod-inscription" value="inscription"/>
+                            <label for="mod-inscription">Inscription</label>
+                            <input type="checkbox" name="transmission" id="mod-mixed" value="mixed"/>
+                            <label for="mod-mixed">Mixed</label>
+                        </div></fieldset>
+                </div>
+            </div>
             <input type="submit" value="Submit" id="checkBtn"/>
         </form>
     </div>
     <script type="text/javascript">$(document).ready(function () { $('#checkBtn').click(function() {
-        checked = $("input[name=modality]:checked").length; if(!checked) { alert("At least one type
-        of modality must be selected"); return false; } }); });</script>
+        checked = $("input[name=modality]:checked").length; if(!checked) { alert("At least one type of modality must be selected"); return false; } }); });</script>
     <script type="text/javascript" src="/exist/apps/woposs/resources/scripts/select.js"/>
     <script type="text/javascript" src="/exist/apps/woposs/resources/scripts/select-subtypes.js"/>
     <script type="text/javascript" src="/exist/apps/woposs/resources/scripts/select-situational.js"/>
