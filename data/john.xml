@@ -13543,9 +13543,9 @@
             <f name="type">
                <symbol value="situational"/>
             </f>
-<f name="subtype">
-<symbol value="none"/>
-</f>
+            <f name="subtype">
+               <symbol value="none"/>
+            </f>
          </fs>
          <fs xml:id="r_r58164" type="relation">
             <f name="modality">
@@ -13598,9 +13598,9 @@
             <f name="type">
                <symbol value="situational"/>
             </f>
-<f name="subtype">
-<symbol value="none"/>
-</f>
+            <f name="subtype">
+               <symbol value="none"/>
+            </f>
          </fs>
          <fs xml:id="r_r129053" type="relation">
             <f name="modality">
@@ -13682,9 +13682,9 @@
             <f name="type">
                <symbol value="situational"/>
             </f>
-<f name="subtype">
-<symbol value="none"/>
-</f>
+            <f name="subtype">
+               <symbol value="none"/>
+            </f>
          </fs>
          <fs xml:id="r_r70393" type="relation">
             <f name="modality">
@@ -13745,9 +13745,9 @@
             <f name="type">
                <symbol value="situational"/>
             </f>
-<f name="subtype">
-<symbol value="none"/>
-</f>
+            <f name="subtype">
+               <symbol value="none"/>
+            </f>
          </fs>
          <fs xml:id="r_r83485" type="relation">
             <f name="modality">
@@ -13761,9 +13761,9 @@
             <f name="type">
                <symbol value="situational"/>
             </f>
-<f name="subtype">
-<symbol value="none"/>
-</f>
+            <f name="subtype">
+               <symbol value="none"/>
+            </f>
          </fs>
          <fs xml:id="r_r89690" type="relation">
             <f name="modality">
@@ -18641,9 +18641,9 @@
             <f name="type">
                <symbol value="situational"/>
             </f>
-<f name="subtype">
-<symbol value="none"/>
-</f>
+            <f name="subtype">
+               <symbol value="none"/>
+            </f>
          </fs>
          <fs xml:id="r_o50758" type="relation">
             <f name="modality">
@@ -18830,9 +18830,9 @@
             <f name="type">
                <symbol value="situational"/>
             </f>
-<f name="subtype">
-<symbol value="none"/>
-</f>
+            <f name="subtype">
+               <symbol value="none"/>
+            </f>
          </fs>
          <fs xml:id="r_o102810" type="relation">
             <f name="modality">
@@ -21297,9 +21297,9 @@
             <f name="type">
                <symbol value="situational"/>
             </f>
-<f name="subtype">
-<symbol value="none"/>
-</f>
+            <f name="subtype">
+               <symbol value="none"/>
+            </f>
          </fs>
          <fs xml:id="r_n58692" type="relation">
             <f name="modality">
@@ -23144,9 +23144,9 @@
             <f name="type">
                <symbol value="situational"/>
             </f>
-<f name="subtype">
-<symbol value="none"/>
-</f>
+            <f name="subtype">
+               <symbol value="none"/>
+            </f>
          </fs>
          <fs xml:id="r_q58413" type="relation">
             <f name="modality">
@@ -23160,9 +23160,9 @@
             <f name="type">
                <symbol value="situational"/>
             </f>
-<f name="subtype">
-<symbol value="none"/>
-</f>
+            <f name="subtype">
+               <symbol value="none"/>
+            </f>
          </fs>
          <fs xml:id="r_q60292" type="relation">
             <f name="modality">
@@ -23199,9 +23199,9 @@
             <f name="type">
                <symbol value="situational"/>
             </f>
-<f name="subtype">
-<symbol value="none"/>
-</f>
+            <f name="subtype">
+               <symbol value="none"/>
+            </f>
          </fs>
          <fs xml:id="r_q104390" type="relation">
             <f name="modality">
@@ -25000,9 +25000,9 @@
             <f name="type">
                <symbol value="situational"/>
             </f>
-<f name="subtype">
-<symbol value="none"/>
-</f>
+            <f name="subtype">
+               <symbol value="none"/>
+            </f>
          </fs>
          <fs xml:id="r_p121852" type="relation">
             <f name="modality">
@@ -25069,9 +25069,9 @@
             <f name="type">
                <symbol value="situational"/>
             </f>
-<f name="subtype">
-<symbol value="none"/>
-</f>
+            <f name="subtype">
+               <symbol value="none"/>
+            </f>
          </fs>
       </back>
    </text>
