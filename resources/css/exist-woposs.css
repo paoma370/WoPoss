@@ -254,6 +254,7 @@ body {
 /*---------------------------------------- NAVBAR ---------------------------------------- */
 .navbar-default {
   height: 60px;
+  width:100%;
   background: transparent;
   border: 0;
   box-shadow: none;
@@ -268,6 +269,10 @@ body {
 
 .nav > ul > li {
     display:flex;
+}
+
+.nav > li {
+    padding-right: 3em;
 }
 
 /*stylelint-disable-next-line no-descending-specificity */
@@ -321,8 +326,8 @@ body {
   }
 
   .nav > li {
-    padding-top:0.4em;
-    min-width: 150px;
+    padding-top:0.4em;/*
+    min-width: 150px;*/
     display:flex;
   }
 
