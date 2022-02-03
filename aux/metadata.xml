@@ -94,10 +94,10 @@
                <objectIdentifier>
                   <objectName>Senatus consultum de Bacchanalibus</objectName>
                </objectIdentifier>
-               <bibl status="annotated">
+               <bibl status="annotated" xml:id="senatus_consultum">
                   <location>
                      <bloc>Italia</bloc>
-                     <bloc>Latium</bloc>
+                     <bloc>Bruttium</bloc>
                   </location>
                   <date type="century" when-custom="BCE2">II BCE</date>
                   <date type="year" when-custom="-186">186 BCE</date>
