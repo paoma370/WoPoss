@@ -1,0 +1,2720 @@
+<?xml-model href="https://raw.githubusercontent.com/WoPoss-project/annotation-schemes/master/schemas/out/tei_woposs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/WoPoss-project/annotation-schemes/master/schemas/out/tei_woposs.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="senatus_consultum">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Senatus consultum de Bacchanalibus</title>
+            <title type="short">Senatus_consultum</title>
+            <principal>WoPoss Project</principal>
+         </titleStmt>
+         <editionStmt>
+            <edition>WoPoss corpus</edition>
+            <respStmt>
+               <resp>Text retrieval, preprocessing, and automatic linguistic annotation</resp>
+               <name>Helena Bermúdez Sabel</name>
+            </respStmt>
+            <respStmt>
+               <resp>Semantic annotation and correction of the linguistic annotation of modal
+                  passages</resp>
+               <name>Francesca Dell’Oro</name>
+            </respStmt>
+            <respStmt>
+               <resp>TEI conversion</resp>
+               <name>Helena Bermúdez Sabel</name>
+            </respStmt>
+         </editionStmt>
+         <extent>
+            <measure unit="words" quantity="323"/>
+         </extent>
+         <publicationStmt>
+            <authority>Swiss National Science Foundation</authority>
+            <availability status="free">
+               <licence target="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons
+                  BY-NC</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <bibl type="sourceEdition">EDR </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="la"/>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <ab>
+            <s n="1">
+               <w pos="NOUN" lemma="quintus">Quintus </w>
+               <w pos="NOUN" lemma="Marcius">Marcius</w>
+               <w pos="NOUN" lemma="lucus">Luci</w>
+               <w pos="NOUN" lemma="filius">filius</w>
+               <pc>,</pc>
+               <w pos="NOUN" lemma="Spurius">Spurius</w>
+               <w pos="NOUN" lemma="Postimius">Postumius</w>
+               <w pos="NOUN" lemma="lucus">Luci</w>
+               <w pos="NOUN" lemma="filius">filius</w>
+               <w pos="NOUN" lemma="consul">consules</w>
+               <pc>,</pc>
+               <w pos="NOUN" lemma="senatus">senatum</w>
+               <w pos="VERB" lemma="consolvo">consoluerunt</w>
+               <w pos="NOUN" lemma="nonis">nonis</w>
+               <w pos="NOUN" lemma="octobrus">Octobribus</w>
+               <w pos="ADP" lemma="apud">apud</w>
+               <w pos="NOUN" lemma="aedes">aedem</w>
+               <w pos="ADJ" lemma="Duelona">Duelonai</w>
+               <w pos="VERB" lemma="scribundo">scribundo</w>
+               <w pos="VERB" lemma="arfero">arfuerunt</w>
+               <w pos="NOUN" lemma="Marcus">Marcus</w>
+               <w pos="NOUN" lemma="Claudius">Claudius</w>
+               <w pos="NOUN" lemma="Marcus">Marci</w>
+               <w pos="NOUN" lemma="filius">filius</w>
+               <pc>,</pc>
+               <w pos="NOUN" lemma="lucius">Lucius</w>
+               <w pos="ADJ" lemma="Valer">Valerius</w>
+               <pc>Publi</pc>
+               <w pos="NOUN" lemma="filius">filius</w>
+               <pc>,</pc>
+               <w pos="NOUN" lemma="quintus">Quintus</w>
+               <w pos="ADJ" lemma="Minucius">Minucius</w>
+               <w pos="NOUN" lemma="Caius">Cai</w>
+               <w pos="NOUN" lemma="filius">filius</w>
+               <pc>,</pc>
+               <seg function="participant" type="animate" corresp="#sen19890">
+                  <w pos="ADP" lemma="de">de</w>
+                  <w pos="NOUN" lemma="Bacchanal" msd="#send1e223">Bacanalibus</w>
+                  <w pos="PRON" lemma="qui" msd="#send1e229">quei</w>
+                  <w pos="VERB" lemma="foedero" msd="#send1e235">foideratei</w>
+                  <w pos="VERB" lemma="sum" msd="#send1e241">esent</w>
+               </seg>
+               <pc>,</pc>
+               <seg function="scope" ana="#sen19890" part="Y">
+                  <w pos="ADV" lemma="ita">ita</w>
+               </seg>
+               <w msd="#sen1787f" lemma="edico" pos="VERB"><seg function="scope" ana="#sen19890" part="Y">exdeice</seg><seg function="marker" ana="#sen19872">ndum</seg></w>
+               <w pos="VERB" lemma="censeo">censuere</w>
+               <pc>:</pc>
+            </s>
+            <s n="2">
+               <seg function="participant" type="animate" corresp="#sen18247">
+                  <w pos="PRON" lemma="nequis" msd="#send1e275">
+                     <seg function="negation" corresp="#sen18198">neiquis</seg>
+                  </w>
+                  <w pos="PRON" lemma="is" msd="#send1e282">eorum</w>
+               </seg>
+               <seg function="scope" ana="#sen18247">
+                  <w pos="NOUN" lemma="Bacchanal" msd="#send1e289">Sacanal</w>
+                  <w pos="VERB" lemma="habeo" msd="#send1e295" function="main">habuise</w>
+                  <note>+ control as I intend it as "to have got hold of something"</note>
+               </seg>
+               <w pos="VERB" lemma="volo" msd="#send1e302">
+                  <seg function="marker" ana="#sen18198">velet</seg>
+               </w>
+               <pc>;</pc>
+            </s>
+            <s n="3">
+               <w pos="ADJ" lemma="seiques">seiques</w>
+               <w pos="VERB" lemma="sum">esent</w>
+               <pc>,</pc>
+               <w pos="PRON" lemma="qui" msd="#send1e332">quei</w>
+               <w pos="PRON" lemma="se" msd="#send1e339">
+                  <seg function="participant" type="animate" corresp="#sen18394">sibei</seg>
+               </w>
+               <w pos="VERB" lemma="dico">deicerent</w>
+               <seg function="marker" ana="#sen18376">
+                  <w pos="NOUN" lemma="necessus">necesus</w>
+                  <w pos="VERB" lemma="sum" msd="#send1e360">ese</w>
+               </seg>
+               <seg function="scope" ana="#sen18394">
+                  <w pos="NOUN" lemma="Bacchanal" msd="#send1e368">Bacanal</w>
+                  <w pos="VERB" lemma="habeo" msd="#send1e374" function="main">habere</w>
+               </seg>
+               <pc>,</pc>
+               <w pos="NOUN" lemma="is">eeis</w>
+               <w pos="NOUN" lemma="uteius">utei</w>
+               <w pos="ADP" lemma="ad">ad</w>
+               <w pos="NOUN" lemma="praitor">praitorem</w>
+               <w pos="ADJ" lemma="urbanus">urbanum</w>
+               <w pos="NOUN" lemma="Roma">Romam</w>
+               <w pos="VERB" lemma="venio">venirent</w>
+               <pc>,</pc>
+               <w pos="ADP" lemma="deque">deque</w>
+               <w pos="NOUN" lemma="is">eeis</w>
+               <w pos="NOUN" lemma="res">rebus</w>
+               <pc>,</pc>
+               <w pos="NOUN" lemma="ubei">ubei</w>
+               <w pos="PRON" lemma="is">eorum</w>
+               <w pos="NOUN" lemma="vtrba">vtrba</w>
+               <w pos="VERB" lemma="audio">audita</w>
+               <w pos="VERB" lemma="sum">esent</w>
+               <pc>,</pc>
+               <w pos="NOUN" lemma="uteius">utei</w>
+               <w pos="NOUN" lemma="senatus">senatus</w>
+               <w pos="PRON" lemma="noster">noster</w>
+               <w pos="VERB" lemma="decerno">decernerent</w>
+               <pc>,</pc>
+               <w pos="SCONJ" lemma="dum">dum</w>
+               <w pos="SCONJ" lemma="ne">ne</w>
+               <w pos="ADV" lemma="parvus">minus</w>
+               <w pos="NOUN" lemma="senator">senatoribus</w>
+               <w pos="NOUN" lemma="Gaius">C</w>
+               <w pos="VERB" lemma="adsum">adesent</w>
+               <w pos="SCONJ" lemma="cum">quom</w>
+               <w pos="PRON" lemma="is">ea</w>
+               <w pos="NOUN" lemma="res">res</w>
+               <w pos="VERB" lemma="cosolo">cosoleretur</w>
+               <pc>.</pc>
+            </s>
+            <s n="4">
+               <seg function="scope" ana="#sen18477" next="adiese" part="Y">
+                  <w pos="NOUN" lemma="Baca" msd="#send1e584">Bacas</w>
+                  <w pos="NOUN" lemma="vir" msd="#send1e590">vir</w>
+               </seg>
+               <w pos="PRON" lemma="nequis" msd="#send1e596">
+                  <seg function="negation" corresp="#sen18459">nequis</seg>
+               </w>
+               <seg function="scope" ana="#sen18477" part="Y">
+                  <w pos="VERB" lemma="adeo" msd="#send1e604" function="main">adiese</w>
+               </seg>
+               <w pos="VERB" lemma="volo" msd="#send1e612">
+                  <seg function="marker" ana="#sen18459">velet</seg>
+               </w>
+               <seg function="participant" type="animate" corresp="#sen18477">
+                  <w pos="NOUN" lemma="civis" msd="#send1e620">ceivis</w>
+                  <w pos="ADJ" lemma="Romanus" msd="#send1e626">Romanus</w>
+                  <w pos="SCONJ" lemma="neve">neve</w>
+                  <w pos="NOUN" lemma="nomen" msd="#send1e637">nominus</w>
+                  <w pos="ADJ" lemma="Latinus" msd="#send1e643">Latini</w>
+                  <w pos="SCONJ" lemma="neve">neve</w>
+                  <w pos="NOUN" lemma="socius" msd="#send1e654">socium</w>
+                  <w pos="PRON" lemma="quisquam" msd="#send1e660">quisquam</w>
+               </seg>
+               <pc>,</pc>
+               <w pos="NOUN" lemma="nisei">nisei</w>
+               <w pos="NOUN" lemma="praitor">praitorem</w>
+               <w pos="ADJ" lemma="urbanus">urbanum</w>
+               <w pos="VERB" lemma="adjesco">adiesent</w>
+               <pc>,</pc>
+               <w pos="PRON" lemma="isque">isque</w>
+               <w pos="ADP" lemma="de">de</w>
+               <w pos="NOUN" lemma="senatus">senatuos</w>
+               <w pos="NOUN" lemma="sententia">sententiad</w>
+               <pc>,</pc>
+               <w pos="SCONJ" lemma="dum">dum</w>
+               <w pos="SCONJ" lemma="ne">ne</w>
+               <w pos="ADV" lemma="parvus">minus</w>
+               <w pos="NOUN" lemma="senator">senatoribus</w>
+               <w pos="NOUN" lemma="Gaius">C</w>
+               <w pos="VERB" lemma="adsum">adesent</w>
+               <pc>,</pc>
+               <w pos="SCONJ" lemma="cum">quom</w>
+               <w pos="PRON" lemma="is">ea</w>
+               <w pos="NOUN" lemma="res">res</w>
+               <w pos="VERB" lemma="cosolo">cosoleretur</w>
+               <pc>,</pc>
+               <w pos="VERB" lemma="josido">iousisent</w>
+               <pc>.</pc>
+            </s>
+            <s n="5">
+               <w pos="VERB" lemma="censeo">Censuere</w>
+               <pc>.</pc>
+            </s>
+            <s n="6">
+               <w pos="NOUN" lemma="Sacerdos">Sacerdos</w>
+               <w pos="ADJ" lemma="nequam">nequis</w>
+               <w pos="NOUN" lemma="vir">vir</w>
+               <w pos="VERB" lemma="sum">eset</w>
+               <pc>;</pc>
+            </s>
+            <s n="7">
+               <w pos="NOUN" lemma="magister">magister</w>
+               <w pos="CCONJ" lemma="neque">neque</w>
+               <w pos="NOUN" lemma="vir">vir</w>
+               <w pos="CCONJ" lemma="neque">neque</w>
+               <w pos="NOUN" lemma="mulier">mulier</w>
+               <w pos="PRON" lemma="quisquam">quisquam</w>
+               <w pos="VERB" lemma="sum">eset</w>
+               <pc>;</pc>
+            </s>
+            <s n="8">
+               <w pos="CCONJ" lemma="neve">
+                  <seg function="negation" corresp="#sen18584">neve</seg>
+               </w>
+               <seg function="scope" ana="#sen18602" next="eorum_comoinem_habuisse" part="Y">
+                  <w pos="NOUN" lemma="pecunia" msd="#send1e904">pecuniam</w>
+               </seg>
+               <w pos="PRON" lemma="quisquam" msd="#send1e910">
+                  <seg function="participant" type="animate" corresp="#sen18602">quisquam</seg>
+               </w>
+               <seg function="scope" ana="#sen18602" part="Y">
+                  <w pos="PRON" lemma="is" msd="#send1e919">eorum</w>
+                  <w pos="ADJ" lemma="communis" msd="#send1e925">comoinem</w>
+                  <w pos="VERB" lemma="habeo" msd="#send1e931" function="main">habuisse</w>
+               </seg>
+               <w pos="VERB" lemma="volo" msd="#send1e938">
+                  <seg function="marker" ana="#sen18584">velet</seg>
+               </w>
+               <pc>;</pc>
+            </s>
+            <s n="9">
+               <w pos="CCONJ" lemma="neve">
+                  <seg function="negation" corresp="#sen18691">neve</seg>
+               </w>
+               <seg function="scope" ana="#sen18729" next="pro_magistratud" part="Y">
+                  <w pos="NOUN" lemma="magistratus" msd="#send1e958">magistratum</w>
+               </seg>
+               <w pos="CCONJ" lemma="neve">
+                  <seg function="negation" corresp="#sen18691">neve</seg>
+               </w>
+               <seg function="scope" ana="#sen18729" next="virum" part="Y">
+                  <w pos="ADP" lemma="pro">pro</w>
+                  <w pos="NOUN" lemma="magistratus" msd="#send1e976">magistratud</w>
+               </seg>
+               <w pos="CCONJ" lemma="neque">
+                  <seg function="negation" corresp="#sen18691">neque</seg>
+               </w>
+               <seg function="scope" ana="#sen18729" next="mulierem" part="Y">
+                  <w pos="NOUN" lemma="vir" msd="#send1e989">virum</w>
+               </seg>
+               <w pos="CCONJ" lemma="neque">
+                  <seg function="negation" corresp="#sen18691">neque</seg>
+               </w>
+               <seg function="scope" ana="#sen18729" next="fecise" part="Y">
+                  <w pos="NOUN" lemma="mulier" msd="#send1e1002">mulierem</w>
+               </seg>
+               <w pos="PRON" lemma="quisquam" msd="#send1e1008">
+                  <seg function="participant" type="animate" corresp="#sen18729">quisquam</seg>
+               </w>
+               <seg function="scope" ana="#sen18729" part="Y">
+                  <w pos="VERB" lemma="facio" msd="#send1e1016" function="main">fecise</w>
+               </seg>
+               <w pos="VERB" lemma="volo" msd="#send1e1024">
+                  <seg function="marker" ana="#sen18691">velet</seg>
+               </w>
+               <pc>;</pc>
+            </s>
+            <s n="10">
+               <w pos="CCONJ" lemma="neve">
+                  <seg function="negation" corresp="#sen18884">neve</seg>
+               </w>
+               <seg function="scope" ana="#sen18902">
+                  <w pos="ADV" lemma="posthac">posthac</w>
+                  <w pos="ADP" lemma="inter">inter</w>
+                  <w pos="PRON" lemma="se" msd="#send1e1055">sed</w>
+                  <w pos="VERB" lemma="coniuro" msd="#send1e1061" function="main">coniurase</w>
+               </seg>
+               <w pos="CCONJ" lemma="neve">
+                  <seg function="negation" corresp="#sen18884">neve</seg>
+               </w>
+               <w pos="VERB" lemma="convoveo" msd="#send1e1074" function="main">
+                  <seg function="scope" ana="#sen18920">comvovise</seg>
+               </w>
+               <w pos="CCONJ" lemma="neve">
+                  <seg function="negation" corresp="#sen18884">neve</seg>
+               </w>
+               <w pos="VERB" lemma="conspondeo" msd="#send1e1086" function="main">
+                  <seg function="scope" ana="#sen18938">conspondise</seg>
+               </w>
+               <w pos="CCONJ" lemma="neve">
+                  <seg function="negation" corresp="#sen18884">neve</seg>
+               </w> 
+               <w pos="VERB" lemma="compromitto" msd="#send1e1099" function="main">
+                  <seg function="scope" ana="#sen18956">conpromesise</seg>
+               </w>
+               <w pos="VERB" lemma="volo" msd="#send1e1106">
+                  <seg function="marker" ana="#sen18884">velet</seg>
+               </w>
+               <pc>,</pc>
+               <w pos="ADV" lemma="neve">
+                  <seg function="negation" corresp="#sen20054">neve</seg>
+               </w>
+               <w pos="PRON" lemma="quisquam" msd="#send1e1129">
+                  <seg function="participant" type="animate" corresp="#sen20117">quisquam</seg>
+               </w>
+               <seg function="scope" ana="#sen20117">
+                  <w pos="NOUN" lemma="fides" msd="#send1e1137">fidem</w>
+                  <w pos="ADP" lemma="inter">inter</w>
+                  <w pos="PRON" lemma="se" msd="#send1e1148">sed</w>
+                  <w pos="VERB" lemma="do" msd="#send1e1154" function="main">dedise</w>
+               </seg>
+               <w pos="VERB" lemma="volo" msd="#send1e1160">
+                  <seg function="marker" ana="#sen20054">velet</seg>
+               </w>
+               <pc>.</pc>
+            </s>
+            <s n="11">
+               <seg function="scope" ana="#sen19224" part="Y" next="fecise">
+                  <w pos="NOUN" lemma="sacrum" msd="#send1e1175">Sacra</w>
+                  <w pos="ADP" lemma="in">in</w>
+                  <w pos="ADJ" lemma="occultus" msd="#send1e1186">oquoltod</w>
+               </seg>
+               <w pos="SCONJ" lemma="ne">
+                  <seg function="negation" corresp="#sen19200">ne</seg>
+               </w>
+               <w pos="PRON" lemma="quisquam" msd="#send1e1198">
+                  <seg function="participant" type="animate" corresp="#sen19224">quisquam</seg>
+               </w>
+               <seg function="scope" ana="#sen19224" part="Y">
+                  <w pos="VERB" lemma="facio" msd="#send1e1206" function="main">fecise</w>
+               </seg>
+               <w pos="VERB" lemma="volo" msd="#send1e1214">
+                  <seg function="marker" ana="#sen19200">velet</seg>
+               </w>
+               <pc>;</pc>
+            </s>
+            <s n="12">
+               <w pos="CCONJ" lemma="neve">
+                  <seg function="negation" corresp="#sen19300">neve</seg>
+               </w>
+               <seg function="scope" ana="#sen19318" next="fecise" part="Y">
+                  <w pos="ADP" lemma="in">in</w>
+                  <w pos="ADJ" lemma="publicus" msd="#send1e1240">poplicod</w>
+                  <w pos="CCONJ" lemma="neve">neve</w>
+                  <w pos="ADP" lemma="in">in</w>
+                  <w pos="ADJ" lemma="privatus" msd="#send1e1256">preivatod</w>
+                  <w pos="CCONJ" lemma="neve">neve</w>
+                  <w pos="ADP" lemma="extra">exstrad</w>
+                  <w pos="NOUN" lemma="urbs" msd="#send1e1272">urbem</w>
+                  <w pos="NOUN" lemma="sacrum" msd="#send1e1278">sacra</w>
+               </seg>
+               <w pos="PRON" lemma="quisquam" msd="#send1e1284">
+                  <seg function="participant" type="animate" corresp="#sen19318">quisquam</seg>
+               </w>
+               <seg function="scope" ana="#sen19318" part="Y">
+                  <w pos="VERB" lemma="facio" msd="#send1e1292" function="main">fecise</w>
+               </seg>
+               <w pos="VERB" lemma="volo" msd="#send1e1299">
+                  <seg function="marker" ana="#sen19300">velet</seg>
+               </w>
+               <pc>,</pc>
+               <w pos="SCONJ" lemma="nisei">nisei</w>
+               <w pos="NOUN" lemma="praitor">praitorem</w>
+               <w pos="ADJ" lemma="urbanus">urbanum</w>
+               <w pos="VERB" lemma="adjesco">adieset</w>
+               <pc>,</pc>
+               <w pos="PRON" lemma="isque">isque</w>
+               <w pos="ADP" lemma="de">de</w>
+               <w pos="NOUN" lemma="senatus">senatuos</w>
+               <w pos="NOUN" lemma="sententia">sententiad</w>
+               <pc>,</pc>
+               <w pos="SCONJ" lemma="dum">dum</w>
+               <w pos="SCONJ" lemma="ne">ne</w>
+               <w pos="ADV" lemma="parvus">minus</w>
+               <w pos="NOUN" lemma="senator">senatoribus</w>
+               <w pos="NOUN" lemma="Gaius">C</w>
+               <w pos="VERB" lemma="adsum">adesent</w>
+               <pc>,</pc>
+               <w pos="SCONJ" lemma="cum">quom</w>
+               <w pos="PRON" lemma="is">ea</w>
+               <w pos="NOUN" lemma="res">res</w>
+               <w pos="VERB" lemma="cosolo">cosoleretur</w>
+               <pc>,</pc>
+               <w pos="VERB" lemma="josido">iousisent</w>
+               <pc>.</pc>
+            </s>
+            <s n="13">
+               <w pos="VERB" lemma="censeo">Censuere</w>
+               <pc>.</pc>
+            </s>
+            <s n="14">
+               <seg function="scope" ana="#sen19404" next="fecise" part="Y">
+                  <w pos="NOUN" lemma="homo" msd="#send1e1462">Homines</w>
+                  <w pos="ADV" lemma="plus" msd="#send1e1468">plous</w>
+                  <w pos="NUM" lemma="quinque">V</w>
+                  <w pos="ADJ" lemma="universus" msd="#send1e1479">oinvorsei</w>
+                  <w pos="NOUN" lemma="vir" msd="#send1e1485">virei</w>
+                  <w pos="CCONJ" lemma="atque">atque</w>
+                  <w pos="NOUN" lemma="mulier" msd="#send1e1496">mulieres</w>
+                  <w pos="NOUN" lemma="sacrum" msd="#send1e1502">sacra</w>
+               </seg>
+               <w pos="ADV" lemma="ne">
+                  <seg function="negation" corresp="#sen19422">ne</seg>
+               </w>
+               <w pos="PRON" lemma="quisquam" msd="#send1e1514">
+                  <seg function="participant" type="animate" corresp="#sen19404">quisquam</seg>
+               </w>
+               <seg function="scope" ana="#sen19404">
+                  <w pos="VERB" lemma="facio" msd="#send1e1522" function="main">fecise</w>
+               </seg>
+               <w pos="VERB" lemma="volo" msd="#send1e1530">
+                  <seg function="marker" ana="#sen19422">velet</seg>
+               </w>
+               <pc>,</pc>
+               <w pos="ADV" lemma="neve">
+                  <seg function="negation" corresp="#sen19511">neve</seg>
+               </w>
+               <seg function="scope" ana="#sen19547">
+                  <w pos="ADP" lemma="inter">inter</w>
+                  <w pos="ADV" lemma="ibi">ibei</w>
+                  <seg function="participant" type="animate" corresp="#sen19547"><w pos="NOUN" lemma="vir" msd="#send1e1559">virei</w></seg>
+                  <w pos="ADV" lemma="plus" msd="#send1e1565">plous</w>
+                  <w pos="NUM" lemma="duo" msd="#send1e1571">duobus</w>
+                  <pc>,</pc>
+                  <seg function="participant" type="animate" corresp="#sen19547"><w pos="NOUN" lemma="mulier" msd="#send1e1582">mulieribus</w></seg>
+                  <w pos="ADV" lemma="plus" msd="#send1e1588">plous</w>
+                  <w pos="NUM" lemma="tres" msd="#send1e1594">tribus</w>
+                  <w pos="VERB" lemma="adsum" msd="#send1e1600" function="main">arfuise</w>
+               </seg>
+               <w pos="VERB" lemma="volo" msd="#send1e1606">
+                  <seg function="marker" ana="#sen19511">velent</seg>
+               </w>
+               <pc>,</pc>
+               <w pos="NOUN" lemma="nisei">nisei</w>
+               <w pos="ADP" lemma="de">de</w>
+               <w pos="NOUN" lemma="praitor">praitoris</w>
+               <w pos="ADJ" lemma="urbanus">urbani</w>
+               <w pos="NOUN" lemma="senatuosque">senatuosque</w>
+               <w pos="NOUN" lemma="sententia">sententiad</w>
+               <pc>,</pc>
+               <w pos="NOUN" lemma="uteius">utei</w>
+               <w pos="NOUN" lemma="suprad">suprad</w>
+               <w pos="VERB" lemma="scribo">scriptum</w>
+               <w pos="VERB" lemma="sum">est</w>
+               <pc>.</pc>
+            </s>
+            <s n="15">
+               <w pos="ADV" lemma="hic">Haice</w>
+               <w pos="NOUN" lemma="uteius">utei</w>
+               <w pos="ADP" lemma="in">in</w>
+               <w pos="NOUN" lemma="conventio">conventionid</w>
+               <w pos="VERB" lemma="exsedeco">exdeicatis</w>
+               <w pos="SCONJ" lemma="ne">ne</w>
+               <w pos="ADV" lemma="parvus">minus</w>
+               <w pos="ADJ" lemma="trinum">trinum</w>
+               <w pos="VERB" lemma="noundo">noundinum</w>
+               <pc>,</pc>
+               <w pos="NOUN" lemma="senatuosque">senatuosque</w>
+               <w pos="NOUN" lemma="sententia">sententiam</w>
+               <w pos="NOUN" lemma="uteius">utei</w>
+               <w pos="VERB" lemma="scio">scientes</w>
+               <w pos="VERB" lemma="sesum">esetis</w>
+               <pc>,</pc>
+               <w pos="PRON" lemma="is">eorum</w>
+               <w pos="NOUN" lemma="sententia">sententia</w>
+               <w pos="ADV" lemma="ita">ita</w>
+               <w pos="VERB" lemma="sum">fuit</w>
+               <pc>:</pc>
+            </s>
+            <s n="16">
+               <w pos="VERB" lemma="sii">sei</w>
+               <w pos="ADJ" lemma="ques">ques</w>
+               <w pos="VERB" lemma="sum">esent</w>
+               <pc>,</pc>
+               <w pos="NOUN" lemma="que">quei</w>
+               <w pos="VERB" lemma="arverto">arvorsum</w>
+               <w pos="NOUN" lemma="is">ead</w>
+               <w pos="VERB" lemma="facio">fecisent</w>
+               <pc>,</pc>
+               <w pos="ADV" lemma="quam">quam</w>
+               <w pos="NOUN" lemma="suprad">suprad</w>
+               <w pos="VERB" lemma="scribo">scriptum</w>
+               <w pos="VERB" lemma="sum">est</w>
+               <pc>,</pc>
+               <seg function="scope" ana="#sen19639" next="facie" part="Y">
+                  <w pos="PRON" lemma="is" msd="#send1e1893">eeis</w>
+               </seg>
+               <seg function="participant" type="inanimate_patient" corresp="#sen19639">
+                  <w pos="NOUN" lemma="res" msd="#send1e1900">rem</w>
+                  <w pos="ADJ" lemma="capitalis" msd="#send1e1906">caputalem</w>
+               </seg>
+               <w pos="VERB" lemma="facio" msd="#send1e1912">
+                  <seg function="scope" ana="#sen19639" part="Y">facie</seg>
+                  <seg function="marker" ana="#sen19621">ndam</seg>
+               </w>
+               <w pos="VERB" lemma="censeo">censuere</w>
+               <pc>;</pc>
+            </s>
+            <s n="17">
+               <w pos="CCONJ" lemma="atque">atque</w>
+               <seg function="scope" ana="#sen19946">
+                  <w pos="SCONJ" lemma="ut">utei</w>
+                  <w pos="PRON" lemma="hic" msd="#send1e1946">hoce</w>
+                  <w pos="ADP" lemma="in">in</w>
+                  <w pos="NOUN" lemma="tabula" msd="#send1e1957">
+                     <seg function="participant" type="inanimate_patient" corresp="#sen19816">tabolam</seg>
+                  </w>
+                  <w pos="ADJ" lemma="ahenus" msd="#send1e1964">ahenam</w>
+                  <w pos="VERB" lemma="incido" msd="#send1e1970" function="main">inceideretis</w>
+               </seg>
+               <pc>,</pc>
+               <w pos="ADV" lemma="ita">ita</w>
+               <w pos="NOUN" lemma="senatus">senatus</w>
+               <w pos="ADJ" lemma="aequus" msd="#send1e1992">
+                  <seg function="marker" ana="#sen19928">aiquom</seg>
+               </w>
+               <w pos="VERB" lemma="censeo">censuit</w>
+               <pc>,</pc>
+               <w pos="ADV" lemma="uteqque">uteique</w>
+               <w pos="PRON" lemma="is">eam</w>
+               <w pos="NOUN" lemma="figier">figier</w>
+               <w pos="VERB" lemma="joubeo">ioubeatis</w>
+               <pc>,</pc>
+               <w pos="ADV" lemma="ubei">ubei</w>
+               <seg function="scope" ana="#sen19816">
+                  <w pos="ADV" lemma="facillime">facilumed</w>
+                  <w pos="VERB" lemma="nosco" msd="#send1e2052" function="main">gnoscier</w>
+               </seg>
+               <w pos="VERB" lemma="possum" msd="#send1e2058">
+                  <seg function="marker" ana="#sen19780">potisit</seg>
+               </w>
+               <pc>;</pc>
+            </s>
+            <s n="18">
+               <w pos="CCONJ" lemma="atque">atque</w>
+               <w pos="NOUN" lemma="uteius">utei</w>
+               <w pos="PRON" lemma="is">ea</w>
+               <w pos="ADJ" lemma="Bacanalia">Bacanalia</w>
+               <w pos="NOUN" lemma="sii">sei</w>
+               <w pos="PRON" lemma="qui">qua</w>
+               <w pos="VERB" lemma="sum">sunt</w>
+               <pc>,</pc>
+               <w pos="ADV" lemma="exstrado">exstrad</w>
+               <w pos="ADV" lemma="quam">quam</w>
+               <w pos="VERB" lemma="sii">sei</w>
+               <w pos="PRON" lemma="quis">quid</w>
+               <w pos="NOUN" lemma="ibei">ibei</w>
+               <w pos="NOUN" lemma="sacer">sacri</w>
+               <w pos="VERB" lemma="sum">est</w>
+               <pc>,</pc>
+               <w pos="ADV" lemma="ita">ita</w>
+               <w pos="NOUN" lemma="uteius">utei</w>
+               <w pos="NOUN" lemma="suprad">suprad</w>
+               <w pos="VERB" lemma="scribo">scriptum</w>
+               <w pos="VERB" lemma="sum">est</w>
+               <pc>,</pc>
+               <w pos="ADP" lemma="in">in</w>
+               <w pos="NOUN" lemma="dies">diebus</w>
+               <w pos="NUM" lemma="decem">X</w>
+               <pc>,</pc>
+               <w pos="PRON" lemma="qui">quibus</w>
+               <w pos="VERB" lemma="vobeo">vobeis</w>
+               <w pos="ADJ" lemma="tabela">tabelai</w>
+               <w pos="VERB" lemma="datainus">dataị</w>
+               <w pos="NOUN" lemma="30">30</w>
+               <w pos="NOUN" lemma="sum">erumt</w>
+               <pc>,</pc>
+               <w pos="VERB" lemma="facio">faciatis</w>
+               <w pos="NOUN" lemma="uteius">utei</w>
+               <w pos="VERB" lemma="dismovo">dismota</w>
+               <w pos="VERB" lemma="siens">sient</w>
+               <pc>.</pc>
+            </s>
+            <s n="19">
+               <w pos="ADP" lemma="in">In</w>
+               <w pos="NOUN" lemma="agner">ag̣ro</w>
+               <w pos="ADJ" lemma="Teuranus">Teurano</w>
+               <pc>.</pc>
+            </s>
+         </ab>
+      </body>
+      <back>
+         <fs type="msd" xml:id="send1e223">
+            <f name="Case">
+               <symbol value="Abl"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Masc"/>
+            </f>
+            <f name="Number">
+               <symbol value="Plur"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e229">
+            <f name="Case">
+               <symbol value="Nom"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Masc"/>
+            </f>
+            <f name="Number">
+               <symbol value="Plur"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e235">
+            <f name="Aspect">
+               <symbol value="Perf"/>
+            </f>
+            <f name="Case">
+               <symbol value="Nom"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Masc"/>
+            </f>
+            <f name="Number">
+               <symbol value="Plur"/>
+            </f>
+            <f name="Tense">
+               <symbol value="Past"/>
+            </f>
+            <f name="VerbForm">
+               <symbol value="Part"/>
+            </f>
+            <f name="Voice">
+               <symbol value="Pass"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e241">
+            <f name="Aspect">
+               <symbol value="Imp"/>
+            </f>
+            <f name="Mood">
+               <symbol value="Sub"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+            <f name="Person">
+               <symbol value="3"/>
+            </f>
+            <f name="Tense">
+               <symbol value="Past"/>
+            </f>
+            <f name="VerbForm">
+               <symbol value="Fin"/>
+            </f>
+            <f name="Voice">
+               <symbol value="Act"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="sen1787f">
+            <f name="Case">
+               <symbol value="Acc"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Neut"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+            <f name="VerbForm">
+               <symbol value="Gdv"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e275">
+            <f name="Case">
+               <symbol value="Nom"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Masc"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e282">
+            <f name="Case">
+               <symbol value="Gen"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Masc"/>
+            </f>
+            <f name="Number">
+               <symbol value="Plur"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e289">
+            <f name="Case">
+               <symbol value="Nom"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Neut"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e295">
+            <f name="Tense">
+               <symbol value="Past"/>
+            </f>
+            <f name="VerbForm">
+               <symbol value="Inf"/>
+            </f>
+            <f name="Voice">
+               <symbol value="Act"/>
+            </f>
+            <f name="Aspect">
+               <symbol value="Perf"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e302">
+            <f name="Mood">
+               <symbol value="Sub"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+            <f name="Person">
+               <symbol value="3"/>
+            </f>
+            <f name="Tense">
+               <symbol value="Pres"/>
+            </f>
+            <f name="VerbForm">
+               <symbol value="Fin"/>
+            </f>
+            <f name="Voice">
+               <symbol value="Act"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e332">
+            <f name="Case">
+               <symbol value="Nom"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Masc"/>
+            </f>
+            <f name="Number">
+               <symbol value="Plur"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e339">
+            <f name="Case">
+               <symbol value="Dat"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Masc"/>
+            </f>
+            <f name="Number">
+               <symbol value="Plur"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e360">
+            <f name="Tense">
+               <symbol value="Pres"/>
+            </f>
+            <f name="VerbForm">
+               <symbol value="Inf"/>
+            </f>
+            <f name="Voice">
+               <symbol value="Act"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e368">
+            <f name="Case">
+               <symbol value="Acc"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Neut"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e374">
+            <f name="Tense">
+               <symbol value="Pres"/>
+            </f>
+            <f name="VerbForm">
+               <symbol value="Inf"/>
+            </f>
+            <f name="Voice">
+               <symbol value="Act"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e584">
+            <f name="Case">
+               <symbol value="Nom"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Masc"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e590">
+            <f name="Case">
+               <symbol value="Nom"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Masc"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e596">
+            <f name="Case">
+               <symbol value="Nom"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Masc"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e604">
+            <f name="Tense">
+               <symbol value="Past"/>
+            </f>
+            <f name="VerbForm">
+               <symbol value="Inf"/>
+            </f>
+            <f name="Voice">
+               <symbol value="Act"/>
+            </f>
+            <f name="Aspect">
+               <symbol value="Perf"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e612">
+            <f name="Mood">
+               <symbol value="Sub"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+            <f name="Person">
+               <symbol value="3"/>
+            </f>
+            <f name="Tense">
+               <symbol value="Pres"/>
+            </f>
+            <f name="VerbForm">
+               <symbol value="Fin"/>
+            </f>
+            <f name="Voice">
+               <symbol value="Act"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e620">
+            <f name="Case">
+               <symbol value="Nom"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Masc"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e626">
+            <f name="Case">
+               <symbol value="Nom"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Masc"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e637">
+            <f name="Case">
+               <symbol value="Gen"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Masc"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e643">
+            <f name="Case">
+               <symbol value="Gen"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Masc"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e654">
+            <f name="Case">
+               <symbol value="Gen"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Masc"/>
+            </f>
+            <f name="Number">
+               <symbol value="Plur"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e660">
+            <f name="Case">
+               <symbol value="Nom"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Masc"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e904">
+            <f name="Case">
+               <symbol value="Acc"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Fem"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e910">
+            <f name="Case">
+               <symbol value="Nom"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Masc"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e919">
+            <f name="Case">
+               <symbol value="Gen"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Masc"/>
+            </f>
+            <f name="Number">
+               <symbol value="Plur"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e925">
+            <f name="Case">
+               <symbol value="Acc"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Fem"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e931">
+            <f name="Aspect">
+               <symbol value="Perf"/>
+            </f>
+            <f name="Tense">
+               <symbol value="Past"/>
+            </f>
+            <f name="VerbForm">
+               <symbol value="Inf"/>
+            </f>
+            <f name="Voice">
+               <symbol value="Act"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e938">
+            <f name="Mood">
+               <symbol value="Sub"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+            <f name="Person">
+               <symbol value="3"/>
+            </f>
+            <f name="Tense">
+               <symbol value="Pres"/>
+            </f>
+            <f name="VerbForm">
+               <symbol value="Fin"/>
+            </f>
+            <f name="Voice">
+               <symbol value="Act"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e958">
+            <f name="Case">
+               <symbol value="Acc"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Masc"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e976">
+            <f name="Case">
+               <symbol value="Abl"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Masc"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e989">
+            <f name="Case">
+               <symbol value="Acc"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Masc"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1002">
+            <f name="Case">
+               <symbol value="Acc"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Fem"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1008">
+            <f name="Case">
+               <symbol value="Nom"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Masc"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1016">
+            <f name="Aspect">
+               <symbol value="Perf"/>
+            </f>
+            <f name="Tense">
+               <symbol value="Past"/>
+            </f>
+            <f name="VerbForm">
+               <symbol value="Inf"/>
+            </f>
+            <f name="Voice">
+               <symbol value="Act"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1024">
+            <f name="Mood">
+               <symbol value="Sub"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+            <f name="Person">
+               <symbol value="3"/>
+            </f>
+            <f name="Tense">
+               <symbol value="Pres"/>
+            </f>
+            <f name="VerbForm">
+               <symbol value="Fin"/>
+            </f>
+            <f name="Voice">
+               <symbol value="Act"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1055">
+            <f name="Case">
+               <symbol value="Acc"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Masc"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1061">
+            <f name="Aspect">
+               <symbol value="Perf"/>
+            </f>
+            <f name="Tense">
+               <symbol value="Past"/>
+            </f>
+            <f name="VerbForm">
+               <symbol value="Inf"/>
+            </f>
+            <f name="Voice">
+               <symbol value="Act"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1074">
+            <f name="Aspect">
+               <symbol value="Perf"/>
+            </f>
+            <f name="Tense">
+               <symbol value="Past"/>
+            </f>
+            <f name="VerbForm">
+               <symbol value="Inf"/>
+            </f>
+            <f name="Voice">
+               <symbol value="Act"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1086">
+            <f name="Aspect">
+               <symbol value="Perf"/>
+            </f>
+            <f name="Tense">
+               <symbol value="Past"/>
+            </f>
+            <f name="VerbForm">
+               <symbol value="Inf"/>
+            </f>
+            <f name="Voice">
+               <symbol value="Act"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1099">
+            <f name="Aspect">
+               <symbol value="Perf"/>
+            </f>
+            <f name="Tense">
+               <symbol value="Past"/>
+            </f>
+            <f name="VerbForm">
+               <symbol value="Inf"/>
+            </f>
+            <f name="Voice">
+               <symbol value="Act"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1106">
+            <f name="Mood">
+               <symbol value="Sub"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+            <f name="Person">
+               <symbol value="3"/>
+            </f>
+            <f name="Tense">
+               <symbol value="Pres"/>
+            </f>
+            <f name="VerbForm">
+               <symbol value="Fin"/>
+            </f>
+            <f name="Voice">
+               <symbol value="Act"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1129">
+            <f name="Case">
+               <symbol value="Nom"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Masc"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1137">
+            <f name="Case">
+               <symbol value="Acc"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Fem"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1148">
+            <f name="Case">
+               <symbol value="Acc"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Masc"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1154">
+            <f name="Aspect">
+               <symbol value="Perf"/>
+            </f>
+            <f name="Tense">
+               <symbol value="Past"/>
+            </f>
+            <f name="VerbForm">
+               <symbol value="Inf"/>
+            </f>
+            <f name="Voice">
+               <symbol value="Act"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1160">
+            <f name="Mood">
+               <symbol value="Sub"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+            <f name="Person">
+               <symbol value="3"/>
+            </f>
+            <f name="Tense">
+               <symbol value="Pres"/>
+            </f>
+            <f name="VerbForm">
+               <symbol value="Fin"/>
+            </f>
+            <f name="Voice">
+               <symbol value="Act"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1175">
+            <f name="Case">
+               <symbol value="Nom"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Neut"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1186">
+            <f name="Case">
+               <symbol value="Abl"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Neut"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1198">
+            <f name="Case">
+               <symbol value="Nom"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Masc"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1206">
+            <f name="Aspect">
+               <symbol value="Perf"/>
+            </f>
+            <f name="Tense">
+               <symbol value="Past"/>
+            </f>
+            <f name="VerbForm">
+               <symbol value="Inf"/>
+            </f>
+            <f name="Voice">
+               <symbol value="Act"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1214">
+            <f name="Mood">
+               <symbol value="Sub"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+            <f name="Person">
+               <symbol value="3"/>
+            </f>
+            <f name="Tense">
+               <symbol value="Pres"/>
+            </f>
+            <f name="VerbForm">
+               <symbol value="Fin"/>
+            </f>
+            <f name="Voice">
+               <symbol value="Act"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1240">
+            <f name="Case">
+               <symbol value="Abl"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Masc"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1256">
+            <f name="Case">
+               <symbol value="Abl"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Masc"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1272">
+            <f name="Case">
+               <symbol value="Acc"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Fem"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1278">
+            <f name="Case">
+               <symbol value="Acc"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Neut"/>
+            </f>
+            <f name="Number">
+               <symbol value="Plur"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1284">
+            <f name="Case">
+               <symbol value="Nom"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Masc"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1292">
+            <f name="Aspect">
+               <symbol value="Perf"/>
+            </f>
+            <f name="Tense">
+               <symbol value="Past"/>
+            </f>
+            <f name="VerbForm">
+               <symbol value="Inf"/>
+            </f>
+            <f name="Voice">
+               <symbol value="Act"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1299">
+            <f name="Mood">
+               <symbol value="Sub"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+            <f name="Person">
+               <symbol value="3"/>
+            </f>
+            <f name="Tense">
+               <symbol value="Pres"/>
+            </f>
+            <f name="VerbForm">
+               <symbol value="Fin"/>
+            </f>
+            <f name="Voice">
+               <symbol value="Act"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1462">
+            <f name="Case">
+               <symbol value="Nom"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Masc"/>
+            </f>
+            <f name="Number">
+               <symbol value="Plur"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1468">
+            <f name="Degree">
+               <symbol value="Cmp"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1479">
+            <f name="Case">
+               <symbol value="Nom"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Masc"/>
+            </f>
+            <f name="Number">
+               <symbol value="Plur"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1485">
+            <f name="Case">
+               <symbol value="Nom"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Masc"/>
+            </f>
+            <f name="Number">
+               <symbol value="Plur"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1496">
+            <f name="Case">
+               <symbol value="Nom"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Fem"/>
+            </f>
+            <f name="Number">
+               <symbol value="Plur"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1502">
+            <f name="Case">
+               <symbol value="Acc"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Neut"/>
+            </f>
+            <f name="Number">
+               <symbol value="Plur"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1514">
+            <f name="Case">
+               <symbol value="Nom"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Masc"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1522">
+            <f name="Aspect">
+               <symbol value="Perf"/>
+            </f>
+            <f name="Tense">
+               <symbol value="Past"/>
+            </f>
+            <f name="VerbForm">
+               <symbol value="Inf"/>
+            </f>
+            <f name="Voice">
+               <symbol value="Act"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1530">
+            <f name="Mood">
+               <symbol value="Sub"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+            <f name="Person">
+               <symbol value="3"/>
+            </f>
+            <f name="Tense">
+               <symbol value="Pres"/>
+            </f>
+            <f name="VerbForm">
+               <symbol value="Fin"/>
+            </f>
+            <f name="Voice">
+               <symbol value="Act"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1559">
+            <f name="Case">
+               <symbol value="Nom"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Masc"/>
+            </f>
+            <f name="Number">
+               <symbol value="Plur"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1565">
+            <f name="Degree">
+               <symbol value="Cmp"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1571">
+            <f name="Case">
+               <symbol value="Abl"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Neut"/>
+            </f>
+            <f name="Number">
+               <symbol value="Plur"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1582">
+            <f name="Case">
+               <symbol value="Abl"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Neut"/>
+            </f>
+            <f name="Number">
+               <symbol value="Plur"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1588">
+            <f name="Degree">
+               <symbol value="Cmp"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1594">
+            <f name="Case">
+               <symbol value="Abl"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Fem"/>
+            </f>
+            <f name="Number">
+               <symbol value="Plur"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1600">
+            <f name="Aspect">
+               <symbol value="Perf"/>
+            </f>
+            <f name="Tense">
+               <symbol value="Past"/>
+            </f>
+            <f name="VerbForm">
+               <symbol value="Inf"/>
+            </f>
+            <f name="Voice">
+               <symbol value="Act"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1606">
+            <f name="Mood">
+               <symbol value="Sub"/>
+            </f>
+            <f name="Number">
+               <symbol value="Plur"/>
+            </f>
+            <f name="Person">
+               <symbol value="3"/>
+            </f>
+            <f name="Tense">
+               <symbol value="Pres"/>
+            </f>
+            <f name="VerbForm">
+               <symbol value="Fin"/>
+            </f>
+            <f name="Voice">
+               <symbol value="Act"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1893">
+            <f name="Case">
+               <symbol value="Dat"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Masc"/>
+            </f>
+            <f name="Number">
+               <symbol value="Plur"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1900">
+            <f name="Case">
+               <symbol value="Acc"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Fem"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1906">
+            <f name="Case">
+               <symbol value="Acc"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Fem"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1912">
+            <f name="Case">
+               <symbol value="Acc"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Fem"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+            <f name="VerbForm">
+               <symbol value="Gdv"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1946">
+            <f name="Case">
+               <symbol value="Acc"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Neut"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1957">
+            <f name="Case">
+               <symbol value="Acc"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Fem"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1964">
+            <f name="Case">
+               <symbol value="Acc"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Fem"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1970">
+            <f name="Aspect">
+               <symbol value="Imp"/>
+            </f>
+            <f name="Mood">
+               <symbol value="Sub"/>
+            </f>
+            <f name="Number">
+               <symbol value="Plur"/>
+            </f>
+            <f name="Person">
+               <symbol value="2"/>
+            </f>
+            <f name="Tense">
+               <symbol value="Past"/>
+            </f>
+            <f name="VerbForm">
+               <symbol value="Fin"/>
+            </f>
+            <f name="Voice">
+               <symbol value="Act"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e1992">
+            <f name="Case">
+               <symbol value="Acc"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Neut"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e2052">
+            <f name="Tense">
+               <symbol value="Pres"/>
+            </f>
+            <f name="VerbForm">
+               <symbol value="Inf"/>
+            </f>
+            <f name="Voice">
+               <symbol value="Pass"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="send1e2058">
+            <f name="Mood">
+               <symbol value="Sub"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
+            </f>
+            <f name="Person">
+               <symbol value="3"/>
+            </f>
+            <f name="Tense">
+               <symbol value="Pres"/>
+            </f>
+            <f name="VerbForm">
+               <symbol value="Fin"/>
+            </f>
+            <f name="Voice">
+               <symbol value="Act"/>
+            </f>
+         </fs>
+         <fs xml:id="sen19890" type="scope">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="affirmative"/>
+            </f>
+            <f name="SoA">
+               <binary value="true"/>
+            </f>
+            <f name="control">
+               <binary value="true"/>
+            </f>
+            <f name="dynamicity">
+               <binary value="true"/>
+            </f>
+            <f name="participant">
+               <symbol value="explicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
+         </fs>
+         <fs xml:id="sen19872" type="marker">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="affirmative"/>
+            </f>
+            <f name="pertinence">
+               <binary value="true"/>
+            </f>
+            <f name="modal">
+               <binary value="true"/>
+            </f>
+            <f name="lemma">
+               <symbol value="ndus"/>
+            </f>
+         </fs>
+         <fs xml:id="sen18247" type="scope">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="affirmative"/>
+            </f>
+            <f name="SoA">
+               <binary value="true"/>
+            </f>
+            <f name="control">
+               <binary value="true"/>
+            </f>
+            <f name="dynamicity">
+               <binary value="false"/>
+            </f>
+            <f name="note">
+               <string>+ control as I intend it as "to have got hold of something"</string>
+            </f>
+            <f name="participant">
+               <symbol value="explicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
+         </fs>
+         <fs xml:id="sen18198" type="marker">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="negative"/>
+            </f>
+            <f name="pertinence">
+               <binary value="true"/>
+            </f>
+            <f name="modal">
+               <binary value="true"/>
+            </f>
+            <f name="lemma">
+               <symbol value="volo"/>
+            </f>
+         </fs>
+         <fs xml:id="sen18376" type="marker">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="affirmative"/>
+            </f>
+            <f name="pertinence">
+               <binary value="true"/>
+            </f>
+            <f name="modal">
+               <binary value="true"/>
+            </f>
+            <f name="lemma">
+               <symbol value="necesse_est"/>
+            </f>
+         </fs>
+         <fs xml:id="sen18394" type="scope">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="affirmative"/>
+            </f>
+            <f name="SoA">
+               <binary value="true"/>
+            </f>
+            <f name="control">
+               <binary value="true"/>
+            </f>
+            <f name="dynamicity">
+               <binary value="false"/>
+            </f>
+            <f name="participant">
+               <symbol value="explicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
+         </fs>
+         <fs xml:id="sen18477" type="scope">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="affirmative"/>
+            </f>
+            <f name="SoA">
+               <binary value="true"/>
+            </f>
+            <f name="control">
+               <binary value="true"/>
+            </f>
+            <f name="dynamicity">
+               <binary value="true"/>
+            </f>
+            <f name="participant">
+               <symbol value="explicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
+         </fs>
+         <fs xml:id="sen18459" type="marker">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="negative"/>
+            </f>
+            <f name="pertinence">
+               <binary value="true"/>
+            </f>
+            <f name="modal">
+               <binary value="true"/>
+            </f>
+            <f name="lemma">
+               <symbol value="volo"/>
+            </f>
+         </fs>
+         <fs xml:id="sen18602" type="scope">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="affirmative"/>
+            </f>
+            <f name="SoA">
+               <binary value="true"/>
+            </f>
+            <f name="control">
+               <binary value="true"/>
+            </f>
+            <f name="dynamicity">
+               <binary value="false"/>
+            </f>
+            <f name="participant">
+               <symbol value="explicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
+         </fs>
+         <fs xml:id="sen18584" type="marker">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="negative"/>
+            </f>
+            <f name="pertinence">
+               <binary value="true"/>
+            </f>
+            <f name="modal">
+               <binary value="true"/>
+            </f>
+            <f name="lemma">
+               <symbol value="volo"/>
+            </f>
+         </fs>
+         <fs xml:id="sen18729" type="scope">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="affirmative"/>
+            </f>
+            <f name="SoA">
+               <binary value="true"/>
+            </f>
+            <f name="control">
+               <binary value="true"/>
+            </f>
+            <f name="dynamicity">
+               <binary value="true"/>
+            </f>
+            <f name="participant">
+               <symbol value="explicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
+         </fs>
+         <fs xml:id="sen18691" type="marker">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="negative"/>
+            </f>
+            <f name="pertinence">
+               <binary value="true"/>
+            </f>
+            <f name="modal">
+               <binary value="true"/>
+            </f>
+            <f name="lemma">
+               <symbol value="volo"/>
+            </f>
+         </fs>
+         <fs xml:id="sen18902" type="scope">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="affirmative"/>
+            </f>
+            <f name="SoA">
+               <binary value="true"/>
+            </f>
+            <f name="control">
+               <binary value="true"/>
+            </f>
+            <f name="dynamicity">
+               <binary value="true"/>
+            </f>
+            <f name="participant">
+               <symbol value="implicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
+         </fs>
+         <fs xml:id="sen18920" type="scope">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="affirmative"/>
+            </f>
+            <f name="SoA">
+               <binary value="true"/>
+            </f>
+            <f name="control">
+               <binary value="true"/>
+            </f>
+            <f name="dynamicity">
+               <binary value="true"/>
+            </f>
+            <f name="participant">
+               <symbol value="implicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
+         </fs>
+         <fs xml:id="sen18938" type="scope">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="affirmative"/>
+            </f>
+            <f name="SoA">
+               <binary value="true"/>
+            </f>
+            <f name="control">
+               <binary value="true"/>
+            </f>
+            <f name="dynamicity">
+               <binary value="true"/>
+            </f>
+            <f name="participant">
+               <symbol value="implicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
+         </fs>
+         <fs xml:id="sen18956" type="scope">
+            <f name="utterance">
+               <symbol value="interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="affirmative"/>
+            </f>
+            <f name="SoA">
+               <binary value="true"/>
+            </f>
+            <f name="control">
+               <binary value="true"/>
+            </f>
+            <f name="dynamicity">
+               <binary value="true"/>
+            </f>
+            <f name="participant">
+               <symbol value="implicit"/>               
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
+         </fs>
+         <fs xml:id="sen18884" type="marker">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="negative"/>
+            </f>
+            <f name="pertinence">
+               <binary value="true"/>
+            </f>
+            <f name="modal">
+               <binary value="true"/>
+            </f>
+            <f name="lemma">
+               <symbol value="volo"/>
+            </f>
+         </fs>
+         <fs xml:id="sen20117" type="scope">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="affirmative"/>
+            </f>
+            <f name="SoA">
+               <binary value="true"/>
+            </f>
+            <f name="control">
+               <binary value="true"/>
+            </f>
+            <f name="dynamicity">
+               <binary value="true"/>
+            </f>
+            <f name="participant">
+               <symbol value="explicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
+         </fs>
+         <fs xml:id="sen20054" type="marker">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="negative"/>
+            </f>
+            <f name="pertinence">
+               <binary value="true"/>
+            </f>
+            <f name="modal">
+               <binary value="true"/>
+            </f>
+            <f name="lemma">
+               <symbol value="volo"/>
+            </f>
+         </fs>
+         <fs xml:id="sen19224" type="scope">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="affirmative"/>
+            </f>
+            <f name="SoA">
+               <binary value="true"/>
+            </f>
+            <f name="control">
+               <binary value="true"/>
+            </f>
+            <f name="dynamicity">
+               <binary value="true"/>
+            </f>
+            <f name="participant">
+               <symbol value="explicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
+         </fs>
+         <fs xml:id="sen19200" type="marker">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="negative"/>
+            </f>
+            <f name="pertinence">
+               <binary value="true"/>
+            </f>
+            <f name="modal">
+               <binary value="true"/>
+            </f>
+            <f name="lemma">
+               <symbol value="volo"/>
+            </f>
+         </fs>
+         <fs xml:id="sen19318" type="scope">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="affirmative"/>
+            </f>
+            <f name="SoA">
+               <binary value="true"/>
+            </f>
+            <f name="control">
+               <binary value="true"/>
+            </f>
+            <f name="dynamicity">
+               <binary value="true"/>
+            </f>
+            <f name="participant">
+               <symbol value="explicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
+         </fs>
+         <fs xml:id="sen19300" type="marker">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="negative"/>
+            </f>
+            <f name="pertinence">
+               <binary value="true"/>
+            </f>
+            <f name="modal">
+               <binary value="true"/>
+            </f>
+            <f name="lemma">
+               <symbol value="volo"/>
+            </f>
+         </fs>
+         <fs xml:id="sen19404" type="scope">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="affirmative"/>
+            </f>
+            <f name="SoA">
+               <binary value="true"/>
+            </f>
+            <f name="control">
+               <binary value="true"/>
+            </f>
+            <f name="dynamicity">
+               <binary value="true"/>
+            </f>
+            <f name="participant">
+               <symbol value="explicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
+         </fs>
+         <fs xml:id="sen19422" type="marker">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="negative"/>
+            </f>
+            <f name="pertinence">
+               <binary value="true"/>
+            </f>
+            <f name="modal">
+               <binary value="true"/>
+            </f>
+            <f name="lemma">
+               <symbol value="volo"/>
+            </f>
+         </fs>
+         <fs xml:id="sen19547" type="scope">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="affirmative"/>
+            </f>
+            <f name="SoA">
+               <binary value="true"/>
+            </f>
+            <f name="control">
+               <binary value="true"/>
+            </f>
+            <f name="dynamicity">
+               <binary value="false"/>
+            </f>
+            <f name="participant">
+               <symbol value="explicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
+         </fs>
+         <fs xml:id="sen19511" type="marker">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="negative"/>
+            </f>
+            <f name="pertinence">
+               <binary value="true"/>
+            </f>
+            <f name="modal">
+               <binary value="true"/>
+            </f>
+            <f name="lemma">
+               <symbol value="volo"/>
+            </f>
+         </fs>
+         <fs xml:id="sen19639" type="scope">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="affirmative"/>
+            </f>
+            <f name="SoA">
+               <binary value="true"/>
+            </f>
+            <f name="control">
+               <binary value="true"/>
+            </f>
+            <f name="dynamicity">
+               <binary value="true"/>
+            </f>
+            <f name="participant">
+               <symbol value="explicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="inanimate_patient"/>
+            </f>
+         </fs>
+         <fs xml:id="sen19621" type="marker">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="affirmative"/>
+            </f>
+            <f name="pertinence">
+               <binary value="true"/>
+            </f>
+            <f name="modal">
+               <binary value="true"/>
+            </f>
+            <f name="lemma">
+               <symbol value="ndus"/>
+            </f>
+         </fs>
+         <fs xml:id="sen19946" type="scope">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="affirmative"/>
+            </f>
+            <f name="SoA">
+               <binary value="true"/>
+            </f>
+            <f name="control">
+               <binary value="true"/>
+            </f>
+            <f name="dynamicity">
+               <binary value="true"/>
+            </f>
+            <f name="participant">
+               <symbol value="implicit"/>              
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
+         </fs>
+         <fs xml:id="sen19928" type="marker">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="affirmative"/>
+            </f>
+            <f name="pertinence">
+               <binary value="true"/>
+            </f>
+            <f name="modal">
+               <binary value="true"/>
+            </f>
+            <f name="lemma">
+               <symbol value="aequus"/>
+            </f>
+         </fs>
+         <fs xml:id="sen19816" type="scope">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="affirmative"/>
+            </f>
+            <f name="SoA">
+               <binary value="true"/>
+            </f>
+            <f name="control">
+               <binary value="true"/>
+            </f>
+            <f name="dynamicity">
+               <binary value="true"/>
+            </f>
+            <f name="participant">
+               <symbol value="explicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="inanimate_patient"/>
+            </f>
+         </fs>
+         <fs xml:id="sen19780" type="marker">
+            <f name="lemma">
+               <symbol value="possum"/>
+            </f>
+         </fs>
+         <fs xml:id="sen19908" type="relation">
+            <f name="modality">
+               <symbol value="deontic"/>
+            </f>
+            <f name="marker" fVal="sen19872"/>
+            <f name="scope" fVal="sen19890"/>
+            <f name="type">
+               <symbol value="authority"/>
+            </f>
+            <f name="subtype">
+               <symbol value="obligation"/>
+            </f>
+            <f name="context">
+               <symbol value="official"/>
+            </f>
+            <f name="source">
+               <symbol value="unspecified_norms"/>
+            </f>
+         </fs>
+         <fs xml:id="sen18265" type="relation">
+            <f name="modality">
+               <symbol value="deontic"/>
+            </f>
+            <f name="marker" fVal="sen18198"/>
+            <f name="scope" fVal="sen18247"/>
+            <f name="type">
+               <symbol value="volition"/>
+            </f>
+            <f name="function">
+               <symbol value="pragmatic"/>
+            </f>
+            <f name="note">
+               <string>The subjunctive of volo is used to express an order.</string>
+            </f>
+         </fs>
+         <fs xml:id="sen18412" type="relation">
+            <f name="modality">
+               <symbol value="dynamic"/>
+            </f>
+            <f name="marker" fVal="sen18376"/>
+            <f name="scope" fVal="sen18394"/>
+            <f name="meaning">
+               <symbol value="necessity"/>
+            </f>
+            <f name="type">
+               <symbol value="participant-imposed"/>
+            </f>
+            <f name="subtype">
+               <symbol value="none"/>
+            </f>
+         </fs>
+         <fs xml:id="sen18546" type="relation">
+            <f name="modality">
+               <symbol value="deontic"/>
+            </f>
+            <f name="marker" fVal="sen18459"/>
+            <f name="scope" fVal="sen18477"/>
+            <f name="type">
+               <symbol value="volition"/>
+            </f>
+            <f name="function">
+               <symbol value="pragmatic"/>
+            </f>
+            <f name="note">
+               <string>NB. it works like a kind of imperative</string>
+            </f>
+         </fs>
+         <fs xml:id="sen18640" type="relation">
+            <f name="modality">
+               <symbol value="deontic"/>
+            </f>
+            <f name="marker" fVal="sen18584"/>
+            <f name="scope" fVal="sen18602"/>
+            <f name="type">
+               <symbol value="volition"/>
+            </f>
+            <f name="function">
+               <symbol value="pragmatic"/>
+            </f>
+            <f name="note">
+               <string>order</string>
+            </f>
+         </fs>
+         <fs xml:id="sen18864" type="relation">
+            <f name="modality">
+               <symbol value="deontic"/>
+            </f>
+            <f name="marker" fVal="sen18691"/>
+            <f name="scope" fVal="sen18729"/>
+            <f name="type">
+               <symbol value="volition"/>
+            </f>
+            <f name="function">
+               <symbol value="pragmatic"/>
+            </f>
+         </fs>
+         <fs xml:id="sen19049" type="relation">
+            <f name="modality">
+               <symbol value="deontic"/>
+            </f>
+            <f name="marker" fVal="sen18884"/>
+            <f name="scope" fVal="sen18902"/>
+            <f name="type">
+               <symbol value="volition"/>
+            </f>
+            <f name="function">
+               <symbol value="pragmatic"/>
+            </f>
+            <f name="note">
+               <string>order</string>
+            </f>
+         </fs>
+         <fs xml:id="sen19069" type="relation">
+            <f name="modality">
+               <symbol value="deontic"/>
+            </f>
+            <f name="marker" fVal="sen18884"/>
+            <f name="scope" fVal="sen18920"/>
+            <f name="type">
+               <symbol value="volition"/>
+            </f>
+            <f name="function">
+               <symbol value="pragmatic"/>
+            </f>
+            <f name="note">
+               <string>order</string>
+            </f>
+         </fs>
+         <fs xml:id="sen19089" type="relation">
+            <f name="modality">
+               <symbol value="deontic"/>
+            </f>
+            <f name="marker" fVal="sen18884"/>
+            <f name="scope" fVal="sen18938"/>
+            <f name="type">
+               <symbol value="volition"/>
+            </f>
+            <f name="function">
+               <symbol value="pragmatic"/>
+            </f>
+            <f name="note">
+               <string>order</string>
+            </f>
+         </fs>
+         <fs xml:id="sen19109" type="relation">
+            <f name="modality">
+               <symbol value="deontic"/>
+            </f>
+            <f name="marker" fVal="sen18884"/>
+            <f name="scope" fVal="sen18956"/>
+            <f name="type">
+               <symbol value="volition"/>
+            </f>
+            <f name="function">
+               <symbol value="pragmatic"/>
+            </f>
+            <f name="note">
+               <string>order</string>
+            </f>
+         </fs>
+         <fs xml:id="sen20135" type="relation">
+            <f name="modality">
+               <symbol value="deontic"/>
+            </f>
+            <f name="marker" fVal="sen20054"/>
+            <f name="scope" fVal="sen20117"/>
+            <f name="type">
+               <symbol value="volition"/>
+            </f>
+            <f name="function">
+               <symbol value="pragmatic"/>
+            </f>
+         </fs>
+         <fs xml:id="sen19262" type="relation">
+            <f name="modality">
+               <symbol value="deontic"/>
+            </f>
+            <f name="marker" fVal="sen19200"/>
+            <f name="scope" fVal="sen19224"/>
+            <f name="type">
+               <symbol value="volition"/>
+            </f>
+            <f name="function">
+               <symbol value="pragmatic"/>
+            </f>
+            <f name="note">
+               <string>order</string>
+            </f>
+         </fs>
+         <fs xml:id="sen19336" type="relation">
+            <f name="modality">
+               <symbol value="deontic"/>
+            </f>
+            <f name="marker" fVal="sen19300"/>
+            <f name="scope" fVal="sen19318"/>
+            <f name="type">
+               <symbol value="volition"/>
+            </f>
+            <f name="function">
+               <symbol value="pragmatic"/>
+            </f>
+            <f name="note">
+               <string>order</string>
+            </f>
+         </fs>
+         <fs xml:id="sen19488" type="relation">
+            <f name="modality">
+               <symbol value="deontic"/>
+            </f>
+            <f name="marker" fVal="sen19422"/>
+            <f name="scope" fVal="sen19404"/>
+            <f name="type">
+               <symbol value="volition"/>
+            </f>
+            <f name="function">
+               <symbol value="pragmatic"/>
+            </f>
+            <f name="note">
+               <string>order</string>
+            </f>
+         </fs>
+         <fs xml:id="sen19578" type="relation">
+            <f name="modality">
+               <symbol value="deontic"/>
+            </f>
+            <f name="marker" fVal="sen19511"/>
+            <f name="scope" fVal="sen19547"/>
+            <f name="type">
+               <symbol value="volition"/>
+            </f>
+            <f name="function">
+               <symbol value="pragmatic"/>
+            </f>
+            <f name="note">
+               <string>order</string>
+            </f>
+         </fs>
+         <fs xml:id="sen19666" type="relation">
+            <f name="modality">
+               <symbol value="deontic"/>
+            </f>
+            <f name="marker" fVal="sen19621"/>
+            <f name="scope" fVal="sen19639"/>
+            <f name="type">
+               <symbol value="authority"/>
+            </f>
+            <f name="subtype">
+               <symbol value="obligation"/>
+            </f>
+            <f name="context">
+               <symbol value="official"/>
+            </f>
+            <f name="source">
+               <symbol value="unspecified_norms"/>
+            </f>
+         </fs>
+         <fs xml:id="sen19987" type="relation">
+            <f name="modality">
+               <symbol value="deontic"/>
+            </f>
+            <f name="marker" fVal="sen19928"/>
+            <f name="scope" fVal="sen19946"/>
+            <f name="type">
+               <symbol value="acceptability"/>
+            </f>
+            <f name="degree">
+               <symbol value="absolutely_necessary"/>
+            </f>
+            <f name="function">
+               <symbol value="pragmatic"/>
+            </f>
+            <f name="note">
+               <string>order (obligation) NB. The participant of the scope is not
+                  determined.</string>
+            </f>
+         </fs>
+         <fs xml:id="sen19834" type="relation">
+            <f name="modality">
+               <symbol value="dynamic"/>
+            </f>
+            <f name="marker" fVal="sen19780"/>
+            <f name="scope" fVal="sen19816"/>
+            <f name="meaning">
+               <symbol value="possibility"/>
+            </f>
+            <f name="type">
+               <symbol value="situational"/>
+            </f>
+            <f name="subtype">
+               <symbol value="none"/>
+            </f>
+         </fs>
+      </back>
+   </text>
+</TEI>
