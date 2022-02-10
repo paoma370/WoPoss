@@ -10,10 +10,6 @@
          <editionStmt>
             <edition>WoPoss corpus</edition>
             <respStmt>
-               <resp>Text retrieval, preprocessing, and automatic linguistic annotation</resp>
-               <name>Helena Bermúdez Sabel</name>
-            </respStmt>
-            <respStmt>
                <resp>Semantic annotation and correction of the linguistic annotation of modal
                   passages</resp>
                <name>Séverine Reymond</name>
@@ -23,7 +19,7 @@
                <name>Francesca Dell’Oro</name>
             </respStmt>
             <respStmt>
-               <resp>TEI conversion</resp>
+               <resp>Text retrieval, preprocessing, automatic linguistic annotation and TEI conversion</resp>
                <name>Helena Bermúdez Sabel</name>
             </respStmt>
          </editionStmt>
