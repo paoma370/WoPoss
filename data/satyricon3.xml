@@ -514,22 +514,20 @@
                </seg>
                <pc>,</pc>
                <w pos="VERB" lemma="volo" msd="#sat3d1e2123">
-                  <seg function="marker" ana="#sat3443072">velit<note>Collocation velit nolit.
-                        Implicit scope: nomen meum legere.</note>
-                  </seg>
+                  <seg function="marker" ana="#sat3443072">velit</seg>
                </w>
                <w pos="VERB" lemma="nolo" msd="#sat3d1e2130">
-                  <seg function="marker" ana="#sat3443090">nolit<note>Collocation velit nolit.
-                        Implicit scope: nomen meum legere.</note>
-                  </seg>
+                  <seg function="marker" ana="#sat3443090">nolit</seg>
                </w>
+               <supplied>
+                  <seg function="scope" ana="#sat3443230"><w pos="NOUN" lemma="nomen">nomen</w>
+                     <w pos="ADJ" lemma="meus">meum</w>
+                     <w pos="VERB" lemma="lego" msd="#sat3d1e2156" function="main">
+                  legere</w></seg></supplied>
                <pc>,</pc>
                <w pos="NOUN" lemma="nomen">nomen</w>
                <w pos="ADJ" lemma="meus">meum</w>
-               <w pos="VERB" lemma="lego" msd="#sat3d1e2156" function="main">
-                  <seg function="scope" ana="#sat3443230">legat<note>implicit scope</note>
-                  </seg>
-               </w>
+               <w pos="VERB" lemma="lego" msd="#sat3d1e2156">legat</w>
                <pc>.</pc>
             </s>
             <s n="28">
@@ -619,7 +617,8 @@
             </s>
             <s n="34">
                <w pos="CCONJ" lemma="et">et</w>
-               <w pos="NOUN" lemma="tu.">tu.</w>
+               <w pos="NOUN" lemma="tu">tu</w>
+               <pc>.</pc>
                <pc>”</pc>
             </s>
             <s n="35">
@@ -2331,19 +2330,17 @@
             </s>
             <s n="150">
                <w pos="ADV" lemma="cieo">Cito</w>
-               <w pos="VERB" lemma="fio" msd="#sat3d1e10621" function="main">
-                  <seg function="scope" ana="#sat3444259">fit<note>Implicit scope: fieri.</note>
-                  </seg>
-               </w>
+               <w pos="VERB" lemma="fio">fit</w>
                <pc>,</pc>
                <w pos="PRON" lemma="qui" msd="#sat3d1e10632">
                   <seg function="participant" type="inanimate" corresp="#sat3444259">quod</seg>
                </w>
                <w pos="ADJ" lemma="de">di</w>
                <w pos="VERB" lemma="volo" msd="#sat3d1e10645">
-                  <seg function="marker" ana="#sat3444241">volunt<note>Implicit scope: fieri.</note>
-                  </seg>
+                  <seg function="marker" ana="#sat3444241">volunt</seg>
                </w>
+               <supplied>
+                  <seg function="scope" ana="#sat3444259"><w>fieri</w></seg></supplied>
                <pc>.</pc>
             </s>
             <s n="151">
@@ -3428,7 +3425,9 @@
                <seg function="scope" ana="#sat3444900">
                   <w pos="NOUN" lemma="pars" msd="#sat3d1e15726">partem</w>
                   <w pos="PRON" lemma="meus" msd="#sat3d1e15732">meam</w>
-                  <note>A verb (obtinere?) is implicit.</note>
+                  <supplied>
+                     <w>obtinere</w>
+                  </supplied>
                </seg>
                <seg function="marker" ana="#sat3444882">
                   <w pos="NOUN" lemma="necesse">necesse</w>
@@ -3561,12 +3560,13 @@
                <w pos="VERB" lemma="volo" msd="#sat3d1e16339">
                   <seg function="marker" ana="#sat3445068">vult</seg>
                </w>
-               <pc>,</pc>
-               <w pos="VERB" lemma="sequor" msd="#sat3d1e16352" function="main">
-                  <seg function="scope" ana="#sat3445086">sequatur<note>implicit scope
-                        'sequi'</note>
+               <supplied>
+                  <seg function="scope" ana="#sat3445086">
+                     <w>sequi</w>
                   </seg>
-               </w>
+               </supplied>
+               <pc>,</pc>
+               <w pos="VERB" lemma="sequor">sequatur</w>
                <pc>,</pc>
                <w pos="SCONJ" lemma="ut">ut</w>
                <w pos="VERB" lemma="sum">sit</w>
@@ -7882,7 +7882,8 @@
                <w pos="ADP" lemma="super">super</w>
                <w pos="NOUN" lemma="lectus">lectum</w>
                <pc>,</pc>
-               <w pos="NOUN" lemma="Nerro">“erras</w>
+               <pc>“</pc>
+               <w pos="NOUN" lemma="erro">erras</w>
                <pc>”</pc>
                <w pos="VERB" lemma="inquam">inquit</w>
                <w pos="NOUN" lemma="nencoleus">“Encolpi</w>
@@ -7893,11 +7894,8 @@
                   <w pos="VERB" lemma="contingo" msd="#sat3d1e37296" function="main">contingere</w>
                </seg>
                <w pos="VERB" lemma="possum" msd="#sat3d1e37303">
-                  <seg function="marker" ana="#sat3447345">posse<note>Teubner: contingere posse ut
-                        ante moriaris (no comma)</note>
-                  </seg>
+                  <seg function="marker" ana="#sat3447345">posse</seg>
                </w>
-               <pc>,</pc>
                <seg function="scope" part="Y" ana="#sat3447363">
                   <w pos="SCONJ" lemma="ut">ut</w>
                   <w pos="ADV" lemma="ante">ante</w>
@@ -9345,11 +9343,11 @@
                <w pos="VERB" lemma="malo" msd="#sat3d1e44138">
                   <seg function="marker" ana="#sat3448653">mavultis</seg>
                </w>
+               <supplied>
+                  <seg function="scope" ana="#sat3448671"><w>ducere</w></seg>
+               </supplied>
                <pc>,</pc>
-               <w pos="VERB" lemma="duco" msd="#sat3d1e44150" function="main">
-                  <seg function="scope" ana="#sat3448671">ducite<note>Implicit scope</note>
-                  </seg>
-               </w>
+               <w pos="VERB" lemma="duco">ducite</w>
                <pc>.</pc>
                <pc>”</pc>
             </s>
@@ -9835,15 +9833,21 @@
                <w pos="VERB" lemma="licet" msd="#sat3d1e46344">
                   <seg function="marker" ana="#sat3449114">licet</seg>
                </w>
+               <supplied>                  
+                  <seg function="scope" ana="#sat3449212">
+                     <w pos="VERB" lemma="sum" msd="#sat3d1e46368">esse</w>
+                     <w pos="ADP" lemma="pro">pro</w>
+                     <w pos="NOUN" lemma="munus" msd="#sat3d1e46379">munere</w>
+                  </seg>
+               </supplied>
                <pc>,</pc>
                <w pos="VERB" lemma="possum" msd="#sat3d1e46356">
                   <seg function="marker" ana="#sat3449132">potest</seg>
                </w>
-               <seg function="scope" ana="#sat3449150 #sat3449212">
+               <seg function="scope" ana="#sat3449150">
                   <w pos="VERB" lemma="sum" msd="#sat3d1e46368" function="main">esse</w>
                   <w pos="ADP" lemma="pro">pro</w>
                   <w pos="NOUN" lemma="munus" msd="#sat3d1e46379">munere</w>
-                  <note>implicit scope</note>
                </seg>
                <pc>.</pc>
             </s>
@@ -10854,6 +10858,7 @@
                   <w pos="VERB" lemma="consentio" msd="#sat3d1e50762" function="main"
                      >consentiant</w>
                </seg>
+               <pc>,</pc>
                <w pos="CCONJ" lemma="ut">ut</w>
                <w pos="ADJ" lemma="ommnis">omni</w>
                <w pos="NOUN" lemma="ratio">ratione</w>
@@ -17817,9 +17822,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="false"/>
             </f>
@@ -17840,9 +17843,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <symbol value="ambiguous"/>
             </f>
@@ -17880,9 +17881,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -17937,9 +17936,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -17967,8 +17964,7 @@
                <binary value="true"/>
             </f>
             <f name="note">
-               <string>Collocation velit nolit. Implicit scope: nomen meum legere.</string>
-            </f>
+               <string>Collocation velit nolit</string></f>
             <f name="lemma">
                <symbol value="volo"/>
             </f>
@@ -17987,7 +17983,7 @@
                <binary value="true"/>
             </f>
             <f name="note">
-               <string>Collocation velit nolit. Implicit scope: nomen meum legere.</string>
+               <string>Collocation velit nolit</string>
             </f>
             <f name="lemma">
                <symbol value="nolo"/>
@@ -18000,17 +17996,12 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
             <f name="dynamicity">
                <binary value="true"/>
-            </f>
-            <f name="note">
-               <string>implicit scope</string>
             </f>
             <f name="participant">
                <symbol value="explicit"/>
@@ -18043,9 +18034,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -18066,9 +18055,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -18095,9 +18082,6 @@
             <f name="modal">
                <binary value="true"/>
             </f>
-            <f name="note">
-               <string>Implicit scope: in omnibus decuriis Romae esse.</string>
-            </f>
             <f name="lemma">
                <symbol value="nolo"/>
             </f>
@@ -18109,9 +18093,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="false"/>
             </f>
@@ -18160,9 +18142,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -18217,9 +18197,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -18257,9 +18235,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="false"/>
             </f>
@@ -18291,9 +18267,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -18348,9 +18322,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="false"/>
             </f>
@@ -18388,9 +18360,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -18428,9 +18398,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -18468,9 +18436,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -18502,17 +18468,12 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
             <f name="dynamicity">
                <binary value="true"/>
-            </f>
-            <f name="note">
-               <string>Implicit scope: fieri.</string>
             </f>
             <f name="participant">
                <symbol value="explicit"/>
@@ -18533,9 +18494,6 @@
             </f>
             <f name="modal">
                <binary value="true"/>
-            </f>
-            <f name="note">
-               <string>Implicit scope: fieri.</string>
             </f>
             <f name="lemma">
                <symbol value="volo"/>
@@ -18565,9 +18523,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -18605,9 +18561,7 @@
             <f name="polarity">
                <symbol value="negative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -18645,9 +18599,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -18685,9 +18637,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -18730,9 +18680,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="false"/>
             </f>
@@ -18770,9 +18718,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="false"/>
             </f>
@@ -18827,9 +18773,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -18850,9 +18794,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -18864,9 +18806,6 @@
             </f>
             <f name="participantType">
                <symbol value="animate"/>
-            </f>
-            <f name="note">
-               <string>A verb (obtinere?) is implicit.</string>
             </f>
          </fs>
          <fs xml:id="sat3444882" type="marker">
@@ -18896,9 +18835,6 @@
             <f name="SoA">
                <binary value="false"/>
             </f>
-            <f name="participant">
-               <symbol value="none"/>
-            </f>
          </fs>
          <fs xml:id="sat3444956" type="marker">
             <f name="utterance">
@@ -18924,9 +18860,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="false"/>
             </f>
@@ -18981,17 +18915,12 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
             <f name="dynamicity">
                <binary value="true"/>
-            </f>
-            <f name="note">
-               <string>implicit scope 'sequi'</string>
             </f>
             <f name="participant">
                <symbol value="explicit"/>
@@ -19007,9 +18936,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="false"/>
             </f>
@@ -19047,9 +18974,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="false"/>
             </f>
@@ -19104,9 +19029,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -19114,7 +19037,7 @@
                <binary value="true"/>
             </f>
             <f name="note">
-               <string>personification (terra)</string>
+               <string>Participant is a personification</string>
             </f>
             <f name="participant">
                <symbol value="explicit"/>
@@ -19147,9 +19070,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -19187,9 +19108,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -19210,9 +19129,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -19250,9 +19167,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -19290,9 +19205,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -19347,9 +19260,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="false"/>
             </f>
@@ -19384,9 +19295,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -19424,9 +19333,7 @@
             <f name="polarity">
                <symbol value="negative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -19434,7 +19341,7 @@
                <binary value="false"/>
             </f>
             <f name="participant">
-               <symbol value="implicit"/>
+               <symbol value="explicit"/>
             </f>
             <f name="participantType">
                <symbol value="animate"/>
@@ -19447,17 +19354,12 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
             <f name="dynamicity">
                <binary value="true"/>
-            </f>
-            <f name="note">
-               <string>implicit scope: insectari</string>
             </f>
             <f name="participant">
                <symbol value="explicit"/>
@@ -19507,9 +19409,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <symbol value="ambiguous"/>
             </f>
@@ -19530,9 +19430,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <symbol value="ambiguous"/>
             </f>
@@ -19570,9 +19468,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="false"/>
             </f>
@@ -19616,9 +19512,6 @@
             <f name="SoA">
                <binary value="false"/>
             </f>
-            <f name="participant">
-               <symbol value="none"/>
-            </f>
          </fs>
          <fs xml:id="sat3446450" type="marker">
             <f name="utterance">
@@ -19644,9 +19537,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -19717,9 +19608,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="false"/>
             </f>
@@ -19771,9 +19660,6 @@
             <f name="SoA">
                <binary value="false"/>
             </f>
-            <f name="participant">
-               <symbol value="none"/>
-            </f>
          </fs>
          <fs xml:id="sat3446757" type="marker">
             <f name="utterance">
@@ -19799,9 +19685,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="false"/>
             </f>
@@ -19856,9 +19740,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -19907,9 +19789,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -19930,9 +19810,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -19987,9 +19865,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="false"/>
             </f>
@@ -20020,9 +19896,6 @@
             </f>
             <f name="SoA">
                <binary value="false"/>
-            </f>
-            <f name="participant">
-               <symbol value="none"/>
             </f>
          </fs>
          <fs xml:id="sat3447177" type="marker">
@@ -20066,9 +19939,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -20089,9 +19960,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -20112,9 +19981,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="false"/>
             </f>
@@ -20138,9 +20005,6 @@
             <f name="modal">
                <binary value="true"/>
             </f>
-            <f name="note">
-               <string>Teubner: contingere posse ut ante moriaris (no comma)</string>
-            </f>
             <f name="lemma">
                <symbol value="possum"/>
             </f>
@@ -20152,17 +20016,12 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
             <f name="dynamicity">
                <binary value="true"/>
-            </f>
-            <f name="note">
-               <string>Teubner: petiturus praecipitia fui</string>
             </f>
             <f name="participant">
                <symbol value="explicit"/>
@@ -20195,9 +20054,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -20246,9 +20103,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -20286,9 +20141,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -20326,9 +20179,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -20366,9 +20217,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -20389,9 +20238,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -20446,9 +20293,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="false"/>
             </f>
@@ -20497,9 +20342,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -20537,9 +20380,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -20560,9 +20401,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -20617,9 +20456,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -20657,9 +20494,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -20680,9 +20515,7 @@
             <f name="polarity">
                <symbol value="negative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="false"/>
             </f>
@@ -20759,9 +20592,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="false"/>
             </f>
@@ -20802,9 +20633,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -20817,9 +20646,6 @@
             <f name="participantType">
                <symbol value="animate"/>
             </f>
-            <f name="note">
-               <string>Implicit scope</string>
-            </f>
          </fs>
          <fs xml:id="sat3448782" type="scope">
             <f name="utterance">
@@ -20828,9 +20654,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -20868,9 +20692,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -20925,9 +20747,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -20965,9 +20785,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -20988,9 +20806,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -21062,9 +20878,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="false"/>
             </f>
@@ -21085,17 +20899,12 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="false"/>
             </f>
             <f name="dynamicity">
                <binary value="false"/>
-            </f>
-            <f name="note">
-               <string>implicit scope</string>
             </f>
             <f name="participant">
                <symbol value="explicit"/>
@@ -21111,9 +20920,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -21151,9 +20958,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -21205,9 +21010,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -21262,9 +21065,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -21275,7 +21076,7 @@
                <symbol value="implicit"/>
             </f>
             <f name="participantType">
-               <symbol value="animate"/>
+               <symbol value=""/>
             </f>
          </fs>
          <fs xml:id="sat3449829" type="scope">
@@ -21285,9 +21086,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="false"/>
             </f>
@@ -21339,9 +21138,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <symbol value="ambiguous"/>
             </f>
@@ -21379,9 +21176,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -21430,9 +21225,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -21453,9 +21246,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -21493,9 +21284,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -21533,9 +21322,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -21590,9 +21377,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -21613,9 +21398,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -21636,9 +21419,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="false"/>
             </f>
@@ -21676,9 +21457,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -21716,9 +21495,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <symbol value="ambiguous"/>
             </f>
@@ -21756,9 +21533,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -21813,9 +21588,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <symbol value="ambiguous"/>
             </f>
@@ -21847,9 +21620,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -21904,9 +21675,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="false"/>
             </f>
@@ -21944,17 +21713,12 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="false"/>
             </f>
             <f name="dynamicity">
                <binary value="false"/>
-            </f>
-            <f name="note">
-               <string>Ed.prob.: consentiant, ut omni ratione mendacium constet [Teubner]</string>
             </f>
             <f name="participant">
                <symbol value="explicit"/>
@@ -21970,9 +21734,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="false"/>
             </f>
@@ -22049,9 +21811,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -22072,9 +21832,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -22129,9 +21887,7 @@
             <f name="polarity">
                <symbol value="negative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -22169,9 +21925,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -22192,9 +21946,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="false"/>
             </f>
@@ -22205,7 +21957,7 @@
                <symbol value="implicit"/>
             </f>
             <f name="participantType">
-               <symbol value="animate"/>
+               <symbol value=""/>
             </f>
          </fs>
          <fs xml:id="sat3451792" type="marker">
@@ -22232,9 +21984,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="true"/>
             </f>
@@ -22265,7 +22015,7 @@
                <symbol value="bilis"/>
             </f>
          </fs>
-         <!--  <fs xml:id="sat3443364" type="scope">
+     <!-- <fs xml:id="sat3443364" type="scope">
             <f name="utterance">
                <symbol value="non-interrogative"/>
             </f>
@@ -22281,17 +22031,15 @@
             <f name="sentence">
                <symbol value=""/>
             </f>
-         </fs>-->
-         <!-- <fs xml:id="sat3443402" type="scope">
+         </fs> -->
+<!--         <fs xml:id="sat3443402" type="scope">
             <f name="utterance">
                <symbol value="non-interrogative"/>
             </f>
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <binary value="false"/>
             </f>
@@ -22307,13 +22055,12 @@
             <f name="sentence">
                <symbol value=""/>
             </f>
-         </fs>-->
-         <!--         <fs xml:id="sat3443308" type="marker">
+         </fs>-->     <!--<fs xml:id="sat3443308" type="marker">
             <f name="lemma">
                <symbol value=""/>
             </f>
-         </fs>
-         <fs xml:id="sat3443326" type="scope">
+         </fs>-->
+<!--         <fs xml:id="sat3443326" type="scope">
             <f name="participant">
                <symbol value="implicit"/>
             </f>
@@ -22323,17 +22070,15 @@
             <f name="sentence">
                <symbol value=""/>
             </f>
-         </fs>-->
-         <!--<fs xml:id="sat3446160" type="scope">
+         </fs> -->
+   <!--      <fs xml:id="sat3446160" type="scope">
             <f name="utterance">
                <symbol value="non-interrogative"/>
             </f>
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            <f name="SoA">
-               <binary value="true"/>
-            </f>
+            
             <f name="control">
                <symbol value="ambiguous"/>
             </f>
@@ -22349,8 +22094,8 @@
             <f name="sentence">
                <symbol value=""/>
             </f>
-         </fs>
-         <fs xml:id="sat3446142" type="marker">
+         </fs>-->
+<!--         <fs xml:id="sat3446142" type="marker">
             <f name="utterance">
                <symbol value="non-interrogative"/>
             </f>
@@ -22428,9 +22173,6 @@
             <f name="type">
                <symbol value="volition"/>
             </f>
-            <f name="note">
-               <string>Implicit scope.</string>
-            </f>
          </fs>
          <fs xml:id="sat3443268" type="relation">
             <f name="modality">
@@ -22440,9 +22182,6 @@
             <f name="scope" fVal="sat3443230"/>
             <f name="type">
                <symbol value="volition"/>
-            </f>
-            <f name="note">
-               <string>Implicit scope.</string>
             </f>
          </fs>
          <fs xml:id="sat3443180" type="relation">
@@ -22471,7 +22210,7 @@
                <symbol value="volition"/>
             </f>
          </fs>
-         <!--  <fs xml:id="sat3443420" type="relation">
+           <!--<fs xml:id="sat3443420" type="relation">
             <f name="modality">
                <symbol value="dynamic"/>
             </f>
@@ -22486,7 +22225,7 @@
             <f name="subtype">
                <symbol value="inevitability"/>
             </f>
-         </fs>-->
+         </fs>--><!--
          <fs xml:id="sat3443344" type="relation">
             <f name="modality">
                <symbol value="dynamic"/>
@@ -22518,7 +22257,7 @@
             <f name="subtype">
                <symbol value="inevitability"/>
             </f>
-         </fs>
+         </fs>-->
          <fs xml:id="sat3443476" type="relation">
             <f name="modality">
                <symbol value="dynamic"/>
@@ -22660,7 +22399,7 @@
                <symbol value="pragmatic"/>
             </f>
             <f name="note">
-               <string>deontic volition</string>
+               <string>From deontic volition</string>
             </f>
          </fs>
          <fs xml:id="sat3444150" type="relation">
@@ -22697,9 +22436,6 @@
             <f name="scope" fVal="sat3444259"/>
             <f name="type">
                <symbol value="volition"/>
-            </f>
-            <f name="note">
-               <string>Implicit scope: fieri.</string>
             </f>
          </fs>
          <fs xml:id="sat3444315" type="relation">
@@ -22853,9 +22589,6 @@
             <f name="scope" fVal="sat3445086"/>
             <f name="type">
                <symbol value="volition"/>
-            </f>
-            <f name="note">
-               <string>scope is implicit</string>
             </f>
          </fs>
          <fs xml:id="sat3445193" type="relation">
@@ -23016,9 +22749,6 @@
             <f name="subtype">
                <symbol value="none"/>
             </f>
-            <f name="note">
-               <string>scope is implicit!</string>
-            </f>
          </fs>
          <fs xml:id="sat3446104" type="relation">
             <f name="modality">
@@ -23034,9 +22764,6 @@
             </f>
             <f name="subtype">
                <symbol value="none"/>
-            </f>
-            <f name="note">
-               <string>scope is implicit!</string>
             </f>
          </fs>
          <!--         <fs xml:id="sat3446178" type="relation">
