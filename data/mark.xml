@@ -70,7 +70,7 @@
                <s n="none" synch="#mk09_01"/>
             </ab>
             <ab>
-               <s n="19">
+               <s rend="19">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="NOUN" lemma="progriteor">progressus</w>
                   <w pos="ADV" lemma="inde">inde</w>
@@ -89,7 +89,7 @@
                   <w pos="VERB" lemma="conpono">conponentes</w>
                   <w pos="NOUN" lemma="retia">retia</w>
                </s>
-               <s n="20">
+               <s rend="20">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="ADV" lemma="statim">statim</w>
                   <w pos="VERB" lemma="voco">vocavit</w>
@@ -107,7 +107,7 @@
                   <w pos="VERB" lemma="sum">sunt</w>
                   <w pos="PRON" lemma="is">eum</w>
                </s>
-               <s n="21">
+               <s rend="21">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="ingredior">ingrediuntur</w>
                   <w pos="NOUN" lemma="Capharnus">Capharnaum</w>
@@ -119,7 +119,7 @@
                   <w pos="VERB" lemma="doceo">docebat</w>
                   <w pos="PRON" lemma="is">eos</w>
                </s>
-               <s n="22">
+               <s rend="22">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="stupio">stupebant</w>
                   <w pos="ADP" lemma="super">super</w>
@@ -139,7 +139,7 @@
                   <w pos="ADV" lemma="sicut">sicut</w>
                   <w pos="NOUN" lemma="scribo">scribae</w>
                </s>
-               <s n="23">
+               <s rend="23">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="sum">erat</w>
                   <w pos="ADP" lemma="in">in</w>
@@ -152,7 +152,7 @@
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="exclamo">exclamavit</w>
                </s>
-               <s n="24">
+               <s rend="24">
                   <w pos="VERB" lemma="dico">dicens</w>
                   <w pos="PRON" lemma="quis">quid</w>
                   <w pos="PRON" lemma="nos">nobis</w>
@@ -169,7 +169,7 @@
                   <w pos="NOUN" lemma="sanctus">Sanctus</w>
                   <w pos="NOUN" lemma="deus">Dei</w>
                </s>
-               <s n="25">
+               <s rend="25">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="comminor">comminatus</w>
                   <w pos="VERB" lemma="sum">est</w>
@@ -182,7 +182,7 @@
                   <w pos="ADP" lemma="de">de</w>
                   <w pos="NOUN" lemma="homo">homine</w>
                </s>
-               <s n="26" synch="#mk01_26">
+               <s rend="26" synch="#mk01_26">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="discerpo">discerpens</w>
                   <w pos="PRON" lemma="is">eum</w>
@@ -196,7 +196,7 @@
                   <w pos="ADP" lemma="ab">ab</w>
                   <w pos="PRON" lemma="is">eo</w>
                </s>
-               <s n="27" synch="#mk01_27b">
+               <s rend="27" synch="#mk01_27b">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="miror">mirati</w>
                   <w pos="VERB" lemma="sum">sunt</w>
@@ -227,7 +227,7 @@
                   <w pos="VERB" lemma="obo">oboediunt</w>
                   <w>ei</w>
                </s>
-               <s n="28">
+               <s rend="28">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="procedo">processit</w>
                   <w pos="NOUN" lemma="rumor">rumor</w>
@@ -238,7 +238,7 @@
                   <w pos="NOUN" lemma="regio">regionem</w>
                   <w pos="NOUN" lemma="Galilaeus">Galilaeae</w>
                </s>
-               <s n="29">
+               <s rend="29">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="ADV" lemma="protinus">protinus</w>
                   <w pos="VERB" lemma="egredior">egredientes</w>
@@ -255,7 +255,7 @@
                   <w pos="CCONJ" lemma="et">et</w>
                   <w>Iohanne</w>
                </s>
-               <s n="30">
+               <s rend="30">
                   <w pos="VERB" lemma="decumbo">decumbebat</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="NOUN" lemma="socrus">socrus</w>
@@ -268,7 +268,7 @@
                   <w pos="ADP" lemma="de">de</w>
                   <w pos="PRON" lemma="ille">illa</w>
                </s>
-               <s n="37">
+               <s rend="37">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="SCONJ" lemma="cum">cum</w>
                   <w pos="VERB" lemma="invenio">invenissent</w>
@@ -280,7 +280,7 @@
                   <w pos="VERB" lemma="quaero">quaerunt</w>
                   <w pos="PRON" lemma="tu">te</w>
                </s>
-               <s n="38">
+               <s rend="38">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="aio">ait</w>
                   <w pos="PRON" lemma="ille">illis</w>
@@ -299,7 +299,7 @@
                   <w pos="SCONJ" lemma="enim">enim</w>
                   <w>veni</w>
                </s>
-               <s n="39">
+               <s rend="39">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="sum">erat</w>
                   <w pos="VERB" lemma="praedico">praedicans</w>
@@ -313,7 +313,7 @@
                   <w pos="NOUN" lemma="daemonium">daemonia</w>
                   <w pos="VERB" lemma="eicio">eiciens</w>
                </s>
-               <s n="40" type="s03">
+               <s rend="40" type="s03">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="venio">venit</w>
                   <w pos="ADP" lemma="ad">ad</w>
@@ -345,7 +345,7 @@
                      <w pos="VERB" lemma="mundo" msd="#id1e3476" function="main">mundare</w>
                   </seg>
                </s>
-               <s n="41" type="s07">
+               <s rend="41" type="s07">
                   <w pos="NOUN" lemma="Iesus">Iesus</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="NOUN" lemma="misertus">misertus</w>
@@ -365,7 +365,7 @@
                      <w pos="VERB" lemma="mundo" msd="#id1e3562" function="main">mundare</w>
                   </seg>
                </s>
-               <s n="42">
+               <s rend="42">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="SCONJ" lemma="cum">cum</w>
                   <w pos="VERB" lemma="dico">dixisset</w>
@@ -378,7 +378,7 @@
                   <w pos="VERB" lemma="mundo">mundatus</w>
                   <w pos="VERB" lemma="sum">est</w>
                </s>
-               <s n="43">
+               <s rend="43">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="comminor">comminatus</w>
                   <w pos="PRON" lemma="is">ei</w>
@@ -386,7 +386,7 @@
                   <w pos="VERB" lemma="eicio">eiecit</w>
                   <w pos="PRON" lemma="ille">illum</w>
                </s>
-               <s n="44">
+               <s rend="44">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="dico">dicit</w>
                   <w pos="PRON" lemma="is">ei</w>
@@ -411,7 +411,7 @@
                   <w pos="NOUN" lemma="testimonium">testimonium</w>
                   <w pos="PRON" lemma="ille">illis</w>
                </s>
-               <s n="45">
+               <s rend="45">
                   <w pos="CCONJ" lemma="at">at</w>
                   <seg function="participant" type="animate" corresp="#u_i32274 #u_i322741">
                      <w pos="PRON" lemma="ille" msd="#id1e4482">ille</w>
@@ -460,7 +460,7 @@
          </div>
          <div type="chapter" n="2">
             <ab>
-               <s n="1">
+               <s rend="1">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="ADV" lemma="iterum">iterum</w>
                   <w pos="VERB" lemma="intravio">intravit</w>
@@ -468,7 +468,7 @@
                   <w pos="ADP" lemma="post">post</w>
                   <w pos="NOUN" lemma="dies">dies</w>
                </s>
-               <s n="2">
+               <s rend="2">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="audio">auditum</w>
                   <w pos="VERB" lemma="sum">est</w>
@@ -491,7 +491,7 @@
                   <w pos="PRON" lemma="is">eis</w>
                   <w pos="NOUN" lemma="verbum">verbum</w>
                </s>
-               <s n="3">
+               <s rend="3">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="venio">venerunt</w>
                   <w pos="VERB" lemma="fero">ferentes</w>
@@ -503,7 +503,7 @@
                   <w pos="NUM" lemma="quattuor">quattuor</w>
                   <w pos="VERB" lemma="portor">portabatur</w>
                </s>
-               <s n="4">
+               <s rend="4">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="SCONJ" lemma="cum">cum</w>
                   <w pos="ADV" lemma="non">
@@ -532,7 +532,7 @@
                   <w pos="ADJ" lemma="paralyticus">paralyticus</w>
                   <w pos="VERB" lemma="jacio">iacebat</w>
                </s>
-               <s n="5">
+               <s rend="5">
                   <w pos="SCONJ" lemma="cum">cum</w>
                   <w pos="VERB" lemma="video">vidisset</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
@@ -546,7 +546,7 @@
                   <w pos="PRON" lemma="tu">tibi</w>
                   <w pos="NOUN" lemma="pecco">peccata</w>
                </s>
-               <s n="6">
+               <s rend="6">
                   <w pos="VERB" lemma="sum">erant</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="ADV" lemma="illic">illic</w>
@@ -560,7 +560,7 @@
                   <w pos="NOUN" lemma="cordum">cordibus</w>
                   <w pos="ADJ" lemma="suus">suis</w>
                </s>
-               <s n="7" type="salpha">
+               <s rend="7" type="salpha">
                   <w pos="PRON" lemma="quis">quid</w>
                   <w pos="PRON" lemma="hic">hic</w>
                   <w pos="ADV" lemma="sic">sic</w>
@@ -580,7 +580,7 @@
                   <w pos="ADJ" lemma="solus">solus</w>
                   <w pos="NOUN" lemma="deus">Deus</w>
                </s>
-               <s n="8">
+               <s rend="8">
                   <w pos="PRON" lemma="qui">quo</w>
                   <w pos="ADV" lemma="statim">statim</w>
                   <w pos="VERB" lemma="cognosco">cognito</w>
@@ -601,7 +601,7 @@
                   <w pos="NOUN" lemma="cordum">cordibus</w>
                   <w pos="PRON" lemma="vester">vestris</w>
                </s>
-               <s n="9">
+               <s rend="9">
                   <w pos="PRON" lemma="quis">quid</w>
                   <w pos="VERB" lemma="sum">est</w>
                   <w pos="ADV" lemma="facilis">facilius</w>
@@ -620,7 +620,7 @@
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="ambula">ambula</w>
                </s>
-               <s n="10" type="sq">
+               <s rend="10" type="sq">
                   <w pos="SCONJ" lemma="ut">ut</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="VERB" lemma="scio">sciatis</w>
@@ -644,7 +644,7 @@
                   <w pos="VERB" lemma="aio">ait</w>
                   <w>paralytico</w>
                </s>
-               <s n="11">
+               <s rend="11">
                   <w pos="PRON" lemma="tu">tibi</w>
                   <w pos="VERB" lemma="dico">dico</w>
                   <w pos="VERB" lemma="surgus">surge</w>
@@ -657,7 +657,7 @@
                   <w pos="NOUN" lemma="domus">domum</w>
                   <w pos="ADJ" lemma="tuus">tuam</w>
                </s>
-               <s n="12">
+               <s rend="12">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="ADV" lemma="statim">statim</w>
                   <w pos="PRON" lemma="ille">ille</w>
@@ -681,7 +681,7 @@
                   <w pos="ADV" lemma="sic">sic</w>
                   <w pos="VERB" lemma="video">vidimus</w>
                </s>
-               <s n="13">
+               <s rend="13">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="egredior">egressus</w>
                   <w pos="VERB" lemma="sum">est</w>
@@ -697,7 +697,7 @@
                   <w pos="VERB" lemma="doceo">docebat</w>
                   <w pos="PRON" lemma="is">eos</w>
                </s>
-               <s n="14">
+               <s rend="14">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="SCONJ" lemma="cum">cum</w>
                   <w pos="VERB" lemma="praetereo">praeteriret</w>
@@ -718,7 +718,7 @@
                   <w pos="VERB" lemma="sum">est</w>
                   <w pos="PRON" lemma="is">eum</w>
                </s>
-               <s n="15">
+               <s rend="15">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="facio">factum</w>
                   <w pos="VERB" lemma="sum">est</w>
@@ -746,7 +746,7 @@
                   <w pos="VERB" lemma="sequor">sequebantur</w>
                   <w pos="PRON" lemma="is">eum</w>
                </s>
-               <s n="16">
+               <s rend="16">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="scribo">scribae</w>
                   <w pos="CCONJ" lemma="et">et</w>
@@ -772,7 +772,7 @@
                   <w pos="NOUN" lemma="magister">magister</w>
                   <w pos="PRON" lemma="vester">vester</w>
                </s>
-               <s n="17" synch="#mk02_17c" type="sα">
+               <s rend="17" synch="#mk02_17c" type="sα">
                   <w pos="PRON" lemma="hic">hoc</w>
                   <w pos="VERB" lemma="audio">audito</w>
                   <w pos="NOUN" lemma="Iesus">Iesus</w>
@@ -810,7 +810,7 @@
                   <w pos="CCONJ" lemma="sed">sed</w>
                   <w pos="NOUN" lemma="peccator">peccatores</w>
                </s>
-               <s n="18">
+               <s rend="18">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="sum">erant</w>
                   <w pos="ADJ" lemma="discipulum">discipuli</w>
@@ -835,7 +835,7 @@
                   <w pos="ADV" lemma="non">non</w>
                   <w pos="VERB" lemma="jejuno">ieiunant</w>
                </s>
-               <s n="19" type="sn">
+               <s rend="19" type="sn">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="aio">ait</w>
                   <w pos="PRON" lemma="ille">illis</w>
@@ -873,7 +873,7 @@
                      <w pos="VERB" lemma="ieiuno" msd="#id1e5886" function="main">ieiunare</w>
                   </seg>
                </s>
-               <s n="20">
+               <s rend="20">
                   <w pos="VERB" lemma="venio">venient</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="NOUN" lemma="dies">dies</w>
@@ -889,7 +889,7 @@
                   <w pos="PRON" lemma="ille">illa</w>
                   <w pos="NOUN" lemma="dies">die</w>
                </s>
-               <s n="21">
+               <s rend="21">
                   <w pos="NOUN" lemma="nemo">nemo</w>
                   <w pos="ADJ" lemma="adsumo">adsumentum</w>
                   <w pos="NOUN" lemma="pannus">panni</w>
@@ -908,7 +908,7 @@
                   <w pos="NOUN" lemma="scido">scissura</w>
                   <w pos="VERB" lemma="fio">fit</w>
                </s>
-               <s n="22" type="sbeta">
+               <s rend="22" type="sbeta">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="NOUN" lemma="nemo">nemo</w>
                   <w pos="VERB" lemma="mitto">mittit</w>
@@ -942,7 +942,7 @@
                      <seg function="marker" ana="#u_i51983" xml:id="mk02_22">debet</seg>
                   </w>
                </s>
-               <s n="23">
+               <s rend="23">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="facio">factum</w>
                   <w pos="VERB" lemma="sum">est</w>
@@ -961,7 +961,7 @@
                   <w pos="NOUN" lemma="vello">vellere</w>
                   <w pos="NOUN" lemma="spicium">spicas</w>
                </s>
-               <s n="24" type="sν">
+               <s rend="24" type="sν">
                   <w pos="NOUN" lemma="Pharisae">Pharisaei</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="VERB" lemma="dico">dicebant</w>
@@ -984,7 +984,7 @@
                      </seg>
                   </supplied>
                </s>
-               <s n="25">
+               <s rend="25">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="aio">ait</w>
                   <w pos="PRON" lemma="ille">illis</w>
@@ -1007,7 +1007,7 @@
                   <w pos="PRON" lemma="is">eo</w>
                   <w pos="VERB" lemma="sum">erant</w>
                </s>
-               <s n="26" type="sτ">
+               <s rend="26" type="sτ">
                   <w pos="ADV" lemma="quomodo">quomodo</w>
                   <w pos="VERB" lemma="introeo">introiit</w>
                   <w pos="ADP" lemma="in">in</w>
@@ -1043,7 +1043,7 @@
                   <w pos="PRON" lemma="is">eo</w>
                   <w pos="VERB" lemma="sum">erant</w>
                </s>
-               <s n="27">
+               <s rend="27">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="dico">dicebat</w>
                   <w pos="PRON" lemma="is">eis</w>
@@ -1058,7 +1058,7 @@
                   <w pos="ADP" lemma="propter">propter</w>
                   <w pos="VERB" lemma="sabbo">sabbatum</w>
                </s>
-               <s n="28">
+               <s rend="28">
                   <w pos="ADV" lemma="ita">itaque</w>
                   <w pos="NOUN" lemma="dominus">dominus</w>
                   <w pos="VERB" lemma="sum">est</w>
@@ -1071,7 +1071,7 @@
          </div>
          <div type="chapter" n="3">
             <ab>
-               <s n="1">
+               <s rend="1">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="introeo">introivit</w>
                   <w pos="ADP" lemma="iterum">iterum</w>
@@ -1084,7 +1084,7 @@
                   <w pos="NOUN" lemma="manus">manum</w>
                   <w pos="NOUN" lemma="arida">aridam</w>
                </s>
-               <s n="2">
+               <s rend="2">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="observo">observabant</w>
                   <w pos="PRON" lemma="is">eum</w>
@@ -1095,7 +1095,7 @@
                   <w pos="VERB" lemma="accuso">accusarent</w>
                   <w pos="PRON" lemma="ille">illum</w>
                </s>
-               <s n="3">
+               <s rend="3">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="aio">ait</w>
                   <w pos="NOUN" lemma="homo">homini</w>
@@ -1106,7 +1106,7 @@
                   <w pos="ADP" lemma="in">in</w>
                   <w pos="ADJ" lemma="medius">medium</w>
                </s>
-               <s n="4" type="sο">
+               <s rend="4" type="sο">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="dico">dicit</w>
                   <w pos="PRON" lemma="is">eis</w>
@@ -1144,7 +1144,7 @@
                   <w pos="PRON" lemma="ille">illi</w>
                   <w pos="VERB" lemma="taceo">tacebant</w>
                </s>
-               <s n="5">
+               <s rend="5">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="circumscumsco">circumspiciens</w>
                   <w pos="PRON" lemma="is">eos</w>
@@ -1168,7 +1168,7 @@
                   <w pos="NOUN" lemma="manus">manus</w>
                   <w pos="PRON" lemma="ille">illi</w>
                </s>
-               <s n="6">
+               <s rend="6">
                   <w pos="VERB" lemma="exeo">exeuntes</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="ADV" lemma="statim">statim</w>
@@ -1183,7 +1183,7 @@
                   <w pos="PRON" lemma="is">eum</w>
                   <w pos="VERB" lemma="perdo">perderent</w>
                </s>
-               <s n="7">
+               <s rend="7">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="NOUN" lemma="Iesus">Iesus</w>
                   <w pos="ADP" lemma="cum">cum</w>
@@ -1203,7 +1203,7 @@
                   <w pos="VERB" lemma="sum">est</w>
                   <w pos="PRON" lemma="is">eum</w>
                </s>
-               <s n="10">
+               <s rend="10">
                   <w pos="ADJ" lemma="multus">multos</w>
                   <w pos="SCONJ" lemma="enim">enim</w>
                   <w pos="VERB" lemma="sano">sanabat</w>
@@ -1219,7 +1219,7 @@
                   <w pos="VERB" lemma="habeo">habebant</w>
                   <w pos="NOUN" lemma="plaga">plagas</w>
                </s>
-               <s n="11">
+               <s rend="11">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="NOUN" lemma="spiritus">spiritus</w>
                   <w pos="NOUN" lemma="immundus">inmundi</w>
@@ -1232,7 +1232,7 @@
                   <w pos="VERB" lemma="clamo">clamabant</w>
                   <w pos="VERB" lemma="dico">dicentes</w>
                </s>
-               <s n="12">
+               <s rend="12">
                   <w pos="PRON" lemma="tu">tu</w>
                   <w pos="VERB" lemma="sum">es</w>
                   <w pos="NOUN" lemma="Filius">Filius</w>
@@ -1245,7 +1245,7 @@
                   <w pos="VERB" lemma="manifesto">manifestarent</w>
                   <w pos="PRON" lemma="ille">illum</w>
                </s>
-               <s n="13">
+               <s rend="13">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="ascendo">ascendens</w>
                   <w pos="ADP" lemma="in">in</w>
@@ -1265,7 +1265,7 @@
                   <w pos="ADP" lemma="ad">ad</w>
                   <w pos="PRON" lemma="is">eum</w>
                </s>
-               <s n="14">
+               <s rend="14">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="facio">fecit</w>
                   <w pos="SCONJ" lemma="ut">ut</w>
@@ -1279,7 +1279,7 @@
                   <w pos="PRON" lemma="is">eos</w>
                   <w pos="VERB" lemma="praedico">praedicare</w>
                </s>
-               <s n="15" type="skappa">
+               <s rend="15" type="skappa">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="do">dedit</w>
                   <w pos="PRON" lemma="ille" msd="#id1e7953">
@@ -1298,14 +1298,14 @@
                      <w pos="NOUN" lemma="daemonium" msd="#id1e7994">daemonia</w>
                   </seg>
                </s>
-               <s n="16">
+               <s rend="16">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="inpono">inposuit</w>
                   <w pos="NOUN" lemma="simo">Simoni</w>
                   <w pos="NOUN" lemma="nomen">nomen</w>
                   <w>Petrus</w>
                </s>
-               <s n="17">
+               <s rend="17">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="NOUN" lemma="jacio">Iacobum</w>
                   <w pos="NOUN" lemma="Zebedaeus">Zebedaei</w>
@@ -1323,7 +1323,7 @@
                   <w pos="NOUN" lemma="Filius">Filii</w>
                   <w pos="NOUN" lemma="tonitrus">tonitrui</w>
                </s>
-               <s n="18">
+               <s rend="18">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="NOUN" lemma="andreus">Andream</w>
                   <w pos="CCONJ" lemma="et">et</w>
@@ -1343,7 +1343,7 @@
                   <w pos="NOUN" lemma="simo">Simonem</w>
                   <w pos="ADJ" lemma="Cananeus">Cananeum</w>
                </s>
-               <s n="19">
+               <s rend="19">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="NOUN" lemma="judum">Iudam</w>
                   <w pos="NOUN" lemma="Scariote">Scarioth</w>
@@ -1352,7 +1352,7 @@
                   <w pos="VERB" lemma="trado">tradidit</w>
                   <w pos="PRON" lemma="ille">illum</w>
                </s>
-               <s n="20">
+               <s rend="20">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="venio">veniunt</w>
                   <w pos="ADP" lemma="ad">ad</w>
@@ -1375,7 +1375,7 @@
                      <w pos="VERB" lemma="manduco" msd="#id1e8350" function="main">manducare</w>
                   </seg>
                </s>
-               <s n="21">
+               <s rend="21">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="SCONJ" lemma="cum">cum</w>
                   <w pos="VERB" lemma="audio">audissent</w>
@@ -1391,7 +1391,7 @@
                   <w pos="NOUN" lemma="versus">versus</w>
                   <w pos="VERB" lemma="sum">est</w>
                </s>
-               <s n="22">
+               <s rend="22">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="NOUN" lemma="scribo">scribae</w>
                   <w pos="PRON" lemma="qui">qui</w>
@@ -1410,7 +1410,7 @@
                   <w pos="VERB" lemma="eicio">eicit</w>
                   <w pos="NOUN" lemma="daemonium">daemonia</w>
                </s>
-               <s n="23">
+               <s rend="23">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="convoco">convocatis</w>
                   <w pos="PRON" lemma="is">eis</w>
@@ -1430,7 +1430,7 @@
                      <w pos="VERB" lemma="eicio" msd="#id1e8605" function="main">eicere</w>
                   </seg>
                </s>
-               <s n="24">
+               <s rend="24">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="SCONJ" lemma="si">si</w>
                   <w pos="NOUN" lemma="regnum">regnum</w>
@@ -1451,7 +1451,7 @@
                      <w pos="PRON" lemma="ille" msd="#id1e8673">illud</w>
                   </seg>
                </s>
-               <s n="25">
+               <s rend="25">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="SCONJ" lemma="si">si</w>
                   <w pos="NOUN" lemma="domus">domus</w>
@@ -1473,7 +1473,7 @@
                      <seg function="scope" ana="#u_i73040">stare</seg>
                   </w>
                </s>
-               <s n="26">
+               <s rend="26">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="SCONJ" lemma="si">si</w>
                   <w pos="NOUN" lemma="Satanas" msd="#id1e8764">
@@ -1499,7 +1499,7 @@
                   <w pos="NOUN" lemma="finis">finem</w>
                   <w pos="VERB" lemma="habeo">habet</w>
                </s>
-               <s n="27" type="sm">
+               <s rend="27" type="sm">
                   <w pos="NOUN" lemma="nemo" msd="#id1e8851">
                      <seg function="participant" type="animate" corresp="#u_i109768">
                         <seg function="negation" corresp="#u_i74052">nemo</seg>
@@ -1528,7 +1528,7 @@
                   <w pos="PRON" lemma="is">eius</w>
                   <w pos="VERB" lemma="diripio">diripiet</w>
                </s>
-               <s n="28">
+               <s rend="28">
                   <w pos="VERB" lemma="amen">amen</w>
                   <w pos="VERB" lemma="dico">dico</w>
                   <w pos="PRON" lemma="tu">vobis</w>
@@ -1543,7 +1543,7 @@
                   <w pos="PRON" lemma="qui">quibus</w>
                   <w pos="VERB" lemma="blasphemo">blasphemaverint</w>
                </s>
-               <s n="29">
+               <s rend="29">
                   <w pos="PRON" lemma="qui">qui</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="VERB" lemma="blasphemo">blasphemaverit</w>
@@ -1561,14 +1561,14 @@
                   <w pos="NOUN" lemma="aeternus">aeterni</w>
                   <w pos="NOUN" lemma="delictum">delicti</w>
                </s>
-               <s n="30" synch="#mk03_30">
+               <s rend="30" synch="#mk03_30">
                   <w pos="SCONJ" lemma="quoniam">quoniam</w>
                   <w pos="VERB" lemma="dico">dicebant</w>
                   <w pos="NOUN" lemma="spiritus">spiritum</w>
                   <w pos="ADJ" lemma="inmundum">inmundum</w>
                   <w pos="VERB" lemma="habeo">habet</w>
                </s>
-               <s n="31">
+               <s rend="31">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="venio">veniunt</w>
                   <w pos="NOUN" lemma="mater">mater</w>
@@ -1584,7 +1584,7 @@
                   <w pos="VERB" lemma="voco">vocantes</w>
                   <w pos="PRON" lemma="is">eum</w>
                </s>
-               <s n="32">
+               <s rend="32">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="sedeo">sedebat</w>
                   <w pos="ADP" lemma="circa">circa</w>
@@ -1603,7 +1603,7 @@
                   <w pos="VERB" lemma="quaero">quaerunt</w>
                   <pc>te</pc>
                </s>
-               <s n="33">
+               <s rend="33">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="respondeo">respondens</w>
                   <w pos="PRON" lemma="is">eis</w>
@@ -1616,7 +1616,7 @@
                   <w pos="NOUN" lemma="frater">fratres</w>
                   <w pos="PRON" lemma="meus">mei</w>
                </s>
-               <s n="34">
+               <s rend="34">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="circumscumsco">circumspiciens</w>
                   <w pos="PRON" lemma="is">eos</w>
@@ -1633,7 +1633,7 @@
                   <w pos="NOUN" lemma="frater">fratres</w>
                   <w pos="PRON" lemma="meus">mei</w>
                </s>
-               <s n="35">
+               <s rend="35">
                   <w pos="PRON" lemma="qui">qui</w>
                   <w pos="SCONJ" lemma="enim">enim</w>
                   <w pos="VERB" lemma="facio">fecerit</w>
@@ -1655,7 +1655,7 @@
          </div>
          <div type="chapter" n="4">
             <ab>
-               <s n="9">
+               <s rend="9">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="dico">dicebat</w>
                   <w pos="PRON" lemma="qui">qui</w>
@@ -1664,7 +1664,7 @@
                   <w pos="VERB" lemma="audio" function="no">audiendi</w>
                   <w pos="VERB" lemma="audio">audiat</w>
                </s>
-               <s n="10">
+               <s rend="10">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="SCONJ" lemma="cum">cum</w>
                   <w pos="VERB" lemma="sum">esset</w>
@@ -1680,7 +1680,7 @@
                   <w pos="NUM" lemma="duodecim">duodecim</w>
                   <w pos="NOUN" lemma="parabolus">parabolas</w>
                </s>
-               <s n="11">
+               <s rend="11">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="dico">dicebat</w>
                   <w pos="PRON" lemma="is">eis</w>
@@ -1700,7 +1700,7 @@
                   <w pos="NOUN" lemma="omnia">omnia</w>
                   <w pos="VERB" lemma="fio">fiunt</w>
                </s>
-               <s n="12" synch="#mk04_12">
+               <s rend="12" synch="#mk04_12">
                   <w pos="SCONJ" lemma="ut">ut</w>
                   <w pos="VERB" lemma="video">videntes</w>
                   <w pos="VERB" lemma="video">videant</w>
@@ -1720,7 +1720,7 @@
                   <w pos="PRON" lemma="is">eis</w>
                   <w pos="NOUN" lemma="pecco">peccata</w>
                </s>
-               <s n="13">
+               <s rend="13">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="aio">ait</w>
                   <w pos="PRON" lemma="ille">illis</w>
@@ -1733,13 +1733,13 @@
                   <w pos="NOUN" lemma="parabolus">parabolas</w>
                   <w pos="VERB" lemma="cognosco">cognoscetis</w>
                </s>
-               <s n="14">
+               <s rend="14">
                   <w pos="PRON" lemma="qui">qui</w>
                   <w pos="VERB" lemma="semino">seminat</w>
                   <w pos="NOUN" lemma="verbum">verbum</w>
                   <w pos="VERB" lemma="semino">seminat</w>
                </s>
-               <s n="15">
+               <s rend="15">
                   <w pos="PRON" lemma="hic">hii</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="VERB" lemma="sum">sunt</w>
@@ -1765,7 +1765,7 @@
                   <w pos="NOUN" lemma="cordum">corda</w>
                   <w pos="PRON" lemma="is">eorum</w>
                </s>
-               <s n="29">
+               <s rend="29">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="SCONJ" lemma="cum">cum</w>
                   <w pos="PRON" lemma="sui">se</w>
@@ -1778,7 +1778,7 @@
                   <w pos="VERB" lemma="adsum">adest</w>
                   <w>messis</w>
                </s>
-               <s n="30">
+               <s rend="30">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="dico">dicebat</w>
                   <w pos="PRON" lemma="qui">cui</w>
@@ -1791,7 +1791,7 @@
                   <w pos="VERB" lemma="conparabimus">conparabimus</w>
                   <w>illud</w>
                </s>
-               <s n="31">
+               <s rend="31">
                   <w pos="SCONJ" lemma="sicut">sicut</w>
                   <w pos="NOUN" lemma="granus">granum</w>
                   <w pos="NOUN" lemma="sinamus">sinapis</w>
@@ -1810,7 +1810,7 @@
                   <w pos="ADP" lemma="in">in</w>
                   <w pos="NOUN" lemma="terra">terra</w>
                </s>
-               <s n="32">
+               <s rend="32">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="SCONJ" lemma="cum">cum</w>
                   <w pos="VERB" lemma="seminatus">seminatum</w>
@@ -1843,7 +1843,7 @@
                      <w pos="VERB" lemma="habito" msd="#id1e12400" function="main">habitare</w>
                   </seg>
                </s>
-               <s n="33">
+               <s rend="33">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="ADJ" lemma="talis">talibus</w>
                   <w pos="ADJ" lemma="multus">multis</w>
@@ -1861,7 +1861,7 @@
                      <seg function="scope" ana="#u_i103707">audire</seg>
                   </w>
                </s>
-               <s n="34">
+               <s rend="34">
                   <w pos="ADP" lemma="sine">sine</w>
                   <w pos="NOUN" lemma="parabolus">parabola</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
@@ -1875,7 +1875,7 @@
                   <w pos="VERB" lemma="dissero">disserebat</w>
                   <w pos="ADJ" lemma="omnis">omnia</w>
                </s>
-               <s n="35">
+               <s rend="35">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="aio">ait</w>
                   <w pos="PRON" lemma="ille">illis</w>
@@ -1888,7 +1888,7 @@
                   <w pos="VERB" lemma="transeo">transeamus</w>
                   <w>contra</w>
                </s>
-               <s n="36">
+               <s rend="36">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="dimitto">dimittentes</w>
                   <w pos="NOUN" lemma="turba">turbam</w>
@@ -1910,7 +1910,7 @@
          </div>
          <div type="chapter" n="5">
             <ab>
-               <s n="1">
+               <s rend="1">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="venio">venerunt</w>
                   <w pos="NOUN" lemma="trans">trans</w>
@@ -1920,7 +1920,7 @@
                   <w pos="NOUN" lemma="regio">regionem</w>
                   <w pos="ADJ" lemma="Gerasenum">Gerasenorum</w>
                </s>
-               <s n="2">
+               <s rend="2">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="exeo">exeunti</w>
                   <w pos="PRON" lemma="is">ei</w>
@@ -1936,7 +1936,7 @@
                   <w pos="NOUN" lemma="spiritus">spiritu</w>
                   <w>inmundo</w>
                </s>
-               <s n="3">
+               <s rend="3">
                   <w pos="PRON" lemma="qui">qui</w>
                   <w pos="NOUN" lemma="domicilium">domicilium</w>
                   <w pos="VERB" lemma="habeo">habebat</w>
@@ -1961,7 +1961,7 @@
                      <w pos="VERB" lemma="ligo" msd="#gd1e224" function="main">ligare</w>
                   </seg>
                </s>
-               <s n="4">
+               <s rend="4">
                   <w pos="SCONJ" lemma="quoniam">quoniam</w>
                   <w pos="ADV" lemma="saepe">saepe</w>
                   <w pos="NOUN" lemma="conpides">conpedibus</w>
@@ -1987,7 +1987,7 @@
                      <w pos="VERB" lemma="domo" msd="#gd1e324" function="main">domare</w>
                   </seg>
                </s>
-               <s n="5">
+               <s rend="5">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="ADV" lemma="semper">semper</w>
                   <w pos="NOUN" lemma="nox">nocte</w>
@@ -2005,7 +2005,7 @@
                   <w pos="PRON" lemma="sui">se</w>
                   <w pos="NOUN" lemma="lapis">lapidibus</w>
                </s>
-               <s n="6">
+               <s rend="6">
                   <w pos="VERB" lemma="video">videns</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="NOUN" lemma="Iesus">Iesum</w>
@@ -2016,7 +2016,7 @@
                   <w pos="VERB" lemma="adoro">adoravit</w>
                   <w pos="PRON" lemma="is">eum</w>
                </s>
-               <s n="7">
+               <s rend="7">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="clamo">clamans</w>
                   <w pos="NOUN" lemma="vox">voce</w>
@@ -2038,7 +2038,7 @@
                   <w pos="PRON" lemma="ego">me</w>
                   <w pos="VERB" lemma="torquea">torqueas</w>
                </s>
-               <s n="8" synch="#mk05_08">
+               <s rend="8" synch="#mk05_08">
                   <w pos="VERB" lemma="dico">dicebat</w>
                   <w pos="SCONJ" lemma="enim">enim</w>
                   <w pos="PRON" lemma="ille">illi</w>
@@ -2048,7 +2048,7 @@
                   <w pos="ADP" lemma="ab">ab</w>
                   <w pos="NOUN" lemma="homo">homine</w>
                </s>
-               <s n="9">
+               <s rend="9">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="interrogo">interrogabat</w>
                   <w pos="PRON" lemma="is">eum</w>
@@ -2067,7 +2067,7 @@
                   <w pos="ADJ" lemma="multus">multi</w>
                   <w pos="VERB" lemma="sum">sumus</w>
                </s>
-               <s n="10">
+               <s rend="10">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="deprecor">deprecabatur</w>
                   <w pos="PRON" lemma="is">eum</w>
@@ -2078,7 +2078,7 @@
                   <w pos="ADP" lemma="exter">extra</w>
                   <w pos="NOUN" lemma="regio">regionem</w>
                </s>
-               <s n="11">
+               <s rend="11">
                   <w pos="VERB" lemma="sum">erat</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="ADV" lemma="ibi">ibi</w>
@@ -2089,7 +2089,7 @@
                   <w pos="ADJ" lemma="magnus">magnus</w>
                   <w pos="VERB" lemma="pasco">pascens</w>
                </s>
-               <s n="33">
+               <s rend="33">
                   <w pos="NOUN" lemma="mulier">mulier</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="VERB" lemma="timeo">timens</w>
@@ -2112,7 +2112,7 @@
                   <w pos="ADJ" lemma="omnis">omnem</w>
                   <w pos="NOUN" lemma="veritas">veritatem</w>
                </s>
-               <s n="34">
+               <s rend="34">
                   <w pos="PRON" lemma="ille">ille</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="VERB" lemma="dico">dixit</w>
@@ -2133,7 +2133,7 @@
                   <w pos="NOUN" lemma="plaga">plaga</w>
                   <w>tua</w>
                </s>
-               <s n="35">
+               <s rend="35">
                   <w pos="ADV" lemma="adhuc">adhuc</w>
                   <w pos="PRON" lemma="is">eo</w>
                   <w pos="VERB" lemma="loquor">loquente</w>
@@ -2151,7 +2151,7 @@
                   <w pos="VERB" lemma="vexus">vexas</w>
                   <w pos="NOUN" lemma="magister">magistrum</w>
                </s>
-               <s n="36">
+               <s rend="36">
                   <w pos="NOUN" lemma="Iesus">Iesus</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="NOUN" lemma="verbum">verbo</w>
@@ -2167,7 +2167,7 @@
                   <w pos="ADJ" lemma="tantummodus">tantummodo</w>
                   <w>crede</w>
                </s>
-               <s n="37">
+               <s rend="37">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="ADV" lemma="non">non</w>
                   <w pos="VERB" lemma="admitto">admisit</w>
@@ -2183,7 +2183,7 @@
                   <w pos="NOUN" lemma="frater">fratrem</w>
                   <w>Iacobi</w>
                </s>
-               <s n="38">
+               <s rend="38">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="venio">veniunt</w>
                   <w pos="ADP" lemma="in">in</w>
@@ -2198,7 +2198,7 @@
                   <w pos="VERB" lemma="hejulo">heiulantes</w>
                   <w>multum</w>
                </s>
-               <s n="39">
+               <s rend="39">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="ingremiti">ingressus</w>
                   <w pos="VERB" lemma="aio">ait</w>
@@ -2218,7 +2218,7 @@
          </div>
          <div type="chapter" n="6">
             <ab>
-               <s n="1">
+               <s rend="1">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="egredior">egressus</w>
                   <w pos="ADV" lemma="inde">inde</w>
@@ -2232,7 +2232,7 @@
                   <w pos="NOUN" lemma="discipulum">discipuli</w>
                   <w>sui</w>
                </s>
-               <s n="2" synch="#mk06_02">
+               <s rend="2" synch="#mk06_02">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="facio">facto</w>
                   <w pos="NOUN" lemma="sabbo">sabbato</w>
@@ -2269,7 +2269,7 @@
                   <w pos="PRON" lemma="is">eius</w>
                   <w pos="VERB" lemma="efficio">efficiuntur</w>
                </s>
-               <s n="3">
+               <s rend="3">
                   <w pos="ADV" lemma="nonne">nonne</w>
                   <w pos="PRON" lemma="iste">iste</w>
                   <w pos="VERB" lemma="sum">est</w>
@@ -2296,7 +2296,7 @@
                   <w pos="ADP" lemma="in">in</w>
                   <w pos="PRON" lemma="ille">illo</w>
                </s>
-               <s n="4">
+               <s rend="4">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="dico">dicebat</w>
                   <w pos="PRON" lemma="is">eis</w>
@@ -2320,7 +2320,7 @@
                   <w pos="NOUN" lemma="domus">domo</w>
                   <w pos="ADJ" lemma="suus">sua</w>
                </s>
-               <s n="5" synch="#mk06_05b">
+               <s rend="5" synch="#mk06_05b">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="ADV" lemma="non">
                      <seg function="negation" corresp="#u_g35650">non</seg>
@@ -2341,14 +2341,14 @@
                   <w pos="NOUN" lemma="manus">manibus</w>
                   <w pos="VERB" lemma="curo">curavit</w>
                </s>
-               <s n="6">
+               <s rend="6">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="miror">mirabatur</w>
                   <w pos="ADP" lemma="propter">propter</w>
                   <w pos="NOUN" lemma="incredulitas">incredulitatem</w>
                   <w pos="PRON" lemma="is">eorum</w>
                </s>
-               <s n="7" synch="#mk06_07b">
+               <s rend="7" synch="#mk06_07b">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="circumeo">circumibat</w>
                   <w pos="NOUN" lemma="castella">castella</w>
@@ -2372,7 +2372,7 @@
                   <w pos="NOUN" lemma="spiritus">spirituum</w>
                   <w pos="NOUN" lemma="inmundus">inmundorum</w>
                </s>
-               <s n="8">
+               <s rend="8">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="praecipio">praecepit</w>
                   <w pos="PRON" lemma="is">eis</w>
@@ -2393,7 +2393,7 @@
                   <w pos="NOUN" lemma="zona">zona</w>
                   <w pos="NOUN" lemma="aes">aes</w>
                </s>
-               <s n="9">
+               <s rend="9">
                   <w pos="CCONJ" lemma="sed">sed</w>
                   <w pos="VERB" lemma="calciatus">calciatos</w>
                   <w pos="ADJ" lemma="sandalium">sandaliis</w>
@@ -2403,7 +2403,7 @@
                   <w pos="NUM" lemma="duo">duabus</w>
                   <w pos="NOUN" lemma="tunicus">tunicis</w>
                </s>
-               <s n="10">
+               <s rend="10">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="dico">dicebat</w>
                   <w pos="PRON" lemma="is">eis</w>
@@ -2417,7 +2417,7 @@
                   <w pos="VERB" lemma="exsum">exeatis</w>
                   <w>inde</w>
                </s>
-               <s n="11">
+               <s rend="11">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="PRON" lemma="quicumque">quicumque</w>
                   <w pos="ADV" lemma="non">non</w>
@@ -2437,7 +2437,7 @@
                   <w pos="NOUN" lemma="testimonium">testimonium</w>
                   <w pos="PRON" lemma="ille">illis</w>
                </s>
-               <s n="12">
+               <s rend="12">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="exeo">exeuntes</w>
                   <w pos="VERB" lemma="praedico">praedicabant</w>
@@ -2445,7 +2445,7 @@
                   <w pos="NOUN" lemma="paenitentia">paenitentiam</w>
                   <w pos="VERB" lemma="ago">agerent</w>
                </s>
-               <s n="13" synch="#mk06_13">
+               <s rend="13" synch="#mk06_13">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="NOUN" lemma="daemonium">daemonia</w>
                   <w pos="ADJ" lemma="multus">multa</w>
@@ -2458,7 +2458,7 @@
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="sano">sanabant</w>
                </s>
-               <s n="14" synch="#mk06_14">
+               <s rend="14" synch="#mk06_14">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="audio">audivit</w>
                   <w pos="NOUN" lemma="heros">Herodes</w>
@@ -2484,7 +2484,7 @@
                   <w pos="ADP" lemma="in">in</w>
                   <w pos="PRON" lemma="ille">illo</w>
                </s>
-               <s n="15">
+               <s rend="15">
                   <w pos="ADJ" lemma="alius">alii</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="VERB" lemma="dico">dicebant</w>
@@ -2501,7 +2501,7 @@
                   <w pos="ADP" lemma="ex">ex</w>
                   <w pos="NOUN" lemma="prophetio">prophetis</w>
                </s>
-               <s n="16">
+               <s rend="16">
                   <w pos="PRON" lemma="qui">quo</w>
                   <w pos="VERB" lemma="audio">audito</w>
                   <w pos="NOUN" lemma="heros">Herodes</w>
@@ -2515,7 +2515,7 @@
                   <w pos="NOUN" lemma="morior">mortuis</w>
                   <w pos="VERB" lemma="resurricio">resurrexit</w>
                </s>
-               <s n="17">
+               <s rend="17">
                   <w pos="PRON" lemma="ipse">ipse</w>
                   <w pos="SCONJ" lemma="enim">enim</w>
                   <w pos="NOUN" lemma="heros">Herodes</w>
@@ -2538,7 +2538,7 @@
                   <w pos="VERB" lemma="dux">duxerat</w>
                   <w pos="PRON" lemma="is">eam</w>
                </s>
-               <s n="18" type="sχ">
+               <s rend="18" type="sχ">
                   <w pos="VERB" lemma="dico">dicebat</w>
                   <w pos="SCONJ" lemma="enim">enim</w>
                   <w pos="NOUN" lemma="Johannis">Iohannes</w>
@@ -2559,7 +2559,7 @@
                      <w pos="ADJ" lemma="tuus" msd="#gd1e5429">tui</w>
                   </seg>
                </s>
-               <s n="19" type="s06">
+               <s rend="19" type="s06">
                   <w pos="NOUN" lemma="Herodias" msd="#gd1e5436">
                      <seg function="participant" type="animate" corresp="#u_g45453">Herodias</seg>
                   </w>
@@ -2587,7 +2587,7 @@
                      </seg>
                   </supplied>
                </s>
-               <s n="20">
+               <s rend="20">
                   <w pos="NOUN" lemma="heros">Herodes</w>
                   <w pos="SCONJ" lemma="enim">enim</w>
                   <w pos="VERB" lemma="metuo">metuebat</w>
@@ -2611,7 +2611,7 @@
                   <w pos="PRON" lemma="is">eum</w>
                   <w pos="VERB" lemma="audio">audiebat</w>
                </s>
-               <s n="21">
+               <s rend="21">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="SCONJ" lemma="cum">cum</w>
                   <w pos="NOUN" lemma="dies">dies</w>
@@ -2629,7 +2629,7 @@
                   <w pos="NOUN" lemma="prima">primis</w>
                   <w pos="NOUN" lemma="Galilaeus">Galilaeae</w>
                </s>
-               <s n="22">
+               <s rend="22">
                   <w pos="ADV" lemma="cumque">cumque</w>
                   <w pos="VERB" lemma="introedo">introisset</w>
                   <w pos="NOUN" lemma="filium">filia</w>
@@ -2658,7 +2658,7 @@
                   <w pos="VERB" lemma="do">dabo</w>
                   <w pos="PRON" lemma="tu">tibi</w>
                </s>
-               <s n="23">
+               <s rend="23">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="juro">iuravit</w>
                   <w pos="PRON" lemma="ille">illi</w>
@@ -2674,7 +2674,7 @@
                   <w pos="NOUN" lemma="regnum">regni</w>
                   <w pos="ADJ" lemma="meus">mei</w>
                </s>
-               <s n="24">
+               <s rend="24">
                   <w pos="PRON" lemma="qui">quae</w>
                   <w pos="SCONJ" lemma="cum">cum</w>
                   <w pos="VERB" lemma="exeo">exisset</w>
@@ -2690,7 +2690,7 @@
                   <w pos="NOUN" lemma="Johannus">Iohannis</w>
                   <w pos="VERB" lemma="Baptistus">Baptistae</w>
                </s>
-               <s n="25">
+               <s rend="25">
                   <w pos="ADV" lemma="cumque">cumque</w>
                   <w pos="VERB" lemma="introedo">introisset</w>
                   <w pos="ADV" lemma="statim">statim</w>
@@ -2715,7 +2715,7 @@
                      <w pos="NOUN" lemma="Baptista" msd="#gd1e6123">Baptistae</w>
                   </seg>
                </s>
-               <s n="26">
+               <s rend="26">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="contristatus">contristatus</w>
                   <w pos="NOUN" lemma="rex" msd="#gd1e6141">
@@ -2735,7 +2735,7 @@
                      <w pos="VERB" lemma="contristo" msd="#gd1e6195" function="main">contristare</w>
                   </seg>
                </s>
-               <s n="27">
+               <s rend="27">
                   <w pos="CCONJ" lemma="sed">sed</w>
                   <w pos="VERB" lemma="mitto">misso</w>
                   <w pos="NOUN" lemma="speculator">speculatore</w>
@@ -2751,7 +2751,7 @@
                   <w pos="ADP" lemma="in">in</w>
                   <w pos="NOUN" lemma="carceo">carcere</w>
                </s>
-               <s n="28">
+               <s rend="28">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="affero">adtulit</w>
                   <w pos="NOUN" lemma="caput">caput</w>
@@ -2768,7 +2768,7 @@
                   <w pos="NOUN" lemma="mater">matri</w>
                   <w pos="ADJ" lemma="suus">suae</w>
                </s>
-               <s n="29">
+               <s rend="29">
                   <w pos="PRON" lemma="qui">quo</w>
                   <w pos="VERB" lemma="audio">audito</w>
                   <w pos="NOUN" lemma="discipulum">discipuli</w>
@@ -2784,7 +2784,7 @@
                   <w pos="ADP" lemma="in">in</w>
                   <w pos="NOUN" lemma="monumentum">monumento</w>
                </s>
-               <s n="45">
+               <s rend="45">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="ADV" lemma="statim">statim</w>
                   <w pos="VERB" lemma="cogo">coegit</w>
@@ -2804,7 +2804,7 @@
                   <w pos="VERB" lemma="dimitto">dimitteret</w>
                   <w pos="NOUN" lemma="populus">populum</w>
                </s>
-               <s n="46">
+               <s rend="46">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="SCONJ" lemma="cum">cum</w>
                   <w pos="VERB" lemma="dimitto">dimisisset</w>
@@ -2814,7 +2814,7 @@
                   <w pos="NOUN" lemma="mons">montem</w>
                   <w pos="VERB" lemma="oro">orare</w>
                </s>
-               <s n="47">
+               <s rend="47">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="SCONJ" lemma="cum">cum</w>
                   <w pos="ADV" lemma="serus">sero</w>
@@ -2830,7 +2830,7 @@
                   <w pos="ADP" lemma="in">in</w>
                   <w pos="NOUN" lemma="terra">terra</w>
                </s>
-               <s n="48">
+               <s rend="48">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="video">videns</w>
                   <w pos="PRON" lemma="is">eos</w>
@@ -2862,7 +2862,7 @@
                      <w pos="PRON" lemma="is" msd="#gd1e8135">eos</w>
                   </seg>
                </s>
-               <s n="49">
+               <s rend="49">
                   <w pos="CCONJ" lemma="at">at</w>
                   <w pos="PRON" lemma="ille">illi</w>
                   <w pos="SCONJ" lemma="ut">ut</w>
@@ -2877,7 +2877,7 @@
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="exclamo">exclamaverunt</w>
                </s>
-               <s n="50">
+               <s rend="50">
                   <w pos="ADJ" lemma="omnis">omnes</w>
                   <w pos="SCONJ" lemma="enim">enim</w>
                   <w pos="PRON" lemma="is">eum</w>
@@ -2902,7 +2902,7 @@
                   </w>
                   <w pos="VERB" lemma="timeo">timere</w>
                </s>
-               <s n="51">
+               <s rend="51">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="ascendo">ascendit</w>
                   <w pos="ADP" lemma="ad">ad</w>
@@ -2919,7 +2919,7 @@
                   <w pos="PRON" lemma="sui">se</w>
                   <w pos="VERB" lemma="stupio">stupebant</w>
                </s>
-               <s n="52">
+               <s rend="52">
                   <w pos="ADV" lemma="non">non</w>
                   <w pos="SCONJ" lemma="enim">enim</w>
                   <w pos="VERB" lemma="intellego">intellexerant</w>
@@ -2931,7 +2931,7 @@
                   <w pos="PRON" lemma="ille">illorum</w>
                   <w pos="VERB" lemma="obcaecor">obcaecatum</w>
                </s>
-               <s n="53">
+               <s rend="53">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="SCONJ" lemma="cum">cum</w>
                   <w pos="VERB" lemma="transfreto">transfretassent</w>
@@ -2946,7 +2946,7 @@
          </div>
          <div type="chapter" n="7">
             <ab>
-               <s n="12">
+               <s rend="12">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="ADV" lemma="ultra">ultra</w>
                   <w pos="ADV" lemma="non">non</w>
@@ -2959,7 +2959,7 @@
                   <w pos="CCONJ" lemma="aut">aut</w>
                   <w>matri</w>
                </s>
-               <s n="13">
+               <s rend="13">
                   <w pos="VERB" lemma="rescindo">rescindentes</w>
                   <w pos="NOUN" lemma="verbum">verbum</w>
                   <w pos="NOUN" lemma="deus">Dei</w>
@@ -2974,7 +2974,7 @@
                   <w pos="ADJ" lemma="multus">multa</w>
                   <w pos="VERB" lemma="facitis">facitis</w>
                </s>
-               <s n="14">
+               <s rend="14">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="advoco">advocans</w>
                   <w pos="ADV" lemma="iterum">iterum</w>
@@ -2987,7 +2987,7 @@
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="intellego">intellegite</w>
                </s>
-               <s n="15">
+               <s rend="15">
                   <w pos="NOUN" lemma="nihil" msd="#gd1e10151">
                      <seg function="participant" type="inanimate" corresp="#u_g84878">nihil</seg>
                   </w>
@@ -3016,7 +3016,7 @@
                   <w pos="VERB" lemma="communico">communicant</w>
                   <w pos="NOUN" lemma="homo">hominem</w>
                </s>
-               <s n="16">
+               <s rend="16">
                   <w pos="SCONJ" lemma="si">si</w>
                   <w pos="PRON" lemma="quis">quis</w>
                   <w pos="VERB" lemma="habeo">habet</w>
@@ -3024,7 +3024,7 @@
                   <w pos="VERB" lemma="audio" function="no">audiendi</w>
                   <w pos="VERB" lemma="audio">audiat</w>
                </s>
-               <s n="17">
+               <s rend="17">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="SCONJ" lemma="cum">cum</w>
                   <w pos="VERB" lemma="introedo">introisset</w>
@@ -3038,7 +3038,7 @@
                   <w pos="PRON" lemma="is">eius</w>
                   <w pos="NOUN" lemma="parabola">parabolam</w>
                </s>
-               <s n="18">
+               <s rend="18">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="aio">ait</w>
                   <w pos="PRON" lemma="ille">illis</w>
@@ -3068,7 +3068,7 @@
                      <w pos="VERB" lemma="communico" msd="#gd1e10496" function="main">communicare</w>
                   </seg>
                </s>
-               <s n="19">
+               <s rend="19">
                   <w pos="SCONJ" lemma="quia">quia</w>
                   <w pos="ADV" lemma="non">non</w>
                   <w pos="VERB" lemma="introeo">introit</w>
@@ -3086,7 +3086,7 @@
                   <w pos="ADJ" lemma="omnis">omnes</w>
                   <w pos="NOUN" lemma="esco">escas</w>
                </s>
-               <s n="20">
+               <s rend="20">
                   <w pos="VERB" lemma="dico">dicebat</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="SCONJ" lemma="quoniam">quoniam</w>
@@ -3098,7 +3098,7 @@
                   <w pos="VERB" lemma="communico">communicant</w>
                   <w pos="NOUN" lemma="homo">hominem</w>
                </s>
-               <s n="21">
+               <s rend="21">
                   <w pos="ADP" lemma="ab">ab</w>
                   <w pos="ADV" lemma="intus">intus</w>
                   <w pos="SCONJ" lemma="enim">enim</w>
@@ -3112,7 +3112,7 @@
                   <w pos="NOUN" lemma="fornicatio">fornicationes</w>
                   <w pos="NOUN" lemma="homicidia">homicidia</w>
                </s>
-               <s n="22">
+               <s rend="22">
                   <w pos="NOUN" lemma="furtum">furta</w>
                   <w pos="NOUN" lemma="avaritia">avaritiae</w>
                   <w pos="NOUN" lemma="nequitia">nequitiae</w>
@@ -3124,7 +3124,7 @@
                   <w pos="NOUN" lemma="superbia">superbia</w>
                   <w pos="NOUN" lemma="stultitia">stultitia</w>
                </s>
-               <s n="23">
+               <s rend="23">
                   <w pos="ADJ" lemma="omnis">omnia</w>
                   <w pos="PRON" lemma="hic">haec</w>
                   <w pos="ADJ" lemma="malus">mala</w>
@@ -3135,7 +3135,7 @@
                   <w pos="VERB" lemma="communico">communicant</w>
                   <w pos="NOUN" lemma="homo">hominem</w>
                </s>
-               <s n="24">
+               <s rend="24">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="ADV" lemma="inde">inde</w>
                   <w pos="VERB" lemma="surgeo">surgens</w>
@@ -3168,7 +3168,7 @@
                      <seg function="scope" ana="#u_g91096">latere</seg>
                   </w>
                </s>
-               <s n="25" synch="#mk07_25">
+               <s rend="25" synch="#mk07_25">
                   <w pos="NOUN" lemma="mulier">mulier</w>
                   <w pos="SCONJ" lemma="enim">enim</w>
                   <w pos="ADV" lemma="statim">statim</w>
@@ -3188,7 +3188,7 @@
                   <w pos="NOUN" lemma="pes">pedes</w>
                   <w pos="PRON" lemma="is">eius</w>
                </s>
-               <s n="26">
+               <s rend="26">
                   <w pos="VERB" lemma="sum">erat</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="NOUN" lemma="mulier">mulier</w>
@@ -3205,7 +3205,7 @@
                   <w pos="NOUN" lemma="filium">filia</w>
                   <w pos="PRON" lemma="is">eius</w>
                </s>
-               <s n="27">
+               <s rend="27">
                   <w pos="PRON" lemma="qui">qui</w>
                   <w pos="VERB" lemma="dico">dixit</w>
                   <w pos="PRON" lemma="ille">illi</w>
@@ -3224,7 +3224,7 @@
                   <w pos="VERB" lemma="mitto">mittere</w>
                   <w pos="NOUN" lemma="canis">canibus</w>
                </s>
-               <s n="28">
+               <s rend="28">
                   <w pos="CCONJ" lemma="at">at</w>
                   <w pos="PRON" lemma="ille">illa</w>
                   <w pos="VERB" lemma="respondeo">respondit</w>
@@ -3247,7 +3247,7 @@
          </div>
          <div type="chapter" n="8">
             <ab>
-               <s n="1">
+               <s rend="1">
                   <w pos="ADP" lemma="in">in</w>
                   <w pos="PRON" lemma="ille">illis</w>
                   <w pos="NOUN" lemma="dies">diebus</w>
@@ -3265,7 +3265,7 @@
                   <w pos="VERB" lemma="aio">ait</w>
                   <w pos="PRON" lemma="ille">illis</w>
                </s>
-               <s n="2">
+               <s rend="2">
                   <w pos="VERB" lemma="misereor">misereor</w>
                   <w pos="ADP" lemma="super">super</w>
                   <w pos="NOUN" lemma="turba">turba</w>
@@ -3280,7 +3280,7 @@
                   <w pos="PRON" lemma="qui">quod</w>
                   <w pos="VERB" lemma="manduco">manducent</w>
                </s>
-               <s n="3">
+               <s rend="3">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="SCONJ" lemma="si">si</w>
                   <w pos="VERB" lemma="dimitto">dimisero</w>
@@ -3300,7 +3300,7 @@
                   <w pos="ADV" lemma="longus">longe</w>
                   <w pos="VERB" lemma="venio">venerunt</w>
                </s>
-               <s n="4" type="siota">
+               <s rend="4" type="siota">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="respondeo">responderunt</w>
                   <w pos="PRON" lemma="is">ei</w>
@@ -3324,7 +3324,7 @@
                      <w pos="NOUN" lemma="solitudo" msd="#gd1e12442">solitudine</w>
                   </seg>
                </s>
-               <s n="5">
+               <s rend="5">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="interrogo">interrogavit</w>
                   <w pos="PRON" lemma="is">eos</w>
@@ -3335,7 +3335,7 @@
                   <w pos="VERB" lemma="dico">dixerunt</w>
                   <w pos="NUM" lemma="septem">septem</w>
                </s>
-               <s n="6">
+               <s rend="6">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="praecipio">praecepit</w>
                   <w pos="NOUN" lemma="turba">turbae</w>
@@ -3359,7 +3359,7 @@
                   <w pos="VERB" lemma="adpono">adposuerunt</w>
                   <w pos="NOUN" lemma="turba">turbae</w>
                </s>
-               <s n="7">
+               <s rend="7">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="habeo">habebant</w>
                   <w pos="NOUN" lemma="pisciculum">pisciculos</w>
@@ -3371,7 +3371,7 @@
                   <w pos="VERB" lemma="jubeo">iussit</w>
                   <w pos="VERB" lemma="adpono">adponi</w>
                </s>
-               <s n="28">
+               <s rend="28">
                   <w pos="PRON" lemma="qui">qui</w>
                   <w pos="VERB" lemma="respondeo">responderunt</w>
                   <w pos="PRON" lemma="ille">illi</w>
@@ -3387,7 +3387,7 @@
                   <w pos="ADP" lemma="de">de</w>
                   <w pos="NOUN" lemma="prophetio">prophetis</w>
                </s>
-               <s n="29">
+               <s rend="29">
                   <w pos="ADV" lemma="tunc">tunc</w>
                   <w pos="VERB" lemma="dico">dicit</w>
                   <w pos="PRON" lemma="ille">illis</w>
@@ -3405,7 +3405,7 @@
                   <w pos="VERB" lemma="sum">es</w>
                   <w>Christus</w>
                </s>
-               <s n="30">
+               <s rend="30">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="comminor">comminatus</w>
                   <w pos="VERB" lemma="sum">est</w>
@@ -3416,7 +3416,7 @@
                   <w pos="ADP" lemma="de">de</w>
                   <w pos="PRON" lemma="ille">illo</w>
                </s>
-               <s n="31" type="sb">
+               <s rend="31" type="sb">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="coepio">coepit</w>
                   <w pos="VERB" lemma="doceo">docere</w>
@@ -3459,7 +3459,7 @@
                      <w pos="VERB" lemma="resurgo" msd="#gd1e14695" function="main">resurgere</w>
                   </seg>
                </s>
-               <s n="32">
+               <s rend="32">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="ADV" lemma="palam">palam</w>
                   <w pos="NOUN" lemma="verbum">verbum</w>
@@ -3472,7 +3472,7 @@
                   <w pos="VERB" lemma="increpo">increpare</w>
                   <w pos="PRON" lemma="is">eum</w>
                </s>
-               <s n="33">
+               <s rend="33">
                   <w pos="PRON" lemma="qui">qui</w>
                   <w pos="VERB" lemma="converto">conversus</w>
                   <w pos="CCONJ" lemma="et">et</w>
@@ -3498,7 +3498,7 @@
                   <w pos="VERB" lemma="sum">sunt</w>
                   <w pos="NOUN" lemma="homo">hominum</w>
                </s>
-               <s n="34" type="s13">
+               <s rend="34" type="s13">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="convoco">convocata</w>
                   <w pos="NOUN" lemma="turba">turba</w>
@@ -3530,7 +3530,7 @@
                   <w pos="VERB" lemma="sequor">sequatur</w>
                   <w pos="PRON" lemma="ego">me</w>
                </s>
-               <s n="35" type="s08">
+               <s rend="35" type="s08">
                   <w pos="PRON" lemma="qui">qui</w>
                   <w pos="SCONJ" lemma="enim">enim</w>
                   <w pos="VERB" lemma="volo" msd="#gd1e15062">
@@ -3557,7 +3557,7 @@
                   <w pos="PRON" lemma="is">eam</w>
                   <w pos="VERB" lemma="facio">faciet</w>
                </s>
-               <s n="36">
+               <s rend="36">
                   <w pos="PRON" lemma="quis">quid</w>
                   <w pos="SCONJ" lemma="enim">enim</w>
                   <w pos="VERB" lemma="prodo">proderit</w>
@@ -3572,7 +3572,7 @@
                   <w pos="NOUN" lemma="anima">animae</w>
                   <w pos="ADJ" lemma="suus">suae</w>
                </s>
-               <s n="37">
+               <s rend="37">
                   <w pos="CCONJ" lemma="aut">aut</w>
                   <w pos="PRON" lemma="quis">quid</w>
                   <w pos="VERB" lemma="do">dabit</w>
@@ -3582,7 +3582,7 @@
                   <w pos="NOUN" lemma="anima">anima</w>
                   <w pos="ADJ" lemma="suus">sua</w>
                </s>
-               <s n="38">
+               <s rend="38">
                   <w pos="PRON" lemma="qui">qui</w>
                   <w pos="SCONJ" lemma="enim">enim</w>
                   <w pos="PRON" lemma="ego">me</w>
@@ -3616,7 +3616,7 @@
          </div>
          <div type="chapter" n="9">
             <ab>
-               <s n="1">
+               <s rend="1">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="ADP" lemma="post">post</w>
                   <w pos="NOUN" lemma="dies">dies</w>
@@ -3642,7 +3642,7 @@
                   <w pos="ADP" lemma="coram">coram</w>
                   <w pos="PRON" lemma="ipse">ipsis</w>
                </s>
-               <s n="2">
+               <s rend="2">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="NOUN" lemma="vestimentum">vestimenta</w>
                   <w pos="PRON" lemma="is">eius</w>
@@ -3670,7 +3670,7 @@
                      <w pos="VERB" lemma="facio" msd="#fd1e264" function="main">facere</w>
                   </seg>
                </s>
-               <s n="3">
+               <s rend="3">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="appareo">apparuit</w>
                   <w pos="PRON" lemma="ille">illis</w>
@@ -3683,7 +3683,7 @@
                   <w pos="ADP" lemma="cum">cum</w>
                   <w>Iesu</w>
                </s>
-               <s n="4">
+               <s rend="4">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="respondeo">respondens</w>
                   <w pos="NOUN" lemma="petrus">Petrus</w>
@@ -3708,7 +3708,7 @@
                   <w pos="NOUN" lemma="Heliae">Heliae</w>
                   <w pos="ADJ" lemma="unus">unum</w>
                </s>
-               <s n="5">
+               <s rend="5">
                   <w pos="ADV" lemma="non">non</w>
                   <w pos="SCONJ" lemma="enim">enim</w>
                   <w pos="VERB" lemma="scio">sciebat</w>
@@ -3719,7 +3719,7 @@
                   <w pos="NOUN" lemma="timor">timore</w>
                   <w pos="VERB" lemma="exsterriti">exterriti</w>
                </s>
-               <s n="7">
+               <s rend="7">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="ADV" lemma="statim">statim</w>
                   <w pos="VERB" lemma="circumsco">circumspicientes</w>
@@ -3731,7 +3731,7 @@
                   <w pos="ADJ" lemma="tantus">tantum</w>
                   <w>secum</w>
                </s>
-               <s n="8">
+               <s rend="8">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="descendo">descendentibus</w>
                   <w pos="PRON" lemma="ille">illis</w>
@@ -3752,7 +3752,7 @@
                   <w pos="NOUN" lemma="morior">mortuis</w>
                   <w pos="VERB" lemma="resurrigo">resurrexerit</w>
                </s>
-               <s n="9">
+               <s rend="9">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="NOUN" lemma="verbum">verbum</w>
                   <w pos="VERB" lemma="contineo">continuerunt</w>
@@ -3766,7 +3766,7 @@
                   <w pos="NOUN" lemma="morior">mortuis</w>
                   <w pos="VERB" lemma="resurrigo">resurrexerit</w>
                </s>
-               <s n="10" type="sa">
+               <s rend="10" type="sa">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="interrogo">interrogabant</w>
                   <w pos="PRON" lemma="is">eum</w>
@@ -3791,7 +3791,7 @@
                      <w pos="NUM" lemma="primus" msd="#fd1e959">primum</w>
                   </seg>
                </s>
-               <s n="11">
+               <s rend="11">
                   <w pos="PRON" lemma="qui">qui</w>
                   <w pos="VERB" lemma="respondeo">respondens</w>
                   <w pos="VERB" lemma="aio">ait</w>
@@ -3815,7 +3815,7 @@
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="contemno">contemnatur</w>
                </s>
-               <s n="12" type="s01">
+               <s rend="12" type="s01">
                   <w pos="CCONJ" lemma="sed">sed</w>
                   <w pos="VERB" lemma="dico">dico</w>
                   <w pos="PRON" lemma="tu">vobis</w>
@@ -3842,7 +3842,7 @@
                   <w pos="ADP" lemma="de">de</w>
                   <w pos="PRON" lemma="is">eo</w>
                </s>
-               <s n="13">
+               <s rend="13">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="veniens">veniens</w>
                   <w pos="ADP" lemma="ad">ad</w>
@@ -3859,7 +3859,7 @@
                   <w pos="ADP" lemma="cum">cum</w>
                   <w pos="PRON" lemma="ille">illis</w>
                </s>
-               <s n="14">
+               <s rend="14">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="ADV" lemma="confestim">confestim</w>
                   <w pos="ADJ" lemma="omnis">omnis</w>
@@ -3873,7 +3873,7 @@
                   <w pos="VERB" lemma="saluto">salutabant</w>
                   <w pos="PRON" lemma="is">eum</w>
                </s>
-               <s n="15">
+               <s rend="15">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="interrogo">interrogavit</w>
                   <w pos="PRON" lemma="is">eos</w>
@@ -3882,7 +3882,7 @@
                   <w pos="PRON" lemma="tu">vos</w>
                   <w>conquiritis</w>
                </s>
-               <s n="16">
+               <s rend="16">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="respondeo">respondens</w>
                   <w pos="ADJ" lemma="unus">unus</w>
@@ -3899,7 +3899,7 @@
                   <w pos="NOUN" lemma="spiritus">spiritum</w>
                   <w pos="ADJ" lemma="mutus">mutum</w>
                </s>
-               <s n="17" type="sgamma">
+               <s rend="17" type="sgamma">
                   <w pos="PRON" lemma="qui">qui</w>
                   <w pos="ADV" lemma="ubicumque">ubicumque</w>
                   <w pos="PRON" lemma="is">eum</w>
@@ -3936,7 +3936,7 @@
                      </seg>
                   </supplied>
                </s>
-               <s n="18" synch="#mk09_19">
+               <s rend="18" synch="#mk09_19">
                   <w pos="PRON" lemma="qui">qui</w>
                   <w pos="VERB" lemma="respondeo">respondens</w>
                   <w pos="PRON" lemma="is">eis</w>
@@ -3956,7 +3956,7 @@
                   <w pos="ADP" lemma="ad">ad</w>
                   <w pos="PRON" lemma="ego">me</w>
                </s>
-               <s n="19">
+               <s rend="19">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="affero">adtulerunt</w>
                   <w pos="PRON" lemma="is">eum</w>
@@ -3975,7 +3975,7 @@
                   <w pos="VERB" lemma="voluto">volutabatur</w>
                   <w pos="VERB" lemma="spumo">spumans</w>
                </s>
-               <s n="20">
+               <s rend="20">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="interrogo">interrogavit</w>
                   <w pos="NOUN" lemma="pater">patrem</w>
@@ -3994,7 +3994,7 @@
                   <w pos="ADP" lemma="ab">ab</w>
                   <w pos="NOUN" lemma="infantia">infantia</w>
                </s>
-               <s n="21">
+               <s rend="21">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="ADV" lemma="frequens">frequenter</w>
                   <w pos="PRON" lemma="is">eum</w>
@@ -4021,7 +4021,7 @@
                   <w pos="NOUN" lemma="misertus">misertus</w>
                   <w pos="PRON" lemma="noster">nostri</w>
                </s>
-               <s n="22">
+               <s rend="22">
                   <w pos="NOUN" lemma="Iesus">Iesus</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="VERB" lemma="aio">ait</w>
@@ -4041,7 +4041,7 @@
                   </w>
                   <w pos="VERB" lemma="credo">credenti</w>
                </s>
-               <s n="23">
+               <s rend="23">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="ADJ" lemma="contineo">continuo</w>
                   <w pos="VERB" lemma="exclamo">exclamans</w>
@@ -4055,7 +4055,7 @@
                   <w pos="NOUN" lemma="incredulitas">incredulitatem</w>
                   <w>meam</w>
                </s>
-               <s n="24">
+               <s rend="24">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="SCONJ" lemma="cum">cum</w>
                   <w pos="VERB" lemma="video">videret</w>
@@ -4085,7 +4085,7 @@
                   <w pos="ADP" lemma="in">in</w>
                   <w pos="PRON" lemma="is">eum</w>
                </s>
-               <s n="25">
+               <s rend="25">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="clamo">clamans</w>
                   <w pos="CCONJ" lemma="et">et</w>
@@ -4108,7 +4108,7 @@
                   <w pos="VERB" lemma="morior">mortuus</w>
                   <w pos="VERB" lemma="sum">est</w>
                </s>
-               <s n="26">
+               <s rend="26">
                   <w pos="NOUN" lemma="Iesus">Iesus</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="VERB" lemma="teneo">tenens</w>
@@ -4119,7 +4119,7 @@
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="surricio">surrexit</w>
                </s>
-               <s n="27" type="sσ">
+               <s rend="27" type="sσ">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="SCONJ" lemma="cum">cum</w>
                   <w pos="VERB" lemma="introedo">introisset</w>
@@ -4145,7 +4145,7 @@
                      <w pos="PRON" lemma="is" msd="#fd1e2607">eum</w>
                   </seg>
                </s>
-               <s n="28">
+               <s rend="28">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="dico">dixit</w>
                   <w pos="PRON" lemma="ille">illis</w>
@@ -4169,7 +4169,7 @@
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="NOUN" lemma="jejunium">ieiunio</w>
                </s>
-               <s n="29">
+               <s rend="29">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="ADV" lemma="inde">inde</w>
                   <w pos="VERB" lemma="proficio">profecti</w>
@@ -4188,7 +4188,7 @@
                      <w pos="VERB" lemma="scio" msd="#fd1e2750" function="main">scire</w>
                   </seg>
                </s>
-               <s n="30">
+               <s rend="30">
                   <w pos="VERB" lemma="doceo">docebat</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="NOUN" lemma="discipulum">discipulos</w>
@@ -4212,7 +4212,7 @@
                   <w pos="NOUN" lemma="dies">die</w>
                   <w pos="VERB" lemma="resumgo">resurget</w>
                </s>
-               <s n="31">
+               <s rend="31">
                   <w pos="CCONJ" lemma="at">at</w>
                   <w pos="PRON" lemma="ille">illi</w>
                   <w pos="VERB" lemma="ignoro">ignorabant</w>
@@ -4222,7 +4222,7 @@
                   <w pos="PRON" lemma="is">eum</w>
                   <w pos="VERB" lemma="interrogo">interrogare</w>
                </s>
-               <s n="32">
+               <s rend="32">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="venio">venerunt</w>
                   <w pos="NOUN" lemma="Capharnus">Capharnaum</w>
@@ -4237,7 +4237,7 @@
                   <w pos="NOUN" lemma="via">via</w>
                   <w pos="VERB" lemma="tracto">tractabatis</w>
                </s>
-               <s n="33">
+               <s rend="33">
                   <w pos="CCONJ" lemma="at">at</w>
                   <w pos="PRON" lemma="ille">illi</w>
                   <w pos="VERB" lemma="taceo">tacebant</w>
@@ -4252,7 +4252,7 @@
                   <w pos="PRON" lemma="ille">illorum</w>
                   <w pos="ADJ" lemma="magnus">maior</w>
                </s>
-               <s n="34">
+               <s rend="34">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="residens">residens</w>
                   <w pos="VERB" lemma="voco">vocavit</w>
@@ -4278,7 +4278,7 @@
                   <w pos="ADJ" lemma="omnis">omnium</w>
                   <w pos="NOUN" lemma="minis">minister</w>
                </s>
-               <s n="35">
+               <s rend="35">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="accipio">accipiens</w>
                   <w pos="NOUN" lemma="puer">puerum</w>
@@ -4294,7 +4294,7 @@
                   <w pos="VERB" lemma="aio">ait</w>
                   <w pos="PRON" lemma="ille">illis</w>
                </s>
-               <s n="36">
+               <s rend="36">
                   <w pos="PRON" lemma="quisquis">quisquis</w>
                   <w pos="NUM" lemma="unus">unum</w>
                   <w pos="ADP" lemma="ex">ex</w>
@@ -4319,7 +4319,7 @@
                   <w pos="PRON" lemma="ego">me</w>
                   <w pos="VERB" lemma="mitto">misit</w>
                </s>
-               <s n="37">
+               <s rend="37">
                   <w pos="VERB" lemma="respondeo">respondit</w>
                   <w pos="PRON" lemma="ille">illi</w>
                   <w pos="NOUN" lemma="Johannis">Iohannes</w>
@@ -4340,7 +4340,7 @@
                   <w pos="VERB" lemma="prohibuus">prohibuimus</w>
                   <w pos="PRON" lemma="is">eum</w>
                </s>
-               <s n="38">
+               <s rend="38">
                   <w pos="NOUN" lemma="Iesus">Iesus</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="VERB" lemma="aio">ait</w>
@@ -4372,7 +4372,7 @@
                      <w pos="PRON" lemma="ego" msd="#fd1e3652">me</w>
                   </seg>
                </s>
-               <s n="39">
+               <s rend="39">
                   <w pos="PRON" lemma="qui">qui</w>
                   <w pos="SCONJ" lemma="enim">enim</w>
                   <w pos="ADV" lemma="non">non</w>
@@ -4383,7 +4383,7 @@
                   <w pos="PRON" lemma="tu">vobis</w>
                   <w pos="VERB" lemma="sum">est</w>
                </s>
-               <s n="40">
+               <s rend="40">
                   <w pos="PRON" lemma="quisquis">quisquis</w>
                   <w pos="SCONJ" lemma="enim">enim</w>
                   <w pos="NOUN" lemma="poto">potum</w>
@@ -4405,7 +4405,7 @@
                   <w pos="NOUN" lemma="merces">mercedem</w>
                   <w pos="ADJ" lemma="suus">suam</w>
                </s>
-               <s n="41">
+               <s rend="41">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="PRON" lemma="quisquis">quisquis</w>
                   <w pos="VERB" lemma="scandalis">scandalizaverit</w>
@@ -4431,7 +4431,7 @@
                   <w pos="NOUN" lemma="mare">mare</w>
                   <w pos="VERB" lemma="mitto">mitteretur</w>
                </s>
-               <s n="42">
+               <s rend="42">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="SCONJ" lemma="si">si</w>
                   <w pos="VERB" lemma="scandalis">scandalizaverit</w>
@@ -4459,7 +4459,7 @@
                   <w pos="ADJ" lemma="inextinguibilis" msd="#id1e47834">inextingui<seg function="marker" xml:id="mk09_42" ana="#u_i169a49">bilem</seg>
                   </w>
                </s>
-               <s n="43">
+               <s rend="43">
                   <w pos="ADV" lemma="ubi">ubi</w>
                   <w pos="NOUN" lemma="vermum">vermis</w>
                   <w pos="PRON" lemma="is">eorum</w>
@@ -4470,7 +4470,7 @@
                   <w pos="ADV" lemma="non">non</w>
                   <w pos="VERB" lemma="extingo">extinguitur</w>
                </s>
-               <s n="44" synch="#mk09_44">
+               <s rend="44" synch="#mk09_44">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="SCONJ" lemma="si">si</w>
                   <w pos="NOUN" lemma="pes">pes</w>
@@ -4498,7 +4498,7 @@
                   <w pos="ADJ" lemma="inextinguibilis" msd="#id1e47835">inextingui<seg function="marker" xml:id="mk09_44" ana="#u_i169a50">bilis</seg>
                   </w>
                </s>
-               <s n="45">
+               <s rend="45">
                   <w pos="ADV" lemma="ubi">ubi</w>
                   <w pos="NOUN" lemma="vermum">vermis</w>
                   <w pos="PRON" lemma="is">eorum</w>
@@ -4509,7 +4509,7 @@
                   <w pos="ADV" lemma="non">non</w>
                   <w pos="VERB" lemma="extingo">extinguitur</w>
                </s>
-               <s n="46">
+               <s rend="46">
                   <w pos="SCONJ" lemma="quod">quod</w>
                   <w pos="SCONJ" lemma="si">si</w>
                   <w pos="NOUN" lemma="oculus">oculus</w>
@@ -4535,7 +4535,7 @@
                   <w pos="NOUN" lemma="gehenna">gehennam</w>
                   <w pos="NOUN" lemma="ignis">ignis</w>
                </s>
-               <s n="47">
+               <s rend="47">
                   <w pos="ADV" lemma="ubi">ubi</w>
                   <w pos="NOUN" lemma="vermum">vermis</w>
                   <w pos="PRON" lemma="is">eorum</w>
@@ -4550,7 +4550,7 @@
          </div>
          <div type="chapter" n="10">
             <ab>
-               <s n="1">
+               <s rend="1">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="ADV" lemma="inde">inde</w>
                   <w pos="VERB" lemma="exsurgo">exsurgens</w>
@@ -4573,7 +4573,7 @@
                   <w pos="VERB" lemma="doceo">docebat</w>
                   <w pos="PRON" lemma="ille">illos</w>
                </s>
-               <s n="2" type="sφ">
+               <s rend="2" type="sφ">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="accedo">accedentes</w>
                   <w pos="NOUN" lemma="Pharisae">Pharisaei</w>
@@ -4593,7 +4593,7 @@
                   <w pos="VERB" lemma="tento">temptantes</w>
                   <w pos="PRON" lemma="is">eum</w>
                </s>
-               <s n="3">
+               <s rend="3">
                   <w pos="CCONJ" lemma="at">at</w>
                   <w pos="PRON" lemma="ille">ille</w>
                   <w pos="VERB" lemma="respondeo">respondens</w>
@@ -4604,7 +4604,7 @@
                   <w pos="VERB" lemma="praecipio">praecepit</w>
                   <w>Moses</w>
                </s>
-               <s n="4">
+               <s rend="4">
                   <w pos="PRON" lemma="qui">qui</w>
                   <w pos="VERB" lemma="dico">dixerunt</w>
                   <w pos="NOUN" lemma="mos">Moses</w>
@@ -4615,7 +4615,7 @@
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="dimitto">dimittere</w>
                </s>
-               <s n="5">
+               <s rend="5">
                   <w pos="PRON" lemma="qui">quibus</w>
                   <w pos="VERB" lemma="respondeo">respondens</w>
                   <w pos="NOUN" lemma="Iesus">Iesus</w>
@@ -4629,7 +4629,7 @@
                   <w pos="VERB" lemma="praeceptum">praeceptum</w>
                   <w>istud</w>
                </s>
-               <s n="23">
+               <s rend="23">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="circumscumsco">circumspiciens</w>
                   <w pos="NOUN" lemma="Iesus">Iesus</w>
@@ -4646,7 +4646,7 @@
                   <w pos="NOUN" lemma="deus">Dei</w>
                   <w pos="VERB" lemma="introeo">introibunt</w>
                </s>
-               <s n="24">
+               <s rend="24">
                   <w pos="NOUN" lemma="discipulum">discipuli</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="VERB" lemma="obstupisco">obstupescebant</w>
@@ -4670,7 +4670,7 @@
                   <w pos="NOUN" lemma="deus">Dei</w>
                   <w pos="VERB" lemma="introeo">introire</w>
                </s>
-               <s n="25">
+               <s rend="25">
                   <w pos="ADV" lemma="facilis">facilius</w>
                   <w pos="VERB" lemma="sum">est</w>
                   <w pos="ADJ" lemma="camelum">camelum</w>
@@ -4685,7 +4685,7 @@
                   <w pos="NOUN" lemma="regnum">regnum</w>
                   <w pos="NOUN" lemma="deus">Dei</w>
                </s>
-               <s n="26" type="so">
+               <s rend="26" type="so">
                   <w pos="PRON" lemma="qui">qui</w>
                   <w pos="ADV" lemma="magis">magis</w>
                   <w pos="VERB" lemma="admiror">admirabantur</w>
@@ -4705,7 +4705,7 @@
                      <w pos="VERB" lemma="fio" msd="#fd1e6890" function="main">fieri</w>
                   </seg>
                </s>
-               <s n="27" type="sμ">
+               <s rend="27" type="sμ">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="intuens">intuens</w>
                   <w pos="PRON" lemma="ille">illos</w>
@@ -4750,7 +4750,7 @@
                   <w pos="ADP" lemma="apud">apud</w>
                   <w pos="NOUN" lemma="deus">Deum</w>
                </s>
-               <s n="28">
+               <s rend="28">
                   <w pos="VERB" lemma="coepio">coepit</w>
                   <w pos="NOUN" lemma="petrus">Petrus</w>
                   <w pos="PRON" lemma="is">ei</w>
@@ -4764,7 +4764,7 @@
                   <w pos="VERB" lemma="sum">sumus</w>
                   <w pos="PRON" lemma="tu">te</w>
                </s>
-               <s n="29">
+               <s rend="29">
                   <w pos="VERB" lemma="respondeo">respondens</w>
                   <w pos="NOUN" lemma="Iesus">Iesus</w>
                   <w pos="VERB" lemma="aio">ait</w>
@@ -4794,7 +4794,7 @@
                   <w pos="ADP" lemma="propter">propter</w>
                   <w pos="NOUN" lemma="evangelium">evangelium</w>
                </s>
-               <s n="30">
+               <s rend="30">
                   <w pos="PRON" lemma="qui">qui</w>
                   <w pos="ADV" lemma="non">non</w>
                   <w pos="VERB" lemma="accipio">accipiat</w>
@@ -4825,7 +4825,7 @@
                   <w pos="NOUN" lemma="vita">vitam</w>
                   <w pos="NOUN" lemma="aeternus">aeternam</w>
                </s>
-               <s n="31">
+               <s rend="31">
                   <w pos="ADJ" lemma="multus">multi</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="VERB" lemma="sum">erunt</w>
@@ -4835,7 +4835,7 @@
                   <w pos="ADJ" lemma="novus">novissimi</w>
                   <w pos="ADJ" lemma="primus">primi</w>
                </s>
-               <s n="32">
+               <s rend="32">
                   <w pos="VERB" lemma="sum">erant</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="ADP" lemma="in">in</w>
@@ -4865,7 +4865,7 @@
                   <w pos="VERB" lemma="venio" msd="#fd1e7602"> ven <seg function="marker" ana="#u_f63937" xml:id="mk10_32">tura</seg>
                   </w>
                </s>
-               <s n="33">
+               <s rend="33">
                   <w pos="SCONJ" lemma="quia">quia</w>
                   <w pos="ADV" lemma="ecce">ecce</w>
                   <w pos="VERB" lemma="ascendo">ascendimus</w>
@@ -4890,7 +4890,7 @@
                   <w pos="PRON" lemma="is">eum</w>
                   <w pos="NOUN" lemma="gens">gentibus</w>
                </s>
-               <s n="34">
+               <s rend="34">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="inludo">inludent</w>
                   <w pos="PRON" lemma="is">ei</w>
@@ -4908,7 +4908,7 @@
                   <w pos="NOUN" lemma="dies">die</w>
                   <w pos="VERB" lemma="resumgo">resurget</w>
                </s>
-               <s n="35">
+               <s rend="35">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="accedo">accedunt</w>
                   <w pos="ADP" lemma="ad">ad</w>
@@ -4931,7 +4931,7 @@
                      <w pos="PRON" lemma="nos" msd="#fd1e7933">nobis</w>
                   </seg>
                </s>
-               <s n="36" type="s05">
+               <s rend="36" type="s05">
                   <w pos="CCONJ" lemma="at">at</w>
                   <w pos="PRON" lemma="ille">ille</w>
                   <w pos="VERB" lemma="dico">dixit</w>
@@ -4946,7 +4946,7 @@
                      <w pos="PRON" lemma="vos" msd="#fd1e7989">vobis</w>
                   </seg>
                </s>
-               <s n="37">
+               <s rend="37">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="dico">dixerunt</w>
                   <w pos="VERB" lemma="do">da</w>
@@ -4966,7 +4966,7 @@
                   <w pos="NOUN" lemma="gloria">gloria</w>
                   <w pos="PRON" lemma="tuus">tua</w>
                </s>
-               <s n="38" type="sh">
+               <s rend="38" type="sh">
                   <w pos="NOUN" lemma="Iesus">Iesus</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="VERB" lemma="aio">ait</w>
@@ -4993,7 +4993,7 @@
                      <w pos="VERB" lemma="baptizo" msd="#fd1e8216" function="main">baptizari</w>
                   </seg>
                </s>
-               <s n="39" type="sh">
+               <s rend="39" type="sh">
                   <w pos="CCONJ" lemma="at">at</w>
                   <w pos="PRON" lemma="ille">illi</w>
                   <w pos="VERB" lemma="dico">dixerunt</w>
@@ -5035,7 +5035,7 @@
                   <w pos="VERB" lemma="baptia">baptizor</w>
                   <w pos="VERB" lemma="baptialiminus">baptizabimini</w>
                </s>
-               <s n="40" type="sθ">
+               <s rend="40" type="sθ">
                   <seg function="scope" part="Y" ana="#u_f70863">
                      <w pos="VERB" lemma="sedeo" msd="#fd1e8350">sedere</w>
                      <w pos="CCONJ" lemma="autem">autem</w>
@@ -5061,7 +5061,7 @@
                   <w pos="VERB" lemma="paro">paratum</w>
                   <w pos="VERB" lemma="sum">est</w>
                </s>
-               <s n="41">
+               <s rend="41">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="audio">audientes</w>
                   <w pos="NUM" lemma="decem">decem</w>
@@ -5072,7 +5072,7 @@
                   <w pos="CCONJ" lemma="et">et</w>
                   <w>Iohanne</w>
                </s>
-               <s n="42">
+               <s rend="42">
                   <w pos="NOUN" lemma="Iesus">Iesus</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="VERB" lemma="voco">vocans</w>
@@ -5097,7 +5097,7 @@
                   <w pos="VERB" lemma="habeo">habent</w>
                   <w pos="PRON" lemma="ipse">ipsorum</w>
                </s>
-               <s n="43" type="s11">
+               <s rend="43" type="s11">
                   <w pos="ADV" lemma="non">non</w>
                   <w pos="ADV" lemma="ita">ita</w>
                   <w pos="VERB" lemma="sum">est</w>
@@ -5119,7 +5119,7 @@
                   <w pos="PRON" lemma="vester">vester</w>
                   <w>minister</w>
                </s>
-               <s n="44" type="s12">
+               <s rend="44" type="s12">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="PRON" lemma="quicumque" msd="#fd1e8711">
                      <seg function="participant" type="animate" corresp="#u_f73519">quicumque</seg>
@@ -5137,7 +5137,7 @@
                   <w pos="ADJ" lemma="omnis">omnium</w>
                   <w pos="NOUN" lemma="servus">servus</w>
                </s>
-               <s n="45">
+               <s rend="45">
                   <w pos="CCONJ" lemma="nam">nam</w>
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="NOUN" lemma="Filius">Filius</w>
@@ -5158,7 +5158,7 @@
                   <w pos="ADP" lemma="pro">pro</w>
                   <w pos="ADJ" lemma="multus">multis</w>
                </s>
-               <s n="46">
+               <s rend="46">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="venio">veniunt</w>
                   <w pos="NOUN" lemma="Hierichum">Hierichum</w>
@@ -5182,7 +5182,7 @@
                   <w pos="NOUN" lemma="via">viam</w>
                   <w pos="VERB" lemma="mendico">mendicans</w>
                </s>
-               <s n="47">
+               <s rend="47">
                   <w pos="PRON" lemma="qui">qui</w>
                   <w pos="SCONJ" lemma="cum">cum</w>
                   <w pos="VERB" lemma="audio">audisset</w>
@@ -5200,7 +5200,7 @@
                   <w pos="VERB" lemma="miser">miserere</w>
                   <w>mei</w>
                </s>
-               <s n="48">
+               <s rend="48">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="comminor">comminabantur</w>
                   <w pos="PRON" lemma="ille">illi</w>
@@ -5217,7 +5217,7 @@
                   <w pos="VERB" lemma="miser">miserere</w>
                   <w>mei</w>
                </s>
-               <s n="49">
+               <s rend="49">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="sto">stans</w>
                   <w pos="NOUN" lemma="Iesus">Iesus</w>
@@ -5235,7 +5235,7 @@
                   <w pos="VERB" lemma="voco">vocat</w>
                   <w pos="PRON" lemma="tu">te</w>
                </s>
-               <s n="50">
+               <s rend="50">
                   <w pos="PRON" lemma="qui">qui</w>
                   <w pos="VERB" lemma="proicio">proiecto</w>
                   <w pos="NOUN" lemma="vestimentum">vestimento</w>
@@ -5245,7 +5245,7 @@
                   <w pos="ADP" lemma="ad">ad</w>
                   <w pos="PRON" lemma="is">eum</w>
                </s>
-               <s n="51" type="sg">
+               <s rend="51" type="sg">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="respondeo">respondens</w>
                   <w pos="PRON" lemma="ille">illi</w>
@@ -5267,7 +5267,7 @@
                   <w pos="SCONJ" lemma="ut">ut</w>
                   <w pos="VERB" lemma="videa">videam</w>
                </s>
-               <s n="52">
+               <s rend="52">
                   <w pos="NOUN" lemma="Iesus">Iesus</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="VERB" lemma="aio">ait</w>
@@ -5291,7 +5291,7 @@
          </div>
          <div type="chapter" n="11">
             <ab>
-               <s n="1">
+               <s rend="1">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="SCONJ" lemma="cum">cum</w>
                   <w pos="VERB" lemma="adpropinquo">adpropinquarent</w>
@@ -5307,7 +5307,7 @@
                   <w pos="NOUN" lemma="discipulum">discipulis</w>
                   <w pos="ADJ" lemma="suus">suis</w>
                </s>
-               <s n="2">
+               <s rend="2">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="aio">ait</w>
                   <w pos="PRON" lemma="ille">illis</w>
@@ -5336,7 +5336,7 @@
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="duco">adducite</w>
                </s>
-               <s n="3" type="sf">
+               <s rend="3" type="sf">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="SCONJ" lemma="si">si</w>
                   <w pos="PRON" lemma="quis">quis</w>
@@ -5362,7 +5362,7 @@
                   <w pos="VERB" lemma="dimitto">dimittet</w>
                   <w>huc</w>
                </s>
-               <s n="4">
+               <s rend="4">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="abeo">abeuntes</w>
                   <w pos="VERB" lemma="invenio">invenerunt</w>
@@ -5377,7 +5377,7 @@
                   <w pos="VERB" lemma="solvo">solvunt</w>
                   <w pos="PRON" lemma="is">eum</w>
                </s>
-               <s n="5">
+               <s rend="5">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="PRON" lemma="quidam">quidam</w>
                   <w pos="ADP" lemma="de">de</w>
@@ -5390,7 +5390,7 @@
                   <w pos="VERB" lemma="solvo">solventes</w>
                   <w pos="NOUN" lemma="pullus">pullum</w>
                </s>
-               <s n="6">
+               <s rend="6">
                   <w pos="PRON" lemma="qui">qui</w>
                   <w pos="VERB" lemma="dico">dixerunt</w>
                   <w pos="PRON" lemma="is">eis</w>
@@ -5402,7 +5402,7 @@
                   <w pos="VERB" lemma="dimitto">dimiserunt</w>
                   <w pos="PRON" lemma="is">eis</w>
                </s>
-               <s n="10">
+               <s rend="10">
                   <w pos="VERB" lemma="benedicium">benedictum</w>
                   <w pos="PRON" lemma="qui">quod</w>
                   <w pos="VERB" lemma="venio">venit</w>
@@ -5414,7 +5414,7 @@
                   <w pos="ADP" lemma="in">in</w>
                   <w pos="NOUN" lemma="excello">excelsis</w>
                </s>
-               <s n="11">
+               <s rend="11">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="introeo">introivit</w>
                   <w pos="NOUN" lemma="Hierosolym">Hierosolyma</w>
@@ -5434,7 +5434,7 @@
                   <w pos="ADP" lemma="cum">cum</w>
                   <w pos="NUM" lemma="duodecim">duodecim</w>
                </s>
-               <s n="12">
+               <s rend="12">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="ADJ" lemma="alius">alia</w>
                   <w pos="NOUN" lemma="dies">die</w>
@@ -5444,7 +5444,7 @@
                   <w pos="NOUN" lemma="Bethania">Bethania</w>
                   <w pos="VERB" lemma="esurio">esuriit</w>
                </s>
-               <s n="13">
+               <s rend="13">
                   <w pos="SCONJ" lemma="cumque">cumque</w>
                   <w pos="VERB" lemma="video">vidisset</w>
                   <w pos="ADP" lemma="ab">a</w>
@@ -5480,7 +5480,7 @@
                   <w pos="NOUN" lemma="tempus">tempus</w>
                   <w pos="NOUN" lemma="ficis">ficorum</w>
                </s>
-               <s n="14">
+               <s rend="14">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="respondeo">respondens</w>
                   <w pos="VERB" lemma="dico">dixit</w>
@@ -5500,7 +5500,7 @@
                   <w pos="NOUN" lemma="discipulum">discipuli</w>
                   <w pos="PRON" lemma="is">eius</w>
                </s>
-               <s n="15">
+               <s rend="15">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="venio">veniunt</w>
                   <w pos="NOUN" lemma="Hierosolym">Hierosolymam</w>
@@ -5524,7 +5524,7 @@
                   <w pos="NOUN" lemma="columba">columbas</w>
                   <w pos="VERB" lemma="everto">evertit</w>
                </s>
-               <s n="16">
+               <s rend="16">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="ADV" lemma="non">non</w>
                   <w pos="VERB" lemma="sino">sinebat</w>
@@ -5535,7 +5535,7 @@
                   <w pos="ADP" lemma="per">per</w>
                   <w pos="NOUN" lemma="templum">templum</w>
                </s>
-               <s n="25">
+               <s rend="25">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="SCONJ" lemma="cum">cum</w>
                   <w pos="VERB" lemma="sto">stabitis</w>
@@ -5560,7 +5560,7 @@
                   <w pos="NOUN" lemma="pecco">peccata</w>
                   <w pos="PRON" lemma="vester">vestra</w>
                </s>
-               <s n="26">
+               <s rend="26">
                   <w pos="SCONJ" lemma="quod">quod</w>
                   <w pos="SCONJ" lemma="si">si</w>
                   <w pos="PRON" lemma="tu">vos</w>
@@ -5578,7 +5578,7 @@
                   <w pos="NOUN" lemma="pecco">peccata</w>
                   <w>vestra</w>
                </s>
-               <s n="27">
+               <s rend="27">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="venio">veniunt</w>
                   <w pos="ADV" lemma="rursus">rursus</w>
@@ -5598,7 +5598,7 @@
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="ADJ" lemma="senex">seniores</w>
                </s>
-               <s n="28">
+               <s rend="28">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="dico">dicunt</w>
                   <w pos="PRON" lemma="ille">illi</w>
@@ -5621,7 +5621,7 @@
                   <w pos="PRON" lemma="iste">ista</w>
                   <w pos="VERB" lemma="facio">facias</w>
                </s>
-               <s n="29">
+               <s rend="29">
                   <w pos="NOUN" lemma="Iesus">Iesus</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="VERB" lemma="respondeo">respondens</w>
@@ -5647,7 +5647,7 @@
                   <w pos="PRON" lemma="hic">haec</w>
                   <w pos="VERB" lemma="facio">faciam</w>
                </s>
-               <s n="30">
+               <s rend="30">
                   <w pos="NOUN" lemma="baptis">baptismum</w>
                   <w pos="NOUN" lemma="Johannus">Iohannis</w>
                   <w pos="ADP" lemma="de">de</w>
@@ -5659,7 +5659,7 @@
                   <w pos="VERB" lemma="respondeo">respondete</w>
                   <w pos="PRON" lemma="ego">mihi</w>
                </s>
-               <s n="31">
+               <s rend="31">
                   <w pos="CCONJ" lemma="at">at</w>
                   <w pos="PRON" lemma="ille">illi</w>
                   <w pos="VERB" lemma="cogito">cogitabant</w>
@@ -5676,7 +5676,7 @@
                   <w pos="VERB" lemma="credo">credidistis</w>
                   <w>ei</w>
                </s>
-               <s n="32">
+               <s rend="32">
                   <w pos="CCONJ" lemma="sed">sed</w>
                   <w pos="VERB" lemma="dico">dicemus</w>
                   <w pos="ADP" lemma="ex">ex</w>
@@ -5692,7 +5692,7 @@
                   <w pos="NOUN" lemma="propheta">propheta</w>
                   <w pos="VERB" lemma="sum">esset</w>
                </s>
-               <s n="33">
+               <s rend="33">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="respondeo">respondentes</w>
                   <w pos="VERB" lemma="dico">dicunt</w>
@@ -5718,7 +5718,7 @@
          </div>
          <div type="chapter" n="12">
             <ab>
-               <s n="8">
+               <s rend="8">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="adprehendo">adprehendentes</w>
                   <w pos="PRON" lemma="is">eum</w>
@@ -5728,7 +5728,7 @@
                   <w pos="ADP" lemma="exter">extra</w>
                   <w pos="NOUN" lemma="vinea">vineam</w>
                </s>
-               <s n="9">
+               <s rend="9">
                   <w pos="PRON" lemma="quis">quid</w>
                   <w pos="ADV" lemma="ergo">ergo</w>
                   <w pos="VERB" lemma="facio">faciet</w>
@@ -5743,7 +5743,7 @@
                   <w pos="NOUN" lemma="vinea">vineam</w>
                   <w pos="ADJ" lemma="allium">aliis</w>
                </s>
-               <s n="10">
+               <s rend="10">
                   <w pos="CCONJ" lemma="neque">nec</w>
                   <w pos="NOUN" lemma="scribo">scripturam</w>
                   <w pos="PRON" lemma="hic">hanc</w>
@@ -5759,7 +5759,7 @@
                   <w pos="NOUN" lemma="caput">caput</w>
                   <w pos="NOUN" lemma="angulus">anguli</w>
                </s>
-               <s n="11">
+               <s rend="11">
                   <w pos="ADP" lemma="ab">a</w>
                   <w pos="NOUN" lemma="dominus">Domino</w>
                   <w pos="VERB" lemma="facio">factum</w>
@@ -5773,7 +5773,7 @@
                   <w pos="NOUN" lemma="oculus">oculis</w>
                   <w pos="PRON" lemma="noster">nostris</w>
                </s>
-               <s n="12">
+               <s rend="12">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="quaero">quaerebant</w>
                   <w pos="PRON" lemma="is">eum</w>
@@ -5794,7 +5794,7 @@
                   <w pos="PRON" lemma="is">eo</w>
                   <w pos="VERB" lemma="abeo">abierunt</w>
                </s>
-               <s n="13">
+               <s rend="13">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="mitto">mittunt</w>
                   <w pos="ADP" lemma="ad">ad</w>
@@ -5810,7 +5810,7 @@
                   <w pos="ADP" lemma="in">in</w>
                   <w pos="NOUN" lemma="verbum">verbo</w>
                </s>
-               <s n="14" type="sβ" synch="#mk12_14b">
+               <s rend="14" type="sβ" synch="#mk12_14b">
                   <w pos="PRON" lemma="qui">qui</w>
                   <w pos="VERB" lemma="venio">venientes</w>
                   <w pos="VERB" lemma="dico">dicunt</w>
@@ -5850,7 +5850,7 @@
                   <w pos="ADV" lemma="non">non</w>
                   <w pos="VERB" lemma="do">dabimus</w>
                </s>
-               <s n="15">
+               <s rend="15">
                   <w pos="PRON" lemma="qui">qui</w>
                   <w pos="VERB" lemma="scio">sciens</w>
                   <w pos="NOUN" lemma="versutiam">versutiam</w>
@@ -5866,7 +5866,7 @@
                   <w pos="SCONJ" lemma="ut">ut</w>
                   <w pos="VERB" lemma="videa">videam</w>
                </s>
-               <s n="16">
+               <s rend="16">
                   <w pos="CCONJ" lemma="at">at</w>
                   <w pos="PRON" lemma="ille">illi</w>
                   <w pos="VERB" lemma="affero">adtulerunt</w>
@@ -5883,7 +5883,7 @@
                   <w pos="PRON" lemma="ille">illi</w>
                   <w pos="NOUN" lemma="Caesar">Caesaris</w>
                </s>
-               <s n="17">
+               <s rend="17">
                   <w pos="VERB" lemma="respondeo">respondens</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="NOUN" lemma="Iesus">Iesus</w>
@@ -5905,7 +5905,7 @@
                   <w pos="ADP" lemma="super">super</w>
                   <w pos="PRON" lemma="is">eo</w>
                </s>
-               <s n="35">
+               <s rend="35">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="respondeo">respondens</w>
                   <w pos="NOUN" lemma="Iesus">Iesus</w>
@@ -5921,7 +5921,7 @@
                   <w pos="VERB" lemma="sum">esse</w>
                   <w>David</w>
                </s>
-               <s n="36">
+               <s rend="36">
                   <w pos="PRON" lemma="ipse">ipse</w>
                   <w pos="SCONJ" lemma="enim">enim</w>
                   <w pos="NOUN" lemma="dovido">David</w>
@@ -5945,7 +5945,7 @@
                   <w pos="NOUN" lemma="pes">pedum</w>
                   <w pos="PRON" lemma="tuus">tuorum</w>
                </s>
-               <s n="37">
+               <s rend="37">
                   <w pos="PRON" lemma="ipse">ipse</w>
                   <w pos="ADV" lemma="ergo">ergo</w>
                   <w pos="NOUN" lemma="dovido">David</w>
@@ -5964,7 +5964,7 @@
                   <w pos="ADV" lemma="libet">libenter</w>
                   <w pos="VERB" lemma="audio">audivit</w>
                </s>
-               <s n="38" type="sdelta">
+               <s rend="38" type="sdelta">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="dico">dicebat</w>
                   <w pos="PRON" lemma="is">eis</w>
@@ -5994,7 +5994,7 @@
                      <w pos="NOUN" lemma="forum" msd="#fd1e16412">foro</w>
                   </seg>
                </s>
-               <s n="39">
+               <s rend="39">
                   <w pos="CCONJ" lemma="et">et</w>
                   <seg function="scope" ana="#u_f137550">
                      <w pos="ADP" lemma="in">in</w>
@@ -6012,7 +6012,7 @@
                      <w pos="NOUN" lemma="cena" msd="#fd1e16484">cenis</w>
                   </seg>
                </s>
-               <s n="40">
+               <s rend="40">
                   <w pos="PRON" lemma="qui">qui</w>
                   <w pos="VERB" lemma="devoro">devorant</w>
                   <w pos="NOUN" lemma="domus">domos</w>
@@ -6026,7 +6026,7 @@
                   <w pos="ADV" lemma="prolixius">prolixius</w>
                   <w pos="NOUN" lemma="judicium">iudicium</w>
                </s>
-               <s n="41">
+               <s rend="41">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="sedeo">sedens</w>
                   <w pos="NOUN" lemma="Iesus">Iesus</w>
@@ -6045,7 +6045,7 @@
                   <w pos="VERB" lemma="jacto">iactabant</w>
                   <w pos="ADJ" lemma="multus">multa</w>
                </s>
-               <s n="42">
+               <s rend="42">
                   <w pos="SCONJ" lemma="cum">cum</w>
                   <w pos="VERB" lemma="venio">venisset</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
@@ -6063,7 +6063,7 @@
          </div>
          <div type="chapter" n="13">
             <ab>
-               <s n="1">
+               <s rend="1">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="SCONJ" lemma="cum">cum</w>
                   <w pos="VERB" lemma="egredior">egrederetur</w>
@@ -6083,7 +6083,7 @@
                   <w pos="ADJ" lemma="qualis">quales</w>
                   <w pos="NOUN" lemma="structura">structurae</w>
                </s>
-               <s n="2">
+               <s rend="2">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="respondeo">respondens</w>
                   <w pos="NOUN" lemma="Iesus">Iesus</w>
@@ -6103,7 +6103,7 @@
                   <w pos="ADV" lemma="non">non</w>
                   <w pos="VERB" lemma="destruo">destruatur</w>
                </s>
-               <s n="3">
+               <s rend="3">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="SCONJ" lemma="cum">cum</w>
                   <w pos="VERB" lemma="sedeo">sederet</w>
@@ -6123,7 +6123,7 @@
                   <w pos="CCONJ" lemma="et">et</w>
                   <w>Andreas</w>
                </s>
-               <s n="4" synch="#mk13_04">
+               <s rend="4" synch="#mk13_04">
                   <w pos="VERB" lemma="dic">dic</w>
                   <w pos="PRON" lemma="nos">nobis</w>
                   <w pos="ADV" lemma="quando">quando</w>
@@ -6139,7 +6139,7 @@
                   <w pos="VERB" lemma="incipio">incipient</w>
                   <w pos="VERB" lemma="consummo">consummari</w>
                </s>
-               <s n="5">
+               <s rend="5">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="respondeo">respondens</w>
                   <w pos="NOUN" lemma="Iesus">Iesus</w>
@@ -6152,7 +6152,7 @@
                   <w pos="PRON" lemma="tu">vos</w>
                   <w pos="VERB" lemma="seduco">seducat</w>
                </s>
-               <s n="6">
+               <s rend="6">
                   <w pos="ADJ" lemma="multus">multi</w>
                   <w pos="SCONJ" lemma="enim">enim</w>
                   <w pos="VERB" lemma="venio">venient</w>
@@ -6167,7 +6167,7 @@
                   <w pos="ADJ" lemma="multus">multos</w>
                   <w pos="VERB" lemma="seduco">seducent</w>
                </s>
-               <s n="7" type="sc">
+               <s rend="7" type="sc">
                   <w pos="SCONJ" lemma="cum">cum</w>
                   <w pos="VERB" lemma="audio">audieritis</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
@@ -6190,7 +6190,7 @@
                   <w pos="ADV" lemma="nondum">nondum</w>
                   <w pos="NOUN" lemma="finis">finis</w>
                </s>
-               <s n="8">
+               <s rend="8">
                   <w pos="VERB" lemma="exsurgo">exsurget</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="NOUN" lemma="gens">gens</w>
@@ -6211,7 +6211,7 @@
                   <w pos="NOUN" lemma="dolus">dolorum</w>
                   <w>haec</w>
                </s>
-               <s n="9">
+               <s rend="9">
                   <w pos="VERB" lemma="video">videte</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="VERB" lemma="vos">vosmet</w>
@@ -6236,7 +6236,7 @@
                   <w pos="NOUN" lemma="testimonium">testimonium</w>
                   <w pos="PRON" lemma="ille">illis</w>
                </s>
-               <s n="10">
+               <s rend="10">
                   <w pos="CCONJ" lemma="et">et</w>
                   <seg function="scope" part="Y" ana="#u_h7572">
                      <w pos="ADP" lemma="in">in</w>
@@ -6254,7 +6254,7 @@
                      </w>
                   </seg>
                </s>
-               <s n="11">
+               <s rend="11">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="SCONJ" lemma="cum">cum</w>
                   <w pos="VERB" lemma="duco">duxerint</w>
@@ -6285,7 +6285,7 @@
                   <w pos="NOUN" lemma="spiritus">Spiritus</w>
                   <w pos="NOUN" lemma="sanctus">Sanctus</w>
                </s>
-               <s n="12">
+               <s rend="12">
                   <w pos="VERB" lemma="trado">tradet</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="NOUN" lemma="frater">frater</w>
@@ -6305,7 +6305,7 @@
                   <w pos="VERB" lemma="afficio">adficient</w>
                   <w pos="PRON" lemma="is">eos</w>
                </s>
-               <s n="13">
+               <s rend="13">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="eritio">eritis</w>
                   <w pos="NOUN" lemma="odium">odio</w>
@@ -6322,7 +6322,7 @@
                   <w pos="ADJ" lemma="salvus">salvus</w>
                   <w pos="VERB" lemma="sum">erit</w>
                </s>
-               <s n="14">
+               <s rend="14">
                   <w pos="SCONJ" lemma="cum">cum</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="VERB" lemma="video">videritis</w>
@@ -6355,7 +6355,7 @@
                   <w pos="ADP" lemma="in">in</w>
                   <w pos="NOUN" lemma="mons">montes</w>
                </s>
-               <s n="15">
+               <s rend="15">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="PRON" lemma="qui">qui</w>
                   <w pos="ADP" lemma="super">super</w>
@@ -6373,7 +6373,7 @@
                   <w pos="NOUN" lemma="domus">domo</w>
                   <w pos="PRON" lemma="suus">sua</w>
                </s>
-               <s n="16">
+               <s rend="16">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="PRON" lemma="qui">qui</w>
                   <w pos="ADP" lemma="in">in</w>
@@ -6386,7 +6386,7 @@
                   <w pos="NOUN" lemma="vestimentum">vestimentum</w>
                   <w pos="ADJ" lemma="suus">suum</w>
                </s>
-               <s n="17">
+               <s rend="17">
                   <w pos="INTJ" lemma="vae">vae</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="ADJ" lemma="praegno">praegnatibus</w>
@@ -6396,7 +6396,7 @@
                   <w pos="PRON" lemma="ille">illis</w>
                   <w pos="NOUN" lemma="dies">diebus</w>
                </s>
-               <s n="19">
+               <s rend="19">
                   <w pos="VERB" lemma="sum">erunt</w>
                   <w pos="SCONJ" lemma="enim">enim</w>
                   <w pos="NOUN" lemma="dies">dies</w>
@@ -6417,7 +6417,7 @@
                   <w pos="CCONJ" lemma="neque">neque</w>
                   <w pos="VERB" lemma="fio">fient</w>
                </s>
-               <s n="20">
+               <s rend="20">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="SCONJ" lemma="nisi">nisi</w>
                   <w pos="VERB" lemma="brevio">breviasset</w>
@@ -6436,7 +6436,7 @@
                   <w pos="VERB" lemma="brevio">breviavit</w>
                   <w>dies</w>
                </s>
-               <s n="21">
+               <s rend="21">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="ADV" lemma="tunc">tunc</w>
                   <w pos="SCONJ" lemma="si">si</w>
@@ -6452,7 +6452,7 @@
                   <w pos="ADV" lemma="ne">ne</w>
                   <w>credideritis</w>
                </s>
-               <s n="22" type="si">
+               <s rend="22" type="si">
                   <w pos="VERB" lemma="exsurgo">exsurgent</w>
                   <w pos="SCONJ" lemma="enim">enim</w>
                   <w pos="NOUN" lemma="pseudochristus">pseudochristi</w>
@@ -6476,7 +6476,7 @@
                   <w pos="CCONJ" lemma="etiam">etiam</w>
                   <w pos="VERB" lemma="electus">electos</w>
                </s>
-               <s n="23">
+               <s rend="23">
                   <w pos="PRON" lemma="tu">vos</w>
                   <w pos="ADV" lemma="ergo">ergo</w>
                   <w pos="VERB" lemma="video">videte</w>
@@ -6485,7 +6485,7 @@
                   <w pos="PRON" lemma="tu">vobis</w>
                   <w pos="ADJ" lemma="omnis">omnia</w>
                </s>
-               <s n="24">
+               <s rend="24">
                   <w pos="CCONJ" lemma="sed">sed</w>
                   <w pos="ADP" lemma="in">in</w>
                   <w pos="PRON" lemma="ille">illis</w>
@@ -6502,7 +6502,7 @@
                   <w pos="NOUN" lemma="splendor">splendorem</w>
                   <w pos="ADJ" lemma="suus">suum</w>
                </s>
-               <s n="25" synch="#mk13_25">
+               <s rend="25" synch="#mk13_25">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="sum">erunt</w>
                   <w pos="NOUN" lemma="stella">stellae</w>
@@ -6516,7 +6516,7 @@
                   <w pos="NOUN" lemma="caelum">caelis</w>
                   <w pos="VERB" lemma="moveo">movebuntur</w>
                </s>
-               <s n="26" synch="#mk13_26">
+               <s rend="26" synch="#mk13_26">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="ADV" lemma="tunc">tunc</w>
                   <w pos="VERB" lemma="video">videbunt</w>
@@ -6531,7 +6531,7 @@
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="NOUN" lemma="gloria">gloria</w>
                </s>
-               <s n="27">
+               <s rend="27">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="ADV" lemma="tunc">tunc</w>
                   <w pos="VERB" lemma="mitto">mittet</w>
@@ -6552,7 +6552,7 @@
                   <w pos="ADJ" lemma="superus">summum</w>
                   <w pos="NOUN" lemma="caelum">caeli</w>
                </s>
-               <s n="28">
+               <s rend="28">
                   <w pos="INTJ" lemma="ah">a</w>
                   <w pos="NOUN" lemma="ficu">ficu</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
@@ -6575,7 +6575,7 @@
                   <w pos="VERB" lemma="sum">sit</w>
                   <w pos="NOUN" lemma="aestis">aestas</w>
                </s>
-               <s n="29">
+               <s rend="29">
                   <w pos="ADV" lemma="sic">sic</w>
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="PRON" lemma="tu">vos</w>
@@ -6591,7 +6591,7 @@
                   <w pos="ADP" lemma="in">in</w>
                   <w pos="NOUN" lemma="ostium">ostiis</w>
                </s>
-               <s n="31">
+               <s rend="31">
                   <w pos="NOUN" lemma="caelum">caelum</w>
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="NOUN" lemma="terra">terra</w>
@@ -6602,7 +6602,7 @@
                   <w pos="ADV" lemma="non">non</w>
                   <w pos="VERB" lemma="transeo">transibunt</w>
                </s>
-               <s n="32">
+               <s rend="32">
                   <w pos="ADP" lemma="de">de</w>
                   <w pos="NOUN" lemma="dies">die</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
@@ -6620,7 +6620,7 @@
                   <w pos="SCONJ" lemma="nisi">nisi</w>
                   <w pos="NOUN" lemma="pater">Pater</w>
                </s>
-               <s n="33">
+               <s rend="33">
                   <w pos="VERB" lemma="video">videte</w>
                   <w pos="VERB" lemma="vigilas">vigilate</w>
                   <w pos="CCONJ" lemma="et">et</w>
@@ -6631,7 +6631,7 @@
                   <w pos="NOUN" lemma="tempus">tempus</w>
                   <w pos="VERB" lemma="sum">sit</w>
                </s>
-               <s n="34">
+               <s rend="34">
                   <w pos="SCONJ" lemma="sicut">sicut</w>
                   <w pos="NOUN" lemma="homo">homo</w>
                   <w pos="PRON" lemma="qui">qui</w>
@@ -6655,7 +6655,7 @@
                   <w pos="SCONJ" lemma="ut">ut</w>
                   <w pos="VERB" lemma="vigilet">vigilet</w>
                </s>
-               <s n="35">
+               <s rend="35">
                   <w pos="VERB" lemma="vigilas">vigilate</w>
                   <w pos="ADV" lemma="ergo">ergo</w>
                   <w pos="VERB" lemma="nescio">nescitis</w>
@@ -6674,7 +6674,7 @@
                   <w pos="SCONJ" lemma="an">an</w>
                   <w>mane</w>
                </s>
-               <s n="36">
+               <s rend="36">
                   <w pos="ADV" lemma="ne">ne</w>
                   <w pos="SCONJ" lemma="cum">cum</w>
                   <w pos="VERB" lemma="venio">venerit</w>
@@ -6683,7 +6683,7 @@
                   <w pos="PRON" lemma="tu">vos</w>
                   <w pos="VERB" lemma="dormio">dormientes</w>
                </s>
-               <s n="37">
+               <s rend="37">
                   <w pos="PRON" lemma="qui">quod</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="PRON" lemma="tu">vobis</w>
@@ -6696,7 +6696,7 @@
          </div>
          <div type="chapter" n="14">
             <ab>
-               <s n="1">
+               <s rend="1">
                   <w pos="VERB" lemma="sum">erat</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="NOUN" lemma="paschus">pascha</w>
@@ -6717,7 +6717,7 @@
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="occido">occiderent</w>
                </s>
-               <s n="2" type="sλ">
+               <s rend="2" type="sλ">
                   <w pos="VERB" lemma="dico">dicebant</w>
                   <w pos="SCONJ" lemma="enim">enim</w>
                   <w pos="ADV" lemma="non">non</w>
@@ -6738,7 +6738,7 @@
                      <w pos="NOUN" lemma="populus" msd="#hd1e3362">populi</w>
                   </seg>
                </s>
-               <s n="3">
+               <s rend="3">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="SCONJ" lemma="cum">cum</w>
                   <w pos="VERB" lemma="sum">esset</w>
@@ -6765,7 +6765,7 @@
                   <w pos="NOUN" lemma="caput">caput</w>
                   <w pos="PRON" lemma="is">eius</w>
                </s>
-               <s n="4">
+               <s rend="4">
                   <w pos="VERB" lemma="sum">erant</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="PRON" lemma="quidam">quidam</w>
@@ -6784,7 +6784,7 @@
                   <w pos="VERB" lemma="facio">facta</w>
                   <w pos="VERB" lemma="sum">est</w>
                </s>
-               <s n="5" type="su">
+               <s rend="5" type="su">
                   <w pos="VERB" lemma="possum" msd="#hd1e3614">
                      <seg function="marker" ana="#u_h29742" xml:id="mk14_05">poterat</seg>
                   </w>
@@ -6810,7 +6810,7 @@
                   <w pos="ADP" lemma="in">in</w>
                   <w pos="PRON" lemma="is">eam</w>
                </s>
-               <s n="6">
+               <s rend="6">
                   <w pos="NOUN" lemma="Iesus">Iesus</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="VERB" lemma="dico">dixit</w>
@@ -6827,7 +6827,7 @@
                   <w pos="ADP" lemma="in">in</w>
                   <w pos="PRON" lemma="ego">me</w>
                </s>
-               <s n="7">
+               <s rend="7">
                   <w pos="ADV" lemma="semper">semper</w>
                   <w pos="SCONJ" lemma="enim">enim</w>
                   <w pos="ADJ" lemma="pauper">pauperes</w>
@@ -6857,7 +6857,7 @@
                   <w pos="ADV" lemma="semper">semper</w>
                   <w pos="VERB" lemma="habeo">habetis</w>
                </s>
-               <s n="8">
+               <s rend="8">
                   <w pos="PRON" lemma="qui">quod</w>
                   <seg function="marker" xml:id="mk14_08" ana="#u_1i32224">
                      <w pos="VERB" lemma="habeo" msd="#id1e7836">habuit</w>
@@ -6876,7 +6876,7 @@
                   <w pos="ADP" lemma="in">in</w>
                   <w pos="NOUN" lemma="sepultura">sepulturam</w>
                </s>
-               <s n="9">
+               <s rend="9">
                   <w pos="VERB" lemma="amen">amen</w>
                   <w pos="VERB" lemma="dico">dico</w>
                   <w pos="PRON" lemma="tu">vobis</w>
@@ -6897,7 +6897,7 @@
                   <w pos="NOUN" lemma="memoria">memoriam</w>
                   <w pos="PRON" lemma="is">eius</w>
                </s>
-               <s n="10">
+               <s rend="10">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="NOUN" lemma="judus">Iudas</w>
                   <w pos="NOUN" lemma="Scariotus">Scariotis</w>
@@ -6913,7 +6913,7 @@
                   <w pos="PRON" lemma="is">eum</w>
                   <w pos="PRON" lemma="ille">illis</w>
                </s>
-               <s n="11">
+               <s rend="11">
                   <w pos="PRON" lemma="qui">qui</w>
                   <w pos="VERB" lemma="audio">audientes</w>
                   <w pos="ADJ" lemma="gavis">gavisi</w>
@@ -6932,7 +6932,7 @@
                   <w pos="ADV" lemma="oportunus">oportune</w>
                   <w pos="VERB" lemma="trado">traderet</w>
                </s>
-               <s n="12" type="s04">
+               <s rend="12" type="s04">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="ADV" lemma="primo">primo</w>
                   <w pos="NOUN" lemma="dies">die</w>
@@ -6959,7 +6959,7 @@
                      <w pos="NOUN" lemma="pascha" msd="#hd1e4353">pascha</w>
                   </seg>
                </s>
-               <s n="13">
+               <s rend="13">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="mitto">mittit</w>
                   <w pos="ADJ" lemma="duo">duos</w>
@@ -6982,7 +6982,7 @@
                   <w pos="VERB" lemma="sequimenium">sequimini</w>
                   <w pos="PRON" lemma="is">eum</w>
                </s>
-               <s n="14">
+               <s rend="14">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="PRON" lemma="quicumque">quocumque</w>
                   <w pos="VERB" lemma="introeo">introierit</w>
@@ -7003,7 +7003,7 @@
                   <w pos="PRON" lemma="meus">meis</w>
                   <w>manducem</w>
                </s>
-               <s n="15">
+               <s rend="15">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="PRON" lemma="ipse">ipse</w>
                   <w pos="PRON" lemma="tu">vobis</w>
@@ -7016,7 +7016,7 @@
                   <w pos="VERB" lemma="paro">parate</w>
                   <w pos="PRON" lemma="nos">nobis</w>
                </s>
-               <s n="27">
+               <s rend="27">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="aio">ait</w>
                   <w pos="PRON" lemma="is">eis</w>
@@ -7035,7 +7035,7 @@
                   <w pos="VERB" lemma="dispergo">dispergentur</w>
                   <w pos="NOUN" lemma="ovis">oves</w>
                </s>
-               <s n="28">
+               <s rend="28">
                   <w pos="CCONJ" lemma="sed">sed</w>
                   <w pos="ADV" lemma="posteaquam">posteaquam</w>
                   <w pos="VERB" lemma="resurrigo">resurrexero</w>
@@ -7044,7 +7044,7 @@
                   <w pos="ADP" lemma="in">in</w>
                   <w pos="NOUN" lemma="Galilaea">Galilaeam</w>
                </s>
-               <s n="29">
+               <s rend="29">
                   <w pos="NOUN" lemma="petrus">Petrus</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="VERB" lemma="aio">ait</w>
@@ -7058,7 +7058,7 @@
                   <w pos="ADV" lemma="non">non</w>
                   <w pos="PRON" lemma="ego">ego</w>
                </s>
-               <s n="30">
+               <s rend="30">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="aio">ait</w>
                   <w pos="PRON" lemma="ille">illi</w>
@@ -7083,7 +7083,7 @@
                   <w pos="VERB" lemma="nego" msd="#hd1e5923"> nega <seg function="marker" ana="#u_h49122" xml:id="mk14_30">turus</seg>
                   </w>
                </s>
-               <s n="31" type="sd">
+               <s rend="31" type="sd">
                   <w pos="CCONJ" lemma="at">at</w>
                   <w pos="PRON" lemma="ille">ille</w>
                   <w pos="ADV" lemma="amplus">amplius</w>
@@ -7110,7 +7110,7 @@
                   <w pos="ADJ" lemma="omnis">omnes</w>
                   <w pos="VERB" lemma="dico">dicebant</w>
                </s>
-               <s n="32">
+               <s rend="32">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="venio">veniunt</w>
                   <w pos="ADP" lemma="in">in</w>
@@ -7127,7 +7127,7 @@
                   <w pos="ADV" lemma="donec">donec</w>
                   <w>orem</w>
                </s>
-               <s n="33">
+               <s rend="33">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="assum">adsumit</w>
                   <w pos="NOUN" lemma="petrum">Petrum</w>
@@ -7142,7 +7142,7 @@
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="taedo">taedere</w>
                </s>
-               <s n="34">
+               <s rend="34">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="aio">ait</w>
                   <w pos="PRON" lemma="ille">illis</w>
@@ -7158,7 +7158,7 @@
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="vigilas">vigilate</w>
                </s>
-               <s n="35">
+               <s rend="35">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="SCONJ" lemma="cum">cum</w>
                   <w pos="VERB" lemma="procedo">processisset</w>
@@ -7183,7 +7183,7 @@
                      <w pos="NOUN" lemma="hora" msd="#hd1e6381">hora</w>
                   </seg>
                </s>
-               <s n="36" type="sepsilon">
+               <s rend="36" type="sepsilon">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="dico">dixit</w>
                   <w pos="PRON" lemma="abbus">Abba</w>
@@ -7214,7 +7214,7 @@
                   <w pos="SCONJ" lemma="quod">quod</w>
                   <w pos="PRON" lemma="tu">tu</w>
                </s>
-               <s n="37" type="st">
+               <s rend="37" type="st">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="venio">venit</w>
                   <w pos="CCONJ" lemma="et">et</w>
@@ -7238,7 +7238,7 @@
                      <w pos="VERB" lemma="vigilo" msd="#hd1e6608" function="main">vigilare</w>
                   </seg>
                </s>
-               <s n="38">
+               <s rend="38">
                   <w pos="VERB" lemma="vigilas">vigilate</w>
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="oras">orate</w>
@@ -7254,7 +7254,7 @@
                   <w pos="ADV" lemma="verus">vero</w>
                   <w pos="ADJ" lemma="infirmus">infirma</w>
                </s>
-               <s n="39">
+               <s rend="39">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="ADV" lemma="iterum">iterum</w>
                   <w pos="VERB" lemma="abio">abiens</w>
@@ -7263,7 +7263,7 @@
                   <w pos="NOUN" lemma="sermo">sermonem</w>
                   <w pos="VERB" lemma="dico">dicens</w>
                </s>
-               <s n="40">
+               <s rend="40">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="reversus">reversus</w>
                   <w pos="ADV" lemma="denuo">denuo</w>
@@ -7281,7 +7281,7 @@
                   <w pos="VERB" lemma="respondeo">responderent</w>
                   <w>ei</w>
                </s>
-               <s n="55">
+               <s rend="55">
                   <w pos="ADJ" lemma="summus">summi</w>
                   <w pos="ADV" lemma="verus">vero</w>
                   <w pos="NOUN" lemma="sacerdos">sacerdotes</w>
@@ -7299,7 +7299,7 @@
                   <w pos="CCONJ" lemma="neque">nec</w>
                   <w pos="VERB" lemma="invenio">inveniebant</w>
                </s>
-               <s n="56">
+               <s rend="56">
                   <w pos="ADJ" lemma="multus">multi</w>
                   <w pos="SCONJ" lemma="enim">enim</w>
                   <w pos="NOUN" lemma="testimonium">testimonium</w>
@@ -7313,7 +7313,7 @@
                   <w pos="ADV" lemma="non">non</w>
                   <w pos="VERB" lemma="sum">erant</w>
                </s>
-               <s n="57">
+               <s rend="57">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="PRON" lemma="quidam">quidam</w>
                   <w pos="VERB" lemma="surgo">surgentes</w>
@@ -7324,7 +7324,7 @@
                   <w pos="PRON" lemma="is">eum</w>
                   <w pos="VERB" lemma="dico">dicentes</w>
                </s>
-               <s n="58" synch="#mk14_58">
+               <s rend="58" synch="#mk14_58">
                   <w pos="SCONJ" lemma="quoniam">quoniam</w>
                   <w pos="PRON" lemma="nos">nos</w>
                   <w pos="VERB" lemma="audio">audivimus</w>
@@ -7343,7 +7343,7 @@
                   <w pos="VERB" lemma="manufacio">manufactum</w>
                   <w pos="VERB" lemma="aedifico">aedificabo</w>
                </s>
-               <s n="59">
+               <s rend="59">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="ADV" lemma="non">non</w>
                   <w pos="VERB" lemma="sum">erat</w>
@@ -7351,7 +7351,7 @@
                   <w pos="NOUN" lemma="testimonium">testimonium</w>
                   <w pos="PRON" lemma="ille">illorum</w>
                </s>
-               <s n="60">
+               <s rend="60">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="exsurgo">exsurgens</w>
                   <w pos="ADJ" lemma="sum">summus</w>
@@ -7372,7 +7372,7 @@
                   <w pos="ADP" lemma="ab">ab</w>
                   <w pos="PRON" lemma="hic">his</w>
                </s>
-               <s n="61">
+               <s rend="61">
                   <w pos="PRON" lemma="ille">ille</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="VERB" lemma="taceo">tacebat</w>
@@ -7393,7 +7393,7 @@
                   <w pos="ADJ" lemma="Filius">Filius</w>
                   <w>Benedicti</w>
                </s>
-               <s n="62" synch="#mk14_62">
+               <s rend="62" synch="#mk14_62">
                   <w pos="NOUN" lemma="Iesus">Iesus</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="VERB" lemma="dico">dixit</w>
@@ -7414,7 +7414,7 @@
                   <w pos="NOUN" lemma="nubis">nubibus</w>
                   <w pos="NOUN" lemma="caelum">caeli</w>
                </s>
-               <s n="63" synch="#mk14_63">
+               <s rend="63" synch="#mk14_63">
                   <w pos="ADJ" lemma="sum">summus</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="NOUN" lemma="sacerdos">sacerdos</w>
@@ -7427,7 +7427,7 @@
                   <w pos="VERB" lemma="desidero">desideramus</w>
                   <w>testes</w>
                </s>
-               <s n="64">
+               <s rend="64">
                   <w pos="VERB" lemma="audio">audistis</w>
                   <w pos="NOUN" lemma="blasphemia">blasphemiam</w>
                   <w pos="PRON" lemma="quis">quid</w>
@@ -7441,7 +7441,7 @@
                   <w pos="NOUN" lemma="reus">reum</w>
                   <w pos="NOUN" lemma="mors">mortis</w>
                </s>
-               <s n="65">
+               <s rend="65">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="coepio">coeperunt</w>
                   <w pos="PRON" lemma="quidam">quidam</w>
@@ -7465,7 +7465,7 @@
                   <w pos="PRON" lemma="is">eum</w>
                   <w pos="VERB" lemma="caedo">caedebant</w>
                </s>
-               <s n="66">
+               <s rend="66">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="SCONJ" lemma="cum">cum</w>
                   <w pos="VERB" lemma="sum">esset</w>
@@ -7484,7 +7484,7 @@
          </div>
          <div type="chapter" n="15">
             <ab>
-               <s n="6">
+               <s rend="6">
                   <w pos="ADP" lemma="per">per</w>
                   <w pos="NOUN" lemma="dies">diem</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
@@ -7498,7 +7498,7 @@
                   <w pos="PRON" lemma="quiscumque">quemcumque</w>
                   <w pos="VERB" lemma="peto">petissent</w>
                </s>
-               <s n="7">
+               <s rend="7">
                   <w pos="VERB" lemma="sum">erat</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="PRON" lemma="qui">qui</w>
@@ -7515,7 +7515,7 @@
                   <w pos="VERB" lemma="facio">fecerant</w>
                   <w pos="NOUN" lemma="homicidium">homicidium</w>
                </s>
-               <s n="8">
+               <s rend="8">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="SCONJ" lemma="cum">cum</w>
                   <w pos="VERB" lemma="ascendo">ascendisset</w>
@@ -7527,7 +7527,7 @@
                   <w pos="VERB" lemma="facio">faciebat</w>
                   <w pos="PRON" lemma="ille">illis</w>
                </s>
-               <s n="9" type="s14">
+               <s rend="9" type="s14">
                   <w pos="VERB" lemma="Pilatus">Pilatus</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="VERB" lemma="respondeo">respondit</w>
@@ -7544,7 +7544,7 @@
                      <w pos="NOUN" lemma="Judaeus" msd="#hd1e10294">Iudaeorum</w>
                   </seg>
                </s>
-               <s n="10">
+               <s rend="10">
                   <w pos="VERB" lemma="scio">sciebat</w>
                   <w pos="SCONJ" lemma="enim">enim</w>
                   <w pos="SCONJ" lemma="quod">quod</w>
@@ -7555,7 +7555,7 @@
                   <w pos="ADJ" lemma="summus">summi</w>
                   <w pos="NOUN" lemma="sacerdos">sacerdotes</w>
                </s>
-               <s n="11">
+               <s rend="11">
                   <w pos="NOUN" lemma="pontifex">pontifices</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="VERB" lemma="concito">concitaverunt</w>
@@ -7566,7 +7566,7 @@
                   <w pos="VERB" lemma="dimitto">dimitteret</w>
                   <w>eis</w>
                </s>
-               <s n="12" type="szeta">
+               <s rend="12" type="szeta">
                   <w pos="VERB" lemma="Pilatus">Pilatus</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="ADV" lemma="iterum">iterum</w>
@@ -7584,7 +7584,7 @@
                      <w pos="NOUN" lemma="Judaeus" msd="#hd1e10470">Iudaeorum</w>
                   </seg>
                </s>
-               <s n="13">
+               <s rend="13">
                   <w pos="CCONJ" lemma="at">at</w>
                   <w pos="PRON" lemma="ille">illi</w>
                   <w pos="ADV" lemma="iterum">iterum</w>
@@ -7592,7 +7592,7 @@
                   <w pos="VERB" lemma="crucifigo">crucifige</w>
                   <w pos="PRON" lemma="is">eum</w>
                </s>
-               <s n="14">
+               <s rend="14">
                   <w pos="VERB" lemma="Pilatus">Pilatus</w>
                   <w pos="ADV" lemma="verus">vero</w>
                   <w pos="VERB" lemma="dico">dicebat</w>
@@ -7608,7 +7608,7 @@
                   <w pos="VERB" lemma="crucifigo">crucifige</w>
                   <w pos="PRON" lemma="is">eum</w>
                </s>
-               <s n="15">
+               <s rend="15">
                   <w pos="NOUN" lemma="Pilatus" msd="#hd1e10594">
                      <seg function="participant" type="animate" corresp="#u_h88185">Pilatus</seg>
                   </w>
@@ -7631,7 +7631,7 @@
                   <w pos="SCONJ" lemma="ut">ut</w>
                   <w pos="VERB" lemma="crucigo">crucifigeretur</w>
                </s>
-               <s n="16">
+               <s rend="16">
                   <w pos="NOUN" lemma="miles">milites</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="VERB" lemma="duco">duxerunt</w>
@@ -7645,7 +7645,7 @@
                   <w pos="ADJ" lemma="totus">totam</w>
                   <w pos="NOUN" lemma="cohors">cohortem</w>
                </s>
-               <s n="17">
+               <s rend="17">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="induo">induunt</w>
                   <w pos="PRON" lemma="is">eum</w>
@@ -7657,7 +7657,7 @@
                   <w pos="ADJ" lemma="spinia">spineam</w>
                   <w pos="NOUN" lemma="corona">coronam</w>
                </s>
-               <s n="18">
+               <s rend="18">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="coepio">coeperunt</w>
                   <w pos="VERB" lemma="saluto">salutare</w>
@@ -7666,7 +7666,7 @@
                   <w pos="NOUN" lemma="rex">rex</w>
                   <w pos="ADJ" lemma="juda">Iudaeorum</w>
                </s>
-               <s n="28">
+               <s rend="28">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="adimpleo">adimpleta</w>
                   <w pos="VERB" lemma="sum">est</w>
@@ -7679,7 +7679,7 @@
                   <w pos="VERB" lemma="reputo">reputatus</w>
                   <w pos="VERB" lemma="sum">est</w>
                </s>
-               <s n="29">
+               <s rend="29">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="praetereo">praetereuntes</w>
                   <w pos="VERB" lemma="blasphemo">blasphemabant</w>
@@ -7699,7 +7699,7 @@
                   <w pos="NOUN" lemma="dies">diebus</w>
                   <w pos="VERB" lemma="aedificatum">aedificat</w>
                </s>
-               <s n="30">
+               <s rend="30">
                   <w pos="ADJ" lemma="salvus">salvum</w>
                   <w pos="VERB" lemma="facus">fac</w>
                   <w pos="NOUN" lemma="temeo">temet</w>
@@ -7708,7 +7708,7 @@
                   <w pos="ADP" lemma="de">de</w>
                   <w pos="NOUN" lemma="crux">cruce</w>
                </s>
-               <s n="31" type="sp">
+               <s rend="31" type="sp">
                   <w pos="ADV" lemma="similis">similiter</w>
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="ADJ" lemma="summus">summi</w>
@@ -7737,7 +7737,7 @@
                      <w pos="VERB" lemma="facio" msd="#hd1e11826" function="main">facere</w>
                   </seg>
                </s>
-               <s n="32">
+               <s rend="32">
                   <w pos="NOUN" lemma="christus">Christus</w>
                   <w pos="NOUN" lemma="rex">rex</w>
                   <w pos="NOUN" lemma="Israhel">Israhel</w>
@@ -7758,7 +7758,7 @@
                   <w pos="VERB" lemma="convicio">conviciabantur</w>
                   <w>ei</w>
                </s>
-               <s n="33">
+               <s rend="33">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="facio">facta</w>
                   <w pos="NOUN" lemma="hora">hora</w>
@@ -7774,7 +7774,7 @@
                   <w pos="NOUN" lemma="hora">horam</w>
                   <w>nonam</w>
                </s>
-               <s n="34">
+               <s rend="34">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="NOUN" lemma="hora">hora</w>
                   <w pos="NUM" lemma="nonum">nona</w>
@@ -7803,7 +7803,7 @@
          </div>
          <div type="chapter" n="16">
             <ab>
-               <s n="3">
+               <s rend="3">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="dico">dicebant</w>
                   <w pos="ADP" lemma="ad">ad</w>
@@ -7816,7 +7816,7 @@
                   <w pos="NOUN" lemma="ostium">ostio</w>
                   <w pos="NOUN" lemma="monumentum">monumenti</w>
                </s>
-               <s n="4">
+               <s rend="4">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="respicio">respicientes</w>
                   <w pos="VERB" lemma="video">vident</w>
@@ -7827,7 +7827,7 @@
                   <w pos="ADJ" lemma="magnus">magnus</w>
                   <w>valde</w>
                </s>
-               <s n="5">
+               <s rend="5">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="introeo">introeuntes</w>
                   <w pos="ADP" lemma="in">in</w>
@@ -7843,7 +7843,7 @@
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="obstipuo">obstipuerunt</w>
                </s>
-               <s n="6">
+               <s rend="6">
                   <w pos="PRON" lemma="qui">qui</w>
                   <w pos="VERB" lemma="dico">dicit</w>
                   <w pos="PRON" lemma="ille">illis</w>
@@ -7865,7 +7865,7 @@
                   <w pos="VERB" lemma="pono">posuerunt</w>
                   <w pos="PRON" lemma="is">eum</w>
                </s>
-               <s n="7">
+               <s rend="7">
                   <w pos="CCONJ" lemma="sed">sed</w>
                   <w pos="VERB" lemma="ite">ite</w>
                   <w pos="CCONJ" lemma="et">et</w>
@@ -7886,7 +7886,7 @@
                   <w pos="VERB" lemma="dico">dixit</w>
                   <w pos="PRON" lemma="tu">vobis</w>
                </s>
-               <s n="8" synch="#mk16_08">
+               <s rend="8" synch="#mk16_08">
                   <w pos="CCONJ" lemma="at">at</w>
                   <w pos="ADJ" lemma="ille">illae</w>
                   <w pos="VERB" lemma="exeo">exeuntes</w>
@@ -7906,7 +7906,7 @@
                   <w pos="VERB" lemma="timeo">timebant</w>
                   <w pos="SCONJ" lemma="enim">enim</w>
                </s>
-               <s n="9">
+               <s rend="9">
                   <w pos="VERB" lemma="surgeo">surgens</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="ADV" lemma="manus">mane</w>
@@ -7922,7 +7922,7 @@
                   <w pos="NUM" lemma="septem">septem</w>
                   <w pos="NOUN" lemma="daemonium">daemonia</w>
                </s>
-               <s n="10">
+               <s rend="10">
                   <w pos="PRON" lemma="ille">illa</w>
                   <w pos="VERB" lemma="vado">vadens</w>
                   <w pos="VERB" lemma="nuntio">nuntiavit</w>
@@ -7935,7 +7935,7 @@
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="fleo">flentibus</w>
                </s>
-               <s n="11">
+               <s rend="11">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="PRON" lemma="ille">illi</w>
                   <w pos="VERB" lemma="audio">audientes</w>
@@ -7949,7 +7949,7 @@
                   <w pos="ADV" lemma="non">non</w>
                   <w pos="VERB" lemma="credo">crediderunt</w>
                </s>
-               <s n="15">
+               <s rend="15">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="dico">dixit</w>
                   <w pos="PRON" lemma="is">eis</w>
@@ -7962,7 +7962,7 @@
                   <w pos="ADJ" lemma="omnis">omni</w>
                   <w pos="NOUN" lemma="creo">creaturae</w>
                </s>
-               <s n="16">
+               <s rend="16">
                   <w pos="PRON" lemma="qui">qui</w>
                   <w pos="VERB" lemma="credo">crediderit</w>
                   <w pos="CCONJ" lemma="et">et</w>
@@ -7976,7 +7976,7 @@
                   <w pos="VERB" lemma="credo">crediderit</w>
                   <w pos="VERB" lemma="condemno">condemnabitur</w>
                </s>
-               <s n="17">
+               <s rend="17">
                   <w pos="NOUN" lemma="signum">signa</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="PRON" lemma="is">eos</w>
@@ -7993,7 +7993,7 @@
                   <w pos="VERB" lemma="loquor">loquentur</w>
                   <w pos="ADJ" lemma="novus">novis</w>
                </s>
-               <s n="18" synch="#mk16_18">
+               <s rend="18" synch="#mk16_18">
                   <w pos="NOUN" lemma="serpens">serpentes</w>
                   <w pos="VERB" lemma="tollo">tollent</w>
                   <w pos="CCONJ" lemma="et">et</w>
@@ -8012,7 +8012,7 @@
                   <w pos="ADV" lemma="bene">bene</w>
                   <w pos="VERB" lemma="habeo">habebunt</w>
                </s>
-               <s n="19">
+               <s rend="19">
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="NOUN" lemma="dominus">Dominus</w>
                   <w pos="ADV" lemma="quidem">quidem</w>
@@ -8030,7 +8030,7 @@
                   <w pos="NOUN" lemma="dexter">dextris</w>
                   <w pos="NOUN" lemma="deus">Dei</w>
                </s>
-               <s n="20">
+               <s rend="20">
                   <w pos="PRON" lemma="ille">illi</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="VERB" lemma="proficio">profecti</w>
@@ -8044,7 +8044,7 @@
                   <w pos="VERB" lemma="sequor">sequentibus</w>
                   <w pos="NOUN" lemma="signis">signis</w>
                </s>
-               <s n="21">
+               <s rend="21">
                   <w pos="NOUN" lemma="explicit">EXPLICIT</w>
                   <w>EVANGELIUM</w>
                   <w>SECUNDUM</w>
@@ -10005,9 +10005,6 @@
             <f name="locus">
                <string>17</string>
             </f>
-            <f name="participant">
-               <symbol value="none"/>
-            </f>
          </fs>
          <fs xml:id="u_i46211" type="scope">
             <f name="utterance">
@@ -10021,9 +10018,6 @@
             </f>
             <f name="locus">
                <string>17</string>
-            </f>
-            <f name="participant">
-               <symbol value="none"/>
             </f>
          </fs>
          <fs xml:id="u_i48140" type="marker">
@@ -10391,9 +10385,6 @@
             </f>
             <f name="locus">
                <string>13</string>
-            </f>
-            <f name="participant">
-               <symbol value="none"/>
             </f>
          </fs>
          <fs xml:id="u_i65444" type="marker">
@@ -11034,9 +11025,7 @@
             <f name="type">
                <symbol value="situational"/>
             </f>
-<f name="subtype">
-<symbol value="none"/>
-</f>
+
          </fs>
          <fs xml:id="r_i51752" type="relation">
             <f name="modality">
@@ -11239,9 +11228,7 @@
             <f name="type">
                <symbol value="situational"/>
             </f>
-<f name="subtype">
-<symbol value="none"/>
-</f>
+
          </fs>
          <fs xml:id="r_i72272" type="relation">
             <f name="modality">
@@ -11255,9 +11242,7 @@
             <f name="type">
                <symbol value="situational"/>
             </f>
-<f name="subtype">
-<symbol value="none"/>
-</f>
+
          </fs>
          <fs xml:id="r_i73066" type="relation">
             <f name="modality">
@@ -11271,9 +11256,7 @@
             <f name="type">
                <symbol value="situational"/>
             </f>
-<f name="subtype">
-<symbol value="none"/>
-</f>
+
          </fs>
          <fs xml:id="r_i73755" type="relation">
             <f name="modality">
@@ -11287,9 +11270,7 @@
             <f name="type">
                <symbol value="situational"/>
             </f>
-<f name="subtype">
-<symbol value="none"/>
-</f>
+
          </fs>
          <fs xml:id="r_i109786" type="relation">
             <f name="modality">
@@ -12834,9 +12815,6 @@
             </f>
             <f name="locus">
                <string>22</string>
-            </f>
-            <f name="participant">
-               <symbol value="none"/>
             </f>
          </fs>
          <fs xml:id="u_g48582" type="marker">
@@ -15600,9 +15578,6 @@
             <f name="locus">
                <string>21</string>
             </f>
-            <f name="participant">
-               <symbol value="none"/>
-            </f>
          </fs>
          <fs xml:id="u_f16800" type="marker">
             <f name="utterance">
@@ -15677,12 +15652,6 @@
             </f>
             <f name="SoA">
                <binary value="false"/>
-            </f>
-            <f name="locus">
-               <string>23</string>
-            </f>
-            <f name="participant">
-               <symbol value="none"/>
             </f>
          </fs>
          <fs xml:id="u_f17586" type="marker">
@@ -16127,9 +16096,6 @@
             </f>
             <f name="locus">
                <string>27</string>
-            </f>
-            <f name="participant">
-               <symbol value="none"/>
             </f>
          </fs>
          <fs xml:id="u_f58866" type="marker">
@@ -16607,12 +16573,6 @@
             <f name="SoA">
                <binary value="false"/>
             </f>
-            <f name="locus">
-               <string>2</string>
-            </f>
-            <f name="participant">
-               <symbol value="none"/>
-            </f>
          </fs>
          <fs xml:id="u_f142390" type="marker">
             <f name="utterance">
@@ -16909,12 +16869,6 @@
             <f name="locus">
                <string>39</string>
             </f>
-            <f name="participant">
-               <symbol value="none"/>
-            </f>
-            <f name="participantType">
-               <symbol value="animate"/>
-            </f>
          </fs>
          <fs xml:id="r_f2118" type="relation">
             <f name="modality">
@@ -17032,9 +16986,7 @@
             <f name="type">
                <symbol value="situational"/>
             </f>
-<f name="subtype">
-<symbol value="none"/>
-</f>
+
          </fs>
          <fs xml:id="r_f21833" type="relation">
             <f name="modality">
@@ -17139,9 +17091,7 @@
             <f name="type">
                <symbol value="situational"/>
             </f>
-<f name="subtype">
-<symbol value="none"/>
-</f>
+
          </fs>
          <fs xml:id="r_f57977" type="relation">
             <f name="modality">
@@ -17168,9 +17118,7 @@
             <f name="type">
                <symbol value="situational"/>
             </f>
-<f name="subtype">
-<symbol value="none"/>
-</f>
+
          </fs>
          <fs xml:id="r_f142237" type="relation">
             <f name="modality">
@@ -17184,9 +17132,7 @@
             <f name="type">
                <symbol value="situational"/>
             </f>
-<f name="subtype">
-<symbol value="none"/>
-</f>
+
          </fs>
          <fs xml:id="r_f58767" type="relation">
             <f name="modality">
@@ -17200,9 +17146,7 @@
             <f name="type">
                <symbol value="situational"/>
             </f>
-<f name="subtype">
-<symbol value="none"/>
-</f>
+
          </fs>
          <fs xml:id="r_f66475" type="relation">
             <f name="modality">
@@ -19140,9 +19084,6 @@
             <f name="locus">
                <string>36</string>
             </f>
-            <f name="participant">
-               <symbol value="none"/>
-            </f>
          </fs>
          <fs xml:id="u_h53234" type="marker">
             <f name="utterance">
@@ -19176,9 +19117,6 @@
             </f>
             <f name="locus">
                <string>36</string>
-            </f>
-            <f name="participant">
-               <symbol value="none"/>
             </f>
          </fs>
          <fs xml:id="u_h53881" type="marker">
@@ -19495,9 +19433,7 @@
             <f name="type">
                <symbol value="situational"/>
             </f>
-<f name="subtype">
-<symbol value="none"/>
-</f>
+
          </fs>
          <fs xml:id="r_h27516" type="relation">
             <f name="modality">
@@ -19521,9 +19457,7 @@
             <f name="type">
                <symbol value="situational"/>
             </f>
-<f name="subtype">
-<symbol value="none"/>
-</f>
+
          </fs>
          <fs xml:id="r_h30005" type="relation">
             <f name="modality">
@@ -19553,9 +19487,7 @@
             <f name="type">
                <symbol value="situational"/>
             </f>
-<f name="subtype">
-<symbol value="none"/>
-</f>
+
          </fs>
          <fs xml:id="r_h30007" type="relation">
             <f name="modality">
@@ -19628,9 +19560,7 @@
             <f name="type">
                <symbol value="situational"/>
             </f>
-<f name="subtype">
-<symbol value="none"/>
-</f>
+
          </fs>
          <fs xml:id="r_h52602" type="relation">
             <f name="modality">
@@ -19644,9 +19574,7 @@
             <f name="type">
                <symbol value="situational"/>
             </f>
-<f name="subtype">
-<symbol value="none"/>
-</f>
+
          </fs>
          <fs xml:id="r_h53167" type="relation">
             <f name="modality">
@@ -19660,9 +19588,7 @@
             <f name="type">
                <symbol value="situational"/>
             </f>
-<f name="subtype">
-<symbol value="none"/>
-</f>
+
          </fs>
          <fs xml:id="r_h53759" type="relation">
             <f name="modality">

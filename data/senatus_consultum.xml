@@ -1,4 +1,5 @@
-<?xml-model href="https://raw.githubusercontent.com/WoPoss-project/annotation-schemes/master/schemas/out/tei_woposs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/WoPoss-project/annotation-schemes/master/schemas/out/tei_woposs.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="senatus_consultum">
+<?xml-model href="https://raw.githubusercontent.com/WoPoss-project/annotation-schemes/master/schemas/out/tei_woposs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/WoPoss-project/annotation-schemes/master/schemas/out/tei_woposs.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="senatus_consultum">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -94,7 +95,8 @@
                <seg function="scope" ana="#sen19890" part="Y">
                   <w pos="ADV" lemma="ita">ita</w>
                </seg>
-               <w msd="#sen1787f" lemma="edico" pos="VERB"><seg function="scope" ana="#sen19890" part="Y">exdeice</seg><seg function="marker" ana="#sen19872">ndum</seg></w>
+               <w msd="#sen1787f" lemma="edico" pos="VERB"><seg function="scope" ana="#sen19890"
+                     part="Y">exdeice</seg><seg function="marker" ana="#sen19872">ndum</seg></w>
                <w pos="VERB" lemma="censeo">censuere</w>
                <pc>:</pc>
             </s>
@@ -320,7 +322,7 @@
                </w>
                <w pos="CCONJ" lemma="neve">
                   <seg function="negation" corresp="#sen18884">neve</seg>
-               </w> 
+               </w>
                <w pos="VERB" lemma="compromitto" msd="#send1e1099" function="main">
                   <seg function="scope" ana="#sen18956">conpromesise</seg>
                </w>
@@ -449,11 +451,13 @@
                <seg function="scope" ana="#sen19547">
                   <w pos="ADP" lemma="inter">inter</w>
                   <w pos="ADV" lemma="ibi">ibei</w>
-                  <seg function="participant" type="animate" corresp="#sen19547"><w pos="NOUN" lemma="vir" msd="#send1e1559">virei</w></seg>
+                  <seg function="participant" type="animate" corresp="#sen19547"><w pos="NOUN"
+                        lemma="vir" msd="#send1e1559">virei</w></seg>
                   <w pos="ADV" lemma="plus" msd="#send1e1565">plous</w>
                   <w pos="NUM" lemma="duo" msd="#send1e1571">duobus</w>
                   <pc>,</pc>
-                  <seg function="participant" type="animate" corresp="#sen19547"><w pos="NOUN" lemma="mulier" msd="#send1e1582">mulieribus</w></seg>
+                  <seg function="participant" type="animate" corresp="#sen19547"><w pos="NOUN"
+                        lemma="mulier" msd="#send1e1582">mulieribus</w></seg>
                   <w pos="ADV" lemma="plus" msd="#send1e1588">plous</w>
                   <w pos="NUM" lemma="tres" msd="#send1e1594">tribus</w>
                   <w pos="VERB" lemma="adsum" msd="#send1e1600" function="main">arfuise</w>
@@ -534,7 +538,8 @@
                   <w pos="PRON" lemma="hic" msd="#send1e1946">hoce</w>
                   <w pos="ADP" lemma="in">in</w>
                   <w pos="NOUN" lemma="tabula" msd="#send1e1957">
-                     <seg function="participant" type="inanimate_patient" corresp="#sen19816">tabolam</seg>
+                     <seg function="participant" type="inanimate_patient" corresp="#sen19816"
+                        >tabolam</seg>
                   </w>
                   <w pos="ADJ" lemma="ahenus" msd="#send1e1964">ahenam</w>
                   <w pos="VERB" lemma="incido" msd="#send1e1970" function="main">inceideretis</w>
@@ -1770,7 +1775,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -1808,7 +1813,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -1866,7 +1871,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -1887,7 +1892,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -1925,7 +1930,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -1963,7 +1968,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -2001,7 +2006,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -2022,7 +2027,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -2043,7 +2048,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -2064,7 +2069,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -2072,7 +2077,7 @@
                <binary value="true"/>
             </f>
             <f name="participant">
-               <symbol value="implicit"/>               
+               <symbol value="implicit"/>
             </f>
             <f name="participantType">
                <symbol value="animate"/>
@@ -2102,7 +2107,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -2140,7 +2145,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -2178,7 +2183,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -2216,7 +2221,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -2254,7 +2259,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -2292,7 +2297,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -2330,7 +2335,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -2338,7 +2343,7 @@
                <binary value="true"/>
             </f>
             <f name="participant">
-               <symbol value="implicit"/>              
+               <symbol value="implicit"/>
             </f>
             <f name="participantType">
                <symbol value="animate"/>
@@ -2368,7 +2373,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -2433,9 +2438,6 @@
             </f>
             <f name="type">
                <symbol value="participant-imposed"/>
-            </f>
-            <f name="subtype">
-               <symbol value="none"/>
             </f>
          </fs>
          <fs xml:id="sen18546" type="relation">
@@ -2659,8 +2661,10 @@
                <symbol value="pragmatic"/>
             </f>
             <f name="note">
-               <string>order (obligation) NB. The participant of the scope is not
-                  determined.</string>
+               <string>From order (obligation)</string>
+            </f>
+            <f name="note">
+               <string>The participant of the scope is not determined</string>
             </f>
          </fs>
          <fs xml:id="sen19834" type="relation">
@@ -2674,9 +2678,6 @@
             </f>
             <f name="type">
                <symbol value="situational"/>
-            </f>
-            <f name="subtype">
-               <symbol value="none"/>
             </f>
          </fs>
       </back>
