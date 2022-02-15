@@ -1,5 +1,4 @@
-<?xml-model href="https://raw.githubusercontent.com/WoPoss-project/annotation-schemes/master/schemas/out/tei_woposs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/WoPoss-project/annotation-schemes/master/schemas/out/tei_woposs.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="senatus_consultum">
+<?xml-model href="https://raw.githubusercontent.com/WoPoss-project/annotation-schemes/master/schemas/out/tei_woposs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/WoPoss-project/annotation-schemes/master/schemas/out/tei_woposs.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="senatus_consultum">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -95,8 +94,7 @@
                <seg function="scope" ana="#sen19890" part="Y">
                   <w pos="ADV" lemma="ita">ita</w>
                </seg>
-               <w msd="#sen1787f" lemma="edico" pos="VERB"><seg function="scope" ana="#sen19890"
-                     part="Y">exdeice</seg><seg function="marker" ana="#sen19872">ndum</seg></w>
+               <w msd="#sen1787f" lemma="edico" pos="VERB"><seg function="scope" ana="#sen19890" part="Y">exdeice</seg><seg function="marker" ana="#sen19872">ndum</seg></w>
                <w pos="VERB" lemma="censeo">censuere</w>
                <pc>:</pc>
             </s>
@@ -451,13 +449,11 @@
                <seg function="scope" ana="#sen19547">
                   <w pos="ADP" lemma="inter">inter</w>
                   <w pos="ADV" lemma="ibi">ibei</w>
-                  <seg function="participant" type="animate" corresp="#sen19547"><w pos="NOUN"
-                        lemma="vir" msd="#send1e1559">virei</w></seg>
+                  <seg function="participant" type="animate" corresp="#sen19547"><w pos="NOUN" lemma="vir" msd="#send1e1559">virei</w></seg>
                   <w pos="ADV" lemma="plus" msd="#send1e1565">plous</w>
                   <w pos="NUM" lemma="duo" msd="#send1e1571">duobus</w>
                   <pc>,</pc>
-                  <seg function="participant" type="animate" corresp="#sen19547"><w pos="NOUN"
-                        lemma="mulier" msd="#send1e1582">mulieribus</w></seg>
+                  <seg function="participant" type="animate" corresp="#sen19547"><w pos="NOUN" lemma="mulier" msd="#send1e1582">mulieribus</w></seg>
                   <w pos="ADV" lemma="plus" msd="#send1e1588">plous</w>
                   <w pos="NUM" lemma="tres" msd="#send1e1594">tribus</w>
                   <w pos="VERB" lemma="adsum" msd="#send1e1600" function="main">arfuise</w>
@@ -538,8 +534,7 @@
                   <w pos="PRON" lemma="hic" msd="#send1e1946">hoce</w>
                   <w pos="ADP" lemma="in">in</w>
                   <w pos="NOUN" lemma="tabula" msd="#send1e1957">
-                     <seg function="participant" type="inanimate_patient" corresp="#sen19816"
-                        >tabolam</seg>
+                     <seg function="participant" type="inanimate_patient" corresp="#sen19816">tabolam</seg>
                   </w>
                   <w pos="ADJ" lemma="ahenus" msd="#send1e1964">ahenam</w>
                   <w pos="VERB" lemma="incido" msd="#send1e1970" function="main">inceideretis</w>

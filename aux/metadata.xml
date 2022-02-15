@@ -384,7 +384,7 @@
                   </index>
                </bibl>
             </person>
-            <person xml:id="petronius">
+            <person>
                <persName>Petronius</persName>
                <sex value="M"/>               
                <birth>
@@ -392,7 +392,7 @@
                      <bloc>Gallia</bloc>
                   </location>
                </birth>
-               <bibl status="annotated" xml:id="satyricon">
+               <bibl status="annotated">
                   <title>Satyricon</title>
                   <date type="century" when-custom="1">I</date>
                   <index indexName="genre">

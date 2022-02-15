@@ -63,7 +63,7 @@
          <div type="chapter" n="1">
             <head>INCIPIT EVANGELIUM SECUNDUM MATTHEUM</head>
             <ab>
-               <s rend="16" >
+               <s rend="16">
                   <w pos="NOUN" lemma="jacus">Iacob</w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="VERB" lemma="genuis">genuit</w>
