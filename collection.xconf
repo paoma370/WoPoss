@@ -37,7 +37,7 @@
         <field name="scopePolarity" if="@type eq 'scope'" expression="tei:f[@name eq 'polarity']/tei:symbol/@value"/>
         <field name="control" expression="tei:f[@name eq 'control']/tei:symbol/@value |  tei:f[@name eq 'control']/tei:binary/@value"/>
         <field name="dynamicity" expression="tei:f[@name eq 'dynamicity']/tei:symbol/@value |  tei:f[@name eq 'dynamicity']/tei:binary/@value"/>
-        <field name="SoA" expression="tei:f[@name eq 'SoA']/tei:binary/@value"/>
+        <field name="SoA" expression="if (tei:f[@name eq 'SoA']) then tei:f[@name eq 'SoA']/tei:binary/@value else 'true'"/>
         <field name="participant" expression="tei:f[@name eq 'participant']/tei:symbol/@value"/>
         <field name="participantType" expression="tei:f[@name eq 'participantType']/tei:symbol/@value"/>
 
