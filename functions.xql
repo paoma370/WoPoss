@@ -74,7 +74,10 @@ declare function woposs:isAmbiguous($doc as node(), $id as xs:string, $type as x
 };
 
 declare function woposs:locus($s as item()) as xs:string {
-    $s/ancestor::tei:TEI/descendant::tei:title[@type eq 'short'] || ', ' || $s/ancestor::tei:div[@type eq 'chapter']/@n || ', ' || $s/@n
+    let $title := $s/ancestor::tei:TEI/descendant::tei:title[@type eq 'short']
+    let $division := if ($s/ancestor::tei:div/@n) then (', ' || $s/ancestor::tei:div/@n) else ''
+    let $locus := if ($s/@rend) then ($title || $division || ', ' || $s/@rend) else $title || $division 
+    return $locus
 };
 
 declare function woposs:prepareQuery($field as xs:string, $values as item()*) {
