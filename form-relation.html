@@ -233,7 +233,8 @@
                             <label for="mk_probabiliter">probabiliter</label>
                         </div>
                         <div>
-                            <h4>Constructions with <em>esse</em></h4>
+                            <h4>Constructions with <em>esse</em>
+                            </h4>
                             <input type="checkbox" value="est_inf" id="mk_est_inf" name="lemma"/>
                             <label for="mk_est_inf">est + infinitive</label>
                             <input type="checkbox" value="ius_est" id="mk_ius_est" name="lemma"/>
@@ -248,7 +249,8 @@
                             <label for="mk_usus_est">usus est</label>
                         </div>
                         <div>
-                            <h4>Constructions with <em>habeo</em></h4>
+                            <h4>Constructions with <em>habeo</em>
+                            </h4>
                             <input type="checkbox" value="habeo_inf" id="mk_habeo_inf" name="lemma"/>
                             <label for="mk_habeo_inf">habeo + infinitive</label>
                             <input type="checkbox" value="necesse_habeo" id="mk_necesse_habeo" name="lemma"/>
@@ -323,7 +325,8 @@
             <h4 class="title">Description of the modal relation</h4>
             <div class="wrapper">
                 <div class="content">
-                    <fieldset><label>Ambiguity</label>
+                    <fieldset>
+                        <label>Ambiguity</label>
                         <div class="indent">
                             <input type="radio" name="ambiguity" id="mod-exclude_amb" value="false"/>
                             <label for="mod-exclude_amb">Exclude ambiguous cases</label>
@@ -333,7 +336,8 @@
                                 include ambiguous cases</p>
                         </div>
                     </fieldset>
-                    <fieldset><label>Rhetoric use</label>
+                    <fieldset>
+                        <label>Rhetoric use</label>
                         <div class="indent">
                             <input type="radio" name="rhetoric" id="mod-exclude_rh" value="false"/>
                             <label for="mod-exclude_rh">Exclude rhetoric uses</label>
@@ -343,7 +347,9 @@
                                 include rhetoric uses</p>
                         </div>
                     </fieldset>
-                    <fieldset><label>Pragmatic use</label><div class="indent">
+                    <fieldset>
+                        <label>Pragmatic use</label>
+                        <div class="indent">
                             <input type="radio" name="pragmatic" id="mod-exclude_pr" value="false"/>
                             <label for="mod-exclude_pr">Exclude pragmatic uses</label>
                             <input type="radio" name="pragmatic" id="mod-include_pr" value="true"/>
@@ -360,8 +366,11 @@
                     <fieldset>Author/translator <select name="author" id="mod-author">
                             <option disabled="" selected="" value="">-- select an option
                                 --</option>
+                            <option value="petronius">Gaius Petronius Arbiter</option>
                             <option value="jerome">Jerome of Stridon</option>
-                        </select></fieldset>
+                            
+                        </select>
+                    </fieldset>
                     <fieldset>
                         <label>Author’s gender</label>
                         <select name="gender" id="mod-gender">
@@ -370,8 +379,10 @@
                             <option value="M">Male</option>
                             <option value="F">Female</option>
                             <option value="U">Undefined</option>
-                        </select></fieldset>
-                    <fieldset><label>Author’s place of origin</label>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <label>Author’s place of origin</label>
                         <select name="place" id="mod-place">
                             <option disabled="" selected="" value="">-- select an option
                                 --</option>
@@ -387,7 +398,8 @@
                             <option value="Samnium">Italia: Samnium</option>
                             <option value="Transpadana">Italia: Transpadana</option>
                             <option value="Umbria">Italia: Umbria</option>
-                        </select></fieldset>
+                        </select>
+                    </fieldset>
                     <fieldset> Title of the work <select name="title" id="mod-title">
                             <option disabled="" selected="" value="">-- select an option
                                 --</option>
@@ -395,11 +407,18 @@
                             <option value="luke">Gospel of Luke</option>
                             <option value="mark">Gospel of Mark</option>
                             <option value="matthew">Gospel of Matthew</option>
+                              <option value="satyricon">Satyricon</option>
                         <option value="senatus_consultum">Senatus consultum de Bacchanalibus</option>
-                        </select></fieldset>
-                    <fieldset><label>Timeframe of the works</label>
-                        <div class="indent"> Not before century (e.g. -3) <input id="mod-notBefore" type="number" min="-3" max="7" name="notBefore"/> Not after century (e.g. 7) <input id="mod-notAfter" type="number" min="-3" max="7" name="notAfter"/></div></fieldset>
-                    <fieldset><label>Genre</label>
+                        
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <label>Timeframe of the works</label>
+                        <div class="indent"> Not before century (e.g. -3) <input id="mod-notBefore" type="number" min="-3" max="7" name="notBefore"/> Not after century (e.g. 7) <input id="mod-notAfter" type="number" min="-3" max="7" name="notAfter"/>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <label>Genre</label>
                         <div>
                             <input type="checkbox" name="genre" id="mod-christian" value="christian"/>
                             <label for="mod-christian">Christian theological text</label>
@@ -423,8 +442,10 @@
                             <label for="mod-medicine">Technical text: medicine</label>
                             <input type="checkbox" name="genre" id="mod-travel" value="travel"/>
                             <label for="mod-travel">Travel literature</label>
-                        </div></fieldset>
-                    <fieldset><label>Textual features</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <label>Textual features</label>
                         <div>
                             <input type="checkbox" name="textualFeature" id="mod-prose" value="prose"/>
                             <label for="mod-prose">Prose</label>
@@ -436,8 +457,10 @@
                             <label for="mod-dialogue">Dialogued</label>
                             <input type="checkbox" name="textualFeature" id="mod-non-dialogue" value="non-dialogue"/>
                             <label for="mod-non-dialogue">Non-dialogue</label>
-                        </div></fieldset>
-                    <fieldset><label>Transmission</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <label>Transmission</label>
                         <div>
                             <input type="checkbox" name="transmission" id="mod-codex" value="codex"/>
                             <label for="mod-codex">Codex</label>
@@ -447,7 +470,8 @@
                             <label for="mod-inscription">Inscription</label>
                             <input type="checkbox" name="transmission" id="mod-mixed" value="mixed"/>
                             <label for="mod-mixed">Mixed</label>
-                        </div></fieldset>
+                        </div>
+                    </fieldset>
                 </div>
             </div>
             <input type="submit" value="Submit" id="checkBtn"/>
