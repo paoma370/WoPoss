@@ -109,16 +109,34 @@
             <xsl:if test="descendant::tei:seg[substring(@ana, 2) eq $id]">
                 <xsl:attribute name="class">selected</xsl:attribute>
             </xsl:if>
-            <span class="n">[<xsl:value-of select="@n"/>]</span>
+            <xsl:if test="@rend">
+                <span class="n">[<xsl:value-of select="@rend"/>]</span>
+            </xsl:if>
             <xsl:apply-templates/>
         </p>
     </xsl:template>
+
+    <!--    Editorial and other graphical conventions -->
+
+
+    <xsl:template match="tei:supplied[@evidence]"> &lt;<xsl:apply-templates/>&gt; </xsl:template>
+
+    <xsl:template match="tei:gap"> […] </xsl:template>
+
+    <xsl:template match="tei:surplus"> [<xsl:apply-templates/>] </xsl:template>
+    
+    <xsl:template match="anchor[@type eq 'said'][@subtype eq 'start']">“</xsl:template>
+    <xsl:template match="anchor[@type eq 'said'][@subtype eq 'end']">”</xsl:template>
+    
+    
+<!--    textual contents -->
+
     <xsl:template match="tei:seg">
         <span class="{current()/@function} seg" data-idno="{woposs:getId(current())}">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
-    <xsl:template match="tei:supplied">
+    <xsl:template match="tei:supplied[not(@evidence)]">
         <span class="supplied">
             <xsl:apply-templates/>
         </span>
@@ -313,9 +331,9 @@
         <li>Implicit</li>
         <li>Type: <xsl:value-of select="tei:symbol/@value =&gt; replace('_', ' ')"/></li>
     </xsl:template>
-    
-    
-<!--   <xsl:template match="tei:w" mode="msd">
+
+
+    <!--   <xsl:template match="tei:w" mode="msd">
        <ul>
            <li>Lemma: <xsl:value-of select="@lemma"/></li>
            <li>PoS: <xsl:value-of select="@pos"/></li>
@@ -329,12 +347,11 @@
    </xsl:template>-->
     <xsl:template match="tei:w" mode="msd"><strong>Lemma</strong>: <em><xsl:value-of select="@lemma"/></em><br/>
         <strong>PoS</strong>: <xsl:value-of select="@pos"/><br/>
-            <xsl:if test="@msd">
-                <xsl:variable name="msd" select="ancestor::tei:TEI/descendant::tei:fs[@type eq 'msd'][@xml:id = substring(current()/@msd, 2)]"/>
-                <xsl:for-each select="$msd/tei:f">
-                    <strong><xsl:value-of select="current()/@name"/></strong>: <xsl:value-of select="current()/tei:symbol/@value"/><br/>
-                </xsl:for-each>
-            </xsl:if>
-       
+        <xsl:if test="@msd">
+            <xsl:variable name="msd" select="ancestor::tei:TEI/descendant::tei:fs[@type eq 'msd'][@xml:id = substring(current()/@msd, 2)]"/>
+            <xsl:for-each select="$msd/tei:f">
+                <strong><xsl:value-of select="current()/@name"/></strong>: <xsl:value-of select="current()/tei:symbol/@value"/><br/>
+            </xsl:for-each>
+        </xsl:if>
     </xsl:template>
 </xsl:stylesheet>

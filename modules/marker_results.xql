@@ -4,13 +4,12 @@ import module namespace woposs = "http://woposs.unine.ch" at "../functions.xql";
 
 declare variable $documents as document-node()+ :=
 collection('/db/apps/woposs/data');
-declare variable $mk_fs := $documents//tei:fs[ft:query-field(., "type:marker")];
+declare variable $query := woposs:prepareQuery('lemma', request:get-parameter("lemma", ()));
+declare variable $mk_fs := $documents//tei:fs[ft:query-field(., $query)];
 declare variable $minCentury := xs:integer(-3);
-declare variable $maxCentury := xs:integer(7);
+declare variable $maxCentury := xs:integer(7);    
 declare variable $simpleFilters := <fields>
-    
-    
-    
+
     <!-- restrictive filter related to the work metadata -->
     
     <field
@@ -24,17 +23,6 @@ declare variable $simpleFilters := <fields>
         name="author">
         <value>{request:get-parameter("author", ())}</value></field>
     
-    
-    <!-- filter by lemma  -->
-    
-    <field
-        name="lemma">
-        {
-            for $x in request:get-parameter("lemma", ())
-            return
-                <value>{$x}</value>
-        }
-    </field>
     
     
     <!-- other filters related to the author metadata -->
@@ -76,6 +64,10 @@ declare variable $simpleFilters := <fields>
                 <value>{$x}</value>
         }
     </field>
+    
+    
+        
+
     
     
     <!-- filter concerning the modal meaning -->
