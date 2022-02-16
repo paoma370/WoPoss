@@ -164,7 +164,7 @@
                   </location>
                </birth>
                <listBibl>
-                  <bibl status="annotated">
+                  <bibl status="annotated" xml:id="regula">
                      <title>Regula Benedicti</title>
                      <date type="century" when-custom="6">VI</date>
                      <index indexName="genre">
