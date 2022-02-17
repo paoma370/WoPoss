@@ -2,7 +2,12 @@
     <head>
         <title data-template="config:app-title">woposs</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta data-template="config:app-meta"/>
+        <meta data-template="config:app-meta"/>        
+        <meta name="description" content="Website of the  project A world of possibilities. Modal pathways over an extra-long period of time: the diachrony of modality in the Latin language"/>
+        <meta name="keywords" lang="en" content="latin, modality, snfs, woposs, diachronic, semantics, digital humanities, computational methods, corpus-based approach"/>
+        <meta name="author" content="Francesca Dell’Oro"/>
+        <meta name="author" content="Helena Bermúdez Sabel"/>
+        <meta name="author" content="Paola Marongiu"/>
         <link rel="shortcut icon" href="/exist/apps/woposs/resources/images/favicon.ico"/>
         <!--<link rel="stylesheet"
             href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -11,7 +16,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
         <link href="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.css" rel="stylesheet"/>
         <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css"/>
-        <link rel="stylesheet" type="text/css" href="/exist/apps/woposs/resources/css/exist-woposs.css"/>
+       <!-- <link rel="stylesheet" type="text/css" href="/exist/apps/woposs/resources/css/exist-woposs.css"/>-->
         <link rel="stylesheet" type="text/css" href="/exist/apps/woposs/resources/css/style.css"/>
         <link rel="stylesheet" type="text/css" href="/exist/apps/woposs/resources/css/main.css"/>
         <link rel="stylesheet" type="text/css" href="/exist/apps/woposs/resources/css/results.css"/>
@@ -31,55 +36,106 @@
         <script type="text/javascript" src="/exist/apps/woposs/resources/scripts/bootstrap-table-export.js"/>
 
         <script type="text/javascript" src="/exist/apps/woposs/resources/scripts/show.js"/>
-
+        
+        
+        
+        
+        <!--        from woposs website-->
+        
+        <link type="text/css" rel="stylesheet" href="https://woposs.unine.ch/css/main.css"/>
+        <link type="text/css" rel="stylesheet" href="https://woposs.unine.ch/css/menu.css"/>
+        <link type="text/css" rel="stylesheet" href="https://woposs.unine.ch/css/small.css"/>
+        <script src="https://woposs.unine.ch/js/menu.js">/**/</script>
+        
+        <link rel="shortcut icon" href="https://woposs.unine.ch/images/favicon.ico" type="image/x-icon"/>
+        <link rel="icon" href="https://woposs.unine.ch/images/favicon.ico" type="image/x-icon"/>
+        
     </head>
-    <body id="grey-top">
-        <div class="grey-bot">
-            <div class="container" id="main-container">
-                <div class="row">
-                    <div class="col-md-12" id="header">
-                        <a href="https://woposs.unine.ch/" id="logo">
-                            <img src="/exist/apps/woposs/resources/images/woposs.png"/>
-                        </a>
-                        <h1>A database to explore modality in Latin</h1>
-                    </div>
+    <body>
+        <nav id="menu">
+            <img src="https://woposs.unine.ch/images/logos/wop_neg.svg" alt="WoPoss logo"/>
+            <ul class="mainmenu">
+                <li><a href="https://woposs.unine.ch/index.html">Home</a></li>
+                <li class="has-sub">
+                    <a>About</a>
+                    <ul class="submenu">
+                        <li><a href="https://woposs.unine.ch/about.php">Theoretical framework</a></li>
+                        <li><a href="https://woposs.unine.ch/schemas.php">Annotation schemas</a></li>
+                        <li><a href="https://woposs.unine.ch/corpus.php">Corpus description</a></li>
+                        
+                    </ul>
+                </li>
+                <li>
+                    <a href="https://woposs.unine.ch/team.php">Team</a>
+                </li>
+                <li>
+                    <a href="https://woposs.unine.ch/db.php">Query the corpus</a>
+                </li>
+                <li class="has-sub">
+                    <a>Diachronic visualisations</a>
+                    <ul class="submenu">
+                        <li><a href="https://woposs.unine.ch/diachronic-visualisations.php">About</a></li>
+                        <li><a href="https://woposs.unine.ch/diachronic-visualisations.php#howTo">How to read</a></li>
+                        <li><a href="https://woposs.unine.ch/diachronic-visualisations.php#maps">Modal maps</a></li>
+                        <li><a href="https://woposs.unine.ch/pygmalion.php">Tool: Pygmalion</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="https://woposs.unine.ch/results.php">Outputs</a>
+                </li>
+                <li>
+                    <a href="https://woposs.unine.ch/news.php">News</a>
+                </li>
+                <li>
+                    <a href="https://woposs.unine.ch/credits.php">Acknowledgements</a>
+                </li>
+            </ul>
+        </nav>
+                <main id="content"/>
+            
+        <footer id="footer">
+            <div class="logos">
+                <p>This project has received funding from the <a href="http://www.snf.ch/fr/Pages/default.aspx" target="_blank">Swiss National Science Foundation</a>
+                    (SNSF n° 176778) and it is hosted at the <a href="https://www.unine.ch/islc/home.html" target="_blank">Institut des sciences du
+                        langage</a> (<a href="https://www.unine.ch/" target="_blank">University of Neuchâtel</a>)</p>
+                <div>
+                    <img src="https://woposs.unine.ch/images/logos/snf_light.svg" alt="SNF logo" class="snf"/>
+                    <img src="https://woposs.unine.ch/images/logos/unine.jpeg" alt="UNINE logo" class="unine"/>
                 </div>
-                <div class="row">
-                    <nav class="navbar navbar-default" role="navigation">
-                        <div class="navbar-collapse" id="navbar-collapse-1">
-                            <ul class="nav">
-                                <li>
-                                    <a href="/exist/apps/woposs/index.html">Home</a>
-                                </li>
-                                <li>
-                                    <a href="/exist/apps/woposs/about.html">Corpus description</a>
-                                </li>
-                                <li>
-                                    <a href="/exist/apps/woposs/form.html">Query the corpus</a>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </nav>
-                </div>
-                <div id="content" class="row"/>
             </div>
-        </div>
-        <a id="poweredby" href="http://exist-db.org"/>
-        <div id="footer">
-            <div class="container">
-                <ul>
-                    <li>
-                        <a href="https://woposs.unine.ch">woposs.unine.ch</a>
-                    </li>
-                </ul>
-                <div id="copyright">
-                    <p>Copyright WoPoss Project 2021</p>
-                </div>
+            <div class="address">
+                <address class="to-hide">
+                    <img src="https://woposs.unine.ch/images/map-marker.svg" width="50" alt="home icon"/>
+                    <p>Institut des sciences du langage<br/> Université de Neuchâtel<br/>
+                        Pierre-à-Mazel 7<br/> 2000 Neuchâtel<br/>
+                        Switzerland</p>
+                </address>
+                <address>
+                    <img src="https://woposs.unine.ch/images/envelope.svg" alt="email icon"/>
+                    <p>
+                        <a href="mailto:francesca.delloro@unine.ch">Contact us!</a>
+                    </p>
+                </address>
+                <address class="to-hide">
+                    <img src="https://woposs.unine.ch/images/media.svg" alt="facebook and twitter icons"/>
+                    <p>Twitter: <a href="https://twitter.com/woposs" target="_blank">@woposs</a></p>
+                    <p>Facebook: <a href="https://www.facebook.com/WoPoss-A-World-of-Possibilities-119120406151381/" target="_blank">WoPoss</a></p>
+                </address>
+                <address>
+                    <img src="https://woposs.unine.ch/images/git.svg" alt="git icon"/>
+                    <p>
+                        <a href="https://github.com/WoPoss-project" target="_blank">https://github.com/WoPoss-project</a>
+                    </p>
+                </address>
             </div>
-        </div>
-        <div data-template="templates:if-parameter-unset" data-template-param="org.exist-db.mysec.user">
-            <div data-template="templates:include" data-template-path="templates/login-panel.html"/>
-        </div>
+            <div style="margin:1%;display:flex;align-items:center;">
+                <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"/></a>
+                <p style="margin-left:2em"><em><span property="http://purl.org/dc/terms/title">A world of possibilities. Modal pathways over an extra-long period of time: the diachrony of modality in the Latin language</span></em>
+                    by
+                    <a href="https://woposs.unine.ch/team.php" property="http://creativecommons.org/ns#attributionName" rel="http://creativecommons.org/ns#attributionURL">Francesca
+                        Dell‘Oro</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative
+                            Commons Attribution 4.0 International License</a>.</p>
+            </div>
+        </footer>
     </body>
 </html>
