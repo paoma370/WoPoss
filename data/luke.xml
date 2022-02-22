@@ -1,4 +1,5 @@
-<?xml-model href="https://raw.githubusercontent.com/WoPoss-project/annotation-schemes/master/schemas/out/tei_woposs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/WoPoss-project/annotation-schemes/master/schemas/out/tei_woposs.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="luke">
+<?xml-model href="https://raw.githubusercontent.com/WoPoss-project/annotation-schemes/master/schemas/out/tei_woposs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/WoPoss-project/annotation-schemes/master/schemas/out/tei_woposs.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="luke">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -19,7 +20,8 @@
                <name>Francesca Dell’Oro</name>
             </respStmt>
             <respStmt>
-               <resp>Text retrieval, preprocessing, automatic linguistic annotation and TEI conversion</resp>
+               <resp>Text retrieval, preprocessing, automatic linguistic annotation and TEI
+                  conversion</resp>
                <name>Helena Bermúdez Sabel</name>
             </respStmt>
          </editionStmt>
@@ -128,7 +130,8 @@
                   <w pos="ADP" lemma="in">in</w>
                   <w pos="NOUN" lemma="filius">filios</w>
                   <w pos="CCONJ" lemma="et">et</w>
-                  <w pos="ADJ" lemma="incredibilis" msd="#md1e1269">incredi <seg function="marker" ana="#u_m10593" xml:id="lk01_17">biles</seg>
+                  <w pos="ADJ" lemma="incredibilis" msd="#md1e1269">incredi <seg function="marker"
+                        ana="#u_m10593" xml:id="lk01_17">biles</seg>
                   </w>
                   <w pos="ADP" lemma="ad">ad</w>
                   <w pos="NOUN" lemma="prudentia">prudentiam</w>
@@ -696,7 +699,8 @@
                </s>
                <s rend="72">
                   <w pos="ADP" lemma="ad">ad</w>
-                  <w pos="VERB" lemma="facio" msd="#md1e4886"> facie <seg function="marker" ana="#u_m41255" xml:id="lk01_72">ndam</seg>
+                  <w pos="VERB" lemma="facio" msd="#md1e4886"> facie <seg function="marker"
+                        ana="#u_m41255" xml:id="lk01_72">ndam</seg>
                   </w>
                   <w pos="NOUN" lemma="misericordia">misericordiam</w>
                   <w pos="ADP" lemma="cum">cum</w>
@@ -718,7 +722,8 @@
                   <w pos="PRON" lemma="nos">nostrum</w>
                </s>
                <s rend="74">
-                  <w pos="VERB" lemma="do" msd="#md1e4972"> da<seg function="marker" ana="#u_m42013" xml:id="lk01_74">turum</seg>
+                  <w pos="VERB" lemma="do" msd="#md1e4972"> da<seg function="marker" ana="#u_m42013"
+                        xml:id="lk01_74">turum</seg>
                   </w>
                   <w pos="PRON" lemma="sui">se</w>
                   <w pos="PRON" lemma="nos">nobis</w>
@@ -762,7 +767,8 @@
                </s>
                <s rend="77">
                   <w pos="ADP" lemma="ad">ad</w>
-                  <w pos="VERB" lemma="do" msd="#md1e5154"> da <seg function="marker" ana="#u_m43555" xml:id="lk01_77">ndam</seg>
+                  <w pos="VERB" lemma="do" msd="#md1e5154"> da <seg function="marker"
+                        ana="#u_m43555" xml:id="lk01_77">ndam</seg>
                   </w>
                   <w pos="NOUN" lemma="scientia">scientiam</w>
                   <w pos="NOUN" lemma="salus">salutis</w>
@@ -799,7 +805,8 @@
                   <w pos="NOUN" lemma="mors">mortis</w>
                   <w pos="VERB" lemma="sedeo">sedent</w>
                   <w pos="ADP" lemma="ad">ad</w>
-                  <w pos="VERB" lemma="dirigo" msd="#md1e5312">dirige<seg function="marker" ana="#u_m44903" xml:id="lk01_79">ndos</seg>
+                  <w pos="VERB" lemma="dirigo" msd="#md1e5312">dirige<seg function="marker"
+                        ana="#u_m44903" xml:id="lk01_79">ndos</seg>
                   </w>
                   <w pos="NOUN" lemma="pes">pedes</w>
                   <w pos="ADJ" lemma="noster">nostros</w>
@@ -1097,7 +1104,8 @@
                   <w pos="NOUN" lemma="spiritus">Spiritu</w>
                   <w pos="NOUN" lemma="sanctus">Sancto</w>
                   <w pos="ADV" lemma="non">non</w>
-                  <w pos="VERB" lemma="video" msd="#md1e7341">vis<seg function="marker" ana="#u_m61834" xml:id="lk02_26">urum</seg>
+                  <w pos="VERB" lemma="video" msd="#md1e7341">vis<seg function="marker"
+                        ana="#u_m61834" xml:id="lk02_26">urum</seg>
                   </w>
                   <w pos="PRON" lemma="sui">se</w>
                   <w pos="NOUN" lemma="mors">mortem</w>
@@ -2221,7 +2229,8 @@
                   </w>
                   <seg function="scope" part="Y" ana="#u_m132314">
                      <w pos="PRON" lemma="ego" msd="#md1e15648">me</w>
-                     <w pos="VERB" lemma="evangelizo" msd="#md1e15654" function="main">evangelizare</w>
+                     <w pos="VERB" lemma="evangelizo" msd="#md1e15654" function="main"
+                        >evangelizare</w>
                      <w pos="NOUN" lemma="regnum" msd="#md1e15659">regnum</w>
                      <w pos="NOUN" lemma="deus" msd="#md1e15664">Dei</w>
                   </seg>
@@ -2368,7 +2377,8 @@
                   <w pos="PRON" lemma="is">eum</w>
                   <w pos="VERB" lemma="dico">dicens</w>
                   <w pos="NOUN" lemma="dominus" msd="#md1e16729">
-                     <seg function="participant" type="animate" corresp="#u_m141551 #u_m141552">Domine</seg>
+                     <seg function="participant" type="animate" corresp="#u_m141551 #u_m141552"
+                        >Domine</seg>
                   </w>
                   <w pos="SCONJ" lemma="si">si</w>
                   <w pos="VERB" lemma="volo" msd="#md1e16739">
@@ -5371,7 +5381,8 @@
                   </w>
                   <seg function="scope" ana="#u148676">
                      <seg function="participant" type="animate" corresp="#u149627 #u148676">
-                        <seg function="participant" type="animate_patient" corresp="#u149475 #u149007">
+                        <seg function="participant" type="animate_patient"
+                           corresp="#u149475 #u149007">
                            <w pos="NOUN" lemma="Filius" msd="#d1e17801">Filium</w>
                            <w pos="NOUN" lemma="homo" msd="#d1e17808">hominis</w>
                         </seg>
@@ -6170,7 +6181,8 @@
                   <w pos="ADV" lemma="quo">quo</w>
                   <w pos="VERB" lemma="sum">erat</w>
                   <w pos="PRON" lemma="ipse">ipse</w>
-                  <w pos="VERB" lemma="venio" msd="#d1e22013"> ven <seg function="marker" ana="#u184298" xml:id="lk10_01">turus</seg>
+                  <w pos="VERB" lemma="venio" msd="#d1e22013"> ven <seg function="marker"
+                        ana="#u184298" xml:id="lk10_01">turus</seg>
                   </w>
                </s>
                <s rend="2">
@@ -7384,7 +7396,8 @@
                   <w pos="NOUN" lemma="homo">homines</w>
                   <w pos="NOUN" lemma="onsus">oneribus</w>
                   <w pos="PRON" lemma="qui" msd="#ld1e4574">
-                     <seg function="participant" type="inanimate_patient" corresp="#u_l38250">quae</seg>
+                     <seg function="participant" type="inanimate_patient" corresp="#u_l38250"
+                        >quae</seg>
                   </w>
                   <w pos="VERB" lemma="porto" msd="#ld1e4581" function="main">
                      <seg function="scope" ana="#u_l38250">portari</seg>
@@ -10367,7 +10380,8 @@
                   <w pos="SCONJ" lemma="ut">ut</w>
                   <w pos="PRON" lemma="hic">hii</w>
                   <w pos="PRON" lemma="qui" msd="#kd1e2734">
-                     <seg function="participant" type="animate" corresp="#u_k23431 #u_k23024">qui</seg>
+                     <seg function="participant" type="animate" corresp="#u_k23431 #u_k23024"
+                        >qui</seg>
                   </w>
                   <w pos="VERB" lemma="volo" msd="#kd1e2743">
                      <seg function="marker" ana="#u_k22974" xml:id="lk16_26">volunt</seg>
@@ -10761,7 +10775,8 @@
                      <seg function="scope" part="Y" ana="#u_k45044">
                         <w pos="PRON" lemma="ille" msd="#kd1e5384">
                            <seg function="participant" type="animate" corresp="#u_k44782">
-                              <seg function="participant" type="animate_patient" corresp="#u_k45044">illum</seg>
+                              <seg function="participant" type="animate_patient" corresp="#u_k45044"
+                                 >illum</seg>
                            </seg>
                         </w>
                      </seg>
@@ -11291,7 +11306,8 @@
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="ADP" lemma="in">in</w>
                   <w pos="NOUN" lemma="saeculum">saeculo</w>
-                  <w pos="VERB" lemma="venio" msd="#kd1e9082"> ven <seg function="marker" ana="#u_k76065" xml:id="lk18_30">turo</seg>
+                  <w pos="VERB" lemma="venio" msd="#kd1e9082"> ven <seg function="marker"
+                        ana="#u_k76065" xml:id="lk18_30">turo</seg>
                   </w>
                   <w pos="NOUN" lemma="vita">vitam</w>
                   <w pos="NOUN" lemma="aeternus">aeternam</w>
@@ -11499,7 +11515,8 @@
                   <w pos="SCONJ" lemma="quia">quia</w>
                   <w pos="ADV" lemma="inde">inde</w>
                   <w pos="VERB" lemma="sum">erat</w>
-                  <w pos="VERB" lemma="transeo" msd="#kd1e10303"> transi <seg function="marker" ana="#u_k151443" xml:id="lk19_04">turus</seg>
+                  <w pos="VERB" lemma="transeo" msd="#kd1e10303"> transi <seg function="marker"
+                        ana="#u_k151443" xml:id="lk19_04">turus</seg>
                   </w>
                </s>
                <s rend="5">
@@ -12170,7 +12187,8 @@
                   <w pos="SCONJ" lemma="enim">enim</w>
                   <seg function="scope" ana="#u_k122861">
                      <w pos="NOUN" lemma="Johannes" msd="#kd1e14671">
-                        <seg function="participant" type="animate" corresp="#u_k122861">Iohannem</seg>
+                        <seg function="participant" type="animate" corresp="#u_k122861"
+                           >Iohannem</seg>
                      </w>
                      <w pos="NOUN" lemma="propheta" msd="#kd1e14679">prophetam</w>
                      <w pos="VERB" lemma="sum" msd="#kd1e14685" function="main">esse</w>
@@ -12459,7 +12477,8 @@
                      <seg function="marker" ana="#u_k135047" xml:id="lk20_22">licet</seg>
                   </w>
                   <w pos="PRON" lemma="nos" msd="#kd1e16108">
-                     <seg function="participant" type="animate" corresp="#u_k151514 #u_k151515">nobis</seg>
+                     <seg function="participant" type="animate" corresp="#u_k151514 #u_k151515"
+                        >nobis</seg>
                   </w>
                   <seg function="scope" ana="#u_k151514">
                      <w pos="VERB" lemma="do" msd="#kd1e16117" function="main">dare</w>
@@ -12531,7 +12550,8 @@
                   <seg function="scope" ana="#u_k137430">
                      <w pos="NOUN" lemma="verbum" msd="#kd1e16375">verbum</w>
                      <w pos="PRON" lemma="is" msd="#kd1e16382">eius</w>
-                     <w pos="VERB" lemma="reprehendo" msd="#kd1e16388" function="main">reprehendere</w>
+                     <w pos="VERB" lemma="reprehendo" msd="#kd1e16388" function="main"
+                        >reprehendere</w>
                      <w pos="ADP" lemma="coram">coram</w>
                      <w pos="NOUN" lemma="plebs" msd="#kd1e16399">plebe</w>
                   </seg>
@@ -13028,7 +13048,8 @@
                   </seg>
                   <w pos="CCONJ" lemma="et">et</w>
                   <seg function="scope" part="Y" ana="#u_j10623">
-                     <w pos="VERB" lemma="contradico" msd="#jd1e1282" function="main">contradicere</w>
+                     <w pos="VERB" lemma="contradico" msd="#jd1e1282" function="main"
+                        >contradicere</w>
                   </seg>
                   <seg function="participant" type="animate" corresp="#u_j10623 #u_j10498">
                      <w pos="ADJ" lemma="omnis" msd="#jd1e1291">omnes</w>
@@ -13309,7 +13330,8 @@
                      <w pos="PRON" lemma="iste" msd="#jd1e17517">ista</w>
                      <w pos="NOUN" lemma="omnia" msd="#jd1e17517">omnia</w>
                      <w pos="PRON" lemma="qui" msd="#jd1e17517">quae</w>
-                     <w pos="VERB" lemma="sum" msd="#jd1e4818">fu<seg function="marker" ana="#u_j5921" xml:id="lk21_36">tura</seg>
+                     <w pos="VERB" lemma="sum" msd="#jd1e4818">fu<seg function="marker"
+                           ana="#u_j5921" xml:id="lk21_36">tura</seg>
                      </w>
                      <w pos="VERB" lemma="sum" msd="#md1e9003">sunt</w>
                   </seg>
@@ -13554,7 +13576,8 @@
                   <w pos="PRON" lemma="is">eis</w>
                   <w pos="PRON" lemma="qui">qui</w>
                   <w pos="PRON" lemma="hic">hoc</w>
-                  <w pos="VERB" lemma="facio" msd="#jd1e4817"> fac <seg function="marker" ana="#u_j39950" xml:id="lk22_23">turus</seg>
+                  <w pos="VERB" lemma="facio" msd="#jd1e4817"> fac <seg function="marker"
+                        ana="#u_j39950" xml:id="lk22_23">turus</seg>
                   </w>
                   <w pos="VERB" lemma="sum">esset</w>
                </s>
@@ -14717,7 +14740,8 @@
                      <seg function="marker" ana="#u_j118201" xml:id="lk24_07">oportet</seg>
                   </w>
                   <seg function="scope" ana="#u_j118274">
-                     <seg function="participant" type="animate_patient" corresp="#u_j118274 #u_j118740 #u_j118892">
+                     <seg function="participant" type="animate_patient"
+                        corresp="#u_j118274 #u_j118740 #u_j118892">
                         <w pos="NOUN" lemma="Filius" msd="#jd1e14201">Filium</w>
                         <w pos="NOUN" lemma="homo" msd="#jd1e14209">hominis</w>
                      </seg>
@@ -14993,7 +15017,8 @@
                   <seg function="scope" part="Y" ana="#u_j132973">
                      <w pos="VERB" lemma="patior" msd="#jd1e15964" function="main">pati</w>
                      <w pos="NOUN" lemma="Christus" msd="#jd1e15972">
-                        <seg function="participant" type="animate" corresp="#u_j133212 #u_j132973">Christum</seg>
+                        <seg function="participant" type="animate" corresp="#u_j133212 #u_j132973"
+                           >Christum</seg>
                      </w>
                   </seg>
                   <w pos="CCONJ" lemma="et">et</w>
@@ -15238,7 +15263,8 @@
                   <seg function="scope" ana="#u_j145803">
                      <w pos="VERB" lemma="impleo" msd="#jd1e17510" function="main">impleri</w>
                      <w pos="NOUN" lemma="omnis" msd="#jd1e17517">
-                        <seg function="participant" type="inanimate_patient" corresp="#u_j145803">omnia</seg>
+                        <seg function="participant" type="inanimate_patient" corresp="#u_j145803"
+                           >omnia</seg>
                      </w>
                      <w pos="PRON" lemma="qui" msd="#jd1e17524">quae</w>
                      <w pos="VERB" lemma="scribo" msd="#jd1e17530">scripta</w>
@@ -15279,7 +15305,8 @@
                   <seg function="scope" ana="#u_j147321">
                      <seg function="scope" part="Y" ana="#u_j147528">
                         <w pos="NOUN" lemma="Christus" msd="#jd1e17693">
-                           <seg function="participant" type="animate" corresp="#u_j147528 #u_j147321"> Christum</seg>
+                           <seg function="participant" type="animate"
+                              corresp="#u_j147528 #u_j147321"> Christum</seg>
                         </w>
                      </seg>
                      <w pos="VERB" lemma="patior" msd="#jd1e17703" function="main">pati</w>
@@ -16753,7 +16780,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -16797,7 +16824,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -16923,7 +16950,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="false"/>
             </f>
@@ -17065,7 +17092,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -17089,7 +17116,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="false"/>
             </f>
@@ -17153,7 +17180,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -17197,7 +17224,7 @@
             <f name="polarity">
                <symbol value="negative"/>
             </f>
-            
+
             <f name="control">
                <binary value="false"/>
             </f>
@@ -17238,7 +17265,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -17302,7 +17329,7 @@
             <f name="polarity">
                <symbol value="negative"/>
             </f>
-            
+
             <f name="control">
                <binary value="false"/>
             </f>
@@ -17380,7 +17407,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -17458,7 +17485,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -17482,7 +17509,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -17526,7 +17553,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -17570,7 +17597,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -17614,7 +17641,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -17658,7 +17685,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -17682,7 +17709,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -17746,7 +17773,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -20175,7 +20202,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -20219,7 +20246,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -20263,7 +20290,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -20287,7 +20314,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -20311,7 +20338,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -20335,7 +20362,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -20393,7 +20420,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -20465,7 +20492,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -20509,7 +20536,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -20553,7 +20580,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="false"/>
             </f>
@@ -20577,7 +20604,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="false"/>
             </f>
@@ -20666,7 +20693,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -20710,7 +20737,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -20774,7 +20801,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -20852,7 +20879,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -20896,7 +20923,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -20940,7 +20967,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="false"/>
             </f>
@@ -21060,7 +21087,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="false"/>
             </f>
@@ -21084,7 +21111,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -21108,7 +21135,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -21132,7 +21159,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="false"/>
             </f>
@@ -21176,7 +21203,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -21223,7 +21250,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <symbol value="ambiguous"/>
             </f>
@@ -21247,7 +21274,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -21271,7 +21298,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -21295,7 +21322,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="false"/>
             </f>
@@ -21339,7 +21366,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -21383,7 +21410,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="false"/>
             </f>
@@ -21461,7 +21488,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -21564,7 +21591,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -21622,7 +21649,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -21666,7 +21693,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="false"/>
             </f>
@@ -21690,7 +21717,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="false"/>
             </f>
@@ -21734,7 +21761,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <symbol value="ambiguous"/>
             </f>
@@ -24715,7 +24742,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -24739,7 +24766,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -24803,7 +24830,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -24827,7 +24854,7 @@
             <f name="polarity">
                <symbol value="negative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -24851,7 +24878,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="false"/>
             </f>
@@ -24977,7 +25004,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -25035,7 +25062,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -25211,7 +25238,7 @@
             <f name="polarity">
                <symbol value="negative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -25255,7 +25282,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -25299,7 +25326,7 @@
             <f name="polarity">
                <symbol value="negative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -25343,7 +25370,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -25387,7 +25414,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -25431,7 +25458,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -25455,7 +25482,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -25519,7 +25546,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -25563,7 +25590,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -25607,7 +25634,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <symbol value="ambiguous"/>
             </f>
@@ -25631,7 +25658,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <symbol value="ambiguous"/>
             </f>
@@ -25695,7 +25722,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -25739,7 +25766,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -25783,7 +25810,7 @@
             <f name="polarity">
                <symbol value="negative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -25841,7 +25868,7 @@
             <f name="polarity">
                <symbol value="negative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -25855,7 +25882,7 @@
                <symbol value="animate"/>
             </f>
             <f name="participant">
-               <symbol value="implicit"/>
+               <symbol value="explicit"/>
             </f>
          </fs>
          <fs xml:id="u_l175562" type="scope">
@@ -25865,7 +25892,7 @@
             <f name="polarity">
                <symbol value="negative"/>
             </f>
-            
+
             <f name="control">
                <symbol value="ambiguous"/>
             </f>
@@ -25876,10 +25903,10 @@
                <string>12</string>
             </f>
             <f name="participantType">
-               <symbol value="animate"/>
+               <symbol value="animate_patient"/>
             </f>
             <f name="participant">
-               <symbol value="implicit"/>
+               <symbol value="explicit"/>
             </f>
          </fs>
          <fs xml:id="u_l131735" type="marker">
@@ -25909,7 +25936,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -25953,7 +25980,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -25974,7 +26001,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="false"/>
             </f>
@@ -26018,7 +26045,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -26062,7 +26089,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="false"/>
             </f>
@@ -26106,7 +26133,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="false"/>
             </f>
@@ -26150,7 +26177,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -26228,7 +26255,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -26272,7 +26299,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -26296,7 +26323,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -26360,7 +26387,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -26404,7 +26431,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="false"/>
             </f>
@@ -26448,7 +26475,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -26472,7 +26499,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -26496,7 +26523,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <symbol value="ambiguous"/>
             </f>
@@ -28715,7 +28742,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -28852,7 +28879,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -28896,7 +28923,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -28940,7 +28967,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -29004,7 +29031,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -29048,7 +29075,7 @@
             <f name="polarity">
                <symbol value="negative"/>
             </f>
-            
+
             <f name="control">
                <binary value="false"/>
             </f>
@@ -29092,7 +29119,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -29150,7 +29177,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="false"/>
             </f>
@@ -29174,7 +29201,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -29218,7 +29245,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -29242,7 +29269,7 @@
             <f name="polarity">
                <symbol value="negative"/>
             </f>
-            
+
             <f name="control">
                <symbol value="ambiguous"/>
             </f>
@@ -29286,7 +29313,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -29330,7 +29357,7 @@
             <f name="polarity">
                <symbol value="negative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -29388,7 +29415,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="false"/>
             </f>
@@ -29514,7 +29541,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -29558,7 +29585,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="false"/>
             </f>
@@ -29616,7 +29643,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -29660,7 +29687,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -29721,7 +29748,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -29833,7 +29860,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="false"/>
             </f>
@@ -29894,7 +29921,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <symbol value="ambiguous"/>
             </f>
@@ -29978,7 +30005,7 @@
             <f name="modal">
                <binary value="true"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -30008,7 +30035,7 @@
             <f name="modal">
                <binary value="true"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -30049,7 +30076,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -30073,7 +30100,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="false"/>
             </f>
@@ -30137,7 +30164,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -32100,7 +32127,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="false"/>
             </f>
@@ -32144,7 +32171,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -32168,7 +32195,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -32229,7 +32256,7 @@
             <f name="polarity">
                <symbol value="negative"/>
             </f>
-            
+
             <f name="control">
                <symbol value="ambiguous"/>
             </f>
@@ -32273,7 +32300,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="false"/>
             </f>
@@ -32317,7 +32344,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -32392,7 +32419,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="false"/>
             </f>
@@ -32403,10 +32430,10 @@
                <string>37</string>
             </f>
             <f name="participantType">
-               <symbol value="animate"/>
+               <symbol value="inanimate_patient"/>
             </f>
             <f name="participant">
-               <symbol value="implicit"/>
+               <symbol value="explicit"/>
             </f>
          </fs>
          <fs xml:id="u_j54006" type="marker">
@@ -32444,7 +32471,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="false"/>
             </f>
@@ -32546,7 +32573,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -32590,7 +32617,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -32662,7 +32689,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -32686,7 +32713,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -32710,7 +32737,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <symbol value="ambiguous"/>
             </f>
@@ -32748,7 +32775,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -32812,7 +32839,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="false"/>
             </f>
@@ -32836,7 +32863,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="true"/>
             </f>
@@ -32894,7 +32921,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="false"/>
             </f>
@@ -32938,7 +32965,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="false"/>
             </f>
@@ -32962,7 +32989,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="false"/>
             </f>
@@ -32986,7 +33013,7 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-            
+
             <f name="control">
                <binary value="false"/>
             </f>
