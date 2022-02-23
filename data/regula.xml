@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/WoPoss-project/annotation-schemes/master/schemas/out/tei_woposs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!--<?xml-model href="https://raw.githubusercontent.com/WoPoss-project/annotation-schemes/master/schemas/out/tei_woposs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/WoPoss-project/annotation-schemes/master/schemas/out/tei_woposs.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+--><?xml-model href="../../annotation-schemes/schemas/out/tei_woposs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../annotation-schemes/schemas/out/tei_woposs.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="regula">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Regula Benedicti</title>
             <title type="short">Regula</title>
-            <author/>
+            <author>Benedict of Nursia</author>
             <principal>WoPoss Project</principal>
          </titleStmt>
          <editionStmt>
@@ -55,7 +57,8 @@
    <text>
       <body>
          <div type="chapter" n="prologus">
-            <head><w>Incipit</w> <w>prologus</w></head>
+            <head><w>Incipit</w>
+               <w>prologus</w></head>
             <ab>
                <s n="2">
                   <w pos="VERB" lemma="obsculo">Obsculta</w>
@@ -312,7 +315,7 @@
                   <w pos="PRON" lemma="qui">Qui</w>
                   <w pos="VERB" lemma="habeo">habet</w>
                   <w pos="NOUN" lemma="auris">aures</w>
-                  <w pos="VERB" lemma="audio">audiendi</w>
+                  <w pos="VERB" lemma="audio" function="no">audiendi</w>
                   <w pos="VERB" lemma="audio">audiat</w>
                   <pc>,</pc>
                   <w pos="PRON" lemma="quis">quid</w>
@@ -436,7 +439,7 @@
                <s n="20">
                   <w pos="VERB" lemma="deverto">deverte</w>
                   <w pos="INTJ" lemma="ah">a</w>
-                  <w pos="VERB" lemma="malo">malo</w>
+                  <w pos="ADJ" lemma="malus">malo</w>
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="facio">fac</w>
                   <w pos="ADJ" lemma="bonus">bonum</w>
@@ -696,19 +699,34 @@
                   <w pos="VERB" lemma="elaio">elatos</w>
                   <pc>,</pc>
                   <w pos="CCONJ" lemma="sed">sed</w>
-                  <w pos="PRON" lemma="ipse">ipsa</w>
-                  <w pos="ADP" lemma="in">in</w>
-                  <w pos="PRON" lemma="sui">se</w>
-                  <w pos="ADJ" lemma="bonus">bona</w>
-                  <w pos="ADV" lemma="non">non</w>
-                  <w pos="ADP" lemma="ab">a</w>
-                  <w pos="PRON" lemma="sui">se</w>
-                  <w pos="VERB" lemma="possum">posse</w>
+                  <seg function="participant" type="inanimate_patient" corresp="#reg1000 #reg1001"
+                        ><w pos="PRON" lemma="ipse">ipsa</w>
+                     <w pos="ADP" lemma="in">in</w>
+                     <w pos="PRON" lemma="sui">se</w>
+                     <w pos="ADJ" lemma="bonus">bona</w></seg>
+                  <seg function="negation" corresp="#reg0000"><w pos="ADV" lemma="non">non</w></seg>
+                  <seg function="scope" ana="#reg1000">
+                     <w pos="ADP" lemma="ab">a</w>
+                     <seg function="participant" type="animate" corresp="#reg1000"><w pos="PRON"
+                           lemma="sui">se</w></seg>
+                     <supplied>
+                        <w>fieri</w>
+                     </supplied></seg>
+                  <seg function="marker" ana="#reg0000"><w pos="VERB" lemma="possum">posse</w></seg>
                   <pc>,</pc>
                   <w pos="CCONJ" lemma="sed">sed</w>
-                  <w pos="ADP" lemma="ab">a</w>
-                  <w pos="NOUN" lemma="Dominus">Domino</w>
-                  <w pos="VERB" lemma="fio">fieri</w>
+                  <supplied>
+                     <seg function="marker" ana="#reg0001"><w pos="VERB" lemma="possum"
+                        >posse</w></seg>
+                  </supplied>
+                  <seg function="scope" ana="#reg1001">
+                     <w pos="ADP" lemma="ab">a</w>
+                     <seg function="participant" type="animate" corresp="#reg1001"><w pos="NOUN"
+                           lemma="Dominus">Domino</w></seg>
+                     <w pos="VERB" lemma="fio">fieri</w>
+                     <supplied>
+                        <w>bona</w>
+                     </supplied></seg>
                   <w pos="VERB" lemma="existimo">existimantes</w>
                   <pc>,</pc>
                   <w pos="VERB" lemma="opero">operantem</w>
@@ -838,16 +856,21 @@
                   <w pos="VERB" lemma="conpleo">conplens</w>
                   <w pos="NOUN" lemma="dominus">Dominus</w>
                   <w pos="VERB" lemma="exspecto">expectat</w>
-                  <w pos="PRON" lemma="nos">nos</w>
-                  <w pos="ADV" lemma="cottidie">cotidie</w>
-                  <w pos="PRON" lemma="hic">his</w>
-                  <w pos="PRON" lemma="suus">suis</w>
-                  <w pos="NOUN" lemma="sanctum">sanctis</w>
-                  <w pos="VERB" lemma="moneo">monitis</w>
-                  <w pos="NOUN" lemma="factum">factis</w>
-                  <w pos="PRON" lemma="nos">nos</w>
-                  <w pos="VERB" lemma="respondeo">respondere</w>
-                  <w pos="VERB" lemma="debeo">debere</w>
+                  <seg function="participant" type="animate" corresp="#reg1002"><w pos="PRON"
+                        lemma="nos">nos</w></seg>
+                  <seg function="scope" part="Y" ana="#reg1002">
+                     <w pos="ADV" lemma="cottidie">cottidie</w>
+                     <w pos="PRON" lemma="hic">his</w>
+                     <w pos="PRON" lemma="suus">suis</w>
+                     <w pos="NOUN" lemma="sanctum">sanctis</w>
+                     <w pos="VERB" lemma="moneo">monitis</w>
+                     <w pos="NOUN" lemma="factum">factis</w></seg>
+                  <seg function="participant" type="animate" corresp="#reg1002"><w pos="PRON"
+                        lemma="nos">nos</w></seg>
+                  <seg function="scope" part="Y" ana="#reg1002">
+                     <w pos="VERB" lemma="respondeo" function="main">respondere</w></seg>
+                  <seg function="marker" ana="#reg463s4"><w pos="VERB" lemma="debeo"
+                     >debere</w></seg>
                   <pc>.</pc>
                </s>
                <s n="44">
@@ -927,7 +950,7 @@
                   <w pos="PRON" lemma="is">eius</w>
                   <pc>,</pc>
                   <w pos="VERB" lemma="audio">audivimus</w>
-                  <w pos="VERB" lemma="habito">habitandi</w>
+                  <w pos="VERB" lemma="habito" function="no">habitandi</w>
                   <w pos="NOUN" lemma="præceptum">præceptum</w>
                   <pc>;</pc>
                </s>
@@ -964,7 +987,8 @@
                      <w pos="ADJ" lemma="sanctus" msd="#regd1e4291">sanctæ</w>
                      <w pos="NOUN" lemma="praceptum" msd="#regd1e4297">præceptorum</w>
                      <w pos="NOUN" lemma="oboedientia" msd="#regd1e4303">oboedientiæ</w>
-                     <w pos="VERB" lemma="milito" msd="#regd1e4309">militanda</w>
+                     <w pos="VERB" lemma="milito" msd="#regd1e4309">milita<seg function="marker"
+                           ana="#reg0002">nda</seg></w>
                   </seg>
                   <pc>,</pc>
                   <w pos="CCONJ" lemma="et">et</w>
@@ -1343,7 +1367,7 @@
                   <w pos="CCONJ" lemma="aut">aut</w>
                   <w pos="ADJ" lemma="ternus">terni</w>
                   <w pos="CCONJ" lemma="aut">aut</w>
-                  <w pos="ADV" lemma="certus">certe</w>
+                  <seg function="marker" ana="#reg0003"><w pos="ADV" lemma="certus">certe</w></seg>
                   <w pos="ADJ" lemma="singulus">singuli</w>
                   <w pos="ADP" lemma="sine">sine</w>
                   <w pos="NOUN" lemma="pastor">pastore</w>
@@ -1474,11 +1498,14 @@
                   <w pos="VERB" lemma="venio">veniamus</w>
                   <pc>.</pc>
                </s>
-               <s n="67">
-                  <w pos="CCONJ" lemma="se">#</w>
-                  <w pos="NOUN" lemma="caput">Caput</w>
-                  <w pos="NOUN" lemma="2">2</w>
-                  <pc>:</pc>
+            </ab>
+         </div>
+         <div type="chapter" n="2">
+            <head><w>Caput</w>
+               <w>2</w>
+               <pc>:</pc></head>
+            <ab>
+               <s>
                   <w pos="ADJ" lemma="qualis">Qualis</w>
                   <w pos="VERB" lemma="debeo" msd="#regd1e6757">
                      <seg function="marker" ana="#reg55959">debeat</seg>
@@ -1615,7 +1642,8 @@
                      <w pos="NOUN" lemma="res" msd="#regd1e7299">rerum</w>
                      <pc>,</pc>
                      <w lemma="in" pos="ADP">in</w>
-                     <w lemma="tremendus">treme<seg function="marker" ana="#reg60632">ndo</seg>
+                     <w lemma="tremo" pos="VERB" msd="#regd1e4s250">treme<seg function="marker"
+                           ana="#reg60632">ndo</seg>
                      </w>
                      <w lemma="judicium" pos="NOUN" msd="#regd1e535">iudicio</w>
                      <w pos="NOUN" lemma="deus" msd="#regd1e7330">Dei</w>
@@ -2440,33 +2468,37 @@
                   <pc>,</pc>
                   <w pos="VERB" lemma="agnosco">agnoscat</w>
                   <w pos="ADP" lemma="pro">pro</w>
-                  <w pos="NOUN" lemma="certus">certo</w>
-                  <w pos="SCONJ" lemma="quia">quia</w>
-                  <w pos="ADP" lemma="in">in</w>
-                  <w pos="NOUN" lemma="dies">die</w>
-                  <w pos="NOUN" lemma="judicium">iudicii</w>
-                  <w pos="PRON" lemma="ipse">ipsarum</w>
-                  <w pos="ADJ" lemma="omnis">omnium</w>
-                  <w pos="NOUN" lemma="anima">animarum</w>
-                  <w pos="VERB" lemma="sum" msd="#regd1e11224">
-                     <seg function="marker" next="turus" part="Y" ana="#reg92998">est</seg>
-                  </w>
-                  <w pos="VERB" lemma="reddo" msd="#regd1e11232" function="main">
-                     <seg function="scope" next="Domino_rationem" part="Y" ana="#reg92960"
-                        >reddi</seg>
-                     <seg function="marker" part="Y" ana="#reg92998">turus</seg>
-                  </w>
-                  <seg function="scope" part="Y" ana="#reg92960">
-                     <w pos="NOUN" lemma="Dominus" msd="#regd1e11245">Domino</w>
-                     <w pos="NOUN" lemma="ratio" msd="#regd1e11251">rationem</w>
-                  </seg>
-                  <pc>,</pc>
-                  <w pos="ADP" lemma="sine">sine</w>
-                  <w pos="NOUN" lemma="dubium">dubio</w>
-                  <w pos="VERB" lemma="addo">addita</w>
-                  <w pos="CCONJ" lemma="et">et</w>
-                  <w pos="ADJ" lemma="suæ">suæ</w>
-                  <w pos="NOUN" lemma="animæ">animæ</w>
+                  <seg function="marker" ana="#reg0004"><w pos="NOUN" lemma="certus">certo</w></seg>
+                  <seg function="scope" ana="#reg1004">
+                     <w pos="SCONJ" lemma="quia">quia</w>
+                     <seg function="scope" ana="#reg1005" part="Y"><w pos="ADP" lemma="in">in</w>
+                        <w pos="NOUN" lemma="dies">die</w>
+                        <w pos="NOUN" lemma="judicium">iudicii</w>
+                        <w pos="PRON" lemma="ipse">ipsarum</w>
+                        <w pos="ADJ" lemma="omnis">omnium</w>
+                        <w pos="NOUN" lemma="anima">animarum</w>
+                        <w pos="VERB" lemma="sum" msd="#regd1e11224">
+                           <seg function="marker" next="turus" part="Y" ana="#reg92998">est</seg>
+                        </w>
+                        <w pos="VERB" lemma="reddo" msd="#regd1e11232">
+                           <seg function="scope" next="Domino_rationem" part="Y" ana="#reg92960"
+                              >reddi</seg>
+                           <seg function="marker" part="Y" ana="#reg92998">turus</seg>
+                        </w>
+                        <seg function="scope" part="Y" ana="#reg92960">
+                           <w pos="NOUN" lemma="Dominus" msd="#regd1e11245">Domino</w>
+                           <w pos="NOUN" lemma="ratio" msd="#regd1e11251">rationem</w>
+                        </seg></seg>
+                     <pc>,</pc>
+                     <seg function="negation" corresp="#reg0005"><w pos="ADP" lemma="sine"
+                        >sine</w></seg>
+                     <seg function="marker" ana="#reg0005"><w pos="NOUN" lemma="dubium"
+                        >dubio</w></seg>
+                     <seg function="scope" ana="#reg1005" part="Y"><w pos="VERB" lemma="addo"
+                           >addita</w>
+                        <w pos="CCONJ" lemma="et">et</w>
+                        <w pos="ADJ" lemma="suæ">suæ</w>
+                        <w pos="NOUN" lemma="animæ">animæ</w></seg></seg>
                   <pc>.</pc>
                </s>
                <s n="107">
@@ -2703,7 +2735,7 @@
                <s n="120">
                   <w pos="PRON" lemma="ipse">Ipse</w>
                   <w pos="ADV" lemma="tamen">tamen</w>
-                  <w pos="NOUN" lemma="abba">abbas</w>
+                  <w pos="NOUN" lemma="abba">abba</w>
                   <w pos="ADP" lemma="cum">cum</w>
                   <w pos="NOUN" lemma="timor">timore</w>
                   <w pos="NOUN" lemma="deus">Dei</w>
@@ -2730,7 +2762,8 @@
                         <w pos="ADJ" lemma="omnis" msd="#regd1e12505">omnibus</w>
                         <w pos="NOUN" lemma="judicium" msd="#regd1e12511">iudiciis</w>
                         <w pos="ADJ" lemma="suus" msd="#regd1e12517">suis</w>
-                        <w pos="ADJ" lemma="aequus" msd="#regd1e12523">æquissimo</w>
+                        <seg function="marker" ana="#reg0006">
+                           <w pos="ADJ" lemma="aequus" msd="#regd1e12523">æquissimo</w></seg>
                         <w pos="NOUN" lemma="judex" msd="#regd1e12529">iudici</w>
                         <w pos="NOUN" lemma="deus" msd="#regd1e12535">Deo</w>
                         <w pos="NOUN" lemma="ratio" msd="#regd1e12541">rationem</w>
@@ -3167,14 +3200,16 @@
                   <pc>.</pc>
                </s>
                <s n="173">
-                  <w pos="ADP" lemma="in">In</w>
-                  <w pos="ADJ" lemma="omnis">omni</w>
-                  <w pos="NOUN" lemma="locus">loco</w>
-                  <w pos="NOUN" lemma="deus">Deum</w>
-                  <w pos="PRON" lemma="sui">se</w>
-                  <w pos="VERB" lemma="respicio">respicere</w>
+                  <seg function="scope" ana="#reg1007">
+                     <w pos="ADP" lemma="in">In</w>
+                     <w pos="ADJ" lemma="omnis">omni</w>
+                     <w pos="NOUN" lemma="locus">loco</w>
+                     <w pos="NOUN" lemma="deus">Deum</w>
+                     <seg function="participant" type="animate" corresp="#reg1007"><w pos="PRON"
+                           lemma="sui">se</w></seg>
+                     <w pos="VERB" lemma="respicio">respicere</w></seg>
                   <w pos="ADP" lemma="pro">pro</w>
-                  <w pos="NOUN" lemma="certus">certo</w>
+                  <seg function="marker" ana="#reg0007"><w pos="NOUN" lemma="certus">certo</w></seg>
                   <w pos="VERB" lemma="scio">scire</w>
                   <pc>.</pc>
                </s>
@@ -3563,7 +3598,7 @@
                   <w pos="VERB" lemma="patior">pati</w>
                   <w pos="VERB" lemma="nescio">nesciant</w>
                   <w pos="ADP" lemma="in">in</w>
-                  <w pos="VERB" lemma="facio">faciendo</w>
+                  <w pos="VERB" lemma="facio" function="no">faciendo</w>
                   <pc>.</pc>
                </s>
                <s n="209">
@@ -3658,7 +3693,7 @@
                   <w pos="ADP" lemma="ad">ad</w>
                   <w pos="NOUN" lemma="vita">vitam</w>
                   <w pos="NOUN" lemma="Vterna">æternam</w>
-                  <w pos="VERB" lemma="grado">gradiendi</w>
+                  <w pos="VERB" lemma="grado" function="no">gradiendi</w>
                   <w pos="NOUN" lemma="amor">amor</w>
                   <w pos="VERB" lemma="incumbo">incumbit</w>
                   <pc>,</pc>
@@ -3782,9 +3817,7 @@
                   <w pos="ADP" lemma="cum">cum</w>
                   <w pos="NOUN" lemma="responsus">responso</w>
                   <w pos="VERB" lemma="nolo" msd="#regd1e17127">
-                     <seg function="marker" ana="#reg140668">nolentis<note>Implied scope: quod
-                           jubetur efficere</note>
-                     </seg>
+                     <seg function="marker" ana="#reg140668">nolentis</seg>
                   </w>
                   <w pos="VERB" lemma="efficio">efficiatur</w>
                   <pc>,</pc>
@@ -4005,7 +4038,7 @@
                   <w pos="NOUN" lemma="taciturnitas">taciturnitatis</w>
                   <w pos="NOUN" lemma="gravitas">gravitatem</w>
                   <w pos="ADJ" lemma="rarus">rara</w>
-                  <w pos="VERB" lemma="loquor">loquendi</w>
+                  <w pos="VERB" lemma="loquor" function="no">loquendi</w>
                   <w pos="VERB" lemma="concedo">concedatur</w>
                   <w pos="NOUN" lemma="licentia">licentia</w>
                   <pc>,</pc>
@@ -4296,23 +4329,31 @@
                   <pc>.</pc>
                </s>
                <s n="246">
-                  <w pos="ADV" lemma="non">Non</w>
-                  <w pos="ADJ" lemma="alius">aliud</w>
-                  <w pos="ADP" lemma="sine">sine</w>
-                  <w pos="NOUN" lemma="dubium">dubio</w>
-                  <w pos="NOUN" lemma="descensus">descensus</w>
-                  <w pos="PRON" lemma="ille">ille</w>
-                  <w pos="CCONJ" lemma="et">et</w>
-                  <w pos="NOUN" lemma="ascensus">ascensus</w>
-                  <w pos="ADP" lemma="ab">a</w>
-                  <w pos="PRON" lemma="nos">nobis</w>
-                  <w pos="VERB" lemma="intelligo">intelligitur</w>
-                  <w pos="SCONJ" lemma="nisi">nisi</w>
-                  <w pos="NOUN" lemma="exaltatio">exaltatione</w>
-                  <w pos="VERB" lemma="descendo">descendere</w>
-                  <w pos="CCONJ" lemma="et">et</w>
-                  <w pos="NOUN" lemma="humilitas">humilitate</w>
-                  <w pos="VERB" lemma="ascendo">ascendere</w>
+                  <seg ana="#reg1008" part="Y" function="scope">
+                     <w pos="ADV" lemma="non">Non</w>
+                     <w pos="ADJ" lemma="alius">aliud</w>
+                  </seg>
+                  <seg function="negation" corresp="#reg0008"><w pos="ADP" lemma="sine"
+                     >sine</w></seg>
+                  <seg function="marker" ana="#reg0008">
+                     <w pos="NOUN" lemma="dubium">dubio</w></seg><seg ana="#reg1008" part="Y"
+                     function="scope">
+                     <seg function="participant" type="inanimate_patient" corresp="#reg1008">
+                        <w pos="NOUN" lemma="descensus">descensus</w></seg>
+                     <w pos="PRON" lemma="ille">ille</w>
+                     <w pos="CCONJ" lemma="et">et</w>
+                     <seg function="participant" type="inanimate_patient" corresp="#reg1008">
+                        <w pos="NOUN" lemma="ascensus">ascensus</w></seg>
+                     <w pos="ADP" lemma="ab">a</w>
+                     <seg function="participant" type="animate" corresp="#reg1008"><w pos="PRON"
+                           lemma="nos">nobis</w></seg>
+                     <w pos="VERB" lemma="intelligo" function="main">intelligitur</w>
+                     <w pos="SCONJ" lemma="nisi">nisi</w>
+                     <w pos="NOUN" lemma="exaltatio">exaltatione</w>
+                     <w pos="VERB" lemma="descendo">descendere</w>
+                     <w pos="CCONJ" lemma="et">et</w>
+                     <w pos="NOUN" lemma="humilitas">humilitate</w>
+                     <w pos="VERB" lemma="ascendo">ascendere</w></seg>
                   <pc>.</pc>
                </s>
                <s n="247">
@@ -4815,7 +4856,7 @@
                   <w pos="NOUN" lemma="deus">Deus</w>
                   <w pos="CCONJ" lemma="et">et</w>
                   <pc>,</pc>
-                  <w pos="VERB" lemma="parco">parcendo</w>
+                  <w pos="VERB" lemma="parco" function="no">parcendo</w>
                   <w pos="PRON" lemma="nos">nobis</w>
                   <w pos="ADP" lemma="in">in</w>
                   <w pos="PRON" lemma="hic">hoc</w>
@@ -5461,7 +5502,7 @@
                   <w pos="SCONJ" lemma="si">si</w>
                   <w pos="NOUN" lemma="lingua">linguam</w>
                   <w pos="ADP" lemma="ad">ad</w>
-                  <w pos="VERB" lemma="loquor">loquendum</w>
+                  <w pos="VERB" lemma="loquor" function="no">loquendum</w>
                   <w pos="VERB" lemma="prohibeo">prohibeat</w>
                   <w pos="ADJ" lemma="monachus">monachus</w>
                   <w pos="CCONJ" lemma="et">et</w>
@@ -5980,7 +6021,8 @@
                   <w pos="NOUN" lemma="antefanus">antefana</w>
                   <pc>,</pc>
                   <w pos="CCONJ" lemma="aut">aut</w>
-                  <w pos="ADV" lemma="certus">certe</w>
+                  <seg function="marker" ana="#reg0010">
+                     <w pos="ADV" lemma="certus">certe</w></seg>
                   <w pos="VERB" lemma="decanto" msd="#regd1e27555" function="main">
                      <seg function="scope" ana="#reg226080">decanta</seg>
                      <seg function="marker" ana="#reg226118">ndum</seg>
@@ -6475,9 +6517,10 @@
                   <w pos="ADV" lemma="mox">mox</w>
                   <w pos="NOUN" lemma="abba">abbas</w>
                   <w pos="NOUN" lemma="hymnus">hymnum</w>
-                  <w pos="PRON" lemma="tu">Te</w>
-                  <w pos="VERB" lemma="decet">decet</w>
-                  <w pos="NOUN" lemma="laus">laus</w>
+                  <title><w pos="PRON" lemma="tu">Te</w>
+                     <seg function="marker" ana="#reg0011"><w pos="VERB" lemma="decet"
+                        >decet</w></seg>
+                     <w pos="NOUN" lemma="laus">laus</w></title>
                   <pc>,</pc>
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="VERB" lemma="do">data</w>
@@ -6676,7 +6719,7 @@
                   <w pos="ADP" lemma="sine">sine</w>
                   <w pos="NOUN" lemma="antefanus">antefana</w>
                   <pc>,</pc>
-                  <w pos="VERB" lemma="subtraho">subtrahendo</w>
+                  <w pos="VERB" lemma="subtraho" function="no">subtrahendo</w>
                   <w pos="ADV" lemma="modice">modice</w>
                   <pc>,</pc>
                   <w pos="SCONJ" lemma="sicut">sicut</w>
@@ -6908,7 +6951,7 @@
                   <w pos="ADJ" lemma="liber">libera</w>
                   <w pos="PRON" lemma="nos">nos</w>
                   <w pos="ADP" lemma="ab">a</w>
-                  <w pos="VERB" lemma="malo">malo</w>
+                  <w pos="ADJ" lemma="malus">malo</w>
                   <pc>.</pc>
                </s>
             </ab>
@@ -7155,7 +7198,7 @@
                   <w pos="NOUN" lemma="nox">nocte</w>
                   <w pos="VERB" lemma="surgo">surgebam</w>
                   <w pos="ADP" lemma="ad">ad</w>
-                  <w pos="VERB" lemma="confiteor">confitendum</w>
+                  <w pos="VERB" lemma="confiteor" function="no">confitendum</w>
                   <w pos="PRON" lemma="tu">tibi</w>
                   <pc>.</pc>
                </s>
@@ -7192,7 +7235,7 @@
                   <w pos="NOUN" lemma="nox">nocte</w>
                   <w pos="VERB" lemma="surgo">surgamus</w>
                   <w pos="ADP" lemma="ad">ad</w>
-                  <w pos="VERB" lemma="confiteor">confitendum</w>
+                  <w pos="VERB" lemma="confiteor" function="no">confitendum</w>
                   <w pos="PRON" lemma="is">ei</w>
                   <pc>.</pc>
                </s>
@@ -7479,7 +7522,7 @@
                   <w pos="VERB" lemma="dominus">Domine</w>
                   <pc>,</pc>
                   <w pos="ADP" lemma="ad">ad</w>
-                  <w pos="VERB" lemma="adjuvo">adiuvandum</w>
+                  <w pos="VERB" lemma="adjuvo" function="no">adiuvandum</w>
                   <w pos="PRON" lemma="ego">me</w>
                   <w pos="VERB" lemma="festino">festina</w>
                   <pc>,</pc>
@@ -8214,7 +8257,7 @@
                   <w pos="CCONJ" lemma="et">Et</w>
                   <w pos="ADV" lemma="ideo">ideo</w>
                   <seg function="scope" next="esse_et_pura" part="Y" ana="#reg312765">
-                     <w pos="ADJ" lemma="brevis" msd="#regd1e38166">brevis</w>
+                     <w pos="ADJ" lemma="brevis" msd="#regd1e38166">brebis</w>
                   </seg>
                   <w pos="VERB" lemma="debeo" msd="#regd1e38172">
                      <seg function="marker" ana="#reg312692">debet</seg>
@@ -8223,7 +8266,6 @@
                      <w pos="VERB" lemma="sum" msd="#regd1e38182" function="main">esse</w>
                      <w pos="CCONJ" lemma="et">et</w>
                      <w pos="ADJ" lemma="purus" msd="#regd1e38193">pura</w>
-                     <note>ed.: brebis</note>
                   </seg>
                   <w pos="NOUN" lemma="oratio" msd="#regd1e38199">
                      <seg function="participant" type="inanimate" corresp="#reg312765 #reg313130"
@@ -9353,9 +9395,7 @@
                   <w pos="NOUN" lemma="oratio">orationem</w>
                   <pc>,</pc>
                   <w pos="SCONJ" lemma="ut">ut</w>
-                  <w pos="NOUN" lemma="dominus" msd="#regd1e43424">
-                     <seg function="participant" type="animate" corresp="#reg355487">Dominus</seg>
-                  </w>
+                  <w pos="NOUN" lemma="dominus" msd="#regd1e43424">Dominus</w>
                   <w pos="PRON" lemma="qui">qui</w>
                   <w pos="ADJ" lemma="omnis" msd="#regd1e43437">
                      <seg function="scope" ana="#reg355487">omnia</seg>
@@ -9684,8 +9724,7 @@
                      <w pos="PRON" lemma="is" msd="#regd1e44851">eo</w>
                   </seg>
                   <w pos="ADV" lemma="forte">
-                     <seg function="marker" ana="#reg367087">foret<note>forte</note>
-                     </seg>
+                     <seg function="marker" ana="#reg367087">forte</seg>
                   </w>
                   <seg function="scope" ana="#reg367160" part="Y">
                      <w pos="PRON" lemma="aliquis" msd="#regd1e44866">aliqua</w>
@@ -9694,7 +9733,7 @@
                   </seg>
                   <pc>,</pc>
                   <w pos="ADV" lemma="non">non</w>
-                  <w pos="VERB" lemma="sperno">spernendo</w>
+                  <w pos="VERB" lemma="sperno" function="no">spernendo</w>
                   <w pos="PRON" lemma="is">eum</w>
                   <w pos="VERB" lemma="contrio">contristet</w>
                   <pc>,</pc>
@@ -9746,25 +9785,26 @@
                   <pc>,</pc>
                   <w pos="VERB" lemma="scio">sciens</w>
                   <w pos="ADP" lemma="sine">sine</w>
-                  <w pos="NOUN" lemma="dubium">dubio</w>
+                  <seg function="marker" ana="#reg0012"><w pos="NOUN" lemma="dubium">dubio</w></seg>
                   <pc>,</pc>
-                  <w pos="SCONJ" lemma="quia">quia</w>
-                  <seg function="scope" ana="#reg369615" part="Y">
-                     <w pos="ADP" lemma="pro">pro</w>
-                     <w pos="PRON" lemma="hic" msd="#regd1e45178">his</w>
-                     <w pos="ADJ" lemma="omnis" msd="#regd1e45184">omnibus</w>
-                     <w pos="ADP" lemma="in">in</w>
-                     <w pos="NOUN" lemma="dies" msd="#regd1e45195">die</w>
-                     <w pos="NOUN" lemma="judicium" msd="#regd1e45201">iudicii</w>
-                     <w pos="NOUN" lemma="ratio" msd="#regd1e45207">rationem</w>
-                  </seg>
-                  <w msd="#reg369981f" pos="VERB" lemma="reddo">
-                     <seg function="scope" ana="#reg369615" part="Y">reddi</seg>
-                     <seg function="marker" ana="#reg370043" part="Y">turus</seg>
-                  </w>
-                  <seg function="marker" ana="#reg370043" part="Y">
-                     <w pos="VERB" lemma="sum" msd="#regd1e45216">est</w>
-                  </seg>
+                  <seg function="scope" ana="#reg1012">
+                     <w pos="SCONJ" lemma="quia">quia</w>
+                     <seg function="scope" ana="#reg369615" part="Y">
+                        <w pos="ADP" lemma="pro">pro</w>
+                        <w pos="PRON" lemma="hic" msd="#regd1e45178">his</w>
+                        <w pos="ADJ" lemma="omnis" msd="#regd1e45184">omnibus</w>
+                        <w pos="ADP" lemma="in">in</w>
+                        <w pos="NOUN" lemma="dies" msd="#regd1e45195">die</w>
+                        <w pos="NOUN" lemma="judicium" msd="#regd1e45201">iudicii</w>
+                        <w pos="NOUN" lemma="ratio" msd="#regd1e45207">rationem</w>
+                     </seg>
+                     <w msd="#reg369981f" pos="VERB" lemma="reddo">
+                        <seg function="scope" ana="#reg369615" part="Y">reddi</seg>
+                        <seg function="marker" ana="#reg370043" part="Y">turus</seg>
+                     </w>
+                     <seg function="marker" ana="#reg370043" part="Y">
+                        <w pos="VERB" lemma="sum" msd="#regd1e45216">est</w>
+                     </seg></seg>
                   <pc>.</pc>
                </s>
                <s n="544">
@@ -10010,9 +10050,11 @@
                   <w pos="VERB" lemma="judico">iudicaverit</w>
                   <pc>,</pc>
                   <w pos="VERB" lemma="consigno">consignet</w>
-                  <w pos="VERB" lemma="custodio">custodienda</w>
+                  <w pos="VERB" lemma="custodio">custodie<seg function="marker" ana="#reg0013"
+                        >nda</seg></w>
                   <w pos="CCONJ" lemma="atque">atque</w>
-                  <w pos="VERB" lemma="recolligo">recolligenda</w>
+                  <w pos="VERB" lemma="recolligo">recollige<seg function="marker" ana="#reg0014"
+                        >nda</seg></w>
                   <pc>.</pc>
                </s>
                <s n="558">
@@ -10670,7 +10712,7 @@
                   <w pos="NOUN" lemma="dominus">Domine</w>
                   <pc>,</pc>
                   <w pos="ADP" lemma="ad">ad</w>
-                  <w pos="VERB" lemma="adjuvo">adiuvandum</w>
+                  <w pos="VERB" lemma="adjuvo" function="no">adiuvandum</w>
                   <w pos="PRON" lemma="ego">me</w>
                   <w pos="VERB" lemma="festino">festina</w>
                   <pc>,</pc>
@@ -11082,7 +11124,7 @@
                   <w pos="NOUN" lemma="benedictio">benedictione</w>
                   <w pos="VERB" lemma="ingredior">ingrediatur</w>
                   <w pos="ADP" lemma="ad">ad</w>
-                  <w pos="VERB" lemma="lego">legendum</w>
+                  <w pos="VERB" lemma="lego" function="no">legendum</w>
                   <pc>.</pc>
                </s>
                <s n="622">
@@ -11965,7 +12007,7 @@
                   <w pos="NOUN" lemma="Vitas">Vitas</w>
                   <w pos="NOUN" lemma="pater">Patrum</w>
                   <w pos="CCONJ" lemma="aut">aut</w>
-                  <w pos="ADV" lemma="certus">certe</w>
+                  <seg function="marker" ana="#reg0015"><w pos="ADV" lemma="certus">certe</w></seg>
                   <w pos="ADJ" lemma="alius">aliud</w>
                   <w pos="PRON" lemma="qui">quod</w>
                   <w pos="VERB" lemma="ddificio">ædificet</w>
@@ -12208,7 +12250,7 @@
                   <w pos="PRON" lemma="hic">hoc</w>
                   <seg function="scope" next="dici" part="Y" ana="#reg780809">
                      <w pos="ADV" lemma="omnino">omnino</w>
-                     <w pos="VERB" lemma="subtraho" msd="#regd1e56371">subtrahendo</w>
+                     <w pos="VERB" lemma="subtraho" msd="#regd1e56371" function="no">subtrahendo</w>
                      <w pos="CCONJ" lemma="et">et</w>
                      <w pos="ADV" lemma="morosus">morose</w>
                   </seg>
@@ -12311,7 +12353,8 @@
                      <seg function="marker" ana="#reg464654">forte</seg>
                   </w>
                   <seg function="scope" part="Y" ana="#reg464577">
-                     <w pos="ADJ" lemma="talis" msd="#regd1e56829">talis</w>
+                     <seg function="participant" corresp="#reg464577" type="animate"><w pos="ADJ"
+                           lemma="talis" msd="#regd1e56829">talis</w></seg>
                      <w pos="PRON" lemma="qui" msd="#regd1e56835">qui</w>
                      <w pos="PRON" lemma="sui" msd="#regd1e56841">se</w>
                      <w pos="CCONJ" lemma="aut">aut</w>
@@ -12320,7 +12363,8 @@
                      <w pos="VERB" lemma="dormio" msd="#regd1e56863">dormit</w>
                      <pc>,</pc>
                      <w pos="CCONJ" lemma="aut">aut</w>
-                     <w pos="ADV" lemma="certe">certe</w>
+                     <seg function="marker" ana="#reg0016"><w pos="ADV" lemma="certe"
+                        >certe</w></seg>
                      <w pos="VERB" lemma="sedeo" msd="#regd1e56884">sedit</w>
                      <w pos="PRON" lemma="sui" msd="#regd1e56891">sibi</w>
                      <w pos="ADV" lemma="foris">foris</w>
@@ -12639,7 +12683,7 @@
                   <w pos="NOUN" lemma="abbatus">abbate</w>
                   <w pos="VERB" lemma="venio">venerit</w>
                   <pc>,</pc>
-                  <w pos="VERB" lemma="volo">volvat</w>
+                  <w pos="VERB" lemma="volvo">volvat</w>
                   <w pos="PRON" lemma="sui">se</w>
                   <w pos="PRON" lemma="ipse">ipsius</w>
                   <w pos="NOUN" lemma="abbatus">abbatis</w>
@@ -13273,7 +13317,8 @@
                   <w pos="SCONJ" lemma="ut">ut</w>
                   <w pos="ADP" lemma="ad">ad</w>
                   <w pos="NOUN" lemma="fruges">fruges</w>
-                  <w pos="VERB" lemma="recollego">recollegendas</w>
+                  <seg function="marker" ana="#reg0017"><w pos="VERB" lemma="recollego"
+                        >recollegendas</w></seg>
                   <w pos="ADP" lemma="per">per</w>
                   <w pos="PRON" lemma="sui">se</w>
                   <w pos="VERB" lemma="occupo">occupentur</w>
@@ -13463,9 +13508,8 @@
                      <w pos="VERB" lemma="invenio" msd="#regd1e62228" function="main">inveniatur</w>
                      <seg function="participant" type="animate_patient" corresp="#reg508298">
                         <w pos="NOUN" lemma="frater" msd="#regd1e62235">frater</w>
-                        <w pos="ADJ" lemma="acediosus" msd="#regd1e62241">acediosus</w>
+                        <w pos="ADJ" lemma="acediosus" msd="#regd1e62241">achediosus</w>
                      </seg>
-                     <note>Ed.: achediosus</note>
                   </seg>
                   <w pos="PRON" lemma="qui">qui</w>
                   <w pos="VERB" lemma="vaco">vacat</w>
@@ -13816,8 +13860,7 @@
                   <w pos="NOUN" lemma="oratio">oratione</w>
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="NOUN" lemma="voluntas" msd="#regd1e63889">
-                     <seg function="marker" ana="#reg522076">voluntate<note>Ed.: voluntatem</note>
-                     </seg>
+                     <seg function="marker" ana="#reg522076">voluntatem</seg>
                   </w>
                   <pc>;</pc>
                </s>
@@ -14692,7 +14735,7 @@
                      <seg function="participant" type="animate" corresp="#reg790562 #reg790604"
                         >monacho</seg>
                   </w>
-                  <seg function="scope" part="Y" ana="#">
+                  <seg function="scope" part="Y" ana="#reg790562" next="sine_præcepto_abbatis">
                      <w pos="CCONJ" lemma="neque">neque</w>
                      <w pos="ADP" lemma="ab">a</w>
                      <w pos="NOUN" lemma="parens" msd="#regd1e67740">parentibus</w>
@@ -14710,8 +14753,6 @@
                      <w pos="CCONJ" lemma="vel">vel</w>
                      <w pos="ADJ" lemma="quilibet" msd="#regd1e67813">quælibet</w>
                      <w pos="NOUN" lemma="munusculum" msd="#regd1e67819">munuscula</w>
-                  </seg>
-                  <seg function="scope" next="sine_præcepto_abbatis" part="Y" ana="#reg790562">
                      <w pos="VERB" lemma="accipio" msd="#regd1e67826" function="main">accipere</w>
                   </seg>
                   <w pos="CCONJ" lemma="aut">aut</w>
@@ -15611,8 +15652,7 @@
                   <w pos="VERB" lemma="deputo">deputetur</w>
                   <w pos="PRON" lemma="qui">qui</w>
                   <w pos="ADJ" lemma="aptus" msd="#regd1e71785">
-                     <seg function="marker" ana="#reg586471">aptus<note>Ed.: abtus</note>
-                     </seg>
+                     <seg function="marker" ana="#reg586471">abtus</seg>
                   </w>
                   <w pos="VERB" lemma="sum">sit</w>
                   <seg function="scope" ana="#reg586576">
@@ -15817,7 +15857,7 @@
                   <w pos="SCONJ" lemma="quod">quod</w>
                   <w pos="PRON" lemma="is" msd="#regd1e72715">
                      <seg function="participant" type="animate"
-                        corresp="#reg797101 #reg799229 #reg797059 #reg594296">ei</seg>
+                        corresp="#reg797101 #reg799229 #reg797059 #reg594296 #reg798307">ei</seg>
                   </w>
                   <w pos="ADP" lemma="ex">ex</w>
                   <w pos="ADJ" lemma="ille">illa</w>
@@ -15946,7 +15986,7 @@
                   <w pos="VERB" lemma="scribo">scribat</w>
                   <pc>,</pc>
                   <w pos="CCONJ" lemma="aut">aut</w>
-                  <w pos="ADV" lemma="certus">certe</w>
+                  <seg function="marker" ana="#reg0018"><w pos="ADV" lemma="certus">certe</w></seg>
                   <pc>,</pc>
                   <w pos="SCONJ" lemma="si">si</w>
                   <w pos="ADV" lemma="non">non</w>
@@ -16202,10 +16242,9 @@
                      <w pos="VERB" lemma="offero" msd="#regd1e74429" function="main">offerit</w>
                      <w pos="NOUN" lemma="filius" msd="#regd1e74435">filium</w>
                      <w pos="ADJ" lemma="suus" msd="#regd1e74441">suum</w>
-                     <w pos="NOUN" lemma="deus" msd="#regd1e74447">Deo</w>
+                     <w pos="NOUN" lemma="deus" msd="#regd1e74447">deo</w>
                      <w pos="ADP" lemma="in">in</w>
                      <w pos="NOUN" lemma="monasterium" msd="#regd1e74458">monasterio</w>
-                     <note>Ed.: deo not Deo</note>
                   </seg>
                   <pc>,</pc>
                   <w pos="SCONJ" lemma="si">si</w>
@@ -16253,7 +16292,7 @@
                   <w pos="NOUN" lemma="petitio">petitione</w>
                   <w pos="VERB" lemma="promitto">promittant</w>
                   <w pos="ADP" lemma="sub">sub</w>
-                  <w pos="VERB" lemma="jureo">iureiurando</w>
+                  <w pos="VERB" lemma="jureo" function="no">iureiurando</w>
                   <pc>,</pc>
                   <w pos="SCONJ" lemma="quia">quia</w>
                   <w pos="ADV" lemma="numquam">numquam</w>
@@ -16274,12 +16313,12 @@
                   <w pos="CCONJ" lemma="aut">aut</w>
                   <w pos="VERB" lemma="tribuo">tribuunt</w>
                   <w pos="NOUN" lemma="occasio">occasionem</w>
-                  <w pos="VERB" lemma="habeo">habendi</w>
+                  <w pos="VERB" lemma="habeo" function="no">habendi</w>
                   <pc>;</pc>
                </s>
                <s n="866">
                   <w pos="CCONJ" lemma="vel">vel</w>
-                  <w pos="ADV" lemma="certus">certe</w>
+                  <seg function="marker" ana="#reg0019"><w pos="ADV" lemma="certus">certe</w></seg>
                   <w pos="SCONJ" lemma="si">si</w>
                   <seg function="scope" ana="#reg611366">
                      <w pos="PRON" lemma="hic" msd="#regd1e74860">hoc</w>
@@ -16801,9 +16840,8 @@
                   <pc>,</pc>
                   <w pos="VERB" lemma="suscipio">suscipiatur</w>
                   <w pos="NOUN" lemma="congregatio">congregationi</w>
-                  <w pos="VERB" lemma="socio" msd="#regd1e77110"> socia <seg function="marker"
-                        ana="#reg630070">ndus<note>Final value</note>
-                     </seg>
+                  <w pos="VERB" lemma="socio" msd="#regd1e77110">socia<seg function="marker"
+                        ana="#reg630070">ndus</seg>
                   </w>
                   <pc>,</pc>
                   <w pos="ADV" lemma="verus">verum</w>
@@ -16914,7 +16952,7 @@
                   <w pos="NOUN" lemma="monasterium">monasterio</w>
                   <w pos="ADJ" lemma="monachus">monachum</w>
                   <w pos="ADP" lemma="ad">ad</w>
-                  <w pos="VERB" lemma="habito">habitandum</w>
+                  <w pos="VERB" lemma="habito" function="no">habitandum</w>
                   <w pos="VERB" lemma="suscipio">suscipiat</w>
                   <w pos="ADP" lemma="sine">sine</w>
                   <w pos="NOUN" lemma="consensu">consensu</w>
@@ -17194,7 +17232,8 @@
                </s>
                <s n="904">
                   <w pos="PRON" lemma="qui">Qui</w>
-                  <w pos="NOUN" lemma="abba">abbas</w>
+                  <seg function="participant" corresp="#reg644702" type="animate"><w pos="NOUN"
+                        lemma="abba" msd="#regd1e6772">abbas</w></seg>
                   <w pos="ADV" lemma="non">non</w>
                   <w pos="VERB" lemma="conturbo">conturbet</w>
                   <w pos="NOUN" lemma="grex">gregem</w>
@@ -17261,7 +17300,7 @@
                   <pc>,</pc>
                   <w pos="ADP" lemma="ad">ad</w>
                   <w pos="NOUN" lemma="psalmus">psalmum</w>
-                  <w pos="VERB" lemma="inpono">inponendum</w>
+                  <w pos="VERB" lemma="inpono" function="no">inponendum</w>
                   <pc>,</pc>
                   <w pos="ADP" lemma="in">in</w>
                   <w pos="NOUN" lemma="chorus">choro</w>
@@ -17306,7 +17345,7 @@
                   <w pos="VERB" lemma="prolero">prætulerit</w>
                   <w pos="CCONJ" lemma="vel">vel</w>
                   <w pos="VERB" lemma="degrado">degradaverit</w>
-                  <w pos="ADJ" lemma="certus">certis</w>
+                  <seg function="marker" ana="#reg0020"><w pos="ADJ" lemma="certus">certis</w></seg>
                   <w pos="ADP" lemma="ex">ex</w>
                   <w pos="NOUN" lemma="causa">causis</w>
                   <pc>,</pc>
@@ -17469,7 +17508,7 @@
                   <w pos="VERB" lemma="do">det</w>
                   <w pos="PRON" lemma="is">ei</w>
                   <w pos="NOUN" lemma="locus">locum</w>
-                  <w pos="VERB" lemma="sedeo">sedendi</w>
+                  <w pos="VERB" lemma="sedeo" function="no">sedendi</w>
                   <pc>,</pc>
                   <w pos="CCONJ" lemma="neque">nec</w>
                   <w pos="VERB" lemma="primumo">præsumat</w>
@@ -17526,11 +17565,9 @@
                   <w pos="ADV" lemma="usque">usque</w>
                   <w pos="SCONJ" lemma="dum">dum</w>
                   <w pos="ADP" lemma="ad">ad</w>
-                  <w pos="ADJ" lemma="intellegilis" msd="#regd1e80459">
-                     <seg function="scope" ana="#reg657432">intellegi<note>Ed.:
-                           intelligivilem</note>
-                     </seg>
-                     <seg function="marker" ana="#reg657470">bilem</seg>
+                  <w pos="ADJ" lemma="intellegibilis" msd="#regd1e80459">
+                     <seg function="scope" ana="#reg657432">intellegi</seg>
+                     <seg function="marker" ana="#reg657470">vilem</seg>
                   </w>
                   <w pos="NOUN" lemma="aetas" msd="#regd1e80469">
                      <seg function="participant" type="animate" corresp="#reg657432">ætatem</seg>
@@ -18106,7 +18143,7 @@
                   <w pos="NOUN" lemma="materia">materia</w>
                   <w pos="PRON" lemma="is">ei</w>
                   <w pos="VERB" lemma="do">datur</w>
-                  <w pos="VERB" lemma="superbio">superbiendi</w>
+                  <w pos="VERB" lemma="superbio" function="no">superbiendi</w>
                   <pc>,</pc>
                   <w pos="SCONJ" lemma="dum">dum</w>
                   <w pos="PRON" lemma="is">ei</w>
@@ -18880,11 +18917,11 @@
                   <w pos="VERB" lemma="suggo">suggerat</w>
                   <pc>,</pc>
                   <w pos="ADV" lemma="non">non</w>
-                  <w pos="VERB" lemma="superbio">superbiendo</w>
+                  <w pos="VERB" lemma="superbio" function="no">superbiendo</w>
                   <w pos="CCONJ" lemma="aut">aut</w>
-                  <w pos="VERB" lemma="resisto">resistendo</w>
+                  <w pos="VERB" lemma="resisto" function="no">resistendo</w>
                   <w pos="CCONJ" lemma="vel">vel</w>
-                  <w pos="VERB" lemma="contradico">contradicendo</w>
+                  <w pos="VERB" lemma="contradico" function="no">contradicendo</w>
                   <pc>.</pc>
                </s>
                <s n="970">
@@ -19424,7 +19461,7 @@
                   <pc>,</pc>
                   <w pos="NOUN" lemma="oboedientia">oboedientiam</w>
                   <w pos="PRON" lemma="sui">sibi</w>
-                  <w pos="VERB" lemma="certo">certatim</w>
+                  <w pos="VERB" lemma="certatim">certatim</w>
                   <w pos="VERB" lemma="inpendo">inpendant</w>
                   <pc>:</pc>
                </s>
@@ -20340,6 +20377,20 @@
             </f>
             <f name="Number">
                <symbol value="Plur"/>
+            </f>
+            <f name="VerbForm">
+               <symbol value="Gdv"/>
+            </f>
+         </fs>
+         <fs type="msd" xml:id="regd1e4s250">
+            <f name="Case">
+               <symbol value="Nom"/>
+            </f>
+            <f name="Gender">
+               <symbol value="Masc"/>
+            </f>
+            <f name="Number">
+               <symbol value="Sing"/>
             </f>
             <f name="VerbForm">
                <symbol value="Gdv"/>
@@ -34584,7 +34635,12 @@
             <f name="dynamicity">
                <binary value="true"/>
             </f>
-
+            <f name="participant">
+               <symbol value="implicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
          </fs>
          <fs xml:id="reg2844" type="marker">
             <f name="utterance">
@@ -34632,6 +34688,476 @@
 
             <f name="lemma">
                <symbol value="debeo"/>
+            </f>
+         </fs>
+         <fs xml:id="reg463s4" type="marker">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="affirmative"/>
+            </f>
+            <f name="pertinence">
+               <binary value="true"/>
+            </f>
+            <f name="modal">
+               <binary value="true"/>
+            </f>
+
+            <f name="lemma">
+               <symbol value="debeo"/>
+            </f>
+         </fs>
+         <fs xml:id="reg0000" type="marker">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="negative"/>
+            </f>
+            <f name="pertinence">
+               <binary value="true"/>
+            </f>
+            <f name="modal">
+               <binary value="true"/>
+            </f>
+
+            <f name="lemma">
+               <symbol value="possum"/>
+            </f>
+         </fs>
+         <fs xml:id="reg0001" type="marker">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="affirmative"/>
+            </f>
+            <f name="pertinence">
+               <binary value="true"/>
+            </f>
+            <f name="modal">
+               <binary value="true"/>
+            </f>
+
+            <f name="lemma">
+               <symbol value="possum"/>
+            </f>
+         </fs>
+         <fs xml:id="reg0002" type="marker">
+            <f name="pertinence">
+               <binary value="false"/>
+            </f>
+            <f name="modal">
+               <binary value="false"/>
+            </f>
+
+            <f name="lemma">
+               <symbol value="ndus"/>
+            </f>
+         </fs>
+         <fs xml:id="reg0003" type="marker">
+            <f name="pertinence">
+               <binary value="false"/>
+            </f>
+            <f name="modal">
+               <binary value="false"/>
+            </f>
+
+            <f name="lemma">
+               <symbol value="certe"/>
+            </f>
+         </fs>
+         <fs xml:id="reg0004" type="marker">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="affirmative"/>
+            </f>
+            <f name="pertinence">
+               <binary value="true"/>
+            </f>
+            <f name="modal">
+               <binary value="true"/>
+            </f>
+            <f name="lemma">
+               <symbol value="certus"/>
+            </f>
+         </fs>
+         <fs xml:id="reg1004" type="scope">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="affirmative"/>
+            </f>
+            <f name="control">
+               <binary value="true"/>
+            </f>
+            <f name="dynamicity">
+               <binary value="true"/>
+            </f>
+            <f name="participant">
+               <symbol value="implicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
+         </fs>
+         <fs xml:id="reg0005" type="marker">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="negative"/>
+            </f>
+            <f name="pertinence">
+               <binary value="true"/>
+            </f>
+            <f name="modal">
+               <binary value="true"/>
+            </f>
+            <f name="lemma">
+               <symbol value="dubius"/>
+            </f>
+         </fs>
+         <fs xml:id="reg0006" type="marker">
+            <f name="pertinence">
+               <binary value="false"/>
+            </f>
+            <f name="modal">
+               <binary value="false"/>
+            </f>
+
+            <f name="lemma">
+               <symbol value="aequus"/>
+            </f>
+         </fs>
+         <fs xml:id="reg0010" type="marker">
+            <f name="pertinence">
+               <binary value="false"/>
+            </f>
+            <f name="modal">
+               <binary value="false"/>
+            </f>
+
+            <f name="lemma">
+               <symbol value="certe"/>
+            </f>
+         </fs>
+         <fs xml:id="reg0011" type="marker">
+            <f name="pertinence">
+               <binary value="false"/>
+            </f>
+            <f name="modal">
+               <binary value="false"/>
+            </f>
+
+            <f name="lemma">
+               <symbol value="decet"/>
+            </f>
+         </fs>
+         <fs xml:id="reg0013" type="marker">
+            <f name="pertinence">
+               <binary value="false"/>
+            </f>
+            <f name="modal">
+               <binary value="false"/>
+            </f>
+
+            <f name="lemma">
+               <symbol value="ndus"/>
+            </f>
+            <f name="note">
+               <string>Final value</string>
+            </f>
+         </fs>
+         <fs xml:id="reg0014" type="marker">
+            <f name="pertinence">
+               <binary value="false"/>
+            </f>
+            <f name="modal">
+               <binary value="false"/>
+            </f>
+
+            <f name="lemma">
+               <symbol value="ndus"/>
+            </f>
+            <f name="note">
+               <string>Final value</string>
+            </f>
+         </fs>
+         <fs xml:id="reg0015" type="marker">
+            <f name="pertinence">
+               <binary value="false"/>
+            </f>
+            <f name="modal">
+               <binary value="false"/>
+            </f>
+
+            <f name="lemma">
+               <symbol value="certe"/>
+            </f>
+         </fs>
+         <fs xml:id="reg0016" type="marker">
+            <f name="pertinence">
+               <binary value="false"/>
+            </f>
+            <f name="modal">
+               <binary value="false"/>
+            </f>
+
+            <f name="lemma">
+               <symbol value="certe"/>
+            </f>
+         </fs>
+         <fs xml:id="reg0017" type="marker">
+            <f name="pertinence">
+               <binary value="false"/>
+            </f>
+            <f name="modal">
+               <binary value="false"/>
+            </f>
+
+            <f name="lemma">
+               <symbol value="ndus"/>
+            </f>
+         </fs>
+         <fs xml:id="reg0018" type="marker">
+            <f name="pertinence">
+               <binary value="false"/>
+            </f>
+            <f name="modal">
+               <binary value="false"/>
+            </f>
+
+            <f name="lemma">
+               <symbol value="certe"/>
+            </f>
+         </fs>
+         <fs xml:id="reg0019" type="marker">
+            <f name="pertinence">
+               <binary value="false"/>
+            </f>
+            <f name="modal">
+               <binary value="false"/>
+            </f>
+
+            <f name="lemma">
+               <symbol value="certe"/>
+            </f>
+         </fs>
+         <fs xml:id="reg0020" type="marker">
+            <f name="pertinence">
+               <binary value="false"/>
+            </f>
+            <f name="modal">
+               <binary value="false"/>
+            </f>
+
+            <f name="lemma">
+               <symbol value="certus"/>
+            </f>
+         </fs>
+         <fs xml:id="reg0007" type="marker">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="affirmative"/>
+            </f>
+            <f name="pertinence">
+               <binary value="true"/>
+            </f>
+            <f name="modal">
+               <binary value="true"/>
+            </f>
+            <f name="lemma">
+               <symbol value="certus"/>
+            </f>
+         </fs>
+         <fs xml:id="reg0012" type="marker">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="negative"/>
+            </f>
+            <f name="pertinence">
+               <binary value="true"/>
+            </f>
+            <f name="modal">
+               <binary value="true"/>
+            </f>
+            <f name="lemma">
+               <symbol value="dubium"/>
+            </f>
+         </fs>
+         <fs xml:id="reg0008" type="marker">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="negative"/>
+            </f>
+            <f name="pertinence">
+               <binary value="true"/>
+            </f>
+            <f name="modal">
+               <binary value="true"/>
+            </f>
+            <f name="lemma">
+               <symbol value="dubium"/>
+            </f>
+         </fs>
+         <fs xml:id="reg1012" type="scope">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="affirmative"/>
+            </f>
+            <f name="control">
+               <binary value="true"/>
+            </f>
+            <f name="dynamicity">
+               <binary value="true"/>
+            </f>
+            <f name="participant">
+               <symbol value="implicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
+         </fs>
+         <fs xml:id="reg1008" type="scope">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="affirmative"/>
+            </f>
+            <f name="control">
+               <binary value="true"/>
+            </f>
+            <f name="dynamicity">
+               <binary value="true"/>
+            </f>
+            <f name="participant">
+               <symbol value="explicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
+            <f name="participantType">
+               <symbol value="inanimate_patient"/>
+            </f>
+         </fs>
+         <fs xml:id="reg1007" type="scope">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="affirmative"/>
+            </f>
+            <f name="control">
+               <binary value="true"/>
+            </f>
+            <f name="dynamicity">
+               <binary value="true"/>
+            </f>
+            <f name="participant">
+               <symbol value="explicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
+         </fs>
+         <fs xml:id="reg1005" type="scope">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="affirmative"/>
+            </f>
+            <f name="control">
+               <binary value="true"/>
+            </f>
+            <f name="dynamicity">
+               <binary value="true"/>
+            </f>
+            <f name="participant">
+               <symbol value="implicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
+         </fs>
+         <fs xml:id="reg1000" type="scope">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="affirmative"/>
+            </f>
+            <f name="control">
+               <binary value="true"/>
+            </f>
+            <f name="dynamicity">
+               <binary value="true"/>
+            </f>
+            <f name="participant">
+               <symbol value="explicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
+            <f name="participantType">
+               <symbol value="inanimate_patient"/>
+            </f>
+         </fs>
+         <fs xml:id="reg1002" type="scope">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="affirmative"/>
+            </f>
+            <f name="control">
+               <binary value="true"/>
+            </f>
+            <f name="dynamicity">
+               <binary value="true"/>
+            </f>
+            <f name="participant">
+               <symbol value="explicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
+         </fs>
+         <fs xml:id="reg1001" type="scope">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="affirmative"/>
+            </f>
+            <f name="control">
+               <binary value="false"/>
+            </f>
+            <f name="dynamicity">
+               <binary value="true"/>
+            </f>
+            <f name="participant">
+               <symbol value="explicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
+            <f name="participantType">
+               <symbol value="inanimate_patient"/>
             </f>
          </fs>
          <fs xml:id="reg4684" type="scope">
@@ -35122,10 +35648,10 @@
                <binary value="true"/>
             </f>
             <f name="participant">
-               <symbol value="implicit"/>
+               <symbol value="explicit"/>
             </f>
             <f name="participantType">
-               <symbol value="animate"/>
+               <symbol value="inanimate_patient"/>
             </f>
 
          </fs>
@@ -35254,10 +35780,10 @@
                <binary value="true"/>
             </f>
             <f name="participant">
-               <symbol value="implicit"/>
+               <symbol value="explicit"/>
             </f>
             <f name="participantType">
-               <symbol value="animate"/>
+               <symbol value="inanimate_patient"/>
             </f>
 
          </fs>
@@ -35624,10 +36150,6 @@
             </f>
             <f name="dynamicity">
                <binary value="true"/>
-            </f>
-
-            <f name="note">
-               <string>Ed.: pater familias / obibus</string>
             </f>
             <f name="participant">
                <symbol value="explicit"/>
@@ -36274,10 +36796,10 @@
                <binary value="true"/>
             </f>
             <f name="participant">
-               <symbol value="implicit"/>
+               <symbol value="explicit"/>
             </f>
             <f name="participantType">
-               <symbol value="animate"/>
+               <symbol value="inanimate_patient"/>
             </f>
 
          </fs>
@@ -36336,7 +36858,12 @@
             <f name="dynamicity">
                <binary value="true"/>
             </f>
-
+            <f name="participant">
+               <symbol value="implicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
          </fs>
          <fs xml:id="reg119320" type="marker">
             <f name="pertinence">
@@ -36822,10 +37349,10 @@
                <binary value="true"/>
             </f>
             <f name="participant">
-               <symbol value="implicit"/>
+               <symbol value="explicit"/>
             </f>
             <f name="participantType">
-               <symbol value="animate"/>
+               <symbol value="inanimate_patient"/>
             </f>
 
          </fs>
@@ -36945,10 +37472,10 @@
                <binary value="true"/>
             </f>
             <f name="participant">
-               <symbol value="implicit"/>
+               <symbol value="explicit"/>
             </f>
             <f name="participantType">
-               <symbol value="animate"/>
+               <symbol value="inanimate_patient"/>
             </f>
 
          </fs>
@@ -37304,7 +37831,12 @@
             <f name="dynamicity">
                <binary value="true"/>
             </f>
-
+            <f name="participant">
+               <symbol value="implicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
          </fs>
          <fs xml:id="reg224307" type="marker">
             <f name="utterance">
@@ -37336,10 +37868,6 @@
             </f>
             <f name="dynamicity">
                <binary value="true"/>
-            </f>
-
-            <f name="note">
-               <string>ed.: cui not cum</string>
             </f>
             <f name="participant">
                <symbol value="explicit"/>
@@ -37808,10 +38336,6 @@
             <f name="dynamicity">
                <binary value="true"/>
             </f>
-
-            <f name="note">
-               <string>ed.: prima hora dominica</string>
-            </f>
             <f name="participant">
                <symbol value="explicit"/>
             </f>
@@ -37850,10 +38374,6 @@
             <f name="dynamicity">
                <binary value="true"/>
             </f>
-
-            <f name="note">
-               <string>Ed.: vespera</string>
-            </f>
             <f name="participant">
                <symbol value="explicit"/>
             </f>
@@ -37891,10 +38411,6 @@
             </f>
             <f name="dynamicity">
                <binary value="true"/>
-            </f>
-
-            <f name="note">
-               <string>ed.: supra scripto</string>
             </f>
             <f name="participant">
                <symbol value="explicit"/>
@@ -37951,10 +38467,6 @@
             </f>
             <f name="dynamicity">
                <binary value="false"/>
-            </f>
-
-            <f name="note">
-               <string>Ed.: cui</string>
             </f>
             <f name="participant">
                <symbol value="explicit"/>
@@ -38033,7 +38545,12 @@
             <f name="dynamicity">
                <binary value="true"/>
             </f>
-
+            <f name="participant">
+               <symbol value="implicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
          </fs>
          <fs xml:id="reg311193" type="scope">
             <f name="utterance">
@@ -38048,7 +38565,12 @@
             <f name="dynamicity">
                <binary value="true"/>
             </f>
-
+            <f name="participant">
+               <symbol value="implicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
          </fs>
          <fs xml:id="reg311708" type="marker">
             <f name="utterance">
@@ -38098,10 +38620,6 @@
             </f>
             <f name="dynamicity">
                <binary value="false"/>
-            </f>
-
-            <f name="note">
-               <string>ed.: brebis</string>
             </f>
             <f name="participant">
                <symbol value="explicit"/>
@@ -38484,7 +39002,12 @@
             <f name="dynamicity">
                <binary value="true"/>
             </f>
-
+            <f name="participant">
+               <symbol value="implicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
          </fs>
          <fs xml:id="reg342807" type="marker">
             <f name="utterance">
@@ -38690,13 +39213,6 @@
             <f name="SoA">
                <binary value="false"/>
             </f>
-
-            <f name="participant">
-               <symbol value="explicit"/>
-            </f>
-            <f name="participantType">
-               <symbol value="animate"/>
-            </f>
          </fs>
          <fs xml:id="reg355580" type="marker">
             <f name="utterance">
@@ -38885,10 +39401,6 @@
             <f name="modal">
                <binary value="true"/>
             </f>
-
-            <f name="note">
-               <string>forte</string>
-            </f>
             <f name="lemma">
                <symbol value="forte"/>
             </f>
@@ -38927,7 +39439,12 @@
             <f name="dynamicity">
                <binary value="true"/>
             </f>
-
+            <f name="participant">
+               <symbol value="implicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
          </fs>
          <fs xml:id="reg370043" type="marker">
             <f name="utterance">
@@ -39048,10 +39565,6 @@
             </f>
             <f name="dynamicity">
                <binary value="true"/>
-            </f>
-
-            <f name="note">
-               <string>Ed.: petenda</string>
             </f>
             <f name="participant">
                <symbol value="explicit"/>
@@ -39658,7 +40171,12 @@
             <f name="dynamicity">
                <binary value="false"/>
             </f>
-
+            <f name="participant">
+               <symbol value="implicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
          </fs>
          <fs xml:id="reg426513" type="marker">
             <f name="utterance">
@@ -39995,7 +40513,12 @@
             <f name="dynamicity">
                <binary value="true"/>
             </f>
-
+            <f name="participant">
+               <symbol value="implicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
          </fs>
          <fs xml:id="reg779113" type="scope">
             <f name="utterance">
@@ -40254,7 +40777,12 @@
             <f name="dynamicity">
                <binary value="false"/>
             </f>
-
+            <f name="participant">
+               <symbol value="explicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
          </fs>
          <fs xml:id="reg464654" type="marker">
             <f name="utterance">
@@ -40547,10 +41075,6 @@
             <f name="participantType">
                <symbol value="animate"/>
             </f>
-
-            <f name="note">
-               <string>implied scope</string>
-            </f>
          </fs>
          <fs xml:id="reg497685" type="marker">
             <f name="utterance">
@@ -40565,7 +41089,6 @@
             <f name="modal">
                <binary value="true"/>
             </f>
-
             <f name="lemma">
                <symbol value="necessarius_est"/>
             </f>
@@ -40660,10 +41183,6 @@
             </f>
             <f name="dynamicity">
                <binary value="true"/>
-            </f>
-
-            <f name="note">
-               <string>Ed.: , quod faciendum est,</string>
             </f>
             <f name="participant">
                <symbol value="explicit"/>
@@ -40773,9 +41292,6 @@
                <binary value="false"/>
             </f>
 
-            <f name="note">
-               <string>Ed.: achediosus</string>
-            </f>
             <f name="participant">
                <symbol value="explicit"/>
             </f>
@@ -40873,10 +41389,6 @@
             </f>
             <f name="dynamicity">
                <binary value="true"/>
-            </f>
-
-            <f name="note">
-               <string>Ed.: invecillitas</string>
             </f>
             <f name="participant">
                <symbol value="explicit"/>
@@ -40977,10 +41489,6 @@
             </f>
             <f name="modal">
                <binary value="true"/>
-            </f>
-
-            <f name="note">
-               <string>Ed.: voluntatem</string>
             </f>
             <f name="lemma">
                <symbol value="voluntas"/>
@@ -41241,7 +41749,12 @@
             <f name="dynamicity">
                <binary value="false"/>
             </f>
-
+            <f name="participant">
+               <symbol value="implicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
          </fs>
          <fs xml:id="reg532269" type="marker">
             <f name="utterance">
@@ -41536,10 +42049,6 @@
             </f>
             <f name="dynamicity">
                <binary value="true"/>
-            </f>
-
-            <f name="note">
-               <string>Ed.: literas not litteras; eologias not eulogias</string>
             </f>
             <f name="participant">
                <symbol value="explicit"/>
@@ -42175,10 +42684,6 @@
             <f name="modal">
                <binary value="true"/>
             </f>
-
-            <f name="note">
-               <string>Ed.: abtus</string>
-            </f>
             <f name="lemma">
                <symbol value="aptus"/>
             </f>
@@ -42312,10 +42817,6 @@
             <f name="participantType">
                <symbol value="animate"/>
             </f>
-
-            <f name="note">
-               <string>implied scope</string>
-            </f>
          </fs>
          <fs xml:id="reg590517" type="marker">
             <f name="utterance">
@@ -42405,7 +42906,12 @@
             <f name="dynamicity">
                <binary value="true"/>
             </f>
-
+            <f name="participant">
+               <symbol value="explicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
          </fs>
          <fs xml:id="reg595059" type="marker">
             <f name="utterance">
@@ -42586,10 +43092,6 @@
             <f name="dynamicity">
                <binary value="false"/>
             </f>
-
-            <f name="note">
-               <string>Ed.: , quibus exutus est,</string>
-            </f>
             <f name="participant">
                <symbol value="explicit"/>
             </f>
@@ -42646,10 +43148,6 @@
             <f name="dynamicity">
                <binary value="true"/>
             </f>
-
-            <f name="note">
-               <string>Ed.: deo not Deo</string>
-            </f>
             <f name="participant">
                <symbol value="explicit"/>
             </f>
@@ -42670,7 +43168,12 @@
             <f name="dynamicity">
                <binary value="true"/>
             </f>
-
+            <f name="participant">
+               <symbol value="implicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
          </fs>
          <fs xml:id="reg611514" type="marker">
             <f name="utterance">
@@ -42703,7 +43206,12 @@
             <f name="dynamicity">
                <binary value="true"/>
             </f>
-
+            <f name="participant">
+               <symbol value="implicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
          </fs>
          <fs xml:id="reg611774" type="marker">
             <f name="utterance">
@@ -42736,7 +43244,12 @@
             <f name="dynamicity">
                <binary value="true"/>
             </f>
-
+            <f name="participant">
+               <symbol value="implicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
          </fs>
          <fs xml:id="reg612460" type="marker">
             <f name="utterance">
@@ -42762,10 +43275,6 @@
             </f>
             <f name="modal">
                <binary value="false"/>
-            </f>
-
-            <f name="note">
-               <string>Ed.: voluerint, usum</string>
             </f>
             <f name="lemma">
                <symbol value="volo"/>
@@ -43048,10 +43557,6 @@
             <f name="dynamicity">
                <binary value="true"/>
             </f>
-
-            <f name="note">
-               <string>Ed.: dominus not Dominus</string>
-            </f>
             <f name="participant">
                <symbol value="explicit"/>
             </f>
@@ -43090,7 +43595,12 @@
             <f name="dynamicity">
                <binary value="true"/>
             </f>
-
+            <f name="participant">
+               <symbol value="implicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
          </fs>
          <fs xml:id="reg803233" type="scope">
             <f name="utterance">
@@ -43105,7 +43615,12 @@
             <f name="dynamicity">
                <binary value="true"/>
             </f>
-
+            <f name="participant">
+               <symbol value="implicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
          </fs>
          <fs xml:id="reg627131" type="marker">
             <f name="utterance">
@@ -43269,9 +43784,6 @@
             </f>
             <f name="dynamicity">
                <binary value="true"/>
-            </f>
-            <f name="note">
-               <string>Ed.: abbas maiori, quam ingrediuntur, loco,</string>
             </f>
             <f name="participant">
                <symbol value="explicit"/>
@@ -43476,7 +43988,12 @@
             <f name="dynamicity">
                <binary value="true"/>
             </f>
-
+            <f name="participant">
+               <symbol value="implicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
          </fs>
          <fs xml:id="reg806249" type="scope">
             <f name="utterance">
@@ -43544,7 +44061,12 @@
             <f name="dynamicity">
                <binary value="true"/>
             </f>
-
+            <f name="participant">
+               <symbol value="explicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
          </fs>
          <fs xml:id="reg645082" type="marker">
             <f name="utterance">
@@ -43615,10 +44137,6 @@
             </f>
             <f name="dynamicity">
                <binary value="true"/>
-            </f>
-
-            <f name="note">
-               <string>Ed.: intelligivilem</string>
             </f>
             <f name="participant">
                <symbol value="explicit"/>
@@ -43747,10 +44265,6 @@
             <f name="dynamicity">
                <binary value="true"/>
             </f>
-
-            <f name="note">
-               <string>Ed.: abba not abbas</string>
-            </f>
             <f name="participant">
                <symbol value="explicit"/>
             </f>
@@ -43864,10 +44378,6 @@
             </f>
             <f name="dynamicity">
                <binary value="false"/>
-            </f>
-
-            <f name="note">
-               <string>Ed.: lege not Lege</string>
             </f>
             <f name="participant">
                <symbol value="explicit"/>
@@ -44291,7 +44801,12 @@
             <f name="dynamicity">
                <binary value="true"/>
             </f>
-
+            <f name="participant">
+               <symbol value="implicit"/>
+            </f>
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
          </fs>
          <fs xml:id="reg701639" type="scope">
             <f name="utterance">
@@ -44581,9 +45096,6 @@
             <f name="dynamicity">
                <binary value="true"/>
             </f>
-            <f name="note">
-               <string>implicit scope</string>
-            </f>
             <f name="participant">
                <symbol value="explicit"/>
             </f>
@@ -44623,9 +45135,6 @@
             </f>
             <f name="dynamicity">
                <binary value="true"/>
-            </f>
-            <f name="note">
-               <string>implicit scope</string>
             </f>
             <f name="participant">
                <symbol value="explicit"/>
@@ -45664,6 +46173,46 @@
                <symbol value="situational"/>
             </f>
          </fs>
+         <fs xml:id="reg741s622" type="relation">
+            <f name="modality">
+               <symbol value="dynamic"/>
+            </f>
+            <f name="marker" fVal="reg463s4"/>
+            <f name="scope" fVal="reg1002"/>
+            <f name="meaning">
+               <symbol value="necessity"/>
+            </f>
+            <f name="type">
+               <symbol value="situational"/>
+            </f>
+         </fs>
+
+         <fs xml:id="reg74s1622" type="relation">
+            <f name="modality">
+               <symbol value="dynamic"/>
+            </f>
+            <f name="marker" fVal="reg0000"/>
+            <f name="scope" fVal="reg1000"/>
+            <f name="meaning">
+               <symbol value="possibility"/>
+            </f>
+            <f name="type">
+               <symbol value="situational"/>
+            </f>
+         </fs>
+         <fs xml:id="reg74s16s22" type="relation">
+            <f name="modality">
+               <symbol value="dynamic"/>
+            </f>
+            <f name="marker" fVal="reg0001"/>
+            <f name="scope" fVal="reg1001"/>
+            <f name="meaning">
+               <symbol value="possibility"/>
+            </f>
+            <f name="type">
+               <symbol value="situational"/>
+            </f>
+         </fs>
          <fs xml:id="reg7113" type="relation">
             <f name="modality">
                <symbol value="deontic"/>
@@ -46241,6 +46790,56 @@
             <f name="scope" fVal="reg89735"/>
             <f name="degree">
                <symbol value="possible"/>
+            </f>
+         </fs>
+         <fs xml:id="reg89s768" type="relation">
+            <f name="modality">
+               <symbol value="epistemic"/>
+            </f>
+            <f name="marker" fVal="reg0004"/>
+            <f name="scope" fVal="reg1004"/>
+            <f name="degree">
+               <symbol value="absolutely_certain"/>
+            </f>
+         </fs>
+         <fs xml:id="reg89s7d8" type="relation">
+            <f name="modality">
+               <symbol value="epistemic"/>
+            </f>
+            <f name="marker" fVal="reg0012"/>
+            <f name="scope" fVal="reg1012"/>
+            <f name="degree">
+               <symbol value="absolutely_certain"/>
+            </f>
+         </fs>
+         <fs xml:id="reg89s78" type="relation">
+            <f name="modality">
+               <symbol value="epistemic"/>
+            </f>
+            <f name="marker" fVal="reg0008"/>
+            <f name="scope" fVal="reg1008"/>
+            <f name="degree">
+               <symbol value="absolutely_certain"/>
+            </f>
+         </fs>
+         <fs xml:id="reg89s76s8" type="relation">
+            <f name="modality">
+               <symbol value="epistemic"/>
+            </f>
+            <f name="marker" fVal="reg0005"/>
+            <f name="scope" fVal="reg1005"/>
+            <f name="degree">
+               <symbol value="absolutely_certain"/>
+            </f>
+         </fs>
+         <fs xml:id="reg8s9s76s8" type="relation">
+            <f name="modality">
+               <symbol value="epistemic"/>
+            </f>
+            <f name="marker" fVal="reg0007"/>
+            <f name="scope" fVal="reg1007"/>
+            <f name="degree">
+               <symbol value="absolutely_certain"/>
             </f>
          </fs>
          <fs xml:id="reg897s68" type="relation">

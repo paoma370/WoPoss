@@ -524,7 +524,7 @@
                   </index>
                </bibl>
             </person>
-            <person>
+            <person xml:id="tertullian">
                <persName>Tertullian</persName>
                <sex value="M"/>
                <birth>
@@ -533,7 +533,7 @@
                      <bloc>Samnium</bloc>
                   </location>
                </birth>
-               <bibl status="annotated">
+               <bibl status="annotated" xml:id="de_spectaculis">
                   <title>De spectaculis</title>
                   <date type="century" when-custom="2">II</date>
                   <index indexName="genre">
