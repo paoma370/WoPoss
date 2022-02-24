@@ -326,7 +326,7 @@
                   </index>
                </bibl>
             </person>
-            <person>
+            <person xml:id="minucius">
                <persName>Minucius Felix, Marcus</persName>
                <sex value="M"/>
                <birth>
@@ -334,7 +334,7 @@
                      <bloc>Africa</bloc>
                   </location>
                </birth>
-               <bibl status="annotated">
+               <bibl status="annotated" xml:id="octavius">
                   <title>Octavius</title>
                   <date type="century" when-custom="3">III</date>
                   <index indexName="genre">
