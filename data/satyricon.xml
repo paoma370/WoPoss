@@ -60087,7 +60087,7 @@
             <f name="marker" fVal="sat2453763"/>
             <f name="scope" fVal="sat2453781"/>
             <f name="meaning">
-               <symbol value="possibiliy"/>
+               <symbol value="possibility"/>
             </f>
             <f name="type">
                <symbol value="participant-imposed"/>
@@ -79735,6 +79735,9 @@
                <symbol value="affirmative"/>
             </f>
             <f name="dynamicity">
+               <binary value="true"/>
+            </f>
+            <f name="control">
                <binary value="true"/>
             </f>
             <f name="participant">
