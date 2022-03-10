@@ -1110,7 +1110,7 @@
                   <w lemma="ut" pos="SCONJ">ut</w>
                   <w pos="NOUN" lemma="libra" msd="#octd1e3347">libram</w>
                   <w msd="#octd1es1338" lemma="teneo" pos="VERB">teneas</w>
-                  <seg function="marker" ana="#oct312748" part="Y">
+                  <seg function="marker" ana="#oct312748">
                      <w lemma="aequus" pos="ADJ" msd="#octds1e5090">aequissimi</w>
                   </seg>
                   <w pos="NOUN" lemma="judex" msd="#octd1e5090">iudicis</w>
@@ -14227,7 +14227,7 @@
                <binary value="true"/>
             </f>
             <f name="lemma">
-               <symbol value="ndus"/>
+               <symbol value="ndus_est"/>
             </f>
          </fs>
          <fs xml:id="oct45654" type="scope">
@@ -14390,7 +14390,7 @@
                <binary value="true"/>
             </f>
             <f name="lemma">
-               <symbol value="ndus"/>
+               <symbol value="ndus_est"/>
             </f>
          </fs>
          <fs xml:id="oct64675" type="scope">
@@ -16470,7 +16470,7 @@
                <binary value="true"/>
             </f>
             <f name="lemma">
-               <symbol value="ndus"/>
+               <symbol value="ndus_est"/>
             </f>
          </fs>
          <fs xml:id="oct198692" type="scope">
@@ -16507,7 +16507,7 @@
                <binary value="true"/>
             </f>
             <f name="lemma">
-               <symbol value="ndus"/>
+               <symbol value="ndus_est"/>
             </f>
          </fs>
          <fs xml:id="oct199976" type="marker">
@@ -16665,7 +16665,7 @@
                <binary value="true"/>
             </f>
             <f name="lemma">
-               <symbol value="ndus"/>
+               <symbol value="ndus_est"/>
             </f>
          </fs>
          <fs xml:id="oct212031" type="scope">
