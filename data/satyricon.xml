@@ -48807,7 +48807,7 @@
             </f>
 
             <f name="control">
-               <binary value="true"/>
+               <binary value="false"/>
             </f>
             <f name="dynamicity">
                <binary value="true"/>

@@ -513,23 +513,26 @@
                <w pos="NOUN" lemma="homo">homine</w>
                <w pos="VERB" lemma="persevero">perseverare</w>
                <pc>,</pc>
-               <seg function="scope" ana="#oct218126">
-                  <w pos="VERB" lemma="fio" msd="#oct2d1e2208" function="main">fieri</w>
+                  <w pos="VERB" lemma="fio">fieri</w>
                   <w pos="PRON" lemma="sui" msd="#oct2d1e2215">
                      <seg function="participant" type="animate" corresp="#oct218126">se</seg>
                   </w>
-                  <w pos="NOUN" lemma="deus" msd="#oct2d1e2222">deos</w>
-               </seg>
+                  <w pos="NOUN" lemma="deus">deos</w>
+               
                <w pos="VERB" lemma="metuo">metuunt</w>
                <pc>,</pc>
                <w pos="ADV" lemma="etsi">etsi</w>
                <w pos="ADV" lemma="jam">iam</w>
                <w pos="NOUN" lemma="senex">senes</w>
                <w pos="VERB" lemma="nolo" msd="#oct2d1e2256">
-                  <seg function="marker" ana="#oct218544">nolunt<note>Implicit scope : to be made
-                        gods. Participant : reges. Modal relation : deontic - volition.</note>
-                  </seg>
+                  <seg function="marker" ana="#oct218544">nolunt</seg>
                </w>
+               <supplied>
+                  <seg function="scope" ana="#oct218126">
+                     <w pos="VERB" lemma="fio" msd="#oct2d1e2208">fieri</w>
+                     <w pos="NOUN" lemma="deus" msd="#oct2d1e2222">deos</w>
+                  </seg>
+               </supplied>
                <pc>.</pc>
             </s>
             <s n="26">
@@ -550,9 +553,7 @@
                   <seg function="negation" corresp="#oct219112">non</seg>
                </w>
                <w pos="VERB" lemma="possum" msd="#oct2d1e2326">
-                  <seg function="marker" ana="#oct219112">potest<note>Reference text :
-                        posset.</note>
-                  </seg>
+                  <seg function="marker" ana="#oct219112">posset</seg>
                </w>
                <pc>,</pc>
                <w pos="CCONJ" lemma="neque">nec</w>
@@ -1186,10 +1187,6 @@
                   <w pos="NOUN" lemma="vir" msd="#oct2d1e5075">
                      <seg function="participant" type="animate" corresp="#oct241491">viro</seg>
                   </w>
-                  <note>A verb like 'to participate' ('interesse') is likely meant. Quo is probably
-                     to be intended as a dative (or an ablative depending on the implicit verb) of
-                     the relative pronoun (referring to an implicit 'sacrum') instead of the local
-                     adverb.</note>
                </seg>
                <w pos="ADV" lemma="non">
                   <seg function="negation" corresp="#oct241684">non</seg>
@@ -2051,8 +2048,13 @@
                   <w pos="VERB" lemma="imitor" msd="#oct2d1e9160" function="main">imitari</w>
                </seg>
                <w pos="CCONJ" lemma="neque">
-                  <seg function="negation" corresp="#oct274955">nec</seg>
+                  <seg function="negation" corresp="#oct274956">nec</seg>
                </w>
+               <supplied>
+                  <w pos="VERB" lemma="possum">
+                     <seg function="marker" ana="#oct274956">potuerit</seg>
+                  </w>
+               </supplied>
                <seg function="participant" type="animate" corresp="#oct275281">
                   <w pos="PRON" lemma="ipse" msd="#oct2d1e9176">ipse</w>
                   <w pos="NOUN" lemma="Iuppiter" msd="#oct2d1e9182">Iuppiter</w>
@@ -2060,8 +2062,6 @@
                <seg function="scope" ana="#oct275281" part="Y">
                   <w pos="ADV" lemma="non">non</w>
                   <w pos="VERB" lemma="vereor" msd="#oct2d1e9196" function="main">vereri</w>
-                  <note>Implicit marker : potuerit. Negation : nec. Participant : ipse Iuppiter.
-                     Modal relation : dynamic - possibility - participant-inherent.</note>
                </seg>
                <pc>.</pc>
             </s>
@@ -2679,11 +2679,10 @@
                <w pos="SCONJ" lemma="cum">cum</w>
                <w pos="ADV" lemma="paene">paene</w>
                <w pos="ADP" lemma="in">in</w>
-               <w pos="ADJ" lemma="multus">pluribus</w>
-            </s>
-            <s n="151">
+               <w pos="ADJ" lemma="multus">pluribus</w>       
+           
                <w pos="NOUN" lemma="virgo">virginibus</w>
-               <pc>,</pc>
+               <pc>,</pc>   </s> <s n="151">
                <w pos="SCONJ" lemma="ut">ut</w>
                <w pos="PRON" lemma="qui">quae</w>
                <w pos="ADV" lemma="inconsultus">inconsultius</w>
@@ -3749,19 +3748,20 @@
                <pc>,</pc>
                <w pos="CCONJ" lemma="et">et</w>
                <w pos="PRON" lemma="qui">quem</w>
-               <w pos="VERB" lemma="metuo">metuens</w>
-               <w pos="VERB" lemma="infesto" msd="#oct2d1e17421" function="main">
-                  <seg function="scope" ana="#oct2141895">infestare<note>Implied scope of
-                        possis.</note>
-                  </seg>
-               </w>
+               <w pos="VERB" lemma="metuo">metueris</w>
+               <w pos="VERB" lemma="infesto">infestare</w>
                <pc>,</pc>
                <w pos="SCONJ" lemma="si">si</w>
                <w pos="VERB" lemma="possum" msd="#oct2d1e17438">
-                  <seg function="marker" ana="#oct2142032">possis<note>Text of reference : quem
-                        metueris infestare, si posses. Implicit scope : to attack.</note>
+                  <seg function="marker" ana="#oct2142032">posses
                   </seg>
                </w>
+               <supplied>
+                  <w pos="VERB" lemma="infesto">
+                     <seg function="scope" ana="#oct2141895">infestare
+                     </seg>
+                  </w>
+               </supplied>
                <pc>.</pc>
             </s>
             <s n="215">
@@ -4410,8 +4410,7 @@
                   <seg function="negation" corresp="#oct2167159">nec</seg>
                </w>
                <w pos="NOUN" lemma="aetas" msd="#oct2d1e20498">
-                  <seg function="participant" type="inanimate" corresp="#oct2167252">aetas<note>Full
-                        participant : aetas mollior</note>
+                  <seg function="participant" type="inanimate" corresp="#oct2167252">aetas
                   </seg>
                </w>
                <w pos="VERB" lemma="possum" msd="#oct2d1e20505">
@@ -4422,11 +4421,15 @@
                </w>
                <w pos="ADJ" lemma="mollis">mollior</w>
                <w pos="CCONJ" lemma="neque">
-                  <seg function="negation" corresp="#oct2167159">nec</seg>
+                  <seg function="negation" corresp="#oct2167158">nec</seg>
                </w>
+               <supplied>
+                  <w pos="VERB" lemma="possum">
+                     <seg function="marker" ana="#oct2167158">potest</seg>
+                  </w>
+               </supplied>
                <w pos="VERB" lemma="cogo" msd="#oct2d1e20534" function="main">
-                  <seg function="scope" ana="#oct2167452">cogi<note>Implicit marker : potest.</note>
-                  </seg>
+                  <seg function="scope" ana="#oct2167452">cogi</seg>
                </w>
                <seg function="participant" type="inanimate" corresp="#oct2167452">
                   <w pos="NOUN" lemma="servitus" msd="#oct2d1e20542">servitus</w>
@@ -4604,7 +4607,7 @@
                </w>
                <seg function="scope" ana="#oct2173447" part="Y">
                   <w pos="NOUN" lemma="homo" msd="#oct2d1e21248">homo</w>
-                  <w pos="VERB" lemma="sum" msd="#oct2d1e21257" function="main">est</w>
+                  <w pos="VERB" lemma="sum" msd="#oct2d1e21257" function="main">esse</w>
                </seg>
                <pc>,</pc>
                <supplied>
@@ -4619,7 +4622,7 @@
                <supplied>
                   <seg function="scope" ana="#oct2173411">
                      <w pos="NOUN" lemma="homo">homo</w>
-                     <w pos="VERB" lemma="sum">est</w>
+                     <w pos="VERB" lemma="sum">esse</w>
                   </seg>
                </supplied>
                <w pos="VERB" lemma="nolo" msd="#oct2d1e21276">
@@ -5323,8 +5326,7 @@
                <seg function="scope" ana="#oct2200605">
                   <w pos="ADP" lemma="in">in</w>
                   <w pos="ADJ" lemma="inlicitus" msd="#oct2d1e24573">
-                     <seg function="marker" ana="#oct2200698">inlicita<note>Implicit scope : things.
-                           No SoA. Modal relation : deontic - authority - permission.</note>
+                     <seg function="marker" ana="#oct2200698">inlicita
                      </seg>
                   </w>
                   <supplied>
@@ -7537,7 +7539,7 @@
             <s n="436">
                <w pos="PRON" lemma="qui" msd="#oct2d1e34663">
                   <seg function="participant" type="animate" corresp="#oct2282570"
-                        >Qui<note>Participant : deus.</note>
+                        >Qui
                   </seg>
                </w>
                <w pos="SCONJ" lemma="cum">cum</w>
@@ -7631,8 +7633,7 @@
                <w pos="ADV" lemma="tamen">tamen</w>
                <w pos="PRON" lemma="quis" msd="#oct2d1e35073">
                   <seg function="participant" type="animate" corresp="#oct2285720"
-                        >quis<note>Participant discontinuous.</note>
-                  </seg>
+                        >quis</seg>
                </w>
                <w pos="VERB" lemma="possum" msd="#oct2d1e35080">
                   <seg function="marker" ana="#oct2285647">potest</seg>
@@ -9102,8 +9103,7 @@
                <w pos="CCONJ" lemma="sed">sed</w>
                <w pos="CCONJ" lemma="et">et</w>
                <w pos="ADJ" lemma="favorabilis" msd="#oct2d1e41683">
-                  <seg function="scope" ana="#oct2349796">favora<note>NB. the scope is not expressed
-                        by a verb stem, but by a noun (favor).</note>
+                  <seg function="scope" ana="#oct2349796">favora
                   </seg>
                   <seg function="marker" ana="#oct2349778">bilem</seg>
                </w>
@@ -15391,10 +15391,6 @@
             <f name="modal">
                <binary value="true"/>
             </f>
-            <f name="note">
-               <string>Implicit scope : to be made gods. Participant : reges. Modal relation :
-                  deontic - volition.</string>
-            </f>
             <f name="lemma">
                <symbol value="nolo"/>
             </f>
@@ -15431,9 +15427,6 @@
             </f>
             <f name="modal">
                <binary value="true"/>
-            </f>
-            <f name="note">
-               <string>Reference text : posset.</string>
             </f>
             <f name="lemma">
                <symbol value="possum"/>
@@ -16153,6 +16146,23 @@
                <symbol value="possum"/>
             </f>
          </fs>
+         <fs xml:id="oct274956" type="marker">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="negative"/>
+            </f>
+            <f name="pertinence">
+               <binary value="true"/>
+            </f>
+            <f name="modal">
+               <binary value="true"/>
+            </f>
+            <f name="lemma">
+               <symbol value="possum"/>
+            </f>
+         </fs>
          <fs xml:id="oct275028" type="scope">
             <f name="utterance">
                <symbol value="non-interrogative"/>
@@ -16185,10 +16195,6 @@
             </f>
             <f name="dynamicity">
                <binary value="true"/>
-            </f>
-            <f name="note">
-               <string>Implicit marker : potuerit. Negation : nec. Participant : ipse Iuppiter.
-                  Modal relation : dynamic - possibility - participant-inherent.</string>
             </f>
             <f name="participant">
                <symbol value="explicit"/>
@@ -16377,9 +16383,6 @@
             <f name="dynamicity">
                <binary value="false"/>
             </f>
-            <f name="note">
-               <string>Implicit copula</string>
-            </f>
             <f name="participant">
                <symbol value="implicit"/>
             </f>
@@ -16510,9 +16513,6 @@
             <f name="dynamicity">
                <binary value="true"/>
             </f>
-            <f name="note">
-               <string>Implied scope of possis.</string>
-            </f>
             <f name="participant">
                <symbol value="implicit"/>
             </f>
@@ -16535,10 +16535,6 @@
             </f>
             <f name="modal">
                <binary value="true"/>
-            </f>
-            <f name="note">
-               <string>Text of reference : quem metueris infestare, si posses. Implicit scope : to
-                  attack.</string>
             </f>
             <f name="lemma">
                <symbol value="possum"/>
@@ -16811,6 +16807,23 @@
                <symbol value="possum"/>
             </f>
          </fs>
+         <fs xml:id="oct2167158" type="marker">
+            <f name="utterance">
+               <symbol value="non-interrogative"/>
+            </f>
+            <f name="polarity">
+               <symbol value="negative"/>
+            </f>
+            <f name="pertinence">
+               <binary value="true"/>
+            </f>
+            <f name="modal">
+               <binary value="true"/>
+            </f>
+            <f name="lemma">
+               <symbol value="possum"/>
+            </f>
+         </fs>
          <fs xml:id="oct2167252" type="scope">
             <f name="utterance">
                <symbol value="non-interrogative"/>
@@ -16843,9 +16856,6 @@
             </f>
             <f name="dynamicity">
                <binary value="true"/>
-            </f>
-            <f name="note">
-               <string>Implicit marker : potest.</string>
             </f>
             <f name="participant">
                <symbol value="explicit"/>
@@ -17064,9 +17074,6 @@
             <f name="modal">
                <binary value="true"/>
             </f>
-            <f name="note">
-               <string>Implicit scope : to be a man.</string>
-            </f>
             <f name="lemma">
                <symbol value="volo"/>
             </f>
@@ -17083,9 +17090,6 @@
             </f>
             <f name="modal">
                <binary value="true"/>
-            </f>
-            <f name="note">
-               <string>Implicit scope : to be a man.</string>
             </f>
             <f name="lemma">
                <symbol value="nolo"/>
@@ -17373,10 +17377,6 @@
             </f>
             <f name="modal">
                <binary value="true"/>
-            </f>
-            <f name="note">
-               <string>Implicit scope : things. No SoA. Modal relation : deontic - authority -
-                  permission.</string>
             </f>
             <f name="lemma">
                <symbol value="illicitus"/>
@@ -17868,9 +17868,6 @@
             </f>
             <f name="dynamicity">
                <binary value="false"/>
-            </f>
-            <f name="note">
-               <string>Implicit marker : possis.</string>
             </f>
             <f name="participant">
                <symbol value="implicit"/>
@@ -18481,6 +18478,9 @@
             <f name="participantType">
                <symbol value="animate"/>
             </f>
+            <f name="note">
+               <string>Participant: deus.</string>
+            </f>
          </fs>
          <fs xml:id="oct2284146" type="marker">
             <f name="pertinence">
@@ -19008,9 +19008,6 @@
             <f name="modal">
                <binary value="true"/>
             </f>
-            <f name="note">
-               <string>Text of reference : this sentence is a question.</string>
-            </f>
             <f name="lemma">
                <symbol value="volo"/>
             </f>
@@ -19047,9 +19044,6 @@
             </f>
             <f name="modal">
                <binary value="true"/>
-            </f>
-            <f name="note">
-               <string>Text of reference : this sentence is a question.</string>
             </f>
             <f name="lemma">
                <symbol value="possum"/>
@@ -19944,7 +19938,7 @@
             <f name="modality">
                <symbol value="dynamic"/>
             </f>
-            <f name="marker" fVal="oct274955"/>
+            <f name="marker" fVal="oct274956"/>
             <f name="scope" fVal="oct275281"/>
             <f name="meaning">
                <symbol value="possibility"/>
@@ -20088,9 +20082,6 @@
             <f name="type">
                <symbol value="participant-imposed"/>
             </f>
-            <f name="note">
-               <string>NB. Scope is implied.</string>
-            </f>
          </fs>
          <fs xml:id="oct2143062" type="relation">
             <f name="modality">
@@ -20171,7 +20162,7 @@
             <f name="modality">
                <symbol value="dynamic"/>
             </f>
-            <f name="marker" fVal="oct2167159"/>
+            <f name="marker" fVal="oct2167158"/>
             <f name="scope" fVal="oct2167452"/>
             <f name="meaning">
                <symbol value="possibility"/>

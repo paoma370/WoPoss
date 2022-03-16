@@ -4334,7 +4334,8 @@
                   <seg function="negation" corresp="#reg0008"><w pos="ADP" lemma="sine"
                      >sine</w></seg>
                   <seg function="marker" ana="#reg0008">
-                     <w pos="NOUN" lemma="dubium">dubio</w></seg><seg ana="#reg1008" part="Y"
+                     <w pos="NOUN" lemma="dubium">dubio</w></seg>
+                  <seg ana="#reg1008" part="Y"
                      function="scope">
                      <seg function="participant" type="inanimate_patient" corresp="#reg1008">
                         <w pos="NOUN" lemma="descensus">descensus</w></seg>
@@ -35037,7 +35038,7 @@
                <symbol value="affirmative"/>
             </f>
             <f name="control">
-               <binary value="true"/>
+               <symbol value="ambiguous"/>
             </f>
             <f name="dynamicity">
                <binary value="true"/>
@@ -35060,7 +35061,7 @@
                <symbol value="affirmative"/>
             </f>
             <f name="control">
-               <binary value="true"/>
+               <symbol value="ambiguous"/>
             </f>
             <f name="dynamicity">
                <binary value="true"/>
