@@ -513,12 +513,11 @@
                <w pos="NOUN" lemma="homo">homine</w>
                <w pos="VERB" lemma="persevero">perseverare</w>
                <pc>,</pc>
-                  <w pos="VERB" lemma="fio">fieri</w>
-                  <w pos="PRON" lemma="sui" msd="#oct2d1e2215">
-                     <seg function="participant" type="animate" corresp="#oct218126">se</seg>
-                  </w>
-                  <w pos="NOUN" lemma="deus">deos</w>
-               
+               <w pos="VERB" lemma="fio">fieri</w>
+               <w pos="PRON" lemma="sui" msd="#oct2d1e2215">
+                  <seg function="participant" type="animate" corresp="#oct218126">se</seg>
+               </w>
+               <w pos="NOUN" lemma="deus">deos</w>
                <w pos="VERB" lemma="metuo">metuunt</w>
                <pc>,</pc>
                <w pos="ADV" lemma="etsi">etsi</w>
@@ -2679,10 +2678,11 @@
                <w pos="SCONJ" lemma="cum">cum</w>
                <w pos="ADV" lemma="paene">paene</w>
                <w pos="ADP" lemma="in">in</w>
-               <w pos="ADJ" lemma="multus">pluribus</w>       
-           
+               <w pos="ADJ" lemma="multus">pluribus</w>
                <w pos="NOUN" lemma="virgo">virginibus</w>
-               <pc>,</pc>   </s> <s n="151">
+               <pc>,</pc>
+            </s>
+            <s n="151">
                <w pos="SCONJ" lemma="ut">ut</w>
                <w pos="PRON" lemma="qui">quae</w>
                <w pos="ADV" lemma="inconsultus">inconsultius</w>
@@ -3753,13 +3753,11 @@
                <pc>,</pc>
                <w pos="SCONJ" lemma="si">si</w>
                <w pos="VERB" lemma="possum" msd="#oct2d1e17438">
-                  <seg function="marker" ana="#oct2142032">posses
-                  </seg>
+                  <seg function="marker" ana="#oct2142032">posses </seg>
                </w>
                <supplied>
                   <w pos="VERB" lemma="infesto">
-                     <seg function="scope" ana="#oct2141895">infestare
-                     </seg>
+                     <seg function="scope" ana="#oct2141895">infestare </seg>
                   </w>
                </supplied>
                <pc>.</pc>
@@ -4410,8 +4408,7 @@
                   <seg function="negation" corresp="#oct2167159">nec</seg>
                </w>
                <w pos="NOUN" lemma="aetas" msd="#oct2d1e20498">
-                  <seg function="participant" type="inanimate" corresp="#oct2167252">aetas
-                  </seg>
+                  <seg function="participant" type="inanimate" corresp="#oct2167252">aetas </seg>
                </w>
                <w pos="VERB" lemma="possum" msd="#oct2d1e20505">
                   <seg function="marker" ana="#oct2167159">potest</seg>
@@ -4444,10 +4441,13 @@
                <pc>***</pc>
             </s>
             <s n="249">
-               <w pos="PRON" lemma="hic">‘Haec</w>
-               <w pos="CCONJ" lemma="et">et</w>
-               <w pos="NOUN" lemma="modus">huiusmodi</w>
-               <w pos="NOUN" lemma="propudium">propudia</w>
+               <pc>‘</pc>
+               <seg function="scope" ana="#oct2168205" part="Y">
+                  <w pos="PRON" lemma="hic" msd="#oct2d1e4838">Haec</w>
+                  <w pos="CCONJ" lemma="et">et</w>
+                  <w pos="ADV" lemma="huiusmodi">huiusmodi</w>
+                  <w pos="NOUN" lemma="propudium" msd="#oct2d1e4838">propudia</w>
+               </seg>
                <w pos="PRON" lemma="nos" msd="#oct2d1e20595">
                   <seg function="participant" type="animate_patient" corresp="#oct2168205"
                      >nobis</seg>
@@ -5326,8 +5326,7 @@
                <seg function="scope" ana="#oct2200605">
                   <w pos="ADP" lemma="in">in</w>
                   <w pos="ADJ" lemma="inlicitus" msd="#oct2d1e24573">
-                     <seg function="marker" ana="#oct2200698">inlicita
-                     </seg>
+                     <seg function="marker" ana="#oct2200698">inlicita </seg>
                   </w>
                   <supplied>
                      <seg function="scope" ana="#oct22744s4">
@@ -6807,8 +6806,7 @@
                <w pos="PRON" lemma="ille">illa</w>
                <w pos="ADP" lemma="ad">ad</w>
                <w pos="VERB" lemma="retorqueo" msd="#oct2d1e31300"> retorque <seg function="marker"
-                     ana="#oct2255136">ndam
-                  </seg>
+                     ana="#oct2255136">ndam </seg>
                </w>
                <w pos="NOUN" lemma="veritas">veritatem</w>
                <pc>,</pc>
@@ -7538,9 +7536,7 @@
             </s>
             <s n="436">
                <w pos="PRON" lemma="qui" msd="#oct2d1e34663">
-                  <seg function="participant" type="animate" corresp="#oct2282570"
-                        >Qui
-                  </seg>
+                  <seg function="participant" type="animate" corresp="#oct2282570">Qui </seg>
                </w>
                <w pos="SCONJ" lemma="cum">cum</w>
                <w pos="VERB" lemma="possum" msd="#oct2d1e34675">
@@ -7632,8 +7628,7 @@
                <w pos="CCONJ" lemma="et">Et</w>
                <w pos="ADV" lemma="tamen">tamen</w>
                <w pos="PRON" lemma="quis" msd="#oct2d1e35073">
-                  <seg function="participant" type="animate" corresp="#oct2285720"
-                        >quis</seg>
+                  <seg function="participant" type="animate" corresp="#oct2285720">quis</seg>
                </w>
                <w pos="VERB" lemma="possum" msd="#oct2d1e35080">
                   <seg function="marker" ana="#oct2285647">potest</seg>
@@ -9103,8 +9098,7 @@
                <w pos="CCONJ" lemma="sed">sed</w>
                <w pos="CCONJ" lemma="et">et</w>
                <w pos="ADJ" lemma="favorabilis" msd="#oct2d1e41683">
-                  <seg function="scope" ana="#oct2349796">favora
-                  </seg>
+                  <seg function="scope" ana="#oct2349796">favora </seg>
                   <seg function="marker" ana="#oct2349778">bilem</seg>
                </w>
                <pc>.</pc>
