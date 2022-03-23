@@ -317,9 +317,74 @@
                         </div>
                     </fieldset>
                     
-                    
-                    
-                
+                </div>
+            </div>
+            <h4 class="title">Description of the scope</h4>
+            <div class="wrapper">
+                <div class="content">
+                    <fieldset>
+                        <label>Type of utterance</label>
+                        <div class="indent">
+                            <input type="checkbox" value="interrogative" id="scope-int" name="scope-utterance"/>
+                            <label for="scope-int">interrogative utterance</label>
+                            <input type="checkbox" value="non-interrogative" id="scope-noint" name="scope-utterance"/>
+                            <label for="scope-noint">non-interrogative utterance</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <label>Polarity</label>
+                        <div class="indent">
+                            <input type="checkbox" value="affirmative" id="scope-aff" name="scope-polarity"/>
+                            <label for="scope-aff">affirmative</label>
+                            <input type="checkbox" value="negative" id="scope-neg" name="scope-polarity"/>
+                            <label for="scope-neg">negative</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <label>Description of the state of affairs</label>
+                        <div class="indent includsRadio">
+                            <input type="radio" value="true" id="soa" name="SoA"/>
+                            <label for="soa">State of affairs</label>
+                            <input type="radio" value="false" id="no-soa" name="SoA" class="control controlmixed controlno dynamicn dynamicmixed dinamicno"/>
+                            <label for="no-soa">No state of affairs</label>
+                            <br/>
+                            <input type="checkbox" name="control" id="control" value="true" class="no-soa"/>
+                            <label for="control"> + control</label>
+                            <input type="checkbox" name="control" id="controlmixed" value="ambiguous" class="no-soa"/>
+                            <label for="controlmixed"> +/- control</label>
+                            <input type="checkbox" name="control" id="controlno" value="false" class="no-soa"/>
+                            <label for="controlno"> - control</label>
+                            <input type="checkbox" name="dynamic" id="dynamicn" value="true" class="no-soa"/>
+                            <label for="dynamicn"> + dynamic</label>
+                            <input type="checkbox" name="dynamic" id="dynamicmixed" value="ambiguous" class="no-soa"/>
+                            <label for="dynamicmixed"> +/- dynamic</label>
+                            <input type="checkbox" name="dynamic" id="dynamicno" value="false" class="no-soa"/>
+                            <label for="dynamicno"> - dynamic</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <label>Expression of the participant</label>
+                        <div class="indent">
+                            <input type="checkbox" value="explicit" id="explicit" name="participant"/>
+                            <label for="explicit">Explicit participant</label>
+                            <input type="checkbox" value="implicit" id="implicit" name="participant"/>
+                            <label for="implicit">Implicit participant</label>
+                            <input type="checkbox" value="none" id="no-part" name="participant"/>
+                            <label for="no-part">No participant</label>
+                        </div>
+                        <label>Type of participant</label>
+                        <div class="indent">
+                            <input type="checkbox" name="participantType" id="animate" value="animate"/>
+                            <label for="animate">Animate</label>
+                            <input type="checkbox" name="participantType" id="inanimate" value="inanimate"/>
+                            <label for="inanimate">Inanimate</label>
+                            <input type="checkbox" name="participantType" id="pass-animate" value="animate_patient"/>
+                            <label for="pass-animate">Animate (patient)</label>
+                            <input type="checkbox" name="participantType" id="pass-inanimate" value="inanimate_patient"/>
+                            <label for="pass-inanimate">Inanimate (patient)</label>
+                        </div>
+                    </fieldset>
+
                 </div>
             </div>
             <h4 class="title">Description of the modal relation</h4>

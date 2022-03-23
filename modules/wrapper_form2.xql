@@ -8,7 +8,7 @@ xquery version "3.1";
     <p><span
                 style="color:red;font-weight:bold">Important</span>:</p>
                 <ul>
-                <li>Click in the fist cell (the passage) to read more context and get the full analysis of the passage.</li>
+                <li>Click on the fist cell (the passage) to read more context and get the full analysis of the passage.</li>
                 <li>In the table options (right upper corner) you can filter the rows by content (search field), you can toggle the columns (not all columns are visible by default) and you can export the results (CSV).</li></ul>
 
         <table
@@ -40,6 +40,12 @@ xquery version "3.1";
                         data-visible="false">Additional <br/>analysis</th>
                     <th
                         data-sortable="true">Ambiguous <br/>reading</th>
+                    <th data-sortable="true"
+                        data-visible="false">SoA: control</th>
+                    <th data-sortable="true"
+                        data-visible="false">SoA: dynamicity</th>
+                    <th data-sortable="true"
+                        data-visible="false">SoA: participant</th>
                     <th
                         data-sortable="true">Work</th></tr></thead>
             <tbody>{request:get-attribute('html')}</tbody>

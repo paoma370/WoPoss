@@ -126,6 +126,59 @@ declare variable $simpleFilters := <fields>
     </field>
 </fields>;
 
+
+(: filters scope :)
+
+declare variable $SoADesc := <fields>
+    <field
+        name="control">{
+            for $x in request:get-parameter("control", ())
+            return
+                <value>{$x}</value>
+        }</field>
+    <field
+        name="dynamicity">{
+            for $x in request:get-parameter("dynamic", ())
+            return
+                <value>{$x}</value>
+        }</field>
+    
+    <field
+        name="SoA"><value>{request:get-parameter("SoA", ())}</value>
+    </field>
+    <field
+        name="scopeUtterance">
+        {
+            for $x in request:get-parameter("scope-utterance", ())
+            return
+                <value>{$x}</value>
+        }
+    </field>
+    <field
+        name="scopePolarity">
+        {
+            for $x in request:get-parameter("scope-polarity", ())
+            return
+                <value>{$x}</value>
+        }
+    </field>
+    <field
+        name="participant">{
+            for $x in request:get-parameter("participant", ())
+            return
+                <value>{$x}</value>
+        }
+    </field>
+    <field
+        name="participantType">{
+            for $x in request:get-parameter("participantType", ())
+            return
+                <value>{$x}</value>
+        }
+    </field>
+</fields>;
+
+
 declare variable $dynamicPossFilters := <fields>
     <field
         name="modalType">
@@ -177,6 +230,21 @@ declare function local:modality($fs as item()*, $modality as xs:string) as item(
             ()
 };
 
+declare function local:SoaDesc($relations as node()*) as node()* {
+    let $query-scopes := woposs:filterParams($SoADesc)
+    let $scope_ids:= $relations/tei:f[@name eq 'scope']/@fVal
+    let $docs := $relations/ancestor::tei:TEI
+    let $scopes := $docs/id($scope_ids)
+    let $filtered_scopes :=
+    $scopes[ft:query-field(., $query-scopes)]/@xml:id
+    
+    let $filtered_relations := if (exists($filtered_scopes)) then
+        $relations[ft:query-field(., woposs:prepareQuery("scopeId", $filtered_scopes))]
+    else
+        ()
+    return
+        $filtered_relations
+};
 
 
 declare function local:dynamic($fs as item()*) as item()* {
@@ -209,6 +277,13 @@ declare function local:dynamic($fs as item()*) as item()* {
     let $other := string-join(($sitSubtype, $function), '. ')
     let $mk_id := $dyn/tei:f[@name eq 'marker']/@fVal
     let $lemma := woposs:lemma($doc, $mk_id)
+    let $scope := $doc/id($dyn/tei:f[@name eq 'scope']/@fVal)
+    let $control_fs := $scope/tei:f[@name eq 'control']/*/@value
+    let $control := if ($control_fs eq 'true') then '+control' else if ($control_fs eq 'false') then '-control' else '±control'
+    let $dynamicity_fs := $scope/tei:f[@name eq 'dynamicity']/*/@value
+    let $dynamicity := if ($dynamicity_fs eq 'true') then '+dynamic' else if ($dynamicity_fs eq 'false') then '-dynamic' else '±dynamic'
+    let $participant := if ($scope/tei:f[@name eq 'participant']/tei:symbol/@value eq 'none') then 'no participant' else $scope/tei:f[@name eq 'participantType']/tei:symbol/replace(@value, '_', ' – ')
+
     let $marker := string-join($doc/descendant::tei:seg[substring(@ana, 2) eq $mk_id], ' ')
     let $s := $doc/descendant::tei:s[descendant::tei:seg[substring(@ana, 2) eq $mk_id]]
     let $amb := woposs:isAmbiguous($doc, $dyn/@xml:id, 'relation')
@@ -216,7 +291,7 @@ declare function local:dynamic($fs as item()*) as item()* {
     return
         <tr><td1
                 ref="{$mk_id}">{$s}</td1>
-            <td>{$marker}</td><td>{$lemma}</td><td>dynamic</td><td>{$type}</td><td>{$subtype}</td><td>{$other}</td><td>{$amb}</td><td>{$locus}</td></tr>
+            <td>{$marker}</td><td>{$lemma}</td><td>dynamic</td><td>{$type}</td><td>{$subtype}</td><td>{$other}</td><td>{$amb}</td><td>{$control}</td><td>{$dynamicity}</td><td>{$participant}</td><td>{$locus}</td></tr>
 
 };
 
@@ -376,6 +451,12 @@ declare function local:deontic($fs as item()*) as item()* {
         if ($deo/tei:f[@name eq 'function']) then $function else $add
     let $mk_id := $deo/tei:f[@name eq 'marker']/@fVal
     let $lemma := woposs:lemma($doc, $mk_id)
+    let $scope := $doc/id($deo/tei:f[@name eq 'scope']/@fVal)
+    let $control_fs := $scope/tei:f[@name eq 'control']/*/@value
+    let $control := if ($control_fs eq 'true') then '+control' else if ($control_fs eq 'false') then '-control' else '±control'
+    let $dynamicity_fs := $scope/tei:f[@name eq 'dynamicity']/*/@value
+    let $dynamicity := if ($dynamicity_fs eq 'true') then '+dynamic' else if ($dynamicity_fs eq 'false') then '-dynamic' else '±dynamic'
+    let $participant := if ($scope/tei:f[@name eq 'participant']/tei:symbol/@value eq 'none') then 'no participant' else $scope/tei:f[@name eq 'participantType']/tei:symbol/replace(@value, '_', ' – ')
     let $marker := string-join($doc/descendant::tei:seg[substring(@ana, 2) eq $mk_id], ' ')
     let $s := $doc/descendant::tei:s[descendant::tei:seg[substring(@ana, 2) eq $mk_id]]
     let $amb := woposs:isAmbiguous($doc, $deo/@xml:id, 'relation')
@@ -383,7 +464,7 @@ declare function local:deontic($fs as item()*) as item()* {
     return
         <tr><td1
                 ref="{$mk_id}">{$s}</td1>
-            <td>{$marker}</td><td>{$lemma}</td><td>deontic</td><td>{$type}</td><td>{$subtype}</td><td>{$other}</td><td>{$amb}</td><td>{$locus}</td></tr>
+            <td>{$marker}</td><td>{$lemma}</td><td>deontic</td><td>{$type}</td><td>{$subtype}</td><td>{$other}</td><td>{$amb}</td><td>{$control}</td><td>{$dynamicity}</td><td>{$participant}</td><td>{$locus}</td></tr>
 
 };
 
@@ -399,6 +480,12 @@ declare function local:epistemic($fs as item()*) as item()* {
     let $degree := $epi/tei:f[@name eq 'degree']/tei:symbol/replace(@value, '_', ' ')
     let $mk_id := $epi/tei:f[@name eq 'marker']/@fVal
     let $lemma := woposs:lemma($doc, $mk_id)
+    let $scope := $doc/id($epi/tei:f[@name eq 'scope']/@fVal)
+    let $control_fs := $scope/tei:f[@name eq 'control']/*/@value
+    let $control := if ($control_fs eq 'true') then '+control' else if ($control_fs eq 'false') then '-control' else '±control'
+    let $dynamicity_fs := $scope/tei:f[@name eq 'dynamicity']/*/@value
+    let $dynamicity := if ($dynamicity_fs eq 'true') then '+dynamic' else if ($dynamicity_fs eq 'false') then '-dynamic' else '±dynamic'
+    let $participant := if ($scope/tei:f[@name eq 'participant']/tei:symbol/@value eq 'none') then 'no participant' else $scope/tei:f[@name eq 'participantType']/tei:symbol/replace(@value, '_', ' – ')
     let $other := $epi/tei:f[@name eq 'function']/tei:symbol/@value
     let $marker := string-join($doc/descendant::tei:seg[substring(@ana, 2) eq $mk_id], ' ')
     let $s := $doc/descendant::tei:s[descendant::tei:seg[substring(@ana, 2) eq $mk_id]]
@@ -407,7 +494,7 @@ declare function local:epistemic($fs as item()*) as item()* {
     return
         <tr><td1
                 ref="{$mk_id}">{$s}</td1>
-            <td>{$marker}</td><td>{$lemma}</td><td>epistemic</td><td></td><td>{$degree}</td><td>{$other}</td><td>{$amb}</td><td>{$locus}</td></tr>
+            <td>{$marker}</td><td>{$lemma}</td><td>epistemic</td><td></td><td>{$degree}</td><td>{$other}</td><td>{$amb}</td><td>{$control}</td><td>{$dynamicity}</td><td>{$participant}</td><td>{$locus}</td></tr>
 
 };
 
@@ -420,8 +507,12 @@ declare function local:epistemic($fs as item()*) as item()* {
             woposs:simpleFilter($fs, $simpleFilters)
         else
             $fs
+        let $fs_filtered2 := if (exists($SoADesc/descendant::value/node())) then
+            local:SoaDesc($fs_filtered)
+        else
+            $fs_filtered
         for $modality in $modalities
         return
-            local:modality($fs_filtered, $modality)
+            local:modality($fs_filtered2, $modality)
     }
 </tbody>
