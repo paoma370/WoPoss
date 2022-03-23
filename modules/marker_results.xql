@@ -410,25 +410,24 @@ declare function local:getScope($markers as node()*) as node()* {
     let $query := woposs:prepareQuery("markerId", $markers/@xml:id)
     let $docs := $markers/ancestor::tei:TEI
     let $relations := $docs/descendant::tei:fs[ft:query-field(., $query)]
-    let $scopes := $docs/descendant::tei:fs[ft:query-field(., "type:scope")]
     let $scopeIds := $relations/tei:f[@name eq 'scope']/@fVal
     return
-        $scopes[ft:query-field(., woposs:prepareQuery("id", $scopeIds))]
+        $docs/id($scopeIds)
 };
 
 declare function local:getMarker($scopes as node()*) as node()* {
     let $query := woposs:prepareQuery("scopeId", $scopes/@xml:id)
     let $docs := $scopes/ancestor::tei:TEI
     let $relations := $docs/descendant::tei:fs[ft:query-field(., $query)]
-    let $markers := $docs/descendant::tei:fs[ft:query-field(., "type:marker")]
     let $markerIds := $relations/tei:f[@name eq 'marker']/@fVal
     return
-        $markers[ft:query-field(., woposs:prepareQuery("id", $markerIds))]
+        $docs/id($markerIds)
 };
 
 declare function local:filterWords($ws as node()+, $params as item()) as node()* {
     let $msdIds := $ws/substring(@msd, 2)
-    let $msdFeatures := $ws/ancestor::tei:TEI/descendant::tei:fs[ft:query-field(., woposs:prepareQuery("id", $msdIds))]
+    let $docs := $ws/ancestor::tei:TEI
+    let $msdFeatures := $docs/id($msdIds)
     let $query := woposs:filterParams($params)
     let $filteredIds := $msdFeatures[ft:query-field(., $query)]/@xml:id
     let $filteredWords := if (exists($filteredIds)) then
@@ -455,7 +454,7 @@ declare function local:morph($fs as node()*) as node()* {
         return
             substring($x, 2)
         return
-            $fs[ft:query-field(., woposs:prepareQuery("id", $anas))]
+            $fs/id($anas)
         )
     else
         ()
@@ -479,7 +478,7 @@ declare function local:morphScope($markers as node()*) as node()* {
     return
         substring($x, 2)
     let $filtered_scopes := if (exists($anas)) then
-        $scopes[ft:query-field(., woposs:prepareQuery("id", $anas))]
+        $scopes/id($anas)
     else
         ()
     let $filtered_markers := if (exists($filtered_scopes)) then
