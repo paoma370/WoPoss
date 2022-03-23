@@ -4,7 +4,6 @@
       <module uri="http://woposs.unine.ch" at="functions.xql" prefix="idx"/>
       <analyzer class="org.apache.lucene.analysis.core.WhitespaceAnalyzer"/>
       <text qname="tei:fs">
-        <field name="id" expression="@xml:id"/>
         <field name="type" expression="@type"/>
 
         <!-- modal relation -->
