@@ -336,7 +336,7 @@
                </birth>
                <bibl status="annotated" xml:id="octavius">
                   <title>Octavius</title>
-                  <date type="century" when-custom="3">III</date>
+                  <date type="century" when-custom="2">II</date>
                   <index indexName="genre">
                      <term cRef="#philosophy"/>
                   </index>
@@ -530,7 +530,7 @@
                <birth>
                   <location>
                      <bloc>Africa</bloc>
-                     <bloc>Samnium</bloc>
+                     <!--<bloc>Samnium</bloc>-->
                   </location>
                </birth>
                <bibl status="annotated" xml:id="de_spectaculis">
