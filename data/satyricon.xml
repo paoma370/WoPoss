@@ -256,7 +256,7 @@
                   </w>
                   <seg function="scope" ana="#sat1280417">
                      <w pos="ADV" lemma="magis">magis</w>
-                     <w pos="VERB" lemma="sapio" msd="#sat1d1e946" function="main">sapere</w>
+                     <w pos="VERB" lemma="sapio" msd="#sat1d1e946" >sapere</w>
                   </seg>
                   <w pos="VERB" lemma="possum" msd="#sat1d1e952">
                      <seg function="marker" ana="#sat1280361">possunt</seg>
@@ -265,7 +265,7 @@
                   <seg function="scope" ana="#sat1280435">
                      <w pos="ADV" lemma="quam">quam</w>
                      <w pos="ADV" lemma="bene">bene</w>
-                     <w pos="VERB" lemma="oleo" msd="#sat1d1e977" function="main">olere</w>
+                     <w pos="VERB" lemma="oleo" msd="#sat1d1e977" >olere</w>
                   </seg>
                   <supplied>
                      <w pos="VERB" lemma="possum" msd="#sat1d1e952">
@@ -288,7 +288,7 @@
                      <seg function="marker" ana="#sat1280511">liceat</seg>
                   </w>
                   <seg function="scope" ana="#sat1280529">
-                     <w pos="VERB" lemma="dico" msd="#sat1d1e1041" function="main">dixisse</w>
+                     <w pos="VERB" lemma="dico" msd="#sat1d1e1041" >dixisse</w>
                      <pc>,</pc>
                      <w pos="ADJ" lemma="primus" msd="#sat1d1e1052">primi</w>
                      <w pos="ADJ" lemma="omnis" msd="#sat1d1e1058">omnium</w>
@@ -337,7 +337,7 @@
                      <seg function="marker" ana="#sat1280567 #sat1280701">deberent</seg>
                   </w>
                   <seg function="scope" ana="#sat1280585" part="Y">
-                     <w pos="VERB" lemma="loquor" msd="#sat1d1e1259" function="main">loqui</w>
+                     <w pos="VERB" lemma="loquor" msd="#sat1d1e1259" >loqui</w>
                   </seg>
                   <pc>.</pc>
                </s>
@@ -385,7 +385,7 @@
                      <w pos="PRON" lemma="hic" msd="#sat1d1e1440">hoc</w>
                      <w pos="NOUN" lemma="genus" msd="#sat1d1e1446">genus</w>
                      <w pos="NOUN" lemma="exercitatio" msd="#sat1d1e1452">exercitationis</w>
-                     <w pos="VERB" lemma="accedo" msd="#sat1d1e1458" function="main">accessisse</w>
+                     <w pos="VERB" lemma="accedo" msd="#sat1d1e1458" >accessisse</w>
                   </seg>
                   <w pos="VERB" lemma="video">video</w>
                   <pc>.</pc>
@@ -483,7 +483,7 @@
                      <w pos="ADV" lemma="usque">usque</w>
                      <w pos="ADP" lemma="ad">ad</w>
                      <w pos="NOUN" lemma="senectus" msd="#sat1d1e1925">senectutem</w>
-                     <w pos="VERB" lemma="canesco" msd="#sat1d1e1931" function="main">canescere</w>
+                     <w pos="VERB" lemma="canesco" msd="#sat1d1e1931" >canescere</w>
                   </seg>
                   <pc>.</pc>
                </s>
@@ -575,7 +575,7 @@
                   <seg function="scope" ana="#sat1280982">
                      <w pos="ADP" lemma="cum">cum</w>
                      <w pos="VERB" lemma="insanio" msd="#sat1d1e2360">insanientibus</w>
-                     <w pos="VERB" lemma="furo" msd="#sat1d1e2366" function="main">furere</w>
+                     <w pos="VERB" lemma="furo" msd="#sat1d1e2366" >furere</w>
                   </seg>
                   <pc>.</pc>
                </s>
@@ -690,7 +690,7 @@
                      <w pos="PRON" lemma="suus" msd="#sat1d1e2552">suos</w>
                      <w pos="ADJ" lemma="severus" msd="#sat1d1e2553">severa</w>
                      <w pos="NOUN" lemma="lex" msd="#sat1d1e2554">lege</w>
-                     <w pos="VERB" lemma="proficio" msd="#sat1d1e2555" function="main"
+                     <w pos="VERB" lemma="proficio" msd="#sat1d1e2555" 
                      >proficere</w></seg>
                   <pc>.</pc>
                </s>
@@ -768,7 +768,7 @@
                   <w pos="VERB" lemma="volo" msd="#sat1d1e3289">
                      <seg function="marker" ana="#sat1281214">vellent</seg>
                   </w>
-                  <w pos="VERB" lemma="imitor" msd="#sat1d1e3296" function="main">
+                  <w pos="VERB" lemma="imitor" msd="#sat1d1e3296" >
                      <seg function="scope" ana="#sat1281232">imitari</seg>
                   </w>
                   <w pos="ADV" lemma="diu">diu</w>
@@ -826,7 +826,7 @@
                   <w pos="ADP" lemma="in">in</w>
                   <w pos="NOUN" lemma="senectus">senectute</w>
                   <seg function="scope" ana="#sat1281420" part="Y">
-                     <w pos="VERB" lemma="confiteor" msd="#sat1d1e3573" function="main"
+                     <w pos="VERB" lemma="confiteor" msd="#sat1d1e3573" 
                         >confiteri</w>
                   </seg>
                   <w pos="ADV" lemma="non">
@@ -1200,7 +1200,7 @@
                         ana="#sat1281458">debes</seg>
                   </w>
                   <seg function="scope" ana="#sat1281476" part="Y">
-                     <w pos="VERB" lemma="habito" msd="#sat1d1e5430" function="main">habitare</w>
+                     <w pos="VERB" lemma="habito" msd="#sat1d1e5430" >habitare</w>
                   </seg>
                   <pc>.</pc>
                   <anchor type="said" subtype="end"/>
@@ -1515,7 +1515,7 @@
                   </w>
                   <seg function="scope" ana="#sat1281580" part="Y">
                      <w pos="NOUN" lemma="pudor" msd="#sat1d1e6978">pudorem</w>
-                     <w pos="VERB" lemma="extorqueo" msd="#sat1d1e6984" function="main"
+                     <w pos="VERB" lemma="extorqueo" msd="#sat1d1e6984" 
                         >extorquere</w>
                   </seg>
                   <pc>.</pc>
@@ -1666,7 +1666,7 @@
                   <w pos="NOUN" lemma="homo">homo</w>
                   <w pos="ADV" lemma="stultus">stultissime</w>
                   <pc>,</pc>
-                  <w pos="VERB" lemma="facio" msd="#sat1d1e7689" function="main">
+                  <w pos="VERB" lemma="facio" msd="#sat1d1e7689" >
                      <seg function="scope" ana="#sat1281702">facere</seg>
                   </w>
                   <w pos="VERB" lemma="debeo" msd="#sat1d1e7697">
@@ -1740,7 +1740,7 @@
                      <w pos="PRON" lemma="nos" msd="#sat1d1e8030">
                         <seg function="participant" type="animate" corresp="#sat1281821">nobis</seg>
                      </w>
-                     <w pos="VERB" lemma="convenio" msd="#sat1d1e8037" function="main">convenire</w>
+                     <w pos="VERB" lemma="convenio" msd="#sat1d1e8037" >convenire</w>
                   </seg>
                   <w pos="ADV" lemma="non">
                      <seg function="negation" corresp="#sat1281755">non</seg>
@@ -2069,11 +2069,11 @@
                         <w pos="NOUN" lemma="splendor" msd="#sat1d1e9654">splendor</w>
                         <w pos="NOUN" lemma="vestis" msd="#sat1d1e9660">vestis</w>
                      </seg>
-                     <w pos="VERB" lemma="possum" msd="#sat1d1e9666" function="main">
+                     <w pos="VERB" lemma="possum" msd="#sat1d1e9666" >
                         <seg function="marker" ana="#sat1281943">posset</seg>
                      </w>
                      <seg function="scope" ana="#sat1281961" part="Y">
-                        <w pos="VERB" lemma="duco" msd="#sat1d1e9674" function="main"
+                        <w pos="VERB" lemma="duco" msd="#sat1d1e9674" 
                         >adducere</w></seg>
                   </seg>
                   <pc>.</pc>
@@ -2316,7 +2316,7 @@
                      <w pos="ADJ" lemma="alienus" msd="#sat1d1e10803">alienam</w>
                      <w pos="NOUN" lemma="res" msd="#sat1d1e10809">rem</w>
                      <w pos="NOUN" lemma="dominus" msd="#sat1d1e10815">domino</w>
-                     <w pos="VERB" lemma="reddo" msd="#sat1d1e10821" function="main">reddere</w>
+                     <w pos="VERB" lemma="reddo" msd="#sat1d1e10821" >reddere</w>
                   </seg>
                   <pc>,</pc>
                   <w pos="ADP" lemma="ad">ad</w>
@@ -2400,7 +2400,7 @@
                      <seg function="participant" type="inanimate" corresp="#sat1282514"
                         >paupertas</seg>
                   </w>
-                  <w pos="VERB" lemma="vinco" msd="#sat1d1e11214" function="main">
+                  <w pos="VERB" lemma="vinco" msd="#sat1d1e11214" >
                      <seg function="scope" ana="#sat1282514">vincere</seg>
                   </w>
                   <w pos="ADJ" lemma="nullus" msd="#sat1d1e11221">
@@ -2654,7 +2654,7 @@
                   <seg function="scope" ana="#sat1282633">
                      <w pos="NOUN" lemma="pallium" msd="#sat1d1e12454">pallium</w>
                      <w pos="NOUN" lemma="lucrum" msd="#sat1d1e12460">lucri</w>
-                     <w pos="VERB" lemma="facio" msd="#sat1d1e12466" function="main">facere</w>
+                     <w pos="VERB" lemma="facio" msd="#sat1d1e12466" >facere</w>
                   </seg>
                   <pc>,</pc>
                   <w pos="VERB" lemma="flagito">flagitabant</w>
@@ -2848,7 +2848,7 @@
                      <w pos="VERB" lemma="cupio" msd="#sat1d1e13426">cupio</w>
                      <pc>,</pc>
                      <w pos="ADV" lemma="statim">statim</w>
-                     <w pos="VERB" lemma="teneo" msd="#sat1d1e13442" function="main">tenere</w>
+                     <w pos="VERB" lemma="teneo" msd="#sat1d1e13442" >tenere</w>
                   </seg>
                   <pc>,</pc>
                   <w pos="CCONJ" lemma="neque">nec</w>
@@ -2972,7 +2972,7 @@
                   <w pos="PRON" lemma="vos" msd="#sat1d1e14046">
                      <seg function="scope" ana="#sat1282888" part="Y">vobis</seg>cum</w>
                   <seg function="scope" ana="#sat1282888" part="Y">
-                     <w pos="VERB" lemma="loquor" msd="#sat1d1e14052" function="main">loqui</w>
+                     <w pos="VERB" lemma="loquor" msd="#sat1d1e14052" >loqui</w>
                   </seg>
                   <w pos="VERB" lemma="licet" msd="#sat1d1e14058">
                      <seg function="marker" ana="#sat1282870">liceat</seg>
@@ -3127,7 +3127,7 @@
                      <seg function="marker" ana="#sat1283137">licuit</seg>
                   </w>
                   <supplied>
-                     <w pos="VERB" lemma="adspicio" function="main">
+                     <w pos="VERB" lemma="adspicio" >
                         <seg function="scope" ana="#sat1283204">adspicere</seg>
                      </w>
                   </supplied>
@@ -3154,7 +3154,7 @@
                      <w pos="NOUN" lemma="deus" msd="#sat1d1e14819">deum</w>
                      <w pos="ADV" lemma="quam">quam</w>
                      <w pos="NOUN" lemma="homo" msd="#sat1d1e14830">hominem</w>
-                     <w pos="VERB" lemma="invenio" msd="#sat1d1e14836" function="main">invenire</w>
+                     <w pos="VERB" lemma="invenio" msd="#sat1d1e14836" >invenire</w>
                   </seg>
                   <pc>.</pc>
                </s>
@@ -3306,7 +3306,7 @@
                   </w>
                   <seg function="scope" next="tot_annorum_secreta_,_quae_vix_mille_homines_noverunt"
                      part="Y" ana="#sat1283538">
-                     <w pos="VERB" lemma="traduco" msd="#sat1d1e15549" function="main">traducere</w>
+                     <w pos="VERB" lemma="traduco" msd="#sat1d1e15549" >traducere</w>
                   </seg>
                   <w pos="VERB" lemma="volo" msd="#sat1d1e15556">
                      <seg function="marker" ana="#sat1283482">velitis</seg>
@@ -3636,7 +3636,7 @@
                   </w>
                   <seg function="scope" ana="#sat1283812" part="Y">
                      <w pos="NOUN" lemma="verbum" msd="#sat1d1e17205">verbum</w>
-                     <w pos="VERB" lemma="emitto" msd="#sat1d1e17211" function="main">emittere</w>
+                     <w pos="VERB" lemma="emitto" msd="#sat1d1e17211" >emittere</w>
                   </seg>
                   <pc>.</pc>
                </s>
@@ -3666,7 +3666,7 @@
                      <seg function="marker" ana="#sat1283888">vellent</seg>
                   </w>
                   <seg function="scope" ana="#sat1283906" part="Y">
-                     <w pos="VERB" lemma="conor" msd="#sat1d1e17321" function="main">conari</w>
+                     <w pos="VERB" lemma="conor" msd="#sat1d1e17321" >conari</w>
                   </seg>
                   <pc>,</pc>
                   <w pos="ADJ" lemma="infirmus">infirmissimae</w>
@@ -3705,7 +3705,7 @@
                   <pc>,</pc>
                   <w pos="SCONJ" lemma="ut">ut</w>
                   <w pos="SCONJ" lemma="si">si</w>
-                  <w pos="VERB" lemma="depugno" msd="#sat1d1e17504" function="main">
+                  <w pos="VERB" lemma="depugno" msd="#sat1d1e17504" >
                      <seg function="scope" ana="#sat1284020">depugna</seg>
                      <seg part="Y" function="marker" ana="#sat1284002">ndum</seg>
                   </w>
@@ -3785,7 +3785,7 @@
                   </w>
                   <seg function="scope" ana="#sat1284190">
                      <w pos="VERB" lemma="tortus" msd="#sat1d1e17870">torti</w>
-                     <w pos="VERB" function="main" lemma="pereo" msd="#sat1d1e947">perire</w>
+                     <w pos="VERB"  lemma="pereo" msd="#sat1d1e947">perire</w>
                   </seg>
                   <anchor type="said" subtype="end"/>
                   <gap/>
@@ -3948,7 +3948,7 @@
                      <seg function="marker" ana="#sat1284317">Volebamus</seg>
                   </w>
                   <w pos="ADJ" lemma="miser">miseri</w>
-                  <w pos="VERB" lemma="exclamo" msd="#sat1d1e18771" function="main">
+                  <w pos="VERB" lemma="exclamo" msd="#sat1d1e18771" >
                      <seg function="scope" ana="#sat1284335">exclamare</seg>
                   </w>
                   <pc>,</pc>
@@ -4227,7 +4227,7 @@
                   <seg corresp="#sat1284539" type="animate" function="participant"><w pos="ADJ"
                         lemma="duo" msd="#sat1d1e255a7">duo</w>
                      <w pos="ADJ" lemma="syrus" msd="#sat1d1e255a7">Syri</w></seg>
-                  <w pos="VERB" lemma="expilor" msd="#sat1d1e20278" function="main">
+                  <w pos="VERB" lemma="expilor" msd="#sat1d1e20278" >
                      <seg function="scope" next="lagoenam" part="Y" ana="#sat1284539"
                         >expila</seg><seg function="marker" ana="#sat1284521">turi</seg>
                   </w>
@@ -4521,7 +4521,7 @@
                   </w>
                   <seg function="scope" ana="#sat1284679">
                      <w pos="NOUN" lemma="embasicoetas" msd="#sat1d1e21718">embasicoetan</w>
-                     <w pos="VERB" lemma="jubeo" msd="#sat1d1e21725" function="main">iusseras</w>
+                     <w pos="VERB" lemma="jubeo" msd="#sat1d1e21725" >iusseras</w>
                      <w pos="VERB" lemma="do" msd="#sat1d1e21730">dari</w>
                   </seg>
                   <pc>.</pc>
@@ -4822,7 +4822,7 @@
                      <seg function="marker" ana="#sat1284717">posset</seg>
                   </w>
                   <seg function="scope" ana="#sat1284735" part="Y">
-                     <w pos="VERB" lemma="accipio" msd="#sat1d1e23160" function="main">accipere</w>
+                     <w pos="VERB" lemma="accipio" msd="#sat1d1e23160" >accipere</w>
                   </seg>
                   <pc>.</pc>
                </s>
@@ -4901,7 +4901,7 @@
                   </w>
                   <seg function="scope" ana="#sat1284839">
                      <w pos="NOUN" lemma="taurus" msd="#sat1d1e23527">taurum</w>
-                     <w pos="VERB" lemma="tollo" msd="#sat1d1e23533" function="main">tollere</w>
+                     <w pos="VERB" lemma="tollo" msd="#sat1d1e23533" >tollere</w>
                   </seg>
                   <pc>,</pc>
                   <seg function="participant" type="animate" corresp="#sat1284839">
@@ -4982,7 +4982,7 @@
                   </w>
                   <seg function="scope" ana="#sat1284962">
                      <w pos="ADV" lemma="non">non</w>
-                     <w pos="VERB" lemma="repugno" msd="#sat1d1e23915" function="main"
+                     <w pos="VERB" lemma="repugno" msd="#sat1d1e23915" 
                         >repugnaverat</w>
                      <seg function="participant" type="animate" corresp="#sat1284962"><w pos="NOUN"
                            lemma="puer" msd="#sat1d1e23920">puer</w></seg>
@@ -5789,7 +5789,7 @@
                   </w>
                   <seg function="scope" ana="#sat1285043">
                      <w pos="NOUN" lemma="multacia" msd="#sat1d1e28041">multaciam</w>
-                     <w pos="VERB" lemma="considero" msd="#sat1d1e28047" function="main"
+                     <w pos="VERB" lemma="considero" msd="#sat1d1e28047" 
                         >considerare</w>
                      <note>Reference edition: multaciam has two crux, one before, one after.
                         Moreover, this sentence is considered as the beginning of section 30.</note>
@@ -5965,7 +5965,7 @@
                   </w>
                   <seg function="scope" ana="#sat1285226">
                      <w pos="ADV" lemma="paulisper">paulisper</w>
-                     <w pos="VERB" lemma="trepido" msd="#sat1d1e28911" function="main"
+                     <w pos="VERB" lemma="trepido" msd="#sat1d1e28911" 
                         >trepidavimus</w>
                      <pc>,</pc>
                      <w pos="SCONJ" lemma="ne">ne</w>
@@ -6214,7 +6214,7 @@
                      <seg function="participant" type="animate" corresp="#sat1285376">Ego</seg>
                   </w>
                   <seg function="scope" next="an_tota_familia_cantaret" part="Y" ana="#sat1285376">
-                     <w pos="VERB" lemma="experior" msd="#sat1d1e30119" function="main">experiri</w>
+                     <w pos="VERB" lemma="experior" msd="#sat1d1e30119" >experiri</w>
                   </seg>
                   <w pos="VERB" lemma="volo" msd="#sat1d1e30126">
                      <seg function="marker" ana="#sat1285358">volui</seg>
@@ -6694,7 +6694,7 @@
                   <w pos="VERB" lemma="debeo" msd="#sat1d1e32491">
                      <seg function="marker" ana="#sat1285571">debet</seg>
                   </w>
-                  <w pos="VERB" lemma="sum" msd="#sat1d1e32498" function="main">
+                  <w pos="VERB" lemma="sum" msd="#sat1d1e32498" >
                      <seg function="scope" ana="#sat1285589">esse</seg> , </w>
                   <anchor type="said" subtype="end"/>
                   <w pos="NOUN" lemma="persum">perse</w>
@@ -6739,7 +6739,7 @@
                   </w>
                   <seg function="scope" ana="#sat1285773">
                      <w pos="NOUN" lemma="mulsum" msd="#sat1d1e32692">mulsum</w>
-                     <w pos="VERB" lemma="sumo" msd="#sat1d1e32698" function="main">sumere</w>
+                     <w pos="VERB" lemma="sumo" msd="#sat1d1e32698" >sumere</w>
                   </seg>
                   <pc>,</pc>
                   <w pos="SCONJ" lemma="cum">cum</w>
@@ -7026,7 +7026,7 @@
                      <seg function="marker" ana="#sat1285972">licet</seg>
                   </w>
                   <seg function="scope" ana="#sat1286031">
-                     <w pos="VERB" lemma="sum" msd="#sat1d1e34074" function="main">esse</w>
+                     <w pos="VERB" lemma="sum" msd="#sat1d1e34074" >esse</w>
                      <w pos="ADV" lemma="bene">bene</w>
                   </seg>
                   <pc>.</pc>
@@ -7419,7 +7419,7 @@
                   <seg function="scope" ana="#sat2448906">
                      <w pos="ADV" lemma="amplus" msd="#sat2d1e1122">amplius</w>
                      <w pos="PRON" lemma="quisquam" msd="#sat2d1e1128">quicquam</w>
-                     <w pos="VERB" lemma="gusto" msd="#sat2d1e1134" function="main">gustare</w>
+                     <w pos="VERB" lemma="gusto" msd="#sat2d1e1134" >gustare</w>
                   </seg>
                   <pc>,</pc>
                   <w pos="CCONJ" lemma="sed">sed</w>
@@ -7490,7 +7490,7 @@
                      <w pos="NOUN" lemma="manus" msd="#sat2d1e1447">manu</w>
                      <w pos="PRON" lemma="ille" msd="#sat2d1e1453">illius</w>
                      <w pos="NOUN" lemma="panis" msd="#sat2d1e1459">panem</w>
-                     <w pos="VERB" lemma="accipio" msd="#sat2d1e1465" function="main">accipere</w>
+                     <w pos="VERB" lemma="accipio" msd="#sat2d1e1465" >accipere</w>
                   </seg>
                   <pc>.</pc>
                </s>
@@ -8144,7 +8144,7 @@
                   </w>
                   <seg function="scope" ana="#sat2449056" part="Y">
                      <w pos="ADJ" lemma="suavis" msd="#sat2d1e4510">suave</w>
-                     <w pos="VERB" lemma="facio" msd="#sat2d1e4516" function="main">faciatis</w>
+                     <w pos="VERB" lemma="facio" msd="#sat2d1e4516" >faciatis</w>
                   </seg>
                   <pc>.</pc>
                </s>
@@ -8154,7 +8154,7 @@
                         <seg function="participant" type="animate" corresp="#sat2449196"
                            >Pisces</seg>
                      </w>
-                     <w pos="VERB" lemma="nato" msd="#sat2d1e4536" function="main">natare</w>
+                     <w pos="VERB" lemma="nato" msd="#sat2d1e4536" >natare</w>
                   </seg>
                   <w pos="VERB" lemma="oportet" msd="#sat2d1e4543">
                      <seg function="marker" ana="#sat2449178">oportet</seg>
@@ -8200,7 +8200,7 @@
                      <w pos="ADP" lemma="inter">inter</w>
                      <w pos="VERB" lemma="ceno" msd="#sat2d1e4713" function="no">cenandum</w>
                      <w pos="NOUN" lemma="philologia" msd="#sat2d1e4719">philologiam</w>
-                     <w pos="VERB" lemma="nosco" msd="#sat2d1e4725" function="main">nosse</w>
+                     <w pos="VERB" lemma="nosco" msd="#sat2d1e4725" >nosse</w>
                   </seg>
                   <pc>.</pc>
                </s>
@@ -8224,7 +8224,7 @@
                      <seg function="marker" ana="#sat2449347">voluit</seg>
                   </w>
                   <seg function="scope" ana="#sat2449383" part="Y">
-                     <w pos="VERB" lemma="sum" msd="#sat2d1e4810" function="main">esse</w>
+                     <w pos="VERB" lemma="sum" msd="#sat2d1e4810" >esse</w>
                   </seg>
                   <pc>.</pc>
                </s>
@@ -8241,7 +8241,7 @@
                      <seg function="marker" ana="#sat2449477">potest</seg>
                   </w>
                   <seg function="scope" ana="#sat2449513" part="Y">
-                     <w pos="VERB" lemma="affero" msd="#sat2d1e4858" function="main">afferri</w>
+                     <w pos="VERB" lemma="affero" msd="#sat2d1e4858" >afferri</w>
                   </seg>
                   <pc>,</pc>
                   <w pos="SCONJ" lemma="sicut">sicut</w>
@@ -8858,7 +8858,7 @@
                      <w pos="PRON" lemma="tuus" msd="#sat2d1e7847">tuus</w>
                   </seg>
                   <seg function="scope" ana="#sat2449839" part="Y">
-                     <w pos="VERB" lemma="indico" msd="#sat2d1e7854" function="main">indicare</w>
+                     <w pos="VERB" lemma="indico" msd="#sat2d1e7854" >indicare</w>
                   </seg>
                   <w pos="VERB" lemma="possum" msd="#sat2d1e7862">
                      <seg function="marker" ana="#sat2449765">potest</seg>
@@ -9170,7 +9170,7 @@
                      <seg function="negation" corresp="#sat2449921">Nec</seg>
                   </w>
                   <w pos="ADV" lemma="sanus">sane</w>
-                  <w pos="VERB" lemma="lavo" msd="#sat2d1e9267" function="main">
+                  <w pos="VERB" lemma="lavo" msd="#sat2d1e9267" >
                      <seg function="scope" ana="#sat2449939">lavare</seg>
                   </w>
                   <w pos="VERB" lemma="possum" msd="#sat2d1e9275">
@@ -9348,7 +9348,7 @@
                            lemma="nemo" msd="#sat2d1e10043">Neminem</w></seg>
                      <w pos="PRON" lemma="nihil" msd="#sat2d1e10050">nihil</w>
                      <w pos="ADJ" lemma="bonus" msd="#sat2d1e10057">boni</w>
-                     <w pos="VERB" lemma="facio" msd="#sat2d1e10063" function="main">facere</w>
+                     <w pos="VERB" lemma="facio" msd="#sat2d1e10063" >facere</w>
                   </seg>
                   <w pos="VERB" lemma="oportet" msd="#sat2d1e10070">
                      <seg function="marker" ana="#sat2450008">oportet</seg>
@@ -9778,7 +9778,7 @@
                      <w pos="ADV" lemma="hodies">hodie</w>
                      <w pos="NOUN" lemma="bucca" msd="#sat2d1e12022">buccam</w>
                      <w pos="NOUN" lemma="panis" msd="#sat2d1e12028">panis</w>
-                     <w pos="VERB" lemma="invenio" msd="#sat2d1e12034" function="main">invenire</w>
+                     <w pos="VERB" lemma="invenio" msd="#sat2d1e12034" >invenire</w>
                   </seg>
                   <w pos="VERB" lemma="possum" msd="#sat2d1e12041">
                      <seg function="marker" ana="#sat2450244">potui</seg>
@@ -9930,7 +9930,7 @@
                   <seg function="scope" ana="#sat2450374" part="Y">
                      <w pos="ADP" lemma="in">in</w>
                      <w pos="NOUN" lemma="tenebrae" msd="#sat2d1e12707">tenebris</w>
-                     <w pos="VERB" lemma="mico" msd="#sat2d1e12712" function="main">micare</w>
+                     <w pos="VERB" lemma="mico" msd="#sat2d1e12712" >micare</w>
                   </seg>
                   <pc>.</pc>
                </s>
@@ -10022,7 +10022,7 @@
                   <seg function="scope" ana="#sat2450504" part="Y">
                      <w pos="ADP" lemma="cum">cum</w>
                      <w pos="ADJ" lemma="alter" msd="#sat2d1e13133">altero</w>
-                     <w pos="VERB" lemma="devoro" msd="#sat2d1e13139" function="main">devorare</w>
+                     <w pos="VERB" lemma="devoro" msd="#sat2d1e13139" >devorare</w>
                   </seg>
                   <pc>.</pc>
                </s>
@@ -10334,7 +10334,7 @@
                   </w>
                   <seg function="scope" ana="#sat2450770">
                      <w pos="ADJ" lemma="bonus" msd="#sat2d1e14517">melior</w>
-                     <w pos="VERB" lemma="dico" msd="#sat2d1e14523" function="main">dici</w>
+                     <w pos="VERB" lemma="dico" msd="#sat2d1e14523" >dici</w>
                   </seg>
                   <w pos="VERB" lemma="possum" msd="#sat2d1e14530">
                      <seg function="marker" ana="#sat2450720">potest</seg>
@@ -10365,7 +10365,7 @@
                   </w>
                   <seg function="scope" ana="#sat2450911">
                      <w pos="ADJ" lemma="delicatus" msd="#sat2d1e14631">delicati</w>
-                     <w pos="VERB" lemma="sum" msd="#sat2d1e14637" function="main">esse</w>
+                     <w pos="VERB" lemma="sum" msd="#sat2d1e14637" >esse</w>
                   </seg>
                   <pc>,</pc>
                   <w pos="ADV" lemma="ubique">ubique</w>
@@ -10620,7 +10620,7 @@
                   </w>
                   <seg function="scope" ana="#sat2451158" part="Y">
                      <w pos="NOUN" lemma="unguis" msd="#sat2d1e15779">ungues</w>
-                     <w pos="VERB" lemma="reseco" msd="#sat2d1e15785" function="main">resecare</w>
+                     <w pos="VERB" lemma="reseco" msd="#sat2d1e15785" >resecare</w>
                   </seg>
                   <pc>;</pc>
                </s>
@@ -10701,7 +10701,7 @@
                <s n="274">
                   <seg function="scope" next="plenis_velis_hunc_vinciturum" part="Y"
                      ana="#sat2451386">
-                     <w pos="VERB" lemma="scio" msd="#sat2d1e16113" function="main">Scias</w>
+                     <w pos="VERB" lemma="scio" msd="#sat2d1e16113" >Scias</w>
                   </seg>
                   <w pos="VERB" lemma="oportet" msd="#sat2d1e16121">
                      <seg function="marker" ana="#sat2451368">oportet</seg>
@@ -10876,7 +10876,7 @@
                   <w pos="VERB" lemma="possum" msd="#sat2d1e16892">
                      <seg function="marker" ana="#sat2451498">potes</seg>
                   </w>
-                  <w pos="VERB" lemma="loquor" msd="#sat2d1e16900" function="main">
+                  <w pos="VERB" lemma="loquor" msd="#sat2d1e16900" >
                      <seg function="scope" ana="#sat2451516">loquere</seg>
                   </w>
                   <pc>,</pc>
@@ -11080,7 +11080,7 @@
                   <w pos="VERB" lemma="volo" msd="#sat2d1e17849">
                      <seg function="marker" ana="#sat2451608">vult</seg>
                   </w>
-                  <w pos="VERB" lemma="laboro" msd="#sat2d1e17857" function="main">
+                  <w pos="VERB" lemma="laboro" msd="#sat2d1e17857" >
                      <seg function="scope" ana="#sat2451664">laborare</seg>
                   </w>
                   <pc>.</pc>
@@ -11141,7 +11141,7 @@
                      <w pos="PRON" lemma="aliquis" msd="#sat2d1e18118">aliquid</w>
                      <w pos="ADP" lemma="de">de</w>
                      <w pos="NOUN" lemma="jus" msd="#sat2d1e18129">iure</w>
-                     <w pos="VERB" lemma="gusto" msd="#sat2d1e18135" function="main">gustare</w>
+                     <w pos="VERB" lemma="gusto" msd="#sat2d1e18135" >gustare</w>
                   </seg>
                   <pc>.</pc>
                </s>
@@ -11183,7 +11183,7 @@
                   <w pos="SCONJ" lemma="quod">quod</w>
                   <seg function="scope" ana="#sat2451915">
                      <w pos="PRON" lemma="ille" msd="#sat2d1e18314">illi</w>
-                     <w pos="VERB" lemma="aufero" msd="#sat2d1e18320" function="main">auferre</w>
+                     <w pos="VERB" lemma="aufero" msd="#sat2d1e18320" >auferre</w>
                   </seg>
                   <w pos="ADV" lemma="non">
                      <seg function="negation" corresp="#sat2451850">non</seg>
@@ -11361,7 +11361,7 @@
                      <w pos="PRON" lemma="suus" msd="#sat2d1e19069">sua</w>
                      <w pos="NOUN" lemma="res" msd="#sat2d1e19075">re</w>
                      <w pos="NOUN" lemma="causa" msd="#sat2d1e19081">causa</w>
-                     <w pos="VERB" lemma="facio" msd="#sat2d1e19087" function="main">facere</w>
+                     <w pos="VERB" lemma="facio" msd="#sat2d1e19087" >facere</w>
                   </seg>
                   <pc>,</pc>
                   <w pos="ADV" lemma="non">non</w>
@@ -11395,7 +11395,7 @@
                   <seg function="scope" ana="#sat2452120">
                      <w pos="PRON" lemma="hic" msd="#sat2d1e19229">Hoc</w>
                      <w pos="ADV" lemma="solum">solum</w>
-                     <w pos="VERB" lemma="veto" msd="#sat2d1e19242" function="main">vetare</w>
+                     <w pos="VERB" lemma="veto" msd="#sat2d1e19242" >vetare</w>
                   </seg>
                   <w pos="ADV" lemma="ne">
                      <seg function="negation" corresp="#sat2452102">ne</seg>
@@ -11492,7 +11492,7 @@
                   <seg function="scope" ana="#sat2452243">
                      <w pos="PRON" lemma="sui" msd="#sat2d1e19657">sibi</w>
                      <w pos="ADJ" lemma="verus" msd="#sat2d1e19663">verum</w>
-                     <w pos="VERB" lemma="dico" msd="#sat2d1e19669" function="main">dicere</w>
+                     <w pos="VERB" lemma="dico" msd="#sat2d1e19669" >dicere</w>
                   </seg>
                   <pc>.</pc>
                   <anchor type="said" subtype="end"/>
@@ -11604,7 +11604,7 @@
                      <w pos="ADP" lemma="in">in</w>
                      <w pos="NOUN" lemma="cenam" msd="#sat2d1e20198">cenam</w>
                      <w pos="ADV" lemma="statim">statim</w>
-                     <w pos="VERB" lemma="fio" msd="#sat2d1e20209" function="main">fieri</w>
+                     <w pos="VERB" lemma="fio" msd="#sat2d1e20209" >fieri</w>
                   </seg>
                   <pc>?</pc>
                </s>
@@ -11767,7 +11767,7 @@
                   </w>
                   <seg function="scope" ana="#sat2452537" part="Y">
                      <w pos="ADJ" lemma="bonus" msd="#sat2d1e20926">bonum</w>
-                     <w pos="VERB" lemma="facio" msd="#sat2d1e20932" function="main">faciatis</w>
+                     <w pos="VERB" lemma="facio" msd="#sat2d1e20932" >faciatis</w>
                   </seg>
                   <pc>.</pc>
                </s>
@@ -11808,7 +11808,7 @@
                <s n="351">
                   <w pos="ADV" lemma="nunc">Nunc</w>
                   <seg function="scope" ana="#sat2452631">
-                     <w pos="VERB" lemma="conjungo" msd="#sat2d1e21120" function="main"
+                     <w pos="VERB" lemma="conjungo" msd="#sat2d1e21120" 
                         >coniungere</w>
                      <w pos="NOUN" lemma="agellus" msd="#sat2d1e21126">agellis</w>
                      <w pos="NOUN" lemma="Sicilia" msd="#sat2d1e21132">Siciliam</w>
@@ -12073,7 +12073,7 @@
                   <seg function="scope" ana="#sat2452697">
                      <w pos="ADV" lemma="tam">tam</w>
                      <w pos="ADV" lemma="cito">cito</w>
-                     <w pos="VERB" lemma="percoquo" msd="#sat2d1e22341" function="main">percoqui</w>
+                     <w pos="VERB" lemma="percoquo" msd="#sat2d1e22341" >percoqui</w>
                   </seg>
                   <w pos="VERB" lemma="possum" msd="#sat2d1e22347">
                      <seg function="marker" ana="#sat2452679">potuisse</seg>
@@ -12243,7 +12243,7 @@
                   </w>
                   <seg function="scope" ana="#sat2452844">
                      <w pos="PRON" lemma="ego" msd="#sat2d1e23061">me</w>
-                     <w pos="VERB" lemma="teneo" msd="#sat2d1e23067" function="main">tenere</w>
+                     <w pos="VERB" lemma="teneo" msd="#sat2d1e23067" >tenere</w>
                   </seg>
                   <pc>,</pc>
                   <w pos="CCONJ" lemma="sed">sed</w>
@@ -12264,7 +12264,7 @@
                   </w>
                   <seg function="scope" ana="#sat2452973">
                      <w pos="NOUN" lemma="servus" msd="#sat2d1e23134">servus</w>
-                     <w pos="VERB" lemma="sum" msd="#sat2d1e23140" function="main">esse</w>
+                     <w pos="VERB" lemma="sum" msd="#sat2d1e23140" >esse</w>
                      <w pos="ADJ" lemma="nequam" msd="#sat2d1e23146">nequissimus</w>
                   </seg>
                   <pc>;</pc>
@@ -12434,7 +12434,7 @@
                   <w pos="VERB" lemma="inquam">inquit</w>
                   <anchor type="said" subtype="start"/>
                   <seg ana="#sat2453068" function="scope"><w pos="VERB" lemma="quaero"
-                        function="main" msd="#sat2001a">quaeris</w>
+                         msd="#sat2001a">quaeris</w>
                      <pc>,</pc>
                      <w pos="ADV" lemma="quare">quare</w>
                      <w pos="ADJ" lemma="solus" msd="#sat2001b">solus</w>
@@ -12584,7 +12584,7 @@
                      <w pos="ADV" lemma="non">
                         <seg function="negation" corresp="#sat2453126">non</seg>
                      </w>
-                     <w pos="VERB" lemma="olo" msd="#sat2d1e24615" function="main">olunt</w>
+                     <w pos="VERB" lemma="olo" msd="#sat2d1e24615" >olunt</w>
                   </seg>
                   <pc>.</pc>
                </s>
@@ -13164,7 +13164,7 @@
                   <pc>,</pc>
                   <w pos="SCONJ" lemma="quod">quod</w>
                   <seg function="scope" next="sestertium_centies" part="Y" ana="#sat2453501">
-                     <w pos="VERB" lemma="colloco" msd="#sat2d1e27244" function="main">collocari</w>
+                     <w pos="VERB" lemma="colloco" msd="#sat2d1e27244" >collocari</w>
                   </seg>
                   <w pos="ADV" lemma="non">
                      <seg function="negation" corresp="#sat2453452">non</seg>
@@ -13399,7 +13399,7 @@
                         <seg function="participant" type="animate" corresp="#sat2453604">illos</seg>
                      </w>
                      <w pos="NOUN" lemma="Atellania" msd="#sat2d1e28302">Atellaniam</w>
-                     <w pos="VERB" lemma="facio" msd="#sat2d1e28308" function="main">facere</w>
+                     <w pos="VERB" lemma="facio" msd="#sat2d1e28308" >facere</w>
                   </seg>
                   <pc>,</pc>
                   <w pos="CCONJ" lemma="et">et</w>
@@ -13467,7 +13467,7 @@
                   <seg function="scope" ana="#sat2453725">
                      <w pos="ADJ" lemma="alienus" msd="#sat2d1e28612">alienum</w>
                      <w pos="NOUN" lemma="morior" msd="#sat2d1e28618">mortuum</w>
-                     <w pos="VERB" lemma="ploro" msd="#sat2d1e28624" function="main">plorare</w>
+                     <w pos="VERB" lemma="ploro" msd="#sat2d1e28624" >plorare</w>
                   </seg>
                   <pc>.</pc>
                </s>
@@ -13617,7 +13617,7 @@
                      <seg function="marker" ana="#sat2453763">posset</seg>
                   </w>
                   <seg function="scope" ana="#sat2453781">
-                     <w pos="VERB" lemma="dico" msd="#sat2d1e29362" function="main">dicere</w>
+                     <w pos="VERB" lemma="dico" msd="#sat2d1e29362" >dicere</w>
                      <pc>,</pc>
                      <w pos="ADJ" lemma="tantus" msd="#sat2d1e29373">tantum</w>
                      <w pos="NOUN" lemma="vir" msd="#sat2d1e29379">virum</w>
@@ -13771,7 +13771,7 @@
                   <seg function="scope" ana="#sat2454043">
                      <w pos="PRON" lemma="hic" msd="#sat2d1e30050">his</w>
                      <w pos="ADV" lemma="bonus" msd="#sat2d1e30056">melius</w>
-                     <w pos="VERB" lemma="dico" msd="#sat2d1e30062" function="main">dici</w>
+                     <w pos="VERB" lemma="dico" msd="#sat2d1e30062" >dici</w>
                   </seg>
                   <w pos="VERB" lemma="possum" msd="#sat2d1e30069">
                      <seg function="marker" ana="#sat2454025">potest</seg>
@@ -13891,7 +13891,7 @@
                      <w pos="VERB" lemma="sum" msd="#sat2d1e30630">est</w>
                   </seg>
                   <seg function="scope" ana="#sat2454132">
-                     <w pos="VERB" lemma="induo" msd="#sat2d1e30638" function="main">induere</w>
+                     <w pos="VERB" lemma="induo" msd="#sat2d1e30638" >induere</w>
                      <w pos="NOUN" lemma="nupta" msd="#sat2d1e30644">
                         <seg function="participant" type="animate" corresp="#sat2454150 #sat2454132"
                            >nuptam</seg>
@@ -13902,7 +13902,7 @@
                   <pc>,</pc>
                   <seg function="scope" ana="#sat2454150">
                      <w pos="ADV" lemma="palam">palam</w>
-                     <w pos="VERB" lemma="prosto" msd="#sat2d1e30675" function="main">prostare</w>
+                     <w pos="VERB" lemma="prosto" msd="#sat2d1e30675" >prostare</w>
                      <w pos="ADJ" lemma="nudus" msd="#sat2d1e30681">nudam</w>
                      <w pos="ADP" lemma="in">in</w>
                      <w pos="NOUN" lemma="nebula" msd="#sat2d1e30692">nebula</w>
@@ -14426,7 +14426,7 @@
                   <seg function="scope" ana="#sat2454313">
                      <w pos="NOUN" lemma="civis" msd="#sat2d1e32992">civis</w>
                      <w pos="ADJ" lemma="Romanus" msd="#sat2d1e32998">Romanus</w>
-                     <w pos="VERB" lemma="sum" msd="#sat2d1e33004" function="main">esse</w>
+                     <w pos="VERB" lemma="sum" msd="#sat2d1e33004" >esse</w>
                      <w pos="ADV" lemma="quam">quam</w>
                      <w pos="ADJ" lemma="tributarius" msd="#sat2d1e33015">tributarius</w>
                   </seg>
@@ -15588,7 +15588,7 @@
                   </w>
                   <seg function="scope" next="tam_elegantes_strophas" part="Y" ana="#sat2454562">
                      <w pos="ADV" lemma="diu">diu</w>
-                     <w pos="VERB" lemma="miror" msd="#sat2d1e38461" function="main">mirari</w>
+                     <w pos="VERB" lemma="miror" msd="#sat2d1e38461" >mirari</w>
                   </seg>
                   <w pos="VERB" lemma="licet" msd="#sat2d1e38468">
                      <seg function="marker" ana="#sat2454526">licuit</seg>
@@ -16442,7 +16442,7 @@
                   <w pos="VERB" lemma="audio">audivi</w>
                   <pc>,</pc>
                   <seg function="scope" ana="#sat2454768">
-                     <w pos="VERB" lemma="operio" msd="#sat2d1e42602" function="main">operire</w>
+                     <w pos="VERB" lemma="operio" msd="#sat2d1e42602" >operire</w>
                      <w pos="NOUN" lemma="oculus" msd="#sat2d1e42608">oculos</w>
                      <w pos="ADV" lemma="amplus" msd="#sat2d1e42614">amplius</w>
                   </seg>
@@ -16700,7 +16700,7 @@
                   <seg function="scope" ana="#sat2454994">
                      <w pos="NOUN" lemma="bos" msd="#sat2d1e43763">bovem</w>
                      <w pos="VERB" lemma="irascor" msd="#sat2d1e43769">iratum</w>
-                     <w pos="VERB" lemma="tollo" msd="#sat2d1e43775" function="main">tollere</w>
+                     <w pos="VERB" lemma="tollo" msd="#sat2d1e43775" >tollere</w>
                   </seg>
                   <pc>.</pc>
                </s>
@@ -16828,7 +16828,7 @@
                      <seg function="marker" ana="#sat2455032">oportet</seg>
                   </w>
                   <seg function="scope" ana="#sat2455050">
-                     <w pos="VERB" lemma="credo" msd="#sat2d1e44401" function="main">credatis</w>
+                     <w pos="VERB" lemma="credo" msd="#sat2d1e44401" >credatis</w>
                      <pc>,</pc>
                      <w pos="VERB" lemma="sum" msd="#sat2d1e44412">sunt</w>
                      <w pos="NOUN" lemma="mulier" msd="#sat2d1e44418">mulieres</w>
@@ -17279,7 +17279,7 @@
                   <w pos="VERB" lemma="nolo" msd="#sat2d1e46609"><seg function="marker"
                         ana="#sat2455088">nolueri</seg>
                   </w>
-                  <w pos="VERB" lemma="accipio" msd="#sat2d1e46617" function="main">
+                  <w pos="VERB" lemma="accipio" msd="#sat2d1e46617" >
                      <seg function="scope" ana="#sat2455106">accipere</seg>
                   </w>
                   <pc>,</pc>
@@ -17791,7 +17791,7 @@
                   </w>
                   <seg function="scope" ana="#sat2455351">
                      <w pos="NOUN" lemma="ursus" msd="#sat2d1e49034">ursum</w>
-                     <w pos="VERB" lemma="comedo" msd="#sat2d1e49040" function="main">comesse</w>
+                     <w pos="VERB" lemma="comedo" msd="#sat2d1e49040" >comesse</w>
                   </seg>
                   <pc>?</pc>
                </s>
@@ -18065,7 +18065,7 @@
                      <seg function="marker" ana="#sat2455547">debet</seg>
                   </w>
                   <seg function="scope" ana="#sat2455565" part="Y">
-                     <w pos="VERB" lemma="habeo" msd="#sat2d1e50303" function="main">habere</w>
+                     <w pos="VERB" lemma="habeo" msd="#sat2d1e50303" >habere</w>
                   </seg>
                   <pc>.</pc>
                </s>
@@ -18325,7 +18325,7 @@
                   <seg function="scope" ana="#sat2455695"><w pos="NOUN" lemma="hic"
                         msd="#sat2sd1e1128m">hoc</w>
                      <w pos="NOUN" lemma="fericulum" msd="#sat2sd1e1128m">fericulo</w>
-                     <w pos="VERB" lemma="sum" function="main" msd="#sat2d1e1134">esse</w>
+                     <w pos="VERB" lemma="sum"  msd="#sat2d1e1134">esse</w>
                      <w pos="VERB" lemma="contineo" msd="#sat2d1e4802">contentus</w></seg>
                   <pc>;</pc>
                </s>
@@ -18484,7 +18484,7 @@
                   <w pos="CCONJ" lemma="sive">sive</w>
                   <seg function="scope" ana="#sat2455802" part="Y">
                      <w pos="NOUN" lemma="circulator" msd="#sat2d1e52248">circulatores</w>
-                     <w pos="VERB" lemma="imitor" msd="#sat2d1e52254" function="main">imitari</w>
+                     <w pos="VERB" lemma="imitor" msd="#sat2d1e52254" >imitari</w>
                   </seg>
                   <pc>.</pc>
                </s>
@@ -18824,7 +18824,7 @@
                   <w pos="CCONJ" lemma="vel">vel</w>
                   <seg function="scope" ana="#sat2455968">
                      <w pos="NOUN" lemma="fames" msd="#sat2d1e53833">fame</w>
-                     <w pos="VERB" lemma="pereo" msd="#sat2d1e53839" function="main">perire</w>
+                     <w pos="VERB" lemma="pereo" msd="#sat2d1e53839" >perire</w>
                   </seg>
                   <w pos="VERB" lemma="malo" msd="#sat2d1e53846">
                      <seg function="marker" ana="#sat2455858">mallemus</seg>
@@ -18902,7 +18902,7 @@
                   <w pos="ADP" lemma="de">de</w>
                   <w pos="NOUN" lemma="fimus">fimo</w>
                   <seg function="scope" next="de_luto" part="Y" ana="#sat2456093">
-                     <w pos="VERB" lemma="facio" msd="#sat2d1e54175" function="main">facta</w>
+                     <w pos="VERB" lemma="facio" msd="#sat2d1e54175" >facta</w>
                      <w pos="VERB" lemma="sum" msd="#sat2d1e54181">sunt</w>
                   </seg>
                   <w pos="CCONJ" lemma="aut">aut</w>
@@ -18967,7 +18967,7 @@
                      <seg function="marker" ana="#sat2456190">potest</seg>
                   </w>
                   <seg function="scope" ana="#sat2456246">
-                     <w pos="VERB" lemma="sum" msd="#sat2d1e54424" function="main">esse</w>
+                     <w pos="VERB" lemma="sum" msd="#sat2d1e54424" >esse</w>
                      <w pos="ADJ" lemma="pretiosus" msd="#sat2d1e54430">pretiosior</w>
                      <w pos="NOUN" lemma="homo" msd="#sat2d1e54436">
                         <seg function="participant" type="animate" corresp="#sat2456338">homo</seg>
@@ -19004,7 +19004,7 @@
                   <pc>,</pc>
                   <w pos="ADP" lemma="de">de</w>
                   <w pos="NOUN" lemma="vulva" msd="#sat2d1e54468">vulva</w>
-                  <w pos="VERB" lemma="facio" msd="#sat2d1e54474" function="main">faciet</w>
+                  <w pos="VERB" lemma="facio" msd="#sat2d1e54474" >faciet</w>
                   <w pos="NOUN" lemma="piscem" msd="#sat2d1e54480">piscem</w>
                   <pc>,</pc>
                   <w pos="ADP" lemma="de">de</w>
@@ -19079,7 +19079,7 @@
                      <w pos="NOUN" lemma="mucro" msd="#sat2d1e54810">mucronem</w>
                      <w pos="ADP" lemma="ad">ad</w>
                      <w pos="NOUN" lemma="bucca" msd="#sat2d1e54821">buccam</w>
-                     <w pos="VERB" lemma="probo" msd="#sat2d1e54827" function="main">probaremus</w>
+                     <w pos="VERB" lemma="probo" msd="#sat2d1e54827" >probaremus</w>
                   </seg>
                   <pc>.</pc>
                </s>
@@ -19108,7 +19108,7 @@
                      <w pos="NOUN" lemma="collum" msd="#sat2d1e54922">collo</w>
                      <w pos="ADV" lemma="adhuc">adhuc</w>
                      <w pos="NOUN" lemma="amphora" msd="#sat2d1e54933">amphoras</w>
-                     <w pos="VERB" lemma="habeo" msd="#sat2d1e54940" function="main">habebant</w>
+                     <w pos="VERB" lemma="habeo" msd="#sat2d1e54940" >habebant</w>
                   </seg>
                   <pc>.</pc>
                </s>
@@ -19233,7 +19233,7 @@
                   <w pos="VERB" lemma="volo" msd="#sat2d1e55534">
                      <seg function="marker" ana="#sat2456634">velle</seg>
                   </w>
-                  <w pos="VERB" lemma="salto" msd="#sat2d1e55541" function="main">
+                  <w pos="VERB" lemma="salto" msd="#sat2d1e55541" >
                      <seg function="scope" ana="#sat2456652">saltare</seg>
                   </w>
                   <pc>,</pc>
@@ -19296,7 +19296,7 @@
                   </w>
                   <seg function="scope" ana="#sat2456767">
                      <w pos="PRON" lemma="ego" msd="#sat2d1e55821">ego</w>
-                     <w pos="VERB" lemma="nosco" msd="#sat2d1e55828" function="main">notavi</w>
+                     <w pos="VERB" lemma="nosco" msd="#sat2d1e55828" >notavi</w>
                      <w pos="ADP" lemma="super">super</w>
                      <w pos="PRON" lemma="ego" msd="#sat2d1e55838">me</w>
                      <w pos="VERB" lemma="pono" msd="#sat2d1e55844">positum</w>
@@ -19568,7 +19568,7 @@
                      <seg function="marker" ana="#sat3442738">volo</seg>
                   </w>
                   <seg function="scope" ana="#sat3442756" part="Y">
-                     <w pos="VERB" lemma="sum" msd="#sat3d1e1060" function="main">sint</w>
+                     <w pos="VERB" lemma="sum" msd="#sat3d1e1060" >sint</w>
                      <w pos="ADP" lemma="circa">circa</w>
                      <w pos="NOUN" lemma="cinis" msd="#sat3d1e1071">cineres</w>
                      <w pos="ADJ" lemma="meus" msd="#sat3d1e1077">meos</w>
@@ -19615,7 +19615,7 @@
                   <w pos="ADV" lemma="ideo">ideo</w>
                   <w pos="ADP" lemma="ante">ante</w>
                   <w pos="ADJ" lemma="omnis">omnia</w>
-                  <w pos="VERB" lemma="adicio" msd="#sat3d1e1244" function="main">
+                  <w pos="VERB" lemma="adicio" msd="#sat3d1e1244" >
                      <seg function="scope" ana="#sat3442923">adici</seg>
                   </w>
                   <w pos="VERB" lemma="volo" msd="#sat3d1e1252">
@@ -19783,7 +19783,7 @@
                   </seg>
                   <seg function="scope" next=",_et_super_eam_puerum_plorantem" part="Y"
                      ana="#sat3452543">
-                     <w pos="VERB" lemma="sculpo" msd="#sat3d1e2023" function="main">sculpas</w>
+                     <w pos="VERB" lemma="sculpo" msd="#sat3d1e2023" >sculpas</w>
                   </seg>
                   <seg function="scope" part="Y" ana="#sat3452543">
                      <pc>,</pc>
@@ -19816,7 +19816,7 @@
                   <supplied>
                      <seg function="scope" ana="#sat3443230"><w pos="NOUN" lemma="nomen">nomen</w>
                         <w pos="ADJ" lemma="meus">meum</w>
-                        <w pos="VERB" lemma="lego" msd="#sat3d1e2156" function="main">
+                        <w pos="VERB" lemma="lego" msd="#sat3d1e2156" >
                         legere</w></seg></supplied>
                   <pc>,</pc>
                   <w pos="NOUN" lemma="nomen">nomen</w>
@@ -19867,7 +19867,7 @@
                      <w pos="ADJ" lemma="omnis" msd="#sat3d1e2335">omnibus</w>
                      <w pos="NOUN" lemma="decurium" msd="#sat3d1e2341">decuriis</w>
                      <w pos="NOUN" lemma="Roma" msd="#sat3d1e2347">Romae</w>
-                     <w pos="VERB" lemma="sum" msd="#sat3d1e2353" function="main">esse</w>
+                     <w pos="VERB" lemma="sum" msd="#sat3d1e2353" >esse</w>
                   </seg>
                   <pc>,</pc>
                   <w pos="ADV" lemma="tamen">tamen</w>
@@ -20221,7 +20221,7 @@
                      <w pos="PRON" lemma="tu" msd="#sat3d1e3940">
                         <seg function="participant" type="animate" corresp="#sat3443559">te</seg>
                      </w>
-                     <w pos="VERB" lemma="exeo" msd="#sat3d1e3947" function="main">exire</w>
+                     <w pos="VERB" lemma="exeo" msd="#sat3d1e3947" >exire</w>
                      <w pos="ADV" lemma="hac">hac</w>
                   </seg>
                   <w pos="VERB" lemma="possum" msd="#sat3d1e3958">
@@ -20333,7 +20333,7 @@
                      <seg function="marker" ana="#sat3443637">licuit</seg>
                   </w>
                   <seg function="scope" ana="#sat3443655" part="Y">
-                     <w pos="VERB" lemma="effugio" msd="#sat3d1e4443" function="main">effugere</w>
+                     <w pos="VERB" lemma="effugio" msd="#sat3d1e4443" >effugere</w>
                   </seg>
                   <pc>;</pc>
                </s>
@@ -20581,7 +20581,7 @@
                      <seg function="marker" ana="#sat3443726">oportet</seg>
                   </w>
                   <seg function="scope" ana="#sat3443744" part="Y">
-                     <w pos="VERB" lemma="fio" msd="#sat3d1e5654" function="main">fiat</w>
+                     <w pos="VERB" lemma="fio" msd="#sat3d1e5654" >fiat</w>
                   </seg>
                   <pc>,</pc>
                   <w pos="CCONJ" lemma="aut">aut</w>
@@ -20938,7 +20938,7 @@
                   <seg function="scope" ana="#sat3443877">
                      <w pos="NOUN" lemma="sestertium" msd="#sat3d1e7344">sestertium</w>
                      <w pos="ADV" lemma="centies">centies</w>
-                     <w pos="VERB" lemma="accipio" msd="#sat3d1e7355" function="main">accipere</w>
+                     <w pos="VERB" lemma="accipio" msd="#sat3d1e7355" >accipere</w>
                   </seg>
                   <w pos="VERB" lemma="possum" msd="#sat3d1e7362">
                      <seg function="marker" ana="#sat3443823">potui</seg>
@@ -20987,7 +20987,7 @@
                      <seg function="marker" ana="#sat3443930">nolo</seg>
                   </w>
                   <seg function="scope" ana="#sat3444020">
-                     <w pos="VERB" lemma="video" msd="#sat3d1e7557" function="main">videri</w>
+                     <w pos="VERB" lemma="video" msd="#sat3d1e7557" >videri</w>
                      <w pos="ADJ" lemma="levis" msd="#sat3d1e7563">levis</w>
                   </seg>
                   <pc>,</pc>
@@ -21037,7 +21037,7 @@
                      <w pos="ADP" lemma="in">in</w>
                      <w pos="NOUN" lemma="monumentum" msd="#sat3d1e7757">monumento</w>
                      <w pos="ADJ" lemma="meus" msd="#sat3d1e7763">meo</w>
-                     <w pos="VERB" lemma="pono" msd="#sat3d1e7769" function="main">ponas</w>
+                     <w pos="VERB" lemma="pono" msd="#sat3d1e7769" >ponas</w>
                   </seg>
                   <pc>,</pc>
                   <w pos="ADV" lemma="ne">ne</w>
@@ -21060,7 +21060,7 @@
                   </w>
                   <seg function="scope" ana="#sat3444132">
                      <w pos="NOUN" lemma="malum" msd="#sat3d1e7852">malum</w>
-                     <w pos="VERB" lemma="do" msd="#sat3d1e7858" function="main">dare</w>
+                     <w pos="VERB" lemma="do" msd="#sat3d1e7858" >dare</w>
                   </seg>
                   <pc>,</pc>
                   <w pos="VERB" lemma="nolo" msd="#sat3d1e7870">
@@ -21070,7 +21070,7 @@
                   <seg function="scope" ana="#sat3444114">
                      <w pos="PRON" lemma="ego" msd="#sat3d1e7883">me</w>
                      <w pos="VERB" lemma="morior" msd="#sat3d1e7889">mortuum</w>
-                     <w pos="VERB" lemma="basio" msd="#sat3d1e7895" function="main">basiet</w>
+                     <w pos="VERB" lemma="basio" msd="#sat3d1e7895" >basiet</w>
                   </seg>
                   <pc>.</pc>
                </s>
@@ -21746,7 +21746,7 @@
                      </w>
                      <w pos="NOUN" lemma="negotium" msd="#sat3d1e10998">negotium</w>
                      <w pos="ADJ" lemma="meus" msd="#sat3d1e11004">meum</w>
-                     <w pos="VERB" lemma="ago" msd="#sat3d1e11010" function="main">agere</w>
+                     <w pos="VERB" lemma="ago" msd="#sat3d1e11010" >agere</w>
                   </seg>
                   <w pos="VERB" lemma="exhorto">exhortavit</w>
                   <w pos="ADJ" lemma="mathematicus">mathematicus</w>
@@ -22076,7 +22076,7 @@
                         <seg function="participant" type="animate_patient" corresp="#sat3444447"
                            >me</seg>
                      </w>
-                     <w pos="VERB" lemma="effero" msd="#sat3d1e12489" function="main">efferri</w>
+                     <w pos="VERB" lemma="effero" msd="#sat3d1e12489" >efferri</w>
                   </seg>
                   <pc>.</pc>
                </s>
@@ -22166,7 +22166,7 @@
                   <w pos="VERB" lemma="volo" msd="#sat3d1e12893">
                      <seg function="marker" ana="#sat3444523">volo</seg>
                   </w>
-                  <w pos="VERB" lemma="effero" msd="#sat3d1e12899" function="main">
+                  <w pos="VERB" lemma="effero" msd="#sat3d1e12899" >
                      <seg function="scope" ana="#sat3444541">efferri</seg>
                   </w>
                   <pc>,</pc>
@@ -22490,7 +22490,7 @@
                      <seg function="marker" ana="#sat3444826">forsitan</seg>
                   </w>
                   <seg function="scope" ana="#sat3444844">
-                     <w pos="VERB" lemma="pernocto" msd="#sat3d1e14429" function="main"
+                     <w pos="VERB" lemma="pernocto" msd="#sat3d1e14429" 
                         >pernoctassemus</w>
                      <w pos="ADP" lemma="in">in</w>
                      <w pos="NOUN" lemma="limen" msd="#sat3d1e14439">limine</w>
@@ -22856,7 +22856,7 @@
                   <w pos="PRON" lemma="ego" msd="#sat3d1e16165">
                      <seg function="participant" type="animate" corresp="#sat3445012">Ego</seg>
                   </w>
-                  <w pos="VERB" lemma="morior" msd="#sat3d1e16172" function="main">
+                  <w pos="VERB" lemma="morior" msd="#sat3d1e16172" >
                      <seg function="scope" ana="#sat3445012">mori</seg>
                   </w>
                   <w pos="VERB" lemma="debeo" msd="#sat3d1e16180">
@@ -23089,7 +23089,7 @@
                <s n="247">
                   <w pos="ADV" lemma="Mox">Mox</w>
                   <w pos="SCONJ" lemma="ubi">ubi</w>
-                  <w pos="VERB" lemma="rideo" msd="#sat3d1e17260" function="main">
+                  <w pos="VERB" lemma="rideo" msd="#sat3d1e17260" >
                      <seg function="scope" ana="#sat3445246">ride</seg>
                      <seg function="marker" ana="#sat3445228">ndas</seg>
                   </w>
@@ -23195,7 +23195,7 @@
                      <seg function="marker" ana="#sat3445311">potuit</seg>
                   </w>
                   <seg function="scope" ana="#sat3445342" part="Y">
-                     <w pos="VERB" lemma="haurio" msd="#sat3d1e17728" function="main">haurire</w>
+                     <w pos="VERB" lemma="haurio" msd="#sat3d1e17728" >haurire</w>
                   </seg>
                   <pc>?</pc>
                </s>
@@ -23355,7 +23355,7 @@
                   <w pos="NOUN" lemma="libido">libidinibus</w>
                   <w pos="VERB" lemma="attrio">attriti</w>
                   <seg function="scope" ana="#sat3445446">
-                     <w pos="VERB" lemma="derideo" msd="#sat3d1e18545" function="main">derident</w>
+                     <w pos="VERB" lemma="derideo" msd="#sat3d1e18545" >derident</w>
                      <w pos="NOUN" lemma="solitudo" msd="#sat3d1e18551">solitudinem</w>
                      <w pos="PRON" lemma="meus" msd="#sat3d1e18557">meam</w>
                   </seg>
@@ -23585,7 +23585,7 @@
                   </w>
                   <seg function="scope" ana="#sat3445520">
                      <w pos="NOUN" lemma="consilium" msd="#sat3d1e19711">consilio</w>
-                     <w pos="VERB" lemma="credo" msd="#sat3d1e19717" function="main">credere</w>
+                     <w pos="VERB" lemma="credo" msd="#sat3d1e19717" >credere</w>
                   </seg>
                   <pc>,</pc>
                   <w pos="SCONJ" lemma="quia">quia</w>
@@ -23739,7 +23739,7 @@
                   <w pos="VERB" lemma="diligo">diligeret</w>
                   <pc>,</pc>
                   <w pos="CCONJ" lemma="sed">sed</w>
-                  <w pos="VERB" lemma="pecco" msd="#sat3d1e20438" function="main">
+                  <w pos="VERB" lemma="pecco" msd="#sat3d1e20438" >
                      <seg function="scope" next="in_terris" part="Y" ana="#sat3445659">pecca</seg>
                      <seg function="marker" ana="#sat3445641">turus</seg>
                   </w>
@@ -23992,7 +23992,7 @@
                   </w>
                   <seg function="scope" ana="#sat3445862">
                      <w pos="ADV" lemma="ita">ita</w>
-                     <w pos="VERB" lemma="sum" msd="#sat3d1e21644" function="main">est</w>
+                     <w pos="VERB" lemma="sum" msd="#sat3d1e21644" >est</w>
                   </seg>
                   <pc>:</pc>
                </s>
@@ -24025,7 +24025,7 @@
                      <seg function="marker" ana="#sat3445900">potest</seg>
                   </w>
                   <seg function="scope" ana="#sat3445918">
-                     <w pos="VERB" lemma="probo" msd="#sat3d1e21781" function="main">probare</w>
+                     <w pos="VERB" lemma="probo" msd="#sat3d1e21781" >probare</w>
                      <w pos="NOUN" lemma="diverto" msd="#sat3d1e21787">diversa</w>
                   </seg>
                   <pc>?</pc>
@@ -24050,7 +24050,7 @@
                      <w pos="ADP" lemma="inter">inter</w>
                      <w pos="NOUN" lemma="homo" msd="#sat3d1e21863">homines</w>
                      <w pos="ADV" lemma="bonus" msd="#sat3d1e21869">melius</w>
-                     <w pos="VERB" lemma="credo" msd="#sat3d1e21875" function="main">credi</w>
+                     <w pos="VERB" lemma="credo" msd="#sat3d1e21875" >credi</w>
                   </seg>
                   <pc>,</pc>
                   <seg function="scope" part="Y" ana="#sat3456672">
@@ -24062,7 +24062,7 @@
                   <pc>.</pc>
                </s>
                <s n="306">
-                  <w pos="VERB" lemma="insecto" msd="#sat3d1e21918" function="main">Insectantur</w>
+                  <w pos="VERB" lemma="insecto" msd="#sat3d1e21918" >Insectantur</w>
                   <w pos="ADV" lemma="ita">itaque</w>
                   <pc>,</pc>
                   <w pos="PRON" lemma="quicunque">quacunque</w>
@@ -24111,7 +24111,7 @@
                   <seg function="scope" next="ut_deliniri_posset" part="Y" ana="#sat3457643">
                      <w pos="ADV" lemma="tam">tam</w>
                      <w pos="ADJ" lemma="innocens" msd="#sat3d1e22140">innocens</w>
-                     <w pos="VERB" lemma="sum" msd="#sat3d1e22146" function="main">esset</w>
+                     <w pos="VERB" lemma="sum" msd="#sat3d1e22146" >esset</w>
                      <w pos="NOUN" lemma="frugalitas" msd="#sat3d1e22152">frugalitatis</w>
                      <w pos="ADJ" lemma="meus" msd="#sat3d1e22158">meae</w>
                      <w pos="NOUN" lemma="hostis" msd="#sat3d1e22164">
@@ -24123,7 +24123,7 @@
                   <seg function="scope" part="Y" ana="#sat3457643">
                      <w pos="SCONJ" lemma="ut">ut</w>
                      <seg function="scope" ana="#sat3446281">
-                        <w pos="VERB" lemma="delinio" msd="#sat3d1e22183" function="main"
+                        <w pos="VERB" lemma="delinio" msd="#sat3d1e22183" 
                            >deliniri</w>
                      </seg>
                      <w pos="VERB" lemma="possum" msd="#sat3d1e22190">
@@ -24216,7 +24216,7 @@
                         <seg function="participant" type="inanimate" corresp="#sat3446353"
                            >tristitia</seg>
                      </w>
-                     <w pos="VERB" lemma="violo" msd="#sat3d1e22614" function="main">violari</w>
+                     <w pos="VERB" lemma="violo" msd="#sat3d1e22614" >violari</w>
                      <seg function="participant" type="inanimate_patient" corresp="#sat3446353">
                         <w pos="NOUN" lemma="auris" msd="#sat3d1e22621">aures</w>
                         <w pos="PRON" lemma="meus" msd="#sat3d1e22627">meas</w>
@@ -24983,7 +24983,7 @@
                   <w pos="PRON" lemma="quis" msd="#sat3d1e26421">
                      <seg function="participant" type="inanimate" corresp="#sat3446652">quid</seg>
                   </w>
-                  <w pos="VERB" lemma="prosum" msd="#sat3d1e26428" function="main">
+                  <w pos="VERB" lemma="prosum" msd="#sat3d1e26428" >
                      <seg function="scope" ana="#sat3446652">profu</seg>
                      <seg function="marker" ana="#sat3446634">turum</seg>
                   </w>
@@ -25672,7 +25672,7 @@
                   <w pos="ADV" lemma="sic">Sic</w>
                   <w pos="VERB" lemma="profano">profanatis</w>
                   <w pos="NOUN" lemma="sacrum">sacris</w>
-                  <w pos="VERB" lemma="pereo" msd="#sat3d1e29892" function="main">
+                  <w pos="VERB" lemma="pereo" msd="#sat3d1e29892" >
                      <seg function="scope" ana="#sat3446813">peri</seg>
                      <seg function="marker" ana="#sat3446739">tura</seg>
                   </w>
@@ -25843,7 +25843,7 @@
                   <w pos="VERB" lemma="licet" msd="#sat3d1e30747">
                      <seg function="marker" ana="#sat3446869">licuit</seg>
                   </w>
-                  <w pos="VERB" lemma="consisto" msd="#sat3d1e30754" function="main">
+                  <w pos="VERB" lemma="consisto" msd="#sat3d1e30754" >
                      <seg function="scope" ana="#sat3446887">consistere</seg>
                   </w>
                   <pc>,</pc>
@@ -26417,7 +26417,7 @@
                   <seg function="scope" ana="#sat3447121">
                      <w pos="ADV" lemma="hodie">hodie</w>
                      <w pos="ADV" lemma="bene">bene</w>
-                     <w pos="VERB" lemma="sum" msd="#sat3d1e33428" function="main">sit</w>
+                     <w pos="VERB" lemma="sum" msd="#sat3d1e33428" >sit</w>
                   </seg>
                   <pc>.</pc>
                   <anchor type="said" subtype="end"/>
@@ -27055,7 +27055,7 @@
                   <seg function="scope" ana="#sat3447251">
                      <w pos="CCONJ" lemma="vel">vel</w>
                      <w pos="NOUN" lemma="carmen" msd="#sat3d1e36514">carminibus</w>
-                     <w pos="VERB" lemma="loquor" msd="#sat3d1e36520" function="main">loquaris</w>
+                     <w pos="VERB" lemma="loquor" msd="#sat3d1e36520" >loquaris</w>
                   </seg>
                   <pc>,</pc>
                   <seg function="scope" ana="#sat3447287">
@@ -27063,7 +27063,7 @@
                      <w pos="PRON" lemma="eiusmodi" msd="#sat3d1e36538">eiusmodi</w>
                      <w pos="PRON" lemma="tu" msd="#sat3d1e36544">tibi</w>
                      <w pos="NOUN" lemma="votum" msd="#sat3d1e36550">vota</w>
-                     <w pos="VERB" lemma="propono" msd="#sat3d1e36556" function="main">proponas</w>
+                     <w pos="VERB" lemma="propono" msd="#sat3d1e36556" >proponas</w>
                   </seg>
                   <pc>.</pc>
                </s>
@@ -27209,7 +27209,7 @@
                   <w pos="SCONJ" lemma="si">si</w>
                   <w pos="VERB" lemma="puto">putas</w>
                   <seg function="scope" next="ut_ante_moriaris" part="Y" ana="#sat3447363">
-                     <w pos="VERB" lemma="contingo" msd="#sat3d1e37296" function="main"
+                     <w pos="VERB" lemma="contingo" msd="#sat3d1e37296" 
                         >contingere</w>
                   </seg>
                   <w pos="VERB" lemma="possum" msd="#sat3d1e37303">
@@ -27244,7 +27244,7 @@
                   <w pos="ADV" lemma="non">non</w>
                   <w pos="VERB" lemma="invenio">invenissem</w>
                   <pc>,</pc>
-                  <w pos="VERB" lemma="peto" msd="#sat3d1e37427" function="main">
+                  <w pos="VERB" lemma="peto" msd="#sat3d1e37427" >
                      <seg function="scope" next="praecipitia" part="Y" ana="#sat3447457"
                         >peti</seg><seg function="marker" next="fui" part="Y" ana="#sat3447439"
                         >turus</seg>
@@ -27276,7 +27276,7 @@
                      <w pos="PRON" lemma="ego" msd="#sat3d1e37536">
                         <seg function="participant" type="animate" corresp="#sat3447563">me</seg>
                      </w>
-                     <w pos="VERB" lemma="specto" msd="#sat3d1e37543" function="main">spectare</w>
+                     <w pos="VERB" lemma="specto" msd="#sat3d1e37543" >spectare</w>
                   </seg>
                   <w pos="VERB" lemma="volo" msd="#sat3d1e37549">
                      <seg function="marker" ana="#sat3447545">voluisti</seg> . </w>
@@ -27431,7 +27431,7 @@
                   <w pos="VERB" lemma="do">daretis</w>
                   <pc>,</pc>
                   <seg function="scope" ana="#sat3447678">
-                     <w pos="VERB" lemma="fugio" msd="#sat3d1e38288" function="main">fugere</w>
+                     <w pos="VERB" lemma="fugio" msd="#sat3d1e38288" >fugere</w>
                      <w pos="NOUN" lemma="nox" msd="#sat3d1e38294">nocte</w>
                      <w pos="ADP" lemma="in">in</w>
                      <w pos="ADJ" lemma="publicus" msd="#sat3d1e38305">publicum</w>
@@ -27644,7 +27644,7 @@
                   <w pos="VERB" lemma="obliviscor">oblitus</w>
                   <w pos="NOUN" lemma="misericordia">misericordiae</w>
                   <w pos="ADJ" lemma="suus">suae</w>
-                  <w pos="VERB" lemma="resero" msd="#sat3d1e39350" function="main">
+                  <w pos="VERB" lemma="resero" msd="#sat3d1e39350" >
                      <seg function="scope" next="ostium" part="Y" ana="#sat3447787">resera</seg><seg
                         part="Y" ana="#sat3447751" function="marker">ndum</seg>
                   </w>
@@ -27653,7 +27653,7 @@
                   <seg function="scope" part="Y" ana="#sat3447787">
                      <w pos="NOUN" lemma="ostium" msd="#sat3d1e39367">ostium</w>
                   </seg>
-                  <w pos="VERB" lemma="succurro" msd="#sat3d1e39373" function="main">
+                  <w pos="VERB" lemma="succurro" msd="#sat3d1e39373" >
                      <seg function="scope" next="periclitanti" part="Y" ana="#sat3447823"
                         >succurre</seg><seg function="marker" ana="#sat3447769">ndum</seg>que</w>
                   <seg function="scope" part="Y" ana="#sat3447823">
@@ -27861,10 +27861,10 @@
                   </w>
                   <seg function="scope" ana="#sat3460083">
                      <w pos="PRON" lemma="is" msd="#sat3d1e40378">eum</w>
-                     <w pos="VERB" lemma="reddo" msd="#sat3d1e40384" function="main">reddere</w>
+                     <w pos="VERB" lemma="reddo" msd="#sat3d1e40384" >reddere</w>
                   </seg>
                   <w pos="CCONJ" lemma="aut">aut</w>
-                  <w pos="VERB" lemma="commonstro" msd="#sat3d1e40395" function="main">
+                  <w pos="VERB" lemma="commonstro" msd="#sat3d1e40395" >
                      <seg function="scope" ana="#sat3460125">commonstrare</seg>
                   </w>
                   <w pos="VERB" lemma="volo" msd="#sat3d1e40402">
@@ -28178,7 +28178,7 @@
                      <seg function="marker" ana="#sat3447992">poterat</seg>
                   </w>
                   <seg function="scope" ana="#sat3448010" part="Y">
-                     <w pos="VERB" lemma="excludo" msd="#sat3d1e41949" function="main">excludere</w>
+                     <w pos="VERB" lemma="excludo" msd="#sat3d1e41949" >excludere</w>
                   </seg>
                   <pc>,</pc>
                   <w pos="VERB" lemma="irrumpo">irrumpit</w>
@@ -28229,7 +28229,7 @@
                      <seg function="marker" ana="#sat3448086">vellet</seg>
                   </w>
                   <seg function="scope" ana="#sat3448167" part="Y">
-                     <w pos="VERB" lemma="occido" msd="#sat3d1e42153" function="main">occidere</w>
+                     <w pos="VERB" lemma="occido" msd="#sat3d1e42153" >occidere</w>
                   </seg>
                   <pc>,</pc>
                   <w pos="CCONJ" lemma="et">et</w>
@@ -28246,7 +28246,7 @@
                   </w>
                   <seg function="scope" ana="#sat3448225">
                      <w pos="VERB" lemma="perdo" msd="#sat3d1e42207">perditum</w>
-                     <w pos="VERB" lemma="ostendo" msd="#sat3d1e42213" function="main">ostendere</w>
+                     <w pos="VERB" lemma="ostendo" msd="#sat3d1e42213" >ostendere</w>
                   </seg>
                   <pc>.</pc>
                </s>
@@ -28266,7 +28266,7 @@
                   </seg>
                   <pc>,</pc>
                   <seg function="scope" ana="#sat3461214" part="Y">
-                     <w pos="VERB" lemma="suspicor" msd="#sat3d1e42283" function="main"
+                     <w pos="VERB" lemma="suspicor" msd="#sat3d1e42283" 
                         >suspicari</w>
                   </seg>
                   <w pos="VERB" lemma="possum" msd="#sat3d1e42290">
@@ -28337,7 +28337,7 @@
                   <w pos="VERB" lemma="possum" msd="#sat3d1e42599">
                      <seg function="marker" ana="#sat3448068">potuisset</seg>
                   </w>
-                  <w pos="VERB" lemma="parco" msd="#sat3d1e42607" function="main">
+                  <w pos="VERB" lemma="parco" msd="#sat3d1e42607" >
                      <seg function="scope" ana="#sat3448344">parcere</seg>
                   </w>
                   <pc>.</pc>
@@ -28451,7 +28451,7 @@
                   <w pos="VERB" lemma="volo" msd="#sat3d1e43148">
                      <seg function="marker" ana="#sat3448397">velle</seg>
                   </w>
-                  <w pos="VERB" lemma="servo" msd="#sat3d1e43155" function="main">
+                  <w pos="VERB" lemma="servo" msd="#sat3d1e43155" >
                      <seg function="scope" ana="#sat3448415">servare</seg>
                   </w>
                   <pc>.</pc>
@@ -28513,7 +28513,7 @@
                   <w pos="ADV" lemma="non">
                      <seg function="negation" corresp="#sat3448480">non</seg>
                   </w>
-                  <w pos="VERB" lemma="redeo" msd="#sat3d1e43424" function="main">
+                  <w pos="VERB" lemma="redeo" msd="#sat3d1e43424" >
                      <seg function="scope" ana="#sat3448480">redi</seg>
                      <seg function="marker" ana="#sat3448453">turam</seg>
                   </w>
@@ -28569,7 +28569,7 @@
                   <w pos="VERB" lemma="possum" msd="#sat3d1e43661">
                      <seg function="marker" ana="#sat3448573">possit</seg>
                   </w>
-                  <w pos="VERB" lemma="offendo" msd="#sat3d1e43668" function="main">
+                  <w pos="VERB" lemma="offendo" msd="#sat3d1e43668" >
                      <seg function="scope" ana="#sat3448591">offendi</seg>
                   </w>
                   <pc>.</pc>
@@ -28810,7 +28810,7 @@
                   </w>
                   <seg function="scope" ana="#sat3448857">
                      <w pos="NOUN" lemma="aqua" msd="#sat3d1e44740">aquis</w>
-                     <w pos="VERB" lemma="dico" msd="#sat3d1e44746" function="main">dici</w>
+                     <w pos="VERB" lemma="dico" msd="#sat3d1e44746" >dici</w>
                      <w pos="ADV" lemma="formosus" msd="#sat3d1e44752">formosius</w>
                   </seg>
                   <w pos="VERB" lemma="possum" msd="#sat3d1e44759">
@@ -28843,7 +28843,7 @@
                      <seg function="marker" ana="#sat3448913">nolo</seg>
                   </w>
                   <seg function="scope" ana="#sat3448931">
-                     <w pos="VERB" lemma="habeo" msd="#sat3d1e44871" function="main">habere</w>
+                     <w pos="VERB" lemma="habeo" msd="#sat3d1e44871" >habere</w>
                      <w pos="NOUN" lemma="bonum" msd="#sat3d1e44877">bona</w>
                   </seg>
                   <pc>,</pc>
@@ -28874,7 +28874,7 @@
                   </w>
                   <seg function="scope" ana="#sat3448987">
                      <w pos="PRON" lemma="aliquis" msd="#sat3d1e44987">aliquid</w>
-                     <w pos="VERB" lemma="sumo" msd="#sat3d1e44993" function="main">sumere</w>
+                     <w pos="VERB" lemma="sumo" msd="#sat3d1e44993" >sumere</w>
                   </seg>
                   <w pos="NOUN" lemma=",opus">,opus</w>
                   <w pos="NOUN" lemma="anheleo">anhelitu</w>
@@ -29023,7 +29023,7 @@
                   </seg>
                   <pc>,</pc>
                   <seg function="scope" ana="#sat3462744" part="Y">
-                     <w pos="VERB" lemma="dico" msd="#sat3d1e45690" function="main">dicere</w>
+                     <w pos="VERB" lemma="dico" msd="#sat3d1e45690" >dicere</w>
                   </seg>
                   <w pos="VERB" lemma="possum" msd="#sat3d1e45698">
                      <seg function="marker" ana="#sat3449025">potes</seg>
@@ -29179,7 +29179,7 @@
                      <seg function="marker" ana="#sat3449132">potest</seg>
                   </w>
                   <seg function="scope" ana="#sat3449150">
-                     <w pos="VERB" lemma="sum" msd="#sat3d1e46368" function="main">esse</w>
+                     <w pos="VERB" lemma="sum" msd="#sat3d1e46368" >esse</w>
                      <w pos="ADP" lemma="pro">pro</w>
                      <w pos="NOUN" lemma="munus" msd="#sat3d1e46379">munere</w>
                   </seg>
@@ -29280,7 +29280,7 @@
                      <seg function="participant" type="inanimate_patient" corresp="#sat3449549"
                         >onus</seg>
                   </w>
-                  <w pos="VERB" lemma="defero" msd="#sat3d1e46845" function="main">
+                  <w pos="VERB" lemma="defero" msd="#sat3d1e46845" >
                      <seg function="scope" next="ad_mercatum" part="Y" ana="#sat3449549"
                         >defere</seg>
                      <seg function="marker" ana="#sat3449531">ndum</seg>
@@ -29376,7 +29376,7 @@
                   <pc>.</pc>
                </s>
                <s n="618">
-                  <w pos="VERB" lemma="quaero" msd="#sat3d1e47261" function="main">
+                  <w pos="VERB" lemma="quaero" msd="#sat3d1e47261" >
                      <seg function="scope" ana="#sat3449715">Quaere</seg>
                      <seg function="marker" part="Y" ana="#sat3449697">ndum</seg>
                   </w>
@@ -29444,7 +29444,7 @@
                      <w pos="NOUN" lemma="confusio" msd="#sat3d1e47548">confusione</w>
                      <w pos="CCONJ" lemma="et">et</w>
                      <w pos="NOUN" lemma="lacrima" msd="#sat3d1e47559">lacrimis</w>
-                     <w pos="VERB" lemma="obumbro" msd="#sat3d1e47565" function="main">obumbrare</w>
+                     <w pos="VERB" lemma="obumbro" msd="#sat3d1e47565" >obumbrare</w>
                   </seg>
                   <pc>,</pc>
                   <w pos="SCONJ" lemma="ut">ut</w>
@@ -29462,7 +29462,7 @@
                      <seg function="participant" type="inanimate" corresp="#sat3449829">hoc</seg>
                   </w>
                   <w pos="NOUN" lemma="eumolpus">Eumolpus</w>
-                  <w pos="VERB" lemma="fio" msd="#sat3d1e47641" function="main">
+                  <w pos="VERB" lemma="fio" msd="#sat3d1e47641" >
                      <seg function="scope" ana="#sat3449829">fieri</seg>
                   </w>
                   <w pos="VERB" lemma="possum" msd="#sat3d1e47648">
@@ -29510,7 +29510,7 @@
                      <w pos="VERB" lemma="langueo" msd="#sat3d1e47822">languentem</w>
                   </seg>
                   <seg function="scope" ana="#sat3463958" part="Y">
-                     <w pos="VERB" lemma="desidero" msd="#sat3d1e47829" function="main"
+                     <w pos="VERB" lemma="desidero" msd="#sat3d1e47829" 
                         >desiderabit</w>
                   </seg>
                   <pc>.</pc>
@@ -29546,7 +29546,7 @@
                   </w>
                   <seg function="scope" ana="#sat3449962" part="Y">
                      <w pos="NOUN" lemma="cursus" msd="#sat3d1e47956">cursu</w>
-                     <w pos="VERB" lemma="deflecto" msd="#sat3d1e47962" function="main">deflecti</w>
+                     <w pos="VERB" lemma="deflecto" msd="#sat3d1e47962" >deflecti</w>
                   </seg>
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="ADJ" lemma="Licha">Licham</w>
@@ -29565,7 +29565,7 @@
                      <seg function="marker" ana="#sat3450035">possumus</seg>
                   </w>
                   <seg function="scope" ana="#sat3450071">
-                     <w pos="VERB" lemma="egredior" msd="#sat3d1e48030" function="main">egredi</w>
+                     <w pos="VERB" lemma="egredior" msd="#sat3d1e48030" >egredi</w>
                      <w pos="NOUN" lemma="navis" msd="#sat3d1e48036">nave</w>
                   </seg>
                   <pc>,</pc>
@@ -29595,7 +29595,7 @@
                      <seg function="negation" corresp="#sat3450089">non</seg>
                   </w>
                   <seg function="scope" ana="#sat3450127">
-                     <w pos="VERB" lemma="do" msd="#sat3d1e48144" function="main">dare</w>
+                     <w pos="VERB" lemma="do" msd="#sat3d1e48144" >dare</w>
                      <w pos="NOUN" lemma="manus" msd="#sat3d1e48150">manum</w>
                      <w pos="VERB" lemma="langueo" msd="#sat3d1e48156">languentibus</w>
                   </seg>
@@ -29721,7 +29721,7 @@
                   <w pos="CCONJ" lemma="et">Et</w>
                   <w pos="ADV" lemma="utcunque">utcunque</w>
                   <seg function="scope" part="Y" ana="#sat3464736">
-                     <w pos="VERB" lemma="impono" msd="#sat3d1e48696" function="main">imponi</w>
+                     <w pos="VERB" lemma="impono" msd="#sat3d1e48696" >imponi</w>
                   </seg>
                   <seg function="scope" part="Y" ana="#sat3464736">
                      <w lemma="vel" pos="ADV">vel</w>
@@ -29812,11 +29812,11 @@
                   <w pos="CCONJ" lemma="aut">aut</w>
                   <seg function="scope" next="praecipitari_viribus" part="Y" ana="#sat3450367">
                      <w pos="NOUN" lemma="caedes" msd="#sat3d1e49049">caede</w>
-                     <w pos="VERB" lemma="expello" msd="#sat3d1e49055" function="main">expelli</w>
+                     <w pos="VERB" lemma="expello" msd="#sat3d1e49055" >expelli</w>
                   </seg>
                   <w pos="CCONJ" lemma="aut">aut</w>
                   <seg function="scope" ana="#sat3450385" part="Y">
-                     <w pos="VERB" lemma="praecipito" msd="#sat3d1e49069" function="main"
+                     <w pos="VERB" lemma="praecipito" msd="#sat3d1e49069" 
                         >praecipitari</w>
                      <w pos="NOUN" lemma="vis" msd="#sat3d1e49075">viribus</w>
                   </seg>
@@ -29828,7 +29828,7 @@
                         >Quod</seg>
                   </w>
                   <w pos="SCONJ" lemma="an">an</w>
-                  <w pos="VERB" lemma="fio" msd="#sat3d1e49099" function="main">
+                  <w pos="VERB" lemma="fio" msd="#sat3d1e49099" >
                      <seg function="scope" ana="#sat3450556">fieri</seg>
                   </w>
                   <w pos="VERB" lemma="possum" msd="#sat3d1e49106">
@@ -29869,7 +29869,7 @@
                      <w pos="ADV" lemma="tanquam">tanquam</w>
                      <w pos="NOUN" lemma="res" msd="#sat3d1e49273">rem</w>
                      <w pos="ADJ" lemma="vacuus" msd="#sat3d1e49279">vacuam</w>
-                     <w pos="VERB" lemma="impendeo" msd="#sat3d1e49285" function="main"
+                     <w pos="VERB" lemma="impendeo" msd="#sat3d1e49285" 
                         >impendere</w>
                   </seg>
                   <w pos="ADV" lemma="ne">ne</w>
@@ -29918,7 +29918,7 @@
                      <w pos="PRON" lemma="qui" msd="#sat3d1e49478">quibus</w>
                      <w pos="CCONJ" lemma="et">et</w>
                      <w pos="NOUN" lemma="spiritus" msd="#sat3d1e49489">spiritum</w>
-                     <w pos="VERB" lemma="recipio" msd="#sat3d1e49495" function="main">recipere</w>
+                     <w pos="VERB" lemma="recipio" msd="#sat3d1e49495" >recipere</w>
                   </seg>
                   <w pos="VERB" lemma="possum" msd="#sat3d1e49501">
                      <seg function="marker" ana="#sat3450680">possitis</seg>
@@ -30021,7 +30021,7 @@
                      <seg function="marker" ana="#sat3450850">posse</seg>
                   </w>
                   <seg function="scope" ana="#sat3450868" part="Y">
-                     <w pos="VERB" lemma="duro" msd="#sat3d1e49935" function="main">durare</w>
+                     <w pos="VERB" lemma="duro" msd="#sat3d1e49935" >durare</w>
                   </seg>
                   <pc>:</pc>
                </s>
@@ -30191,7 +30191,7 @@
                      <seg function="marker" ana="#sat3451074">possit</seg>
                   </w>
                   <seg function="scope" ana="#sat3451092" part="Y">
-                     <w pos="VERB" lemma="perverto" msd="#sat3d1e50721" function="main"
+                     <w pos="VERB" lemma="perverto" msd="#sat3d1e50721" 
                         >pervertere</w>
                   </seg>
                   <w pos="CCONJ" lemma="et">et</w>
@@ -30208,7 +30208,7 @@
                      <seg function="marker" ana="#sat3451056">oporteat</seg>
                   </w>
                   <seg function="scope" ana="#sat3451191" part="Y">
-                     <w pos="VERB" lemma="consentio" msd="#sat3d1e50762" function="main"
+                     <w pos="VERB" lemma="consentio" msd="#sat3d1e50762" 
                         >consentiant</w>
                   </seg>
                   <pc>,</pc>
@@ -30228,7 +30228,7 @@
                   </seg>
                   <seg function="scope" ana="#sat3451267">
                      <w pos="ADV" lemma="diu" msd="#sat3d1e50840">diutius</w>
-                     <w pos="VERB" lemma="duro" msd="#sat3d1e50846" function="main">durare</w>
+                     <w pos="VERB" lemma="duro" msd="#sat3d1e50846" >durare</w>
                   </seg>
                   <w pos="VERB" lemma="possum" msd="#sat3d1e50853">
                      <seg function="marker" ana="#sat3451038">posse</seg>
@@ -30277,7 +30277,7 @@
                   <seg function="scope" ana="#sat3451377" part="Y">
                      <w pos="NOUN" lemma="tumor" msd="#sat3d1e51032">tumore</w>
                      <w pos="ADJ" lemma="taeter" msd="#sat3d1e51038">taeterrimo</w>
-                     <w pos="VERB" lemma="impleo" msd="#sat3d1e51044" function="main">implere</w>
+                     <w pos="VERB" lemma="impleo" msd="#sat3d1e51044" >implere</w>
                   </seg>
                   <pc>?</pc>
                   <w pos="PRON" lemma="Numquis">Numquid</w>
@@ -30461,7 +30461,7 @@
                         >capita</seg> que </w>
                   <w pos="ADP" lemma="cum">cum</w>
                   <w pos="NOUN" lemma="supercilium">superciliis</w>
-                  <w pos="VERB" lemma="denudo" msd="#sat3d1e51894" function="main">
+                  <w pos="VERB" lemma="denudo" msd="#sat3d1e51894" >
                      <seg function="scope" ana="#sat3451463">denuda</seg>
                      <seg function="marker" ana="#sat3451445">nda</seg>
                   </w>
@@ -30714,7 +30714,7 @@
                      <w pos="NOUN" lemma="ungues" msd="#sat3d1e53130">ungues</w>
                      <w pos="CCONJ" lemma="neque">neque</w>
                      <w pos="NOUN" lemma="capillus" msd="#sat3d1e53142">capillos</w>
-                     <w pos="VERB" lemma="depono" msd="#sat3d1e53148" function="main">deponere</w>
+                     <w pos="VERB" lemma="depono" msd="#sat3d1e53148" >deponere</w>
                   </seg>
                   <pc>,</pc>
                   <w pos="SCONJ" lemma="nisi">nisi</w>
@@ -30774,7 +30774,7 @@
                         >navigium</seg>
                   </w>
                   <seg function="scope" ana="#sat3451713" part="Y">
-                     <w pos="VERB" lemma="lustro" msd="#sat3d1e53395" function="main">lustrari</w>
+                     <w pos="VERB" lemma="lustro" msd="#sat3d1e53395" >lustrari</w>
                   </seg>
                   <pc>.</pc>
                   <anchor type="said" subtype="end"/>
@@ -31207,7 +31207,7 @@
                      <seg function="participant" type="animate" corresp="#sat4566009"
                         >Tryphaena</seg>
                   </w>
-                  <w pos="VERB" lemma="misereor" msd="#sat4d1e271" function="main">
+                  <w pos="VERB" lemma="misereor" msd="#sat4d1e271" >
                      <seg function="scope" ana="#sat4566009">misereri</seg>
                   </w>
                   <pc>,</pc>
@@ -31283,7 +31283,7 @@
                   </w>
                   <seg function="scope" ana="#sat4566118">
                      <w pos="PRON" lemma="ille" msd="#sat4d1e638">illis</w>
-                     <w pos="VERB" lemma="ignosco" msd="#sat4d1e644" function="main">ignosci</w>
+                     <w pos="VERB" lemma="ignosco" msd="#sat4d1e644" >ignosci</w>
                      <pc>,</pc>
                      <w pos="PRON" lemma="qui" msd="#sat4d1e655">quos</w>
                      <w pos="ADP" lemma="ad">ad</w>
@@ -31499,7 +31499,7 @@
                   <w pos="VERB" lemma="laesisco">laesissent</w>
                   <pc>,</pc>
                   <seg function="scope" next="hac_poena" part="Y" ana="#sat4567490">
-                     <w pos="VERB" lemma="satio" msd="#sat4d1e1718" function="main">satiari</w>
+                     <w pos="VERB" lemma="satio" msd="#sat4d1e1718" >satiari</w>
                   </seg>
                   <w pos="ADV" lemma="tamen">tamen</w>
                   <w pos="VERB" lemma="possum" msd="#sat4d1e1731">
@@ -31647,7 +31647,7 @@
                   <w pos="VERB" lemma="laedo" msd="#sat4d1e2402">
                      <seg function="participant" type="animate" corresp="#sat4568762">laesi</seg>
                   </w>
-                  <w pos="VERB" lemma="facio" msd="#sat4d1e2409" function="main">
+                  <w pos="VERB" lemma="facio" msd="#sat4d1e2409" >
                      <seg function="scope" ana="#sat4568762">facere</seg>
                   </w>
                   <pc>,</pc>
@@ -31746,7 +31746,7 @@
                      <w pos="ADP" lemma="ad">ad</w>
                      <w pos="NOUN" lemma="auris" msd="#sat4d1e2819">aures</w>
                      <w pos="ADJ" lemma="vester" msd="#sat4d1e2825">vestras</w>
-                     <w pos="VERB" lemma="pervenio" msd="#sat4d1e2831" function="main">perveniat</w>
+                     <w pos="VERB" lemma="pervenio" msd="#sat4d1e2831" >perveniat</w>
                   </seg>
                   <pc>,</pc>
                   <seg function="scope" part="Y" ana="#sat4578312">
@@ -31766,7 +31766,7 @@
                   <w pos="VERB" lemma="conscendo">conscenderent</w>
                   <pc>,</pc>
                   <seg function="scope" ana="#sat4570812">
-                     <w pos="VERB" lemma="exonero" msd="#sat4d1e2902" function="main">exonerare</w>
+                     <w pos="VERB" lemma="exonero" msd="#sat4d1e2902" >exonerare</w>
                      <w pos="NOUN" lemma="caput" msd="#sat4d1e2908">capita</w>
                      <w pos="ADJ" lemma="molestus" msd="#sat4d1e2914">molesto</w>
                      <w pos="CCONJ" lemma="et">et</w>
@@ -31841,7 +31841,7 @@
                      </w>
                   </seg>
                   <seg function="scope" part="Y" ana="#sat4577180">
-                     <w pos="VERB" lemma="soleo" msd="#sat4d1e3199" function="main">solent</w>
+                     <w pos="VERB" lemma="soleo" msd="#sat4d1e3199" >solent</w>
                      <w pos="VERB" lemma="sum" msd="#sat4d1e3207">esse</w>
                   </seg>
                   <pc>.</pc>
@@ -31921,14 +31921,14 @@
                   <seg function="scope" ana="#sat4572840">
                      <w pos="NOUN" lemma="nihil" msd="#sat4d1e3584">nihil</w>
                      <w pos="CCONJ" lemma="neque">nec</w>
-                     <w pos="VERB" lemma="facio" msd="#sat4d1e3595" function="main">facere</w>
+                     <w pos="VERB" lemma="facio" msd="#sat4d1e3595" >facere</w>
                   </seg>
                   <w pos="VERB" lemma="decet" msd="#sat4d1e3602">
                      <seg function="marker" ana="#sat4572726">deceret</seg>
                   </w>
                   <seg function="scope" ana="#sat4572954">
                      <w pos="CCONJ" lemma="neque">nec</w>
-                     <w pos="VERB" lemma="dico" msd="#sat4d1e3617" function="main">dicere</w>
+                     <w pos="VERB" lemma="dico" msd="#sat4d1e3617" >dicere</w>
                   </seg>
                   <pc>.</pc>
                </s>
@@ -32046,7 +32046,7 @@
                   <w pos="ADJ" lemma="totus">toto</w>
                   <w pos="NOUN" lemma="navigium">navigio</w>
                   <w pos="ADJ" lemma="solus">sola</w>
-                  <w pos="VERB" lemma="verbero" msd="#sat4d1e4214" function="main">
+                  <w pos="VERB" lemma="verbero" msd="#sat4d1e4214" >
                      <seg function="scope" ana="#sat4574320">verbera</seg>
                      <seg function="marker" ana="#sat4574101">nda</seg>
                   </w>
@@ -32221,7 +32221,7 @@
                   </w>
                   <w pos="ADV" lemma="magis">magis</w>
                   <w pos="PRON" lemma="ego">me</w>
-                  <w pos="VERB" lemma="occido" msd="#sat4d1e5093" function="main">
+                  <w pos="VERB" lemma="occido" msd="#sat4d1e5093" >
                      <seg function="scope" ana="#sat4575610">occi</seg>
                      <seg function="marker" ana="#sat4574886">surus</seg>
                   </w>
@@ -32689,7 +32689,7 @@
                      <w pos="ADP" lemma="in">in</w>
                      <w pos="NOUN" lemma="calvus" msd="#sat4d1e7445">calvos</w>
                      <w pos="ADJ" lemma="stigmosus" msd="#sat4d1e7451">stigmososque</w>
-                     <w pos="VERB" lemma="jaculor" msd="#sat4d1e7457" function="main">iaculari</w>
+                     <w pos="VERB" lemma="jaculor" msd="#sat4d1e7457" >iaculari</w>
                   </seg>
                   <pc>,</pc>
                   <w pos="ADV" lemma="donec">donec</w>
@@ -32819,7 +32819,7 @@
                      <seg function="marker" ana="#sat4580283">volebat</seg>
                   </w>
                   <seg function="scope" next="et_ineptiora_praeteritis" part="Y" ana="#sat4580445">
-                     <w pos="VERB" lemma="profero" msd="#sat4d1e8088" function="main">proferre</w>
+                     <w pos="VERB" lemma="profero" msd="#sat4d1e8088" >proferre</w>
                   </seg>
                   <pc>,</pc>
                   <w pos="VERB" lemma="credo">credo</w>
@@ -33025,7 +33025,7 @@
                   <w pos="VERB" lemma="volo" msd="#sat4d1e9155">
                      <seg function="marker" ana="#sat4580127">vellemus</seg>
                   </w>
-                  <w pos="VERB" lemma="audio" msd="#sat4d1e9162" function="main">
+                  <w pos="VERB" lemma="audio" msd="#sat4d1e9162" >
                      <seg function="scope" ana="#sat4581371">audire</seg>
                   </w>
                   <pc>.</pc>
@@ -33133,7 +33133,7 @@
                      <seg function="marker" ana="#sat4581793">potuerunt</seg>
                   </w>
                   <seg function="scope" ana="#sat4581835" part="Y">
-                     <w pos="VERB" lemma="abduco" msd="#sat4d1e9660" function="main">abducere</w>
+                     <w pos="VERB" lemma="abduco" msd="#sat4d1e9660" >abducere</w>
                   </seg>
                   <pc>,</pc>
                   <w pos="ADV" lemma="non">non</w>
@@ -33323,7 +33323,7 @@
                      <seg function="participant" type="animate" corresp="#sat4583359">feminam</seg>
                   </w>
                   <seg function="scope" ana="#sat4583359" part="Y">
-                     <w pos="VERB" lemma="patior" msd="#sat4d1e10618" function="main">pati</w>
+                     <w pos="VERB" lemma="patior" msd="#sat4d1e10618" >pati</w>
                   </seg>
                   <pc>,</pc>
                   <w pos="VERB" lemma="affero">attulit</w>
@@ -33344,7 +33344,7 @@
                   <seg function="scope" next="profu" part="Y" ana="#sat4585482">
                      <w pos="NOUN" lemma="nihil" msd="#sat4d1e10718">nihil</w>
                   </seg>
-                  <w pos="VERB" lemma="prosum" msd="#sat4d1e10724" function="main">
+                  <w pos="VERB" lemma="prosum" msd="#sat4d1e10724" >
                      <seg function="scope" next="gemitu" part="Y" ana="#sat4585482">profu</seg>
                      <seg function="marker" ana="#sat4585134 #sat4586327">turo</seg>
                   </w>
@@ -33484,7 +33484,7 @@
                      <seg function="participant" type="animate" corresp="#sat4586981 #sat4587469"
                         >tu</seg>
                   </w>
-                  <w pos="VERB" lemma="revivesco" msd="#sat4d1e11392" function="main">
+                  <w pos="VERB" lemma="revivesco" msd="#sat4d1e11392" >
                      <seg function="scope" ana="#sat4586981">reviviscere</seg>
                   </w>
                   <pc>?</pc>
@@ -33515,7 +33515,7 @@
                   <seg function="scope" ana="#sat4587469" part="Y">
                      <w pos="NOUN" lemma="lux" msd="#sat4d1e11465">lucis</w>
                      <w pos="NOUN" lemma="commodum" msd="#sat4d1e11471">commodis</w>
-                     <w pos="VERB" lemma="fruor" msd="#sat4d1e11477" function="main">frui</w>
+                     <w pos="VERB" lemma="fruor" msd="#sat4d1e11477" >frui</w>
                   </seg>
                   <pc>?</pc>
                </s>
@@ -33529,7 +33529,7 @@
                      <seg function="participant" type="inanimate" corresp="#sat4589571">corpus</seg>
                   </w>
                   <seg function="scope" next="ut_vivas" part="Y" ana="#sat4589571">
-                     <w pos="VERB" lemma="admoneo" msd="#sat4d1e11516" function="main">admonere</w>
+                     <w pos="VERB" lemma="admoneo" msd="#sat4d1e11516" >admonere</w>
                   </seg>
                   <w pos="VERB" lemma="debeo" msd="#sat4d1e11525">
                      <seg function="marker" ana="#sat4584750">debet</seg>
@@ -33614,7 +33614,7 @@
                   <w pos="VERB" lemma="volo" msd="#sat4d1e11891">
                      <seg function="marker" ana="#sat4590195">vellet</seg>
                   </w>
-                  <w pos="VERB" lemma="vivo" msd="#sat4d1e11898" function="main">
+                  <w pos="VERB" lemma="vivo" msd="#sat4d1e11898" >
                      <seg function="scope" ana="#sat4591125">vivere</seg>
                   </w>
                   <pc>,</pc>
@@ -33832,7 +33832,7 @@
                   <w pos="VERB" lemma="commodo">Commodaret</w>
                   <w pos="ADV" lemma="ergo">ergo</w>
                   <w pos="PRON" lemma="ille">illa</w>
-                  <w pos="VERB" lemma="pereo" msd="#sat4d1e12943" function="main">
+                  <w pos="VERB" lemma="pereo" msd="#sat4d1e12943" >
                      <seg function="scope" ana="#sat4592823">peri</seg>
                      <seg function="marker" ana="#sat4590705">turo</seg>
                   </w>
@@ -33880,13 +33880,13 @@
                   </w>
                   <seg function="scope" ana="#sat4593317">
                      <w pos="VERB" lemma="morior" msd="#sat4d1e13151">mortuum</w>
-                     <w pos="VERB" lemma="impendeo" msd="#sat4d1e13158" function="main"
+                     <w pos="VERB" lemma="impendeo" msd="#sat4d1e13158" 
                         >impendere</w>
                   </seg>
                   <seg function="scope" ana="#sat4593359">
                      <w pos="ADV" lemma="quam">quam</w>
                      <w pos="ADJ" lemma="vivus" msd="#sat4d1e13170">vivum</w>
-                     <w pos="VERB" lemma="occido" msd="#sat4d1e13176" function="main">occidere</w>
+                     <w pos="VERB" lemma="occido" msd="#sat4d1e13176" >occidere</w>
                   </seg>
                   <pc>.</pc>
                   <pc>’</pc>
@@ -33989,12 +33989,12 @@
                      <w pos="NOUN" lemma="corpus" msd="#sat4d1e13649">corpus</w>
                      <w pos="ADP" lemma="in">in</w>
                      <w pos="NOUN" lemma="monumentum" msd="#sat4d1e13660">monumentum</w>
-                     <w pos="VERB" lemma="refero" msd="#sat4d1e13666" function="main">referre</w>
+                     <w pos="VERB" lemma="refero" msd="#sat4d1e13666" >referre</w>
                   </seg>
                   <pc>,</pc>
                   <seg function="scope" ana="#sat4595326">
                      <w pos="NOUN" lemma="mulier" msd="#sat4d1e13679">mulierem</w>
-                     <w pos="VERB" lemma="affigo" msd="#sat4d1e13685" function="main">affigere</w>
+                     <w pos="VERB" lemma="affigo" msd="#sat4d1e13685" >affigere</w>
                      <w pos="NOUN" lemma="crux" msd="#sat4d1e13691">cruci</w>
                   </seg>
                   <pc>.</pc>
@@ -34008,7 +34008,7 @@
                      <seg function="marker" ana="#sat4595128">dubie</seg>
                   </w>
                   <seg function="scope" ana="#sat4596502">
-                     <w pos="VERB" lemma="redeo" msd="#sat4d1e13725" function="main">redierat</w>
+                     <w pos="VERB" lemma="redeo" msd="#sat4d1e13725" >redierat</w>
                      <w pos="ADP" lemma="in">in</w>
                      <w pos="NOUN" lemma="animus" msd="#sat4d1e13735">animum</w>
                      <w pos="NOUN" lemma="Hedyle" msd="#sat4d1e13741">
@@ -34513,7 +34513,7 @@
                   <w pos="VERB" lemma="Encolpio">Encolpion</w>
                   <w pos="VERB" lemma="diligo">dilexisti</w>
                   <pc>,</pc>
-                  <w pos="VERB" lemma="do" msd="#sat4d1e16301" function="main">da</w>
+                  <w pos="VERB" lemma="do" msd="#sat4d1e16301" >da</w>
                   <w pos="NOUN" lemma="osculum" msd="#sat4d1e16306">oscula</w>
                   <pc>,</pc>
                   <w pos="SCONJ" lemma="dum">dum</w>
@@ -34601,7 +34601,7 @@
                      <w pos="ADP" lemma="ad">ad</w>
                      <w pos="PRON" lemma="idem" msd="#sat4d1e16658">idem</w>
                      <w pos="NOUN" lemma="litus" msd="#sat4d1e16664">litus</w>
-                     <w pos="VERB" lemma="expello" msd="#sat4d1e16670" function="main">expellere</w>
+                     <w pos="VERB" lemma="expello" msd="#sat4d1e16670" >expellere</w>
                   </seg>
                   <pc>,</pc>
                   <w pos="CCONJ" lemma="aut">aut</w>
@@ -34876,7 +34876,7 @@
                      <w pos="NOUN" lemma="pars" msd="#sat4d1e1739">parte</w>
                      <w pos="NOUN" lemma="terra" msd="#sat4d1e11465">terrarum</w>
                      <w pos="ADJ" lemma="securus" msd="#sat4d1e264">secura</w>
-                     <w pos="VERB" lemma="exspecto" msd="#sat4d1e18053" function="main"
+                     <w pos="VERB" lemma="exspecto" msd="#sat4d1e18053" 
                         >exspectat</w>
                      <w pos="NOUN" lemma="uxor" msd="#sat4d1e18060">
                         <seg function="participant" type="animate" corresp="#sat4601774">uxor</seg>
@@ -35160,7 +35160,7 @@
                   <w pos="ADV" lemma="Tanquam">Tanquam</w>
                   <w pos="VERB" lemma="intersum">intersit</w>
                   <pc>,</pc>
-                  <w pos="VERB" lemma="pereo" msd="#sat4d1e19347" function="main">
+                  <w pos="VERB" lemma="pereo" msd="#sat4d1e19347" >
                      <seg function="scope" ana="#sat4605539">peri</seg>
                      <seg function="marker" ana="#sat4600766">turum</seg>
                   </w>
@@ -35814,7 +35814,7 @@
                   <seg function="scope" ana="#sat4606930">
                      <w pos="CCONJ" lemma="vel">vel</w>
                      <w pos="NOUN" lemma="Carthago" msd="#sat4d1e22630">Carthaginem</w>
-                     <w pos="VERB" lemma="capio" msd="#sat4d1e22636" function="main">capere</w>
+                     <w pos="VERB" lemma="capio" msd="#sat4d1e22636" >capere</w>
                   </seg>
                   <pc>.</pc>
                </s>
@@ -36087,7 +36087,7 @@
                         >poema</seg>
                   </w>
                   <seg function="scope" ana="#sat4608393" part="Y">
-                     <w pos="VERB" lemma="exstruo" msd="#sat4d1e23961" function="main">exstrui</w>
+                     <w pos="VERB" lemma="exstruo" msd="#sat4d1e23961" >exstrui</w>
                   </seg>
                   <w pos="VERB" lemma="possum" msd="#sat4d1e23968">
                      <seg function="marker" ana="#sat4607907">posse</seg>
@@ -36119,12 +36119,12 @@
                   <w pos="CCONJ" lemma="neque">
                      <seg function="negation" corresp="#sat4608123">neque</seg>
                   </w>
-                  <w pos="VERB" lemma="concipio" msd="#sat4d1e24065" function="main">
+                  <w pos="VERB" lemma="concipio" msd="#sat4d1e24065" >
                      <seg function="scope" ana="#sat4610178">concipere</seg>
                   </w>
                   <w pos="CCONJ" lemma="aut">aut</w>
                   <seg function="scope" ana="#sat4610340">
-                     <w pos="VERB" lemma="ēdo" msd="#sat4d1e24079" function="main">edere</w>
+                     <w pos="VERB" lemma="ēdo" msd="#sat4d1e24079" >edere</w>
                      <w pos="NOUN" lemma="partum" msd="#sat4d1e24085">partum</w>
                   </seg>
                   <w pos="NOUN" lemma="mens" msd="#sat4d1e24092">
@@ -36142,7 +36142,7 @@
                   <pc>.</pc>
                </s>
                <s n="254">
-                  <w pos="VERB" lemma="refugio" msd="#sat4d1e24144" function="main">
+                  <w pos="VERB" lemma="refugio" msd="#sat4d1e24144" >
                      <seg function="scope" next="ab_omni_verborum" part="Y" ana="#sat4611149"
                         >Refugie</seg>
                      <seg part="Y" function="marker" ana="#sat4611571">ndum</seg>
@@ -36164,7 +36164,7 @@
                      <w pos="NOUN" lemma="vilitas" msd="#sat4d1e24204">vilitate</w>
                   </seg>
                   <w pos="CCONJ" lemma="et">et</w>
-                  <w pos="VERB" lemma="sumo" msd="#sat4d1e24215" function="main">
+                  <w pos="VERB" lemma="sumo" msd="#sat4d1e24215" >
                      <seg function="scope" ana="#sat4612377">sume</seg>
                      <seg function="marker" ana="#sat4608015" part="Y">ndae</seg>
                   </w>
@@ -36868,7 +36868,7 @@
                   <w pos="ADJ" lemma="sanus">sana</w>
                   <w pos="NOUN" lemma="ratio">ratione</w>
                   <seg function="scope" ana="#sat4617414" part="Y">
-                     <w pos="VERB" lemma="moveo" msd="#sat4d1e27621" function="main">movere</w>
+                     <w pos="VERB" lemma="moveo" msd="#sat4d1e27621" >movere</w>
                   </seg>
                   <pc>,</pc>
                   <w pos="ADV" lemma="ni">ni</w>
@@ -36933,7 +36933,7 @@
                      <seg function="participant" type="inanimate" corresp="#sat4618210">tellus</seg>
                   </w>
                   <seg function="scope" ana="#sat4618210" part="Y">
-                     <w pos="VERB" lemma="fero" msd="#sat4d1e27920" function="main">ferre</w>
+                     <w pos="VERB" lemma="fero" msd="#sat4d1e27920" >ferre</w>
                      <w pos="NOUN" lemma="sepulcrum" msd="#sat4d1e27926">sepulcra</w>
                   </seg>
                   <pc>,</pc>
@@ -37087,7 +37087,7 @@
                         <seg function="scope" ana="#sat4620317">peri</seg>
                         <seg function="marker" ana="#sat4619037">turam</seg>
                      </w>
-                     <w pos="VERB" lemma="extollo" msd="#sat4d1e28682" function="main">extollere</w>
+                     <w pos="VERB" lemma="extollo" msd="#sat4d1e28682" >extollere</w>
                      <w pos="NOUN" lemma="moles" msd="#sat4d1e28688">
                         <seg function="participant" type="inanimate" corresp="#sat4620317"
                            >molem</seg>
@@ -37477,7 +37477,7 @@
                   <w pos="ADV" lemma="Continuus">Continuo</w>
                   <w pos="NOUN" lemma="clades">clades</w>
                   <w pos="NOUN" lemma="homo">hominum</w>
-                  <w pos="VERB" lemma="venio" msd="#sat4d1e30634" function="main">
+                  <w pos="VERB" lemma="venio" msd="#sat4d1e30634" >
                      <seg function="scope" ana="#sat4621987">ven</seg>
                      <seg function="marker" ana="#sat4621873">tura</seg> que </w>
                   <w pos="NOUN" lemma="damnum" msd="#sat4d1e30645">
@@ -37688,7 +37688,7 @@
                      <w pos="ADJ" lemma="totus" msd="#sat4d1e31656">totum</w>
                   </seg>
                   <seg function="scope" next="umeris_minitantibus_orbem" part="Y" ana="#sat4622949">
-                     <w pos="VERB" lemma="fero" msd="#sat4d1e31663" function="main">ferre</w>
+                     <w pos="VERB" lemma="fero" msd="#sat4d1e31663" >ferre</w>
                   </seg>
                   <w pos="VERB" lemma="possum" msd="#sat4d1e31671">
                      <seg function="marker" ana="#sat4621735">potest</seg>
@@ -37878,7 +37878,7 @@
                   <pc>.</pc>
                </s>
                <s n="357">
-                  <w pos="VERB" lemma="reddo" msd="#sat4d1e32604" function="main">
+                  <w pos="VERB" lemma="reddo" msd="#sat4d1e32604" >
                      <seg function="scope" ana="#sat4624243">Redde</seg>
                      <seg function="marker" ana="#sat4624177" part="Y">nda</seg>
                   </w>
@@ -37936,7 +37936,7 @@
                            >causa</seg>
                      </w>
                      <w pos="VERB" lemma="perago" msd="#sat4d1e32813">peracta</w>
-                     <w pos="VERB" lemma="sum" msd="#sat4d1e32819" function="main">est</w>
+                     <w pos="VERB" lemma="sum" msd="#sat4d1e32819" >est</w>
                   </seg>
                   <pc>:</pc>
                </s>
@@ -38305,7 +38305,7 @@
                   </seg>
                   <w pos="PRON" lemma="qui">qui</w>
                   <seg function="scope" ana="#sat4627942" part="Y">
-                     <w pos="VERB" lemma="tento" msd="#sat4d1e34674" function="main">temptare</w>
+                     <w pos="VERB" lemma="tento" msd="#sat4d1e34674" >temptare</w>
                   </seg>
                   <w pos="VERB" lemma="volo" msd="#sat4d1e34682">
                      <seg function="marker" ana="#sat4626818">velit</seg>
@@ -38313,7 +38313,7 @@
                   <seg function="scope" ana="#sat4627984">
                      <w pos="NOUN" lemma="fatum que" msd="#sat4d1e34691">fatisque</w>
                      <w pos="VERB" lemma="jubeo" msd="#sat4d1e34697">iubentibus</w>
-                     <w pos="VERB" lemma="utor" msd="#sat4d1e34703" function="main">uti</w>
+                     <w pos="VERB" lemma="utor" msd="#sat4d1e34703" >uti</w>
                   </seg>
                   <pc>.</pc>
                </s>
@@ -38831,7 +38831,7 @@
                      <seg function="marker" ana="#sat4630008">posset</seg>
                   </w>
                   <seg function="scope" part="Y" ana="#sat4632009">
-                     <w pos="VERB" lemma="aspicio" msd="#sat4d1e37303" function="main">aspicere</w>
+                     <w pos="VERB" lemma="aspicio" msd="#sat4d1e37303" >aspicere</w>
                      <w pos="CCONJ" lemma="atque">ac</w>
                      <w pos="ADJ" lemma="totus" msd="#sat4d1e37318">toto</w>
                      <w pos="VERB" lemma="fluito" msd="#sat4d1e37324">fluitantes</w>
@@ -39045,7 +39045,7 @@
                   <w pos="ADV" lemma="dubie">
                      <seg function="marker" ana="#sat4630338">dubie</seg>
                   </w>
-                  <w pos="VERB" lemma="credo" msd="#sat4d1e38334" function="main">
+                  <w pos="VERB" lemma="credo" msd="#sat4d1e38334" >
                      <seg function="scope" ana="#sat4633612">credentibus</seg>
                   </w>
                   <w pos="VERB" lemma="indico">indicavimus</w>
@@ -39113,7 +39113,7 @@
                      <seg function="marker" ana="#sat4634539">posse</seg>
                   </w>
                   <seg function="scope" ana="#sat4634872" part="Y">
-                     <w pos="VERB" lemma="resisto" msd="#sat4d1e38662" function="main">resistere</w>
+                     <w pos="VERB" lemma="resisto" msd="#sat4d1e38662" >resistere</w>
                   </seg>
                   <w pos="ADV" lemma="impunique">impuneque</w>
                   <w pos="PRON" lemma="suus">suos</w>
@@ -39628,7 +39628,7 @@
                      <seg function="marker" ana="#sat4636935">possit</seg>
                   </w>
                   <seg function="scope" ana="#sat4637998" part="Y">
-                     <w pos="VERB" lemma="comprehendo" msd="#sat4d1e41114" function="main"
+                     <w pos="VERB" lemma="comprehendo" msd="#sat4d1e41114" 
                         >comprehendere</w>
                   </seg>
                   <pc>,</pc>
@@ -39961,7 +39961,7 @@
                      <seg function="marker" ana="#sat4638660">potes</seg>
                   </w>
                   <seg function="scope" ana="#sat4639713" part="Y">
-                     <w pos="VERB" lemma="vivo" msd="#sat4d1e42745" function="main">vivere</w>
+                     <w pos="VERB" lemma="vivo" msd="#sat4d1e42745" >vivere</w>
                   </seg>
                   <pc>,</pc>
                   <w pos="ADP" lemma="ex">ex</w>
@@ -40655,7 +40655,7 @@
                      <seg function="participant" type="animate" corresp="#sat4643538">homines</seg>
                   </w>
                   <seg function="scope" ana="#sat4643538" part="Y">
-                     <w pos="VERB" lemma="ambulo" msd="#sat4d1e46162" function="main">ambulare</w>
+                     <w pos="VERB" lemma="ambulo" msd="#sat4d1e46162" >ambulare</w>
                   </seg>
                   <w pos="VERB" lemma="possum" msd="#sat4d1e46169">
                      <seg function="marker" ana="#sat4643058">posse</seg>
@@ -40705,7 +40705,7 @@
                   <seg function="scope" ana="#sat4644724">
                      <w pos="ADP" lemma="ad">ad</w>
                      <w pos="NOUN" lemma="tubicen" msd="#sat4d1e46369">tubicines</w>
-                     <w pos="VERB" lemma="mitto" msd="#sat4d1e46376" function="main">mittas</w>
+                     <w pos="VERB" lemma="mitto" msd="#sat4d1e46376" >mittas</w>
                   </seg>
                   <pc>.</pc>
                </s>
@@ -40737,7 +40737,7 @@
                   </w>
                   <seg function="scope" ana="#sat4645338">
                      <w pos="ADJ" lemma="sanus" msd="#sat4d1e46499">sanus</w>
-                     <w pos="VERB" lemma="sum" msd="#sat4d1e46505" function="main">esse</w>
+                     <w pos="VERB" lemma="sum" msd="#sat4d1e46505" >esse</w>
                   </seg>
                   <pc>,</pc>
                   <w pos="NOUN" lemma="Gito">Gitonem</w>
@@ -40858,7 +40858,7 @@
                         >Verum</seg>
                   </w>
                   <w pos="SCONJ" lemma="enim">enim</w>
-                  <w pos="VERB" lemma="fateor" msd="#sat4d1e47045" function="main">
+                  <w pos="VERB" lemma="fateor" msd="#sat4d1e47045" >
                      <seg function="scope" ana="#sat4646158">fate</seg>
                      <seg function="marker" ana="#sat4643256" part="Y">ndum</seg>
                   </w>
@@ -41022,7 +41022,7 @@
                   <seg function="scope" ana="#sat4647711">
                      <seg function="participant" type="animate" corresp="#sat4647711"><w pos="NOUN"
                            lemma="animus" msd="#sat4d1e47737">animus</w></seg>
-                     <w pos="VERB" lemma="antecedo" msd="#sat4d1e47744" function="main"
+                     <w pos="VERB" lemma="antecedo" msd="#sat4d1e47744" 
                         >antecessit</w>
                      <w pos="NOUN" lemma="corpus" msd="#sat4d1e47749">corporis</w>
                      <w pos="NOUN" lemma="mora" msd="#sat4d1e47755">moram</w>
@@ -41038,7 +41038,7 @@
                   <seg function="scope" ana="#sat4647237">
                      <w pos="NOUN" lemma="voluptas" msd="#sat4d1e47796">voluptatem</w>
                      <w pos="NOUN" lemma="tempus" msd="#sat4d1e47802">tempore</w>
-                     <w pos="VERB" lemma="consumo" msd="#sat4d1e47808" function="main">consumpsi</w>
+                     <w pos="VERB" lemma="consumo" msd="#sat4d1e47808" >consumpsi</w>
                   </seg>
                   <pc>.</pc>
                </s>
@@ -41064,7 +41064,7 @@
                   </w>
                   <seg function="scope" ana="#sat4648393">
                      <w pos="ADJ" lemma="magnus" msd="#sat4d1e47897">maior</w>
-                     <w pos="VERB" lemma="fio" msd="#sat4d1e47903" function="main">fieri</w>
+                     <w pos="VERB" lemma="fio" msd="#sat4d1e47903" >fieri</w>
                   </seg>
                   <w pos="VERB" lemma="possum" msd="#sat4d1e47910">
                      <seg function="marker" ana="#sat4646895">possit</seg>
@@ -41079,7 +41079,7 @@
                      <w pos="PRON" lemma="qui" msd="#sat4d1e47951">quod</w>
                      <w pos="CCONJ" lemma="etiam">etiam</w>
                      <w pos="PRON" lemma="tu" msd="#sat4d1e47962">te</w>
-                     <w pos="VERB" lemma="habeo" msd="#sat4d1e47968" function="main">habere</w>
+                     <w pos="VERB" lemma="habeo" msd="#sat4d1e47968" >habere</w>
                   </seg>
                   <w pos="VERB" lemma="possum" msd="#sat4d1e47974">
                      <seg function="marker" ana="#sat4646937">potui</seg>
@@ -41758,7 +41758,7 @@
                   <seg function="scope" ana="#sat4651948">
                      <w pos="NOUN" lemma="supplicium" msd="#sat4d1e51418">supplicio</w>
                      <w pos="NOUN" lemma="caput" msd="#sat4d1e51424">caput</w>
-                     <w pos="VERB" lemma="aperio" msd="#sat4d1e51430" function="main">aperire</w>
+                     <w pos="VERB" lemma="aperio" msd="#sat4d1e51430" >aperire</w>
                   </seg>
                   <pc>,</pc>
                   <w pos="CCONJ" lemma="sed">sed</w>
@@ -41777,7 +41777,7 @@
                      <seg function="marker" ana="#sat4650151">poterant</seg>
                   </w>
                   <seg function="scope" ana="#sat4652527" part="Y">
-                     <w pos="VERB" lemma="nox" msd="#sat4d1e51507" function="main">nocere</w>
+                     <w pos="VERB" lemma="nox" msd="#sat4d1e51507" >nocere</w>
                   </seg>
                   <pc>,</pc>
                   <w pos="VERB" lemma="fugio">fugi</w>
@@ -42481,7 +42481,7 @@
                      <w pos="NOUN" lemma="brachium" msd="#sat4d1e55123">brachia</w>
                      <w pos="ADJ" lemma="meus" msd="#sat4d1e55129">mea</w>
                      <w pos="NOUN" lemma="caput" msd="#sat4d1e55135">caputque</w>
-                     <w pos="VERB" lemma="frango" msd="#sat4d1e55142" function="main">fregisset</w>
+                     <w pos="VERB" lemma="frango" msd="#sat4d1e55142" >fregisset</w>
                   </seg>
                   <pc>.</pc>
                </s>
@@ -42586,7 +42586,7 @@
                      <w pos="NOUN" lemma="puella" msd="#sat4d1e55608">puellae</w>
                      <w pos="ADJ" lemma="bonus" msd="#sat4d1e55614">bona</w>
                      <w pos="PRON" lemma="suus" msd="#sat4d1e55620">sua</w>
-                     <w pos="VERB" lemma="vendo" msd="#sat4d1e55626" function="main">vendere</w>
+                     <w pos="VERB" lemma="vendo" msd="#sat4d1e55626" >vendere</w>
                   </seg>
                   <w pos="VERB" lemma="possum" msd="#sat4d1e55633">
                      <seg function="marker" ana="#sat4653251">potest</seg>
@@ -43764,7 +43764,7 @@
                   <w pos="ADV" lemma="inquam">inquam</w>
                   <anchor type="said" subtype="start"/>
                   <seg ana="#sat4658362" function="scope">
-                     <w pos="VERB" lemma="expio" function="main" msd="#sat4d1e2409">expiare</w>
+                     <w pos="VERB" lemma="expio"  msd="#sat4d1e2409">expiare</w>
                      <w pos="NOUN" lemma="manus" msd="#sat4d1e2819">manus</w>
                      <w pos="NOUN" lemma="pretium" msd="#sat4d1e2914">pretio</w>
                   </seg>
@@ -43799,7 +43799,7 @@
                      <w pos="NOUN" lemma="deus" msd="#sat4d1e61799">deos</w>
                      <w pos="CCONJ" lemma="et">et</w>
                      <w pos="NOUN" lemma="ansum" msd="#sat4d1e61810">anseres</w>
-                     <w pos="VERB" lemma="emere" msd="#sat4d1e61816" function="main">emere</w>
+                     <w pos="VERB" lemma="emere" msd="#sat4d1e61816" >emere</w>
                   </seg>
                   <pc>.</pc>
                   <anchor type="said" subtype="end"/>
@@ -43880,7 +43880,7 @@
                <s n="731">
                   <seg function="scope" ana="#sat4659944">
                      <w pos="NOUN" lemma="uxor" msd="#sat4d1e62171">Uxorem</w>
-                     <w pos="VERB" lemma="duco" msd="#sat4d1e62178" function="main">ducat</w>
+                     <w pos="VERB" lemma="duco" msd="#sat4d1e62178" >ducat</w>
                      <w pos="NOUN" lemma="Danae" msd="#sat4d1e62183">Danaen</w>
                   </seg>
                   <w pos="PRON" lemma="ipse" msd="#sat4d1e62189">
@@ -43893,7 +43893,7 @@
                   </w>
                   <seg function="scope" ana="#sat4659986" part="Y">
                      <w pos="NOUN" lemma="Acrisius" msd="#sat4d1e62209">Acrisium</w>
-                     <w pos="VERB" lemma="jubeo" msd="#sat4d1e62215" function="main">iubeat</w>
+                     <w pos="VERB" lemma="jubeo" msd="#sat4d1e62215" >iubeat</w>
                      <w pos="VERB" lemma="credo" msd="#sat4d1e62221">credere</w>
                      <w pos="PRON" lemma="qui" msd="#sat4d1e62227">quod</w>
                      <w pos="NOUN" lemma="Danae" msd="#sat4d1e13691">Danaen</w>
@@ -44269,7 +44269,7 @@
                      <seg function="marker" ana="#sat4662496">forsitan</seg>
                   </w>
                   <seg function="scope" ana="#sat4662796">
-                     <w pos="VERB" lemma="redeo" msd="#sat4d1e64186" function="main">rediret</w>
+                     <w pos="VERB" lemma="redeo" msd="#sat4d1e64186" >rediret</w>
                      <w pos="PRON" lemma="hic" msd="#sat4d1e64192">hoc</w>
                      <w pos="NOUN" lemma="corpus" msd="#sat4d1e64198">
                         <seg function="participant" type="animate" corresp="#sat4662796"
@@ -44280,7 +44280,7 @@
                   </seg>
                   <w pos="CCONJ" lemma="et">et</w>
                   <seg function="scope" next="sopitae" part="Y" ana="#sat4662838">
-                     <w pos="VERB" lemma="resipisco" msd="#sat4d1e64224" function="main"
+                     <w pos="VERB" lemma="resipisco" msd="#sat4d1e64224" 
                         >resipiscerent</w>
                      <w pos="NOUN" lemma="pars" msd="#sat4d1e64230">
                         <seg function="participant" type="animate" corresp="#sat4662838"
@@ -44323,7 +44323,7 @@
                <s n="759">
                   <w pos="ADV" lemma="modo">Modo</w>
                   <seg function="scope" ana="#sat4664278">
-                     <w pos="VERB" lemma="redeo" msd="#sat4d1e64382" function="main">redire</w>
+                     <w pos="VERB" lemma="redeo" msd="#sat4d1e64382" >redire</w>
                      <w pos="ADP" lemma="in">in</w>
                      <w pos="NOUN" lemma="gratia" msd="#sat4d1e64393">gratiam</w>
                   </seg>
@@ -44565,7 +44565,7 @@
                   <w pos="VERB" lemma="possum" msd="#sat4d1e65618">
                      <seg function="marker" ana="#sat4664958">posse</seg>
                   </w>
-                  <w pos="VERB" lemma="fio" msd="#sat4d1e65624" function="main">
+                  <w pos="VERB" lemma="fio" msd="#sat4d1e65624" >
                      <seg function="scope" ana="#sat4665828">fieri</seg>
                   </w>
                   <pc>,</pc>
@@ -44657,7 +44657,7 @@
                      <w pos="NOUN" lemma="praeceptum" msd="#sat4d1e66091">praeceptis</w>
                      <w pos="CCONJ" lemma="etiam">etiam</w>
                      <w pos="ADJ" lemma="salubris" msd="#sat4d1e66102">salubribus</w>
-                     <w pos="VERB" lemma="instruo" msd="#sat4d1e66108" function="main">instruere</w>
+                     <w pos="VERB" lemma="instruo" msd="#sat4d1e66108" >instruere</w>
                      <w pos="ADJ" lemma="juvenis" msd="#sat4d1e66114">iuvenes</w>
                      <w pos="ADV" lemma="quotidie">quotidie</w>
                   </seg>
@@ -44695,7 +44695,7 @@
                   </w>
                   <seg function="scope" ana="#sat4667155">
                      <w pos="NOUN" lemma="juvenis" msd="#sat4d1e66265">iuvenibus</w>
-                     <w pos="VERB" lemma="do" msd="#sat4d1e66271" function="main">dari</w>
+                     <w pos="VERB" lemma="do" msd="#sat4d1e66271" >dari</w>
                   </seg>
                   <pc>.</pc>
                </s>
@@ -45055,7 +45055,7 @@
                      <seg function="participant" type="animate" corresp="#sat4669106">homines</seg>
                   </w>
                   <seg function="scope" next="in_malam_fortunam" part="Y" ana="#sat4669106">
-                     <w pos="VERB" lemma="incido" msd="#sat4d1e68104" function="main">incidere</w>
+                     <w pos="VERB" lemma="incido" msd="#sat4d1e68104" >incidere</w>
                   </seg>
                   <w pos="VERB" lemma="debeo" msd="#sat4d1e68112">
                      <seg function="marker" ana="#sat4668384">debent</seg>
@@ -45356,7 +45356,7 @@
                      <seg function="marker" ana="#sat4670459">vis</seg>
                   </w>
                   <seg function="scope" ana="#sat4670501" part="Y">
-                     <w pos="VERB" lemma="probo" msd="#sat4d1e69620" function="main">probari</w>
+                     <w pos="VERB" lemma="probo" msd="#sat4d1e69620" >probari</w>
                      <w pos="NOUN" lemma="consilium" msd="#sat4d1e69626">consilium</w>
                   </seg>
                   <pc>,</pc>

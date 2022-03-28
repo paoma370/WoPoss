@@ -597,7 +597,7 @@
                   <w pos="PRON" lemma="tu">vobis</w>
                   <w pos="VERB" lemma="fugio">fugere</w>
                   <w pos="ADP" lemma="ab">a</w>
-                  <w pos="VERB" lemma="sum" msd="#ed1e5585" function="main">
+                  <w pos="VERB" lemma="sum" msd="#ed1e5585" >
                      <seg function="scope" ana="#u_e46394">fu</seg>
                      <seg function="marker" ana="#u_e46480" xml:id="mt03_07">tura</seg>
                   </w>
@@ -921,7 +921,7 @@
                   <w pos="NOUN" lemma="manus">manibus</w>
                   <w pos="VERB" lemma="tollo">tollent</w>
                   <w pos="PRON" lemma="tu" msd="#ed1e7223">
-                     <seg function="participant" type="animate_patient" corresp="#u_e60326">te</seg>
+                     <seg function="participant" type="animate" corresp="#u_e60326">te</seg>
                   </w>
                   <w pos="ADV" lemma="ne">
                      <seg function="negation" corresp="#u_e60326">ne</seg>
@@ -4357,7 +4357,7 @@
                   </w>
                   <w pos="VERB" lemma="sum">es</w>
                   <w pos="PRON" lemma="qui">qui</w>
-                  <w pos="VERB" lemma="venio" msd="#dd1e13242" function="main">
+                  <w pos="VERB" lemma="venio" msd="#dd1e13242" >
                      <seg function="scope" ana="#u_d111063">ven</seg>
                      <seg function="marker" part="Y" ana="#u_d111149" xml:id="mt11_03">turus</seg>
                   </w>
@@ -4473,7 +4473,7 @@
                      <seg function="participant" type="animate" corresp="#u_d118985">Helias</seg>
                   </w>
                   <w pos="PRON" lemma="qui">qui</w>
-                  <w pos="VERB" lemma="venio" msd="#dd1e14175" function="main">
+                  <w pos="VERB" lemma="venio" msd="#dd1e14175" >
                      <seg function="scope" ana="#u_d118985">ven</seg>
                      <seg function="marker" part="Y" ana="#u_d119011" xml:id="mt11_14b">turus</seg>
                   </w>
@@ -7088,7 +7088,7 @@
                   </w>
                   <w pos="SCONJ" lemma="enim">enim</w>
                   <w pos="NOUN" lemma="homo">hominis</w>
-                  <w pos="VERB" lemma="venio" msd="#cd1e14055" function="main">
+                  <w pos="VERB" lemma="venio" msd="#cd1e14055" >
                      <seg function="scope" ana="#u_c117462">ven</seg>
                      <seg function="marker" part="Y" ana="#u_c117548" xml:id="mt16_27">turus</seg>
                   </w>
@@ -7358,7 +7358,7 @@
                      <seg function="participant" type="animate" corresp="#u_c127797">Helias</seg>
                   </w>
                   <w pos="ADV" lemma="quidem">quidem</w>
-                  <w pos="VERB" lemma="venio" msd="#cd1e15279" function="main">
+                  <w pos="VERB" lemma="venio" msd="#cd1e15279" >
                      <seg function="scope" ana="#u_c127797">ven</seg>
                      <seg function="marker" part="Y" ana="#u_c127883" xml:id="mt17_11">turus</seg>
                   </w>
@@ -7402,7 +7402,7 @@
                      <w pos="NOUN" lemma="Filius" msd="#cd1e15426">Filius</w>
                      <w pos="NOUN" lemma="homo" msd="#cd1e15432">hominis</w>
                   </seg>
-                  <w pos="VERB" lemma="patior" msd="#cd1e15438" function="main">
+                  <w pos="VERB" lemma="patior" msd="#cd1e15438" >
                      <seg function="scope" part="Y" ana="#u_c129193">pass</seg>
                      <seg function="marker" part="Y" ana="#u_c129279" xml:id="mt17_12b">urus</seg>
                   </w>
@@ -7601,7 +7601,7 @@
                      <w pos="NOUN" lemma="Filius" msd="#cd1e16324">Filius</w>
                      <w pos="NOUN" lemma="homo" msd="#cd1e16330">hominis</w>
                   </seg>
-                  <w pos="VERB" lemma="trado" msd="#cd1e16336" function="main">
+                  <w pos="VERB" lemma="trado" msd="#cd1e16336" >
                      <seg function="scope" part="Y" ana="#u_c136767">trade</seg>
                      <seg function="marker" ana="#u_c136813" part="Y" xml:id="mt17_21">ndus</seg>
                   </w>
@@ -14663,7 +14663,7 @@
                <symbol value="Inf"/>
             </f>
             <f name="Voice">
-               <symbol value="Act"/>
+               <symbol value="Pass"/>
             </f>
          </fs>
          <fs type="msd" xml:id="ed1e10082">
@@ -15877,7 +15877,7 @@
                <symbol value="explicit"/>
             </f>
             <f name="participantType">
-               <symbol value="animate_patient"/>
+               <symbol value="animate"/>
             </f>
          </fs>
          <fs xml:id="u_e81365" type="marker">
@@ -29940,7 +29940,7 @@
                <string>39</string>
             </f>
             <f name="participant">
-               <symbol value="explicit"/>
+               <symbol value="implicit"/>
             </f>
             <f name="participantType">
                <symbol value="inanimate"/>

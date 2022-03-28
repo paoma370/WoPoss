@@ -3144,9 +3144,8 @@
                      <seg function="participant" type="animate" corresp="#u_o46427">propheta</seg>
                   </w>
                   <w pos="PRON" lemma="qui">qui</w>
-                  <w pos="VERB" lemma="venio" msd="#od1e5496" function="main">
-                     <seg function="scope" ana="#u_o46427">ven</seg>
-                     <seg function="marker" part="Y" ana="#u_o46465" xml:id="jh06_14">turus</seg>
+                  <w pos="VERB" lemma="venio" msd="#od1e5496">
+                     <seg function="scope" ana="#u_o46427">ven</seg><seg function="marker" part="Y" ana="#u_o46465" xml:id="jh06_14">turus</seg>
                   </w>
                   <w pos="VERB" lemma="sum" msd="#od1e5507">
                      <seg function="marker" part="Y" ana="#u_o46465">est</seg>
@@ -3909,7 +3908,7 @@
                   <w pos="PRON" lemma="quis" msd="#od1e10255">
                      <seg function="participant" type="animate" corresp="#u_o86579">quis</seg>
                   </w>
-                  <w pos="VERB" lemma="trado" msd="#od1e10262" function="main">
+                  <w pos="VERB" lemma="trado" msd="#od1e10262">
                      <seg function="scope" ana="#u_o86579">tradi</seg>
                      <seg function="marker" part="Y" ana="#u_o86617" xml:id="jh06_64">turus</seg>
                   </w>
@@ -4034,7 +4033,7 @@
                   <w pos="VERB" lemma="sum" msd="#od1e10795">
                      <seg function="marker" part="Y" ana="#u_o91230">erat</seg>
                   </w>
-                  <w pos="VERB" lemma="trado" msd="#od1e10802" function="main">
+                  <w pos="VERB" lemma="trado" msd="#od1e10802">
                      <seg function="scope" part="Y" ana="#u_o91192">tradi</seg>
                      <seg function="marker" part="Y" ana="#u_o91230" xml:id="jh06_71">turus</seg>
                   </w>
@@ -4706,7 +4705,7 @@
                   <w pos="ADP" lemma="de">de</w>
                   <w pos="NOUN" lemma="spiritus">Spiritu</w>
                   <w pos="PRON" lemma="qui">quem</w>
-                  <w pos="VERB" lemma="accipio" msd="#od1e14349" function="main">
+                  <w pos="VERB" lemma="accipio" msd="#od1e14349">
                      <seg function="scope" ana="#u_o120767">accep</seg>
                      <seg function="marker" ana="#u_o120805" xml:id="jh07_39">turi</seg>
                   </w>
@@ -6690,7 +6689,7 @@
                   <w pos="NOUN" lemma="Iesus" msd="#nd1e11627">
                      <seg function="participant" type="animate" corresp="#u_n97374">Iesus</seg>
                   </w>
-                  <w pos="VERB" lemma="morior" msd="#nd1e11634" function="main">
+                  <w pos="VERB" lemma="morior" msd="#nd1e11634">
                      <seg function="scope" part="Y" ana="#u_n97374">mori</seg>
                      <seg function="marker" part="Y" ana="#u_n97412" xml:id="jh11_51">turus</seg>
                   </w>
@@ -7161,7 +7160,7 @@
                   <w pos="PRON" lemma="qui">qua</w>
                   <w pos="NOUN" lemma="mors">morte</w>
                   <w pos="VERB" lemma="sum">esset</w>
-                  <w pos="VERB" lemma="morior" msd="#nd1e15155" function="main">
+                  <w pos="VERB" lemma="morior" msd="#nd1e15155">
                      <seg function="scope" ana="#u_n126592">mori</seg>
                      <seg function="marker" ana="#u_n126630" xml:id="jh12_33">turus</seg>
                   </w>
@@ -8122,7 +8121,7 @@
                   <seg function="scope" part="Y" ana="#u_q47453">
                      <w pos="PRON" lemma="nos" msd="#qd1e5666">nobis</w>
                   </seg>
-                  <w pos="VERB" lemma="manifesto" msd="#qd1e5672" function="main">
+                  <w pos="VERB" lemma="manifesto" msd="#qd1e5672">
                      <seg function="scope" part="Y" ana="#u_q47453">manifesta</seg>
                      <seg function="marker" part="Y" ana="#u_q47491" xml:id="jh14_22">turus</seg>
                   </w>
@@ -8773,7 +8772,7 @@
                   <w pos="PRON" lemma="qui" msd="#qd1e10413">
                      <seg function="participant" type="inanimate" corresp="#u_q104621">quae</seg>
                   </w>
-                  <w pos="VERB" lemma="venio" msd="#qd1e10420" function="main">
+                  <w pos="VERB" lemma="venio" msd="#qd1e10420">
                      <seg function="scope" ana="#u_q104621">ven</seg>
                      <seg ana="#u_q104502" function="marker" part="Y" xml:id="jh16_13">tura</seg>
                   </w>
@@ -9659,7 +9658,7 @@
                      <seg function="marker" part="Y" ana="#u_p48528">esset</seg>
                   </w>
                   <w pos="NOUN" lemma="mors">morte</w>
-                  <w pos="VERB" lemma="morior" msd="#pd1e5826" function="main">
+                  <w pos="VERB" lemma="morior" msd="#pd1e5826">
                      <seg function="scope" ana="#u_p48490">mori</seg>
                      <seg function="marker" part="Y" ana="#u_p48528" xml:id="jh18_32">turus</seg>
                   </w>
@@ -11129,7 +11128,7 @@
                      <seg function="participant" type="inanimate_patient" corresp="#u_p142523"
                         >qui</seg>
                   </w>
-                  <w pos="VERB" lemma="scribo" msd="#pd1e16906" function="main">
+                  <w pos="VERB" lemma="scribo" msd="#pd1e16906">
                      <seg function="scope" ana="#u_p142523">scribe</seg>
                      <seg ana="#u_p141173" part="Y" function="marker" xml:id="jh21_25">ndi</seg>
                   </w>

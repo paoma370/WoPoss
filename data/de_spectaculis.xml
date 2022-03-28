@@ -413,7 +413,7 @@
                      <w pos="NOUN" lemma="cultor" msd="#specd1e1708">cultoribus</w>
                      <w pos="NOUN" lemma="Deus" msd="#specd1e1714">dei</w>
                   </seg>
-                  <w pos="VERB" lemma="puto" msd="#specd1e1720" function="main">
+                  <w pos="VERB" lemma="puto" msd="#specd1e1720" >
                      <seg function="scope" ana="#spec14058">puta</seg>
                      <seg function="marker" ana="#spec14096">ndum</seg>
                   </w>
@@ -651,7 +651,7 @@
                      <w pos="PRON" lemma="hic" msd="#specd1e2863">hoc</w>
                      <w pos="ADJ" lemma="solus" msd="#specd1e2869">solum</w>
                   </seg>
-                  <w pos="VERB" lemma="respicio" msd="#specd1e2875" function="main">
+                  <w pos="VERB" lemma="respicio" msd="#specd1e2875" >
                      <seg function="scope" next="a_quo_omnia_sint_instituta" part="Y"
                         ana="#spec23428">respicie</seg>
                      <seg ana="#spec23370" part="Y" function="marker">ndum</seg>
@@ -3557,7 +3557,7 @@
                   <w pos="ADV" lemma="Ita">Ita</w>
                   <w pos="VERB" lemma="damno">damnatum</w>
                   <w pos="CCONJ" lemma="et">et</w>
-                  <w pos="VERB" lemma="damno" msd="#specd1e17329" function="main">
+                  <w pos="VERB" lemma="damno" msd="#specd1e17329" >
                      <seg function="scope" ana="#spec140032">damna</seg>
                      <seg function="marker" ana="#spec139974">ndum</seg>
                   </w>
@@ -5331,7 +5331,7 @@
                   <seg function="scope" next="consecu" part="Y" ana="#spec207385">
                      <w pos="PRON" lemma="suus" msd="#specd1e25738">suum</w>
                   </seg>
-                  <w pos="VERB" lemma="consequor" msd="#specd1e25744" function="main">
+                  <w pos="VERB" lemma="consequor" msd="#specd1e25744" >
                      <seg function="scope" ana="#spec207385" part="Y">consecu</seg>
                      <seg function="marker" ana="#spec207347" part="Y">turi</seg>
                   </w>
@@ -5769,7 +5769,7 @@
                      <w pos="VERB" lemma="audio" msd="#specd1e27560" function="main">audire</w>
                      <seg function="scope" ana="#spec222284">
                         <w pos="PRON" lemma="qui" msd="#specd1e27568">quae</w>
-                        <w pos="VERB" lemma="loquor" msd="#specd1e27574">loqui</w>
+                        <w pos="VERB" lemma="loquor" msd="#specd1e27574" function="main">loqui</w>
                      </seg>
                      <w pos="ADV" lemma="non">
                         <seg function="negation" corresp="#spec222477">non</seg>
@@ -5944,7 +5944,7 @@
                   <w pos="VERB" lemma="sum" msd="#specd1e28353">
                      <seg function="marker" next="ndum" part="Y" ana="#spec228962">est</seg>
                   </w>
-                  <w pos="VERB" lemma="recipio" msd="#specd1e28360" function="main">
+                  <w pos="VERB" lemma="recipio" msd="#specd1e28360" >
                      <seg function="scope" ana="#spec228929" part="Y">recipie</seg>
                      <seg function="marker" part="Y" ana="#spec228962">ndum</seg>
                   </w>
@@ -6754,8 +6754,8 @@
                   <w pos="NOUN" lemma="facies">faciem</w>
                   <w pos="ADJ" lemma="omnis">omnium</w>
                   <w pos="NOUN" lemma="intens">intentet</w>
-                  <pc>,</pc>
-                  <w pos="CCONJ" lemma="1">1</w>
+                  <pc>,</pc><!--
+                  <w pos="CCONJ" lemma="1">1</w>-->
                   <w pos="SCONJ" lemma="ut">ut</w>
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="PRON" lemma="qui">qui</w>
@@ -7721,7 +7721,7 @@
                   </w>
                   <seg function="marker" ana="#spec354780" part="Y"><w pos="VERB" lemma="sum"
                         msd="#specd1e2643">est</w></seg>
-                  <w pos="VERB" lemma="repercutio" msd="#specd1e36749" function="main">
+                  <w pos="VERB" lemma="repercutio" msd="#specd1e36749" >
                      <seg function="scope" ana="#spec354816">repercutie</seg>
                      <seg function="marker" next="esse" part="Y" ana="#spec354798">ndum</seg>
                   </w>
@@ -8986,7 +8986,7 @@
                      <seg function="participant" type="animate_patient" corresp="#spec344715"
                         >tragoedi</seg>
                   </w>
-                  <w pos="VERB" lemma="audio" msd="#specd1e42585" function="main">
+                  <w pos="VERB" lemma="audio" msd="#specd1e42585" >
                      <seg function="scope" ana="#spec344715">audie</seg>
                      <seg function="marker" ana="#spec344753">ndi</seg>
                   </w>
@@ -9006,7 +9006,7 @@
                      <seg function="participant" type="animate_patient" corresp="#spec345392"
                         >histriones</seg>
                   </w>
-                  <w pos="VERB" lemma="cognosco" msd="#specd1e42660" function="main">
+                  <w pos="VERB" lemma="cognosco" msd="#specd1e42660" >
                      <seg function="scope" ana="#spec345392">cognosce</seg>
                      <seg function="marker" ana="#spec345354">ndi</seg>
                   </w>
@@ -9019,7 +9019,7 @@
                </s>
                <s n="497">
                   <w pos="ADV" lemma="tunc">tunc</w>
-                  <w pos="VERB" lemma="specto" msd="#specd1e42708" function="main">
+                  <w pos="VERB" lemma="specto" msd="#specd1e42708" >
                      <seg function="scope" ana="#spec345778">specta</seg>
                      <seg function="marker" ana="#spec345816">ndus</seg>
                   </w>
@@ -9040,7 +9040,7 @@
                      <seg function="participant" type="animate_patient" corresp="#spec346388"
                         >xystici</seg>
                   </w>
-                  <w pos="VERB" lemma="contemplo" msd="#specd1e42772" function="main">
+                  <w pos="VERB" lemma="contemplo" msd="#specd1e42772" >
                      <seg function="scope" ana="#spec346388">contempla</seg>
                      <seg function="marker" ana="#spec346426">ndi</seg>
                   </w>
