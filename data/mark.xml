@@ -4728,8 +4728,8 @@
                   </seg>
                   <supplied>
                      <seg function="scope" ana="#u_f142218">
-                        <w pos="ADJ" lemma="salvus" msd="#fd1e6884">salvus</w>
-                        <w pos="VERB" lemma="fio" msd="#fd1e6890">fieri</w>
+                        <w pos="ADJ" lemma="salvus">salvus</w>
+                        <w pos="VERB" lemma="fio">fieri</w>
                      </seg>
                   </supplied>
                   <w pos="CCONJ" lemma="sed">sed</w>
@@ -4742,8 +4742,8 @@
                         <w pos="VERB" lemma="sum" msd="#fd1e8401">est</w>
                      </seg>
                      <seg function="scope" ana="#u_f142219">
-                        <w pos="ADJ" lemma="salvus" msd="#fd1e6884">salvus</w>
-                        <w pos="VERB" lemma="fio" msd="#fd1e6890">fieri</w>
+                        <w pos="ADJ" lemma="salvus">salvus</w>
+                        <w pos="VERB" lemma="fio">fieri</w>
                      </seg>
                   </supplied>
                   <w pos="ADP" lemma="apud">apud</w>

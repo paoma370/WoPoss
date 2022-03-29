@@ -15524,7 +15524,7 @@
                <symbol value="Act"/>
             </f>
          </fs>
-         <fs type="msd" xml:id="md1e1717">
+         <fs type="msd" xml:id="">
             <f name="Tense">
                <symbol value="Pres"/>
             </f>
@@ -15532,7 +15532,7 @@
                <symbol value="Inf"/>
             </f>
             <f name="Voice">
-               <symbol value="Act"/>
+               <symbol value="Pass"/>
             </f>
          </fs>
          <fs type="msd" xml:id="md1e1727">

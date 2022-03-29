@@ -1706,11 +1706,7 @@
                      <w pos="ADP" lemma="penes">penes</w>
                      <w pos="ADJ" lemma="multus" msd="#specd1e8110">plures</w>
                      <w pos="PRON" lemma="noster" msd="#specd1e8116">nostrorum</w>
-                     <w pos="ADV" lemma="altius" msd="#specd1e8122">altius</w>
-                  </seg>
-               </s>
-               <s n="81">
-                  <seg function="scope" part="Y" ana="#spec65397">
+                     <w pos="ADV" lemma="altius" msd="#specd1e8122">altius</w>                 
                      <w pos="CCONJ" lemma="neque">nec</w>
                      <w pos="ADV" lemma="abunde">abunde</w>
                   </seg>
@@ -10007,7 +10003,7 @@
                <symbol value="Inf"/>
             </f>
             <f name="Voice">
-               <symbol value="Pass"/>
+               <symbol value="Act"/>
             </f>
          </fs>
          <fs type="msd" xml:id="specd1e4739">
@@ -14495,7 +14491,7 @@
                <symbol value="Inf"/>
             </f>
             <f name="Voice">
-               <symbol value="Act"/>
+               <symbol value="Pass"/>
             </f>
          </fs>
          <fs type="msd" xml:id="specd1e39969">

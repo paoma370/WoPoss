@@ -4212,7 +4212,7 @@
                      <supplied>
                         <w>subvenire</w>
                      </supplied>
-                     <w pos="VERB" lemma="vivo" msd="#octd1e19654" function="main">viventibus</w>
+                     <w pos="VERB" lemma="vivo" msd="#octd1e19654">viventibus</w>
                   </seg>
                   <w pos="ADV" lemma="non">
                      <seg function="negation" corresp="#oct161189">non</seg>
@@ -4929,8 +4929,8 @@
                      </w>
                   </seg>
                   <w msd="#oct187172f" lemma="provideo" pos="VERB">
-                     <seg function="scope" part="Y" ana="#oct187117">providen</seg>
-                     <seg function="marker" ana="#oct314254" part="Y">dum</seg>
+                     <seg function="scope" part="Y" ana="#oct187117">provide</seg>
+                     <seg function="marker" ana="#oct314254" part="Y">ndum</seg>
                   </w>
                   <seg function="marker" ana="#oct314254" part="Y">
                      <w pos="VERB" lemma="sum" msd="#octd1e22852">est</w>
@@ -20060,9 +20060,6 @@
             </f>
          </fs>
          <fs type="msd" xml:id="octd1e19654">
-            <f name="Aspect">
-               <symbol value="Perf"/>
-            </f>
             <f name="Case">
                <symbol value="Dat"/>
             </f>
@@ -20073,13 +20070,13 @@
                <symbol value="Plur"/>
             </f>
             <f name="Tense">
-               <symbol value="Past"/>
+               <symbol value="Pres"/>
             </f>
             <f name="VerbForm">
                <symbol value="Part"/>
             </f>
             <f name="Voice">
-               <symbol value="Pass"/>
+               <symbol value="Act"/>
             </f>
          </fs>
          <fs type="msd" xml:id="octd1e19667">
@@ -23441,7 +23438,7 @@
                <binary value="true"/>
             </f>
             <f name="lemma">
-               <symbol value="ndus"/>
+               <symbol value="ndus_est"/>
             </f>
          </fs>
          <fs xml:id="oct312944" type="marker">

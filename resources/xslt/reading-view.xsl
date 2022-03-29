@@ -1,4 +1,6 @@
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:woposs="https://www.woposs.unine.ch" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="#all" version="2.0">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:woposs="https://www.woposs.unine.ch" xmlns:tei="http://www.tei-c.org/ns/1.0"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="#all" version="2.0">
     <xsl:param name="id"/>
     <xsl:function name="woposs:capitalize-first" as="xs:string?">
         <xsl:param name="string" as="xs:string?"/>
@@ -9,10 +11,16 @@
         <xsl:param name="seg"/>
         <xsl:choose>
             <xsl:when test="$seg/@ana">
-                <xsl:value-of select="                         for $x in $seg/tokenize(@ana, '\s+')                         return                             substring($x, 2)"/>
+                <xsl:value-of select="
+                        for $x in $seg/tokenize(@ana, '\s+')
+                        return
+                            substring($x, 2)"/>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:variable name="corresp" select="                         for $i in $seg/tokenize(@corresp, '\s+')                         return                             substring($i, 2)"/>
+                <xsl:variable name="corresp" select="
+                        for $i in $seg/tokenize(@corresp, '\s+')
+                        return
+                            substring($i, 2)"/>
                 <xsl:value-of select="'id_' || string-join($corresp, '')"/>
             </xsl:otherwise>
         </xsl:choose>
@@ -20,31 +28,43 @@
     <xsl:function name="woposs:unitContents">
         <xsl:param name="doc" as="node()"/>
         <xsl:param name="idno" as="xs:string"/>
-        <xsl:apply-templates select="                 $doc/descendant::tei:seg[some $x in tokenize(@ana, '\s+')                     satisfies substring($x, 2) = $idno]" mode="getContents"/>
+        <xsl:apply-templates select="
+                $doc/descendant::tei:seg[some $x in tokenize(@ana, '\s+')
+                    satisfies substring($x, 2) = $idno]" mode="getContents"/>
     </xsl:function>
     <xsl:function name="woposs:marker">
         <xsl:param name="fs" as="node()"/>
         <xsl:variable name="lemma_string" select="$fs/tei:f[@name eq 'lemma']/tei:symbol/@value"/>
-        <xsl:variable name="lemma" select="                 if (contains($lemma_string, '_inf')) then                     replace($lemma_string, '_inf', ' + inf.')                 else                     replace($lemma_string, '_', ' ')"/>
+        <xsl:variable name="lemma" select="
+                if (contains($lemma_string, '_inf')) then
+                    replace($lemma_string, '_inf', ' + inf.')
+                else
+                    replace($lemma_string, '_', ' ')"/>
         <li>Pertinent: yes</li>
         <li>Lemma: <xsl:value-of select="$lemma"/></li>
-        <li>Type of utterance: <xsl:value-of select="$fs/tei:f[@name eq 'utterance']/tei:symbol/@value"/></li>
+        <li>Type of utterance: <xsl:value-of
+                select="$fs/tei:f[@name eq 'utterance']/tei:symbol/@value"/></li>
         <li>Polarity: <xsl:value-of select="$fs/tei:f[@name eq 'polarity']/tei:symbol/@value"/></li>
     </xsl:function>
     <xsl:function name="woposs:scope">
         <xsl:param name="fs" as="node()?"/>
         <xsl:variable name="id" select="$fs/@xml:id"/>
-        <li>Type of utterance: <xsl:value-of select="$fs/tei:f[@name eq 'utterance']/tei:symbol/@value"/></li>
+        <li>Type of utterance: <xsl:value-of
+                select="$fs/tei:f[@name eq 'utterance']/tei:symbol/@value"/></li>
         <li>Polarity: <xsl:value-of select="$fs/tei:f[@name eq 'polarity']/tei:symbol/@value"/></li>
         <li>State of affairs: <ul>
-                <li><xsl:apply-templates select="$fs/tei:f[@name = ('SoA', 'dynamicity', 'control')]" mode="analysis"/></li>
+                <li><xsl:apply-templates
+                        select="$fs/tei:f[@name = ('SoA', 'dynamicity', 'control')]" mode="analysis"
+                    /></li>
                 <xsl:if test="not($fs/tei:f[@name = 'SoA'])">
                     <li>Participant: <xsl:choose>
                             <xsl:when test="$fs/tei:f[@name eq 'participant']">
-                                <ul><xsl:apply-templates select="$fs/tei:f[@name eq 'participant']" mode="features"/></ul>
+                                <ul><xsl:apply-templates select="$fs/tei:f[@name eq 'participant']"
+                                        mode="features"/></ul>
                             </xsl:when>
                             <xsl:otherwise>
-                                <xsl:variable name="participant" select="$fs/ancestor::tei:TEI/descendant::tei:seg[@function eq 'participant'][substring(@corresp, 2) eq $id]"/>
+                                <xsl:variable name="participant"
+                                    select="$fs/ancestor::tei:TEI/descendant::tei:seg[@function eq 'participant'][substring(@corresp, 2) eq $id]"/>
                                 <xsl:for-each select="$participant">
                                     <ul>
                                         <xsl:apply-templates select="current()" mode="features"/>
@@ -60,17 +80,25 @@
         <li>Modal meaning: <xsl:value-of select="$fs/tei:f[@name eq 'modality']/tei:symbol/@value"/>
             <ul>
                 <xsl:if test="$fs/tei:f[@name eq 'meaning']">
-                    <li>Meaning: <xsl:value-of select="$fs/tei:f[@name eq 'meaning']/tei:symbol/@value"/></li></xsl:if>
+                    <li>Meaning: <xsl:value-of
+                            select="$fs/tei:f[@name eq 'meaning']/tei:symbol/@value"/></li></xsl:if>
                 <xsl:if test="$fs/tei:f[@name eq 'type']">
-                    <li>Type: <xsl:value-of select="$fs/tei:f[@name eq 'type']/tei:symbol/@value"/></li></xsl:if>
+                    <li>Type: <xsl:value-of select="$fs/tei:f[@name eq 'type']/tei:symbol/@value"
+                        /></li></xsl:if>
                 <xsl:if test="$fs/tei:f[@name eq 'subtype']">
-                    <li>Subtype: <xsl:value-of select="$fs/tei:f[@name eq 'subtype']/tei:symbol/@value"/></li></xsl:if>
+                    <li>Subtype: <xsl:value-of
+                            select="$fs/tei:f[@name eq 'subtype']/tei:symbol/@value"/></li></xsl:if>
                 <xsl:if test="$fs/tei:f[@name eq 'degree']">
-                    <li>Degree: <xsl:value-of select="$fs/tei:f[@name eq 'degree']/tei:symbol/@value"/></li></xsl:if>
+                    <li>Degree: <xsl:value-of
+                            select="$fs/tei:f[@name eq 'degree']/tei:symbol/@value"/></li></xsl:if>
                 <xsl:if test="$fs/tei:f[@name eq 'context']">
-                    <li>Context: <xsl:value-of select="$fs/tei:f[@name eq 'context']/tei:symbol/@value =&gt; replace('_', ' ')"/></li></xsl:if>
+                    <li>Context: <xsl:value-of
+                            select="$fs/tei:f[@name eq 'context']/tei:symbol/@value =&gt; replace('_', ' ')"
+                        /></li></xsl:if>
                 <xsl:if test="$fs/tei:f[@name eq 'source']">
-                    <li>Source: <xsl:value-of select="$fs/tei:f[@name eq 'source']/tei:symbol/@value =&gt; replace('_', ' ')"/></li></xsl:if>
+                    <li>Source: <xsl:value-of
+                            select="$fs/tei:f[@name eq 'source']/tei:symbol/@value =&gt; replace('_', ' ')"
+                        /></li></xsl:if>
             </ul></li>
     </xsl:function>
     <xsl:function name="woposs:participant">
@@ -82,9 +110,16 @@
     <!--    Main template -->
 
     <xsl:template match="tei:TEI">
-        <xsl:variable name="s" select="descendant::tei:s[descendant::tei:seg[substring(@ana, 2) eq $id]]"/>
-        <xsl:variable name="contextLeft" select="                 for $x in 1 to 3                 return                     $s/preceding-sibling::tei:s[$x]"/>
-        <xsl:variable name="contextRight" select="                 for $x in 1 to 3                 return                     $s/following-sibling::tei:s[$x]"/>
+        <xsl:variable name="s"
+            select="descendant::tei:s[descendant::tei:seg[substring(@ana, 2) eq $id]]"/>
+        <xsl:variable name="contextLeft" select="
+                for $x in 1 to 3
+                return
+                    $s/preceding-sibling::tei:s[$x]"/>
+        <xsl:variable name="contextRight" select="
+                for $x in 1 to 3
+                return
+                    $s/following-sibling::tei:s[$x]"/>
         <p><span style="color:red">Important</span>: Click on an element (coloured and bold words)
             to read its analysis. Hover over the words of those elements to get the lemma and
             morphological description.</p>
@@ -124,12 +159,12 @@
     <xsl:template match="tei:gap"> […] </xsl:template>
 
     <xsl:template match="tei:surplus"> [<xsl:apply-templates/>] </xsl:template>
-    
+
     <xsl:template match="anchor[@type eq 'said'][@subtype eq 'start']">“</xsl:template>
     <xsl:template match="anchor[@type eq 'said'][@subtype eq 'end']">”</xsl:template>
-    
-    
-<!--    textual contents -->
+
+
+    <!--    textual contents -->
 
     <xsl:template match="tei:seg">
         <span class="{current()/@function} seg" data-idno="{woposs:getId(current())}">
@@ -174,16 +209,21 @@
         <xsl:variable name="idno" select="woposs:getId(current())"/>
         <xsl:variable name="function" select="@function"/>
         <xsl:variable name="doc" select="ancestor::tei:TEI"/>
-        <xsl:variable name="corresp" select="                 for $x in tokenize(@corresp, '\s+')                 return                     substring($x, 2)"/>
+        <xsl:variable name="corresp" select="
+                for $x in tokenize(@corresp, '\s+')
+                return
+                    substring($x, 2)"/>
         <div id="{$idno}" class="hide">
             <xsl:if test="$function eq 'negation'">
                 <h3>Negative particle: <xsl:value-of select="current()"/></h3>
                 <ul>
                     <xsl:for-each select="$corresp">
-                        <xsl:variable name="unit" select="$doc/descendant::tei:fs[@xml:id eq current()]"/>
+                        <xsl:variable name="unit"
+                            select="$doc/descendant::tei:fs[@xml:id eq current()]"/>
                         <li>Negation of: <ul>
                                 <li><xsl:value-of select="woposs:capitalize-first($unit/@type)"/>:
-                                            <em><xsl:sequence select="woposs:unitContents($doc, current())"/></em>
+                                            <em><xsl:sequence
+                                            select="woposs:unitContents($doc, current())"/></em>
                                 </li>
                             </ul></li>
                     </xsl:for-each>
@@ -194,10 +234,13 @@
                 <ul>
                     <xsl:sequence select="woposs:participant(current())"/>
                     <xsl:for-each select="$corresp">
-                        <xsl:variable name="unit" select="$doc/descendant::tei:fs[@xml:id eq current()]"/>
+                        <xsl:variable name="unit"
+                            select="$doc/descendant::tei:fs[@xml:id eq current()]"/>
                         <li>Participant of: <ul>
                                 <li><xsl:value-of select="woposs:capitalize-first($unit/@type)"/>:
-                                            <em><xsl:sequence select="woposs:unitContents($doc, current())"/></em></li>
+                                            <em><xsl:sequence
+                                            select="woposs:unitContents($doc, current())"
+                                    /></em></li>
                             </ul></li>
                     </xsl:for-each>
                 </ul>
@@ -215,13 +258,15 @@
                 <xsl:if test="$function eq 'marker'">
                     <h3>Marker: <xsl:sequence select="woposs:unitContents($doc, current())"/></h3>
                     <xsl:call-template name="marker-description">
-                        <xsl:with-param name="fs" select="$doc/descendant::tei:fs[@xml:id eq current()]" as="node()"/>
+                        <xsl:with-param name="fs"
+                            select="$doc/descendant::tei:fs[@xml:id eq current()]" as="node()"/>
                     </xsl:call-template>
                 </xsl:if>
                 <xsl:if test="$function eq 'scope'">
                     <h3>Scope: <xsl:sequence select="woposs:unitContents($doc, current())"/></h3>
                     <xsl:call-template name="scope-description">
-                        <xsl:with-param name="fs" select="$doc/descendant::tei:fs[@xml:id eq current()]" as="node()?"/>
+                        <xsl:with-param name="fs"
+                            select="$doc/descendant::tei:fs[@xml:id eq current()]" as="node()?"/>
                     </xsl:call-template>
                 </xsl:if>
             </div>
@@ -230,16 +275,20 @@
     </xsl:template>
     <xsl:template name="marker-description">
         <xsl:param name="fs" as="node()"/>
-        <xsl:variable name="relations" select="$fs/ancestor::tei:TEI/descendant::tei:fs[tei:f/@fVal = $fs/@xml:id]"/>
+        <xsl:variable name="relations"
+            select="$fs/ancestor::tei:TEI/descendant::tei:fs[tei:f/@fVal = $fs/@xml:id]"/>
         <ul>
             <xsl:choose>
                 <xsl:when test="$fs/tei:f[@name eq 'pertinence']/tei:binary/@value eq 'true'">
                     <xsl:sequence select="woposs:marker($fs)"/>
                     <li>Modal relations: <xsl:value-of select="count($relations)"/><ol>
                             <xsl:for-each select="$relations">
-                                <xsl:variable name="scopeFs" select="current()/ancestor::tei:TEI/descendant::tei:fs[@xml:id eq current()/tei:f[@name eq 'scope']/@fVal]"/>
+                                <xsl:variable name="scopeFs"
+                                    select="current()/ancestor::tei:TEI/descendant::tei:fs[@xml:id eq current()/tei:f[@name eq 'scope']/@fVal]"/>
                                 <li>Scope and meaning: <ul>
-                                        <li>Scope: <em><xsl:value-of select="woposs:unitContents(current()/ancestor::tei:TEI, $scopeFs/@xml:id)"/></em>
+                                        <li>Scope: <em><xsl:value-of
+                                                  select="woposs:unitContents(current()/ancestor::tei:TEI, $scopeFs/@xml:id)"
+                                                /></em>
                                             <ul><xsl:sequence select="woposs:scope($scopeFs)"/></ul>
                                         </li>
                                         <xsl:sequence select="woposs:relation(current())"/>
@@ -255,7 +304,9 @@
                         <xsl:otherwise>
                             <li>Modal: no</li>
                             <xsl:if test="$fs/tei:f[@name eq 'diachrony']">
-                                <li>Diachrony: <xsl:value-of select="$fs/tei:f[@name eq 'diachrony']/tei:symbol/@value"/></li>
+                                <li>Diachrony: <xsl:value-of
+                                        select="$fs/tei:f[@name eq 'diachrony']/tei:symbol/@value"
+                                    /></li>
                             </xsl:if>
                         </xsl:otherwise>
                     </xsl:choose>
@@ -266,14 +317,18 @@
 
     <xsl:template name="scope-description">
         <xsl:param name="fs"/>
-        <xsl:variable name="relations" select="$fs/ancestor::tei:TEI/descendant::tei:fs[tei:f/@fVal = $fs/@xml:id]"/>
+        <xsl:variable name="relations"
+            select="$fs/ancestor::tei:TEI/descendant::tei:fs[tei:f/@fVal = $fs/@xml:id]"/>
         <ul>
             <xsl:sequence select="woposs:scope($fs)"/>
             <li>Modal relations: <xsl:value-of select="count($relations)"/><ol>
                     <xsl:for-each select="$relations">
-                        <xsl:variable name="markerFs" select="current()/ancestor::tei:TEI/descendant::tei:fs[@xml:id eq current()/tei:f[@name eq 'marker']/@fVal]"/>
+                        <xsl:variable name="markerFs"
+                            select="current()/ancestor::tei:TEI/descendant::tei:fs[@xml:id eq current()/tei:f[@name eq 'marker']/@fVal]"/>
                         <li>Marker and meaning: <ul>
-                                <li>Marker: <em><xsl:value-of select="woposs:unitContents(current()/ancestor::tei:TEI, $markerFs/@xml:id)"/></em>
+                                <li>Marker: <em><xsl:value-of
+                                            select="woposs:unitContents(current()/ancestor::tei:TEI, $markerFs/@xml:id)"
+                                        /></em>
                                     <ul><xsl:sequence select="woposs:marker($markerFs)"/></ul>
                                 </li>
                                 <xsl:sequence select="woposs:relation(current())"/>
@@ -345,12 +400,15 @@
            </xsl:if>
        </ul>
    </xsl:template>-->
-    <xsl:template match="tei:w" mode="msd"><strong>Lemma</strong>: <em><xsl:value-of select="@lemma"/></em><br/>
+    <xsl:template match="tei:w" mode="msd"><strong>Lemma</strong>: <em><xsl:value-of select="@lemma"
+            /></em><br/>
         <strong>PoS</strong>: <xsl:value-of select="@pos"/><br/>
         <xsl:if test="@msd">
-            <xsl:variable name="msd" select="ancestor::tei:TEI/descendant::tei:fs[@type eq 'msd'][@xml:id = substring(current()/@msd, 2)]"/>
+            <xsl:variable name="msd"
+                select="ancestor::tei:TEI/descendant::tei:fs[@type eq 'msd'][@xml:id = substring(current()/@msd, 2)]"/>
             <xsl:for-each select="$msd/tei:f">
-                <strong><xsl:value-of select="current()/@name"/></strong>: <xsl:value-of select="current()/tei:symbol/@value"/><br/>
+                <strong><xsl:value-of select="current()/@name"/></strong>: <xsl:value-of
+                    select="current()/tei:symbol/@value"/><br/>
             </xsl:for-each>
         </xsl:if>
     </xsl:template>

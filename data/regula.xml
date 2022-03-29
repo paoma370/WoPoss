@@ -2466,7 +2466,9 @@
                   <pc>,</pc>
                   <w pos="VERB" lemma="agnosco">agnoscat</w>
                   <w pos="ADP" lemma="pro">pro</w>
-                  <seg function="marker" ana="#reg0004"><w pos="NOUN" lemma="certus">certo</w></seg>
+                  <seg function="marker" ana="#reg0004">
+                     <w pos="NOUN" lemma="certus">certo</w>
+                  </seg>
                   <seg function="scope" ana="#reg1004">
                      <w pos="SCONJ" lemma="quia">quia</w>
                      <seg function="scope" ana="#reg1005" part="Y"><w pos="ADP" lemma="in">in</w>
@@ -2478,7 +2480,7 @@
                         <w pos="VERB" lemma="sum" msd="#regd1e11224">
                            <seg function="marker" next="turus" part="Y" ana="#reg92998">est</seg>
                         </w>
-                        <w pos="VERB" lemma="reddo" msd="#regd1e11232">
+                        <w pos="VERB" lemma="reddo" msd="#regd1e11232" function="main">
                            <seg function="scope" next="Domino_rationem" part="Y" ana="#reg92960"
                               >reddi</seg>
                            <seg function="marker" part="Y" ana="#reg92998">turus</seg>
@@ -2492,11 +2494,14 @@
                         >sine</w></seg>
                      <seg function="marker" ana="#reg0005"><w pos="NOUN" lemma="dubium"
                         >dubio</w></seg>
-                     <seg function="scope" ana="#reg1005" part="Y"><w pos="VERB" lemma="addo"
+                     <seg function="scope" ana="#reg1005" part="Y">
+                        <w pos="VERB" lemma="addo" function="main"
                            >addita</w>
                         <w pos="CCONJ" lemma="et">et</w>
                         <w pos="ADJ" lemma="suæ">suæ</w>
-                        <w pos="NOUN" lemma="animæ">animæ</w></seg></seg>
+                        <w pos="NOUN" lemma="animæ">animæ</w>
+                     </seg>
+                  </seg>
                   <pc>.</pc>
                </s>
                <s n="107">
@@ -3820,7 +3825,7 @@
                   <w pos="VERB" lemma="efficio">efficiatur</w>
                   <pc>,</pc>
                   <w pos="SCONJ" lemma="quia">quia</w>
-                  <w pos="NOUN" lemma="oboedientia">oboedientia</w>
+                  <seg function="participant" type="inanimate_patient" corresp="#reg141772"> <w pos="NOUN" lemma="oboedientia">oboedientia</w></seg>
                   <w pos="PRON" lemma="qui">quæ</w>
                   <w pos="ADJ" lemma="magnus">maioribus</w>
                   <w pos="VERB" lemma="prosum">præbetur</w>
@@ -37048,6 +37053,9 @@
             </f>
             <f name="participantType">
                <symbol value="animate"/>
+            </f>            
+            <f name="participantType">
+               <symbol value="inanimate_patient"/>
             </f>
          </fs>
          <fs xml:id="reg142132" type="marker">

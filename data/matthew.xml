@@ -1552,7 +1552,7 @@
                      <seg function="marker" ana="#u_e106275" xml:id="mt05_42">volenti</seg>
                   </w>
                   <seg function="scope" ana="#u_e106348">
-                     <w pos="VERB" lemma="mutuo" msd="#ed1e12704" function="main">mutuari</w>
+                     <w pos="VERB" lemma="mutuor" msd="#ed1e12704" function="main">mutuari</w>
                      <w pos="ADP" lemma="ab">a</w>
                      <w pos="PRON" lemma="tu" msd="#ed1e12715">te</w>
                   </seg>
@@ -28347,7 +28347,7 @@
                <symbol value="Inf"/>
             </f>
             <f name="Voice">
-               <symbol value="Act"/>
+               <symbol value="Pass"/>
             </f>
          </fs>
          <fs type="msd" xml:id="ad1e11017">

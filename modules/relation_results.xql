@@ -232,14 +232,16 @@ declare function local:modality($fs as item()*, $modality as xs:string) as item(
 
 declare function local:SoaDesc($relations as node()*) as node()* {
     let $query-scopes := woposs:filterParams($SoADesc)
-    let $scope_ids:= $relations/tei:f[@name eq 'scope']/@fVal
     let $docs := $relations/ancestor::tei:TEI
-    let $scopes := $docs/id($scope_ids)
+    for $doc in $docs
+    let $relations_by_doc := $relations[ancestor::tei:TEI = $doc]
+    let $scope_ids:= $relations_by_doc/tei:f[@name eq 'scope']/@fVal
+    let $scopes := $doc/id($scope_ids)
     let $filtered_scopes :=
     $scopes[ft:query-field(., $query-scopes)]/@xml:id
     
     let $filtered_relations := if (exists($filtered_scopes)) then
-        $relations[ft:query-field(., woposs:prepareQuery("scopeId", $filtered_scopes))]
+        $relations_by_doc[ft:query-field(., woposs:prepareQuery("scopeId", $filtered_scopes))]
     else
         ()
     return
@@ -283,7 +285,11 @@ declare function local:dynamic($fs as item()*) as item()* {
     let $dynamicity_fs := $scope/tei:f[@name eq 'dynamicity']/*/@value
     let $dynamicity := if ($dynamicity_fs eq 'true') then '+dynamic' else if ($dynamicity_fs eq 'false') then '-dynamic' else '±dynamic'
     let $participant := if ($scope/tei:f[@name eq 'participant']/tei:symbol/@value eq 'none') then 'no participant' else $scope/tei:f[@name eq 'participantType']/tei:symbol/replace(@value, '_', ' – ')
-
+    let $scope_segs: = $doc/descendant::tei:seg[some $x in tokenize(@ana, '\s+') satisfies substring($x, 2) = $scope/@xml:id]
+    let $scope_contents := $doc/string-join($scope_segs, ' ')
+    let $main_verb := $scope_segs/child::tei:w[@function eq 'main'] | $scope_segs/parent::tei:w[@function eq 'main']
+    let $voice_fs := if ($main_verb) then $doc/descendant::tei:fs[@xml:id = substring($main_verb/@msd, 2)]/tei:f[@name eq 'Voice']/tei:symbol/@value/string() else if (contains($lemma, 'bilis') and contains($participant, 'patient')) then 'Pass' else if ($lemma eq 'bilis') then 'Act' else if (contains($lemma, 'ndus')) then 'Pass' else if (contains($lemma, 'turus')) then 'Act' else ()
+    let $voice := if (ends-with($main_verb/@lemma, 'r') and $voice_fs eq 'Pass') then 'Dep' else $voice_fs
     let $marker := string-join($doc/descendant::tei:seg[substring(@ana, 2) eq $mk_id], ' ')
     let $s := $doc/descendant::tei:s[descendant::tei:seg[substring(@ana, 2) eq $mk_id]]
     let $amb := woposs:isAmbiguous($doc, $dyn/@xml:id, 'relation')
@@ -291,7 +297,7 @@ declare function local:dynamic($fs as item()*) as item()* {
     return
         <tr><td1
                 ref="{$mk_id}">{$s}</td1>
-            <td>{$marker}</td><td>{$lemma}</td><td>dynamic</td><td>{$type}</td><td>{$subtype}</td><td>{$other}</td><td>{$amb}</td><td>{$control}</td><td>{$dynamicity}</td><td>{$participant}</td><td>{$locus}</td></tr>
+            <td>{$marker}</td><td>{$lemma}</td><td>dynamic</td><td>{$type}</td><td>{$subtype}</td><td>{$other}</td><td>{$amb}</td><td>{$scope_contents}</td><td>{$main_verb/string()}</td><td>{$voice}</td><td>{$control}</td><td>{$dynamicity}</td><td>{$participant}</td><td>{$locus}</td></tr>
 
 };
 
@@ -457,6 +463,12 @@ declare function local:deontic($fs as item()*) as item()* {
     let $dynamicity_fs := $scope/tei:f[@name eq 'dynamicity']/*/@value
     let $dynamicity := if ($dynamicity_fs eq 'true') then '+dynamic' else if ($dynamicity_fs eq 'false') then '-dynamic' else '±dynamic'
     let $participant := if ($scope/tei:f[@name eq 'participant']/tei:symbol/@value eq 'none') then 'no participant' else $scope/tei:f[@name eq 'participantType']/tei:symbol/replace(@value, '_', ' – ')
+  let $scope_segs: = $doc/descendant::tei:seg[some $x in tokenize(@ana, '\s+') satisfies substring($x, 2) = $scope/@xml:id]
+    let $scope_contents := $doc/string-join($scope_segs, ' ')
+    let $main_verb := $scope_segs/child::tei:w[@function eq 'main'] | $scope_segs/parent::tei:w[@function eq 'main']
+    let $voice_fs := if ($main_verb) then $doc/descendant::tei:fs[@xml:id = substring($main_verb/@msd, 2)]/tei:f[@name eq 'Voice']/tei:symbol/@value/string() else if (contains($lemma, 'bilis') and contains($participant, 'patient')) then 'Pass' else if ($lemma eq 'bilis') then 'Act' else if (contains($lemma, 'ndus')) then 'Pass' else if (contains($lemma, 'turus')) then 'Act' else ()
+      let $voice := if (ends-with($main_verb/@lemma, 'r') and $voice_fs eq 'Pass') then 'Deponent' else $voice_fs
+ 
     let $marker := string-join($doc/descendant::tei:seg[substring(@ana, 2) eq $mk_id], ' ')
     let $s := $doc/descendant::tei:s[descendant::tei:seg[substring(@ana, 2) eq $mk_id]]
     let $amb := woposs:isAmbiguous($doc, $deo/@xml:id, 'relation')
@@ -464,7 +476,7 @@ declare function local:deontic($fs as item()*) as item()* {
     return
         <tr><td1
                 ref="{$mk_id}">{$s}</td1>
-            <td>{$marker}</td><td>{$lemma}</td><td>deontic</td><td>{$type}</td><td>{$subtype}</td><td>{$other}</td><td>{$amb}</td><td>{$control}</td><td>{$dynamicity}</td><td>{$participant}</td><td>{$locus}</td></tr>
+            <td>{$marker}</td><td>{$lemma}</td><td>deontic</td><td>{$type}</td><td>{$subtype}</td><td>{$other}</td><td>{$amb}</td><td>{$scope_contents}</td><td>{$main_verb/string()}</td><td>{$voice}</td><td>{$control}</td><td>{$dynamicity}</td><td>{$participant}</td><td>{$locus}</td></tr>
 
 };
 
@@ -486,6 +498,13 @@ declare function local:epistemic($fs as item()*) as item()* {
     let $dynamicity_fs := $scope/tei:f[@name eq 'dynamicity']/*/@value
     let $dynamicity := if ($dynamicity_fs eq 'true') then '+dynamic' else if ($dynamicity_fs eq 'false') then '-dynamic' else '±dynamic'
     let $participant := if ($scope/tei:f[@name eq 'participant']/tei:symbol/@value eq 'none') then 'no participant' else $scope/tei:f[@name eq 'participantType']/tei:symbol/replace(@value, '_', ' – ')
+   let $scope_segs: = $doc/descendant::tei:seg[some $x in tokenize(@ana, '\s+') satisfies substring($x, 2) = $scope/@xml:id]
+    let $scope_contents := $doc/string-join($scope_segs, ' ')
+    let $main_verb := $scope_segs/child::tei:w[@function eq 'main'] | $scope_segs/parent::tei:w[@function eq 'main']
+   let $voice_fs := if ($main_verb) then $doc/descendant::tei:fs[@xml:id = substring($main_verb/@msd, 2)]/tei:f[@name eq 'Voice']/tei:symbol/@value/string() else if (contains($lemma, 'bilis') and contains($participant, 'patient')) then 'Pass' else if ($lemma eq 'bilis') then 'Act' else if (contains($lemma, 'ndus')) then 'Pass' else if (contains($lemma, 'turus')) then 'Act' else ()
+     
+    let $voice := if (ends-with($main_verb/@lemma, 'r') and $voice_fs eq 'Pass') then 'Dep' else $voice_fs
+ 
     let $other := $epi/tei:f[@name eq 'function']/tei:symbol/@value
     let $marker := string-join($doc/descendant::tei:seg[substring(@ana, 2) eq $mk_id], ' ')
     let $s := $doc/descendant::tei:s[descendant::tei:seg[substring(@ana, 2) eq $mk_id]]
@@ -494,7 +513,7 @@ declare function local:epistemic($fs as item()*) as item()* {
     return
         <tr><td1
                 ref="{$mk_id}">{$s}</td1>
-            <td>{$marker}</td><td>{$lemma}</td><td>epistemic</td><td></td><td>{$degree}</td><td>{$other}</td><td>{$amb}</td><td>{$control}</td><td>{$dynamicity}</td><td>{$participant}</td><td>{$locus}</td></tr>
+            <td>{$marker}</td><td>{$lemma}</td><td>epistemic</td><td></td><td>{$degree}</td><td>{$other}</td><td>{$amb}</td><td>{$scope_contents}</td><td>{$main_verb/string()}</td><td>{$voice}</td><td>{$control}</td><td>{$dynamicity}</td><td>{$participant}</td><td>{$locus}</td></tr>
 
 };
 
