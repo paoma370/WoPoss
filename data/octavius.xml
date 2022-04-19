@@ -29,7 +29,7 @@
             </respStmt>
          </editionStmt>
          <extent>
-            <measure unit="words" quantity="11636"/>
+            <measure unit="words" quantity="11637"/>
          </extent>
          <publicationStmt>
             <authority>Swiss National Science Foundation</authority>
@@ -39,9 +39,10 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <listBibl>
-               <bibl type="sourceEdition">Perseus</bibl>
-            </listBibl>
+            <p>Text provided by Perseus Digital Library, with funding from The Mellon Foundation.
+               Original version available for viewing and download at <ptr
+                  target="http://www.perseus.tufts.edu/hopper/"/>. Text retrieved from:
+               <bibl type="sourceEdition"><ptr target="http://data.perseus.org/texts/urn:cts:latinLit:stoa0203.stoa001"/></bibl></p>            
          </sourceDesc>
       </fileDesc>
       <profileDesc>
@@ -1085,8 +1086,7 @@
                   <w pos="VERB" lemma="conprobo">conprobaris</w>
                   <pc>,</pc>
                   <seg function="scope" next="informa" part="Y" ana="#oct312618">
-                     <w pos="ADP" lemma="in">in</w>
-                     <w pos="ADV" lemma="impraesentiarum">praesentiarum</w>
+                     <w pos="ADV" lemma="impraesentiarum">in praesentiarum</w>
                      <w pos="ADV" lemma="tamen">tamen</w>
                      <w pos="ADV" lemma="ita">ita</w>
                      <w pos="PRON" lemma="tu" msd="#octd1e5030">
@@ -1208,7 +1208,7 @@
                </s>
                <s n="58">
                   <w pos="ADV" lemma="ita">Itaque</w>
-                  <w pos="VERB" lemma="indigno" msd="#octd1e5542" >
+                  <w pos="VERB" lemma="indigno" msd="#octd1e5542">
                      <seg function="scope" ana="#oct45419" part="Y">indigna</seg>
                      <seg function="marker" next="est" part="Y" ana="#oct45381">ndum</seg>
                   </w>
@@ -1681,7 +1681,7 @@
                      <seg function="marker" next="nda" part="Y" ana="#oct64401 #oct64637">sit</seg>
                   </w>
                   <w pos="PRON" lemma="is">eorum</w>
-                  <w pos="VERB" lemma="detestor" msd="#octd1e7859" >
+                  <w pos="VERB" lemma="detestor" msd="#octd1e7859">
                      <seg function="scope" ana="#oct64439">detesta</seg>
                      <seg function="marker" part="Y" ana="#oct64401">nda</seg>
                   </w>
@@ -1692,7 +1692,7 @@
                         >pravitas</seg>
                   </w>
                   <w pos="SCONJ" lemma="an">an</w>
-                  <w pos="VERB" lemma="opto" msd="#octd1e7883" >
+                  <w pos="VERB" lemma="opto" msd="#octd1e7883">
                      <seg function="scope" ana="#oct64675">opta</seg>
                      <seg function="marker" part="Y" ana="#oct64637">nda</seg>
                   </w>
@@ -1815,7 +1815,7 @@
                   <w pos="VERB" lemma="sum">sit</w>
                   <pc>,</pc>
                   <w pos="ADV" lemma="quanto">quanto</w>
-                  <w pos="ADJ" lemma="venerabilis" msd="#octd1e8388"> venera<seg function="marker"
+                  <w pos="ADJ" lemma="venerabilis" msd="#octd1e8388">venera<seg function="marker"
                         ana="#oct313038">bilius</seg>
                   </w>
                   <w pos="CCONJ" lemma="atque">ac</w>
@@ -2832,7 +2832,7 @@
                         >haec</seg>
                   </w>
                   <w pos="CCONJ" lemma="et">et</w>
-                  <w pos="VERB" lemma="exsecro" msd="#octd1e13328" >
+                  <w pos="VERB" lemma="exsecro" msd="#octd1e13328">
                      <seg function="scope" ana="#oct109430">execra</seg>
                      <seg function="marker" ana="#oct109372">nda</seg>
                   </w>
@@ -3027,7 +3027,7 @@
                <s n="156">
                   <w pos="ADV" lemma="jam">Iam</w>
                   <w pos="ADP" lemma="de">de</w>
-                  <w pos="VERB" lemma="initio" msd="#octd1e14203" >
+                  <w pos="VERB" lemma="initio" msd="#octd1e14203">
                      <seg function="scope" ana="#oct313813">initia</seg>
                      <seg function="marker" ana="#oct313795">ndis</seg>
                   </w>
@@ -3040,7 +3040,7 @@
                         >fabula</seg>
                   </w>
                   <w pos="ADV" lemma="tam">tam</w>
-                  <w pos="VERB" lemma="detesto" msd="#octd1e14232" >
+                  <w pos="VERB" lemma="detesto" msd="#octd1e14232">
                      <seg function="scope" ana="#oct117043">detesta</seg>
                      <seg function="marker" ana="#oct116985">nda</seg>
                   </w>
@@ -3344,7 +3344,7 @@
                   <w pos="VERB" lemma="interprimo">interprimunt</w>
                   <pc>,</pc>
                   <w pos="CCONJ" lemma="aut">aut</w>
-                  <w pos="VERB" lemma="punio" msd="#octd1e15706" >
+                  <w pos="VERB" lemma="punio" msd="#octd1e15706">
                      <seg function="scope" ana="#oct129121">punie</seg>
                      <seg function="marker" next="est" part="Y" ana="#oct129083">ndum</seg>
                   </w>
@@ -4523,7 +4523,7 @@
                   </w>
                   <w pos="VERB" lemma="possum" msd="#octd1e21096">
                      <seg function="marker" ana="#oct172689">possunt</seg>
-                  </w>                
+                  </w>
                   <w pos="CCONJ" lemma="et">et</w>
                   <w pos="ADJ" lemma="doctus" msd="#octd1e21109">
                      <seg function="participant" type="animate" corresp="#oct172409">docti</seg>
@@ -4546,7 +4546,7 @@
                   <w pos="ADV" lemma="nonne">
                      <seg function="negation" corresp="#oct173216 #oct173451">nonne</seg>
                   </w>
-                  <w pos="VERB" lemma="admiro" msd="#octd1e21159" >
+                  <w pos="VERB" lemma="admiro" msd="#octd1e21159">
                      <seg function="scope" ana="#oct173254">admira</seg>
                      <seg function="marker" ana="#oct173216">nda</seg>
                   </w>
@@ -4555,7 +4555,7 @@
                         >omnibus</seg>
                   </w>
                   <w pos="CCONJ" lemma="et">et</w>
-                  <w pos="VERB" lemma="sector" msd="#octd1e21181" >
+                  <w pos="VERB" lemma="sector" msd="#octd1e21181">
                      <seg function="scope" ana="#oct173489">secta</seg>
                      <seg function="marker" ana="#oct173451">nda</seg>
                   </w>
@@ -4647,7 +4647,7 @@
                   <w pos="SCONJ" lemma="ut">ut</w>
                   <w pos="VERB" lemma="sum">sunt</w>
                   <pc>,</pc>
-                  <w pos="VERB" lemma="relinquo" msd="#octd1e21600" >
+                  <w pos="VERB" lemma="relinquo" msd="#octd1e21600">
                      <seg function="scope" ana="#oct177008">relinque</seg>
                      <seg function="marker" ana="#oct314160" part="Y">nda</seg>
                   </w>
@@ -5238,7 +5238,7 @@
                   <w pos="NOUN" lemma="vir">viribus</w>
                   <pc>,</pc>
                   <w pos="CCONJ" lemma="et">et</w>
-                  <w pos="VERB" lemma="adnitor" msd="#octd1e24057" >
+                  <w pos="VERB" lemma="adnitor" msd="#octd1e24057">
                      <seg function="scope" next="tibi_mecum" part="Y" ana="#oct197241">adnite</seg>
                      <seg function="marker" next="est" part="Y" ana="#oct197183">ndum</seg>
                   </w>
@@ -5472,7 +5472,7 @@
                   <w pos="CCONJ" lemma="neque">
                      <seg function="negation" corresp="#oct205517">nec</seg>
                   </w>
-                  <w pos="VERB" lemma="dubito" msd="#octd1e25078" >
+                  <w pos="VERB" lemma="dubito" msd="#octd1e25078">
                      <seg function="scope" next="de_cetero" part="Y" ana="#oct205479">dubita</seg>
                      <seg function="marker" next="est" part="Y" ana="#oct205517">ndum</seg>
                   </w>
@@ -5491,7 +5491,7 @@
                   <w pos="CCONJ" lemma="neque">
                      <seg function="negation" corresp="#oct205869">nec</seg>
                   </w>
-                  <w pos="VERB" lemma="vago" msd="#octd1e25123" >
+                  <w pos="VERB" lemma="vago" msd="#octd1e25123">
                      <seg function="scope" ana="#oct205907">vaga</seg>
                      <seg function="marker" part="Y" ana="#oct205869">ndum</seg>
                   </w>
@@ -6120,7 +6120,7 @@
                   <pc>?</pc>
                </s>
                <s n="326">
-                  <w pos="VERB" lemma="relinquo" msd="#octd1e28055" >
+                  <w pos="VERB" lemma="relinquo" msd="#octd1e28055">
                      <seg function="scope" next="astrologis" part="Y" ana="#oct229857"
                         >Relinque</seg>
                      <seg function="marker" ana="#oct229819">nda</seg>
@@ -7023,7 +7023,7 @@
                      <seg function="participant" type="animate_patient" corresp="#oct315213"
                         >multitudo</seg>
                   </w>
-                  <w pos="VERB" lemma="dirimo" msd="#octd1e32148" >
+                  <w pos="VERB" lemma="dirimo" msd="#octd1e32148">
                      <seg function="scope" ana="#oct315213">dirime</seg>
                      <seg ana="#oct315323" function="marker" part="Y">nda</seg>
                   </w>
@@ -8079,8 +8079,6 @@
                   <w pos="VERB" lemma="licet" msd="#octd1e37167">
                      <seg function="marker" ana="#oct304846">licet</seg>
                   </w>
-               </s>
-               <s n="447">
                   <seg function="scope" ana="#oct304924" part="Y">
                      <w pos="VERB" lemma="fingo" msd="#octd1e37176" function="main">fingere</w>
                   </seg>
@@ -9322,7 +9320,7 @@
                   <w pos="SCONJ" lemma="si">si</w>
                   <w pos="ADJ" lemma="percensea">percenseas</w>
                   <pc>,</pc>
-                  <w pos="VERB" lemma="rideo" msd="#oct2d1e4794" >
+                  <w pos="VERB" lemma="rideo" msd="#oct2d1e4794">
                      <seg function="scope" ana="#oct239264">ride</seg>
                      <seg function="marker" next="sunt" part="Y" ana="#oct239219">nda</seg>
                   </w>
@@ -9332,7 +9330,7 @@
                   <w pos="ADV" lemma="quam">quam</w>
                   <w pos="ADJ" lemma="multus">multa</w>
                   <w pos="CCONJ" lemma="etiam">etiam</w>
-                  <w pos="VERB" lemma="miseror" msd="#oct2d1e4838" >
+                  <w pos="VERB" lemma="miseror" msd="#oct2d1e4838">
                      <seg function="scope" ana="#oct239638">misera</seg>
                      <seg function="marker" next="sunt" part="Y" ana="#oct239593">nda</seg>
                   </w>
@@ -9383,10 +9381,13 @@
                   <w pos="VERB" lemma="sum">est</w>
                   <seg function="scope" ana="#oct241491">
                      <w pos="PRON" lemma="quo" msd="#oct2d1e5068">quo</w>
-                     <w pos="NOUN" lemma="vir" msd="#oct2d1e5075">
-                        <seg function="participant" type="animate" corresp="#oct241491">viro</seg>
-                     </w>
+                     <supplied>
+                        <w>interesse</w>
+                     </supplied>
                   </seg>
+                  <w pos="NOUN" lemma="vir" msd="#oct2d1e5075">
+                     <seg function="participant" type="animate" corresp="#oct241491">viro</seg>
+                  </w>
                   <w pos="ADV" lemma="non">
                      <seg function="negation" corresp="#oct241684">non</seg>
                   </w>
@@ -9405,7 +9406,7 @@
                   <w pos="PRON" lemma="quidam">quibusdam</w>
                   <w pos="NOUN" lemma="caerimonium">caerimoniis</w>
                   <w pos="VERB" lemma="interio">interesse</w>
-                  <w pos="NOUN" lemma="piacularcor">piacularc</w>
+                  <w pos="NOUN" lemma="piaculo">piaculare</w>
                   <w pos="NOUN" lemma="flago">flagitium</w>
                   <w pos="VERB" lemma="sum">est</w>
                   <pc>:</pc>
@@ -11040,7 +11041,7 @@
                      <w pos="ADJ" lemma="solistimus" msd="#oct2d1e12960">solistimum</w>
                      <w pos="NOUN" lemma="tripudium" msd="#oct2d1e12966">tripudium</w>
                   </seg>
-                  <w pos="VERB" lemma="exspecto" msd="#oct2d1e12972" >
+                  <w pos="VERB" lemma="exspecto" msd="#oct2d1e12972">
                      <seg function="scope" ana="#oct2106116">exspecta</seg>
                      <seg function="marker" ana="#oct2106058">ndum</seg>
                   </w>
@@ -12153,7 +12154,7 @@
                   <w pos="CCONJ" lemma="neque">
                      <seg function="negation" corresp="#oct2149444">nec</seg>
                   </w>
-                  <w pos="VERB" lemma="audio" msd="#oct2d1e18319" >
+                  <w pos="VERB" lemma="audio" msd="#oct2d1e18319">
                      <seg function="scope" next="in_totum" part="Y" ana="#oct2149406">audie</seg>
                      <seg function="marker" ana="#oct2149444">ndos</seg>
                   </w>
@@ -12595,7 +12596,7 @@
                      <seg function="negation" corresp="#oct2167159">nec</seg>
                   </w>
                   <w pos="NOUN" lemma="aetas" msd="#oct2d1e20498">
-                     <seg function="participant" type="inanimate" corresp="#oct2167252">aetas </seg>
+                     <seg function="participant" type="inanimate" corresp="#oct2167252">aetas</seg>
                   </w>
                   <w pos="VERB" lemma="possum" msd="#oct2d1e20505">
                      <seg function="marker" ana="#oct2167159">potest</seg>
@@ -12615,7 +12616,7 @@
                   <w pos="VERB" lemma="cogo" msd="#oct2d1e20534" function="main">
                      <seg function="scope" ana="#oct2167452">cogi</seg>
                   </w>
-                  <seg function="participant" type="inanimate" corresp="#oct2167452">
+                  <seg function="participant" type="inanimate_patient" corresp="#oct2167452">
                      <w pos="NOUN" lemma="servitus" msd="#oct2d1e20542">servitus</w>
                      <w pos="ADJ" lemma="durus" msd="#oct2d1e20548">durior</w>
                   </seg>
@@ -12635,8 +12636,7 @@
                      <w pos="NOUN" lemma="propudium" msd="#oct2d1e4838">propudia</w>
                   </seg>
                   <w pos="PRON" lemma="nos" msd="#oct2d1e20595">
-                     <seg function="participant" type="animate" corresp="#oct2168205"
-                        >nobis</seg>
+                     <seg function="participant" type="animate" corresp="#oct2168205">nobis</seg>
                   </w>
                   <w pos="ADV" lemma="non">
                      <seg function="negation" corresp="#oct2168087">non</seg>
@@ -14793,9 +14793,6 @@
                   <w pos="ADJ" lemma="reliquus">reliqua</w>
                   <w pos="NOUN" lemma="aster">astra</w>
                   <w pos="VERB" lemma="desio">desierit</w>
-                  <pc>1</pc>
-               </s>
-               <s n="381">
                   <w pos="ADJ" lemma="fontium">fontium</w>
                   <w pos="ADJ" lemma="dulcis">dulcis</w>
                   <w pos="NOUN" lemma="aqua">aqua</w>
@@ -14814,7 +14811,7 @@
                      <seg function="marker" ana="#oct2248029">turum</seg>
                   </w>
                   <pc>,</pc>
-                  <w pos="NOUN" lemma="Sto">Stoicis</w>
+                  <w pos="NOUN" lemma="Stoicus">Stoicis</w>
                   <w pos="VERB" lemma="consto">constans</w>
                   <w pos="NOUN" lemma="opinium">opinio</w>
                   <w pos="VERB" lemma="sum">est</w>
@@ -15285,7 +15282,7 @@
                   <pc>?</pc>
                </s>
                <s n="407">
-                  <w pos="VERB" lemma="expecto" msd="#oct2d1e32632" >
+                  <w pos="VERB" lemma="expecto" msd="#oct2d1e32632">
                      <seg function="scope" ana="#oct2265947">Expecta</seg>
                      <seg function="marker" next="est" part="Y" ana="#oct2265902">ndum</seg>
                   </w>
@@ -15306,8 +15303,8 @@
                   <w pos="CCONJ" lemma="neque">Nec</w>
                   <w pos="VERB" lemma="ignosus">ignoro</w>
                   <w pos="ADJ" lemma="plerique" msd="#oct2d1e32693">
-                     <seg function="participant" type="animate" corresp="#oct2267206 #oct2267308"
-                        >plerosque</seg>
+                     <seg function="participant" type="animate_patient"
+                        corresp="#oct2267206 #oct2267308">plerosque</seg>
                   </w>
                   <w pos="NOUN" lemma="conscientia">conscientia</w>
                   <w pos="NOUN" lemma="mereo">meritorum</w>
@@ -16023,6 +16020,9 @@
                   <seg function="scope" ana="#oct2292516">
                      <w pos="ADV" lemma="quam">quam</w>
                      <w pos="ADJ" lemma="prodigus" msd="#oct2d1e35916">prodigos</w>
+                     <supplied>
+                        <w>esse</w>
+                     </supplied>
                   </seg>
                   <pc>.</pc>
                </s>
@@ -36711,7 +36711,7 @@
                <symbol value="explicit"/>
             </f>
             <f name="participantType">
-               <symbol value="inanimate"/>
+               <symbol value="inanimate_patient"/>
             </f>
          </fs>
          <fs xml:id="oct2168087" type="marker">
@@ -38233,7 +38233,7 @@
                <symbol value="explicit"/>
             </f>
             <f name="participantType">
-               <symbol value="animate"/>
+               <symbol value="animate_patient"/>
             </f>
          </fs>
          <fs xml:id="oct2267308" type="scope">
@@ -38253,7 +38253,7 @@
                <symbol value="explicit"/>
             </f>
             <f name="participantType">
-               <symbol value="animate"/>
+               <symbol value="animate_patient"/>
             </f>
          </fs>
          <fs xml:id="oct2279062" type="scope">
@@ -40440,12 +40440,13 @@
                <symbol value="situational"/>
             </f>
          </fs>
+
          <fs xml:id="oct2349314" type="relation">
+            <f name="marker" fVal="oct2248029"/>
+            <f name="scope" fVal="oct2349230"/>
             <f name="modality">
                <symbol value="dynamic"/>
             </f>
-            <f name="marker" fVal="oct2248029"/>
-            <f name="scope" fVal="oct2349230"/>
             <f name="meaning">
                <symbol value="necessity"/>
             </f>
@@ -40459,6 +40460,7 @@
                <string>The necessive meaning is probably bound to the conditional sentence.</string>
             </f>
          </fs>
+
          <fs xml:id="oct2349451" type="relation">
             <f name="modality">
                <symbol value="dynamic"/>

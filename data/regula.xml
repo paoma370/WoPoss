@@ -2471,7 +2471,7 @@
                   </seg>
                   <seg function="scope" ana="#reg1004">
                      <w pos="SCONJ" lemma="quia">quia</w>
-                     <seg function="scope" ana="#reg1005" part="Y"><w pos="ADP" lemma="in">in</w>
+                     <w pos="ADP" lemma="in">in</w>
                         <w pos="NOUN" lemma="dies">die</w>
                         <w pos="NOUN" lemma="judicium">iudicii</w>
                         <w pos="PRON" lemma="ipse">ipsarum</w>
@@ -2488,13 +2488,16 @@
                         <seg function="scope" part="Y" ana="#reg92960">
                            <w pos="NOUN" lemma="Dominus" msd="#regd1e11245">Domino</w>
                            <w pos="NOUN" lemma="ratio" msd="#regd1e11251">rationem</w>
-                        </seg></seg>
+                        </seg>
                      <pc>,</pc>
                      <seg function="negation" corresp="#reg0005"><w pos="ADP" lemma="sine"
                         >sine</w></seg>
                      <seg function="marker" ana="#reg0005"><w pos="NOUN" lemma="dubium"
                         >dubio</w></seg>
                      <seg function="scope" ana="#reg1005" part="Y">
+                        <supplied>
+                           <w>redditurus</w>
+                        </supplied>
                         <w pos="VERB" lemma="addo" function="main"
                            >addita</w>
                         <w pos="CCONJ" lemma="et">et</w>
@@ -3334,10 +3337,10 @@
                   <w pos="SCONJ" lemma="si">si</w>
                   <w pos="PRON" lemma="ipse">ipse</w>
                   <w pos="ADV" lemma="aliter">aliter</w>
-                  <w pos="VERB" lemma="som">-</w>
+                  <pc>-</pc>
                   <w pos="PRON" lemma="qui">quod</w>
                   <w pos="VERB" lemma="absum">absit</w>
-                  <w pos="NOUN" lemma="-">-</w>
+                  <pc>-</pc>
                   <w pos="VERB" lemma="ago">agat</w>
                   <pc>,</pc>
                   <w pos="ADJ" lemma="memor">memores</w>
@@ -8272,8 +8275,8 @@
                      <w pos="ADJ" lemma="purus" msd="#regd1e38193">pura</w>
                   </seg>
                   <w pos="NOUN" lemma="oratio" msd="#regd1e38199">
-                     <seg function="participant" type="inanimate" corresp="#reg312765 #reg313130"
-                        >oratio</seg>
+                     <seg function="participant" type="inanimate_patient" corresp="#reg313130"> <seg function="participant" type="inanimate" corresp="#reg312765"
+                        >oratio</seg></seg>
                   </w>
                   <pc>,</pc>
                   <w pos="SCONJ" lemma="nisi">
@@ -11427,7 +11430,7 @@
                   <w pos="SCONJ" lemma="si">si</w>
                   <seg function="scope" next="factus_fuerit_maior" part="Y" ana="#reg429946">
                      <w pos="NOUN" lemma="labor" msd="#regd1e52497">
-                        <seg function="participant" type="inanimate" corresp="#reg429946"
+                        <seg function="participant" type="inanimate_patient" corresp="#reg429946"
                            >labor</seg>
                      </w>
                   </seg>
@@ -11435,8 +11438,8 @@
                      <seg function="marker" ana="#reg429873">forte</seg>
                   </w>
                   <seg function="scope" ana="#reg429946" part="Y">
-                     <w pos="VERB" lemma="factus" msd="#regd1e52513">factus</w>
-                     <w pos="VERB" lemma="sum" msd="#regd1e52519" function="main">fuerit</w>
+                     <w pos="VERB" lemma="facio" msd="#regd1e52513" function="main">factus</w>
+                     <w pos="VERB" lemma="sum" msd="#regd1e52519" function="aux">fuerit</w>
                      <w pos="ADJ" lemma="magnus" msd="#regd1e52525">maior</w>
                   </seg>
                   <pc>,</pc>
@@ -11642,11 +11645,8 @@
                      <seg function="marker" ana="#reg777811">Licet</seg>
                   </w>
                   <w pos="VERB" lemma="lego">legamus</w>
-                  <pc>:</pc>
-               </s>
-               <s n="649">
-                  <w pos="NOUN" lemma="vinus">Vinum</w>
-                  <w pos="VERB" lemma="omnimo">omnimo</w>
+                  <w pos="NOUN" lemma="vinus">vinum</w>
+                  <w pos="VERB" lemma="omnino">omnino</w>
                   <w pos="NOUN" lemma="monachi">monachorum</w>
                   <w pos="ADV" lemma="non">non</w>
                   <w pos="VERB" lemma="sum">esse</w>
@@ -13321,8 +13321,8 @@
                   <w pos="SCONJ" lemma="ut">ut</w>
                   <w pos="ADP" lemma="ad">ad</w>
                   <w pos="NOUN" lemma="fruges">fruges</w>
-                  <seg function="marker" ana="#reg0017"><w pos="VERB" lemma="recollego"
-                        >recollegendas</w></seg>
+                  <w pos="VERB" lemma="recollego"
+                        >recollege<seg function="marker" ana="#reg0017">ndas</seg></w>
                   <w pos="ADP" lemma="per">per</w>
                   <w pos="PRON" lemma="sui">se</w>
                   <w pos="VERB" lemma="occupo">occupentur</w>
@@ -14074,7 +14074,7 @@
                   <seg function="scope" ana="#reg529039">
                      <w pos="PRON" lemma="is" msd="#regd1e64742">ei</w>
                      <w pos="ADP" lemma="ab">ab</w>
-                     <w pos="NOUN" lemma="abbas" msd="#regd1e64753">abbate</w>
+                     <seg function="participant" type="animate" corresp="#reg529039"><w pos="NOUN" lemma="abbas" msd="#regd1e64753">abbate</w></seg>
                      <w pos="ADJ" lemma="suus" msd="#regd1e64759">suo</w>
                      <w pos="VERB" lemma="praecipio" msd="#regd1e64765" function="main"
                         >præcipiatur</w>
@@ -36947,7 +36947,9 @@
             <f name="participantType">
                <symbol value="animate"/>
             </f>
-
+            <f name="participantType">
+               <symbol value="animate_patient"/>
+            </f>
          </fs>
          <fs xml:id="reg133675" type="marker">
             <f name="pertinence">
@@ -38676,7 +38678,7 @@
                <symbol value="explicit"/>
             </f>
             <f name="participantType">
-               <symbol value="inanimate"/>
+               <symbol value="inanimate_patient"/>
             </f>
          </fs>
          <fs xml:id="reg761896" type="marker">
@@ -40342,7 +40344,7 @@
                <symbol value="explicit"/>
             </f>
             <f name="participantType">
-               <symbol value="inanimate"/>
+               <symbol value="inanimate_patient"/>
             </f>
          </fs>
          <fs xml:id="reg430307" type="marker">
@@ -41665,9 +41667,12 @@
                <binary value="true"/>
             </f>
             <f name="participant">
-               <symbol value="none"/>
+               <symbol value="explicit"/>
             </f>
-
+            
+            <f name="participantType">
+               <symbol value="animate"/>
+            </f>
          </fs>
          <fs xml:id="reg531479" type="marker">
             <f name="utterance">

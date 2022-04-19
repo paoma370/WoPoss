@@ -28,7 +28,7 @@
             </respStmt>
          </editionStmt>
          <extent>
-            <measure unit="words" quantity="6372"/>
+            <measure unit="words" quantity="6371"/>
          </extent>
          <publicationStmt>
             <authority>Swiss National Science Foundation</authority>
@@ -38,9 +38,10 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <listBibl>
-               <bibl type="sourceEdition">Perseus</bibl>
-            </listBibl>
+            <p>Text provided by Perseus Digital Library, with funding from The Mellon Foundation.
+               Original version available for viewing and download at <ptr
+                  target="http://www.perseus.tufts.edu/hopper/"/>. Text retrieved from:
+               <bibl type="sourceEdition"><ptr target="http://data.perseus.org/texts/urn:cts:latinLit:stoa0275.stoa027"/></bibl></p>            
          </sourceDesc>
       </fileDesc>
       <profileDesc>
@@ -398,7 +399,7 @@
                         <w pos="VERB" lemma="possum" msd="#specd1e1637">posse</w>
                      </seg>
                   </supplied>
-                  <seg function="participant" type="inanimate" corresp="#spec354360 #spec355008">
+                  <seg function="participant" type="inanimate_patient" corresp="#spec354360 #spec355008">
                      <w pos="PRON" lemma="qui" msd="#specd1e1667">quod</w>
                      <w pos="ADP" lemma="de">de</w>
                      <w pos="NOUN" lemma="conditio" msd="#specd1e1678">conditione</w>
@@ -3558,7 +3559,7 @@
                      <seg function="marker" ana="#spec139974">ndum</seg>
                   </w>
                   <w pos="NOUN" lemma="opus" msd="#specd1e17340">
-                     <seg function="participant" type="inanimate" corresp="#spec140032">opus</seg>
+                     <seg function="participant" type="inanimate_patient" corresp="#spec140032">opus</seg>
                   </w>
                   <w pos="NOUN" lemma="templum">templi</w>
                   <w pos="NOUN" lemma="titulus">titulo</w>
@@ -6619,10 +6620,11 @@
                   <w pos="PRON" lemma="qui">quae</w>
                   <w pos="PRON" lemma="is">ei</w>
                   <w pos="VERB" lemma="debeo" msd="#specd1e31498">
-                     <seg function="marker" ana="#spec254238">debetur<note>Reference text :
-                           atque.</note>
-                     </seg>
+                     <seg function="marker" ana="#spec254238">debetur</seg>
                   </w>
+                  <!--  <note>Reference text :
+                           atque.</note>
+                     -->
                   <pc>,</pc>
                   <w pos="NOUN" lemma="disciplina">disciplinae</w>
                   <w pos="NOUN" lemma="plenitudo">plenitudo</w>
@@ -14954,7 +14956,7 @@
                <symbol value="explicit"/>
             </f>
             <f name="participantType">
-               <symbol value="inanimate"/>
+               <symbol value="inanimate_patient"/>
             </f>
          </fs>
          <fs xml:id="spec354404" type="marker">
@@ -15028,7 +15030,7 @@
                <symbol value="explicit"/>
             </f>
             <f name="participantType">
-               <symbol value="inanimate"/>
+               <symbol value="inanimate_patient"/>
             </f>
          </fs>
          <fs xml:id="spec14058" type="scope">
@@ -15749,7 +15751,7 @@
                <symbol value="explicit"/>
             </f>
             <f name="participantType">
-               <symbol value="inanimate"/>
+               <symbol value="inanimate_patient"/>
             </f>
          </fs>
          <fs xml:id="spec139974" type="marker">
@@ -17780,9 +17782,9 @@
             </f>
             <f name="participant">
                <symbol value="implicit"/>
-            </f>
+            </f>       
             <f name="participantType">
-               <symbol value="animate"/>
+               <symbol value="animate_patient"/>
             </f>
          </fs>
          <fs xml:id="spec301643" type="scope">
@@ -19001,16 +19003,10 @@
             <f name="marker" fVal="spec139974"/>
             <f name="scope" fVal="spec140032"/>
             <f name="type">
-               <symbol value="authority"/>
+               <symbol value="acceptability"/>
             </f>
-            <f name="subtype">
-               <symbol value="obligation"/>
-            </f>
-            <f name="context">
-               <symbol value="non-official"/>
-            </f>
-            <f name="source">
-               <symbol value="moral/ethical_norms"/>
+            <f name="degree">
+               <symbol value="absolutely-necessary"/>
             </f>
          </fs>
          <fs xml:id="spec146177" type="relation">

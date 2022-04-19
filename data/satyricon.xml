@@ -2722,9 +2722,9 @@
                   <pc>,</pc>
                   <w pos="VERB" lemma="invado">invaserat</w>
                   <w pos="NOUN" lemma="pallius">pallium</w>
-                  <w pos="VERB" lemma="exhibeo" msd="#sat1d1e12824"> exhibi <seg function="marker"
-                        ana="#sat1282722">turum<note>-que</note>
-                     </seg> que </w>
+                  <w pos="VERB" lemma="exhibeo" msd="#sat1d1e12824">exhibi<seg function="marker"
+                        ana="#sat1282722">turum
+                     </seg>que </w>
                   <w pos="ADJ" lemma="crastinus">crastino</w>
                   <w pos="NOUN" lemma="dies">die</w>
                   <w pos="VERB" lemma="affirmo">affirmabat</w>
@@ -10580,7 +10580,7 @@
                   <w pos="PRON" lemma="qui">qui</w>
                   <seg function="scope" ana="#sat2451041">
                      <w pos="NOUN" lemma="asinus" msd="#sat2d1e15638">asinum</w>
-                     <supplied>caedere</supplied></seg>
+                     <supplied><w>caedere</w></supplied></seg>
                   <w pos="ADV" lemma="non">
                      <seg function="negation" corresp="#sat2450985">non</seg>
                   </w>
@@ -29725,7 +29725,7 @@
                   </seg>
                   <seg function="scope" part="Y" ana="#sat3464736">
                      <w lemma="vel" pos="ADV">vel</w>
-                     <supplied evidence="external">
+                     <supplied source="#refEd">
                         <seg function="participant" type="inanimate_patient" corresp="#sat3464736">
                            <w pos="NOUN" lemma="nihil" msd="#sat3d1e48704">nil</w>
                         </seg></supplied>
@@ -34590,7 +34590,7 @@
                   <w pos="VERB" lemma="volo" msd="#sat4d1e16638">
                      <seg function="marker" ana="#sat4598934">voluerit</seg>
                   </w>
-                  <supplied evidence="external">
+                  <supplied source="#refEd">
                      <w pos="NOUN" lemma="mare" msd="#sat4d1e16610">
                         <seg function="participant" type="inanimate" corresp="#sat4599024"
                            >mare</seg>
@@ -35623,7 +35623,7 @@
                   <w pos="ADP" lemma="pro">pro</w>
                   <w pos="NOUN" lemma="fides">fide</w>
                   <w pos="ADJ" lemma="suus">sua</w>
-                  <w pos="VERB" lemma="reddo" msd="#sat4d1e21697"> reddi <seg function="marker"
+                  <w pos="VERB" lemma="reddo" msd="#sat4d1e21697">reddi<seg function="marker"
                         ana="#sat4606558">turam</seg>
                   </w>
                   <anchor type="said" subtype="end"/>
@@ -48671,7 +48671,7 @@
                <binary value="false"/>
             </f>
             <f name="modal">
-               <binary value="false"/>
+               <binary value="true"/>
             </f>
             <f name="lemma">
                <symbol value="nolo"/>
@@ -48693,7 +48693,7 @@
                <binary value="false"/>
             </f>
             <f name="modal">
-               <binary value="false"/>
+               <binary value="true"/>
             </f>
             <f name="lemma">
                <symbol value="nolo"/>
@@ -48850,6 +48850,9 @@
             </f>
             <f name="note">
                <string>Futurity (non pertinent - modal)</string>
+            </f>
+            <f name="diachrony">
+               <symbol value="post-modal"/>
             </f>
             <f name="lemma">
                <symbol value="debeo"/>
@@ -58419,6 +58422,9 @@
             </f>
             <f name="modal">
                <binary value="false"/>
+            </f>
+            <f name="diachrony">
+               <symbol value="pre-modal"/>
             </f>
             <f name="lemma">
                <symbol value="debeo"/>
@@ -80151,7 +80157,7 @@
                <binary value="false"/>
             </f>
             <f name="modal">
-               <binary value="false"/>
+               <binary value="true"/>
             </f>
             <f name="lemma">
                <symbol value="turus"/>

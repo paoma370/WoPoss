@@ -2815,7 +2815,7 @@
                <s rend="38" type="sbeta">
                   <w pos="CCONJ" lemma="sed">sed</w>
                   <seg function="scope" ana="#u_m159273" part="Y">
-                     <seg function="participant" type="inanimate" corresp="#u_m159273">
+                     <seg function="participant" type="inanimate_patient" corresp="#u_m159273">
                         <w pos="NOUN" lemma="vinum" msd="#md1e18859">vinum</w>
                         <w pos="ADJ" lemma="novus" msd="#md1e18865">novum</w>
                      </seg>
@@ -4763,7 +4763,7 @@
                </s>
                <s rend="43">
                   <w pos="CCONJ" lemma="et">et</w>
-                  <seg function="participant" type="animate" corresp="#u120875">
+                  <seg function="participant" type="animate_patient" corresp="#u120875">
                      <w pos="NOUN" lemma="mulier" msd="#d1e14332">mulier</w>
                      <w pos="PRON" lemma="quidam" msd="#d1e14338">quaedam</w>
                   </seg>
@@ -5835,7 +5835,7 @@
                      <w pos="SCONJ" lemma="enim">enim</w>
                      <w pos="NOUN" lemma="homo" msd="#d1e20188">hominis</w>
                   </seg>
-                  <w pos="VERB" lemma="sum" msd="#d1e20194">
+                  <w pos="VERB" lemma="sum" msd="#d1e20194" function="main">
                      <seg function="scope" part="Y" ana="#u168960">fu</seg>
                      <seg function="marker" ana="#u168922" xml:id="lk09_44" part="Y">turum</seg>
                   </w>
@@ -5844,7 +5844,7 @@
                   </seg>
                   <seg function="scope" part="Y" ana="#u168960">
                      <w pos="SCONJ" lemma="ut">ut</w>
-                     <w pos="VERB" lemma="trado" msd="#d1e20217" function="main">tradatur</w>
+                     <w pos="VERB" lemma="trado" msd="#d1e20217">tradatur</w>
                      <w pos="ADP" lemma="in">in</w>
                      <w pos="NOUN" lemma="manus" msd="#d1e20228">manus</w>
                      <w pos="NOUN" lemma="homo" msd="#d1e20234">hominum</w>
@@ -9223,7 +9223,7 @@
                   <seg function="scope" ana="#u_l175562">
                      <w pos="VERB" lemma="fio" msd="#ld1e15709" function="main">fiat</w>
                      <w pos="PRON" lemma="tu" msd="#ld1e15715">tibi</w>
-                     <seg function="participant" type="animate_patient" corresp="#u_l175562">
+                     <seg function="participant" type="inanimate_patient" corresp="#u_l175562">
                         <w pos="NOUN" lemma="retributio" msd="#ld1e15721">retributio</w>
                      </seg>
                   </seg>
@@ -13427,7 +13427,7 @@
                   </seg>
                   <seg function="scope" ana="#u_j29319">
                      <w pos="VERB" lemma="occido" msd="#jd1e3544" function="main">occidi</w>
-                     <seg function="participant" type="animate_patient">
+                     <seg function="participant" type="animate_patient" corresp="#u_j29319">
                         <w pos="NOUN" lemma="pascha" msd="#jd1e3551">pascha</w>
                      </seg>
                   </seg>
@@ -17723,7 +17723,7 @@
                <symbol value="explicit"/>
             </f>
             <f name="participantType">
-               <symbol value="inanimate"/>
+               <symbol value="inanimate_patient"/>
             </f>
          </fs>
          <fs xml:id="u_m159564" type="marker">
@@ -21613,7 +21613,7 @@
                <binary value="false"/>
             </f>
             <f name="modal">
-               <binary value="false"/>
+               <binary value="true"/>
             </f>
             <f name="locus">
                <string>20</string>
@@ -25903,7 +25903,7 @@
                <string>12</string>
             </f>
             <f name="participantType">
-               <symbol value="animate_patient"/>
+               <symbol value="inanimate_patient"/>
             </f>
             <f name="participant">
                <symbol value="explicit"/>
@@ -32311,10 +32311,10 @@
                <string>7</string>
             </f>
             <f name="participantType">
-               <symbol value="animate"/>
+               <symbol value="animate_patient"/>
             </f>
             <f name="participant">
-               <symbol value="implicit"/>
+               <symbol value="explicit"/>
             </f>
          </fs>
          <fs xml:id="u_j30242" type="marker">
@@ -32760,6 +32760,9 @@
             </f>
             <f name="modal">
                <binary value="false"/>
+            </f>
+            <f name="diachrony">
+               <symbol value="pre-modal"/>
             </f>
             <f name="locus">
                <string>19</string>

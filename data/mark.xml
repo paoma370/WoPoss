@@ -7196,12 +7196,11 @@
                   <w pos="VERB" lemma="possum" msd="#hd1e6356">
                      <seg function="marker" ana="#u_h52669" xml:id="mk14_35">posset</seg>
                   </w>
-                  <seg function="participant" type="inanimate" corresp="#u_h52576">
-                     <w pos="VERB" lemma="transeo" msd="#hd1e6364">transiret</w>
+                     <w pos="VERB" lemma="transeo">transiret</w>
                      <w pos="ADP" lemma="ab">ab</w>
-                     <w pos="PRON" lemma="is" msd="#hd1e6375">eo</w>
-                     <w pos="NOUN" lemma="hora" msd="#hd1e6381">hora</w>
-                  </seg>
+                     <w pos="PRON" lemma="is">eo</w>
+                     <w pos="NOUN" lemma="hora">hora</w>
+                  
                </s>
                <s rend="36" type="sepsilon">
                   <w pos="CCONJ" lemma="et">et</w>
@@ -13047,7 +13046,7 @@
             </f>
 
             <f name="control">
-               <binary value="true"/>
+               <binary value="false"/>
             </f>
             <f name="dynamicity">
                <binary value="true"/>
@@ -13089,9 +13088,8 @@
             <f name="polarity">
                <symbol value="affirmative"/>
             </f>
-
             <f name="control">
-               <binary value="true"/>
+               <binary value="false"/>
             </f>
             <f name="dynamicity">
                <binary value="true"/>
@@ -18735,7 +18733,6 @@
             <f name="polarity">
                <symbol value="negative"/>
             </f>
-
             <f name="control">
                <symbol value="ambiguous"/>
             </f>
@@ -19066,10 +19063,7 @@
                <string>35</string>
             </f>
             <f name="participant">
-               <symbol value="explicit"/>
-            </f>
-            <f name="participantType">
-               <symbol value="inanimate"/>
+               <symbol value="none"/>
             </f>
          </fs>
          <fs xml:id="u_h52669" type="marker">

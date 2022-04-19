@@ -11208,8 +11208,8 @@
                   <w pos="VERB" lemma="seduco">seducent</w>
                </s>
                <s rend="6" type="sc">
-                  <w pos="VERB" lemma="audio" msd="#ad1e511"> aud <seg function="marker"
-                        ana="#u_a4301" xml:id="mt24_06">ituri</seg>
+                  <w pos="VERB" lemma="audio" msd="#ad1e511">audi<seg function="marker"
+                        ana="#u_a4301" xml:id="mt24_06">turi</seg>
                   </w>
                   <w pos="CCONJ" lemma="autem">autem</w>
                   <w pos="VERB" lemma="sum">estis</w>
@@ -24352,7 +24352,7 @@
                <symbol value="Inf"/>
             </f>
             <f name="Voice">
-               <symbol value="Act"/>
+               <symbol value="Pass"/>
             </f>
          </fs>
          <fs type="msd" xml:id="bd1e1909">
@@ -29951,7 +29951,7 @@
                <binary value="false"/>
             </f>
             <f name="modal">
-               <binary value="true"/>
+               <binary value="false"/>
             </f>
             <f name="locus">
                <string>39</string>
@@ -30143,11 +30143,11 @@
             <f name="locus">
                <string>54</string>
             </f>
-            <f name="participantType">
+<!--            <f name="participantType">
                <symbol value="animate"/>
-            </f>
+            </f>-->
             <f name="participant">
-               <symbol value="implicit"/>
+               <symbol value="none"/>
             </f>
          </fs>
          <fs xml:id="u_a112673" type="marker">
