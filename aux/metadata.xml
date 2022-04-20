@@ -349,7 +349,7 @@
                   </index>
                </bibl>
             </person>
-            <person>
+            <person xml:id="ovid">
                <persName>Ovid</persName>
                <sex value="M"/>
                <birth>
@@ -371,7 +371,7 @@
                      <term cRef="#verse"/>
                   </index>
                </bibl>
-               <bibl status="annotated">
+               <bibl status="annotated" xml:id="metamorphoses">
                   <title>Metamorphoses</title>
                   <date type="century" when-custom="BCE1">I BCE</date>
                   <index indexName="genre">
