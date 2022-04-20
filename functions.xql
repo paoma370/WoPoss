@@ -44,7 +44,7 @@ declare function woposs:getModalMeaning($doc as node(), $id as xs:string, $f as 
 declare function woposs:getLemma($fs as node()) as xs:string+ {
     let $doc := $fs/ancestor::tei:TEI
     let $markerId := $fs/tei:f[@name eq 'marker']/@fVal
-    let $marker := $doc//tei:fs[@xml:id eq $markerId]
+    let $marker := $doc/id($markerId)
     return
         $marker/tei:f[@name eq 'lemma']/tei:symbol/@value
 };
@@ -73,7 +73,9 @@ declare function woposs:isAmbiguous($doc as node(), $id as xs:string, $type as x
 
 };
 
-declare function woposs:locus($s as item()) as xs:string {
+(: review cardinalities here!!!!! :)
+
+declare function woposs:locus($s as item()?) as xs:string? {
     let $title := $s/ancestor::tei:TEI/descendant::tei:title[@type eq 'short']
     let $division := if ($s/ancestor::tei:div/@n) then (', ' || $s/ancestor::tei:div/@n) else ''
     let $locus := if ($s/@rend) then ($title || $division || ', ' || $s/@rend) else $title || $division 
@@ -109,8 +111,7 @@ declare function woposs:simpleFilter($nodes as node()*, $params as node()) as no
 
 
 declare function woposs:lemma($doc as node(), $id as xs:string) as xs:string {
-    let $query := "id:" || $id
-    let $lemma := $doc/descendant::tei:fs[ft:query(., $query)][ft:query(., 'type:marker')]/tei:f[@name eq 'lemma']/tei:symbol/@value/string()
+    let $lemma := $doc/id($id)/tei:f[@name eq 'lemma']/tei:symbol/@value/string()
     let $correctedLemma := if (contains($lemma, '_inf')) then
         replace($lemma, '_inf', '+ inf.')
     else

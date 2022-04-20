@@ -29,7 +29,7 @@ declare function local:td($node as element(td)) as element(td) {
 declare function local:seg($node as element(tei:seg)) as element(span) {
     <span class="{$node/@function}">{local:passthru($node)}</span>};
     
-declare function local:w($node as element(tei:w)) as item() {
+declare function local:w($node as element(tei:w)) as item()* {
     if ($node/tei:seg) then
     <span class="w">{local:passthru($node)}</span>
     else
