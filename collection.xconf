@@ -3,12 +3,15 @@
     <lucene>
       <module uri="http://woposs.unine.ch" at="functions.xql" prefix="idx"/>
       <analyzer class="org.apache.lucene.analysis.core.WhitespaceAnalyzer"/>
+      
+      
       <text qname="tei:fs">
         <field name="type" expression="@type"/>
 
         <!-- modal relation -->
         <field name="markerId" expression="tei:f[@name eq 'marker']/@fVal"/>
         <field name="scopeId" expression="tei:f[@name eq 'scope']/@fVal"/>
+        
         <field name="modality" expression="tei:f[@name eq 'modality']/tei:symbol/@value"/>
         <field name="modalType" expression="tei:f[@name eq 'type']/tei:symbol/@value"/>
         <field name="modalSubtype" expression="tei:f[@name eq 'subtype']/tei:symbol/@value"/>
@@ -81,8 +84,7 @@
         <field name="msd" expression="substring(@msd, 2)"/>
         <field name="function" expression="@function"/>
       </text>
-
-
+      
     </lucene>
   </index>
   <triggers>

@@ -34,7 +34,7 @@ if ($exist:path eq '') then
       <redirect url="index.html"/>
     </dispatch>
     
-     else if ($exist:resource eq "about.html") then 
+     else if ($exist:resource eq "corpus.html") then 
     <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
     <view>
         <forward url="{$exist:controller}/modules/corpus.xql"/>
@@ -79,7 +79,7 @@ if ($exist:path eq '') then
         </view>
         <error-handler>
       	  <forward url="{$exist:controller}/error-page.html" method="get"/>
-      		<forward url="{$exist:controller}/modules/view.xql"/>
+      	<forward url="{$exist:controller}/modules/view.xql"/>
       	</error-handler>
     </dispatch>)
     

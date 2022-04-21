@@ -1,0 +1,58 @@
+{
+  "normalForm": true,
+  "headword": "FILIA",
+  "etymology": false,
+  "dataFormat": "cent",
+  "meanings": [
+    {
+      "definition": "Daughter",
+      "construct": "_",
+      "group": "_",
+      "analysis": [
+        {
+          "id": "tlvq",
+          "category": "HIJA (Spanish)",
+          "emergence": 10,
+          "disparition": "None",
+          "attestation": "“id est ante nata filia sua muliere” (glosas  silenses)",
+          "certainty": true,
+          "relationships": {
+            "origins": [],
+            "destinations": [
+              {
+                "rel": "mtoxh",
+                "cert": true
+              }
+            ],
+            "unspecified": []
+          }
+        }
+      ]
+    },
+    {
+      "definition": "Girl (affectionate vocative)",
+      "construct": "_",
+      "group": "_",
+      "analysis": [
+        {
+          "id": "mtoxh",
+          "category": "HIJA (Spanish)",
+          "emergence": 13,
+          "disparition": "None",
+          "attestation": "“Entendió Apolonyo la su entençión: «Fija, dixo, non vengo por pasaruos liçión., desto seyet bien segura en vuestro corazón” (Libro de Apolonio, Autor anónimo c. 1240)",
+          "certainty": true,
+          "relationships": {
+            "origins": [
+              {
+                "rel": "tlvq",
+                "cert": true
+              }
+            ],
+            "destinations": [],
+            "unspecified": []
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <!--      <title data-template="config:app-title">woposs</title> -->
+        <title>WoPoss: A World of Possibilities</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta data-template="config:app-meta"/>        
+        <meta name="description" content="Website of the  project A world of possibilities. Modal pathways over an extra-long period of time: the diachrony of modality in the Latin language"/>
+        <meta name="keywords" lang="en" content="latin, modality, snfs, woposs, diachronic, semantics, digital humanities, computational methods, corpus-based approach"/>
+        <meta name="author" content="Francesca Dell’Oro"/>
+        <meta name="author" content="Helena Bermúdez Sabel"/>
+        <meta name="author" content="Paola Marongiu"/>
+        <link rel="shortcut icon" href="/exist/apps/woposs/resources/images/favicon.ico"/>
+        <!--<link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous" />-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+        <link href="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css"/>
+        <link rel="stylesheet" type="text/css" href="/exist/apps/woposs/resources/css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="/exist/apps/woposs/resources/css/results.css"/>
+        <link rel="stylesheet" type="text/css" href="/exist/apps/woposs/resources/css/form.css"/>
+        <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+-->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"/>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"/>
+        
+        
+        <script type="text/javascript" src="/exist/apps/woposs/resources/scripts/libs/FileSaver/FileSaver.min.js"/>
+        <script type="text/javascript" src="/exist/apps/woposs/resources/scripts/tableExport.min.js"/>        
+        <script type="text/javascript" src="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.js"/>
+        <script type="text/javascript" src="/exist/apps/woposs/resources/scripts/bootstrap-table-export.js"/>
+
+        <script type="text/javascript" src="/exist/apps/woposs/resources/scripts/show.js"/>
+        
+        
+        
+        
+        <!--        from woposs website -->
+        
+        <link type="text/css" rel="stylesheet" href="/exist/apps/woposs/resources/css/main.css"/>
+        <link type="text/css" rel="stylesheet" href="/exist/apps/woposs/resources/css/menu.css"/>
+        <link type="text/css" rel="stylesheet" href="/exist/apps/woposs/resources/css/small.css"/>
+        
+        <script src="/exist/apps/woposs/resources/scripts/menu.js">/**/</script>
+        
+        <link rel="shortcut icon" href="/exist/apps/woposs/resources/images/favicon.ico" type="image/x-icon"/>
+        <link rel="icon" href="/exist/apps/woposs/resources/favicon.ico" type="image/x-icon"/>
+        
+        
+        
+         <!--        maps -->
+         
+         <link rel="stylesheet" href="https://rawgit.com/Caged/d3-tip/master/examples/example-styles.css"/>
+
+
+  <!-- jQuery & Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"/>
+
+    <!-- Sweetalert 2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"/>
+
+    <!-- D3 -->
+    <script src="https://d3js.org/d3.v5.min.js"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.min.js"/>
+        
+    </head>
+    <body>
+        <nav id="menu">
+            <img src="/exist/apps/woposs/resources/images/logos/wop_neg.svg" alt="WoPoss logo"/>
+            <ul class="mainmenu">
+                <li>
+                    <a href="/exist/apps/woposs/index.html">Home</a>
+                </li>
+                <li class="has-sub">
+                    <a>About</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="/exist/apps/woposs/about.html">Theoretical framework</a>
+                        </li>
+                        <li>
+                            <a href="/exist/apps/woposs/schemas.html">Annotation schemas</a>
+                        </li>
+                        <li>
+                            <a href="/exist/apps/woposs/corpus.html">Corpus description</a>
+                        </li>
+                        
+                    </ul>
+                </li>
+                <li>
+                    <a href="/exist/apps/woposs/team.html">Team</a>
+                </li>
+                <li>
+                    <a href="/exist/apps/woposs/form.html">Query the corpus</a>
+                </li>
+                <li class="has-sub">
+                    <a>Diachronic visualisations</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="/exist/apps/woposs/diachronic-visualisations.html">About</a>
+                        </li>
+                        <li>
+                            <a href="/exist/apps/woposs/diachronic-visualisations.html#howTo">How to read</a>
+                        </li>
+                        <li>
+                            <a href="/exist/apps/woposs/diachronic-visualisations.html#maps">Modal maps</a>
+                        </li>
+                        <li>
+                            <a href="/exist/apps/woposs/pygmalion.html">Tool: Pygmalion</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/exist/apps/woposs/results.html">Outputs</a>
+                </li>
+                <li>
+                    <a href="/exist/apps/woposs/news.html">News</a>
+                </li>
+                <li>
+                    <a href="/exist/apps/woposs/credits.html">Acknowledgements</a>
+                </li>
+            </ul>
+        </nav>
+                <main id="content"/>
+            
+        <footer id="footer">
+            <div class="logos">
+                <p>This project has received funding from the <a href="http://www.snf.ch/fr/Pages/default.aspx" target="_blank">Swiss National Science Foundation</a>
+                    (SNSF n° 176778) and it is hosted at the <a href="https://www.unine.ch/islc/home.html" target="_blank">Institut des sciences du
+                        langage</a> (<a href="https://www.unine.ch/" target="_blank">University of Neuchâtel</a>)</p>
+                <div>
+                    <img src="/exist/apps/woposs/resources/images/logos/snf_light.svg" alt="SNF logo" class="snf"/>
+                    <img src="/exist/apps/woposs/resources/images/logos/unine.png" alt="UNINE logo" class="unine"/>
+                </div>
+            </div>
+            <div class="address">
+                <address class="to-hide">
+                    <img src="/exist/apps/woposs/resources/images/map-marker.svg" width="50" alt="home icon"/>
+                    <p>Institut des sciences du langage<br/> Université de Neuchâtel<br/>
+                        Pierre-à-Mazel 7<br/> 2000 Neuchâtel<br/>
+                        Switzerland</p>
+                </address>
+                <address>
+                    <img src="/exist/apps/woposs/resources/images/envelope.svg" alt="email icon"/>
+                    <p>
+                        <a href="mailto:francesca.delloro@unine.ch">Contact us!</a>
+                    </p>
+                </address>
+                <address class="to-hide">
+                    <img src="/exist/apps/woposs/resources/images/media.svg" alt="facebook and twitter icons"/>
+                    <p>Twitter: <a href="https://twitter.com/woposs" target="_blank">@woposs</a>
+                    </p>
+                    <p>Facebook: <a href="https://www.facebook.com/WoPoss-A-World-of-Possibilities-119120406151381/" target="_blank">WoPoss</a>
+                    </p>
+                </address>
+                <address>
+                    <img src="/exist/apps/woposs/resources/images/git.svg" alt="git icon"/>
+                    <p>
+                        <a href="https://github.com/WoPoss-project" target="_blank">https://github.com/WoPoss-project</a>
+                    </p>
+                </address>
+            </div>
+            <div style="margin:1%;display:flex;align-items:center;">
+                <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+                    <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"/>
+                </a>
+                <p style="margin-left:2em">
+                    <em>
+                        <span property="http://purl.org/dc/terms/title">A world of possibilities. Modal pathways over an extra-long period of time: the diachrony of modality in the Latin language</span>
+                    </em>
+                    by
+                    <a href="h/exist/apps/woposs/team.html" property="http://creativecommons.org/ns#attributionName" rel="http://creativecommons.org/ns#attributionURL">Francesca
+                        Dell‘Oro</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative
+                            Commons Attribution 4.0 International License</a>.</p>
+            </div>
+        </footer>
+    </body>
+</html>

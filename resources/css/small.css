@@ -1,0 +1,142 @@
+/*  Small devices compatibility */
+
+@media all and (max-width : 1610px) {
+    nav {
+        font-size: 14pt;
+    }
+}
+
+@media all and (max-width : 1550px) {
+    nav {
+        font-size: 13pt;
+        padding: 0.5em;
+    }
+
+    nav a {
+        padding: 1em;
+    }
+
+    nav img {
+        width: 10%;
+        padding-right: 1%;
+        padding-left: 0;
+    }
+}
+
+@media all and (max-width : 1310px) {
+    nav {
+        font-size: 11pt;
+    }
+
+    .ip {
+        width: 75%;
+    }
+}
+
+@media all and (max-width : 1110px) {
+    nav img {
+        display: none;
+    }
+
+    .submenu {
+        font-size: 10pt;
+    }
+
+    nav ul {
+        padding-right: 1%;
+    }
+
+    footer {
+        font-size: 10pt;
+    }
+
+    .logos p {
+        font-size: 10pt;
+    }
+}
+
+@media all and (max-width : 995px) {
+
+    nav a {
+        padding: 0.6em;
+    }
+
+    .ip {
+        width: 90%
+    }
+
+    .members {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .members div {
+        width: 90%
+    }
+
+}
+
+@media all and (min-width : 781px) {
+
+    .mainmenu li:hover ul {
+        display: inline-block;
+        position: absolute;
+    }
+
+}
+
+
+
+@media all and (max-width : 780px) {
+
+
+    nav li.tap ul {
+        display: block;
+        background-color: inherit;
+        padding-left: 4%;
+    }
+
+    nav {
+        position: static;
+    }
+
+    nav > ul {
+        height: auto;
+    }
+
+    nav > ul {
+        display: block;
+    }
+
+    nav > ul > li {
+        display: block;
+        width: 100%;
+    }
+
+    nav > ul ul {
+        position: relative;
+    }
+    body {
+        font-size: smaller;
+    }
+
+    main {
+        margin-top: 2em;
+    }
+
+    address img {
+        width: 20px;
+    }
+
+    footer {
+        font-size: 9pt;
+    }
+
+    .logos p {
+        font-size: 9pt;
+    }
+    
+    .to-hide {
+        display:none;
+    }
+}

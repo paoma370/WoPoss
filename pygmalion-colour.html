@@ -1,4 +1,4 @@
-<main xmlns="http://www.w3.org/1999/xhtml" data-template="templates:surround" data-template-with="templates/page_woposs.html" data-template-at="content">
+<main xmlns="http://www.w3.org/1999/xhtml" data-template="templates:surround" data-template-with="templates/page_maps.html" data-template-at="content">
     <h1>Pygmalion</h1>
     <form id="cardForm">
         <div class="row">
@@ -19,11 +19,17 @@
                 <label>Etymology</label>
             </div>
             <div class="col-75">
-                <div id="etymology"></div>
+                <div id="etymology"/>
                 <div>
-                    <div class='col-33' style='margin-right: -2px'><button id="noEtymology" style="width: 100%;">Proceed without etymology</button></div>
-                    <div class='col-33' style='margin-right: -2px'><button id="etymologyUnknown" class='etymologyUnknown' style="width: 100%;">Flag etymology as unknown</button></div>
-                    <div class='col-33' style='margin-right: -2px'><button id="etymologicalStep" style="width: 100%;">Add etymological step</button></div>
+                    <div class="col-33" style="margin-right: -2px">
+                        <button id="noEtymology" style="width: 100%;">Proceed without etymology</button>
+                    </div>
+                    <div class="col-33" style="margin-right: -2px">
+                        <button id="etymologyUnknown" class="etymologyUnknown" style="width: 100%;">Flag etymology as unknown</button>
+                    </div>
+                    <div class="col-33" style="margin-right: -2px">
+                        <button id="etymologicalStep" style="width: 100%;">Add etymological step</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -44,7 +50,7 @@
                 <label>Meanings</label>
             </div>
             <div class="col-75">
-                <div id="newSenses"></div>
+                <div id="newSenses"/>
             </div>
         </div>
         <div class="row">
@@ -54,6 +60,5 @@
             </div>
         </div>
     </form>
-    <script src="js/form_coloured.js"></script>    
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="/exist/apps/woposs/resources/scripts/form_coloured.js"/>    
 </main>

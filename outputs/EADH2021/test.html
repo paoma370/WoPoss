@@ -1,0 +1,539 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+		<title>The Gothenburg model and CollateX</title>
+
+		<link rel="stylesheet" href="css/reset.css"/>
+		<link rel="stylesheet" href="css/reveal.css"/>
+		<link rel="stylesheet" href="css/theme/solarized.css"/>
+
+		<!-- Theme used for syntax highlighting of code -->
+		<!--<link rel="stylesheet" href="lib/css/monokai.css" />-->
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<style>
+			.mono {
+			    font-family: monospace;
+			    font-weight: bold}
+			.bigImg {
+			    max-width: 60%;
+			}
+			.container {
+			    display: flex;
+			    text-align: left}
+			.container p {
+			    margin-left: 4%}
+			.wit {
+			    font-weight: bold;
+			    background-color: gold}
+			
+			table.alignment {
+			    border-collapse: separate;
+			    border-spacing: 0.25em;
+			}
+			
+			table.alignment tr {
+			    border: 0;
+			}
+			
+			table.alignment th,
+			table.alignment td {
+			    border: 1px solid #d3d3d3;
+			    padding: 0.5em;
+			}
+			
+			table.alignment th {
+			    border-width: 2px;
+			    padding: 0 1em
+			}
+			
+			table.alignment td.gap {
+			    border: 0;
+			    text-align: center
+			}
+			
+			table.alignment td.invariant {
+			    border-color: #80BB00
+			}
+			
+			table.alignment td.variant {
+			    border-color: #000000
+			}
+			
+			table.alignment td {
+			    white-space: nowrap;
+			}
+			#special-row td,
+			#still-special-row td,
+			#special-row th,
+			#still-special-row th {
+			    border-bottom: 2px solid}</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>The Gothenburg model and CollateX</h1>
+				</section>
+				<section>
+					<h2>Outline</h2>
+					<ul>
+						<li>The Gothenburg model <ul>
+								<li>History</li>
+								<li>Goals</li>
+								<li>Components </li>
+							</ul>
+						</li>
+						<li>CollateX <ul>
+								<li>What it is CollateX?</li>
+								<li>Collation pipeline in CollateX</li>
+							</ul>
+						</li>
+
+					</ul>
+				</section>
+				<section><section>
+						<h2>The Gothenburg model: history</h2>
+						<ul>
+							<li>Developers of CollateX and Juxta</li>
+							<li>Joint workshop: Gothenburg 2009</li>
+							<li>Sponsored by <a href="http://www.cost-a32.eu/index.html" target="_blank">COST Action 32</a> and <a href="http://www.interedition.eu/" target="_blank">Interedition</a></li>
+						</ul>
+					</section>
+					<section>
+						<h2>Goals</h2>
+						<p>Identification of the core components of textual comparison at an
+							abstract level</p>
+						<ul>
+							<li>common understanding</li>
+							<li>facilitation of collaboration</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Components</h2>
+						<ol>
+							<li>Tokenization</li>
+							<li>Normalization/regularization</li>
+							<li>Alignmemt</li>
+							<li>Analysis</li>
+							<li>Visualization/output</li>
+						</ol>
+					</section>
+					<section>
+						<p>Prerequisite: an electronic text version of each witness</p>
+					</section>
+					<section>
+						<h2>1. Tokenization</h2>
+						<ul>
+							<li>Division of the continuous text into units to be aligned
+								(tokens)</li>
+						</ul>
+						<div class="fragment">
+							<p class="mono">Would you care for a sherbet lemon? </p></div><div class="fragment">
+							<p class="mono">--&gt; Would | you | care | for | a | sherbet | lemon |
+								?</p></div>
+					</section>
+					<section>
+						<h2>1. Tokenization</h2>
+						<ul>
+							<li>Division of the continuous text into units to be aligned (tokens)</li>
+							<li>Any level of granularity <ul>
+									<li>Typically: whitespace-delimited words</li>
+									<li>Other options: syllables, lines, phrases, verses,
+										paragraphs, text nodes...</li>
+								</ul></li>
+						</ul>
+					</section>
+					<section><h2>Tokenization: challenges</h2>
+						<ul>
+							<li>Ambiguity</li>
+							<li>Punctuation</li>
+							<li>Language specific issues: contractions, superscription, etc.</li>
+							<li>Markup</li>
+						</ul></section>
+					<section>
+						<h2>Tokenization challenges: some examples</h2>
+						<ul>
+							<li>He remarked, “John said, ‘Bout starts at nine.’”</li>
+							<li>He remarked, “John said, ‘It’s ’bout time.’”</li>
+							<li>Tu es un %#@$!</li>
+							<li>Oh d--n it!</li>
+							<li>MASS.</li>
+						</ul>
+					</section>
+					<section>
+						<h2>2. Normalization/regularization</h2>
+						<ul>
+							<li>Normalization during transcription <em>vs</em>. collation</li>
+							<li>Ignore non-substantive variation for comparison <ul>
+									<li>Punctuation</li>
+									<li>Upper/lower case</li>
+									<li>Orthographic variation <ul>
+											<li>Allographs (letterforms)</li>
+											<li>Abbreviations</li>
+										</ul></li>
+								</ul></li>
+							<!--<li>Selection of the elements to go into the output</li>-->
+						</ul>
+					</section>
+					<section>
+						<img src="img/normalization.png" alt="normalization"/>
+					</section>
+					<section>
+						<h2>3. Alignment</h2>
+						<ul>
+							<li>Find the tokens that match</li>
+							<li>Introduce gap tokens when necessary (“omissions”)</li>
+						</ul>
+					</section>
+					<section>
+						<img src="img/alignment.png" alt="alignment"/>
+						<p>Alignment of tree witnesses</p>
+					</section>
+					<section>
+						<h2>Alignment: challenges</h2>
+						<ul>
+							<li>Computational complexity</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Alignment: challenges</h2>
+						<ul>
+							<li>Repetition</li>
+							<li>Transposition</li>
+						</ul>
+					</section>
+					<section>
+						<img src="img/alignment1.png" style="width:50%" alt="aligment"/>
+					</section>
+					<section>
+						<img src="img/alignment2.png" alt="alignment"/>
+					</section>
+					<section>
+						<img src="img/alignment3.png" alt="alignment"/>
+					</section>
+					<section>
+						<h2>Alignment: challenges</h2>
+						<ul>
+							<li>Order effects</li>
+						</ul>
+					</section>
+					<section>
+						<h2>4. Analysis/feedback</h2>
+						<ul>
+							<li>Intepretation beyond linear alignment</li>
+							<li>Manual intervention?</li>
+						</ul>
+					</section>
+					<section>
+						<div class="container" style="justify-content:space-between;align-items:center;text-align:center"><img src="img/alignment.png" alt="alignment"/>
+							<p style="margin:0;font-size:5em">→</p>
+							<img src="img/analyzer.png" alt="analizer"/></div>
+					</section>
+					<section>
+						<h2>5. Visualization/output</h2>
+						<ul>
+							<li>Markup for further processing <ul>
+									<li>XML, TEI, JSON, GraphViz DOT, LaTeX, etc.</li>
+								</ul></li>
+							<li>Textual visualization, for examination and analysis <ul>
+									<li>Textual alignment table <ul>
+											<li>Plain text, HTML, PDF</li>
+										</ul>
+									</li>
+									<li>Toolkits with additional functionalities: Juxta †</li>
+								</ul></li>
+							<li> Graphic visualization, for examination and analysis <ul>
+									<li>Variant graph</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Example</h2>
+						<ul>
+							<li><em>W1</em>: Introduction à la collation automatique</li>
+							<li><em>W2</em>: Cours sur la collation automatique</li>
+							<li><em>W3</em>: En savoir plus sur la collation automatique</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Alignment table</h2>
+						<div><table class="alignment">
+								<tr>
+									<th>W1</th>
+									<td class="variant">Introduction à</td>
+									<td class="invariant gap"/>
+									<td class="invariant">la collation automatique</td>
+								</tr>
+								<tr>
+									<th>W2</th>
+									<td class="variant">Cours</td>
+									<td class="invariant">sur</td>
+									<td class="invariant">la collation automatique</td>
+								</tr>
+								<tr id="special-row">
+									<th>W3</th>
+									<td class="variant">En savoir plus</td>
+									<td class="invariant">sur</td>
+									<td class="invariant">la collation automatique</td>
+								</tr>
+							</table></div>
+					</section>
+					<section>
+						<h2>Variant graph</h2>
+						<img src="img/graph-viz.svg" alt="variant graph"/>
+					</section>
+					<section>
+						<h2>Collation and/or visualization tools</h2>
+						<ul>
+							<li><a href="http://www.traviz.vizcovery.org/" target="_blank">TRAViz</a></li>
+							<li><a href="https://catview.uzi.uni-halle.de/" target="_blank">CATview</a></li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section><h2>CollateX</h2>
+						<ol>
+							<li>What it is CollateX?</li>
+							<li>Collation pipeline in CollateX</li>
+						</ol></section>
+					<section>
+						<h2>Flavors</h2>
+						<ul>
+							<li>Java</li>
+							<li>Web app</li>
+							<li>Python</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Advantages of CollateX</h2>
+						<ul>
+							<li>Data formats <ul>
+									<li><strong>Input</strong>: Anything and everything (JSON)</li>
+									<li><strong>Output</strong>: Anything and everything (JSON)</li>
+								</ul></li>
+							<li>Control over each step of the pipeline</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Collation pipeline in CollateX</h2>
+						<ul>
+							<li>Default behaviours</li>
+							<li>Parameters</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Tokenization in CollateX</h2>
+						<ul>
+							<li>It divides the text into tokens using whitespaces as delimiter</li>
+							<li>Punctuation is tokenized separately from alphanumeric
+								characters</li>
+						</ul>
+						<div class="fragment"> Example: <em>Peter's cat.</em>
+						
+						<table>
+							<tbody>
+								<tr>
+									<td>Peter</td>
+									<td>'</td>
+									<td>s </td>
+									<td>cat</td>
+									<td>.</td>
+								</tr>
+							</tbody>
+						</table>
+						</div>
+					</section>
+					<section>
+						<h2>Normalization in CollateX</h2>
+						<p>By default, it removes trailing white space at the end of tokens.</p>
+					</section>
+					<section>
+						<h2>Pretokenized and normalized input</h2>
+						<p>JSON file as input: Each token may present a normalized version
+						</p>
+					</section>
+					<section>
+						<h2>CollateX alignment parameters</h2>
+						<ul>
+							<li>Different alignment algorithms <ul>
+									<li>Dekker <a href="#dekker">(Dekker &amp; Middle 2011)</a></li>
+									<li>Needleman-Wunsch <a href="#needleman">(Needleman &amp;
+											Wunsch 1970)</a></li>
+									<li>MEDITE <a href="#bourdaillet">(Bourdaillet &amp; Ganascia
+											2007)</a></li>
+								</ul></li>
+						</ul>
+					</section>
+					<section>
+						<h2>Progressive alignment</h2>
+						<ol>
+							<li>start by comparing two versions,</li>
+							<li>transform the result into a variant graph, then</li>
+							<li>compare another version against that graph, and</li>
+							<li>merge the result of that comparison into the graph;</li>
+							<li>repeate the procedure until all versions have been merged.</li>
+						</ol>
+					</section>
+					<section>
+						<h2>Analysis in CollateX</h2>
+						<p>Exact <em>vs.</em> near (fuzzy) matching</p>
+						<ul>
+							<li><em>A</em>: And Ron pulled out a fat grey rat</li>
+							<li><em>B</em>: And Ronald pulled out a gray rat</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Exact matching</h2>
+						<table>
+							<tr>
+								<td class="wit">A</td>
+								<td>And</td>
+								<td>Ron</td>
+								<td>pulled</td>
+								<td>out</td>
+								<td>a</td>
+								<td>fat</td>
+								<td>grey</td>
+								<td>rat</td>
+							</tr>
+							<tr>
+								<td class="wit">B</td>
+								<td>And</td>
+								<td>Ronald</td>
+								<td>pulled</td>
+								<td>out</td>
+								<td>a</td>
+								<td>gray</td>
+								<td>-</td>
+								<td>rat</td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<h2>Near matching</h2>
+						<table>
+							<tr>
+								<td class="wit">A</td>
+								<td>And</td>
+								<td>Ron</td>
+								<td>pulled</td>
+								<td>out</td>
+								<td>a</td>
+								<td>fat</td>
+								<td>grey</td>
+								<td>rat</td>
+							</tr>
+							<tr>
+								<td class="wit">B</td>
+								<td>And</td>
+								<td>Ronald</td>
+								<td>pulled</td>
+								<td>out</td>
+								<td>a</td>
+								<td>-</td>
+								<td>gray</td>
+								<td>rat</td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<h2>CollateX outputs</h2>
+						<ul>
+							<li>Alignment table: ASCII, CSV, TSV,  HTML,XML, XML-TEI, JSON</li>
+							<li>Variant graph: SVG</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Alignment table</h2>
+						<div><table class="alignment">
+								<tr>
+									<th>W1</th>
+									<td class="variant">Introduction à</td>
+									<td class="invariant gap"/>
+									<td class="invariant">la collation automatique</td>
+								</tr>
+								<tr>
+									<th>W2</th>
+									<td class="variant">Cours</td>
+									<td class="invariant">sur</td>
+									<td class="invariant">la collation automatique</td>
+								</tr>
+								<tr id="still-special-row">
+									<th>W3</th>
+									<td class="variant">En savoir plus</td>
+									<td class="invariant">sur</td>
+									<td class="invariant">la collation automatique</td>
+								</tr>
+							</table></div>
+					</section>
+					<section>
+						<h2>Variant graph</h2>
+						<img src="img/graph-viz.svg" alt="variant graph"/>
+					</section>
+					<section>
+						<h2>TEI</h2>
+						<pre><code>
+&lt;cx:apparatus xmlns:cx="http://interedition.eu/collatex/ns/1.0" 
+xmlns="http://www.tei-c.org/ns/1.0"&gt;
+    &lt;app&gt;
+    	&lt;rdg wit="W1"&gt;Introduction à&lt;/rdg&gt;
+    	&lt;rdg wit="W2"&gt;Cours&lt;/rdg&gt;
+    	&lt;rdg wit="W3"&gt;En savoir  plus&lt;/rdg&gt;&lt;/app&gt;
+    &lt;app&gt;&lt;rdg wit="W1"/&gt;&lt;rdg wit="W2 W3"&gt;sur&lt;/rdg&gt;&lt;/app&gt;
+    la collation automatique&lt;/cx:apparatus&gt;	
+						</code></pre>
+					</section>
+				</section>
+				<section>
+					<section><h1>Bibliography</h1></section>
+					<section>
+						<ul>
+							<li id="bourdaillet">Bourdaillet J. &amp; Ganascia J.-G. (2007):
+								“Practical block sequence alignment with moves.” <em>LATA 2007 -
+									International Conference on Language and Automata Theory and
+									Applications</em>, 3/2007.</li>
+							<li id="dekker">Dekker, R. H. &amp; Middell, G. (2011):
+								“Computer-Supported Collation with CollateX: Managing Textual
+								Variance in an Environment with Varying Requirements.”
+									<em>Supporting Digital Humanities 2011</em>. University of
+								Copenhagen, Denmark. 17-18 November 2011.</li>
+						</ul>
+					</section>
+					<section><ul>
+							<li>Interedition Development Group (2010-): <em>CollateX - Sofware for
+									Collating Textual Sources</em>. <a href="https://collatex.net/" target="_blank">https://collatex.net/</a></li>
+							<li>Hoover, David L. (2015): “The Trials of Tokenization.”
+									<em>DH2015</em>, University of Western Sydney, Australia, June
+								29–July 3, 2015.</li>
+							<li id="needleman">Needleman, Saul B. &amp; Wunsch, Christian D. (1970):
+								A general method applicable to the search for similarities in the
+								amino acid sequence of two proteins. <em>Journal of Molecular
+									Biology 48</em> (3), 443–53. </li>
+						</ul></section>
+				</section>
+			</div>
+		</div>
+		<script src="js/reveal.js"/>
+		<script>
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,8 @@
+body:after {
+    content: url(../wop_neg.png);
+    width: 15px!important;
+    position: fixed;
+    bottom: 1em;
+    left: 80%;
+
+}

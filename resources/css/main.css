@@ -1,8 +1,8 @@
 @font-face {
     font-family: "NewSans";
-    src: url("../fonts/NewSans.ttf") format('truetype');
-    src: url('../fonts/NewSans.woff2') format('woff2'),
-    url('../fonts/NewSans.woff') format('woff');
+    src: url("/exist/apps/woposs/resources/fonts/NewSans.ttf") format('truetype'),
+    url('/exist/apps/woposs/resources/fonts/NewSans.woff2') format('woff2'),
+    url('/exist/apps/woposs/resources/fonts/NewSans.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -18,7 +18,7 @@ body {
     padding:0;
     min-height: 100%;
     width: 99vw;
-    font-family: 'NewSans', Fallback, sans-serif;
+    font-family: 'NewSans', Fallback, sans-serif !important;
 }
 
 main {
@@ -35,22 +35,32 @@ main {
 }
 
 h1 {
-    text-align: center;
+    text-align: center !important;
     color: #1A76BD;
+    font-weight:bold;
 }
 
-h1 span {
- color:  #1B2E3D;
+h1 > span {
+ color:  #1B2E3D !important;
 }
 
 
 h2{
     color: #13568A;
-    font-size:1.5em;
+    font-size:1.75em;
+    font-weight:bold;
 }
 
 h3 {
     color: #1B2E3D;
+    font-size:1.5em;
+    font-weight:bold;
+}
+
+h4 {
+   
+    font-size:1.15em;
+    font-weight:bold;
 }
 
 a {
@@ -216,7 +226,8 @@ address a {
     width: 20em;
 }
 .unine {
-    width: 10em;
+    width: 12em;
+    height: min-content;
 }
 
 .address,
@@ -250,3 +261,31 @@ address {
     padding-right:1em;
 }
 
+/* specific */
+
+        #mixed .block {
+            display: block;
+        }
+        #mixed .et {
+            width: 25em;
+        }
+        #mixed  li img {
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+        
+           #mixed  .reference {
+            display: none
+        }
+
+           #mixed  .cite {
+            cursor: pointer;
+        }
+
+           #mixed  .cite img {
+            width: 1em
+        }
+
+          #mixed   div[data-identifier] .reference {
+            display: inline-block
+        }
