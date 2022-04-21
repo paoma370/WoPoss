@@ -1,6 +1,6 @@
-<main id="mixed"  xmlns="http://www.w3.org/1999/xhtml" data-template="templates:surround" data-template-with="templates/page_woposs.html" data-template-at="content">
-
-    <aside class="sidebar">
+<main   xmlns="http://www.w3.org/1999/xhtml" data-template="templates:surround" data-template-with="templates/page_woposs.html" data-template-at="content">
+    <div id="mixed">
+    <aside id="sidebar">
         <a href="#about">About</a>
         <a href="#howTo">How to use Pygmalion</a>
         <a href="#aboutMaps">The interactive maps</a>
@@ -9,7 +9,7 @@
         <a href="#troubleshooting">Troubleshooting</a>
     </aside>
     <br id="about"/>
-    <div class="content">
+    <div class="main-content">
     <h1>Pygmalion, a tool to visualise the diachronic description of meaning</h1>
 
     <p>Pygmalion is available in three versions. <a
@@ -94,10 +94,10 @@
             language stage (PIE etc.), insert the corresponding forms (*<em>mn-eh<sub>1</sub>-</em> etc.) and add a
             short definition (‘to
             remain’ etc.), as shown here:<br/>
-            <img src="resources/images/image2.png" alt="etymology" class="block et">
+            <img src="resources/images/image2.png" alt="etymology" class="block et"/>
             The user can indicate whether the etymology is certain or rather uncertain for each phase. Uncertainty
             results in a dashed line. ‘Etymology is certain’ is the option checked by default.<br/>
-            <img src="resources/images/image4.png" alt="etymology_uncertain" class="block et">
+            <img src="resources/images/image4.png" alt="etymology_uncertain" class="block et"/>
         </li>
         <li><strong>Date format</strong>. The user chooses the format of the date: centuries, decades or specific years.
             While the chronological line in the map indicates only the centuries, whatever the choice of the
@@ -128,10 +128,10 @@
                 collocations and/or whether the meaning belongs to a specific (semantic) group. E.g. in the map for
                 French
                 ‘carte’ the meaning ‘restaurant menu’ corresponds to a collocation ‘(diner) à la carte’.</p>
-            <img src="resources/images/image1.png" alt="meanings" class="block">
+            <img src="resources/images/image1.png" alt="meanings" class="block"/>
             <p>On the other hand, the meaning ‘restaurant menu’ belongs to the general meaning ‘piece of paper,
                 paperboard’:</p>
-            <img src="resources/images/image3.png" class="block" alt="carte"><p>
+            <img src="resources/images/image3.png" class="block" alt="carte"/><p>
                 According to his/her own interest, the user can create any kind of group (e.g. syntactic).</p>
             <p>In the sub-field ‘description’ the user must indicate the ‘date of meaning emergence’ according to the
                 previously chosen format (see under ‘date format’). Inside ‘first attestation’ the user can indicate the
@@ -194,7 +194,7 @@
     <p>In the upper map the relations can be visualised only in relation to an input or output meaning. E.g. The general
         meaning ‘playing card’ is at the base of the meaning ‘small, not very solid house’ in the collocation ‘un
         château de cartes’, from which in turn the meaning ‘vain things’ derives.</p>
-    <img src="resources/images/image5.png" alt="map" class="block">
+    <img src="resources/images/image5.png" alt="map" class="block"/>
         <br id="sharing"/>
     <p>To return to the previous visualisation of the map, the user must double-click on a meaning.
         The first attestation of each meaning is visible – as entered in the first form – when hovering the mouse over a
@@ -228,5 +228,8 @@
       <br/>
     <p style="font-size: smaller"><a href="#refnote1">[*]</a> Loris Rimaz was engaged to create the code of Pygmalion thanks to the financial
         contribution of the Rectorate of the University of Lausanne.</p>
-    </div>
+    </div></div>
+    <script src="https://github.com/bigspotteddog/ScrollToFixed/blob/master/jquery-scrolltofixed-min.js" type="text/javascript"></script>
+    <script src="/exist/apps/woposs/resources/scripts/sidebar.js" type="text/javascript">/**/</script>
+    
 </main>
