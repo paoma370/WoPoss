@@ -53,7 +53,7 @@ If you see `BUILD SUCCESSFUL` ant has generated a `woposs-1.0.0.xar` file in the
 
 ## License
 
-GPL-3.0 © [A World of Possibilities. Modal pathways over an extra-long period of time: the diachrony of modality in the Latin language](www.woposs.unine.ch/)
+GPL-3.0 © [A World of Possibilities. Modal pathways over an extra-long period of time: the diachrony of modality in the Latin language](https://www.woposs.unine.ch/)
 
 [license-img]: https://img.shields.io/badge/license-GPL%20v3-blue.svg
 [license-url]: https://www.gnu.org/licenses/gpl-3.0
