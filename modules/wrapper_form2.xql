@@ -8,12 +8,17 @@ xquery version "3.1";
     <p><span
                 style="color:red;font-weight:bold">Important</span>:</p>
                 <ul>
+                <li>In the table options (right upper corner) you can filter the rows by content (search field), you can toggle the columns (not all columns are visible by default) and you can export the 
+                results (CSV).</li>
+                
                 <li>Click on the fist cell (the passage) to read more context and get the full analysis of the passage.</li>
-                <li>In the table options (right upper corner) you can filter the rows by content (search field), you can toggle the columns (not all columns are visible by default) and you can export the results (CSV).</li></ul>
- <!--data-pagination="true"-->
+                    <li>Implicit contents appear in italic and in a smaller font</li>
+                </ul>
+ 
         <table
             id="resultsTable"
             data-show-export="true"
+            data-pagination="true"
             data-toggle="table"
             data-show-pagination-switch="true"
             data-search="true"
@@ -38,14 +43,18 @@ xquery version "3.1";
                     <th
                         data-sortable="true"
                         data-visible="false">Additional <br/>analysis</th>
+                  
                     <th
                         data-sortable="true">Ambiguous <br/>reading</th>
-                    <th data-sortable="true"
+              <!--        <th data-sortable="true"
                         data-visible="false">Scope</th>
                     <th data-sortable="true"
                         data-visible="false">Main verb</th>
                     <th data-sortable="true"
-                        data-visible="false">Voice of main verb</th>
+                        data-visible="false">Voice of main verb</th> -->
+                    <th
+                        data-sortable="true"
+                        data-visible="true">SoA</th>
                     <th data-sortable="true"
                         data-visible="false">SoA: control</th>
                     <th data-sortable="true"

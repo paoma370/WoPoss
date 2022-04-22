@@ -280,24 +280,28 @@ declare function local:dynamic($fs as item()*) as item()* {
     let $mk_id := $dyn/tei:f[@name eq 'marker']/@fVal
     let $lemma := woposs:lemma($doc, $mk_id)
     let $scope := $doc/id($dyn/tei:f[@name eq 'scope']/@fVal)
+    let $soa-bool := if ($scope/tei:f[@name eq 'SoA']) then 'no' else 'yes'
     let $control_fs := $scope/tei:f[@name eq 'control']/*/@value
-    let $control := if ($control_fs eq 'true') then '+control' else if ($control_fs eq 'false') then '-control' else '±control'
+    let $control := if ($control_fs eq 'true') then '+control' else if ($control_fs eq 'false') then '-control' else if ($control_fs eq 'ambiguous') then '±control' else ''
     let $dynamicity_fs := $scope/tei:f[@name eq 'dynamicity']/*/@value
-    let $dynamicity := if ($dynamicity_fs eq 'true') then '+dynamic' else if ($dynamicity_fs eq 'false') then '-dynamic' else '±dynamic'
+    let $dynamicity := if ($dynamicity_fs eq 'true') then '+dynamic' else if ($dynamicity_fs eq 'false') then '-dynamic' else if ($dynamicity_fs eq 'ambiguous') then '±dynamic' else ''
     let $participant := if ($scope/tei:f[@name eq 'participant']/tei:symbol/@value eq 'none') then 'no participant' else $scope/tei:f[@name eq 'participantType']/tei:symbol/replace(@value, '_', ' – ')
     let $scope_segs: = $doc/descendant::tei:seg[some $x in tokenize(@ana, '\s+') satisfies substring($x, 2) = $scope/@xml:id]
     let $scope_contents := $doc/string-join($scope_segs, ' ')
     let $main_verb := $scope_segs/child::tei:w[@function eq 'main'] | $scope_segs/parent::tei:w[@function eq 'main']
     let $voice_fs := if ($main_verb) then $doc/descendant::tei:fs[@xml:id = substring($main_verb/@msd, 2)]/tei:f[@name eq 'Voice']/tei:symbol/@value/string() else if (contains($lemma, 'bilis') and contains($participant, 'patient')) then 'Pass' else if ($lemma eq 'bilis') then 'Act' else if (contains($lemma, 'ndus')) then 'Pass' else if (contains($lemma, 'turus')) then 'Act' else ()
     let $voice := if (ends-with($main_verb/@lemma, 'r') and $voice_fs eq 'Pass') then 'Dep' else $voice_fs
-    let $marker := string-join($doc/descendant::tei:seg[substring(@ana, 2) eq $mk_id], ' ')
-    let $s := $doc/descendant::tei:s[descendant::tei:seg[substring(@ana, 2) eq $mk_id]]
+    let $segs :=  woposs:getSegs($dyn, $mk_id)
+    let $marker := string-join($segs, ' ')
+    let $s := $segs/ancestor::tei:s
     let $amb := woposs:isAmbiguous($doc, $dyn/@xml:id, 'relation')
     let $locus := woposs:locus($s)
     return
         <tr><td1
                 ref="{$mk_id}">{$s}</td1>
-            <td>{$marker}</td><td>{$lemma}</td><td>dynamic</td><td>{$type}</td><td>{$subtype}</td><td>{$other}</td><td>{$amb}</td><td>{$scope_contents}</td><td>{$main_verb/string()}</td><td>{$voice}</td><td>{$control}</td><td>{$dynamicity}</td><td>{$participant}</td><td>{$locus}</td></tr>
+            <td>{$marker}</td><td>{$lemma}</td><td>dynamic</td><td>{$type}</td><td>{$subtype}</td><td>{$other}</td><td>{$amb}</td>
+          <!--  <td>{$scope_contents}</td><td>{$main_verb/string()}</td><td>{$voice}</td> -->
+            <td>{$soa-bool}</td><td>{$control}</td><td>{$dynamicity}</td><td>{$participant}</td><td>{$locus}</td></tr>
 
 };
 
@@ -458,10 +462,11 @@ declare function local:deontic($fs as item()*) as item()* {
     let $mk_id := $deo/tei:f[@name eq 'marker']/@fVal
     let $lemma := woposs:lemma($doc, $mk_id)
     let $scope := $doc/id($deo/tei:f[@name eq 'scope']/@fVal)
+    let $soa-bool := if ($scope/tei:f[@name eq 'SoA']) then 'no' else 'yes'
     let $control_fs := $scope/tei:f[@name eq 'control']/*/@value
-    let $control := if ($control_fs eq 'true') then '+control' else if ($control_fs eq 'false') then '-control' else '±control'
+    let $control := if ($control_fs eq 'true') then '+control' else if ($control_fs eq 'false') then '-control' else if ($control_fs eq 'ambiguous') then '±control' else ''
     let $dynamicity_fs := $scope/tei:f[@name eq 'dynamicity']/*/@value
-    let $dynamicity := if ($dynamicity_fs eq 'true') then '+dynamic' else if ($dynamicity_fs eq 'false') then '-dynamic' else '±dynamic'
+    let $dynamicity := if ($dynamicity_fs eq 'true') then '+dynamic' else if ($dynamicity_fs eq 'false') then '-dynamic' else if ($dynamicity_fs eq 'ambiguous') then '±dynamic' else ''
     let $participant := if ($scope/tei:f[@name eq 'participant']/tei:symbol/@value eq 'none') then 'no participant' else $scope/tei:f[@name eq 'participantType']/tei:symbol/replace(@value, '_', ' – ')
   let $scope_segs: = $doc/descendant::tei:seg[some $x in tokenize(@ana, '\s+') satisfies substring($x, 2) = $scope/@xml:id]
     let $scope_contents := $doc/string-join($scope_segs, ' ')
@@ -469,14 +474,17 @@ declare function local:deontic($fs as item()*) as item()* {
     let $voice_fs := if ($main_verb) then $doc/descendant::tei:fs[@xml:id = substring($main_verb/@msd, 2)]/tei:f[@name eq 'Voice']/tei:symbol/@value/string() else if (contains($lemma, 'bilis') and contains($participant, 'patient')) then 'Pass' else if ($lemma eq 'bilis') then 'Act' else if (contains($lemma, 'ndus')) then 'Pass' else if (contains($lemma, 'turus')) then 'Act' else ()
       let $voice := if (ends-with($main_verb/@lemma, 'r') and $voice_fs eq 'Pass') then 'Deponent' else $voice_fs
  
-    let $marker := string-join($doc/descendant::tei:seg[substring(@ana, 2) eq $mk_id], ' ')
-    let $s := $doc/descendant::tei:s[descendant::tei:seg[substring(@ana, 2) eq $mk_id]]
+    let $segs :=  woposs:getSegs($deo, $mk_id)
+    let $marker := string-join($segs, ' ')
+    let $s := $segs/ancestor::tei:s
     let $amb := woposs:isAmbiguous($doc, $deo/@xml:id, 'relation')
     let $locus := woposs:locus($s)
     return
         <tr><td1
                 ref="{$mk_id}">{$s}</td1>
-            <td>{$marker}</td><td>{$lemma}</td><td>deontic</td><td>{$type}</td><td>{$subtype}</td><td>{$other}</td><td>{$amb}</td><td>{$scope_contents}</td><td>{$main_verb/string()}</td><td>{$voice}</td><td>{$control}</td><td>{$dynamicity}</td><td>{$participant}</td><td>{$locus}</td></tr>
+            <td>{$marker}</td><td>{$lemma}</td><td>deontic</td><td>{$type}</td><td>{$subtype}</td><td>{$other}</td><td>{$amb}</td>
+       <!--       <td>{$scope_contents}</td><td>{$main_verb/string()}</td><td>{$voice}</td> -->
+            <td>{$soa-bool}</td><td>{$control}</td><td>{$dynamicity}</td><td>{$participant}</td><td>{$locus}</td></tr>
 
 };
 
@@ -493,10 +501,11 @@ declare function local:epistemic($fs as item()*) as item()* {
     let $mk_id := $epi/tei:f[@name eq 'marker']/@fVal
     let $lemma := woposs:lemma($doc, $mk_id)
     let $scope := $doc/id($epi/tei:f[@name eq 'scope']/@fVal)
+     let $soa-bool := if ($scope/tei:f[@name eq 'SoA']) then 'no' else 'yes'
     let $control_fs := $scope/tei:f[@name eq 'control']/*/@value
-    let $control := if ($control_fs eq 'true') then '+control' else if ($control_fs eq 'false') then '-control' else '±control'
+    let $control := if ($control_fs eq 'true') then '+control' else if ($control_fs eq 'false') then '-control' else if ($control_fs eq 'ambiguous') then '±control' else ''
     let $dynamicity_fs := $scope/tei:f[@name eq 'dynamicity']/*/@value
-    let $dynamicity := if ($dynamicity_fs eq 'true') then '+dynamic' else if ($dynamicity_fs eq 'false') then '-dynamic' else '±dynamic'
+    let $dynamicity := if ($dynamicity_fs eq 'true') then '+dynamic' else if ($dynamicity_fs eq 'false') then '-dynamic' else if ($dynamicity_fs eq 'ambiguous') then '±dynamic' else ''
     let $participant := if ($scope/tei:f[@name eq 'participant']/tei:symbol/@value eq 'none') then 'no participant' else $scope/tei:f[@name eq 'participantType']/tei:symbol/replace(@value, '_', ' – ')
    let $scope_segs: = $doc/descendant::tei:seg[some $x in tokenize(@ana, '\s+') satisfies substring($x, 2) = $scope/@xml:id]
     let $scope_contents := $doc/string-join($scope_segs, ' ')
@@ -506,14 +515,17 @@ declare function local:epistemic($fs as item()*) as item()* {
     let $voice := if (ends-with($main_verb/@lemma, 'r') and $voice_fs eq 'Pass') then 'Dep' else $voice_fs
  
     let $other := $epi/tei:f[@name eq 'function']/tei:symbol/@value
-    let $marker := string-join($doc/descendant::tei:seg[substring(@ana, 2) eq $mk_id], ' ')
-    let $s := $doc/descendant::tei:s[descendant::tei:seg[substring(@ana, 2) eq $mk_id]]
+    let $segs :=  woposs:getSegs($epi, $mk_id)
+    let $marker := string-join($segs, ' ')
+    let $s := $segs/ancestor::tei:s
     let $amb := woposs:isAmbiguous($doc, $epi/@xml:id, 'relation')
     let $locus := woposs:locus($s)
     return
         <tr><td1
                 ref="{$mk_id}">{$s}</td1>
-            <td>{$marker}</td><td>{$lemma}</td><td>epistemic</td><td></td><td>{$degree}</td><td>{$other}</td><td>{$amb}</td><td>{$scope_contents}</td><td>{$main_verb/string()}</td><td>{$voice}</td><td>{$control}</td><td>{$dynamicity}</td><td>{$participant}</td><td>{$locus}</td></tr>
+            <td>{$marker}</td><td>{$lemma}</td><td>epistemic</td><td></td><td>{$degree}</td><td>{$other}</td><td>{$amb}</td>
+            <!--  <td>{$scope_contents}</td><td>{$main_verb/string()}</td><td>{$voice}</td> -->
+            <td>{$soa-bool}</td><td>{$control}</td><td>{$dynamicity}</td><td>{$participant}</td><td>{$locus}</td></tr>
 
 };
 

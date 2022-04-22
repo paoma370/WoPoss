@@ -54,7 +54,7 @@ declare function woposs:isAmbiguous($doc as node(), $id as xs:string, $type as x
     then
         (let $relations := $doc/descendant::tei:fs[tei:f[@name eq 'marker']/@fVal eq $id]
         let $scopes := $relations/tei:f[@name eq 'scope']/@fVal
-        let $value := if (count($relations) gt count(distinct-values($scopes))) then
+        let $value := if (count($relations) gt count(distinct-values($scopes)) or $relations/tei:f[@name eq 'ambiguity']) then
             'true'
         else
             'false'
@@ -68,7 +68,7 @@ declare function woposs:isAmbiguous($doc as node(), $id as xs:string, $type as x
         let $marker := $relation/tei:f[@name eq 'marker']/@fVal
         let $scope := $relation/tei:f[@name eq 'scope']/@fVal
         let $evaluation := $doc/descendant::tei:fs[tei:f[@name eq 'marker']/@fVal eq $marker][tei:f[@name eq 'scope']/@fVal eq $scope]
-        let $value := if (count($evaluation) gt 1) then 'true' else 'false'
+        let $value := if (count($evaluation) gt 1 or $relation/tei:f[@name eq 'ambiguity']) then 'true' else 'false'
         return $value
 
 };
@@ -119,3 +119,11 @@ declare function woposs:lemma($doc as node(), $id as xs:string) as xs:string {
     return
         $correctedLemma
 };
+
+declare function woposs:getSegs($fs as item()?, $id as xs:string?) as item()* {
+    let $query := "ana:" || $id
+    let $segs := $fs/ancestor::tei:TEI/descendant::tei:seg[ft:query-field(., $query)]
+    return
+        $segs
+};
+

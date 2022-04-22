@@ -348,17 +348,11 @@ declare variable $morphologicalFeatures := <fields>
 
 (:values of the form that are not as straigtforward :)
 
-declare function local:get-seg($fs as item()?, $id as xs:string?) as item()* {
-    let $query := "ana:" || $id
-    let $segs := $fs/ancestor::tei:TEI/descendant::tei:seg[ft:query-field(., $query)]
-    return
-        $segs
-};
 
 
 declare function local:not-pertinent($fs as node()?) as item()* {
     let $id := $fs/@xml:id
-    let $segs := local:get-seg($fs, $id)
+    let $segs := woposs:getSegs($fs, $id)
     let $marker := string-join($segs, ' ')
     let $s := $segs/ancestor::tei:s
     let $locus := woposs:locus($s)
@@ -371,29 +365,33 @@ declare function local:not-pertinent($fs as node()?) as item()* {
         $fs/tei:f[@name eq 'diachrony']/tei:symbol/@value/string()
     else
         '--'
+    let $amb := if ($fs/tei:f[@name eq 'ambiguity']) then 'true' else 'false'
     return
         <tr><td1
                 ref="{$id}">{$s}</td1>
-            <td>{$marker}</td><td>{$modality}</td><td>{$type}</td><td></td><td>--</td><td>{$locus}</td></tr>
+            <td>{$marker}</td><td>{$modality}</td><td>{$type}</td><td></td><td>--</td><td>{$amb}</td><td>{$locus}</td></tr>
 };
 
 declare function local:pertinent($fs as node()?) as item()* {
     let $id := $fs/@xml:id
-    let $segs := local:get-seg($fs, $id)
+    let $doc := $fs/ancestor::tei:TEI
+    let $segs := woposs:get-seg($fs, $id)
     let $marker := string-join($segs, ' ')
     let $s := $segs/ancestor::tei:s
     let $locus := woposs:locus($s)
     let $relation_query := "markerId:" || $id
     let $relation := $documents/descendant::tei:fs[ft:query-field(., $relation_query)]
     for $mod in $relation
+    let $scope := $doc/id($mod/tei:f[@name eq 'scope']/@fVal)
+    let $soa-bool := if ($scope/tei:f[@name eq 'SoA']) then 'no' else 'yes'
     let $modality := $mod/tei:f[@name eq 'modality']/tei:symbol/@value/string()
-    let $other := $mod/tei:f[@name eq 'meaning']/tei:symbol | $mod/tei:f[@name eq 'type']/tei:symbol | $mod/tei:f[@name eq 'subtype']/tei:symbol[@value ne 'none']
+    let $other := $mod/tei:f[@name eq 'meaning']/tei:symbol | $mod/tei:f[@name eq 'type']/tei:symbol | $mod/tei:f[@name eq 'degree']/tei:symbol | $mod/tei:f[@name eq 'subtype']/tei:symbol[@value ne 'none']
     let $function := 'Function: ' || $mod/tei:f[@name eq 'function']/tei:symbol/@value
-    let $type := string-join($other/@value, ', ')
-    let $amb := if (count($relation) gt 1) then
+    let $type := replace(string-join($other/@value, ', '), '_', ' ')
+   let $amb := if (count($relation) gt 1 or $relation/tei:f[@name eq 'ambiguity']) then
         'true'
     else
-        'false'
+        'false' 
     return
         <tr><td1
                 ref="{$id}">{$s}</td1>
@@ -402,7 +400,7 @@ declare function local:pertinent($fs as node()?) as item()* {
                         $function
                     else
                         ()
-                }</td><td>{$amb}</td><td>{$locus}</td></tr>
+                }</td><td>{$soa-bool}</td><td>{$amb}</td><td>{$locus}</td></tr>
 
 };
 
