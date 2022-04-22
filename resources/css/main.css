@@ -38,7 +38,8 @@ h1 {
     text-align: center !important;
     color: #1A76BD;
     font-weight:bold;
-    padding:0.6em;
+    padding:0 0 0.6em 0;
+    margin-bottom:0.5em;
 }
 
 h1 > span {
@@ -50,21 +51,21 @@ h2{
     color: #13568A;
     font-size:1.75em;
     font-weight:bold;
-    padding:0.5em;
+    padding:0.5em 0 0.5em 0;
 }
 
 h3 {
     color: #1B2E3D;
     font-size:1.5em;
     font-weight:bold;
-    padding:0.4em;
+    padding:0.4em 0 0.4em 0;
 }
 
 h4 {
    
     font-size:1.15em;
     font-weight:bold;
-    padding:0.3em;
+    padding:0.3em 0 0.3em 0;
 }
 
 a {
