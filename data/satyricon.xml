@@ -6617,7 +6617,7 @@
                   <anchor type="said" subtype="end"/>
                   <w pos="VERB" lemma="aio">ait</w>
                   <anchor type="said" subtype="start"/>
-                        <seg function="participant" type="inanimate_patient">
+                        <seg function="participant" type="inanimate_patient" corresp="#sat1285497">
                      <w pos="NOUN" lemma="pavo" msd="#sat1d1e946aa">pavonis</w>
                      <w pos="NOUN" lemma="ovum" msd="#sat1d1e946ab">ova</w>
                         </seg>
@@ -50659,7 +50659,7 @@
                <binary value="true"/>
             </f>
             <f name="participant">
-               <symbol value="implicit"/>
+               <symbol value="explicit"/>
             </f>
             <f name="participantType">
                <symbol value="inanimate_patient"/>
