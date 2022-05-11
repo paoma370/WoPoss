@@ -375,7 +375,7 @@ declare function local:not-pertinent($fs as node()?) as item()* {
 declare function local:pertinent($fs as node()?) as item()* {
     let $id := $fs/@xml:id
     let $doc := $fs/ancestor::tei:TEI
-    let $segs := woposs:get-seg($fs, $id)
+    let $segs := woposs:getSegs($fs, $id)
     let $marker := string-join($segs, ' ')
     let $s := $segs/ancestor::tei:s
     let $locus := woposs:locus($s)
@@ -441,7 +441,7 @@ declare function local:morph($fs as node()*) as node()* {
         (
         let $segs := for $x in $fs
         return
-            local:get-seg($x, $x/@xml:id)
+            woposs:getSegs($x, $x/@xml:id)
         let $ws := $segs/ancestor::tei:w[@msd] | $segs/descendant::tei:w[@msd]
         let $ws_filtered := local:filterWords($ws, $morphologicalFeatures)
         let $seg_filtered := if (exists($ws_filtered)) then
@@ -465,7 +465,7 @@ declare function local:morphScope($markers as node()*) as node()* {
         ()
     let $segs := for $x in $scopes
     return
-        local:get-seg($x, $x/@xml:id)
+        woposs:getSegs($x, $x/@xml:id)
     let $ws := $segs/ancestor::tei:w[@msd][ft:query-field(., "function:main")] | $segs/descendant::tei:w[@msd][ft:query-field(., "function:main")]
     let $ws_filtered := if (exists($ws)) then
         local:filterWords($ws, $morphologicalFeaturesScope)
