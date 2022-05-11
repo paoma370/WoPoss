@@ -2,7 +2,7 @@ xquery version "3.1";
 <div
     xmlns="http://www.w3.org/1999/xhtml"
     data-template="templates:surround"
-    data-template-with="templates/page_woposs.html"
+    data-template-with="templates/page_results.html"
     data-template-at="content">
     <div>
     <p><span
